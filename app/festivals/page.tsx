@@ -1,0 +1,288 @@
+// app/culture/page.tsx
+import type { Metadata } from "next";
+import { FestivalsSection } from "@/components/home/FestivalsSection";
+
+export const metadata: Metadata = {
+    title: "Rajasthan Festivals & Culture - Complete Guide | Royal Rajasthan",
+    description:
+        "Discover the vibrant festivals of Rajasthan - Pushkar Camel Fair, Desert Festival, Teej, Gangaur & more. Complete guide with dates, highlights, timings & travel tips.",
+    keywords: [
+        "Rajasthan festivals",
+        "Pushkar Camel Fair",
+        "Desert Festival Jaisalmer",
+        "Teej Festival Jaipur",
+        "Gangaur Festival Udaipur",
+        "Rajasthan culture",
+        "festivals in Rajasthan 2024",
+        "Rajasthan cultural events",
+        "best festivals in Rajasthan",
+        "Rajasthan folk dance",
+        "Rajasthan traditions",
+        "colorful festivals India",
+        "Rajasthan celebrations",
+    ],
+    openGraph: {
+        title: "Rajasthan Festivals & Culture - Celebrate with the Land of Kings",
+        description:
+            "Experience centuries-old traditions, vibrant celebrations, royal processions and unforgettable cultural festivals of Rajasthan.",
+        images: [
+            {
+                url: "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=1200&h=630&fit=crop",
+                width: 1200,
+                height: 630,
+                alt: "Rajasthan Festivals - Royal Rajasthan Tourism",
+            },
+        ],
+        type: "website",
+        siteName: "Royal Rajasthan Tourism",
+        locale: "en_IN",
+        url: "https://royalrajasthan.com/culture",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Rajasthan Festivals & Culture Guide",
+        description:
+            "Discover vibrant Rajasthan festivals - Pushkar Camel Fair, Desert Festival, Teej & Gangaur.",
+        images: [
+            "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=1200",
+        ],
+        site: "@RoyalRajasthan",
+    },
+    alternates: {
+        canonical: "https://royalrajasthan.com/culture",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
+};
+
+export default function CulturePage() {
+    // JSON-LD Schemas
+    const festivalEventSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        name: "Famous Festivals of Rajasthan",
+        description:
+            "A list of the most famous and vibrant festivals celebrated in Rajasthan, India.",
+        url: "https://royalrajasthan.com/culture",
+        numberOfItems: 4,
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                item: {
+                    "@type": "Event",
+                    name: "Pushkar Camel Fair",
+                    description:
+                        "The world's largest camel fair held annually in Pushkar, Rajasthan. Features camel trading, folk music, cultural performances and hot air balloon rides.",
+                    location: {
+                        "@type": "Place",
+                        name: "Pushkar",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Pushkar",
+                            addressRegion: "Rajasthan",
+                            addressCountry: "IN",
+                        },
+                    },
+                    startDate: "2025-11-15",
+                    endDate: "2025-11-20",
+                    eventStatus: "https://schema.org/EventScheduled",
+                    organizer: {
+                        "@type": "Organization",
+                        name: "Rajasthan Tourism",
+                    },
+                    image:
+                        "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=800",
+                },
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                item: {
+                    "@type": "Event",
+                    name: "Desert Festival Jaisalmer",
+                    description:
+                        "A vibrant 3-day celebration of Rajasthan's desert culture featuring folk music, camel races, turban-tying competition and fire dance in Jaisalmer.",
+                    location: {
+                        "@type": "Place",
+                        name: "Jaisalmer",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Jaisalmer",
+                            addressRegion: "Rajasthan",
+                            addressCountry: "IN",
+                        },
+                    },
+                    startDate: "2026-02-08",
+                    endDate: "2026-02-10",
+                    eventStatus: "https://schema.org/EventScheduled",
+                    image:
+                        "https://images.unsplash.com/photo-1502786129293-79981df4e689?w=800",
+                },
+            },
+            {
+                "@type": "ListItem",
+                position: 3,
+                item: {
+                    "@type": "Event",
+                    name: "Teej Festival",
+                    description:
+                        "A vibrant monsoon festival celebrated by women in Jaipur featuring colorful processions, traditional songs, swing rides and henna designs.",
+                    location: {
+                        "@type": "Place",
+                        name: "Jaipur",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Jaipur",
+                            addressRegion: "Rajasthan",
+                            addressCountry: "IN",
+                        },
+                    },
+                    startDate: "2025-08-08",
+                    endDate: "2025-08-10",
+                    eventStatus: "https://schema.org/EventScheduled",
+                    image:
+                        "https://images.unsplash.com/photo-1575377427642-087cf684ad0c?w=800",
+                },
+            },
+            {
+                "@type": "ListItem",
+                position: 4,
+                item: {
+                    "@type": "Event",
+                    name: "Gangaur Festival",
+                    description:
+                        "The most important festival of Rajasthan celebrating Lord Shiva and Goddess Gauri with 18 days of elaborate processions and traditional rituals in Udaipur.",
+                    location: {
+                        "@type": "Place",
+                        name: "Udaipur",
+                        address: {
+                            "@type": "PostalAddress",
+                            addressLocality: "Udaipur",
+                            addressRegion: "Rajasthan",
+                            addressCountry: "IN",
+                        },
+                    },
+                    startDate: "2026-03-28",
+                    endDate: "2026-04-14",
+                    eventStatus: "https://schema.org/EventScheduled",
+                    image:
+                        "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800",
+                },
+            },
+        ],
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: "https://royalrajasthan.com",
+            },
+            {
+                "@type": "ListItem",
+                position: 2,
+                name: "Culture & Festivals",
+                item: "https://royalrajasthan.com/culture",
+            },
+        ],
+    };
+
+    const faqSchema = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: [
+            {
+                "@type": "Question",
+                name: "When is the Pushkar Camel Fair?",
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "The Pushkar Camel Fair is held annually in November, coinciding with the Kartik Purnima (full moon). The 2025 fair is scheduled for November 15-20. It is the world's largest camel fair attracting over 200,000 visitors.",
+                },
+            },
+            {
+                "@type": "Question",
+                name: "What is the Desert Festival of Jaisalmer?",
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "The Desert Festival is a 3-day cultural event held in Jaisalmer in February. It features folk music and dance, camel races, turban-tying competition, fire dance, puppet shows and the famous Mr. Desert competition.",
+                },
+            },
+            {
+                "@type": "Question",
+                name: "What is the Gangaur Festival?",
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "Gangaur is the most important festival of Rajasthan, celebrated over 18 days in March-April. It celebrates the divine love of Lord Shiva and Goddess Gauri (Parvati). Women fast and worship for marital bliss. Udaipur has the grandest Gangaur celebrations with royal processions.",
+                },
+            },
+            {
+                "@type": "Question",
+                name: "Which is the best festival to visit in Rajasthan?",
+                acceptedAnswer: {
+                    "@type": "Answer",
+                    text: "The Pushkar Camel Fair (November) is the most iconic Rajasthan festival. The Desert Festival in Jaisalmer (February) is perfect for experiencing desert culture. Holi in Rajasthan (March) and Diwali are also spectacular. Each festival offers a unique cultural experience.",
+                },
+            },
+        ],
+    };
+
+    const organizationSchema = {
+        "@context": "https://schema.org",
+        "@type": "TouristInformationCenter",
+        name: "Royal Rajasthan Tourism - Culture & Festivals",
+        url: "https://royalrajasthan.com/culture",
+        description:
+            "Complete guide to Rajasthan festivals, cultural events, folk traditions and celebrations.",
+        areaServed: {
+            "@type": "State",
+            name: "Rajasthan",
+            addressCountry: "IN",
+        },
+    };
+
+    return (
+        <>
+            {/* All JSON-LD Schemas */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(festivalEventSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(breadcrumbSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(organizationSchema),
+                }}
+            />
+
+            {/* Client Component */}
+            <FestivalsSection />
+        </>
+    );
+}
