@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Star, MapPin, ArrowRight, Wifi, Dumbbell, Coffee } from "lucide-react";
+import { HOTELS } from "@/constants/data";
 
 export default function HotelsPage() {
     const [activeCategory, setActiveCategory] = useState("All");
@@ -140,70 +141,3 @@ export default function HotelsPage() {
         </>
     );
 }
-
-export const HOTELS = [
-    {
-        id: 1,
-        name: "Rambagh Palace",
-        location: "Jaipur",
-        category: "Luxury Palace Hotel",
-        stars: 5,
-        rating: 4.9,
-        reviews: 3456,
-        price: 25000,
-        image:
-            "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800",
-        amenities: ["Pool", "Spa", "Restaurant", "Bar", "Gym", "WiFi"],
-        description:
-            "The jewel of Jaipur, a luxury palace hotel that was once the residence of the Maharaja of Jaipur.",
-        isFeatured: true,
-    },
-    {
-        id: 2,
-        name: "Taj Lake Palace",
-        location: "Udaipur",
-        category: "Heritage Palace Hotel",
-        stars: 5,
-        rating: 5.0,
-        reviews: 4521,
-        price: 35000,
-        image:
-            "https://images.unsplash.com/photo-1571003123771-bd6a099d28ab?w=800",
-        amenities: ["Lake View", "Pool", "Spa", "Fine Dining", "Boat Ride", "WiFi"],
-        description:
-            "The world's most romantic hotel floating on Lake Pichola, built in 1746 as a summer palace.",
-        isFeatured: true,
-    },
-    {
-        id: 3,
-        name: "Umaid Bhawan Palace",
-        location: "Jodhpur",
-        category: "Luxury Palace Hotel",
-        stars: 5,
-        rating: 4.9,
-        reviews: 2890,
-        price: 28000,
-        image:
-            "https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800",
-        amenities: ["Museum", "Pool", "Spa", "Restaurant", "Tennis", "WiFi"],
-        description:
-            "A magnificent Art Deco palace still home to the Jodhpur royal family, now a luxury hotel.",
-        isFeatured: true,
-    },
-    {
-        id: 4,
-        name: "Suryagarh Jaisalmer",
-        location: "Jaisalmer",
-        category: "Desert Luxury Resort",
-        stars: 5,
-        rating: 4.8,
-        reviews: 1876,
-        price: 18000,
-        image:
-            "https://images.unsplash.com/photo-1584132967334-10e028bd69f7?w=800",
-        amenities: ["Desert View", "Pool", "Spa", "Cultural Shows", "Safari", "WiFi"],
-        description:
-            "A luxury desert fortress hotel offering an immersive Rajasthani experience.",
-        isFeatured: true,
-    },
-];
