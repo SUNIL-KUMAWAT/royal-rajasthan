@@ -1,3 +1,69 @@
+export interface Place {
+    id: number;
+    name: string;
+    slug: string;
+    city: string;
+    state: string;
+    category: string;
+    subcategory: string;
+    description: string;
+    history: string;
+    images: string[];
+    rating: number;
+    reviews: number;
+    timing: {
+        open: string;
+        close: string;
+        closedOn: string;
+        note: string;
+    };
+    ticket: {
+        isFree: boolean;
+        indian: number;
+        foreigner: number;
+        childIndian: number;
+        childForeigner: number;
+        camera: number;
+        note: string;
+    };
+    location: {
+        address: string;
+        city: string;
+        pincode: string;
+        latitude: number;
+        longitude: number;
+        googleMapUrl: string;
+        nearestAirport: string;
+        nearestRailway: string;
+        distanceFromCity: string;
+    };
+    bestTimeToVisit: {
+        months: string;
+        season: string;
+        weather: string;
+        tip: string;
+    };
+    visitDuration: {
+        minimum: string;
+        recommended: string;
+        extended: string;
+    };
+    highlights: string[];
+    tags: string[];
+    facilities: string[];
+    nearbyPlaces: string[];
+    dos: string[];
+    donts: string[];
+    isOpen: boolean;
+    isFeatured: boolean;
+    isPopular: boolean;
+    isUNESCO: boolean;
+    yearBuilt: string;
+    builtBy: string;
+    architecture: string;
+    significance: string;
+}
+
 export interface Destination {
     id: number;
     name: string;
@@ -14,6 +80,7 @@ export interface Destination {
     temperature: string;
     category: string;
     attractions: string[];
+    attractionsList?: Place[];
     highlights: string[];
     distance: string;
     duration: string;

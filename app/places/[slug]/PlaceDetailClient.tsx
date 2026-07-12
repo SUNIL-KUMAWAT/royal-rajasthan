@@ -131,6 +131,7 @@ export function PlaceDetailClient({ place }: Props) {
                                 <img
                                     src={place.images[activeImage]}
                                     alt={`${place.name} - ${place.city}, Rajasthan`}
+                                    referrerPolicy="no-referrer"
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                                 />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
@@ -200,6 +201,7 @@ export function PlaceDetailClient({ place }: Props) {
                                         <img
                                             src={img}
                                             alt={`${place.name} photo ${i + 1}`}
+                                            referrerPolicy="no-referrer"
                                             className="w-full h-full object-cover"
                                         />
                                         {i === 3 && place.images.length > 4 && (

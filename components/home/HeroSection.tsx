@@ -3,45 +3,9 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Search, MapPin, Calendar, Users, ChevronDown, Play } from "lucide-react";
 import Link from "next/link";
+import { HERO_SLIDES } from "@/constants/data";
 
-const HERO_SLIDES = [
-    {
-        id: 1,
-        image:
-            "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920&q=90",
-        title: "Discover the Land of Kings",
-        subtitle: "Amber Fort, Jaipur",
-        description:
-            "Experience timeless palaces, golden deserts, vibrant festivals, and unforgettable journeys",
-    },
-    {
-        id: 2,
-        image:
-            "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1920&q=90",
-        title: "The Blue City Awaits",
-        subtitle: "Mehrangarh Fort, Jodhpur",
-        description:
-            "Rise above the blue-painted streets and witness the majesty of Rajputana",
-    },
-    {
-        id: 3,
-        image:
-            "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920&q=90",
-        title: "City of Lakes & Dreams",
-        subtitle: "Lake Pichola, Udaipur",
-        description:
-            "Float on mirror-calm waters surrounded by palaces that touch the sky",
-    },
-    {
-        id: 4,
-        image:
-            "https://images.unsplash.com/photo-1548013146-72479768bada?w=1920&q=90",
-        title: "Golden Sands of Time",
-        subtitle: "Sam Sand Dunes, Jaisalmer",
-        description:
-            "Where endless dunes meet the horizon and stars light up the desert night",
-    },
-];
+
 
 export function HeroSection() {
     const [current, setCurrent] = useState(0);
@@ -141,15 +105,6 @@ export function HeroSection() {
                         >
                             Plan Your Trip
                         </Link>
-                        <button
-                            onClick={() => setShowVideo(true)}
-                            className="flex items-center gap-2 text-white hover:text-gold-400 transition-colors justify-center"
-                        >
-                            <div className="w-12 h-12 rounded-full border-2 border-white/60 flex items-center justify-center hover:border-gold-400 transition-colors">
-                                <Play size={18} fill="white" />
-                            </div>
-                            Watch Video
-                        </button>
                     </motion.div>
 
                     {/* <motion.div
@@ -219,9 +174,9 @@ export function HeroSection() {
                     transition={{ repeat: Infinity, duration: 2 }}
                     className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white flex flex-col items-center gap-1"
                 >
-                    <span className="text-xs text-white/60 tracking-widest uppercase">
+                    {/* <span className="text-xs text-white/60 tracking-widest uppercase">
                         Scroll
-                    </span>
+                    </span> */}
                     <ChevronDown size={20} className="text-gold-400" />
                 </motion.div>
             </div>

@@ -5,42 +5,34 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Phone } from "lucide-react";
 import { NAV_LINKS } from "@/constants/data";
 import { useTheme } from "@/components/ThemeProvider";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
+    const pathname = usePathname();
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [mounted, setMounted] = useState(false);
     const { theme, toggleTheme } = useTheme();
 
     useEffect(() => {
+        setMounted(true);
         const handleScroll = () => setScrolled(window.scrollY > 50);
         window.addEventListener("scroll", handleScroll);
         return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    const isHome = mounted && pathname === "/";
+    const isSolid = scrolled || !isHome;
+
     return (
         <>
-            {/* Top Bar */}
-            <div className="bg-maroon-500 dark:bg-gray-800 text-white text-sm py-2 px-4 hidden md:block">
-                <div className="max-w-7xl mx-auto flex justify-between items-center">
-                    <span className="flex items-center gap-2">
-                        <Phone size={14} />
-                        <span>+91 98765 43210 | info@royalrajasthan.com</span>
-                    </span>
-                    <div className="flex gap-4 items-center">
-                        <span>🇮🇳 English</span>
-                        <span>|</span>
-                        <span>हिन्दी</span>
-                    </div>
-                </div>
-            </div>
-
             {/* Main Navbar */}
             <motion.nav
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
-                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled
+                className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isSolid
                     ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg"
-                    : "bg-transparent md:top-9"
+                    : "bg-transparent"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,7 +44,7 @@ export function Navbar() {
                             </div>
                             <div>
                                 <div
-                                    className={`font-playfair font-bold text-lg leading-tight ${scrolled
+                                    className={`font-playfair font-bold text-lg leading-tight ${isSolid
                                         ? "text-maroon-500 dark:text-white"
                                         : "text-white"
                                         }`}
@@ -60,7 +52,7 @@ export function Navbar() {
                                     Royal Rajasthan
                                 </div>
                                 <div
-                                    className={`text-xs tracking-widest uppercase ${scrolled
+                                    className={`text-xs tracking-widest uppercase ${isSolid
                                         ? "text-yellow-600 dark:text-yellow-400"
                                         : "text-yellow-300"
                                         }`}
@@ -76,7 +68,7 @@ export function Navbar() {
                                 <Link
                                     key={link.name}
                                     href={link.href}
-                                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${scrolled
+                                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${isSolid
                                         ? "text-gray-700 dark:text-gray-200 hover:text-yellow-600 dark:hover:text-yellow-400 hover:bg-yellow-50 dark:hover:bg-gray-800"
                                         : "text-white/90 hover:text-white hover:bg-white/10"
                                         }`}
@@ -121,7 +113,7 @@ export function Navbar() {
 
                             {/* Mobile Menu Toggle */}
                             <button
-                                className={`lg:hidden p-2 rounded-lg ${scrolled
+                                className={`lg:hidden p-2 rounded-lg ${isSolid
                                     ? "text-gray-700 dark:text-white"
                                     : "text-white"
                                     }`}

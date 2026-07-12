@@ -71,6 +71,7 @@ export default function HotelsPage() {
                                     <img
                                         src={hotel.image}
                                         alt={hotel.name}
+                                        referrerPolicy="no-referrer"
                                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                                     />
                                     <div className="absolute top-3 left-3 flex gap-0.5">

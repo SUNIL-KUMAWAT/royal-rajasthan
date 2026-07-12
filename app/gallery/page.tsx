@@ -74,6 +74,7 @@ export default function GalleryPage() {
                                     <img
                                         src={img.src}
                                         alt={img.alt}
+                                        referrerPolicy="no-referrer"
                                         className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -128,6 +129,7 @@ export default function GalleryPage() {
                             <img
                                 src={filtered[lightboxIndex].src.replace("600", "1200")}
                                 alt={filtered[lightboxIndex].alt}
+                                referrerPolicy="no-referrer"
                                 className="w-full max-h-[80vh] object-contain rounded-lg"
                             />
                             <div className="text-center mt-4 text-white">

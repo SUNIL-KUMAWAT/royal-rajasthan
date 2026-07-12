@@ -30,15 +30,16 @@ export function PlacesClient() {
     const filtered = useMemo(() => {
         return PLACES.filter((p) => {
             const matchSearch =
-                p.name.toLowerCase().includes(search.toLowerCase()) ||
-                p.city.toLowerCase().includes(search.toLowerCase()) ||
-                p.category.toLowerCase().includes(search.toLowerCase()) ||
-                p.description.toLowerCase().includes(search.toLowerCase()) ||
-                p.tags.some((t) =>
-                    t.toLowerCase().includes(search.toLowerCase())
-                );
+                (p.name && p.name.toLowerCase().includes(search.toLowerCase())) ||
+                (p.city && p.city.toLowerCase().includes(search.toLowerCase())) ||
+                (p.category && p.category.toLowerCase().includes(search.toLowerCase())) ||
+                (p.description && p.description.toLowerCase().includes(search.toLowerCase())) ||
+                (p.tags && p.tags.some((t) => t.toLowerCase().includes(search.toLowerCase())));
             const matchCategory =
-                category === "All" || p.category === category;
+                category === "All" ||
+                (p.category && p.category.toLowerCase() === category.toLowerCase()) ||
+                (p.tags && p.tags.some((t) => t.toLowerCase() === category.toLowerCase())) ||
+                (category.toLowerCase() === "unesco" && p.isUNESCO);
             const matchCity =
                 city === "All Cities" || p.city === city;
             const matchEntry =
@@ -385,6 +386,7 @@ export function PlacesClient() {
                                     <img
                                         src={place.images[0]}
                                         alt={`${place.name} ${place.city} Rajasthan`}
+                                        referrerPolicy="no-referrer"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                         loading="lazy"
                                     />

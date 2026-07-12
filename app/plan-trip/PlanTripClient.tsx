@@ -732,6 +732,7 @@ export function PlanTripClient() {
                                                 <img
                                                     src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
                                                     alt={`${city} - Rajasthan`}
+                                                    referrerPolicy="no-referrer"
                                                     className="w-full h-full object-cover"
                                                     loading="lazy"
                                                 />
@@ -1266,6 +1267,7 @@ export function PlanTripClient() {
                                                                                             placeSlot.place.images[0]
                                                                                         }
                                                                                         alt={placeSlot.place.name}
+                                                                                        referrerPolicy="no-referrer"
                                                                                         className="w-20 h-20 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform"
                                                                                         loading="lazy"
                                                                                     />

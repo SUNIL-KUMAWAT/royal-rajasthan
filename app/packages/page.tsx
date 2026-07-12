@@ -29,6 +29,7 @@ function PackageModal({
                     <img
                         src={pkg.image}
                         alt={pkg.name}
+                        referrerPolicy="no-referrer"
                         className="w-full h-full object-cover rounded-t-2xl"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent rounded-t-2xl" />
@@ -227,6 +228,7 @@ export default function PackagesPage() {
                                     <img
                                         src={pkg.image}
                                         alt={pkg.name}
+                                        referrerPolicy="no-referrer"
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
