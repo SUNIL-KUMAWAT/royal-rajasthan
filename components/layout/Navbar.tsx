@@ -64,18 +64,37 @@ export function Navbar() {
 
                         {/* Desktop Nav */}
                         <div className="hidden lg:flex items-center gap-1">
-                            {NAV_LINKS.map((link) => (
-                                <Link
-                                    key={link.name}
-                                    href={link.href}
-                                    className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${isSolid
-                                        ? "text-gray-700 dark:text-gray-200 hover:text-yellow-600 dark:hover:text-yellow-400 hover:bg-yellow-50 dark:hover:bg-gray-800"
-                                        : "text-white/90 hover:text-white hover:bg-white/10"
+                            {NAV_LINKS.map((link) => {
+                                const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
+                                return (
+                                    <Link
+                                        key={link.name}
+                                        href={link.href}
+                                        className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
+                                            isActive
+                                                ? isSolid
+                                                    ? "text-gold-600 dark:text-gold-400 font-semibold"
+                                                    : "text-white font-semibold"
+                                                : isSolid
+                                                    ? "text-gray-700 dark:text-gray-300 hover:text-gold-600 dark:hover:text-gold-400"
+                                                    : "text-white/80 hover:text-white"
                                         }`}
-                                >
-                                    {link.name}
-                                </Link>
-                            ))}
+                                    >
+                                        {isActive && (
+                                            <motion.div
+                                                layoutId="activeNavIndicator"
+                                                className={`absolute inset-0 rounded-full -z-10 ${
+                                                    isSolid
+                                                        ? "bg-gold-500/10 dark:bg-gold-500/15"
+                                                        : "bg-white/15"
+                                                }`}
+                                                transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                                            />
+                                        )}
+                                        {link.name}
+                                    </Link>
+                                );
+                            })}
                         </div>
 
                         {/* Right Actions */}

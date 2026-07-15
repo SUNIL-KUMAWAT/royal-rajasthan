@@ -1,81 +1,79 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
-const EXPERIENCES = [
+const BENTO_EXPERIENCES = [
     {
         id: 1,
         title: "Majestic Forts",
-        icon: "🏰",
         description: "Explore magnificent Rajput forts across Rajasthan",
-        color: "from-amber-500 to-yellow-600",
         href: "/places?category=Fort",
         count: "5 Forts",
+        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-2 row-span-2 min-h-[380px] md:min-h-[440px]"
     },
     {
         id: 2,
-        title: "Royal Palaces",
-        icon: "👑",
-        description: "Visit stunning palaces of Rajput royals",
-        color: "from-orange-500 to-amber-600",
-        href: "/places?category=Palace",
-        count: "2 Palaces",
+        title: "Desert Safari",
+        description: "Experience golden dunes & camel safari",
+        href: "/places?category=Desert",
+        count: "1 Desert",
+        image: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
         id: 3,
-        title: "Sacred Temples",
-        icon: "🛕",
-        description: "Discover ancient temples and holy shrines",
-        color: "from-red-500 to-rose-600",
-        href: "/places?category=Temple",
-        count: "2 Temples",
+        title: "Royal Palaces",
+        description: "Visit stunning heritage palaces",
+        href: "/places?category=Palace",
+        count: "2 Palaces",
+        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
         id: 4,
-        title: "Desert Safari",
-        icon: "🐫",
-        description: "Experience golden dunes and camel adventures",
-        color: "from-yellow-500 to-orange-500",
-        href: "/places?category=Desert",
-        count: "1 Desert",
+        title: "Serene Lakes",
+        description: "Sunset boat rides at breathtaking lakes",
+        href: "/places?category=Lake",
+        count: "1 Lake",
+        image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
         id: 5,
-        title: "Serene Lakes",
-        icon: "🌊",
-        description: "Romantic boat rides at breathtaking lakes",
-        color: "from-blue-500 to-cyan-600",
-        href: "/places?category=Lake",
-        count: "1 Lake",
+        title: "Wildlife Safari",
+        description: "Tiger safaris & nature trails in reserves",
+        href: "/places?category=Wildlife",
+        count: "1 Park",
+        image: "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
         id: 6,
-        title: "Wildlife Safari",
-        icon: "🐅",
-        description: "Tiger safaris and nature trails in reserves",
-        color: "from-green-600 to-emerald-700",
-        href: "/places?category=Wildlife",
-        count: "1 Park",
-    },
-    {
-        id: 7,
-        title: "Photography Tours",
-        icon: "📸",
-        description: "Capture timeless moments at iconic spots",
-        color: "from-purple-600 to-pink-600",
-        href: "/places",
-        count: "12 Spots",
-    },
-    {
-        id: 8,
-        title: "Heritage Walks",
-        icon: "🚶",
-        description: "Walk through centuries of royal Rajasthani history",
-        color: "from-teal-500 to-green-600",
-        href: "/places",
-        count: "All Places",
-    },
+        title: "Cultural Festivals",
+        description: "Vibrant folk dances & holy traditions",
+        href: "/culture",
+        count: "Vibrant Traditions",
+        image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80",
+        className: "col-span-2 md:col-span-2 min-h-[220px]"
+    }
 ];
+
+const containerVariants = {
+    hidden: { opacity: 0 },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.1,
+        },
+    },
+};
+
+const itemVariants = {
+    hidden: { opacity: 0, y: 30 },
+    show: { opacity: 1, y: 0, transition: { type: "spring" as const, stiffness: 100, damping: 15 } },
+};
 
 export function ExperiencesSection() {
     return (
@@ -109,54 +107,61 @@ export function ExperiencesSection() {
                     </p>
                 </motion.div>
 
-                {/* Grid */}
-                <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
-                    {EXPERIENCES.map((exp, i) => (
+                {/* Bento Grid */}
+                <motion.div
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="show"
+                    viewport={{ once: true, margin: "-100px" }}
+                    className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+                >
+                    {BENTO_EXPERIENCES.map((exp) => (
                         <motion.div
                             key={exp.id}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.08 }}
-                            whileHover={{ scale: 1.05, y: -5 }}
-                            className="group relative overflow-hidden rounded-2xl cursor-pointer"
+                            variants={itemVariants}
+                            whileHover={{ y: -5 }}
+                            className={`group relative overflow-hidden rounded-3xl border border-white/10 dark:border-gray-800 shadow-lg cursor-pointer ${exp.className}`}
                         >
-                            <Link href={exp.href}>
-                                <div
-                                    className={`bg-gradient-to-br ${exp.color} p-6 md:p-8 h-full min-h-[180px] flex flex-col justify-between relative overflow-hidden`}
-                                >
-                                    {/* Icon */}
-                                    <div className="text-5xl md:text-6xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                                        {exp.icon}
-                                    </div>
+                            <Link href={exp.href} className="absolute inset-0 flex flex-col justify-end">
+                                {/* Image Zoom Effect */}
+                                <img
+                                    src={exp.image}
+                                    alt={exp.title}
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                />
 
-                                    {/* Content */}
-                                    <div>
-                                        <h3 className="text-white font-bold text-lg mb-1">
-                                            {exp.title}
-                                        </h3>
-                                        <p className="text-white/70 text-sm mb-2">
-                                            {exp.description}
-                                        </p>
-                                        <span className="text-white/60 text-xs font-medium">
-                                            {exp.count}
-                                        </span>
-                                    </div>
+                                {/* Dual Gradient Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 transition-opacity duration-300 group-hover:via-black/50" />
 
-                                    {/* Arrow */}
-                                    <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-x-2 group-hover:translate-x-0">
-                                        <div className="w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
-                                            <span className="text-white text-sm">→</span>
-                                        </div>
-                                    </div>
+                                {/* Hover Shimmer Effect */}
+                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none">
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+                                </div>
 
-                                    {/* Shine */}
-                                    <div className="absolute inset-0 bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                {/* Content Details */}
+                                <div className="relative p-6 md:p-8 flex flex-col justify-end z-10 h-full">
+                                    <div className="inline-flex items-center bg-gold-500/80 text-white backdrop-blur-sm px-3.5 py-1 rounded-full text-xs font-bold w-fit mb-3">
+                                        <span>{exp.count}</span>
+                                    </div>
+                                    
+                                    <h3 className="text-white font-playfair text-xl md:text-2xl font-bold leading-tight group-hover:text-gold-300 transition-colors duration-300">
+                                        {exp.title}
+                                    </h3>
+                                    
+                                    <p className="text-white/70 text-xs md:text-sm mt-1.5 max-w-sm line-clamp-2 opacity-90 group-hover:text-white transition-colors duration-300">
+                                        {exp.description}
+                                    </p>
+
+                                    {/* Action Link Arrow */}
+                                    <div className="mt-4 flex items-center gap-1.5 text-gold-400 font-semibold text-xs md:text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
+                                        <span>Explore Category</span>
+                                        <ArrowRight size={14} />
+                                    </div>
                                 </div>
                             </Link>
                         </motion.div>
                     ))}
-                </div>
+                </motion.div>
 
                 {/* View All Button */}
                 <motion.div
@@ -169,70 +174,10 @@ export function ExperiencesSection() {
                         href="/places"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105"
                     >
-                        View All Places →
+                        View All Places <ArrowRight size={18} />
                     </Link>
                 </motion.div>
             </div>
         </section>
     );
 }
-
-
-export const EXPERIENCES_OLD = [
-    {
-        id: 1,
-        title: "Heritage Tours",
-        icon: "🏰",
-        description: "Explore magnificent forts and palaces",
-        color: "from-amber-500 to-yellow-600",
-    },
-    {
-        id: 2,
-        title: "Desert Safari",
-        icon: "🐫",
-        description: "Golden dunes and camel adventures",
-        color: "from-orange-500 to-amber-600",
-    },
-    {
-        id: 3,
-        title: "Wildlife Adventures",
-        icon: "🐅",
-        description: "Tiger safaris and nature trails",
-        color: "from-green-600 to-emerald-700",
-    },
-    {
-        id: 4,
-        title: "Cultural Festivals",
-        icon: "🎭",
-        description: "Vibrant celebrations and traditions",
-        color: "from-purple-600 to-pink-600",
-    },
-    {
-        id: 5,
-        title: "Lake Experiences",
-        icon: "🚤",
-        description: "Romantic boat rides at sunset",
-        color: "from-blue-500 to-cyan-600",
-    },
-    {
-        id: 6,
-        title: "Food & Culinary",
-        icon: "🍛",
-        description: "Royal Rajasthani cuisine journey",
-        color: "from-red-500 to-rose-600",
-    },
-    {
-        id: 7,
-        title: "Luxury Camping",
-        icon: "🏕",
-        description: "Stars above, sands below",
-        color: "from-indigo-500 to-purple-600",
-    },
-    {
-        id: 8,
-        title: "Photography Tours",
-        icon: "📸",
-        description: "Capture timeless royal moments",
-        color: "from-teal-500 to-green-600",
-    },
-];

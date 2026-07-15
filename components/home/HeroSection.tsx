@@ -85,26 +85,46 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.6 }}
-                        className="flex flex-col sm:flex-row gap-4 justify-center mb-12"
+                        className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12"
                     >
-                        <Link
-                            href="/destinations"
-                            className="bg-gold-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-gold hover:shadow-gold-lg transition-all duration-300 hover:scale-105 flex items-center gap-2 justify-center"
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.98 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                            className="w-full sm:w-auto"
                         >
-                            Explore Rajasthan →
-                        </Link>
-                        {/* <Link
-                            href="/packages"
-                            className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2 justify-center"
+                            <Link
+                                href="/destinations"
+                                className="w-full bg-gold-gradient text-white px-8 py-4 rounded-full font-semibold text-lg shadow-gold hover:shadow-gold-lg transition-shadow duration-300 flex items-center gap-2 justify-center relative overflow-hidden group"
+                            >
+                                <span className="relative z-10 flex items-center gap-2">
+                                    Explore Rajasthan
+                                    <motion.span
+                                        className="inline-block"
+                                        animate={{ x: [0, 4, 0] }}
+                                        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                                    >
+                                        →
+                                    </motion.span>
+                                </span>
+                                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+                            </Link>
+                        </motion.div>
+
+                        <motion.div
+                            whileHover={{ scale: 1.05 }}
+                            whileTap={{ scale: 0.98 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 15 }}
+                            className="w-full sm:w-auto"
                         >
-                            Plan Your Trip
-                        </Link> */}
-                        <Link
-                            href="/plan-trip"
-                            className="bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-all duration-300 flex items-center gap-2 justify-center"
-                        >
-                            Plan Your Trip
-                        </Link>
+                            <Link
+                                href="/plan-trip"
+                                className="w-full bg-white/10 backdrop-blur-sm border-2 border-white/40 text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white/20 transition-colors duration-300 flex items-center gap-2 justify-center relative overflow-hidden group"
+                            >
+                                <span className="relative z-10">Plan Your Trip</span>
+                                <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
+                            </Link>
+                        </motion.div>
                     </motion.div>
 
                     {/* <motion.div

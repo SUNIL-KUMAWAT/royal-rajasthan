@@ -96,26 +96,40 @@ export function FeaturedPlaces() {
                 </motion.div>
 
                 {/* Filters */}
-                <div className="flex flex-wrap gap-1 md:gap-3 justify-center mb-6 md:mb-12">
-                    {CATEGORIES.map((cat, i) => (
-                        <motion.button
-                            key={cat}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: i * 0.05 }}
-                            onClick={() => {
-                                setActiveFilter(cat);
-                                setVisibleCount(12);
-                            }}
-                            className={` px-3 md:px-5 py-2 rounded-full text-xs md:text-sm font-medium transition-all duration-300 ${activeFilter === cat
-                                ? "bg-gradient-to-r from-gold-500 to-gold-600 text-white shadow-gold"
-                                : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-gold-400 hover:text-gold-600 hover:shadow-md"
+                <div className="relative flex flex-wrap gap-2 md:gap-3 justify-center mb-6 md:mb-12">
+                    {CATEGORIES.map((cat, i) => {
+                        const isActive = activeFilter === cat;
+                        return (
+                            <motion.button
+                                key={cat}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: i * 0.05 }}
+                                onClick={() => {
+                                    setActiveFilter(cat);
+                                    setVisibleCount(12);
+                                }}
+                                className={`relative px-4 md:px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-colors duration-300 z-10 ${
+                                    isActive
+                                        ? "text-white"
+                                        : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-gold-400 hover:text-gold-600 hover:shadow-md"
                                 }`}
-                        >
-                            {cat}
-                        </motion.button>
-                    ))}
+                                style={{
+                                    border: isActive ? "1px solid transparent" : undefined
+                                }}
+                            >
+                                {isActive && (
+                                    <motion.div
+                                        layoutId="activeTabIndicator"
+                                        className="absolute inset-0 bg-gradient-to-r from-gold-500 to-gold-600 rounded-full shadow-gold -z-10"
+                                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                                    />
+                                )}
+                                {cat}
+                            </motion.button>
+                        );
+                    })}
                 </div>
 
                 {/* Cards Grid */}
