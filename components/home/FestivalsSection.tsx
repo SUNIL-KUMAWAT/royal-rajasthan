@@ -1,10 +1,9 @@
 // components/home/FestivalsSection.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import {
   Calendar,
   Clock,
@@ -13,13 +12,12 @@ import {
   ArrowRight,
   ChevronLeft,
   ChevronRight,
+  Search,
+  Filter
 } from "lucide-react";
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-
 import { FESTIVALS } from "@/constants/data";
+import { TiltCard } from "./TiltCard";
 
 // ============ TYPES ============
 interface Festival {
@@ -82,70 +80,27 @@ function Countdown({ targetDate }: { targetDate?: string }) {
         { value: timeLeft.hours, label: "Hours" },
         { value: timeLeft.minutes, label: "Min" },
       ].map((item) => (
-        <div key={item.label} className="text-center">
-          <div className="w-16 h-16 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 flex items-center justify-center text-white font-bold text-xl">
-            {String(item.value).padStart(2, "0")}
+        <div key={item.label} className="text-center group">
+          <div className="w-16 h-16 rounded-2xl bg-white/10 dark:bg-gray-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/10 flex items-center justify-center text-white font-bold text-2xl shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_8px_16px_rgba(0,0,0,0.4)] group-hover:shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_12px_24px_rgba(251,191,36,0.3)] transition-all duration-300">
+            <span className="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">{String(item.value).padStart(2, "0")}</span>
           </div>
-          <p className="text-xs text-white/60 mt-2">{item.label}</p>
+          <p className="text-xs text-white/80 mt-2 font-medium uppercase tracking-wider">{item.label}</p>
         </div>
       ))}
     </div>
   );
 }
 
-// ============ FESTIVAL CARD ============
-function FestivalCard({
-  festival,
-  active,
-}: {
-  festival: Festival;
-  active: boolean;
-}) {
-  return (
-    <motion.div
-      whileHover={{ y: -10 }}
-      className={`
-        group relative h-[280px] rounded-3xl overflow-hidden
-        cursor-pointer transition-all duration-500
-        ${active
-          ? "ring-2 ring-yellow-400 scale-[1.03]"
-          : "opacity-80 hover:opacity-100"
-        }
-      `}
-    >
-      <img
-        src={festival.image}
-        alt={festival.name}
-        className="absolute inset-0 w-full h-full object-cover
-          transition-transform duration-700 group-hover:scale-110"
-        loading="lazy"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent" />
-
-      <div className="absolute bottom-4 left-4 right-4 backdrop-blur-xl
-        bg-black/30 border border-white/10 rounded-2xl p-4">
-        <h4 className="text-white font-bold text-base md:text-lg">
-          {festival.name}
-        </h4>
-        <div className="flex items-center gap-2 mt-2">
-          <MapPin size={14} className="text-yellow-400" />
-          <span className="text-white/70 text-sm">{festival.location}</span>
-        </div>
-      </div>
-    </motion.div>
-  );
-}
-
 // ============ FESTIVAL HERO ============
-function FestivalHero({ festival }: { festival: Festival }) {
+function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext: () => void, onPrev: () => void }) {
   return (
     <AnimatePresence mode="wait">
       <motion.div
         key={festival.id}
-        initial={{ opacity: 0, scale: 1.1 }}
+        initial={{ opacity: 0, scale: 1.05 }}
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.6 }}
         className="relative h-[80vh] rounded-[40px] overflow-hidden"
       >
         <img
@@ -157,13 +112,13 @@ function FestivalHero({ festival }: { festival: Festival }) {
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
         {/* Content */}
-        <div className="absolute left-6 md:left-12 bottom-12 max-w-3xl">
+        <div className="absolute left-6 md:left-12 bottom-24 max-w-3xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             className="inline-block px-4 py-2 rounded-full
               bg-yellow-500/20 border border-yellow-400/20
-              text-yellow-300 mb-6 text-sm"
+              text-yellow-300 mb-6 text-sm backdrop-blur-md"
           >
             Featured Festival
           </motion.span>
@@ -172,59 +127,69 @@ function FestivalHero({ festival }: { festival: Festival }) {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-2xl md:text-4xl lg:text-5xl font-bold
-              text-white mb-4 font-playfair"
+            className="text-3xl md:text-5xl lg:text-7xl font-bold
+              text-white mb-4 font-playfair drop-shadow-xl"
           >
             {festival.name}
           </motion.h2>
 
-          <motion.p
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
+            className="flex flex-wrap gap-4 mt-6 mb-6 text-white/90 font-medium"
+          >
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+              <MapPin size={16} className="text-gold-400" />
+              <span className="text-sm">{festival.location}</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+              <Calendar size={16} className="text-gold-400" />
+              <span className="text-sm">{festival.month}</span>
+            </div>
+            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
+              <Clock size={16} className="text-gold-400" />
+              <span className="text-sm">{festival.duration}</span>
+            </div>
+          </motion.div>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
             className="text-white/80 text-sm md:text-lg max-w-2xl
               leading-relaxed hidden md:block"
           >
             {festival.description}
           </motion.p>
+        </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-wrap gap-4 mt-8"
-          >
-            <button className="px-6 md:px-8 py-3 md:py-4 rounded-full
-              bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500
-              text-white font-semibold flex items-center gap-2
-              hover:scale-105 transition-all text-sm md:text-base">
-              Explore Festival
-              <ArrowRight size={18} />
-            </button>
-            <button className="px-6 md:px-8 py-3 md:py-4 rounded-full
-              backdrop-blur-xl bg-white/10 border border-white/20
-              text-white text-sm md:text-base">
-              View Gallery
-            </button>
-          </motion.div>
+        {/* Navigation Buttons */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-6 z-20">
+          <button onClick={onPrev} className="w-14 h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
+            <ChevronLeft size={28} />
+          </button>
+          <button onClick={onNext} className="w-14 h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
+            <ChevronRight size={28} />
+          </button>
         </div>
 
         {/* Countdown */}
-        <div className="absolute right-4 md:right-6 bottom-4 md:bottom-6
+        <div className="absolute right-4 md:right-8 bottom-8 md:bottom-12
           backdrop-blur-2xl bg-black/30 border border-white/10
-          rounded-2xl md:rounded-3xl p-4 md:p-6">
-          <p className="text-white/70 text-xs md:text-sm mb-3 md:mb-4">
+          rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-2xl">
+          <p className="text-white/70 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-widest">
             Next Festival Starts In
           </p>
           <Countdown targetDate={festival.nextDate} />
         </div>
 
         {/* Rating */}
-        <div className="absolute top-6 right-6 flex items-center gap-2
-          backdrop-blur-xl bg-black/30 border border-white/10
-          rounded-full px-4 py-2">
-          <Star size={16} className="text-yellow-400 fill-yellow-400" />
-          <span className="text-white font-semibold">{festival.rating}</span>
+        <div className="absolute top-8 right-8 flex items-center gap-2
+          backdrop-blur-xl bg-black/30 border border-white/20
+          rounded-full px-5 py-2.5 shadow-lg">
+          <Star size={18} className="text-yellow-400 fill-yellow-400" />
+          <span className="text-white font-bold text-lg">{festival.rating}</span>
         </div>
       </motion.div>
     </AnimatePresence>
@@ -234,11 +199,53 @@ function FestivalHero({ festival }: { festival: Festival }) {
 // ============ MAIN COMPONENT (Named Export) ============
 export function FestivalsSection() {
   const [active, setActive] = useState(0);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedLocation, setSelectedLocation] = useState("All");
+  const [visibleCount, setVisibleCount] = useState(8);
+
   const festival = FESTIVALS[active] as Festival;
   const progress = ((active + 1) / FESTIVALS.length) * 100;
 
+  const handleNext = () => setActive((prev) => (prev + 1) % FESTIVALS.length);
+  const handlePrev = () => setActive((prev) => (prev - 1 + FESTIVALS.length) % FESTIVALS.length);
+
+  const uniqueLocations = useMemo(() => {
+    const locs = Array.from(new Set(FESTIVALS.map((f: any) => f.location)));
+    return ["All", ...locs];
+  }, []);
+
+  const filteredFestivals = useMemo(() => {
+    return FESTIVALS.filter((f: any) => {
+      let matchSearch = true;
+      if (searchTerm) {
+        try {
+          const regex = new RegExp(searchTerm, "i");
+          matchSearch = regex.test(f.name);
+        } catch (e) {
+          matchSearch = f.name.toLowerCase().includes(searchTerm.toLowerCase());
+        }
+      }
+      const matchLocation = selectedLocation === "All" || f.location === selectedLocation;
+      return matchSearch && matchLocation;
+    });
+  }, [searchTerm, selectedLocation]);
+
+  const visibleFestivals = filteredFestivals.slice(0, visibleCount);
+
+  const handleLoadMore = () => {
+    const nextItemIndex = visibleCount;
+    setVisibleCount(prev => prev + 8);
+    // Smooth scroll exactly to the first newly loaded card
+    setTimeout(() => {
+      const element = document.getElementById(`festival-card-${nextItemIndex}`);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   return (
-    <section className="relative bg-[#070b16] overflow-hidden mt-16">
+    <section className="relative bg-[#070b16] overflow-hidden pt-16 pb-32">
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px]
         bg-yellow-500/10 rounded-full blur-[180px] pointer-events-none" />
@@ -263,42 +270,13 @@ export function FestivalsSection() {
         ))}
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8 py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
 
-        {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-center mb-14"
-        >
-          <span className="uppercase tracking-[6px] text-yellow-400
-            font-semibold text-sm">
-            Rajasthan Festivals
-          </span>
-
-          <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl
-            font-bold text-white leading-tight font-playfair">
-            Discover The{" "}
-            <span className="bg-gradient-to-r from-yellow-400 via-orange-400
-              to-red-400 bg-clip-text text-transparent">
-              Cultural Soul
-            </span>{" "}
-            of Rajasthan
-          </h1>
-
-          <p className="text-white/60 mt-6 max-w-3xl mx-auto text-sm
-            sm:text-base md:text-lg leading-relaxed">
-            Experience centuries-old traditions, vibrant celebrations,
-            royal processions and unforgettable cultural festivals.
-          </p>
-        </motion.div>
-
-        {/* Festival Hero */}
-        <FestivalHero festival={festival} />
+        {/* Festival Hero Slider */}
+        <FestivalHero festival={festival} onNext={handleNext} onPrev={handlePrev} />
 
         {/* Progress Bar */}
-        <div className="mt-6 h-1 bg-white/10 rounded-full overflow-hidden">
+        <div className="mt-8 h-1.5 bg-white/10 rounded-full overflow-hidden max-w-2xl mx-auto">
           <motion.div
             className="h-full bg-gradient-to-r from-yellow-400
               via-orange-500 to-red-500"
@@ -307,62 +285,8 @@ export function FestivalsSection() {
           />
         </div>
 
-        {/* Featured Festivals Slider */}
-        <div className="mt-16">
-          <div className="flex items-center justify-between mb-8">
-            <h2 className="text-xl md:text-2xl lg:text-3xl font-bold
-              text-white font-playfair">
-              Featured Festivals
-            </h2>
-            <div className="flex gap-3">
-              <button className="swiper-prev-btn w-12 h-12 rounded-full
-                border border-white/10 bg-white/5 backdrop-blur-xl
-                flex items-center justify-center text-white
-                hover:bg-white/10 transition-all">
-                <ChevronLeft size={20} />
-              </button>
-              <button className="swiper-next-btn w-12 h-12 rounded-full
-                border border-white/10 bg-white/5 backdrop-blur-xl
-                flex items-center justify-center text-white
-                hover:bg-white/10 transition-all">
-                <ChevronRight size={20} />
-              </button>
-            </div>
-          </div>
-
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            navigation={{
-              prevEl: ".swiper-prev-btn",
-              nextEl: ".swiper-next-btn",
-            }}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
-            centeredSlides
-            loop
-            breakpoints={{
-              320: { slidesPerView: 1.1, spaceBetween: 16 },
-              640: { slidesPerView: 1.8, spaceBetween: 18 },
-              768: { slidesPerView: 2.5, spaceBetween: 20 },
-              1024: { slidesPerView: 3.5, spaceBetween: 24 },
-              1280: { slidesPerView: 4.2, spaceBetween: 24 },
-            }}
-            onSlideChange={(swiper) => setActive(swiper.realIndex)}
-          >
-            {FESTIVALS.map((item, index) => (
-              <SwiperSlide key={item.id}>
-                <div onClick={() => setActive(index)}>
-                  <FestivalCard
-                    festival={item as Festival}
-                    active={active === index}
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-
         {/* Festival Details */}
-        <div className="mt-24 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mt-32 grid lg:grid-cols-2 gap-12 items-center">
           {/* Left */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -374,8 +298,8 @@ export function FestivalsSection() {
               Festival Details
             </span>
 
-            <h2 className="mt-4 text-2xl md:text-4xl font-bold
-              text-white font-playfair mt-3">
+            <h2 className="mt-4 text-3xl md:text-5xl font-bold
+              text-white font-playfair">
               {festival.name}
             </h2>
 
@@ -385,9 +309,9 @@ export function FestivalsSection() {
                 { icon: Calendar, text: festival.month },
                 { icon: Clock, text: festival.duration },
               ].map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2 text-yellow-400">
+                <div key={text} className="flex items-center gap-2 text-yellow-400 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
                   <Icon size={18} />
-                  <span className="text-white/80 text-sm md:text-base">
+                  <span className="text-white/90 text-sm md:text-base font-medium">
                     {text}
                   </span>
                 </div>
@@ -403,10 +327,8 @@ export function FestivalsSection() {
               {festival.highlights.map((item) => (
                 <motion.div
                   key={item}
-                  whileHover={{ scale: 1.05 }}
-                  className="px-4 py-2 rounded-full bg-white/10
-                    border border-white/10 backdrop-blur-xl
-                    text-white text-sm cursor-default"
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  className="px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-white text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
                 >
                   {item}
                 </motion.div>
@@ -414,18 +336,12 @@ export function FestivalsSection() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-10">
-              <button className="px-6 md:px-8 py-3 md:py-4 rounded-full
-                bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500
-                text-white font-semibold flex items-center gap-2
-                hover:scale-105 transition-all text-sm md:text-base">
-                Plan Visit
-                <ArrowRight size={18} />
-              </button>
-              <button className="px-6 md:px-8 py-3 md:py-4 rounded-full
-                border border-white/20 backdrop-blur-xl text-white
-                hover:bg-white/10 transition-all text-sm md:text-base">
-                View Gallery
-              </button>
+              <Link href="/plan-trip">
+                <button className="px-6 md:px-8 py-3 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-sm md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
+                  <span>Plan Visit</span>
+                  <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
+                </button>
+              </Link>
             </div>
           </motion.div>
 
@@ -460,19 +376,19 @@ export function FestivalsSection() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="rounded-3xl p-6 bg-white/5 border
-                  border-white/10 backdrop-blur-xl"
+                className="group relative rounded-3xl p-6 bg-white/5 border border-white/10 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
               >
-                <h4 className="text-white/60 text-sm mb-4">{item.label}</h4>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
+                <h4 className="text-white/60 text-sm mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
                 {item.isRating ? (
                   <div className="flex items-center gap-2">
-                    <Star className="text-yellow-400 fill-yellow-400 w-6 h-6" />
-                    <span className="text-3xl md:text-4xl font-bold text-white">
+                    <Star className="text-gold-400 fill-gold-400 w-6 h-6 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-3xl md:text-4xl font-bold text-white drop-shadow-md">
                       {item.value}
                     </span>
                   </div>
                 ) : (
-                  <h3 className="text-2xl md:text-3xl font-bold text-white">
+                  <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-md">
                     {item.value}
                   </h3>
                 )}
@@ -481,50 +397,158 @@ export function FestivalsSection() {
           </motion.div>
         </div>
 
-        {/* Festival Gallery */}
-        <div className="mt-24 md:mt-32">
-          <div className="text-center mb-12">
-            <span className="text-yellow-400 uppercase tracking-[4px]
+        {/* Experience The Magic */}
+        <div className="mt-32 border-t border-white/10 pt-24">
+
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <span className="uppercase tracking-[6px] text-yellow-400
               font-semibold text-sm">
-              Festival Gallery
+              Rajasthan Festivals
             </span>
-            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl
-              font-bold text-white font-playfair">
-              Experience The Magic
-            </h2>
+
+            <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+              font-bold text-white leading-tight font-playfair">
+              Experience The{" "}
+              <span className="bg-gradient-to-r from-yellow-400 via-orange-400
+                to-red-400 bg-clip-text text-transparent">
+                Magic
+              </span>
+            </h1>
+            <p className="text-white/60 mt-6 max-w-3xl mx-auto text-sm
+              sm:text-base md:text-lg leading-relaxed">
+              Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,
+              royal processions and unforgettable cultural festivals.
+            </p>
+          </motion.div>
+
+          {/* Filters & Search */}
+          <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12 bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-md">
+            <div className="relative w-full md:w-1/2">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={20} />
+              <input
+                type="text"
+                placeholder="Search festival by name (e.g. desert|camel)"
+                value={searchTerm}
+                onChange={(e) => {
+                  setSearchTerm(e.target.value);
+                  setVisibleCount(8);
+                }}
+                className="w-full bg-black/40 border border-white/10 rounded-2xl py-3 pl-12 pr-4 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner"
+              />
+            </div>
+
+            <div className="relative w-full md:w-auto min-w-[200px]">
+              <Filter className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={20} />
+              <select
+                value={selectedLocation}
+                onChange={(e) => {
+                  setSelectedLocation(e.target.value);
+                  setVisibleCount(8);
+                }}
+                className="w-full bg-black/40 border border-white/10 rounded-2xl py-3 pl-12 pr-10 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer"
+              >
+                {uniqueLocations.map(loc => (
+                  <option key={loc} value={loc} className="bg-gray-900 text-white">{loc}</option>
+                ))}
+              </select>
+              {/* Custom arrow */}
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40">
+                <ChevronRight size={16} className="rotate-90" />
+              </div>
+            </div>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-5">
-            {FESTIVALS.map((f) => (
-              <motion.div
-                key={f.id}
-                whileHover={{ scale: 1.03 }}
-                onClick={() => {
-                  const idx = FESTIVALS.findIndex((x) => x.id === f.id);
-                  setActive(idx);
-                }}
-                className="relative overflow-hidden rounded-2xl md:rounded-3xl
-                  h-[180px] md:h-[280px] cursor-pointer"
-              >
-                <img
-                  src={f.image}
-                  alt={f.name}
-                  className="w-full h-full object-cover transition-transform
-                    duration-700 hover:scale-110"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t
-                  from-black/70 to-transparent" />
-                <div className="absolute bottom-3 left-3">
-                  <div className="text-white font-bold text-sm">{f.name}</div>
-                  <div className="text-white/60 text-xs">{f.location}</div>
-                </div>
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <AnimatePresence mode="popLayout">
+              {visibleFestivals.map((f: any, idx: number) => (
+                <motion.div
+                  key={f.id}
+                  id={`festival-card-${idx}`}
+                  layout
+                  initial={{ opacity: 0, y: 40 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 40 }}
+                  transition={{ duration: 0.5 }}
+                  className="scroll-mt-32"
+                >
+                  <TiltCard maxTilt={10} className="h-full">
+                    <Link href={`/festivals/${f.id}`} className="block h-full">
+                      <div
+                        className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-white/10 hover:border-gold-400/50 transform-gpu z-10"
+                        style={{ transform: "translateZ(30px)" }}
+                      >
+                        <img
+                          src={f.image}
+                          alt={f.name}
+                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
+                          loading="lazy"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-500 group-hover:opacity-80" />
+
+                        <div className="absolute bottom-4 left-4 right-4 transform transition-transform duration-500 group-hover:-translate-y-2" style={{ transform: "translateZ(20px)" }}>
+                          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-3">
+                            <MapPin size={12} className="text-gold-400" />
+                            <span className="text-white/90 text-xs font-medium">{f.location}</span>
+                          </div>
+                          <h4 className="text-white font-bold text-lg md:text-xl drop-shadow-md leading-tight">{f.name}</h4>
+                        </div>
+                      </div>
+                    </Link>
+                  </TiltCard>
+                </motion.div>
+              ))}
+            </AnimatePresence>
           </div>
+
+          {filteredFestivals.length === 0 && (
+            <div className="text-center py-20">
+              <p className="text-white/60 text-lg">No festivals found matching your criteria.</p>
+            </div>
+          )}
+
+          {/* ── Load More button ── */}
+          {visibleCount < filteredFestivals.length && (
+            <motion.div
+              initial={{ opacity: 0, y: 16 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="mt-16 flex flex-col items-center gap-3"
+            >
+              <p className="text-sm text-white/50 font-medium">
+                Showing {visibleFestivals.length} of {filteredFestivals.length} festivals
+              </p>
+              <motion.button
+                type="button"
+                whileHover={{ scale: 1.04 }}
+                whileTap={{ scale: 0.96 }}
+                onClick={(e: any) => {
+                  e.preventDefault();
+                  handleLoadMore();
+                }}
+                className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300
+                  bg-transparent border-2 border-yellow-500
+                  text-yellow-400
+                  hover:bg-yellow-500 hover:text-black
+                  shadow-md hover:shadow-yellow-500/30 group"
+              >
+                <Calendar size={16} className="group-hover:text-black" />
+                Load More Festivals
+                <span className="bg-yellow-500/20 group-hover:bg-black/20 text-yellow-400 group-hover:text-black px-2 py-0.5 rounded-full text-xs font-bold border border-transparent transition-colors">
+                  +{Math.min(8, filteredFestivals.length - visibleCount)} more
+                </span>
+              </motion.button>
+            </motion.div>
+          )}
         </div>
 
       </div>
     </section>
   );
 }
+
+
+

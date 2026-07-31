@@ -15,6 +15,7 @@ import {
     Share2,
     Check,
     AlertCircle,
+    Grid,
 } from "lucide-react";
 import type { Place } from "@/constants/data";
 
@@ -120,104 +121,141 @@ export function PlaceDetailClient({ place }: Props) {
                 </div>
 
                 {/* Image Gallery */}
-                <section className="bg-white dark:bg-gray-900">
-                    <div className="max-w-7xl mx-auto px-4 py-6">
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-                            {/* Main Image */}
+                <section className="bg-white dark:bg-gray-950 md:py-6 lg:py-8">
+                    {/* Mobile Native Swipe Slider (Visible only on mobile) */}
+                    <div className="md:hidden relative w-full h-[350px] sm:h-[450px]">
+                        <div
+                            className="w-full h-full flex overflow-x-auto snap-x snap-mandatory [&::-webkit-scrollbar]:hidden"
+                            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+                            onScroll={(e) => {
+                                const target = e.target as HTMLDivElement;
+                                const index = Math.round(target.scrollLeft / target.clientWidth);
+                                setActiveImage(index);
+                            }}
+                        >
+                            {place.images.map((img, i) => (
+                                <div key={i} className="w-full h-full flex-shrink-0 snap-center relative" onClick={() => setShowLightbox(true)}>
+                                    <img src={img} alt={place.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                                    <div className="absolute inset-0 bg-black/10" />
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Mobile Badges */}
+                        <div className="absolute top-4 left-4 flex gap-2 z-10">
+                            {place.isUNESCO && (
+                                <span className="bg-blue-600/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg border border-white/20">
+                                    UNESCO
+                                </span>
+                            )}
+                            <span className={`text-white text-[10px] font-bold px-2.5 py-1 rounded-full shadow-lg backdrop-blur-sm border border-white/20 ${place.isOpen ? "bg-emerald-500/90" : "bg-red-500/90"}`}>
+                                {place.isOpen ? "Open" : "Closed"}
+                            </span>
+                        </div>
+
+                        {/* Mobile Image Counter/Dots */}
+                        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-1.5 z-10 bg-black/40 backdrop-blur-md px-3 py-1.5 rounded-full">
+                            {place.images.map((_, i) => (
+                                <div key={i} className={`h-1.5 rounded-full transition-all ${i === activeImage ? "w-4 bg-white" : "w-1.5 bg-white/50"}`} />
+                            ))}
+                        </div>
+
+                        {/* Mobile View All Button */}
+                        <button
+                            onClick={() => setShowLightbox(true)}
+                            className="absolute bottom-4 right-4 bg-black/40 backdrop-blur-md text-white px-3 py-1.5 rounded-full text-xs font-semibold border border-white/20 flex items-center gap-1.5"
+                        >
+                            <Grid size={14} />
+                            All
+                        </button>
+                    </div>
+
+                    {/* Desktop Modern Bento Grid (Visible only on md and up) */}
+                    <div className="hidden md:block max-w-7xl mx-auto px-4">
+                        <div className="grid grid-cols-4 grid-rows-2 gap-3 lg:gap-4 h-[55vh] lg:h-[65vh] rounded-3xl overflow-hidden group/gallery relative shadow-2xl">
+
+                            {/* Main Large Image */}
                             <div
-                                className="lg:col-span-2 relative h-72 md:h-96 lg:h-[500px] rounded-2xl overflow-hidden cursor-pointer group"
-                                onClick={() => setShowLightbox(true)}
+                                className="col-span-2 row-span-2 relative cursor-pointer overflow-hidden group"
+                                onClick={() => { setActiveImage(0); setShowLightbox(true); }}
                             >
                                 <img
-                                    src={place.images[activeImage]}
-                                    alt={`${place.name} - ${place.city}, Rajasthan`}
+                                    src={place.images[0]}
+                                    alt={place.name}
                                     referrerPolicy="no-referrer"
-                                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent" />
+                                <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
 
-                                {/* Navigation Arrows */}
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        setActiveImage(
-                                            (p) =>
-                                                (p - 1 + place.images.length) % place.images.length
-                                        );
-                                    }}
-                                    className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-all"
-                                >
-                                    <ChevronLeft size={20} />
-                                </button>
-                                <button
-                                    onClick={(e) => {
-                                        e.stopPropagation();
-                                        setActiveImage(
-                                            (p) => (p + 1) % place.images.length
-                                        );
-                                    }}
-                                    className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center text-white hover:bg-white/40 transition-all"
-                                >
-                                    <ChevronRight size={20} />
-                                </button>
-
-                                {/* Image Counter */}
-                                <div className="absolute bottom-4 right-4 bg-black/40 backdrop-blur-sm text-white text-sm px-3 py-1 rounded-full">
-                                    {activeImage + 1} / {place.images.length}
-                                </div>
-
-                                {/* Badges */}
-                                <div className="absolute top-4 left-4 flex gap-2 flex-wrap">
+                                {/* Desktop Badges */}
+                                <div className="absolute top-5 left-5 flex gap-2 flex-wrap z-10">
                                     {place.isUNESCO && (
-                                        <span className="bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">
+                                        <span className="bg-blue-600/90 backdrop-blur-md text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg border border-white/20">
                                             UNESCO Heritage
                                         </span>
                                     )}
-                                    <span
-                                        className={`text-white text-sm font-bold px-3 py-1 rounded-full ${place.isOpen ? "bg-green-500" : "bg-red-500"
-                                            }`}
-                                    >
+                                    <span className={`text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-md border border-white/20 ${place.isOpen ? "bg-emerald-500/90" : "bg-red-500/90"}`}>
                                         {place.isOpen ? "Open Now" : "Currently Closed"}
                                     </span>
                                 </div>
+                            </div>
 
-                                {/* Zoom hint */}
-                                <div className="absolute bottom-4 left-4 bg-black/40 backdrop-blur-sm text-white text-xs px-2 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
-                                    Click to zoom
+                            {/* Top Right Image */}
+                            {place.images.length > 1 && (
+                                <div
+                                    className="col-span-2 row-span-1 relative cursor-pointer overflow-hidden group"
+                                    onClick={() => { setActiveImage(1); setShowLightbox(true); }}
+                                >
+                                    <img
+                                        src={place.images[1]}
+                                        alt={place.name}
+                                        referrerPolicy="no-referrer"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
                                 </div>
-                            </div>
+                            )}
 
-                            {/* Thumbnails */}
-                            <div className="grid grid-cols-4 lg:grid-cols-1 gap-2 lg:gap-3">
-                                {place.images.slice(0, 4).map((img, i) => (
-                                    <div
-                                        key={i}
-                                        onClick={() => setActiveImage(i)}
-                                        className={`relative rounded-xl overflow-hidden cursor-pointer h-20 lg:h-28 transition-all ${i === activeImage
-                                                ? "ring-3 ring-yellow-500 ring-offset-2"
-                                                : "opacity-60 hover:opacity-100"
-                                            }`}
-                                    >
-                                        <img
-                                            src={img}
-                                            alt={`${place.name} photo ${i + 1}`}
-                                            referrerPolicy="no-referrer"
-                                            className="w-full h-full object-cover"
-                                        />
-                                        {i === 3 && place.images.length > 4 && (
-                                            <div
-                                                className="absolute inset-0 bg-black/60 flex items-center justify-center text-white font-bold text-sm cursor-pointer"
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    setShowLightbox(true);
-                                                }}
-                                            >
-                                                +{place.images.length - 4}
-                                            </div>
-                                        )}
-                                    </div>
-                                ))}
-                            </div>
+                            {/* Bottom Right 1 */}
+                            {place.images.length > 2 && (
+                                <div
+                                    className="col-span-1 row-span-1 relative cursor-pointer overflow-hidden group"
+                                    onClick={() => { setActiveImage(2); setShowLightbox(true); }}
+                                >
+                                    <img
+                                        src={place.images[2]}
+                                        alt={place.name}
+                                        referrerPolicy="no-referrer"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
+                                </div>
+                            )}
+
+                            {/* Bottom Right 2 */}
+                            {place.images.length > 3 && (
+                                <div
+                                    className="col-span-1 row-span-1 relative cursor-pointer overflow-hidden group"
+                                    onClick={() => { setActiveImage(3); setShowLightbox(true); }}
+                                >
+                                    <img
+                                        src={place.images[3]}
+                                        alt={place.name}
+                                        referrerPolicy="no-referrer"
+                                        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                    />
+                                    <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500" />
+                                </div>
+                            )}
+
+                            {/* Desktop View All Photos Button */}
+                            <button
+                                onClick={(e) => { e.stopPropagation(); setActiveImage(0); setShowLightbox(true); }}
+                                className="absolute bottom-6 right-6 bg-white/95 dark:bg-gray-900/95 hover:bg-white dark:hover:bg-black backdrop-blur-xl text-gray-900 dark:text-white px-5 py-2.5 rounded-xl text-sm font-bold shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-gray-200/50 dark:border-gray-700/50 z-20 flex items-center gap-2 transition-all hover:scale-105 active:scale-95"
+                            >
+                                <Grid size={18} />
+                                Show all photos
+                            </button>
                         </div>
                     </div>
                 </section>
@@ -271,8 +309,8 @@ export function PlaceDetailClient({ place }: Props) {
                                     <button
                                         onClick={() => setIsFavorite(!isFavorite)}
                                         className={`w-10 h-10 rounded-full border flex items-center justify-center transition-all ${isFavorite
-                                                ? "bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-500"
-                                                : "border-gray-200 dark:border-gray-700 text-gray-400 hover:border-red-200 hover:text-red-400"
+                                            ? "bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-500"
+                                            : "border-gray-200 dark:border-gray-700 text-gray-400 hover:border-red-200 hover:text-red-400"
                                             }`}
                                     >
                                         <Heart
@@ -338,14 +376,14 @@ export function PlaceDetailClient({ place }: Props) {
 
                             {/* Tabs */}
                             <div className="border-b border-gray-200 dark:border-gray-700 mb-6">
-                                <div className="flex gap-0 overflow-x-auto scrollbar-hide">
+                                <div className="flex flex-wrap w-full gap-y-1">
                                     {tabs.map((tab) => (
                                         <button
                                             key={tab.id}
                                             onClick={() => setActiveTab(tab.id)}
-                                            className={`px-4 py-3 text-sm font-medium whitespace-nowrap border-b-2 transition-all flex-shrink-0 ${activeTab === tab.id
+                                            className={`px-3 sm:px-6 py-2.5 sm:py-3 text-[13px] sm:text-base font-semibold whitespace-nowrap border-b-2 transition-all flex-shrink-0 ${activeTab === tab.id
                                                     ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
-                                                    : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+                                                    : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50"
                                                 }`}
                                         >
                                             {tab.label}
@@ -490,14 +528,14 @@ export function PlaceDetailClient({ place }: Props) {
                                                     </span>
                                                     <span
                                                         className={`font-bold flex items-center gap-1 ${place.isOpen
-                                                                ? "text-green-600"
-                                                                : "text-red-500"
+                                                            ? "text-green-600"
+                                                            : "text-red-500"
                                                             }`}
                                                     >
                                                         <div
                                                             className={`w-2 h-2 rounded-full ${place.isOpen
-                                                                    ? "bg-green-500 animate-pulse"
-                                                                    : "bg-red-500"
+                                                                ? "bg-green-500 animate-pulse"
+                                                                : "bg-red-500"
                                                                 }`}
                                                         />
                                                         {place.isOpen ? "Open Now" : "Closed"}
@@ -692,9 +730,10 @@ export function PlaceDetailClient({ place }: Props) {
                                             <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
                                                 📜 History of {place.name}
                                             </h2>
-                                            <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-base mb-6">
-                                                {place.history}
-                                            </p>
+                                            <div
+                                                className="[&_p]:text-gray-600 dark:[&_p]:text-gray-300 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-justify text-sm sm:text-lg transition-colors"
+                                                dangerouslySetInnerHTML={{ __html: place.history }}
+                                            />
 
                                             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                                                 {[
@@ -1030,8 +1069,8 @@ export function PlaceDetailClient({ place }: Props) {
                                         setActiveImage(i);
                                     }}
                                     className={`rounded-full transition-all ${i === activeImage
-                                            ? "w-6 h-2 bg-yellow-500"
-                                            : "w-2 h-2 bg-white/40"
+                                        ? "w-6 h-2 bg-yellow-500"
+                                        : "w-2 h-2 bg-white/40"
                                         }`}
                                 />
                             ))}

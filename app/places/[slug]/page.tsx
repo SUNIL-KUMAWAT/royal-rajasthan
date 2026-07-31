@@ -17,7 +17,7 @@ export async function generateMetadata({
 }: {
     params: { slug: string };
 }): Promise<Metadata> {
-    const place = PLACES.find((p) => p.slug === params.slug);
+    const place = PLACES.find((p) => p?.slug === params?.slug);
 
     if (!place) {
         return {
@@ -72,7 +72,7 @@ export default function PlaceDetailPage({
 }: {
     params: { slug: string };
 }) {
-    const place = PLACES.find((p) => p.slug === params.slug);
+    const place = PLACES.find((p) => p?.slug === params?.slug);
 
     if (!place) {
         return (

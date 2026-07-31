@@ -22,7 +22,7 @@ export function DestinationsSection() {
     const filtered =
         activeFilter === "All"
             ? DESTINATIONS
-            : DESTINATIONS.filter((d) => d.category === activeFilter);
+            : DESTINATIONS.filter((d: any) => d.category === activeFilter);
 
     const toggleFavorite = (id: number) => {
         setFavorites((prev) =>
@@ -68,7 +68,7 @@ export function DestinationsSection() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
                     <AnimatePresence mode="popLayout">
-                        {filtered.map((dest, i) => (
+                        {filtered.map((dest: any, i: any) => (
                             <motion.div
                                 key={dest.id}
                                 layout
@@ -141,7 +141,7 @@ export function DestinationsSection() {
                                         </div>
                                     </div>
                                     <div className="flex flex-wrap gap-1 mb-4">
-                                        {dest.tags.slice(0, 3).map((tag) => (
+                                        {dest.tags.slice(0, 3).map((tag: any) => (
                                             <span
                                                 key={tag}
                                                 className="px-2 py-1 bg-gold-50 text-gold-700 text-xs rounded-full"

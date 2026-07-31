@@ -31,16 +31,16 @@ export function Navbar() {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isSolid
-                    ? "bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg shadow-lg"
-                    : "bg-transparent"
+                    ? "bg-white/70 dark:bg-gray-900/70 backdrop-blur-xl border-b border-white/20 dark:border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.1)]"
+                    : "bg-transparent border-b border-transparent"
                     }`}
             >
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16 md:h-22">
                         {/* Logo */}
-                        <Link href="/" className="flex items-center gap-3">
-                            <div className="w-10 h-10 bg-gradient-to-r from-yellow-500 to-yellow-600 rounded-full flex items-center justify-center shadow-lg animate-pulse-gold">
-                                <span className="text-white font-bold text-lg">R</span>
+                        <Link href="/" className="flex items-center gap-3 group">
+                            <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.5)] animate-pulse-gold group-hover:scale-110 transition-transform duration-300">
+                                <span className="text-white font-bold text-lg drop-shadow-md">R</span>
                             </div>
                             <div>
                                 <div
@@ -70,28 +70,29 @@ export function Navbar() {
                                     <Link
                                         key={link.name}
                                         href={link.href}
-                                        className={`relative px-4 py-2 rounded-full text-sm font-medium transition-colors duration-300 ${
-                                            isActive
-                                                ? isSolid
-                                                    ? "text-gold-600 dark:text-gold-400 font-semibold"
-                                                    : "text-white font-semibold"
-                                                : isSolid
-                                                    ? "text-gray-700 dark:text-gray-300 hover:text-gold-600 dark:hover:text-gold-400"
-                                                    : "text-white/80 hover:text-white"
-                                        }`}
+                                        className={`relative px-4 py-2 rounded-full text-md font-medium transition-all duration-300 group overflow-hidden ${isActive
+                                            ? isSolid
+                                                ? "text-gold-600 dark:text-gold-400 font-semibold"
+                                                : "text-white font-semibold"
+                                            : isSolid
+                                                ? "text-gray-700 dark:text-gray-300 hover:text-gold-600 dark:hover:text-gold-400"
+                                                : "text-white/80 hover:text-white"
+                                            }`}
                                     >
+                                        <span className="relative z-10">{link.name}</span>
+                                        {!isActive && (
+                                            <span className="absolute inset-0 bg-gold-500/10 dark:bg-gold-400/10 rounded-full scale-0 group-hover:scale-100 transition-transform duration-300 ease-out origin-center" />
+                                        )}
                                         {isActive && (
                                             <motion.div
                                                 layoutId="activeNavIndicator"
-                                                className={`absolute inset-0 rounded-full -z-10 ${
-                                                    isSolid
-                                                        ? "bg-gold-500/10 dark:bg-gold-500/15"
-                                                        : "bg-white/15"
-                                                }`}
+                                                className={`absolute inset-0 rounded-full -z-0 ${isSolid
+                                                    ? "bg-gold-500/15 dark:bg-gold-500/20 shadow-[inset_0_1px_2px_rgba(0,0,0,0.05)]"
+                                                    : "bg-white/20 shadow-[inset_0_1px_4px_rgba(255,255,255,0.2)]"
+                                                    }`}
                                                 transition={{ type: "spring", stiffness: 380, damping: 30 }}
                                             />
                                         )}
-                                        {link.name}
                                     </Link>
                                 );
                             })}
@@ -125,9 +126,10 @@ export function Navbar() {
                             {/* Explore Button */}
                             <Link
                                 href="/places"
-                                className="hidden md:flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-5 py-2 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105"
+                                className="hidden md:flex relative overflow-hidden items-center justify-center gap-2 bg-gradient-to-r from-maroon-500 to-maroon-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_6px_12px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_10px_20px_rgba(153,27,27,0.4)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/navbtn"
                             >
-                                Explore Places
+                                <span className="relative z-10">Explore Places</span>
+                                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 ease-out group-hover/navbtn:translate-x-full" />
                             </Link>
 
                             {/* Mobile Menu Toggle */}
