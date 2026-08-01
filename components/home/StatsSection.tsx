@@ -1,7 +1,8 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { STATISTICS } from "@/constants/data";
+import { STATISTICS, STATISTICS_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 function CountUp({
     end,
@@ -41,6 +42,9 @@ function CountUp({
 }
 
 export function StatsSection() {
+    const { language } = useLanguage();
+    const currentStats = language === 'hi' ? STATISTICS_HINDI : STATISTICS;
+
     return (
         <section className="py-20 bg-gradient-to-br from-maroon-500 via-maroon-600 to-maroon-700 relative overflow-hidden">
             <div className="absolute inset-0 opacity-10">
@@ -56,15 +60,15 @@ export function StatsSection() {
                     className="text-center mb-16"
                 >
                     <span className="text-gold-400 text-sm font-semibold tracking-widest uppercase">
-                        By The Numbers
+                        {language === 'hi' ? "आंकड़ों में" : "By The Numbers"}
                     </span>
                     <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mt-3">
-                        Rajasthan&apos;s Grand Legacy
+                        {language === 'hi' ? "राजस्थान की भव्य विरासत" : "Rajasthan's Grand Legacy"}
                     </h2>
                 </motion.div>
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 max-w-7xl mx-auto">
-                    {STATISTICS.map((stat, i) => (
+                <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-12 relative z-10">
+                    {currentStats.map((stat, i) => (
                         <motion.div
                             key={stat.label}
                             initial={{ opacity: 0, y: 40 }}

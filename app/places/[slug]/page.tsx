@@ -15,9 +15,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({
     params,
 }: {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-    const place = PLACES.find((p) => p?.slug === params?.slug);
+    const { slug } = await params;
+    const place = PLACES.find((p) => p?.slug === slug);
 
     if (!place) {
         return {
@@ -67,12 +68,13 @@ export async function generateMetadata({
 }
 
 // ✅ Server Component passes data to Client Component
-export default function PlaceDetailPage({
+export default async function PlaceDetailPage({
     params,
 }: {
-    params: { slug: string };
+    params: Promise<{ slug: string }>;
 }) {
-    const place = PLACES.find((p) => p?.slug === params?.slug);
+    const { slug } = await params;
+    const place = PLACES.find((p) => p?.slug === slug);
 
     if (!place) {
         return (

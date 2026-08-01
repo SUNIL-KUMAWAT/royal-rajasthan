@@ -1,7 +1,7 @@
 // app/plan-trip/page.tsx
 // NO "use client" here
 import type { Metadata } from "next";
-import { PlanTripClient } from "./PlanTripClient";
+import PlanTripClient from "./PlanTripClient";
 
 export const metadata: Metadata = {
     title: "Plan Your Rajasthan Trip - Free Itinerary Planner | Royal Rajasthan",

@@ -24,7 +24,8 @@ import {
     AlertCircle,
     Heart,
 } from "lucide-react";
-import { PLACES, CITIES } from "@/constants/data";
+import { PLACES, CITIES, CITIES_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 import type { Place } from "@/constants/data";
 
 // ============ TYPES ============
@@ -540,7 +541,9 @@ function downloadText(itinerary: DayPlan[]): void {
 }
 
 // ============ MAIN COMPONENT ============
-export function PlanTripClient() {
+export default function PlanTripClient() {
+    const { language } = useLanguage();
+    const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
     const [step, setStep] = useState(1);
     const [config, setConfig] = useState<TripConfig>({
         selectedCities: [],
@@ -552,7 +555,7 @@ export function PlanTripClient() {
     const [itinerary, setItinerary] = useState<DayPlan[]>([]);
     const [expandedDay, setExpandedDay] = useState<number | null>(null);
 
-    const availableCities = CITIES.filter((c) => c !== "All Cities");
+    const availableCities = currentCities.filter((c) => c !== "All Cities" && c !== "सभी शहर");
 
     const canProceed = () => {
         if (step === 1) return config.selectedCities.length > 0;

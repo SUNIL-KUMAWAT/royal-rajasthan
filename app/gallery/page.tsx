@@ -1,17 +1,26 @@
 "use client";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import { CATEGORIES, GALLERY_IMAGES } from "@/constants/data";
+import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export default function GalleryPage() {
+    const { language } = useLanguage();
+    const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
     const [activeCategory, setActiveCategory] = useState("All");
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 
-    const filtered =
-        activeCategory === "All"
-            ? GALLERY_IMAGES
-            : GALLERY_IMAGES.filter((img) => img.category === activeCategory);
+    const filtered = useMemo(() => {
+        if (activeCategory === "All" || activeCategory === "सभी") return GALLERY_IMAGES;
+        
+        const catIndex = currentCategories.indexOf(activeCategory);
+        const englishCategory = CATEGORIES[catIndex];
+
+        return GALLERY_IMAGES.filter((img) => 
+            img.category === activeCategory || (englishCategory && img.category === englishCategory)
+        );
+    }, [activeCategory, currentCategories]);
 
     return (
         <>
@@ -41,7 +50,7 @@ export default function GalleryPage() {
 
             <div className="bg-white py-4 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 flex flex-wrap gap-2 justify-center">
-                    {CATEGORIES.map((cat) => (
+                    {currentCategories.map((cat) => (
                         <button
                             key={cat}
                             onClick={() => setActiveCategory(cat)}

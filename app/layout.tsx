@@ -3,7 +3,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
-
+import { LanguageProvider } from "@/components/LanguageProvider";
 export const metadata: Metadata = {
   // ============ BASIC SEO ============
   title: {
@@ -235,11 +235,13 @@ export default function RootLayout({
         />
       </head>
       <body className="bg-palace-white dark:bg-gray-950 transition-colors duration-300">
-        <ThemeProvider>
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
-        </ThemeProvider>
+        <LanguageProvider>
+          <ThemeProvider>
+            <Navbar />
+            <main>{children}</main>
+            <Footer />
+          </ThemeProvider>
+        </LanguageProvider>
       </body>
     </html>
   );

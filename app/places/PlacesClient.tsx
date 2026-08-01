@@ -16,7 +16,8 @@ import {
     X,
     ChevronDown,
 } from "lucide-react";
-import { PLACES, CATEGORIES, CITIES } from "@/constants/data";
+import { PLACES, PLACES_HINDI, CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 export function PlacesClient() {
     const [search, setSearch] = useState("");
@@ -27,8 +28,13 @@ export function PlacesClient() {
     const [favorites, setFavorites] = useState<number[]>([]);
     const [showFilters, setShowFilters] = useState(false);
 
+    const { language } = useLanguage();
+    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
+    const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
+    const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
+
     const filtered = useMemo(() => {
-        return PLACES.filter((p) => {
+        return activePlaces.filter((p) => {
             const matchSearch =
                 (p.name && p.name.toLowerCase().includes(search.toLowerCase())) ||
                 (p.city && p.city.toLowerCase().includes(search.toLowerCase())) ||
@@ -36,12 +42,12 @@ export function PlacesClient() {
                 (p.description && p.description.toLowerCase().includes(search.toLowerCase())) ||
                 (p.tags && p.tags.some((t) => t.toLowerCase().includes(search.toLowerCase())));
             const matchCategory =
-                category === "All" ||
+                category === "All" || category === "सभी" ||
                 (p.category && p.category.toLowerCase() === category.toLowerCase()) ||
                 (p.tags && p.tags.some((t) => t.toLowerCase() === category.toLowerCase())) ||
                 (category.toLowerCase() === "unesco" && p.isUNESCO);
             const matchCity =
-                city === "All Cities" || p.city === city;
+                city === "All Cities" || city === "सभी शहर" || p.city === city;
             const matchEntry =
                 entryType === "All" ||
                 (entryType === "Free" && p.ticket.isFree) ||
@@ -58,19 +64,19 @@ export function PlacesClient() {
             if (sortBy === "reviews") return b.reviews - a.reviews;
             return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
         });
-    }, [search, category, city, sortBy, entryType]);
+    }, [activePlaces, search, category, city, sortBy, entryType]);
 
     const clearFilters = () => {
         setSearch("");
         setCategory("All");
-        setCity("All Cities");
+        setCity(language === 'hi' ? "सभी शहर" : "All Cities");
         setSortBy("featured");
         setEntryType("All");
     };
 
     const activeFilterCount = [
-        category !== "All",
-        city !== "All Cities",
+        category !== "All" && category !== "सभी",
+        city !== "All Cities" && city !== "सभी शहर",
         entryType !== "All",
         search !== "",
     ].filter(Boolean).length;
@@ -98,7 +104,7 @@ export function PlacesClient() {
                         <span className="text-yellow-400">Places</span>
                     </motion.h1>
                     <p className="text-white/80 text-lg mb-6">
-                        Discover {PLACES.length} famous places across Rajasthan
+                        Discover {activePlaces.length} famous places across Rajasthan
                     </p>
 
                     {/* Search Bar */}
@@ -134,7 +140,7 @@ export function PlacesClient() {
                     <div className="hidden md:flex flex-wrap gap-3 items-center">
                         {/* Category Buttons */}
                         <div className="flex flex-wrap gap-2">
-                            {CATEGORIES.map((cat) => (
+                            {currentCategories.map((cat) => (
                                 <button
                                     key={cat}
                                     onClick={() => setCategory(cat)}
@@ -156,7 +162,7 @@ export function PlacesClient() {
                             onChange={(e) => setCity(e.target.value)}
                             className="border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 rounded-xl px-3 py-2 text-sm outline-none focus:border-yellow-400 bg-white cursor-pointer"
                         >
-                            {CITIES.map((c) => (
+                            {currentCities.map((c) => (
                                 <option key={c} value={c}>
                                     {c}
                                 </option>
@@ -169,9 +175,9 @@ export function PlacesClient() {
                             onChange={(e) => setEntryType(e.target.value)}
                             className="border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 rounded-xl px-3 py-2 text-sm outline-none focus:border-yellow-400 bg-white cursor-pointer"
                         >
-                            <option value="All">All Entry Types</option>
-                            <option value="Free">Free Entry</option>
-                            <option value="Paid">Paid Entry</option>
+                            <option value="All">{language === 'hi' ? "सभी प्रकार" : "All Entry Types"}</option>
+                            <option value="Free">{language === 'hi' ? "निःशुल्क प्रवेश" : "Free Entry"}</option>
+                            <option value="Paid">{language === 'hi' ? "सशुल्क प्रवेश" : "Paid Entry"}</option>
                         </select>
 
                         {/* Sort By */}
@@ -240,7 +246,7 @@ export function PlacesClient() {
                                     <div className="mt-4 space-y-3 pb-2">
                                         {/* Category Buttons */}
                                         <div className="flex flex-wrap gap-2">
-                                            {CATEGORIES.map((cat) => (
+                                            {currentCategories.map((cat) => (
                                                 <button
                                                     key={cat}
                                                     onClick={() => setCategory(cat)}
@@ -261,7 +267,7 @@ export function PlacesClient() {
                                                 onChange={(e) => setCity(e.target.value)}
                                                 className="border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-200 rounded-xl px-3 py-2 text-sm bg-white"
                                             >
-                                                {CITIES.map((c) => (
+                                                {currentCities.map((c) => (
                                                     <option key={c} value={c}>
                                                         {c}
                                                     </option>
@@ -319,7 +325,9 @@ export function PlacesClient() {
                             <strong className="text-gray-800 dark:text-white">
                                 {filtered.length}
                             </strong>{" "}
-                            of {PLACES.length} places
+                            <span className="hidden sm:inline">
+                                of {activePlaces.length} places
+                            </span>
                             {search && (
                                 <span>
                                     {" "}for &quot;
@@ -334,7 +342,7 @@ export function PlacesClient() {
                         {/* Active Filter Tags */}
                         {activeFilterCount > 0 && (
                             <div className="hidden md:flex items-center gap-2 flex-wrap">
-                                {category !== "All" && (
+                                {category !== "All" && category !== "सभी" && (
                                     <span className="flex items-center gap-1 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-xs px-2 py-1 rounded-full">
                                         {category}
                                         <button
@@ -345,11 +353,11 @@ export function PlacesClient() {
                                         </button>
                                     </span>
                                 )}
-                                {city !== "All Cities" && (
+                                {city !== "All Cities" && city !== "सभी शहर" && (
                                     <span className="flex items-center gap-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs px-2 py-1 rounded-full">
                                         {city}
                                         <button
-                                            onClick={() => setCity("All Cities")}
+                                            onClick={() => setCity(language === 'hi' ? "सभी शहर" : "All Cities")}
                                             className="hover:text-red-500 transition-colors"
                                         >
                                             <X size={12} />

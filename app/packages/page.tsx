@@ -333,7 +333,7 @@ export default function PackagesPage() {
 }
 
 
-export const PACKAGES = [
+const PACKAGES = [
     {
         id: 1,
         name: "Royal Rajasthan Heritage Tour",

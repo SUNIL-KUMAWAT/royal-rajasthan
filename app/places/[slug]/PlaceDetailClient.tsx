@@ -17,8 +17,9 @@ import {
     AlertCircle,
     Grid,
 } from "lucide-react";
+import { PLACES, PLACES_HINDI } from "@/constants/data";
 import type { Place } from "@/constants/data";
-
+import { useLanguage } from "@/components/LanguageProvider";
 interface Props {
     place: Place;
 }
@@ -28,7 +29,11 @@ function getTimeSlotBadge(isFree: boolean, price: number) {
     return { text: `₹${price}`, color: "bg-yellow-500" };
 }
 
-export function PlaceDetailClient({ place }: Props) {
+export function PlaceDetailClient({ place: initialPlace }: Props) {
+    const { language } = useLanguage();
+    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
+    const place = activePlaces.find(p => p.slug === initialPlace.slug) || initialPlace;
+
     const [activeImage, setActiveImage] = useState(0);
     const [showLightbox, setShowLightbox] = useState(false);
     const [activeTab, setActiveTab] = useState("overview");

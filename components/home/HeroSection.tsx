@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { MapPin, ChevronDown } from "lucide-react";
 import Link from "next/link";
-import { HERO_SLIDES } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 
 
@@ -58,20 +58,69 @@ const ORBIT_SLIDES = [
     },
 ];
 
+const ORBIT_SLIDES_HINDI = [
+    {
+        subtitle: "जयपुर, गुलाबी शहर",
+        title: "जहाँ हर\nपत्थर एक कहानी कहता है",
+        description: "किले, रेत और सोना — पाँच यात्राएँ, एक शाही धागा।",
+        background: "https://picsum.photos/seed/jaipur-bg/1600/1000",
+        leftImage: "https://picsum.photos/seed/jaipur-left/700/900",
+        centerImage: "https://picsum.photos/seed/jaipur-center/300/300",
+        orbitImages: [
+            "https://picsum.photos/seed/jaipur-orbit-1/200/200",
+            "https://picsum.photos/seed/jaipur-orbit-2/200/200",
+            "https://picsum.photos/seed/jaipur-orbit-3/200/200",
+            "https://picsum.photos/seed/jaipur-orbit-4/200/200",
+            "https://picsum.photos/seed/jaipur-orbit-5/200/200",
+        ],
+    },
+    {
+        subtitle: "उदयपुर, झीलों का शहर",
+        title: "महल जो\nपानी पर तैरते हैं",
+        description: "संगमरमर के प्रांगण, शांत झीलें, और सुनहरे सूर्यास्त।",
+        background: "https://picsum.photos/seed/udaipur-bg/1600/1000",
+        leftImage: "https://picsum.photos/seed/udaipur-left/700/900",
+        centerImage: "https://picsum.photos/seed/udaipur-center/300/300",
+        orbitImages: [
+            "https://picsum.photos/seed/udaipur-orbit-1/200/200",
+            "https://picsum.photos/seed/udaipur-orbit-2/200/200",
+            "https://picsum.photos/seed/udaipur-orbit-3/200/200",
+            "https://picsum.photos/seed/udaipur-orbit-4/200/200",
+            "https://picsum.photos/seed/udaipur-orbit-5/200/200",
+        ],
+    },
+    {
+        subtitle: "जैसलमेर, स्वर्ण शहर",
+        title: "टीले जो\nगोधूलि में सुनहरे हो जाते हैं",
+        description: "थार मरुस्थल की रेत से उभरता एक जीवंत किला।",
+        background: "https://picsum.photos/seed/jaisalmer-bg/1600/1000",
+        leftImage: "https://picsum.photos/seed/jaisalmer-left/700/900",
+        centerImage: "https://picsum.photos/seed/jaisalmer-center/300/300",
+        orbitImages: [
+            "https://picsum.photos/seed/jaisalmer-orbit-1/200/200",
+            "https://picsum.photos/seed/jaisalmer-orbit-2/200/200",
+            "https://picsum.photos/seed/jaisalmer-orbit-3/200/200",
+            "https://picsum.photos/seed/jaisalmer-orbit-4/200/200",
+            "https://picsum.photos/seed/jaisalmer-orbit-5/200/200",
+        ],
+    },
+];
+
 const SLIDE_INTERVAL = 6000; // ms, matches original HeroSection
 
-export function HeroSection2({ slides = ORBIT_SLIDES }) {
+export function HeroSection() {
+    const { language } = useLanguage();
+    const currentSlides = language === 'hi' ? ORBIT_SLIDES_HINDI : ORBIT_SLIDES;
+
     const [current, setCurrent] = useState(0);
-    const slide = slides[current];
+    const slide: any = currentSlides[current];
 
     useEffect(() => {
         const timer = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % slides.length);
-        }, SLIDE_INTERVAL);
+            setCurrent((prev) => (prev + 1) % currentSlides.length);
+        }, 6000);
         return () => clearInterval(timer);
-    }, [slides.length]);
-
-
+    }, [currentSlides.length]);
 
     return (
         <section className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
@@ -204,7 +253,7 @@ export function HeroSection2({ slides = ORBIT_SLIDES }) {
 
                 {/* RIGHT: Floating SHM Images */}
                 <div className="relative hidden w-full max-w-[400px] shrink-0 sm:block md:h-[550px] md:max-w-[550px] lg:h-[650px] lg:max-w-[650px] flex-1 mt-16 md:mt-24">
-                    {slide.orbitImages.map((src, i) => {
+                    {slide.orbitImages.map((src: any, i: any) => {
                         // Spread them out over the larger area to prevent too much overlap
                         // Shifted downwards to avoid the navigation header
                         const staticPositions = [
@@ -269,8 +318,8 @@ export function HeroSection2({ slides = ORBIT_SLIDES }) {
             </div>
 
             {/* Dot indicators — same style as original HeroSection */}
-            <div className="absolute bottom-8 left-1/2 z-20 flex -translate-x-1/2 gap-2">
-                {slides.map((_, i) => (
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
+                {currentSlides.map((_, i) => (
                     <button
                         key={i}
                         onClick={() => setCurrent(i)}

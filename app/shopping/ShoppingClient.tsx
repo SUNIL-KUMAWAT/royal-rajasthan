@@ -5,7 +5,8 @@ import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
     ShoppingBag, Tag, X, Compass, Map, ChevronDown,
 } from "lucide-react";
-import { RAJASTHAN_SHOPPING } from "@/constants/data";
+import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 const ShoppingHelpers = {
@@ -32,7 +33,8 @@ const ShoppingHelpers = {
         return Array.from(types).sort();
     },
 };
-export { RAJASTHAN_SHOPPING, ShoppingHelpers };
+
+export { ShoppingHelpers };
 
 // ─── 3D Tilt Card ─────────────────────────────────────────────────────────────
 function TiltCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -77,6 +79,9 @@ const cardVariants: any = {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function ShoppingClient() {
+    const { language } = useLanguage();
+    const currentShoppingData = language === 'hi' ? RAJASTHAN_SHOPPING_HINDI : RAJASTHAN_SHOPPING;
+
     const [search, setSearch] = useState("");
     const [selectedDistrict, setSelectedDistrict] = useState("All");
     const [favorites, setFavorites] = useState<string[]>([]);
@@ -86,13 +91,19 @@ export default function ShoppingClient() {
     const popularDistricts = ["All", "Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Bikaner", "Ajmer", "Pushkar"];
 
     const filteredPlaces = useMemo(() => {
-        let places = ShoppingHelpers.getAllShoppingPlaces();
+        let places = currentShoppingData.districts.flatMap((district: any) =>
+            district.shoppingPlaces.map((place: any) => ({
+                ...place,
+                district: district.district,
+                districtSlug: district.slug,
+            }))
+        );
         if (search) {
             const q = search.toLowerCase();
             places = places.filter((p) =>
                 p.name.toLowerCase().includes(q) ||
                 (p.description && p.description.toLowerCase().includes(q)) ||
-                p.famousFor.some((item) => item.toLowerCase().includes(q)) ||
+                p.famousFor.some((item: any) => item.toLowerCase().includes(q)) ||
                 p.district.toLowerCase().includes(q)
             );
         }
@@ -100,7 +111,7 @@ export default function ShoppingClient() {
             places = places.filter((p) => p.district.toLowerCase() === selectedDistrict.toLowerCase());
         }
         return places;
-    }, [search, selectedDistrict]);
+    }, [search, selectedDistrict, currentShoppingData]);
 
     // Reset visible count whenever filters change
     const setSearchWithReset = (val: string) => { setSearch(val); setVisibleCount(12); };
@@ -242,7 +253,7 @@ export default function ShoppingClient() {
                                     style={{ WebkitAppearance: "none" }}
                                 >
                                     <option value="All" className="bg-gray-900 text-white">All Districts</option>
-                                    {RAJASTHAN_SHOPPING.districts.map((d) => (
+                                    {currentShoppingData.districts.map((d: any) => (
                                         <option key={d.slug} value={d.district} className="bg-gray-900 pl-3  text-white">
                                             {d.district}
                                         </option>

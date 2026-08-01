@@ -12,6 +12,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { TiltCard } from "@/components/home/TiltCard";
+import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 
 interface Festival {
   id: number;
@@ -33,6 +35,11 @@ interface Props {
 }
 
 export default function FestivalDetailClient({ festival, related }: Props) {
+  const { language } = useLanguage();
+  const currentFestivals = language === 'hi' ? FESTIVALS_HINDI : FESTIVALS;
+  const currentFestival = currentFestivals.find((f: any) => f.id === festival.id) || festival;
+  const currentRelated = related.map((r: any) => currentFestivals.find((f: any) => f.id === r.id) || r);
+
   return (
     <main className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a] text-gray-900 dark:text-white selection:bg-gold-500/30 overflow-hidden transition-colors duration-300">
       
@@ -44,8 +51,8 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src={festival.image} 
-            alt={festival.name}
+            src={currentFestival.image} 
+            alt={currentFestival.name}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-[#111111] dark:to-[#0a0a0a]" />
@@ -75,16 +82,16 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             <div className="flex flex-wrap items-center gap-4 mb-4">
               <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full bg-gold-500/20 text-gold-400 border border-gold-500/30 text-xs sm:text-sm font-medium backdrop-blur-md">
                 <MapPin size={16} className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
-                {festival.location}
+                {currentFestival.location}
               </span>
               <span className="inline-flex items-center gap-1 px-2.5 sm:px-3 py-1 rounded-full bg-white/10 text-white border border-white/20 text-xs sm:text-sm font-medium backdrop-blur-md">
                 <Star size={14} className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-yellow-400 fill-yellow-400" />
-                {festival.rating}
+                {currentFestival.rating}
               </span>
             </div>
             
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-playfair mb-4 sm:mb-6 text-white drop-shadow-lg leading-tight">
-              {festival.name}
+              {currentFestival.name}
             </h1>
 
             <div className="flex flex-wrap gap-4 sm:gap-6 text-white/80">
@@ -94,7 +101,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 </div>
                 <div>
                   <p className="text-[10px] sm:text-xs text-white/50 uppercase tracking-wider">Month</p>
-                  <p className="text-sm sm:text-base font-medium">{festival.month}</p>
+                  <p className="text-sm sm:text-base font-medium">{currentFestival.month}</p>
                 </div>
               </div>
               <div className="flex items-center gap-2">
@@ -103,7 +110,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 </div>
                 <div>
                   <p className="text-[10px] sm:text-xs text-white/50 uppercase tracking-wider">Duration</p>
-                  <p className="text-sm sm:text-base font-medium">{festival.duration}</p>
+                  <p className="text-sm sm:text-base font-medium">{currentFestival.duration}</p>
                 </div>
               </div>
             </div>
@@ -134,7 +141,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 About the Festival
               </h2>
               <p className="text-sm sm:text-lg text-gray-600 dark:text-white/70 leading-relaxed mb-8 sm:mb-10 transition-colors">
-                {festival.description}
+                {currentFestival.description}
               </p>
               
               {/* Key Highlights (Moved inside About section) */}
@@ -143,7 +150,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                   Key Highlights
                 </h3>
                 <div className="flex flex-wrap gap-2 sm:gap-3">
-                  {festival.highlights.map((highlight, idx) => (
+                  {currentFestival.highlights.map((highlight: string, idx: number) => (
                     <motion.div
                       key={idx}
                       whileHover={{ scale: 1.02 }}
@@ -160,10 +167,10 @@ export default function FestivalDetailClient({ festival, related }: Props) {
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-3xl p-4 sm:p-6 backdrop-blur-xl shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-gold-500/10 dark:from-gold-500/5 via-transparent to-gold-500/10 dark:to-gold-500/5 pointer-events-none" />
                 
-                {festival.nextDate && (
+                {currentFestival.nextDate && (
                   <div className="flex flex-col items-center justify-center sm:pr-6 sm:border-r border-gray-200 dark:border-white/10 w-full sm:w-auto transition-colors">
                     <p className="text-gold-600 dark:text-gold-400 text-[10px] sm:text-xs font-semibold uppercase tracking-widest mb-0.5 sm:mb-1">Next Expected Date</p>
-                    <p className="text-lg sm:text-2xl text-gray-900 dark:text-white font-bold font-playfair">{new Date(festival.nextDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+                    <p className="text-lg sm:text-2xl text-gray-900 dark:text-white font-bold font-playfair">{new Date(currentFestival.nextDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                   </div>
                 )}
                 
@@ -177,8 +184,8 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                     onClick={() => {
                       if (navigator.share) {
                         navigator.share({
-                          title: `${festival.name} | Royal Rajasthan`,
-                          text: `Check out ${festival.name} in ${festival.location}!`,
+                          title: `${currentFestival.name} | Royal Rajasthan`,
+                          text: `Check out ${currentFestival.name} in ${currentFestival.location}!`,
                           url: window.location.href,
                         }).catch(console.error);
                       } else {
@@ -196,7 +203,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
 
             </motion.div>
 
-            {festival.history && (
+            {currentFestival.history && (
               <motion.div 
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
@@ -209,7 +216,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 </h2>
                 <div 
                   className="[&_p]:text-gray-600 dark:[&_p]:text-white/70 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-justify text-sm sm:text-lg transition-colors"
-                  dangerouslySetInnerHTML={{ __html: festival.history }}
+                  dangerouslySetInnerHTML={{ __html: currentFestival.history }}
                 />
               </motion.div>
             )}
@@ -220,7 +227,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       </section>
 
       {/* Related Festivals */}
-      {related.length > 0 && (
+      {currentRelated.length > 0 && (
         <section className="border-t border-gray-200 dark:border-white/10 bg-gray-50 dark:bg-black/50 py-20 relative mt-12 transition-colors duration-300">
           <div className="container mx-auto px-4">
             <div className="flex flex-col items-center text-center mb-12">
@@ -233,7 +240,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {related.map((f, idx) => (
+              {currentRelated.map((f: any, idx: number) => (
                 <TiltCard key={f.id} maxTilt={10} className="h-full">
                   <Link href={`/festivals/${f.id}`} className="block h-full">
                     <motion.div

@@ -16,7 +16,8 @@ import {
   Filter
 } from "lucide-react";
 
-import { FESTIVALS } from "@/constants/data";
+import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
 
 // ============ TYPES ============
@@ -198,24 +199,27 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
 
 // ============ MAIN COMPONENT (Named Export) ============
 export function FestivalsSection() {
+  const { language } = useLanguage();
+  const currentFestivals = language === 'hi' ? FESTIVALS_HINDI : FESTIVALS;
+
   const [active, setActive] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLocation, setSelectedLocation] = useState("All");
   const [visibleCount, setVisibleCount] = useState(8);
 
-  const festival = FESTIVALS[active] as Festival;
-  const progress = ((active + 1) / FESTIVALS.length) * 100;
+  const festival = currentFestivals[active] as Festival;
+  const progress = ((active + 1) / currentFestivals.length) * 100;
 
-  const handleNext = () => setActive((prev) => (prev + 1) % FESTIVALS.length);
-  const handlePrev = () => setActive((prev) => (prev - 1 + FESTIVALS.length) % FESTIVALS.length);
+  const handleNext = () => setActive((prev) => (prev + 1) % currentFestivals.length);
+  const handlePrev = () => setActive((prev) => (prev - 1 + currentFestivals.length) % currentFestivals.length);
 
   const uniqueLocations = useMemo(() => {
-    const locs = Array.from(new Set(FESTIVALS.map((f: any) => f.location)));
+    const locs = Array.from(new Set(currentFestivals.map((f: any) => f.location)));
     return ["All", ...locs];
-  }, []);
+  }, [currentFestivals]);
 
   const filteredFestivals = useMemo(() => {
-    return FESTIVALS.filter((f: any) => {
+    return currentFestivals.filter((f: any) => {
       let matchSearch = true;
       if (searchTerm) {
         try {
@@ -228,7 +232,7 @@ export function FestivalsSection() {
       const matchLocation = selectedLocation === "All" || f.location === selectedLocation;
       return matchSearch && matchLocation;
     });
-  }, [searchTerm, selectedLocation]);
+  }, [searchTerm, selectedLocation, currentFestivals]);
 
   const visibleFestivals = filteredFestivals.slice(0, visibleCount);
 

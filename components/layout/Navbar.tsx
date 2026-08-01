@@ -3,12 +3,15 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Phone } from "lucide-react";
-import { NAV_LINKS } from "@/constants/data";
+import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/data";
+import { useLanguage } from "@/components/LanguageProvider";
 import { useTheme } from "@/components/ThemeProvider";
 import { usePathname } from "next/navigation";
 
 export function Navbar() {
     const pathname = usePathname();
+    const { language, toggleLanguage } = useLanguage();
+    const currentNavLinks = language === 'hi' ? NAV_LINKS_HINDI : NAV_LINKS;
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const [mounted, setMounted] = useState(false);
@@ -64,7 +67,7 @@ export function Navbar() {
 
                         {/* Desktop Nav */}
                         <div className="hidden lg:flex items-center gap-1">
-                            {NAV_LINKS.map((link) => {
+                            {currentNavLinks.map((link) => {
                                 const isActive = pathname === link.href || (link.href !== "/" && pathname.startsWith(link.href));
                                 return (
                                     <Link
@@ -100,6 +103,17 @@ export function Navbar() {
 
                         {/* Right Actions */}
                         <div className="flex items-center gap-3">
+                            {/* Language Toggle */}
+                            <button
+                                onClick={toggleLanguage}
+                                className={`px-3 py-1 text-sm font-bold rounded-full transition-all duration-300 ${isSolid
+                                    ? "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200 hover:bg-gray-200 dark:hover:bg-gray-700"
+                                    : "bg-white/20 text-white hover:bg-white/30 backdrop-blur-sm"
+                                    }`}
+                            >
+                                {language === "en" ? "EN" : "HI"}
+                            </button>
+
                             {/* Theme Toggle */}
                             <button
                                 onClick={toggleTheme}
@@ -155,8 +169,8 @@ export function Navbar() {
                             exit={{ opacity: 0, height: 0 }}
                             className="lg:hidden bg-white dark:bg-gray-900 border-t border-gray-100 dark:border-gray-800 shadow-xl"
                         >
-                            <div className="px-4 py-4 space-y-1">
-                                {NAV_LINKS.map((link) => (
+                            <div className="flex flex-col space-y-1">
+                                {currentNavLinks.map((link) => (
                                     <Link
                                         key={link.name}
                                         href={link.href}
@@ -166,6 +180,19 @@ export function Navbar() {
                                         {link.name}
                                     </Link>
                                 ))}
+
+                                {/* Mobile Language Toggle */}
+                                <div className="px-4 py-3 flex items-center justify-between border-b border-gray-100 dark:border-gray-800">
+                                    <span className="text-gray-700 dark:text-gray-200 font-medium">
+                                        Language
+                                    </span>
+                                    <button
+                                        onClick={toggleLanguage}
+                                        className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-sm font-bold rounded-full"
+                                    >
+                                        {language === "en" ? "English" : "हिंदी"}
+                                    </button>
+                                </div>
 
                                 {/* Mobile Theme Toggle */}
                                 <div className="px-4 py-3 flex items-center justify-between">
