@@ -21,14 +21,14 @@ export default function DestinationsPage() {
         "Hill Station",
     ];
 
-    const filtered = DESTINATIONS.filter((d) => {
+    const filtered = DESTINATIONS.filter((d: any) => {
         const matchSearch =
             d.name.toLowerCase().includes(search.toLowerCase()) ||
             d.nickname.toLowerCase().includes(search.toLowerCase());
         const matchCategory =
             category === "All" || d.category === category;
         return matchSearch && matchCategory;
-    }).sort((a, b) => {
+    }).sort((a: any, b: any) => {
         if (sortBy === "rating") return b.rating - a.rating;
         if (sortBy === "price-low") return a.price - b.price;
         if (sortBy === "price-high") return b.price - a.price;
@@ -111,7 +111,7 @@ export default function DestinationsPage() {
                         Showing <strong>{filtered.length}</strong> destinations
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {filtered.map((dest, i) => (
+                        {filtered.map((dest: any, i: any) => (
                             <motion.div
                                 key={dest.id}
                                 initial={{ opacity: 0, y: 30 }}
