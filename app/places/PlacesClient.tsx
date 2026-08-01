@@ -139,8 +139,8 @@ export function PlacesClient() {
                                     key={cat}
                                     onClick={() => setCategory(cat)}
                                     className={`px-4 py-2 rounded-full text-xs font-medium transition-all ${category === cat
-                                            ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-md"
-                                            : "border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-yellow-400 hover:text-yellow-600"
+                                        ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-md"
+                                        : "border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400 hover:border-yellow-400 hover:text-yellow-600"
                                         }`}
                                 >
                                     {cat}
@@ -245,8 +245,8 @@ export function PlacesClient() {
                                                     key={cat}
                                                     onClick={() => setCategory(cat)}
                                                     className={`px-3 py-1.5 rounded-full text-xs font-medium transition-all ${category === cat
-                                                            ? "bg-yellow-500 text-white"
-                                                            : "border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400"
+                                                        ? "bg-yellow-500 text-white"
+                                                        : "border border-gray-200 dark:border-gray-700 text-gray-500 dark:text-gray-400"
                                                         }`}
                                                 >
                                                     {cat}
@@ -401,8 +401,8 @@ export function PlacesClient() {
                                         )}
                                         <span
                                             className={`text-white text-xs font-bold px-2 py-0.5 rounded-full ${place.ticket.isFree
-                                                    ? "bg-green-500"
-                                                    : "bg-yellow-500"
+                                                ? "bg-green-500"
+                                                : "bg-yellow-500"
                                                 }`}
                                         >
                                             {place.ticket.isFree
@@ -424,8 +424,8 @@ export function PlacesClient() {
                                             )
                                         }
                                         aria-label={`${favorites.includes(place.id)
-                                                ? "Remove from"
-                                                : "Add to"
+                                            ? "Remove from"
+                                            : "Add to"
                                             } favorites`}
                                         className="absolute top-3 right-3 w-8 h-8 bg-white/20 backdrop-blur-sm rounded-full flex items-center justify-center hover:bg-white/40 transition-all"
                                     >
@@ -512,8 +512,8 @@ export function PlacesClient() {
                                     <div className="flex items-center gap-2 mb-3">
                                         <div
                                             className={`w-1.5 h-1.5 rounded-full ${place.isOpen
-                                                    ? "bg-green-500 animate-pulse"
-                                                    : "bg-red-500"
+                                                ? "bg-green-500 animate-pulse"
+                                                : "bg-red-500"
                                                 }`}
                                         />
                                         <span className="text-xs text-gray-400 dark:text-gray-500">

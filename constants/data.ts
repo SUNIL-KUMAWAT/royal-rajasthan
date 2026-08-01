@@ -2784,7 +2784,6 @@ export const CATEGORIES = [
     "Museum",
     "Adventure",
     "Festival",
-    "Shopping",
     "Spiritual",
     "UNESCO",
 ];
