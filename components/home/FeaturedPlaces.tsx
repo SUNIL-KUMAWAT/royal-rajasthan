@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import {
@@ -156,12 +157,13 @@ export function FeaturedPlaces() {
                                 >
                                     {/* Image with parallax depth */}
                                     <TiltCard maxTilt={20} className="relative h-60 overflow-hidden m-3 rounded-3xl shadow-inner transform-gpu cursor-crosshair z-10">
-                                        <div className="w-full h-full" style={{ transform: "translateZ(40px)", transformStyle: "preserve-3d" }}>
-                                            <img
+                                        <div className="w-full h-full relative" style={{ transform: "translateZ(40px)", transformStyle: "preserve-3d" }}>
+                                            <Image
                                                 src={place.images[0]}
-                                                alt={place.name}
-                                                referrerPolicy="no-referrer"
-                                                className="w-full h-full object-cover group-hover:scale-125 group-hover:rotate-3 transition-transform duration-1000 ease-out"
+                                                alt={`${place.name} - Historic heritage tourist spot in ${place.city}, Rajasthan`}
+                                                fill
+                                                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 300px"
+                                                className="object-cover group-hover:scale-125 group-hover:rotate-3 transition-transform duration-1000 ease-out"
                                             />
                                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
@@ -192,6 +194,7 @@ export function FeaturedPlaces() {
                                             {/* Favorite */}
                                             <button
                                                 onClick={() => toggleFavorite(place.id)}
+                                                aria-label={`Save ${place.name} to favorites`}
                                                 className="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md border border-white/30 rounded-full flex items-center justify-center shadow-[0_4px_12px_rgba(0,0,0,0.2)] hover:bg-white/40 hover:scale-110 transition-all z-50 cursor-pointer"
                                                 style={{ transform: "translateZ(30px)" }}
                                             >
@@ -259,7 +262,7 @@ export function FeaturedPlaces() {
                                                 </div>
                                                 <span>
                                                     {place.ticket.isFree
-                                                        ? "Free Entry"
+                                                        ? (language === 'hi' ? "निःशुल्क प्रवेश" : "Free Entry")
                                                         : `₹${place.ticket.indian}`}
                                                 </span>
                                             </div>
@@ -290,7 +293,7 @@ export function FeaturedPlaces() {
                                                     } animate-pulse shadow-[0_0_8px_currentColor]`}
                                             />
                                             <span className="text-xs font-medium text-gray-600 dark:text-gray-400">
-                                                {place.isOpen ? "Open Now" : "Closed"} <span className="mx-1 text-gray-300 dark:text-gray-600">•</span>{" "}
+                                                {place.isOpen ? (language === 'hi' ? "अभी खुला है" : "Open Now") : (language === 'hi' ? "बंद है" : "Closed")} <span className="mx-1 text-gray-300 dark:text-gray-600">•</span>{" "}
                                                 {place.timing.closedOn}
                                             </span>
                                         </div>
@@ -299,7 +302,7 @@ export function FeaturedPlaces() {
                                             href={`/places/${place.slug}`}
                                             className="mt-auto w-full flex items-center justify-center gap-2 bg-gradient-to-r from-maroon-500 to-maroon-500 text-white py-3.5 rounded-2xl text-sm font-bold shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn"
                                         >
-                                            <span>View Details</span>
+                                            <span>{language === 'hi' ? "विवरण देखें" : "View Details"}</span>
                                             <ArrowRight size={16} className="group-hover/btn:translate-x-1 transition-transform" />
                                         </Link>
                                     </div>
@@ -321,14 +324,14 @@ export function FeaturedPlaces() {
                             onClick={() => setVisibleCount((prev) => prev + 12)}
                             className="inline-flex items-center gap-2 bg-white dark:bg-gray-800 border border-gold-500 text-gold-600 dark:text-gold-400 px-8 py-4 rounded-full font-semibold hover:bg-gold-50 dark:hover:bg-gray-700 transition-all hover:scale-105 shadow-md"
                         >
-                            More
+                            {language === 'hi' ? "और दिखाएं" : "More"}
                         </button>
                     )}
                     <Link
                         href="/places"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-gold-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-gold-lg transition-all hover:scale-105"
                     >
-                        View All {PLACES.length} Places
+                        {language === 'hi' ? `सभी ${PLACES.length} स्थान देखें` : `View All ${PLACES.length} Places`}
                         <ArrowRight size={18} />
                     </Link>
                 </motion.div>

@@ -4,6 +4,22 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { Playfair_Display, Inter } from "next/font/google";
+
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  weight: ["400", "600", "700", "900"],
+  display: "swap",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+  weight: ["300", "400", "500", "600", "700"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   // ============ BASIC SEO ============
   title: {
@@ -139,13 +155,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* Google Fonts */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
-          rel="stylesheet"
-        />
 
         {/* ============ STRUCTURED DATA (JSON-LD) ============ */}
         <script
@@ -234,7 +243,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="bg-palace-white dark:bg-gray-950 transition-colors duration-300">
+      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
         <LanguageProvider>
           <ThemeProvider>
             <Navbar />

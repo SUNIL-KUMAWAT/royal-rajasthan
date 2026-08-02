@@ -1,7 +1,9 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
 
 const BENTO_EXPERIENCES = [
     {
@@ -76,6 +78,47 @@ const itemVariants = {
 };
 
 export function ExperiencesSection() {
+    const { language } = useLanguage();
+
+    const getTranslatedTitle = (title: string) => {
+        if (language !== 'hi') return title;
+        const map: Record<string, string> = {
+            "Majestic Forts": "भव्य किले",
+            "Desert Safari": "रेगिस्तानी सफारी",
+            "Royal Palaces": "शाही महल",
+            "Serene Lakes": "शांत झीलें",
+            "Wildlife Safari": "वन्यजीव सफारी",
+            "Cultural Festivals": "सांस्कृतिक उत्सव"
+        };
+        return map[title] || title;
+    };
+
+    const getTranslatedDesc = (desc: string) => {
+        if (language !== 'hi') return desc;
+        const map: Record<string, string> = {
+            "Explore magnificent Rajput forts across Rajasthan": "राजस्थान के शानदार राजपूत किलों की यात्रा करें",
+            "Experience golden dunes & camel safari": "सुनहरे टीलों और ऊंट की सवारी का अनुभव करें",
+            "Visit stunning heritage palaces": "आश्चर्यजनक विरासत महलों की यात्रा करें",
+            "Sunset boat rides at breathtaking lakes": "लुभावनी झीलों पर सूर्यास्त के समय नाव की सवारी",
+            "Tiger safaris & nature trails in reserves": "अभयारण्यों में टाइगर सफारी और प्रकृति ट्रेल्स",
+            "Vibrant folk dances & holy traditions": "जीवंत लोक नृत्य और पवित्र परंपराएं"
+        };
+        return map[desc] || desc;
+    };
+
+    const translateCount = (count: string) => {
+        if (language !== 'hi') return count;
+        const map: Record<string, string> = {
+            "5 Forts": "5 किले",
+            "1 Desert": "1 रेगिस्तान",
+            "2 Palaces": "2 महल",
+            "1 Lake": "1 झील",
+            "1 Park": "1 पार्क",
+            "Vibrant Traditions": "जीवंत परंपराएं"
+        };
+        return map[count] || count;
+    };
+
     return (
         <section className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
             {/* Background Pattern */}
@@ -95,15 +138,19 @@ export function ExperiencesSection() {
                     className="text-center mb-16"
                 >
                     <span className="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
-                        Explore By Category
+                        {language === 'hi' ? "श्रेणी के अनुसार खोजें" : "Explore By Category"}
                     </span>
                     <h2 className="font-playfair text-4xl md:text-6xl font-bold text-white mt-3 mb-6">
-                        What Do You Want to{" "}
-                        <span className="text-yellow-400">Explore?</span>
+                        {language === 'hi' ? (
+                            <>आप क्या <span className="text-yellow-400">खोजना चाहते हैं?</span></>
+                        ) : (
+                            <>What Do You Want to <span className="text-yellow-400">Explore?</span></>
+                        )}
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        Choose a category and discover the most iconic places across
-                        Rajasthan
+                        {language === 'hi'
+                            ? "एक श्रेणी चुनें और राजस्थान के सबसे प्रतिष्ठित स्थानों की खोज करें"
+                            : "Choose a category and discover the most iconic places across Rajasthan"}
                     </p>
                 </motion.div>
 
@@ -123,11 +170,12 @@ export function ExperiencesSection() {
                             className={`group relative overflow-hidden rounded-3xl border border-white/10 dark:border-gray-800 shadow-lg cursor-pointer ${exp.className}`}
                         >
                             <Link href={exp.href} className="absolute inset-0 flex flex-col justify-end">
-                                {/* Image Zoom Effect */}
-                                <img
+                                <Image
                                     src={exp.image}
-                                    alt={exp.title}
-                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    alt={`${getTranslatedTitle(exp.title)} in Rajasthan - ${getTranslatedDesc(exp.description)}`}
+                                    fill
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
+                                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                 />
 
                                 {/* Dual Gradient Overlay */}
@@ -141,20 +189,20 @@ export function ExperiencesSection() {
                                 {/* Content Details */}
                                 <div className="relative p-6 md:p-8 flex flex-col justify-end z-10 h-full">
                                     <div className="inline-flex items-center bg-gold-500/80 text-white backdrop-blur-sm px-3.5 py-1 rounded-full text-xs font-bold w-fit mb-3">
-                                        <span>{exp.count}</span>
+                                        <span>{translateCount(exp.count)}</span>
                                     </div>
                                     
                                     <h3 className="text-white font-playfair text-xl md:text-2xl font-bold leading-tight group-hover:text-gold-300 transition-colors duration-300">
-                                        {exp.title}
+                                        {getTranslatedTitle(exp.title)}
                                     </h3>
                                     
                                     <p className="text-white/70 text-xs md:text-sm mt-1.5 max-w-sm line-clamp-2 opacity-90 group-hover:text-white transition-colors duration-300">
-                                        {exp.description}
+                                        {getTranslatedDesc(exp.description)}
                                     </p>
 
                                     {/* Action Link Arrow */}
                                     <div className="mt-4 flex items-center gap-1.5 text-gold-400 font-semibold text-xs md:text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                                        <span>Explore Category</span>
+                                        <span>{language === 'hi' ? "श्रेणी देखें" : "Explore Category"}</span>
                                         <ArrowRight size={14} />
                                     </div>
                                 </div>
@@ -174,7 +222,7 @@ export function ExperiencesSection() {
                         href="/places"
                         className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105"
                     >
-                        View All Places <ArrowRight size={18} />
+                        {language === 'hi' ? "सभी स्थान देखें" : "View All Places"} <ArrowRight size={18} />
                     </Link>
                 </motion.div>
             </div>

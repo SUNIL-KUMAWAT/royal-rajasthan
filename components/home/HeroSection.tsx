@@ -1,13 +1,41 @@
 "use client";
-import { useMemo } from "react";
-
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
-import { MapPin, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 
+const IMAGES = {
+    jaipurBg: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1600&q=70",
+    jaipurLeft: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&h=800&q=70",
+    jaipurOrbit: [
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=200&h=200&q=60"
+    ],
 
+    udaipurBg: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=70",
+    udaipurLeft: "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=600&h=800&q=70",
+    udaipurOrbit: [
+        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=200&h=200&q=60"
+    ],
+
+    jaisalmerBg: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=1600&q=70",
+    jaisalmerLeft: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&h=800&q=70",
+    jaisalmerOrbit: [
+        "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=200&h=200&q=60",
+        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60"
+    ]
+};
 
 const ORBIT_RADIUS = 150;
 const ORBIT_SLIDES = [
@@ -15,46 +43,25 @@ const ORBIT_SLIDES = [
         subtitle: "Jaipur, The Pink City",
         title: "Where every\nstone tells a story",
         description: "Forts, sand and gold — five journeys, one royal thread.",
-        background: "https://picsum.photos/seed/jaipur-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/jaipur-left/700/900",
-        centerImage: "https://picsum.photos/seed/jaipur-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/jaipur-orbit-1/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-2/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-3/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-4/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-5/200/200",
-        ],
+        background: IMAGES.jaipurBg,
+        leftImage: IMAGES.jaipurLeft,
+        orbitImages: IMAGES.jaipurOrbit,
     },
     {
         subtitle: "Udaipur, City of Lakes",
         title: "Palaces that\nfloat on water",
         description: "Marble courtyards, still lakes, and sunsets in gold.",
-        background: "https://picsum.photos/seed/udaipur-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/udaipur-left/700/900",
-        centerImage: "https://picsum.photos/seed/udaipur-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/udaipur-orbit-1/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-2/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-3/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-4/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-5/200/200",
-        ],
+        background: IMAGES.udaipurBg,
+        leftImage: IMAGES.udaipurLeft,
+        orbitImages: IMAGES.udaipurOrbit,
     },
     {
         subtitle: "Jaisalmer, The Golden City",
         title: "Dunes that turn\ngold at dusk",
         description: "A living fort rising from the Thar desert sands.",
-        background: "https://picsum.photos/seed/jaisalmer-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/jaisalmer-left/700/900",
-        centerImage: "https://picsum.photos/seed/jaisalmer-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/jaisalmer-orbit-1/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-2/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-3/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-4/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-5/200/200",
-        ],
+        background: IMAGES.jaisalmerBg,
+        leftImage: IMAGES.jaisalmerLeft,
+        orbitImages: IMAGES.jaisalmerOrbit,
     },
 ];
 
@@ -63,62 +70,41 @@ const ORBIT_SLIDES_HINDI = [
         subtitle: "जयपुर, गुलाबी शहर",
         title: "जहाँ हर\nपत्थर एक कहानी कहता है",
         description: "किले, रेत और सोना — पाँच यात्राएँ, एक शाही धागा।",
-        background: "https://picsum.photos/seed/jaipur-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/jaipur-left/700/900",
-        centerImage: "https://picsum.photos/seed/jaipur-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/jaipur-orbit-1/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-2/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-3/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-4/200/200",
-            "https://picsum.photos/seed/jaipur-orbit-5/200/200",
-        ],
+        background: IMAGES.jaipurBg,
+        leftImage: IMAGES.jaipurLeft,
+        orbitImages: IMAGES.jaipurOrbit,
     },
     {
         subtitle: "उदयपुर, झीलों का शहर",
         title: "महल जो\nपानी पर तैरते हैं",
         description: "संगमरमर के प्रांगण, शांत झीलें, और सुनहरे सूर्यास्त।",
-        background: "https://picsum.photos/seed/udaipur-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/udaipur-left/700/900",
-        centerImage: "https://picsum.photos/seed/udaipur-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/udaipur-orbit-1/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-2/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-3/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-4/200/200",
-            "https://picsum.photos/seed/udaipur-orbit-5/200/200",
-        ],
+        background: IMAGES.udaipurBg,
+        leftImage: IMAGES.udaipurLeft,
+        orbitImages: IMAGES.udaipurOrbit,
     },
     {
         subtitle: "जैसलमेर, स्वर्ण शहर",
         title: "टीले जो\nगोधूलि में सुनहरे हो जाते हैं",
         description: "थार मरुस्थल की रेत से उभरता एक जीवंत किला।",
-        background: "https://picsum.photos/seed/jaisalmer-bg/1600/1000",
-        leftImage: "https://picsum.photos/seed/jaisalmer-left/700/900",
-        centerImage: "https://picsum.photos/seed/jaisalmer-center/300/300",
-        orbitImages: [
-            "https://picsum.photos/seed/jaisalmer-orbit-1/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-2/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-3/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-4/200/200",
-            "https://picsum.photos/seed/jaisalmer-orbit-5/200/200",
-        ],
+        background: IMAGES.jaisalmerBg,
+        leftImage: IMAGES.jaisalmerLeft,
+        orbitImages: IMAGES.jaisalmerOrbit,
     },
 ];
 
-const SLIDE_INTERVAL = 6000; // ms, matches original HeroSection
+const SLIDE_INTERVAL = 6000;
 
 export function HeroSection() {
     const { language } = useLanguage();
     const currentSlides = language === 'hi' ? ORBIT_SLIDES_HINDI : ORBIT_SLIDES;
 
     const [current, setCurrent] = useState(0);
-    const slide: any = currentSlides[current];
+    const slide = currentSlides[current];
 
     useEffect(() => {
         const timer = setInterval(() => {
             setCurrent((prev) => (prev + 1) % currentSlides.length);
-        }, 6000);
+        }, SLIDE_INTERVAL);
         return () => clearInterval(timer);
     }, [currentSlides.length]);
 
@@ -134,10 +120,13 @@ export function HeroSection() {
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="absolute inset-0"
                 >
-                    <img
+                    <Image
                         src={slide.background}
-                        alt=""
-                        className="h-full w-full object-cover blur-[6px] opacity-90"
+                        alt={`Beautiful heritage view of ${slide.subtitle} tourism background`}
+                        fill
+                        priority={current === 0}
+                        sizes="100vw"
+                        className="object-cover blur-[6px] opacity-90"
                     />
                 </motion.div>
             </AnimatePresence>
@@ -155,10 +144,13 @@ export function HeroSection() {
                             transition={{ duration: 0.9, ease: "easeOut" }}
                             className="relative h-[420px] w-[300px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
                         >
-                            <img
+                            <Image
                                 src={slide.leftImage}
-                                alt={slide.subtitle}
-                                className="h-full w-full object-cover"
+                                alt={`Traditional travel experience of ${slide.subtitle} in Rajasthan`}
+                                fill
+                                priority={current === 0}
+                                sizes="(max-width: 768px) 100vw, 300px"
+                                className="object-cover"
                             />
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
                         </motion.div>
@@ -222,7 +214,7 @@ export function HeroSection() {
                                 className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-gradient px-8 py-4 text-md font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
-                                    Explore Rajasthan
+                                    {language === 'hi' ? "राजस्थान की खोज करें" : "Explore Rajasthan"}
                                     <motion.span
                                         className="inline-block"
                                         animate={{ x: [0, 4, 0] }}
@@ -244,7 +236,7 @@ export function HeroSection() {
                                 href="/plan-trip"
                                 className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-8 py-4 text-md font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20 sm:w-auto"
                             >
-                                <span className="relative z-10">Plan Your Trip</span>
+                                <span className="relative z-10">{language === 'hi' ? "यात्रा की योजना बनाएं" : "Plan Your Trip"}</span>
                                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
                             </Link>
                         </motion.div>
@@ -253,26 +245,22 @@ export function HeroSection() {
 
                 {/* RIGHT: Floating SHM Images */}
                 <div className="relative hidden w-full max-w-[400px] shrink-0 sm:block md:h-[550px] md:max-w-[550px] lg:h-[650px] lg:max-w-[650px] flex-1 mt-16 md:mt-24">
-                    {slide.orbitImages.map((src: any, i: any) => {
-                        // Spread them out over the larger area to prevent too much overlap
-                        // Shifted downwards to avoid the navigation header
+                    {slide.orbitImages.map((src: string, i: number) => {
                         const staticPositions = [
-                            { top: "5%", left: "-5%" },       // 0: top-left (shifted down)
-                            { top: "15%", right: "-10%" },    // 1: top-right (shifted down)
-                            { bottom: "-5%", left: "0%" },    // 2: bottom-left
-                            { bottom: "0%", right: "0%" },    // 3: bottom-right
-                            { top: "35%", left: "25%" },      // 4: center (shifted down)
+                            { top: "5%", left: "-5%" },
+                            { top: "15%", right: "-10%" },
+                            { bottom: "-5%", left: "0%" },
+                            { bottom: "0%", right: "0%" },
+                            { top: "35%", left: "25%" },
                         ];
 
                         const pos = staticPositions[i % staticPositions.length];
 
-                        // SHM parameters with larger movement radii
                         const yOffset = i % 2 === 0 ? [0, -40, 0] : [0, 45, 0];
                         const xOffset = i % 3 === 0 ? [0, 35, 0] : [0, -35, 0];
                         const duration = 4 + (i % 3);
                         const delay = i * 0.4;
 
-                        // Significantly larger image sizes for desktop
                         const sizes = [
                             "h-32 w-32 md:h-48 md:w-48",
                             "h-40 w-40 md:h-60 md:w-60",
@@ -300,16 +288,22 @@ export function HeroSection() {
                                 }}
                             >
                                 <AnimatePresence mode="wait">
-                                    <motion.img
+                                    <motion.div
                                         key={`float-${current}-${i}`}
                                         initial={{ opacity: 0, scale: 0.8 }}
                                         animate={{ opacity: 1, scale: 1 }}
                                         exit={{ opacity: 0, scale: 0.8 }}
                                         transition={{ duration: 0.8, ease: "easeOut" }}
-                                        src={src}
-                                        alt=""
-                                        className="h-full w-full rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm"
-                                    />
+                                        className="relative w-full h-full"
+                                    >
+                                        <Image
+                                            src={src}
+                                            alt={`Visual travel details from ${slide.subtitle} tourist destination - Image ${i + 1}`}
+                                            fill
+                                            sizes="(max-width: 768px) 150px, 300px"
+                                            className="rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm"
+                                        />
+                                    </motion.div>
                                 </AnimatePresence>
                             </motion.div>
                         );
@@ -317,12 +311,13 @@ export function HeroSection() {
                 </div>
             </div>
 
-            {/* Dot indicators — same style as original HeroSection */}
+            {/* Dot indicators */}
             <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
                 {currentSlides.map((_, i) => (
                     <button
                         key={i}
                         onClick={() => setCurrent(i)}
+                        aria-label={`Go to slide ${i + 1} - ${currentSlides[i].subtitle}`}
                         className={`rounded-full transition-all duration-300 ${i === current
                             ? "h-2 w-8 bg-gold-500"
                             : "h-2 w-2 bg-white/40 hover:bg-white/70"

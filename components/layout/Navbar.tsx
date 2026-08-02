@@ -60,7 +60,7 @@ export function Navbar() {
                                         : "text-yellow-300"
                                         }`}
                                 >
-                                    Tourism
+                                    {language === 'hi' ? "पर्यटन" : "Tourism"}
                                 </div>
                             </div>
                         </Link>
@@ -142,7 +142,7 @@ export function Navbar() {
                                 href="/places"
                                 className="hidden md:flex relative overflow-hidden items-center justify-center gap-2 bg-gradient-to-r from-maroon-500 to-maroon-700 text-white px-6 py-2.5 rounded-full text-sm font-bold shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_6px_12px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_10px_20px_rgba(153,27,27,0.4)] hover:-translate-y-0.5 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/navbtn"
                             >
-                                <span className="relative z-10">Explore Places</span>
+                                <span className="relative z-10">{language === 'hi' ? "स्थानों की खोज करें" : "Explore Places"}</span>
                                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-700 ease-out group-hover/navbtn:translate-x-full" />
                             </Link>
 
@@ -153,6 +153,7 @@ export function Navbar() {
                                     : "text-white"
                                     }`}
                                 onClick={() => setIsOpen(!isOpen)}
+                                aria-label="Toggle navigation menu"
                             >
                                 {isOpen ? <X size={24} /> : <Menu size={24} />}
                             </button>
@@ -184,7 +185,7 @@ export function Navbar() {
                                 {/* Mobile Language Toggle */}
                                 <div className="px-4 py-3 flex items-center justify-between border-b border-gray-100 dark:border-gray-800">
                                     <span className="text-gray-700 dark:text-gray-200 font-medium">
-                                        Language
+                                        {language === 'hi' ? "भाषा" : "Language"}
                                     </span>
                                     <button
                                         onClick={toggleLanguage}
@@ -229,7 +230,7 @@ export function Navbar() {
                                         className="block text-center bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 rounded-full font-semibold"
                                         onClick={() => setIsOpen(false)}
                                     >
-                                        Explore All Places
+                                        {language === 'hi' ? "सभी स्थान देखें" : "Explore All Places"}
                                     </Link>
                                 </div>
                             </div>

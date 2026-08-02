@@ -39,8 +39,8 @@ const config: Config = {
                 "royal-orange": "#F97316",
             },
             fontFamily: {
-                playfair: ["Playfair Display", "serif"],
-                inter: ["Inter", "sans-serif"],
+                playfair: ["var(--font-playfair)", "serif"],
+                inter: ["var(--font-inter)", "sans-serif"],
             },
             animation: {
                 "fade-in-up": "fadeInUp 0.8s ease-out",
