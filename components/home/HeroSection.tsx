@@ -6,34 +6,34 @@ import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 
 const IMAGES = {
-    jaipurBg: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1600&q=70",
-    jaipurLeft: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=600&h=800&q=70",
+    jaipurBg: "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+    jaipurLeft: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg",
     jaipurOrbit: [
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=200&h=200&q=60"
+        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Albert_Hall_Museum_Jaipur_2015.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/b/bc/Jal_Mahal_Jaipur_2015.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Chandra_Mahal_Jaipur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/23/Jantar_Mantar_Jaipur_India.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/d/da/Gaitore_Jaipur.jpg"
     ],
 
-    udaipurBg: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1600&q=70",
-    udaipurLeft: "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=600&h=800&q=70",
+    udaipurBg: "https://upload.wikimedia.org/wikipedia/commons/c/c5/City_Palace_Udaipur.jpg",
+    udaipurLeft: "https://upload.wikimedia.org/wikipedia/commons/0/05/Lake_Pichola_with_Lake_Palace.jpg",
     udaipurOrbit: [
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=200&h=200&q=60"
+        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Jag_Mandir_Palace_Udaipur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/52/Fateh_Sagar_Lake_Udaipur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Saheliyon-ki-Bari_Udaipur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/3/30/Sajjangarh_Palace_Udaipur.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/8/87/Jagdish_Temple_Udaipur_India.jpg"
     ],
 
-    jaisalmerBg: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=1600&q=70",
-    jaisalmerLeft: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=600&h=800&q=70",
+    jaisalmerBg: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sam_Sand_Dunes%2C_Thar_Desert%2C_Rajasthan.jpg",
+    jaisalmerLeft: "https://upload.wikimedia.org/wikipedia/commons/3/30/Jaisalmer_Fort_sunset.jpg",
     jaisalmerOrbit: [
-        "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=200&h=200&q=60",
-        "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=200&h=200&q=60"
+        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Patwon_ki_Haveli_Jaisalmer.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gadisar_Lake_Jaisalmer.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Thar_desert_camel_safari.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jaisalmer_Haveli_latticework.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bada_Bagh_Jaisalmer.jpg"
     ]
 };
 
