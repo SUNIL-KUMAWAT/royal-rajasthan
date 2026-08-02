@@ -1,5 +1,5 @@
 "use client";
-import { useState, useMemo, useRef, useCallback } from "react";
+import { useState, useMemo, useRef, useCallback, useEffect } from "react";
 import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
 import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
@@ -7,6 +7,7 @@ import {
 } from "lucide-react";
 import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
+import Link from "next/link";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 const ShoppingHelpers = {
@@ -87,6 +88,70 @@ export default function ShoppingClient() {
     const [favorites, setFavorites] = useState<string[]>([]);
     const [selectedMarket, setSelectedMarket] = useState<any | null>(null);
     const [visibleCount, setVisibleCount] = useState(12);
+
+    // Helper to generate slug
+    const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+
+    // Deep linking: Open modal on mount if URL contains ?market=name-slug
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
+        const params = new URLSearchParams(window.location.search);
+        const marketSlug = params.get("market");
+        if (marketSlug) {
+            const allPlaces = currentShoppingData.districts.flatMap((district: any) =>
+                district.shoppingPlaces.map((place: any) => ({
+                    ...place,
+                    district: district.district,
+                    districtSlug: district.slug,
+                }))
+            );
+            const matchedMarket = allPlaces.find(
+                (p: any) => getSlug(p.name) === marketSlug
+            );
+            if (matchedMarket) {
+                setSelectedMarket(matchedMarket);
+            }
+        }
+    }, [currentShoppingData]);
+
+    // Dynamic SEO & URL updating when modal state changes
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
+        const defaultTitle = language === "hi" 
+            ? "राजस्थान में शॉपिंग - सर्वोत्तम बाजार और स्मृति चिन्ह | Royal Rajasthan" 
+            : "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Royal Rajasthan";
+        const defaultDesc = language === "hi"
+            ? "राजस्थान की प्रसिद्ध हस्तशिल्प, आभूषण, और कपड़ों की खरीददारी के लिए बाजारों की सूची।"
+            : "Explore the ultimate shopping guide to Rajasthan's famous bazaars.";
+
+        const descMeta = document.querySelector('meta[name="description"]');
+
+        if (selectedMarket) {
+            // Update URL query param
+            const slug = getSlug(selectedMarket.name);
+            window.history.replaceState(null, "", `?market=${slug}`);
+
+            // Update page Title and Meta Description
+            document.title = selectedMarket.seo?.title || `${selectedMarket.name} - Shopping in ${selectedMarket.district}`;
+            if (descMeta) {
+                descMeta.setAttribute("content", selectedMarket.seo?.description || selectedMarket.description);
+            }
+        } else {
+            // Restore URL query param
+            const params = new URLSearchParams(window.location.search);
+            if (params.has("market")) {
+                window.history.replaceState(null, "", window.location.pathname);
+            }
+
+            // Restore original Meta
+            document.title = defaultTitle;
+            if (descMeta) {
+                descMeta.setAttribute("content", defaultDesc);
+            }
+        }
+    }, [selectedMarket, language]);
 
     const popularDistricts = ["All", "Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Bikaner", "Ajmer", "Pushkar"];
 
@@ -397,15 +462,14 @@ export default function ShoppingClient() {
                                                             {place.timings.split("–")[0] || place.timings.split("-")[0]}
                                                         </span>
                                                     </div>
-                                                    <motion.button
-                                                        whileHover={{ scale: 1.06 }} whileTap={{ scale: 0.94 }}
-                                                        onClick={() => setSelectedMarket(place)}
+                                                    <Link
+                                                        href={`/shopping/${getSlug(place.name)}`}
                                                         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl font-semibold text-xs transition-all duration-250
                                                             bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-500 hover:text-white hover:border-amber-500
                                                             dark:bg-amber-500/10 dark:text-amber-400 dark:border-transparent dark:hover:bg-amber-500 dark:hover:text-white"
                                                     >
                                                         Details <ArrowRight size={12} />
-                                                    </motion.button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>

@@ -1,6 +1,5 @@
-// app/places/PlacesClient.tsx
 "use client";
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import {
@@ -27,8 +26,14 @@ export function PlacesClient() {
     const [entryType, setEntryType] = useState("All");
     const [favorites, setFavorites] = useState<number[]>([]);
     const [showFilters, setShowFilters] = useState(false);
+    const [visibleCount, setVisibleCount] = useState(12);
 
     const { language } = useLanguage();
+
+    // Reset pagination when any filter changes
+    useEffect(() => {
+        setVisibleCount(12);
+    }, [search, category, city, sortBy, entryType]);
     const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
     const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
     const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
@@ -65,6 +70,10 @@ export function PlacesClient() {
             return (b.isFeatured ? 1 : 0) - (a.isFeatured ? 1 : 0);
         });
     }, [activePlaces, search, category, city, sortBy, entryType]);
+
+    const visiblePlaces = useMemo(() => {
+        return filtered.slice(0, visibleCount);
+    }, [filtered, visibleCount]);
 
     const clearFilters = () => {
         setSearch("");
@@ -381,7 +390,7 @@ export function PlacesClient() {
 
                     {/* Places Grid */}
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {filtered.map((place, i) => (
+                        {visiblePlaces.map((place, i) => (
                             <motion.div
                                 key={place.id}
                                 initial={{ opacity: 0, y: 30 }}
@@ -550,6 +559,38 @@ export function PlacesClient() {
                             </motion.div>
                         ))}
                     </div>
+
+                    {/* Load More Places Button */}
+                    {visibleCount < filtered.length && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 15 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            className="flex flex-col items-center gap-4 mt-12 mb-8"
+                        >
+                            <p className="text-sm text-gray-400 dark:text-gray-500">
+                                {language === "hi" 
+                                    ? `${filtered.length} स्थानों में से ${visiblePlaces.length} दिखाई दे रहे हैं`
+                                    : `Showing ${visiblePlaces.length} of ${filtered.length} places`}
+                            </p>
+                            <motion.button
+                                whileHover={{ scale: 1.04 }}
+                                whileTap={{ scale: 0.96 }}
+                                onClick={() => setVisibleCount((prev) => prev + 12)}
+                                className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300
+                                    bg-white dark:bg-gray-800 border-2 border-amber-400 dark:border-amber-500
+                                    text-amber-600 dark:text-amber-400
+                                    hover:bg-amber-500 hover:text-white hover:border-amber-500
+                                    dark:hover:bg-amber-500 dark:hover:text-white
+                                    shadow-md hover:shadow-amber-400/30 dark:shadow-none"
+                            >
+                                <Star size={16} className="fill-current" />
+                                {language === "hi" ? "और स्थान लोड करें" : "Load More Places"}
+                                <span className="bg-amber-100 dark:bg-amber-500/20 text-amber-700 dark:text-amber-300 px-2 py-0.5 rounded-full text-xs font-bold">
+                                    +{Math.min(12, filtered.length - visibleCount)} more
+                                </span>
+                            </motion.button>
+                        </motion.div>
+                    )}
 
                     {/* No Results State */}
                     {filtered.length === 0 && (

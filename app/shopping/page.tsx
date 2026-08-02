@@ -1,11 +1,12 @@
 // app/shopping/page.tsx
 import type { Metadata } from "next";
 import ShoppingClient from "./ShoppingClient";
+import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 
 export const metadata: Metadata = {
     title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Royal Rajasthan",
     description:
-        "Explore the ultimate shopping guide to Rajasthan. Discover Johari Bazaar in Jaipur, Hathi Pol in Udaipur, Sardar Market in Jodhpur, and buy authentic Kundan jewelry, block-prints, mojaris & spices.",
+        "Explore the ultimate shopping guide to Rajasthan. Discover Johari Bazaar in Jaipur, Bapu Bazaar, Hathi Pol in Udaipur, Sardar Market in Jodhpur, and buy authentic Kundan jewelry, block-prints, mojaris & spices.",
     keywords: [
         "shopping in rajasthan",
         "rajasthan markets",
@@ -143,6 +144,35 @@ export default function ShoppingPage() {
         ],
     };
 
+    // Dynamically build ItemList for all shopping places to optimize Search Engine crawling
+    const allShoppingPlaces = RAJASTHAN_SHOPPING.districts.flatMap((d) => 
+        d.shoppingPlaces.map((p) => ({
+            "@type": "LocalBusiness",
+            "name": p.name,
+            "description": p.description,
+            "category": p.type,
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": d.district,
+                "addressRegion": "Rajasthan",
+                "addressCountry": "IN"
+            },
+            "priceRange": p.priceRange
+        }))
+    );
+
+    const marketListSchema = {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Famous Shopping Markets and Bazaars in Rajasthan",
+        "numberOfItems": allShoppingPlaces.length,
+        "itemListElement": allShoppingPlaces.map((place, idx) => ({
+            "@type": "ListItem",
+            "position": idx + 1,
+            "item": place
+        }))
+    };
+
     return (
         <>
             {/* JSON-LD Schemas */}
@@ -162,6 +192,12 @@ export default function ShoppingPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
                     __html: JSON.stringify(faqSchema),
+                }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(marketListSchema),
                 }}
             />
 
