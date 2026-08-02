@@ -3063,5 +3063,10507 @@ export const PLACES_HINDI: Place[] = [
         "builtBy": "King Chanda",
         "architecture": "प्राचीन बावड़ी वास्तुकला",
         "significance": "भारत की सबसे गहरी और सबसे खूबसूरत बावड़ियों में से एक"
+    },
+    {
+        id: 32,
+        name: "अजमेर शरीफ दरगाह",
+        slug: "ajmer-sharif-dargah",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "सूफी दरगाह",
+        description: "अजमेर शरीफ दरगाह सूफी संत ख्वाजा मोइनुद्दीन चिश्ती की पवित्र दरगाह है। यह भारत में सबसे प्रतिष्ठित धार्मिक स्थलों में से एक है, जहां सभी धर्मों के लाखों श्रद्धालु मन्नत मांगने आते हैं।",
+        history: `
+          <p><strong>अजमेर शरीफ दरगाह</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सूफी दरगाह के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अजमेर शरीफ दरगाह क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ajmer%20Sharif%20Dargah",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 33,
+        name: "भानगढ़ किला",
+        slug: "bhangarh-fort",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "खंडहर एवं डरावना स्थान",
+        description: "भानगढ़ किला 17वीं सदी का एक ऐतिहासिक किला है जिसे भारत का सबसे प्रेतबाधित (Haunted) स्थान माना जाता है। सरिस्का टाइगर रिजर्व की सीमा पर स्थित इस किले में मंदिरों, महलों और बाजारों के खूबसूरत खंडहर हैं।",
+        history: `
+          <p><strong>भानगढ़ किला</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख खंडहर एवं डरावना स्थान के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "भानगढ़ किला क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhangarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 34,
+        name: "कुलधरा गाँव",
+        slug: "kuldhara-village",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "उजाड़ भूतिया गाँव",
+        description: "कुलधरा जैसलमेर के पास एक सुनसान और उजाड़ गाँव है। 13वीं शताब्दी में पालीवाल ब्राह्मणों द्वारा बसाया गया यह गाँव 19वीं शताब्दी में रहस्यमयी परिस्थितियों में रातों-रात खाली हो गया था और तब से खाली पड़ा है।",
+        history: `
+          <p><strong>कुलधरा गाँव</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख उजाड़ भूतिया गाँव के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कुलधरा गाँव क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kuldhara%20Village",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 35,
+        name: "तारागढ़ किला बूंदी",
+        slug: "taragarh-fort-bundi",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "पहाड़ी किला",
+        description: "तारागढ़ किला (स्टार फोर्ट) बूंदी में एक विशाल पहाड़ी किला है। अपनी विशाल बुर्जों, सुरंगों और जल जलाशयों के लिए प्रसिद्ध यह किला बूंदी शहर का बेहद खूबसूरत नजारा पेश करता है।",
+        history: `
+          <p><strong>तारागढ़ किला बूंदी</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी किला के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "तारागढ़ किला बूंदी क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Taragarh%20Fort%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 36,
+        name: "नक्की झील",
+        slug: "nakki-lake",
+        city: "माउंट आबू",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "प्राकृतिक मीठे पानी की झील",
+        description: "नक्की झील माउंट आबू हिल स्टेशन की एक बेहद सुंदर प्राकृतिक झील है। चारों ओर हरी-भरी पहाड़ियों और अनोखी चट्टानों से घिरी इस झील को स्थानीय गरासिया जनजाति बेहद पवित्र मानती है।",
+        history: `
+          <p><strong>नक्की झील</strong> माउंट आबू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राकृतिक मीठे पानी की झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नक्की झील क्षेत्र, माउंट आबू",
+            city: "माउंट आबू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nakki%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "माउंट आबू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "माउंट आबू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 37,
+        name: "बिड़ला मंदिर जयपुर",
+        slug: "birla-mandir-jaipur",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "मंदिर",
+        subcategory: "आधुनिक सफेद संगमरमर मंदिर",
+        description: "बिड़ला मंदिर (लक्ष्मी नारायण मंदिर) शुद्ध सफेद मकराना संगमरमर से बना एक भव्य हिंदू मंदिर है। मोती डूंगरी पहाड़ी की तलहटी में स्थित यह मंदिर अपनी शांति, कांच के भित्तिचित्रों और सुंदर कलाकृतियों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>बिड़ला मंदिर जयपुर</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख आधुनिक सफेद संगमरमर मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बिड़ला मंदिर जयपुर क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Birla%20Mandir%20Jaipur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "मंदिर",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 38,
+        name: "जयसमंद झील",
+        slug: "jaisamand-lake",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "कृत्रिम मीठे पानी की झील",
+        description: "जयसमंद झील (ढेबर झील) एशिया की दूसरी सबसे बड़ी कृत्रिम झील है। 17वीं शताब्दी में निर्मित, इस झील में विशाल संगमरमर का बांध, सुंदर छतरियां, एक वन्यजीव अभ्यारण्य और ग्रीष्मकालीन महल मौजूद हैं।",
+        history: `
+          <p><strong>जयसमंद झील</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कृत्रिम मीठे पानी की झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "जयसमंद झील क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jaisamand%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 39,
+        name: "रणथंभौर किला",
+        slug: "ranthambore-fort",
+        city: "सवाई माधोपुर",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "पहाड़ी किला",
+        description: "रणथंभौर राष्ट्रीय उद्यान के अंदर स्थित एक राजसी यूनेस्को विश्व धरोहर पहाड़ी किला, जो अपने मंदिरों और समृद्ध ऐतिहासिक युद्धों के लिए जाना जाता है।",
+        history: `
+          <p><strong>रणथंभौर किला</strong> सवाई माधोपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी किला के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "रणथंभौर किला क्षेत्र, सवाई माधोपुर",
+            city: "सवाई माधोपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ranthambore%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सवाई माधोपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सवाई माधोपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sawai Madhopur"
+    },
+    {
+        id: 40,
+        name: "डीग महल",
+        slug: "deeg-palace",
+        city: "डीग",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "उद्यान महल",
+        description: "जाट शासकों द्वारा निर्मित अपने भव्य मुगल शैली के बगीचों, सुंदर फव्वारों और शानदार वास्तुकला के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>डीग महल</strong> डीग की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख उद्यान महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "डीग महल क्षेत्र, डीग",
+            city: "डीग",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Deeg%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डीग स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डीग केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Deeg"
+    },
+    {
+        id: 41,
+        name: "नीमराना किला पैलेस",
+        slug: "neemrana-fort-palace",
+        city: "नीमराना",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "विरासत होटल किला",
+        description: "एक शानदार 15वीं सदी का किला महल जिसे एक लक्जरी हेरिटेज होटल में बदल दिया गया है, जो जिप-लाइनिंग और मनोरम दृश्य प्रदान करता है।",
+        history: `
+          <p><strong>नीमराना किला पैलेस</strong> नीमराना की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत होटल किला के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नीमराना किला पैलेस क्षेत्र, नीमराना",
+            city: "नीमराना",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Neemrana%20Fort%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "नीमराना स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "नीमराना केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Neemrana"
+    },
+    {
+        id: 42,
+        name: "कालीबंगा संग्रहालय",
+        slug: "kalibangan-museum",
+        city: "हनुमानगढ़",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "पुरातात्विक स्थल",
+        description: "सिंधु घाटी सभ्यता का एक प्राचीन स्थल जिसमें पूर्व-हड़प्पा और हड़प्पा काल के अवशेष, मिट्टी के बर्तन और कृषि खोज शामिल हैं।",
+        history: `
+          <p><strong>कालीबंगा संग्रहालय</strong> हनुमानगढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पुरातात्विक स्थल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कालीबंगा संग्रहालय क्षेत्र, हनुमानगढ़",
+            city: "हनुमानगढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kalibangan%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "हनुमानगढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "हनुमानगढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Hanumangarh"
+    },
+    {
+        id: 43,
+        name: "सरिस्का राष्ट्रीय उद्यान",
+        slug: "sariska-national-park",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "बाघ अभयारण्य",
+        description: "अरावली पहाड़ियों में बसा एक प्रसिद्ध बाघ अभयारण्य, जो तेंदुओं, जंगली सूअरों और ऐतिहासिक खंडहरों का घर है।",
+        history: `
+          <p><strong>सरिस्का राष्ट्रीय उद्यान</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बाघ अभयारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सरिस्का राष्ट्रीय उद्यान क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sariska%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 44,
+        name: "गर्भजी जलप्रपात",
+        slug: "garbhaji-waterfall",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "जलप्रपात",
+        description: "खड़ी चट्टानी चट्टानों से घिरा एक सुंदर प्राकृतिक जलप्रपात, जो अलवर के पास ट्रेकिंग और पिकनिक के लिए लोकप्रिय है।",
+        history: `
+          <p><strong>गर्भजी जलप्रपात</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जलप्रपात के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गर्भजी जलप्रपात क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garbhaji%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 45,
+        name: "सांभर नमक झील",
+        slug: "sambhar-salt-lake",
+        city: "सांभर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "नमक की झील",
+        description: "भारत की सबसे बड़ी अंतर्देशीय नमक झील, जो नमक उत्पादन, सुंदर सफेद क्षितिज और प्रवासी फ्लेमिंगो के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>सांभर नमक झील</strong> सांभर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख नमक की झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सांभर नमक झील क्षेत्र, सांभर",
+            city: "सांभर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sambhar%20Salt%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सांभर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सांभर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sambhar"
+    },
+    {
+        id: 46,
+        name: "खिमसर किला",
+        slug: "khimsar-fort",
+        city: "नागौर",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "विरासत किला",
+        description: "थार मरुस्थल के किनारे स्थित एक खूबसूरत 16वीं सदी का किला, जो रेत के टीलों की सफारी और शाही आतिथ्य प्रदान करता है।",
+        history: `
+          <p><strong>खिमसर किला</strong> नागौर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत किला के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "खिमसर किला क्षेत्र, नागौर",
+            city: "नागौर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khimsar%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "नागौर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "नागौर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Nagaur"
+    },
+    {
+        id: 47,
+        name: "सामोद पैलेस",
+        slug: "samode-palace",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "विरासत महल",
+        description: "जयपुर के पास एक सुंदर विरासत महल, जो अपने दर्पण से सजे हॉल (शीश महल) और दरबारी वास्तुकला के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>सामोद पैलेस</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सामोद पैलेस क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Samode%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 48,
+        name: "रामबाग पैलेस",
+        slug: "rambagh-palace",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "लक्जरी विरासत होटल",
+        description: "'जयपुर का आभूषण' के रूप में जाना जाने वाला, महाराजा का यह पूर्व शाही निवास अब दुनिया के सबसे बेहतरीन लक्जरी होटलों में से एक है।",
+        history: `
+          <p><strong>रामबाग पैलेस</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख लक्जरी विरासत होटल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "रामबाग पैलेस क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rambagh%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 49,
+        name: "सिसोदिया रानी का बाग",
+        slug: "sisodia-rani-ka-bagh",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "शाही उद्यान",
+        description: "राधा-कृष्ण की प्रेम कहानियों को दर्शाने वाले पानी के फव्वारों, मंडपों और सुंदर भित्तिचित्रों से सजाया गया एक सीढ़ीदार शाही उद्यान।",
+        history: `
+          <p><strong>सिसोदिया रानी का बाग</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही उद्यान के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सिसोदिया रानी का बाग क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sisodia%20Rani%20Ka%20Bagh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 50,
+        name: "पांडु पोल मंदिर",
+        slug: "pandu-pol-temple",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "हनुमान मंदिर",
+        description: "सरिस्का टाइगर रिजर्व के अंदर एक प्राचीन मंदिर, जो महाभारत महाकाव्य के पांडवों से जुड़ा हुआ है।",
+        history: `
+          <p><strong>पांडु पोल मंदिर</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख हनुमान मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "पांडु पोल मंदिर क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Pandu%20Pol%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 51,
+        name: "बगरू ब्लॉक प्रिंटिंग गाँव",
+        slug: "bagru-block-printing-village",
+        city: "बगरू",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "हस्तशिल्प गाँव",
+        description: "प्राकृतिक रंगों और सदियों पुराने लकड़ी के स्टैम्प पैटर्न का उपयोग करने वाला एक विश्व प्रसिद्ध पारंपरिक हस्तशिल्प ब्लॉक-प्रिंटिंग केंद्र।",
+        history: `
+          <p><strong>बगरू ब्लॉक प्रिंटिंग गाँव</strong> बगरू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख हस्तशिल्प गाँव के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बगरू ब्लॉक प्रिंटिंग गाँव क्षेत्र, बगरू",
+            city: "बगरू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bagru%20Block%20Printing%20Village",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बगरू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बगरू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bagru"
+    },
+    {
+        id: 52,
+        name: "किशनगढ़ डम्पिंग यार्ड",
+        slug: "kishangarh-dumping-yard",
+        city: "किशनगढ़",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "सफेद मरुस्थल स्थल",
+        description: "किशनगढ़ के पास मार्बल स्लरी जमा होने से बने बर्फ जैसे सफेद परिदृश्य वाला एक लोकप्रिय फोटोग्राफी स्थल।",
+        history: `
+          <p><strong>किशनगढ़ डम्पिंग यार्ड</strong> किशनगढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सफेद मरुस्थल स्थल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "किशनगढ़ डम्पिंग यार्ड क्षेत्र, किशनगढ़",
+            city: "किशनगढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kishangarh%20Dumping%20Yard",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "किशनगढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "किशनगढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kishangarh"
+    },
+    {
+        id: 53,
+        name: "त्रिनेत्र गणेश मंदिर",
+        slug: "trinetra-ganesh-temple",
+        city: "सवाई माधोपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "गणेश मंदिर",
+        description: "रणथंभौर किले के अंदर एक अत्यधिक पूजनीय मंदिर जिसमें भगवान गणेश की तीन आंखों वाली मूर्ति है।",
+        history: `
+          <p><strong>त्रिनेत्र गणेश मंदिर</strong> सवाई माधोपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख गणेश मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "त्रिनेत्र गणेश मंदिर क्षेत्र, सवाई माधोपुर",
+            city: "सवाई माधोपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Trinetra%20Ganesh%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सवाई माधोपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सवाई माधोपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sawai Madhopur"
+    },
+    {
+        id: 54,
+        name: "फतेह प्रकाश पैलेस",
+        slug: "fateh-prakash-palace",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "विरासत महल होटल",
+        description: "उदयपुर के सिटी पैलेस परिसर के अंदर स्थित, जो अपनी शानदार क्रिस्टल गैलरी और झील के दृश्यों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>फतेह प्रकाश पैलेस</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत महल होटल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "फतेह प्रकाश पैलेस क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Fateh%20Prakash%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 55,
+        name: "हल्दीघाटी दर्रा",
+        slug: "haldighati-pass",
+        city: "राजसमंद",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऐतिहासिक युद्धभूमि",
+        description: "हल्दी जैसी पीली मिट्टी वाला एक संकरा पहाड़ी दर्रा, जो महाराणा प्रताप और अकबर की सेना के बीच युद्ध के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>हल्दीघाटी दर्रा</strong> राजसमंद की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक युद्धभूमि के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "हल्दीघाटी दर्रा क्षेत्र, राजसमंद",
+            city: "राजसमंद",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Haldighati%20Pass",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "राजसमंद स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "राजसमंद केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rajsamand"
+    },
+    {
+        id: 56,
+        name: "विंटेज कार संग्रहालय",
+        slug: "vintage-car-museum",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऑटोमोबाइल संग्रहालय",
+        description: "मेवाड़ महाराणाओं के स्वामित्व वाली क्लासिक शाही विंटेज कारों का एक दुर्लभ संग्रह यहाँ प्रदर्शित है।",
+        history: `
+          <p><strong>विंटेज कार संग्रहालय</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऑटोमोबाइल संग्रहालय के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "विंटेज कार संग्रहालय क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vintage%20Car%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 57,
+        name: "घंटाघर जोधपुर",
+        slug: "clock-tower-jodhpur",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऐतिहासिक घंटाघर",
+        description: "जोधपुर में एक प्रमुख मील का पत्थर जो हलचल भरे सरदार मार्केट से घिरा हुआ है, जो मसालों और स्थानीय खरीदारी के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>घंटाघर जोधपुर</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक घंटाघर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "घंटाघर जोधपुर क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Clock%20Tower%20Jodhpur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 58,
+        name: "नवलगढ़ हवेलियाँ",
+        slug: "nawalgarh-havelis",
+        city: "नवलगढ़",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "चित्रित हवेलियाँ",
+        description: "शेखावाटी के सुनहरे शहर के रूप में जाना जाता है, जो ऐतिहासिक भव्य हवेलियों पर खूबसूरती से चित्रित भित्तिचित्रों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>नवलगढ़ हवेलियाँ</strong> नवलगढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख चित्रित हवेलियाँ के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नवलगढ़ हवेलियाँ क्षेत्र, नवलगढ़",
+            city: "नवलगढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nawalgarh%20Havelis",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "नवलगढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "नवलगढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Nawalgarh"
+    },
+    {
+        id: 59,
+        name: "एकलिंगजी मंदिर",
+        slug: "eklingji-temple",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "शिव मंदिर",
+        description: "भगवान एकलिंगजी (मेवाड़ के शासक देवता) को समर्पित एक प्राचीन और अत्यधिक पूजनीय हिंदू मंदिर परिसर।",
+        history: `
+          <p><strong>एकलिंगजी मंदिर</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शिव मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "एकलिंगजी मंदिर क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Eklingji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 60,
+        name: "बागोर की हवेली",
+        slug: "bagore-ki-haveli",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "संग्रहालय एवं सांस्कृतिक केंद्र",
+        description: "एक 18वीं सदी की हवेली जो शानदार लोक नृत्य शो और विरासत संग्रहालय दीर्घाओं की मेजबानी करती है।",
+        history: `
+          <p><strong>बागोर की हवेली</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख संग्रहालय एवं सांस्कृतिक केंद्र के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बागोर की हवेली क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bagore%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 61,
+        name: "तूरजी का झालरा",
+        slug: "toorji-ka-jhalra",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऐतिहासिक बावड़ी",
+        description: "एक खूबसूरती से पुनर्स्थापित 18वीं सदी की बावड़ी जो जटिल राजपूत जल वास्तुकला को प्रदर्शित करती है।",
+        history: `
+          <p><strong>तूरजी का झालरा</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक बावड़ी के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "तूरजी का झालरा क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Toorji%20Ka%20Jhalra",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 62,
+        name: "सलीम सिंह की हवेली",
+        slug: "salim-singh-ki-haveli",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऐतिहासिक हवेली",
+        description: "जैसलमेर में एक विशिष्ट रूप से डिज़ाइन की गई हवेली जिसकी छत मोर के आकार की और नक्काशी पत्थर की है।",
+        history: `
+          <p><strong>सलीम सिंह की हवेली</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक हवेली के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सलीम सिंह की हवेली क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Salim%20Singh%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 63,
+        name: "नथमल की हवेली",
+        slug: "nathmal-ki-haveli",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "ऐतिहासिक हवेली",
+        description: "दो वास्तुकार भाइयों द्वारा तराशी गई प्रसिद्ध जैसलमेर हवेली, जिसमें सूक्ष्म अंतरों के साथ समान नक्काशी है।",
+        history: `
+          <p><strong>नथमल की हवेली</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक हवेली के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नथमल की हवेली क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nathmal%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 64,
+        name: "खूरी सैंड ड्यून्स",
+        slug: "khuri-sand-dunes",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "रेगिस्तानी टीले",
+        description: "जैसलमेर के पास शांत रेत के टीले जो पारंपरिक मिट्टी के घरों में रहने, ऊंत की सवारी और स्पष्ट रेगिस्तानी तारों वाली रातें प्रदान करते हैं।",
+        history: `
+          <p><strong>खूरी सैंड ड्यून्स</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख रेगिस्तानी टीले के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "खूरी सैंड ड्यून्स क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khuri%20Sand%20Dunes",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 65,
+        name: "व्यास छतरी",
+        slug: "vyas-chhatri",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "छतरियां स्मारक",
+        description: "महर्षि व्यास को समर्पित सुनहरे बलुआ पत्थर की छतरियों का एक समूह, जो शानदार सूर्यास्त की तस्वीरों के लिए लोकप्रिय है।",
+        history: `
+          <p><strong>व्यास छतरी</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख छतरियां स्मारक के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "व्यास छतरी क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vyas%20Chhatri",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 66,
+        name: "पोखरण किला",
+        slug: "pokhran-fort",
+        city: "पोखरण",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "विरासत किला",
+        description: "मारवाड़ कबीले का 14वीं शताब्दी का लाल बलुआ पत्थर का किला, जिसमें एक विरासत संग्रहालय और मंदिर है।",
+        history: `
+          <p><strong>पोखरण किला</strong> पोखरण की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत किला के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "पोखरण किला क्षेत्र, पोखरण",
+            city: "पोखरण",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Pokhran%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "पोखरण स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "पोखरण केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pokhran"
+    },
+    {
+        id: 67,
+        name: "डेजर्ट नेशनल पार्क",
+        slug: "desert-national-park",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "राष्ट्रीय उद्यान",
+        description: "भारत के सबसे बड़े राष्ट्रीय उद्यानों में से एक, जो थार मरुस्थल के वन्यजीवों और लुप्तप्राय गोडावण (Great Indian Bustard) को प्रदर्शित करता है।",
+        history: `
+          <p><strong>डेजर्ट नेशनल पार्क</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख राष्ट्रीय उद्यान के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "डेजर्ट नेशनल पार्क क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Desert%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 68,
+        name: "बड़ा बाग",
+        slug: "bada-bagh",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "शाही छतरियां",
+        description: "एक ऐतिहासिक उद्यान परिसर जिसमें जैसलमेर के शाही परिवार के नक्काशीदार सुनहरे बलुआ पत्थर की छतरियां हैं।",
+        history: `
+          <p><strong>बड़ा बाग</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही छतरियां के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बड़ा बाग क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bada%20Bagh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 69,
+        name: "तनोट माता मंदिर",
+        slug: "tanot-mata-temple",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "सीमा मंदिर",
+        description: "बीएसएफ द्वारा प्रबंधित एक प्रसिद्ध सीमा मंदिर, जहां 1965 के युद्ध में गिराए गए बम चमत्कारिक रूप से नहीं फटे थे।",
+        history: `
+          <p><strong>तनोट माता मंदिर</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सीमा मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "तनोट माता मंदिर क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tanot%20Mata%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 70,
+        name: "आना सागर झील",
+        slug: "ana-sagar-lake",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "कृत्रिम झील",
+        description: "अजमेर में एक सुंदर कृत्रिम झील जिसमें मुगल सम्राट शाहजहाँ द्वारा निर्मित सुंदर संगमरमर के मंडप (बारादरी) हैं।",
+        history: `
+          <p><strong>आना सागर झील</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कृत्रिम झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "आना सागर झील क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ana%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 71,
+        name: "बालसमंद झील",
+        slug: "balsamand-lake",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "ऐतिहासिक महल झील",
+        description: "हरे-भरे बगीचों और एक भव्य लाल बलुआ पत्थर के महल होटल से घिरी 12वीं शताब्दी की एक कृत्रिम झील।",
+        history: `
+          <p><strong>बालसमंद झील</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक महल झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बालसमंद झील क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Balsamand%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 72,
+        name: "सावित्री मंदिर",
+        slug: "savitri-temple",
+        city: "पुष्कर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पहाड़ी मंदिर",
+        description: "रत्नागिरी पहाड़ी की चोटी पर स्थित, देवी सावित्री को समर्पित यह मंदिर पुष्कर के सुंदर सूर्योदय और रोपवे के दृश्य प्रदान करता है।",
+        history: `
+          <p><strong>सावित्री मंदिर</strong> पुष्कर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सावित्री मंदिर क्षेत्र, पुष्कर",
+            city: "पुष्कर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Savitri%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "पुष्कर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "पुष्कर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pushkar"
+    },
+    {
+        id: 73,
+        name: "अकबर का किला और संग्रहालय",
+        slug: "akbar-palace-and-museum",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "किला संग्रहालय",
+        description: "1570 में सम्राट अकबर द्वारा निर्मित, इस किले में मुगल हथियारों, मूर्तियों और कला का एक समृद्ध संग्रहालय है।",
+        history: `
+          <p><strong>अकबर का किला और संग्रहालय</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख किला संग्रहालय के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अकबर का किला और संग्रहालय क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Akbar%20Palace%20and%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 74,
+        name: "नासियां जैन मंदिर",
+        slug: "nasiyan-jain-temple",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "स्वर्ण मंदिर",
+        description: "इसे लाल मंदिर के नाम से भी जाना जाता है, जो जैन ब्रह्मांड विज्ञान के सुनहरे चित्रण को दर्शाने वाले अपने भव्य दो मंजिला हॉल के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>नासियां जैन मंदिर</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख स्वर्ण मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नासियां जैन मंदिर क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nasiyan%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 75,
+        name: "नरेली जैन मंदिर",
+        slug: "nareli-jain-temple",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "आधुनिक जैन मंदिर",
+        description: "गुलाबी बलुआ पत्थर से बना एक सुंदर आधुनिक जैन मंदिर परिसर, जो अजमेर के बाहरी इलाके में स्थित है।",
+        history: `
+          <p><strong>नरेली जैन मंदिर</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख आधुनिक जैन मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नरेली जैन मंदिर क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nareli%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 76,
+        name: "अढ़ाई दिन का झोंपड़ा",
+        slug: "adhai-din-ka-jhopra",
+        city: "अजमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "प्राचीन मस्जिद अवशेष",
+        description: "1192 में एक संस्कृत कॉलेज से परिवर्तित अजमेर की एक प्राचीन मस्जिद, जिसमें अत्यधिक जटिल मेहराबदार स्क्रीन हैं।",
+        history: `
+          <p><strong>अढ़ाई दिन का झोंपड़ा</strong> अजमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन मस्जिद अवशेष के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अढ़ाई दिन का झोंपड़ा क्षेत्र, अजमेर",
+            city: "अजमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Adhai%20Din%20Ka%20Jhopra",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अजमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अजमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 77,
+        name: "सालासर बालाजी मंदिर",
+        slug: "salasar-balaji-temple",
+        city: "सीकर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "हनुमान मंदिर",
+        description: "भगवान हनुमान को समर्पित एक अत्यधिक पवित्र and लोकप्रिय तीर्थ स्थल, जिसमें दाढ़ी वाले हनुमानजी की एक अनूठी मूर्ति है।",
+        history: `
+          <p><strong>सालासर बालाजी मंदिर</strong> सीकर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख हनुमान मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सालासर बालाजी मंदिर क्षेत्र, सीकर",
+            city: "सीकर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Salasar%20Balaji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सीकर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सीकर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 78,
+        name: "सिलीसेढ़ झील",
+        slug: "siliserh-lake",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "सुंदर झील",
+        description: "अरावली पहाड़ियों से घिरी एक सुंदर, शांत झील, जिसमें एक ऐतिहासिक झील महल है जिसे हेरिटेज होटल में बदला गया है।",
+        history: `
+          <p><strong>सिलीसेढ़ झील</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सुंदर झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सिलीसेढ़ झील क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Siliserh%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 79,
+        name: "गैब सागर झील",
+        slug: "gaib-sagar-lake",
+        city: "डूंगरपुर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "ऐतिहासिक झील",
+        description: "डूंगरपुर की एक प्रसिद्ध झील जो अपने अद्वितीय मंदिरों, महल के खंडहरों और यहाँ आने वाले विभिन्न पक्षियों के लिए जानी जाती है।",
+        history: `
+          <p><strong>गैब सागर झील</strong> डूंगरपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गैब सागर झील क्षेत्र, डूंगरपुर",
+            city: "डूंगरपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gaib%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डूंगरपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डूंगरपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 80,
+        name: "बेणेश्वर धाम",
+        slug: "beneshwar-dham",
+        city: "डूंगरपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पवित्र तीर्थस्थल",
+        description: "सोम, माही और जाखम नदियों के संगम पर स्थित एक अत्यधिक पूजनीय डेल्टा स्थल, जो अपने आदिवासी मेले के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>बेणेश्वर धाम</strong> डूंगरपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पवित्र तीर्थस्थल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बेणेश्वर धाम क्षेत्र, डूंगरपुर",
+            city: "डूंगरपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Beneshwar%20Dham",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डूंगरपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डूंगरपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 81,
+        name: "देव सोमनाथ मंदिर",
+        slug: "deo-somnath-temple",
+        city: "डूंगरपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "प्राचीन मंदिर",
+        description: "भगवान शिव को समर्पित 12वीं सदी का एक अनूठा पत्थर का मंदिर, जो बिना किसी गारे या सीमेंट के केवल पत्थरों से बना है।",
+        history: `
+          <p><strong>देव सोमनाथ मंदिर</strong> डूंगरपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "देव सोमनाथ मंदिर क्षेत्र, डूंगरपुर",
+            city: "डूंगरपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Deo%20Somnath%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डूंगरपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डूंगरपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 82,
+        name: "मेनाल जलप्रपात",
+        slug: "menal-waterfall",
+        city: "चित्तौड़गढ़",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "जलप्रपात",
+        description: "हरी-भरी वादियों और 12वीं शताब्दी के प्राचीन शिव मंदिरों से घिरा एक अत्यंत सुंदर एवं लुभावना जलप्रपात।",
+        history: `
+          <p><strong>मेनाल जलप्रपात</strong> चित्तौड़गढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जलप्रपात के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मेनाल जलप्रपात क्षेत्र, चित्तौड़गढ़",
+            city: "चित्तौड़गढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Menal%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "चित्तौड़गढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "चित्तौड़गढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 83,
+        name: "भीमलत जलप्रपात",
+        slug: "bhimlat-waterfall",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "जलप्रपात",
+        description: "बूंदी के पास स्थित मानसून के समय बहने वाला 60 मीटर ऊंचा जलप्रपात, जो महाभारत कालीन कथा से जुड़ा है।",
+        history: `
+          <p><strong>भीमलत जलप्रपात</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जलप्रपात के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "भीमलत जलप्रपात क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhimlat%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 84,
+        name: "गराड़िया महादेव",
+        slug: "garadiya-mahadev",
+        city: "कोटा",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "सुंदर घाटी मंदिर",
+        description: "चंबल नदी की घाटी के शानदार घोड़े के नाल जैसे मोड़ (Horseshoe Bend) का विहंगम दृश्य प्रस्तुत करने वाला पहाड़ी मंदिर।",
+        history: `
+          <p><strong>गराड़िया महादेव</strong> कोटा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सुंदर घाटी मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गराड़िया महादेव क्षेत्र, कोटा",
+            city: "कोटा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garadiya%20Mahadev",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "कोटा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "कोटा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 85,
+        name: "चूलिया जलप्रपात",
+        slug: "chuliya-waterfall",
+        city: "रावतभाटा",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "जलप्रपात एवं घाटी",
+        description: "रावतभाटा के पास गोलाकार चट्टानों को काटती हुई चंबल नदी द्वारा बनाया गया एक सुंदर प्राकृतिक जलप्रपात।",
+        history: `
+          <p><strong>चूलिया जलप्रपात</strong> रावतभाटा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जलप्रपात एवं घाटी के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "चूलिया जलप्रपात क्षेत्र, रावतभाटा",
+            city: "रावतभाटा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Chuliya%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "रावतभाटा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "रावतभाटा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rawatbhata"
+    },
+    {
+        id: 86,
+        name: "माही बजाज सागर बांध",
+        slug: "mahi-bajaj-sagar-dam",
+        city: "बांसवाड़ा",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "बांध एवं जलाशय",
+        description: "राजस्थान का दूसरा सबसे बड़ा बांध, जो माही नदी पर बने अनेक हरे-भरे द्वीपों के सुंदर दृश्य प्रस्तुत करता है।",
+        history: `
+          <p><strong>माही बजाज सागर बांध</strong> बांसवाड़ा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बांध एवं जलाशय के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "माही बजाज सागर बांध क्षेत्र, बांसवाड़ा",
+            city: "बांसवाड़ा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mahi%20Bajaj%20Sagar%20Dam",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बांसवाड़ा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बांसवाड़ा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 87,
+        name: "कायलाना झील",
+        slug: "kaylana-lake",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "कृत्रिम झील",
+        description: "जोधपुर में एक शांत झील, जो सूर्यास्त देखने, बोटिंग करने और स्थानीय वन्यजीवों को देखने के लिए लोकप्रिय है।",
+        history: `
+          <p><strong>कायलाना झील</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कृत्रिम झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कायलाना झील क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kaylana%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 88,
+        name: "माचिया जैविक उद्यान",
+        slug: "machia-biological-park",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "जैविक उद्यान एवं चिड़ियाघर",
+        description: "कायलाना झील के पास स्थित, जो भेड़ियों, शेरों, तेंदुओं और हिरणों जैसी मरुस्थलीय प्रजातियों का प्राकृतिक घर है।",
+        history: `
+          <p><strong>माचिया जैविक उद्यान</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जैविक उद्यान एवं चिड़ियाघर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "माचिया जैविक उद्यान क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Machia%20Biological%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 89,
+        name: "मचकुण्ड धौलपुर",
+        slug: "machkund-dholpur",
+        city: "धौलपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पवित्र सरोवर एवं मंदिर",
+        description: "'तीर्थराज' के नाम से जाना जाने वाला एक अत्यंत पवित्र स्थान, जिसमें एक प्राचीन पवित्र सरोवर और मंदिर समूह हैं।",
+        history: `
+          <p><strong>मचकुण्ड धौलपुर</strong> धौलपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पवित्र सरोवर एवं मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मचकुण्ड धौलपुर क्षेत्र, धौलपुर",
+            city: "धौलपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Machkund%20Dholpur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "धौलपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "धौलपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dholpur"
+    },
+    {
+        id: 90,
+        name: "लोद्रवा जैन मंदिर",
+        slug: "lodurva-jain-temple",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "जैन मंदिर अवशेष",
+        description: "पीले बलुआ पत्थर से बना एक सुंदर जैन मंदिर, जो अपने अलंकृत प्रवेश द्वार (तोरण) और कल्पवृक्ष के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>लोद्रवा जैन मंदिर</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जैन मंदिर अवशेष के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "लोद्रवा जैन मंदिर क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Lodurva%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 91,
+        name: "किराडू मंदिर",
+        slug: "kiradu-temples",
+        city: "बाड़मेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "प्राचीन अवशेष मंदिर",
+        description: "राजस्थान के खजुराहो के रूप में जाना जाने वाला, मरुस्थल में सोलंकी शैली के मंदिरों के सुंदर खंडहर।",
+        history: `
+          <p><strong>किराडू मंदिर</strong> बाड़मेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन अवशेष मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "किराडू मंदिर क्षेत्र, बाड़मेर",
+            city: "बाड़मेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kiradu%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बाड़मेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बाड़मेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Barmer"
+    },
+    {
+        id: 92,
+        name: "नाकोड़ा जैन मंदिर",
+        slug: "nakoda-jain-temple",
+        city: "बाड़मेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "तीर्थस्थल केंद्र",
+        description: "भगवान पार्श्वनाथ को समर्पित बाड़मेर में एक पहाड़ी पर स्थित एक अत्यंत लोकप्रिय जैन तीर्थ स्थल।",
+        history: `
+          <p><strong>नाकोड़ा जैन मंदिर</strong> बाड़मेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख तीर्थस्थल केंद्र के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नाकोड़ा जैन मंदिर क्षेत्र, बाड़मेर",
+            city: "बाड़मेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nakoda%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बाड़मेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बाड़मेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Barmer"
+    },
+    {
+        id: 93,
+        name: "गोविंद देव जी मंदिर",
+        slug: "govind-dev-ji-temple",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "कृष्ण मंदिर",
+        description: "सिटी पैलेस परिसर के अंदर स्थित, जिसमें भगवान कृष्ण की मूर्ति स्थापित है जिसकी पूजा कभी राजवंश करते थे।",
+        history: `
+          <p><strong>गोविंद देव जी मंदिर</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कृष्ण मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गोविंद देव जी मंदिर क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Govind%20Dev%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 94,
+        name: "खाटू श्याम जी मंदिर",
+        slug: "khatu-shyam-ji-temple",
+        city: "सीकर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "श्याम बाबा मंदिर",
+        description: "राजस्थान के सबसे व्यस्त मंदिरों में से एक, जो वीर बर्बरीक (श्याम बाबा) को समर्पित है और लाखों भक्तों को आकर्षित करता है।",
+        history: `
+          <p><strong>खाटू श्याम जी मंदिर</strong> सीकर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख श्याम बाबा मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "खाटू श्याम जी मंदिर क्षेत्र, सीकर",
+            city: "सीकर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khatu%20Shyam%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सीकर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सीकर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 95,
+        name: "कैला देवी मंदिर",
+        slug: "kaila-devi-temple",
+        city: "करौली",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "दुर्गा मंदिर",
+        description: "कालीसिल नदी के तट पर स्थित एक अत्यंत पवित्र मंदिर, जो करौली रियासत की कुलदेवी को समर्पित है।",
+        history: `
+          <p><strong>कैला देवी मंदिर</strong> करौली की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख दुर्गा मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कैला देवी मंदिर क्षेत्र, करौली",
+            city: "करौली",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kaila%20Devi%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "करौली स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "करौली केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Karauli"
+    },
+    {
+        id: 96,
+        name: "मेहंदीपुर बालाजी मंदिर",
+        slug: "mehandipur-balaji-temple",
+        city: "दौसा",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "हनुमान मंदिर",
+        description: "भगवान हनुमान को समर्पित एक अत्यंत लोकप्रिय मंदिर, जो अपनी विशेष पूजा और बुरी आत्माओं से मुक्ति के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>मेहंदीपुर बालाजी मंदिर</strong> दौसा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख हनुमान मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मेहंदीपुर बालाजी मंदिर क्षेत्र, दौसा",
+            city: "दौसा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mehandipur%20Balaji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "दौसा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "दौसा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dausa"
+    },
+    {
+        id: 97,
+        name: "सुख महल बूंदी",
+        slug: "sukh-mahal-bundi",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "झील महल",
+        description: "जैत सागर झील के किनारे स्थित एक सुंदर ग्रीष्मकालीन महल, जहां रूडयार्ड किपलिंग रुके थे और उन्होंने 'किम' उपन्यास लिखा था।",
+        history: `
+          <p><strong>सुख महल बूंदी</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख झील महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सुख महल बूंदी क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sukh%20Mahal%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 98,
+        name: "गढ़ पैलेस बूंदी",
+        slug: "garh-palace-bundi",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "पहाड़ी महल परिसर",
+        description: "एक भव्य पहाड़ी महल परिसर जो अपने लघु चित्रों (Bundi Paintings), विशाल द्वारों और पारंपरिक राजपूत वास्तुकला के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>गढ़ पैलेस बूंदी</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी महल परिसर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गढ़ पैलेस बूंदी क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garh%20Palace%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 99,
+        name: "रानी जी की बावड़ी",
+        slug: "rani-ji-ki-baori",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "अलंकृत बावड़ी",
+        description: "बूंदी की सबसे बड़ी और सबसे सुंदर बावड़ी, जिसका निर्माण 1699 में रानी नाथावती ने करवाया था, जिसमें सुंदर नक्काशीदार खंभे हैं।",
+        history: `
+          <p><strong>रानी जी की बावड़ी</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख अलंकृत बावड़ी के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "रानी जी की बावड़ी क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rani%20Ji%20Ki%20Baori",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 100,
+        name: "विजय स्तम्भ चित्तौड़गढ़",
+        slug: "vijay-stambh-chittorgarh",
+        city: "चित्तौड़गढ़",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "विजय स्तम्भ",
+        description: "1448 में महाराणा कुंभा द्वारा मालवा और गुजरात की सेनाओं पर जीत की याद में बनवाया गया एक ऐतिहासिक 9-मंजिला विजय स्तम्भ।",
+        history: `
+          <p><strong>विजय स्तम्भ चित्तौड़गढ़</strong> चित्तौड़गढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विजय स्तम्भ के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "विजय स्तम्भ चित्तौड़गढ़ क्षेत्र, चित्तौड़गढ़",
+            city: "चित्तौड़गढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vijay%20Stambh%20Chittorgarh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "चित्तौड़गढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "चित्तौड़गढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 101,
+        name: "कीर्ति स्तम्भ चित्तौड़गढ़",
+        slug: "kirti-stambh-chittorgarh",
+        city: "चित्तौड़गढ़",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "कीर्ति स्तम्भ",
+        description: "प्रथम जैन तीर्थंकर आदिनाथ को समर्पित 22 मीटर ऊंचा 12वीं शताब्दी का स्तम्भ, जिस पर जैन कला की सुंदर नक्काशी है।",
+        history: `
+          <p><strong>कीर्ति स्तम्भ चित्तौड़गढ़</strong> चित्तौड़गढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कीर्ति स्तम्भ के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कीर्ति स्तम्भ चित्तौड़गढ़ क्षेत्र, चित्तौड़गढ़",
+            city: "चित्तौड़गढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kirti%20Stambh%20Chittorgarh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "चित्तौड़गढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "चित्तौड़गढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 102,
+        name: "जवाई बांध",
+        slug: "jawai-bandh",
+        city: "पाली",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "बांध एवं तेंदुआ अभयारण्य",
+        description: "जवाई नदी पर बना एक सुंदर बांध, जो तेंदुआ सफारी, मगरमच्छों और विशाल ग्रेनाइट पहाड़ियों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>जवाई बांध</strong> पाली की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बांध एवं तेंदुआ अभयारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "जवाई बांध क्षेत्र, पाली",
+            city: "पाली",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jawai%20Bandh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "पाली स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "पाली केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 103,
+        name: "बाहुबली हिल्स उदयपुर",
+        slug: "bahubali-hills-udaipur",
+        city: "उदयपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "सुंदर दृश्य बिंदु",
+        description: "उदयपुर के पास एक लोकप्रिय ट्रैकिंग पॉइंट, जो सुंदर बड़ी झील और आसपास की अरावली पहाड़ियों का 360-डिग्री दृश्य प्रस्तुत करता है।",
+        history: `
+          <p><strong>बाहुबली हिल्स उदयपुर</strong> उदयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख सुंदर दृश्य बिंदु के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बाहुबली हिल्स उदयपुर क्षेत्र, उदयपुर",
+            city: "उदयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bahubali%20Hills%20Udaipur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "उदयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "उदयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 104,
+        name: "ओम बन्ना मंदिर",
+        slug: "om-banna-temple",
+        city: "पाली",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "बुलेट बाबा मंदिर",
+        description: "पाली हाईवे पर स्थित एक अनोखा मंदिर जो 350cc रॉयल एनफील्ड मोटरसाइकिल और उसके मालिक ओम बन्ना को समर्पित है।",
+        history: `
+          <p><strong>ओम बन्ना मंदिर</strong> पाली की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बुलेट बाबा मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "ओम बन्ना मंदिर क्षेत्र, पाली",
+            city: "पाली",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Om%20Banna%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "पाली स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "पाली केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 105,
+        name: "लोंगेवाला युद्ध स्मारक",
+        slug: "longewala-war-memorial",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "युद्ध स्मारक संग्रहालय",
+        description: "1971 के प्रसिद्ध लोंगेवाला युद्ध की याद में बनाया गया एक सीमा स्मारक, जिसमें दुश्मन के पकड़े गए टैंक प्रदर्शित हैं।",
+        history: `
+          <p><strong>लोंगेवाला युद्ध स्मारक</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख युद्ध स्मारक संग्रहालय के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "लोंगेवाला युद्ध स्मारक क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Longewala%20War%20Memorial",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 106,
+        name: "खाबा किला जैसलमेर",
+        slug: "khaba-fort-jaisalmer",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "मरुस्थल किला खंडहर",
+        description: "खाली पड़े पालीवाल ब्राह्मणों के गांवों के खंडहरों और विशाल थार मरुस्थल का दृश्य दिखाने वाला एक वीरान मरुस्थलीय किला।",
+        history: `
+          <p><strong>खाबा किला जैसलमेर</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मरुस्थल किला खंडहर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "खाबा किला जैसलमेर क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khaba%20Fort%20Jaisalmer",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 107,
+        name: "ताल छापर अभ्यारण्य",
+        slug: "tal-chhapar-sanctuary",
+        city: "चूरू",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "काले हिरण का अभ्यारण्य",
+        description: "चूरू जिले में स्थित एक अनोखा घास का मैदान, जो काले हिरणों और विभिन्न प्रकार के प्रवासी शिकार पक्षियों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>ताल छापर अभ्यारण्य</strong> चूरू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख काले हिरण का अभ्यारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "ताल छापर अभ्यारण्य क्षेत्र, चूरू",
+            city: "चूरू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tal%20Chhapar%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "चूरू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "चूरू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Churu"
+    },
+    {
+        id: 108,
+        name: "राष्ट्रीय चम्बल अभ्यारण्य",
+        slug: "national-chambal-sanctuary",
+        city: "कोटा",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "नदी अभयारण्य",
+        description: "चंबल नदी के किनारे स्थापित एक जलीय अभयारण्य, जो घड़ियालों, लाल मुकुट वाले कछुओं और डॉल्फ़िन का घर है।",
+        history: `
+          <p><strong>राष्ट्रीय चम्बल अभ्यारण्य</strong> कोटा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख नदी अभयारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "राष्ट्रीय चम्बल अभ्यारण्य क्षेत्र, कोटा",
+            city: "कोटा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/National%20Chambal%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "कोटा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "कोटा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 109,
+        name: "रामदेवरा मंदिर जैसलमेर",
+        slug: "ramdevra-temple-jaisalmer",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "बाबा रामदेव मंदिर",
+        description: "लोक देवता बाबा रामदेव (रामसा पीर) का एक अत्यंत लोकप्रिय मंदिर, जहाँ वार्षिक मेले में लाखों श्रद्धालु आते हैं।",
+        history: `
+          <p><strong>रामदेवरा मंदिर जैसलमेर</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बाबा रामदेव मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "रामदेवरा मंदिर जैसलमेर क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ramdevra%20Temple%20Jaisalmer",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 110,
+        name: "मानगढ़ धाम बांसवाड़ा",
+        slug: "mangarh-dham-banswara",
+        city: "बांसवाड़ा",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "आदिवासी शहीद स्मारक",
+        description: "1913 में यहाँ शहीद हुए महान आदिवासी स्वतंत्रता सेनानियों को समर्पित एक ऐतिहासिक पहाड़ी शहीद स्मारक।",
+        history: `
+          <p><strong>मानगढ़ धाम बांसवाड़ा</strong> बांसवाड़ा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख आदिवासी शहीद स्मारक के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मानगढ़ धाम बांसवाड़ा क्षेत्र, बांसवाड़ा",
+            city: "बांसवाड़ा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mangarh%20Dham%20Banswara",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बांसवाड़ा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बांसवाड़ा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 111,
+        name: "सरिस्का पैलेस अलवर",
+        slug: "sariska-palace-alwar",
+        city: "अलवर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "शाही शिकार महल",
+        description: "अलवर के महाराजा जय सिंह द्वारा 1892 में शाही शिकारगाह के रूप में बनवाया गया एक महल, जिसे अब हेरिटेज रिज़ॉर्ट में बदल दिया गया है।",
+        history: `
+          <p><strong>सरिस्का पैलेस अलवर</strong> अलवर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही शिकार महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सरिस्का पैलेस अलवर क्षेत्र, अलवर",
+            city: "अलवर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sariska%20Palace%20Alwar",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "अलवर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "अलवर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 112,
+        name: "मंडोर गार्डन",
+        slug: "mandore-gardens",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "ऐतिहासिक उद्यान और छतरियां",
+        description: "मारवाड़ की प्राचीन राजधानी, जिसमें लाल बलुआ पत्थर के भव्य स्मारक (देवल), हरे-भरे बगीचे और हॉल ऑफ हीरोज शामिल हैं।",
+        history: `
+          <p><strong>मंडोर गार्डन</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक उद्यान और छतरियां के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मंडोर गार्डन क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mandore%20Gardens",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 113,
+        name: "राव जोधा डेजर्ट रॉक पार्क",
+        slug: "rao-jodha-desert-rock-park",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "मरुस्थलीय पारिस्थितिकी पार्क",
+        description: "मेहरानगढ़ किले की तलहटी में स्थित एक खूबसूरती से पुनर्स्थापित ज्वालामुखी चट्टान पार्क, जो थार मरुस्थल की पारिस्थितिकी को दर्शाता है।",
+        history: `
+          <p><strong>राव जोधा डेजर्ट रॉक पार्क</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मरुस्थलीय पारिस्थितिकी पार्क के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "राव जोधा डेजर्ट रॉक पार्क क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rao%20Jodha%20Desert%20Rock%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 114,
+        name: "बालसमंद पैलेस",
+        slug: "balsamand-palace",
+        city: "जोधपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "विरासत महल रिज़ॉर्ट",
+        description: "बालसमंद झील के किनारे स्थित एक ऐतिहासिक लाल बलुआ पत्थर का महल, जो राजपूत वास्तुकला और विशाल फलों के बगीचों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>बालसमंद पैलेस</strong> जोधपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत महल रिज़ॉर्ट के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बालसमंद पैलेस क्षेत्र, जोधपुर",
+            city: "जोधपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Balsamand%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जोधपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जोधपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 115,
+        name: "जूना महल",
+        slug: "juna-mahal",
+        city: "डूंगरपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "ऐतिहासिक किला महल",
+        description: "डूंगरपुर में 13वीं सदी का एक किला महल, जो अपने विस्तृत भित्तिचित्रों, चित्रों और जटिल कांच के काम के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>जूना महल</strong> डूंगरपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख ऐतिहासिक किला महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "जूना महल क्षेत्र, डूंगरपुर",
+            city: "डूंगरपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Juna%20Mahal",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डूंगरपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डूंगरपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 116,
+        name: "उदय बिलास पैलेस",
+        slug: "udai-bilas-palace",
+        city: "डूंगरपुर",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "झील तट महल",
+        description: "शानदार राजपूत वास्तुकला, विस्तृत पत्थर की नक्काशी और नीले धूसर संगमरमर के निर्माण को प्रदर्शित करने वाला एक शानदार झील तट महल।",
+        history: `
+          <p><strong>उदय बिलास पैलेस</strong> डूंगरपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख झील तट महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "उदय बिलास पैलेस क्षेत्र, डूंगरपुर",
+            city: "डूंगरपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Udai%20Bilas%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "डूंगरपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "डूंगरपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 117,
+        name: "त्रिपुरा सुंदरी मंदिर",
+        slug: "tripura-sundari-temple",
+        city: "बांसवाड़ा",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "शक्ति पीठ मंदिर",
+        description: "देवी त्रिपुरा सुंदरी को समर्पित एक अत्यंत पवित्र मंदिर, जिसमें काले पत्थर की मूर्ति स्थापित है जो लाखों लोगों द्वारा पूजनीय है।",
+        history: `
+          <p><strong>त्रिपुरा सुंदरी मंदिर</strong> बांसवाड़ा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शक्ति पीठ मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "त्रिपुरा सुंदरी मंदिर क्षेत्र, बांसवाड़ा",
+            city: "बांसवाड़ा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tripura%20Sundari%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बांसवाड़ा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बांसवाड़ा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 118,
+        name: "अर्थूना मंदिर",
+        slug: "arthuna-temples",
+        city: "बांसवाड़ा",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "मंदिर खंडहर परिसर",
+        description: "11वीं शताब्दी के हिंदू और जैन मंदिरों के खंडहरों का एक ऐतिहासिक समूह, जो उत्कृष्ट पत्थर की नक्काशी प्रदर्शित करता है।",
+        history: `
+          <p><strong>अर्थूना मंदिर</strong> बांसवाड़ा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मंदिर खंडहर परिसर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अर्थूना मंदिर क्षेत्र, बांसवाड़ा",
+            city: "बांसवाड़ा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Arthuna%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बांसवाड़ा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बांसवाड़ा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 119,
+        name: "अमर सागर झील",
+        slug: "amar-sagar-lake",
+        city: "जैसलमेर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "मरुद्यान झील और महल",
+        description: "जैसलमेर के पास एक सुंदर झील मरुद्यान, जिसमें एक खूबसूरती से नक्काशीदार महल, छतरियां और एक प्राचीन जैन मंदिर है।",
+        history: `
+          <p><strong>अमर सागर झील</strong> जैसलमेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मरुद्यान झील और महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अमर सागर झील क्षेत्र, जैसलमेर",
+            city: "जैसलमेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Amar%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जैसलमेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जैसलमेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 120,
+        name: "गजनेर वन्यजीव अभ्यारण्य",
+        slug: "gajner-wildlife-sanctuary",
+        city: "बीकानेर",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "वन्यजीव अभ्यारण्य",
+        description: "बीकानेर के पास एक झील के किनारे का अभ्यारण्य, जो शाही सैंड ग्राउज़, काले हिरण, नीलगाय और जंगली सूअरों का घर है।",
+        history: `
+          <p><strong>गजनेर वन्यजीव अभ्यारण्य</strong> बीकानेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख वन्यजीव अभ्यारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गजनेर वन्यजीव अभ्यारण्य क्षेत्र, बीकानेर",
+            city: "बीकानेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gajner%20Wildlife%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बीकानेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बीकानेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bikaner"
+    },
+    {
+        id: 121,
+        name: "कोलायत झील",
+        slug: "kolayat-lake",
+        city: "बीकानेर",
+        state: "Rajasthan",
+        category: "झील",
+        subcategory: "पवित्र तीर्थ झील",
+        description: "बीकानेर में एक पवित्र झील, जहाँ कपिल मुनि ने तपस्या की थी, जो अपने ऐतिहासिक स्नान घाटों और मंदिर के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>कोलायत झील</strong> बीकानेर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पवित्र तीर्थ झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कोलायत झील क्षेत्र, बीकानेर",
+            city: "बीकानेर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kolayat%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बीकानेर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "झील",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बीकानेर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bikaner"
+    },
+    {
+        id: 122,
+        name: "जीण माता मंदिर",
+        slug: "jeen-mata-temple",
+        city: "सीकर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "लोक देवी मंदिर",
+        description: "रमणीय पहाड़ियों के बीच स्थित जीण माता को समर्पित एक प्राचीन मंदिर, जो राजस्थानी लोक परंपरा में अत्यधिक पूजनीय है।",
+        history: `
+          <p><strong>जीण माता मंदिर</strong> सीकर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख लोक देवी मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "जीण माता मंदिर क्षेत्र, सीकर",
+            city: "सीकर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jeen%20Mata%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सीकर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सीकर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 123,
+        name: "हर्षनाथ मंदिर सीकर",
+        slug: "harshnath-temple-sikar",
+        city: "सीकर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "प्राचीन पहाड़ी मंदिर खंडहर",
+        description: "हर्ष गिरि पहाड़ी की चोटी पर स्थित 10वीं शताब्दी के एक ऐतिहासिक शिव मंदिर का खंडहर, जो सुंदर पत्थर की मूर्तियों को प्रदर्शित करता है।",
+        history: `
+          <p><strong>हर्षनाथ मंदिर सीकर</strong> सीकर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन पहाड़ी मंदिर खंडहर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "हर्षनाथ मंदिर सीकर क्षेत्र, सीकर",
+            city: "सीकर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Harshnath%20Temple%20Sikar",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सीकर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सीकर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 124,
+        name: "देवयानी कुंड",
+        slug: "devyani-kund",
+        city: "सांभर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पवित्र स्नान कुंड",
+        description: "सांभर झील के पास एक पवित्र जल कुंड, जिसे प्राचीन मंदिरों के साथ 'तीर्थों की नानी' के रूप में जाना जाता है।",
+        history: `
+          <p><strong>देवयानी कुंड</strong> सांभर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पवित्र स्नान कुंड के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "देवयानी कुंड क्षेत्र, सांभर",
+            city: "सांभर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Devyani%20Kund",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "सांभर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "सांभर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sambhar"
+    },
+    {
+        id: 125,
+        name: "चांदलाई झील",
+        slug: "chandlai-lake",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "पक्षी दर्शन झील",
+        description: "जयपुर के बाहरी इलाके में स्थित एक शांत झील, जो प्रवासी पक्षियों और फ्लेमिंगो को देखने के लिए अत्यधिक लोकप्रिय है।",
+        history: `
+          <p><strong>चांदलाई झील</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पक्षी दर्शन झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "चांदलाई झील क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Chandlai%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 126,
+        name: "गलता जी मंदिर",
+        slug: "galta-ji-temple",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "मंकी टेम्पल एवं प्राकृतिक कुंड",
+        description: "प्राकृतिक पहाड़ी झरनों, पवित्र कुंडों और हजारों निवासी बंदरों (मंकी टेम्पल) की विशेषता वाला एक ऐतिहासिक तीर्थ स्थल।",
+        history: `
+          <p><strong>गलता जी मंदिर</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मंकी टेम्पल एवं प्राकृतिक कुंड के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गलता जी मंदिर क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Galta%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 127,
+        name: "गेटोर की छतरियां",
+        slug: "gatore-ki-chhatriyan",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "शाही राजवंश छतरियां",
+        description: "जयपुर के कछवाहा राजाओं का शाही श्मशान स्थल, जिसमें नक्काशीदार संगमरमर और बलुआ पत्थर की छतरियां हैं।",
+        history: `
+          <p><strong>गेटोर की छतरियां</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही राजवंश छतरियां के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गेटोर की छतरियां क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gatore%20Ki%20Chhatriyan",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 128,
+        name: "कनक वृंदावन घाटी",
+        slug: "kanak-vrindavan-garden",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "शाही घाटी उद्यान",
+        description: "नाहरगढ़ की तलहटी में बना एक सुंदर उद्यान, जो पौराणिक वृंदावन जैसा दिखता है जहां भगवान कृष्ण रास रचाते थे।",
+        history: `
+          <p><strong>कनक वृंदावन घाटी</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही घाटी उद्यान के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कनक वृंदावन घाटी क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kanak%20Vrindavan%20Garden",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 129,
+        name: "नाहरगढ़ जैविक उद्यान",
+        slug: "nahargarh-biological-park",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "जैविक उद्यान एवं सफारी",
+        description: "जयपुर के पास एक बड़ा जैविक पार्क जिसमें बाघों, शेरों, तेंदुओं, भालू और विदेशी पक्षियों को रखा गया है।",
+        history: `
+          <p><strong>नाहरगढ़ जैविक उद्यान</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जैविक उद्यान एवं सफारी के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "नाहरगढ़ जैविक उद्यान क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nahargarh%20Biological%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 130,
+        name: "पत्रिका गेट",
+        slug: "patrika-gate",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "कलात्मक स्मारक द्वार",
+        description: "जवाहर सर्कल पर एक अत्यधिक रंगीन और कलात्मक प्रवेश द्वार, जो राजस्थान के इतिहास के हाथ से पेंट किए गए भित्तिचित्रों को प्रदर्शित करता है।",
+        history: `
+          <p><strong>पत्रिका गेट</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख कलात्मक स्मारक द्वार के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "पत्रिका गेट क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Patrika%20Gate",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 131,
+        name: "खोले के हनुमान जी",
+        slug: "khole-ke-hanuman-ji",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पहाड़ी मंदिर",
+        description: "भगवान हनुमान को समर्पित एक लोकप्रिय पहाड़ी मंदिर, जो आसपास की पहाड़ियों के मनोरम दृश्य प्रस्तुत करता है।",
+        history: `
+          <p><strong>खोले के हनुमान जी</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "खोले के हनुमान जी क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khole%20Ke%20Hanuman%20Ji",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 132,
+        name: "मोती डूंगरी गणेश मंदिर",
+        slug: "moti-dungri-ganesh-temple",
+        city: "जयपुर",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "गणेश मंदिर",
+        description: "मोती डूंगरी किले के बगल में स्थित जयपुर के सबसे प्रसिद्ध मंदिरों में से एक, जो भगवान गणेश को समर्पित है।",
+        history: `
+          <p><strong>मोती डूंगरी गणेश मंदिर</strong> जयपुर की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख गणेश मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मोती डूंगरी गणेश मंदिर क्षेत्र, जयपुर",
+            city: "जयपुर",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Moti%20Dungri%20Ganesh%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "जयपुर स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "जयपुर केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 133,
+        name: "चारभुजा मंदिर राजसमंद",
+        slug: "charbhuja-temple-rajsamand",
+        city: "राजसमंद",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "प्राचीन विष्णु मंदिर",
+        description: "1444 ईस्वी में निर्मित भगवान विष्णु को समर्पित एक प्राचीन मंदिर, जो मेवाड़ क्षेत्र में अत्यधिक लोकप्रिय तीर्थस्थल है।",
+        history: `
+          <p><strong>चारभुजा मंदिर राजसमंद</strong> राजसमंद की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन विष्णु मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "चारभुजा मंदिर राजसमंद क्षेत्र, राजसमंद",
+            city: "राजसमंद",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Charbhuja%20Temple%20Rajsamand",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "राजसमंद स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "राजसमंद केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rajsamand"
+    },
+    {
+        id: 134,
+        name: "परशुराम महादेव गुफा मंदिर",
+        slug: "parshuram-mahadev-cave-temple",
+        city: "पाली",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "गुफा मंदिर",
+        description: "अरावली पहाड़ियों में स्थित भगवान शिव का एक पवित्र गुफा मंदिर, जहाँ 500 खड़ी सीढ़ियाँ उतरकर पहुँचा जाता है।",
+        history: `
+          <p><strong>परशुराम महादेव गुफा मंदिर</strong> पाली की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख गुफा मंदिर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "परशुराम महादेव गुफा मंदिर क्षेत्र, पाली",
+            city: "पाली",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Parshuram%20Mahadev%20Cave%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "पाली स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "पाली केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 135,
+        name: "तिमनगढ़ किला",
+        slug: "timangarh-fort",
+        city: "करौली",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "प्राचीन किला खंडहर",
+        description: "करौली में 11वीं शताब्दी का एक प्राचीन किला, जो उत्कृष्ट पत्थर की नक्काशी और पुरातात्विक खंडहरों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>तिमनगढ़ किला</strong> करौली की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन किला खंडहर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "तिमनगढ़ किला क्षेत्र, करौली",
+            city: "करौली",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Timangarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "करौली स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "करौली केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Karauli"
+    },
+    {
+        id: 136,
+        name: "बूंदी महल परिसर",
+        slug: "bundi-palace-complex",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "महल",
+        subcategory: "विरासत महल",
+        description: "अपने शानदार भित्तिचित्रों, चित्रशाला कला दीर्घा और पारंपरिक राजपूत महल कक्षों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>बूंदी महल परिसर</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत महल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बूंदी महल परिसर क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bundi%20Palace%20Complex",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "महल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 137,
+        name: "चौरासी खंभों की छतरी",
+        slug: "84-pillared-cenotaph",
+        city: "बूंदी",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "शाही छतरी स्मारक",
+        description: "84 नक्काशीदार पत्थर के खंभों द्वारा समर्थित 17वीं सदी का एक भव्य दो मंजिला शाही छतरी स्मारक।",
+        history: `
+          <p><strong>चौरासी खंभों की छतरी</strong> बूंदी की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख शाही छतरी स्मारक के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "चौरासी खंभों की छतरी क्षेत्र, बूंदी",
+            city: "बूंदी",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/84%20Pillared%20Cenotaph",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बूंदी स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बूंदी केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 138,
+        name: "बिजोलिया मंदिर",
+        slug: "bijolia-temples",
+        city: "बिजोलिया",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "प्राचीन मंदिर समूह",
+        description: "भीलवाड़ा जिले में उत्कृष्ट पाषाण शिल्प कौशल वाले प्राचीन 12वीं शताब्दी के शिव मंदिरों का एक समूह।",
+        history: `
+          <p><strong>बिजोलिया मंदिर</strong> बिजोलिया की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख प्राचीन मंदिर समूह के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बिजोलिया मंदिर क्षेत्र, बिजोलिया",
+            city: "बिजोलिया",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bijolia%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बिजोलिया स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बिजोलिया केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bijolia"
+    },
+    {
+        id: 139,
+        name: "बदनोर किला",
+        slug: "badnor-fort",
+        city: "भीलवाड़ा",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "पहाड़ी किला खंडहर",
+        description: "पहाड़ी पर स्थित 16वीं सदी का एक भव्य किला, जो मेवाड़ की शास्त्रीय सैन्य वास्तुकला को प्रस्तुत करता है।",
+        history: `
+          <p><strong>बदनोर किला</strong> भीलवाड़ा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी किला खंडहर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "बदनोर किला क्षेत्र, भीलवाड़ा",
+            city: "भीलवाड़ा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Badnor%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "भीलवाड़ा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "भीलवाड़ा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bhilwara"
+    },
+    {
+        id: 140,
+        name: "सप्त आश्चर्य पार्क कोटा",
+        slug: "seven-wonders-park-kota",
+        city: "कोटा",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "थीम पार्क एवं झील",
+        description: "किशोर सागर झील के किनारे स्थित एक लोकप्रिय थीम पार्क जिसमें दुनिया के सात अजूबों की प्रतिकृतियां प्रदर्शित हैं।",
+        history: `
+          <p><strong>सप्त आश्चर्य पार्क कोटा</strong> कोटा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख थीम पार्क एवं झील के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सप्त आश्चर्य पार्क कोटा क्षेत्र, कोटा",
+            city: "कोटा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Seven%20Wonders%20Park%20Kota",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "कोटा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "कोटा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 141,
+        name: "मुकुंदरा हिल्स राष्ट्रीय उद्यान",
+        slug: "mukundra-hills-national-park",
+        city: "कोटा",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "बाघ अभयारण्य",
+        description: "चंबल नदी घाटी के किनारे फैला एक विशाल राष्ट्रीय उद्यान और बाघ अभयारण्य।",
+        history: `
+          <p><strong>मुकुंदरा हिल्स राष्ट्रीय उद्यान</strong> कोटा की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बाघ अभयारण्य के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "मुकुंदरा हिल्स राष्ट्रीय उद्यान क्षेत्र, कोटा",
+            city: "कोटा",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mukundra%20Hills%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "कोटा स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "कोटा केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 142,
+        name: "भैंसरोडगढ़ किला",
+        slug: "bhainsrorgarh-fort",
+        city: "चित्तौड़गढ़",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "विरासत किला रिज़ॉर्ट",
+        description: "चंबल नदी के किनारे एक खड़ी चट्टान पर बना एक शानदार किला, जिसे अक्सर 'राजस्थान का वेल्लोर' कहा जाता है।",
+        history: `
+          <p><strong>भैंसरोडगढ़ किला</strong> चित्तौड़गढ़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख विरासत किला रिज़ॉर्ट के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "भैंसरोडगढ़ किला क्षेत्र, चित्तौड़गढ़",
+            city: "चित्तौड़गढ़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhainsrorgarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "चित्तौड़गढ़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "चित्तौड़गढ़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 143,
+        name: "गागरोन किला",
+        slug: "gagron-fort",
+        city: "झालावाड़",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "जल दुर्ग (यूनेस्को)",
+        description: "आहू और काली सिंध नदियों के पानी से घिरा एक अद्वितीय यूनेस्को विश्व धरोहर पहाड़ी और जल दुर्ग।",
+        history: `
+          <p><strong>गागरोन किला</strong> झालावाड़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख जल दुर्ग (यूनेस्को) के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गागरोन किला क्षेत्र, झालावाड़",
+            city: "झालावाड़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gagron%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "झालावाड़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "झालावाड़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jhalawar"
+    },
+    {
+        id: 144,
+        name: "कोलवी की गुफाएं",
+        slug: "kolvi-caves",
+        city: "झालावाड़",
+        state: "Rajasthan",
+        category: "विरासत",
+        subcategory: "बौद्ध रॉक-कट गुफाएं",
+        description: "5वीं शताब्दी की 50 से अधिक रॉक-कट बौद्ध गुफाओं, स्तूपों और ध्यान कक्षों वाला एक प्राचीन स्थल।",
+        history: `
+          <p><strong>कोलवी की गुफाएं</strong> झालावाड़ की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख बौद्ध रॉक-कट गुफाएं के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "कोलवी की गुफाएं क्षेत्र, झालावाड़",
+            city: "झालावाड़",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kolvi%20Caves",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "झालावाड़ स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "विरासत",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "झालावाड़ केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jhalawar"
+    },
+    {
+        id: 145,
+        name: "सीताबारी",
+        slug: "sitabari",
+        city: "बारां",
+        state: "Rajasthan",
+        category: "धार्मिक स्थल",
+        subcategory: "पवित्र जलकुंड स्थल",
+        description: "देवी सीता से जुड़ा एक पवित्र तीर्थ स्थल, जिसमें गर्म पानी के प्राकृतिक झरने हैं और यहाँ सहरिया आदिवासी मेला आयोजित होता है।",
+        history: `
+          <p><strong>सीताबारी</strong> बारां की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पवित्र जलकुंड स्थल के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "सीताबारी क्षेत्र, बारां",
+            city: "बारां",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sitabari",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बारां स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "धार्मिक स्थल",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बारां केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Baran"
+    },
+    {
+        id: 146,
+        name: "रामगढ़ क्रेटर",
+        slug: "ramgarh-crater",
+        city: "बारां",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "उल्कापिंड प्रभाव क्रेटर",
+        description: "लाखों साल पहले एक उल्कापिंड के प्रभाव से बनी एक अद्वितीय अंगूठी के आकार की संरचना, जिसमें प्राचीन मंदिर स्थित हैं।",
+        history: `
+          <p><strong>रामगढ़ क्रेटर</strong> बारां की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख उल्कापिंड प्रभाव क्रेटर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "रामगढ़ क्रेटर क्षेत्र, बारां",
+            city: "बारां",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ramgarh%20Crater",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "बारां स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "बारां केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Baran"
+    },
+    {
+        id: 147,
+        name: "गुरु शिखर चोटी",
+        slug: "guru-shikhar-peak",
+        city: "माउंट आबू",
+        state: "Rajasthan",
+        category: "प्रकृति",
+        subcategory: "राजस्थान की सबसे ऊंची चोटी",
+        description: "राजस्थान की सबसे ऊंची चोटी (1,722 मीटर), जो अरावली पहाड़ियों और एक मंदिर का शानदार मनोरम दृश्य प्रस्तुत करती है।",
+        history: `
+          <p><strong>गुरु शिखर चोटी</strong> माउंट आबू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख राजस्थान की सबसे ऊंची चोटी के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "गुरु शिखर चोटी क्षेत्र, माउंट आबू",
+            city: "माउंट आबू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Guru%20Shikhar%20Peak",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "माउंट आबू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "प्रकृति",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "माउंट आबू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 148,
+        name: "अचलगढ़ किला",
+        slug: "achalgarh-fort",
+        city: "माउंट आबू",
+        state: "Rajasthan",
+        category: "किला",
+        subcategory: "पहाड़ी किला खंडहर",
+        description: "परमार शासकों द्वारा निर्मित और बाद में राणा कुंभा द्वारा पुनर्निर्मित एक ऐतिहासिक किला, जिसमें प्राचीन मंदिर और सुंदर दृश्य हैं।",
+        history: `
+          <p><strong>अचलगढ़ किला</strong> माउंट आबू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख पहाड़ी किला खंडहर के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "अचलगढ़ किला क्षेत्र, माउंट आबू",
+            city: "माउंट आबू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Achalgarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "माउंट आबू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "किला",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "माउंट आबू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 149,
+        name: "ट्रेवर का टैंक",
+        slug: "trevor-s-tank",
+        city: "माउंट आबू",
+        state: "Rajasthan",
+        category: "वन्यजीव",
+        subcategory: "मगरमच्छ प्रजनन पार्क",
+        description: "माउंट आबू में एक शांत मानव निर्मित वन्यजीव रिजर्व, जो मगरमच्छ देखने, पक्षी देखने और हरे-भरे रास्तों के लिए प्रसिद्ध है।",
+        history: `
+          <p><strong>ट्रेवर का टैंक</strong> माउंट आबू की समृद्ध वास्तुकला और सांस्कृतिक विरासत का एक जीवंत प्रमाण है। राजस्थान में एक प्रमुख मगरमच्छ प्रजनन पार्क के रूप में मान्यता प्राप्त, यह हर साल हजारों इतिहास प्रेमियों और पर्यटकों को आकर्षित करता है।</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "सभी दिन खुला है",
+            note: "दिन के उजाले में जाना सबसे अच्छा है।"
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "मानक स्थानीय प्रवेश शुल्क लागू।"
+        },
+        location: {
+            address: "ट्रेवर का टैंक क्षेत्र, माउंट आबू",
+            city: "माउंट आबू",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Trevor's%20Tank",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "माउंट आबू स्टेशन",
+            distanceFromCity: "क्षेत्र की सीमा के भीतर"
+        },
+        bestTimeToVisit: {
+            months: "अक्टूबर - मार्च",
+            season: "शीत ऋतु",
+            weather: "सुहावना",
+            tip: "ऐतिहासिक महत्व के बारे में अधिक जानने के लिए स्थानीय गाइड की मदद लें।"
+        },
+        visitDuration: {
+            minimum: "1 घंटा",
+            recommended: "1.5 घंटे",
+            extended: "2 घंटे"
+        },
+        highlights: [
+            "ऐतिहासिक वास्तुकला",
+            "मनोरम दृश्य",
+            "सांस्कृतिक महत्व"
+        ],
+        tags: [
+            "वन्यजीव",
+            "विरासत",
+            "इतिहास"
+        ],
+        facilities: [
+            "पार्किंग",
+            "शौचालय"
+        ],
+        nearbyPlaces: [
+            "माउंट आबू केंद्र"
+        ],
+        dos: [
+            "आरामदायक जूते पहनें",
+            "पानी साथ रखें"
+        ],
+        donts: [
+            "कचरा न फैलाएं",
+            "दीवारों पर न लिखें"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
     }
 ];

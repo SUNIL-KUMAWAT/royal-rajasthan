@@ -2767,5 +2767,10507 @@ export const PLACES: Place[] = [
         builtBy: "King Chanda",
         architecture: "Ancient Stepwell Architecture",
         significance: "One of India’s deepest and most beautiful stepwells",
+    },
+    {
+        id: 32,
+        name: "Ajmer Sharif Dargah",
+        slug: "ajmer-sharif-dargah",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Sufi Shrine",
+        description: "Ajmer Sharif Dargah is the holy shrine of Sufi saint Khwaja Moinuddin Chishti. It is one of the most revered pilgrimage sites in India, visited by millions of devotees of all faiths.",
+        history: `
+          <p><strong>Ajmer Sharif Dargah</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier sufi shrine in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Ajmer Sharif Dargah Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ajmer%20Sharif%20Dargah",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 33,
+        name: "Bhangarh Fort",
+        slug: "bhangarh-fort",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Haunted Fort ruins",
+        description: "Bhangarh Fort is a 17th-century fort renowned as India's most haunted place. Located at the border of the Sariska Tiger Reserve, it contains beautiful ruins of temples, palaces, and markets.",
+        history: `
+          <p><strong>Bhangarh Fort</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier haunted fort ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bhangarh Fort Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhangarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 34,
+        name: "Kuldhara Village",
+        slug: "kuldhara-village",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Abandoned Ghost Village",
+        description: "Kuldhara is an abandoned ghost village near Jaisalmer. Established in the 13th century by Paliwal Brahmins, it was mysteriously abandoned overnight in the 19th century and remains untouched.",
+        history: `
+          <p><strong>Kuldhara Village</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier abandoned ghost village in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 4980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kuldhara Village Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kuldhara%20Village",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 35,
+        name: "Taragarh Fort Bundi",
+        slug: "taragarh-fort-bundi",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Hill Fort",
+        description: "Taragarh Fort, or 'Star Fort', is a spectacular hilltop fortress in Bundi. Known for its massive battlements, tunnels, and ancient stepwells, it offers breathtaking views of Bundi town.",
+        history: `
+          <p><strong>Taragarh Fort Bundi</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier hill fort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Taragarh Fort Bundi Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Taragarh%20Fort%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 36,
+        name: "Nakki Lake",
+        slug: "nakki-lake",
+        city: "Mount Abu",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Natural Freshwater Lake",
+        description: "Nakki Lake is a serene freshwater lake in Mount Abu hill station. Surrounded by lush hills and strange rock formations, it is considered sacred by the local Garacia tribe.",
+        history: `
+          <p><strong>Nakki Lake</strong> stands as a testament to the rich architectural and cultural legacy of Mount Abu. Recognized as a premier natural freshwater lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nakki Lake Area, Mount Abu",
+            city: "Mount Abu",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nakki%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Mount Abu Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Mount Abu Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 37,
+        name: "Birla Mandir Jaipur",
+        slug: "birla-mandir-jaipur",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Temple",
+        subcategory: "Modern Marble Temple",
+        description: "Birla Mandir (Laxmi Narayan Temple) is a magnificent Hindu temple built entirely of pure white marble. Located at the base of Moti Dungri hill, it is famous for its carvings, stained glass windows, and calm vibe.",
+        history: `
+          <p><strong>Birla Mandir Jaipur</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier modern marble temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Birla Mandir Jaipur Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Birla%20Mandir%20Jaipur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Temple",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 38,
+        name: "Jaisamand Lake",
+        slug: "jaisamand-lake",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Artificial freshwater lake",
+        description: "Jaisamand Lake (Dhebar Lake) is India's second-largest artificial lake. Built in the 17th century, it features massive marble dams, cenotaphs, a wildlife sanctuary, and palaces.",
+        history: `
+          <p><strong>Jaisamand Lake</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier artificial freshwater lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Jaisamand Lake Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jaisamand%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 39,
+        name: "Ranthambore Fort",
+        slug: "ranthambore-fort",
+        city: "Sawai Madhopur",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Hill Fort",
+        description: "A majestic UNESCO World Heritage hill fort situated inside the Ranthambore National Park, known for its temples and rich historical battles.",
+        history: `
+          <p><strong>Ranthambore Fort</strong> stands as a testament to the rich architectural and cultural legacy of Sawai Madhopur. Recognized as a premier hill fort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Ranthambore Fort Area, Sawai Madhopur",
+            city: "Sawai Madhopur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ranthambore%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sawai Madhopur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sawai Madhopur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sawai Madhopur"
+    },
+    {
+        id: 40,
+        name: "Deeg Palace",
+        slug: "deeg-palace",
+        city: "Deeg",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Garden Palace",
+        description: "Famous for its magnificent Mughal-style gardens, beautiful fountains, and spectacular architecture built by Jat rulers.",
+        history: `
+          <p><strong>Deeg Palace</strong> stands as a testament to the rich architectural and cultural legacy of Deeg. Recognized as a premier garden palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Deeg Palace Area, Deeg",
+            city: "Deeg",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Deeg%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Deeg Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Deeg Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Deeg"
+    },
+    {
+        id: 41,
+        name: "Neemrana Fort Palace",
+        slug: "neemrana-fort-palace",
+        city: "Neemrana",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Heritage Hotel Fort",
+        description: "A stunning 15th-century fort palace converted into a luxury heritage hotel, offering zip-lining and panoramic views.",
+        history: `
+          <p><strong>Neemrana Fort Palace</strong> stands as a testament to the rich architectural and cultural legacy of Neemrana. Recognized as a premier heritage hotel fort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Neemrana Fort Palace Area, Neemrana",
+            city: "Neemrana",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Neemrana%20Fort%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Neemrana Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Neemrana Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Neemrana"
+    },
+    {
+        id: 42,
+        name: "Kalibangan Museum",
+        slug: "kalibangan-museum",
+        city: "Hanumangarh",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Archaeological Site",
+        description: "An ancient site of the Indus Valley Civilization featuring pre-Harappan and Harappan relics, pottery, and agricultural finds.",
+        history: `
+          <p><strong>Kalibangan Museum</strong> stands as a testament to the rich architectural and cultural legacy of Hanumangarh. Recognized as a premier archaeological site in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 5940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kalibangan Museum Area, Hanumangarh",
+            city: "Hanumangarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kalibangan%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Hanumangarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Hanumangarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Hanumangarh"
+    },
+    {
+        id: 43,
+        name: "Sariska National Park",
+        slug: "sariska-national-park",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Tiger Reserve",
+        description: "A famous tiger reserve nestled in the Aravalli hills, home to leopards, wild boars, and historic ruins.",
+        history: `
+          <p><strong>Sariska National Park</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier tiger reserve in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sariska National Park Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sariska%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 44,
+        name: "Garbhaji Waterfall",
+        slug: "garbhaji-waterfall",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Waterfall",
+        description: "A beautiful natural waterfall surrounded by steep rocky cliffs, popular for trekking and picnics near Alwar.",
+        history: `
+          <p><strong>Garbhaji Waterfall</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier waterfall in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Garbhaji Waterfall Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garbhaji%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 45,
+        name: "Sambhar Salt Lake",
+        slug: "sambhar-salt-lake",
+        city: "Sambhar",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Salt Lake",
+        description: "India's largest inland salt lake, famous for salt production, scenic white horizons, and migratory flamingos.",
+        history: `
+          <p><strong>Sambhar Salt Lake</strong> stands as a testament to the rich architectural and cultural legacy of Sambhar. Recognized as a premier salt lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sambhar Salt Lake Area, Sambhar",
+            city: "Sambhar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sambhar%20Salt%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sambhar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sambhar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sambhar"
+    },
+    {
+        id: 46,
+        name: "Khimsar Fort",
+        slug: "khimsar-fort",
+        city: "Nagaur",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Heritage Fort",
+        description: "A beautiful 16th-century fortress on the edge of the Thar Desert, offering sand dune safaris and royal hospitality.",
+        history: `
+          <p><strong>Khimsar Fort</strong> stands as a testament to the rich architectural and cultural legacy of Nagaur. Recognized as a premier heritage fort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Khimsar Fort Area, Nagaur",
+            city: "Nagaur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khimsar%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Nagaur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Nagaur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Nagaur"
+    },
+    {
+        id: 47,
+        name: "Samode Palace",
+        slug: "samode-palace",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Heritage Palace",
+        description: "A beautiful heritage palace near Jaipur, famous for its mirror-decorated halls (Sheesh Mahal) and courtly architecture.",
+        history: `
+          <p><strong>Samode Palace</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier heritage palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Samode Palace Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Samode%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 48,
+        name: "Rambagh Palace",
+        slug: "rambagh-palace",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Luxury Heritage Hotel",
+        description: "Known as the 'Jewel of Jaipur', this former royal residence of the Maharaja is now one of the world's finest luxury hotels.",
+        history: `
+          <p><strong>Rambagh Palace</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier luxury heritage hotel in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Rambagh Palace Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rambagh%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 49,
+        name: "Sisodia Rani Ka Bagh",
+        slug: "sisodia-rani-ka-bagh",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Royal Garden",
+        description: "A terraced royal garden decorated with water fountains, pavilions, and beautiful wall paintings depicting Radha-Krishna love stories.",
+        history: `
+          <p><strong>Sisodia Rani Ka Bagh</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier royal garden in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sisodia Rani Ka Bagh Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sisodia%20Rani%20Ka%20Bagh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 50,
+        name: "Pandu Pol Temple",
+        slug: "pandu-pol-temple",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Hanuman Temple",
+        description: "An ancient temple inside Sariska Tiger Reserve, linked to the Pandavas from the Mahabharata epic.",
+        history: `
+          <p><strong>Pandu Pol Temple</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier hanuman temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 6900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Pandu Pol Temple Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Pandu%20Pol%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 51,
+        name: "Bagru Block Printing Village",
+        slug: "bagru-block-printing-village",
+        city: "Bagru",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Artisanal Craft Village",
+        description: "A world-famous traditional hand block-printing center using natural dyes and centuries-old wooden stamp patterns.",
+        history: `
+          <p><strong>Bagru Block Printing Village</strong> stands as a testament to the rich architectural and cultural legacy of Bagru. Recognized as a premier artisanal craft village in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bagru Block Printing Village Area, Bagru",
+            city: "Bagru",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bagru%20Block%20Printing%20Village",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bagru Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bagru Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bagru"
+    },
+    {
+        id: 52,
+        name: "Kishangarh Dumping Yard",
+        slug: "kishangarh-dumping-yard",
+        city: "Kishangarh",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Scenic White Landscape",
+        description: "A popular photography spot with a snow-like white landscape formed by marble slurry deposits near Kishangarh.",
+        history: `
+          <p><strong>Kishangarh Dumping Yard</strong> stands as a testament to the rich architectural and cultural legacy of Kishangarh. Recognized as a premier scenic white landscape in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kishangarh Dumping Yard Area, Kishangarh",
+            city: "Kishangarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kishangarh%20Dumping%20Yard",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Kishangarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Kishangarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kishangarh"
+    },
+    {
+        id: 53,
+        name: "Trinetra Ganesh Temple",
+        slug: "trinetra-ganesh-temple",
+        city: "Sawai Madhopur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ganesha Temple",
+        description: "A highly revered temple inside Ranthambore Fort housing the three-eyed idol of Lord Ganesha.",
+        history: `
+          <p><strong>Trinetra Ganesh Temple</strong> stands as a testament to the rich architectural and cultural legacy of Sawai Madhopur. Recognized as a premier ganesha temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Trinetra Ganesh Temple Area, Sawai Madhopur",
+            city: "Sawai Madhopur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Trinetra%20Ganesh%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sawai Madhopur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sawai Madhopur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sawai Madhopur"
+    },
+    {
+        id: 54,
+        name: "Fateh Prakash Palace",
+        slug: "fateh-prakash-palace",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Heritage Palace Hotel",
+        description: "Located inside the City Palace complex of Udaipur, famous for its magnificent crystal gallery and lake views.",
+        history: `
+          <p><strong>Fateh Prakash Palace</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier heritage palace hotel in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Fateh Prakash Palace Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Fateh%20Prakash%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 55,
+        name: "Haldighati Pass",
+        slug: "haldighati-pass",
+        city: "Rajsamand",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Historical Battleground",
+        description: "A narrow mountain pass with yellow soil resembling turmeric, famous for the battle between Maharana Pratap and Akbar's forces.",
+        history: `
+          <p><strong>Haldighati Pass</strong> stands as a testament to the rich architectural and cultural legacy of Rajsamand. Recognized as a premier historical battleground in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Haldighati Pass Area, Rajsamand",
+            city: "Rajsamand",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Haldighati%20Pass",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Rajsamand Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Rajsamand Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rajsamand"
+    },
+    {
+        id: 56,
+        name: "Vintage Car Museum",
+        slug: "vintage-car-museum",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Automobile Museum",
+        description: "Houses a rare collection of classic royal vintage cars once owned by the Mewar Maharanas.",
+        history: `
+          <p><strong>Vintage Car Museum</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier automobile museum in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Vintage Car Museum Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vintage%20Car%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 57,
+        name: "Clock Tower Jodhpur",
+        slug: "clock-tower-jodhpur",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Historical Clock Tower",
+        description: "A prominent landmark in Jodhpur surrounded by the bustling Sardar Market, famous for spices and local shopping.",
+        history: `
+          <p><strong>Clock Tower Jodhpur</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier historical clock tower in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Clock Tower Jodhpur Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Clock%20Tower%20Jodhpur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 58,
+        name: "Nawalgarh Havelis",
+        slug: "nawalgarh-havelis",
+        city: "Nawalgarh",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Painted Havelis",
+        description: "Known as the golden city of Shekhawati, famous for beautifully painted frescos on historic grand havelis.",
+        history: `
+          <p><strong>Nawalgarh Havelis</strong> stands as a testament to the rich architectural and cultural legacy of Nawalgarh. Recognized as a premier painted havelis in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nawalgarh Havelis Area, Nawalgarh",
+            city: "Nawalgarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nawalgarh%20Havelis",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Nawalgarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Nawalgarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Nawalgarh"
+    },
+    {
+        id: 59,
+        name: "Eklingji Temple",
+        slug: "eklingji-temple",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Shiva Temple",
+        description: "An ancient and highly revered Hindu temple complex dedicated to Lord Eklingji, the ruling deity of Mewar.",
+        history: `
+          <p><strong>Eklingji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier shiva temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 7980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Eklingji Temple Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Eklingji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 60,
+        name: "Bagore Ki Haveli",
+        slug: "bagore-ki-haveli",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Museum & Cultural Center",
+        description: "An 18th-century waterfront haveli hosting dynamic folk dance shows and heritage museum galleries.",
+        history: `
+          <p><strong>Bagore Ki Haveli</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier museum & cultural center in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bagore Ki Haveli Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bagore%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 61,
+        name: "Toorji Ka Jhalra",
+        slug: "toorji-ka-jhalra",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Historical Stepwell",
+        description: "A beautifully restored 18th-century stepwell showcasing intricate Rajput water management architecture.",
+        history: `
+          <p><strong>Toorji Ka Jhalra</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier historical stepwell in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Toorji Ka Jhalra Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Toorji%20Ka%20Jhalra",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 62,
+        name: "Salim Singh Ki Haveli",
+        slug: "salim-singh-ki-haveli",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Historic Haveli",
+        description: "A uniquely designed haveli in Jaisalmer with an peacock-shaped arched roof and intricate stone carvings.",
+        history: `
+          <p><strong>Salim Singh Ki Haveli</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier historic haveli in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Salim Singh Ki Haveli Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Salim%20Singh%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 63,
+        name: "Nathmal Ki Haveli",
+        slug: "nathmal-ki-haveli",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Historic Haveli",
+        description: "Famous Jaisalmer haveli carved by two architect brothers, featuring identical halves with subtle design differences.",
+        history: `
+          <p><strong>Nathmal Ki Haveli</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier historic haveli in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nathmal Ki Haveli Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nathmal%20Ki%20Haveli",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 64,
+        name: "Khuri Sand Dunes",
+        slug: "khuri-sand-dunes",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Desert Sand Dunes",
+        description: "Peaceful sand dunes near Jaisalmer offering traditional mud home stays, camel rides, and clear desert starry nights.",
+        history: `
+          <p><strong>Khuri Sand Dunes</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier desert sand dunes in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Khuri Sand Dunes Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khuri%20Sand%20Dunes",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 65,
+        name: "Vyas Chhatri",
+        slug: "vyas-chhatri",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Cenotaph monument",
+        description: "An array of golden sandstone cenotaphs dedicated to sage Vyas, popular for capturing stunning sunset photographs.",
+        history: `
+          <p><strong>Vyas Chhatri</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier cenotaph monument in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Vyas Chhatri Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vyas%20Chhatri",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 66,
+        name: "Pokhran Fort",
+        slug: "pokhran-fort",
+        city: "Pokhran",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Heritage Fort",
+        description: "A 14th-century red sandstone fortress of the Marwar clan, housing a heritage museum and temple.",
+        history: `
+          <p><strong>Pokhran Fort</strong> stands as a testament to the rich architectural and cultural legacy of Pokhran. Recognized as a premier heritage fort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Pokhran Fort Area, Pokhran",
+            city: "Pokhran",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Pokhran%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Pokhran Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Pokhran Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pokhran"
+    },
+    {
+        id: 67,
+        name: "Desert National Park",
+        slug: "desert-national-park",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "National Park",
+        description: "One of India's largest national parks, showcasing Thar Desert wildlife and the endangered Great Indian Bustard.",
+        history: `
+          <p><strong>Desert National Park</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier national park in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 8940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Desert National Park Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Desert%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 68,
+        name: "Bada Bagh",
+        slug: "bada-bagh",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Royal Cenotaphs",
+        description: "A historical garden complex housing carved golden sandstone cenotaphs of Jaisalmer's royal family.",
+        history: `
+          <p><strong>Bada Bagh</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier royal cenotaphs in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bada Bagh Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bada%20Bagh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 69,
+        name: "Tanot Mata Temple",
+        slug: "tanot-mata-temple",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Border Temple",
+        description: "A famous border temple managed by BSF, where bombs dropped in the 1965 war miraculously did not explode.",
+        history: `
+          <p><strong>Tanot Mata Temple</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier border temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Tanot Mata Temple Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tanot%20Mata%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 70,
+        name: "Ana Sagar Lake",
+        slug: "ana-sagar-lake",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Artificial Lake",
+        description: "A scenic artificial lake in Ajmer featuring beautiful marble pavilions (Baradari) built by Mughal Emperor Shah Jahan.",
+        history: `
+          <p><strong>Ana Sagar Lake</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier artificial lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Ana Sagar Lake Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ana%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 71,
+        name: "Balsamand Lake",
+        slug: "balsamand-lake",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Historic Palace Lake",
+        description: "A 12th-century artificial lake surrounded by lush gardens and a grand red sandstone palace hotel.",
+        history: `
+          <p><strong>Balsamand Lake</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier historic palace lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Balsamand Lake Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Balsamand%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 72,
+        name: "Savitri Temple",
+        slug: "savitri-temple",
+        city: "Pushkar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Hill Temple",
+        description: "Perched atop Ratnagiri Hill, this temple dedicated to Goddess Savitri offers beautiful sunrise and ropeway views of Pushkar.",
+        history: `
+          <p><strong>Savitri Temple</strong> stands as a testament to the rich architectural and cultural legacy of Pushkar. Recognized as a premier hill temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Savitri Temple Area, Pushkar",
+            city: "Pushkar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Savitri%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Pushkar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Pushkar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pushkar"
+    },
+    {
+        id: 73,
+        name: "Akbar Palace and Museum",
+        slug: "akbar-palace-and-museum",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Fort Museum",
+        description: "Built by Emperor Akbar in 1570, this fort houses a rich museum of Mughal weapons, sculptures, and art.",
+        history: `
+          <p><strong>Akbar Palace and Museum</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier fort museum in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Akbar Palace and Museum Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Akbar%20Palace%20and%20Museum",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 74,
+        name: "Nasiyan Jain Temple",
+        slug: "nasiyan-jain-temple",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Golden Temple",
+        description: "Also known as the Red Temple, famous for its magnificent double-story hall depicting golden representations of Jain cosmology.",
+        history: `
+          <p><strong>Nasiyan Jain Temple</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier golden temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nasiyan Jain Temple Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nasiyan%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 75,
+        name: "Nareli Jain Temple",
+        slug: "nareli-jain-temple",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "आधुनिक जैन मंदिर",
+        description: "A beautiful modern Jain temple complex carved out of pink sandstone, located on the outskirts of Ajmer.",
+        history: `
+          <p><strong>Nareli Jain Temple</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier आधुनिक जैन मंदिर in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 9900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nareli Jain Temple Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nareli%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 76,
+        name: "Adhai Din Ka Jhopra",
+        slug: "adhai-din-ka-jhopra",
+        city: "Ajmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Ancient Mosque ruins",
+        description: "An ancient mosque in Ajmer converted from a Sanskrit college in 1192, featuring highly intricate arched screens.",
+        history: `
+          <p><strong>Adhai Din Ka Jhopra</strong> stands as a testament to the rich architectural and cultural legacy of Ajmer. Recognized as a premier ancient mosque ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Adhai Din Ka Jhopra Area, Ajmer",
+            city: "Ajmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Adhai%20Din%20Ka%20Jhopra",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Ajmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Ajmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Ajmer"
+    },
+    {
+        id: 77,
+        name: "Salasar Balaji Temple",
+        slug: "salasar-balaji-temple",
+        city: "Sikar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Hanuman Temple",
+        description: "A highly sacred and popular pilgrimage site dedicated to Lord Hanuman, featuring a unique bearded deity idol.",
+        history: `
+          <p><strong>Salasar Balaji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Sikar. Recognized as a premier hanuman temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Salasar Balaji Temple Area, Sikar",
+            city: "Sikar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Salasar%20Balaji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sikar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sikar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 78,
+        name: "Siliserh Lake",
+        slug: "siliserh-lake",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Scenic Lake",
+        description: "A beautiful, serene lake surrounded by the Aravalli hills, featuring a historic lake palace converted into a heritage hotel.",
+        history: `
+          <p><strong>Siliserh Lake</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier scenic lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Siliserh Lake Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Siliserh%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 79,
+        name: "Gaib Sagar Lake",
+        slug: "gaib-sagar-lake",
+        city: "Dungarpur",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Historic Lake",
+        description: "A famous lake in Dungarpur known for its unique shrines, palace ruins, and diverse bird species migrating here.",
+        history: `
+          <p><strong>Gaib Sagar Lake</strong> stands as a testament to the rich architectural and cultural legacy of Dungarpur. Recognized as a premier historic lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Gaib Sagar Lake Area, Dungarpur",
+            city: "Dungarpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gaib%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dungarpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dungarpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 80,
+        name: "Beneshwar Dham",
+        slug: "beneshwar-dham",
+        city: "Dungarpur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Holy Pilgrimage",
+        description: "A highly revered delta site situated at the confluence of Som, Mahi, and Jakham rivers, famous for its tribal fair.",
+        history: `
+          <p><strong>Beneshwar Dham</strong> stands as a testament to the rich architectural and cultural legacy of Dungarpur. Recognized as a premier holy pilgrimage in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Beneshwar Dham Area, Dungarpur",
+            city: "Dungarpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Beneshwar%20Dham",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dungarpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dungarpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 81,
+        name: "Deo Somnath Temple",
+        slug: "deo-somnath-temple",
+        city: "Dungarpur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ancient Temple",
+        description: "A unique 12th-century stone temple dedicated to Lord Shiva, built entirely of stone blocks without mortar.",
+        history: `
+          <p><strong>Deo Somnath Temple</strong> stands as a testament to the rich architectural and cultural legacy of Dungarpur. Recognized as a premier ancient temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Deo Somnath Temple Area, Dungarpur",
+            city: "Dungarpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Deo%20Somnath%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dungarpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dungarpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 82,
+        name: "Menal Waterfall",
+        slug: "menal-waterfall",
+        city: "Chittorgarh",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Waterfall",
+        description: "A breathtaking waterfall surrounded by lush green forests and ancient Shiva temples dating back to the 12th century.",
+        history: `
+          <p><strong>Menal Waterfall</strong> stands as a testament to the rich architectural and cultural legacy of Chittorgarh. Recognized as a premier waterfall in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Menal Waterfall Area, Chittorgarh",
+            city: "Chittorgarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Menal%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Chittorgarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Chittorgarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 83,
+        name: "Bhimlat Waterfall",
+        slug: "bhimlat-waterfall",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Waterfall",
+        description: "A gorgeous 60-meter high monsoon waterfall located near Bundi, associated with the Mahabharata legend.",
+        history: `
+          <p><strong>Bhimlat Waterfall</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier waterfall in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bhimlat Waterfall Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhimlat%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 84,
+        name: "Garadiya Mahadev",
+        slug: "garadiya-mahadev",
+        city: "Kota",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Scenic Gorge Temple",
+        description: "A clifftop temple offering a breathtaking panoramic view of the horseshoe bend of the Chambal River canyon.",
+        history: `
+          <p><strong>Garadiya Mahadev</strong> stands as a testament to the rich architectural and cultural legacy of Kota. Recognized as a premier scenic gorge temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 10980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Garadiya Mahadev Area, Kota",
+            city: "Kota",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garadiya%20Mahadev",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Kota Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Kota Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 85,
+        name: "Chuliya Waterfall",
+        slug: "chuliya-waterfall",
+        city: "Rawatbhata",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Waterfall & Gorge",
+        description: "A scenic natural waterfall formed by the Chambal River cutting through circular rocks near Rawatbhata.",
+        history: `
+          <p><strong>Chuliya Waterfall</strong> stands as a testament to the rich architectural and cultural legacy of Rawatbhata. Recognized as a premier waterfall & gorge in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Chuliya Waterfall Area, Rawatbhata",
+            city: "Rawatbhata",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Chuliya%20Waterfall",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Rawatbhata Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Rawatbhata Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rawatbhata"
+    },
+    {
+        id: 86,
+        name: "Mahi Bajaj Sagar Dam",
+        slug: "mahi-bajaj-sagar-dam",
+        city: "Banswara",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Dam & Reservoir",
+        description: "The second largest dam in Rajasthan, featuring scenic view of multiple green islands on the Mahi River.",
+        history: `
+          <p><strong>Mahi Bajaj Sagar Dam</strong> stands as a testament to the rich architectural and cultural legacy of Banswara. Recognized as a premier dam & reservoir in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Mahi Bajaj Sagar Dam Area, Banswara",
+            city: "Banswara",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mahi%20Bajaj%20Sagar%20Dam",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Banswara Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Banswara Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 87,
+        name: "Kaylana Lake",
+        slug: "kaylana-lake",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Artificial Lake",
+        description: "A peaceful lake in Jodhpur, popular for capturing sunsets, boating, and observing local wildlife.",
+        history: `
+          <p><strong>Kaylana Lake</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier artificial lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kaylana Lake Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kaylana%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 88,
+        name: "Machia Biological Park",
+        slug: "machia-biological-park",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Biological Park & Zoo",
+        description: "Located near Kaylana Lake, home to desert animals like wolves, lions, leopards, and various deer species.",
+        history: `
+          <p><strong>Machia Biological Park</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier biological park & zoo in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Machia Biological Park Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Machia%20Biological%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 89,
+        name: "Machkund Dholpur",
+        slug: "machkund-dholpur",
+        city: "Dholpur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Holy Tank & Temples",
+        description: "A highly sacred place known as the 'King of Pilgrimages' (Tirthraj), featuring an ancient sacred pond and temples.",
+        history: `
+          <p><strong>Machkund Dholpur</strong> stands as a testament to the rich architectural and cultural legacy of Dholpur. Recognized as a premier holy tank & temples in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Machkund Dholpur Area, Dholpur",
+            city: "Dholpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Machkund%20Dholpur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dholpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dholpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dholpur"
+    },
+    {
+        id: 90,
+        name: "Lodurva Jain Temple",
+        slug: "lodurva-jain-temple",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Jain Temple ruins",
+        description: "A beautiful yellow sandstone Jain temple, famous for its ornate archway (Torana) and mythical wishes-granting tree.",
+        history: `
+          <p><strong>Lodurva Jain Temple</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier jain temple ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Lodurva Jain Temple Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Lodurva%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 91,
+        name: "Kiradu Temples",
+        slug: "kiradu-temples",
+        city: "Barmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ancient ruins",
+        description: "Known as the Khajuraho of Rajasthan, featuring gorgeous ruins of Solanki-style temples in the desert.",
+        history: `
+          <p><strong>Kiradu Temples</strong> stands as a testament to the rich architectural and cultural legacy of Barmer. Recognized as a premier ancient ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kiradu Temples Area, Barmer",
+            city: "Barmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kiradu%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Barmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Barmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Barmer"
+    },
+    {
+        id: 92,
+        name: "Nakoda Jain Temple",
+        slug: "nakoda-jain-temple",
+        city: "Barmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Pilgrimage center",
+        description: "A highly popular Jain pilgrimage site located on a hill in Barmer, dedicated to Lord Parsvanath.",
+        history: `
+          <p><strong>Nakoda Jain Temple</strong> stands as a testament to the rich architectural and cultural legacy of Barmer. Recognized as a premier pilgrimage center in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 11940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nakoda Jain Temple Area, Barmer",
+            city: "Barmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nakoda%20Jain%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Barmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Barmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Barmer"
+    },
+    {
+        id: 93,
+        name: "Govind Dev Ji Temple",
+        slug: "govind-dev-ji-temple",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Krishna Temple",
+        description: "Located inside the City Palace complex, housing the highly revered Krishna deity once worshiped by the royals.",
+        history: `
+          <p><strong>Govind Dev Ji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier krishna temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Govind Dev Ji Temple Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Govind%20Dev%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 94,
+        name: "Khatu Shyam Ji Temple",
+        slug: "khatu-shyam-ji-temple",
+        city: "Sikar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Shyam Baba Temple",
+        description: "One of the most visited temples in Rajasthan, dedicated to Barbarika (revered as Shyam Baba), drawing millions of devotees.",
+        history: `
+          <p><strong>Khatu Shyam Ji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Sikar. Recognized as a premier shyam baba temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Khatu Shyam Ji Temple Area, Sikar",
+            city: "Sikar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khatu%20Shyam%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sikar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sikar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 95,
+        name: "Kaila Devi Temple",
+        slug: "kaila-devi-temple",
+        city: "Karauli",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Durga Temple",
+        description: "A highly sacred temple situated on the banks of Kalisil River, dedicated to the tutelary deity of Karauli state.",
+        history: `
+          <p><strong>Kaila Devi Temple</strong> stands as a testament to the rich architectural and cultural legacy of Karauli. Recognized as a premier durga temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kaila Devi Temple Area, Karauli",
+            city: "Karauli",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kaila%20Devi%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Karauli Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Karauli Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Karauli"
+    },
+    {
+        id: 96,
+        name: "Mehandipur Balaji Temple",
+        slug: "mehandipur-balaji-temple",
+        city: "Dausa",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Hanuman Temple",
+        description: "A widely popular temple dedicated to Lord Hanuman, renowned for ritualistic healing and exorcism of evil spirits.",
+        history: `
+          <p><strong>Mehandipur Balaji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Dausa. Recognized as a premier hanuman temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Mehandipur Balaji Temple Area, Dausa",
+            city: "Dausa",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mehandipur%20Balaji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dausa Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dausa Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dausa"
+    },
+    {
+        id: 97,
+        name: "Sukh Mahal Bundi",
+        slug: "sukh-mahal-bundi",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Lake Palace",
+        description: "A scenic summer palace located on the banks of Jait Sagar lake, where Rudyard Kipling stayed and wrote 'Kim'.",
+        history: `
+          <p><strong>Sukh Mahal Bundi</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier lake palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sukh Mahal Bundi Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sukh%20Mahal%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 98,
+        name: "Garh Palace Bundi",
+        slug: "garh-palace-bundi",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Hill Palace Complex",
+        description: "A majestic hill palace complex famous for its miniature paintings, grand gateways, and traditional Rajput architecture.",
+        history: `
+          <p><strong>Garh Palace Bundi</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier hill palace complex in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Garh Palace Bundi Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Garh%20Palace%20Bundi",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 99,
+        name: "Rani Ji Ki Baori",
+        slug: "rani-ji-ki-baori",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Decorated Stepwell",
+        description: "The largest and most beautiful stepwell in Bundi, built in 1699 by Rani Nathavati, featuring gorgeous stone pillars.",
+        history: `
+          <p><strong>Rani Ji Ki Baori</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier decorated stepwell in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Rani Ji Ki Baori Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rani%20Ji%20Ki%20Baori",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 100,
+        name: "Vijay Stambh Chittorgarh",
+        slug: "vijay-stambh-chittorgarh",
+        city: "Chittorgarh",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Victory Tower",
+        description: "A historic 9-storey Victory Tower built by Maharana Kumbha in 1448 to commemorate victory over Malwa and Gujarat armies.",
+        history: `
+          <p><strong>Vijay Stambh Chittorgarh</strong> stands as a testament to the rich architectural and cultural legacy of Chittorgarh. Recognized as a premier victory tower in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 12900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Vijay Stambh Chittorgarh Area, Chittorgarh",
+            city: "Chittorgarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Vijay%20Stambh%20Chittorgarh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Chittorgarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Chittorgarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 101,
+        name: "Kirti Stambh Chittorgarh",
+        slug: "kirti-stambh-chittorgarh",
+        city: "Chittorgarh",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Tower of Fame",
+        description: "A 22-meter high 12th-century tower dedicated to the first Jain Tirthankara Adinath, featuring beautiful Jain carvings.",
+        history: `
+          <p><strong>Kirti Stambh Chittorgarh</strong> stands as a testament to the rich architectural and cultural legacy of Chittorgarh. Recognized as a premier tower of fame in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kirti Stambh Chittorgarh Area, Chittorgarh",
+            city: "Chittorgarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kirti%20Stambh%20Chittorgarh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Chittorgarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Chittorgarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 102,
+        name: "Jawai Bandh",
+        slug: "jawai-bandh",
+        city: "Pali",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Dam & Leopard Sanctuary",
+        description: "A scenic dam on Jawai river, famous for leopard safaris, migratory crocodiles, and rugged granite hills.",
+        history: `
+          <p><strong>Jawai Bandh</strong> stands as a testament to the rich architectural and cultural legacy of Pali. Recognized as a premier dam & leopard sanctuary in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Jawai Bandh Area, Pali",
+            city: "Pali",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jawai%20Bandh",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Pali Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Pali Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 103,
+        name: "Bahubali Hills Udaipur",
+        slug: "bahubali-hills-udaipur",
+        city: "Udaipur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Scenic Viewpoint",
+        description: "A popular trekking viewpoint near Udaipur, offering 360-degree views of the scenic Badi Lake and surrounding Aravalli hills.",
+        history: `
+          <p><strong>Bahubali Hills Udaipur</strong> stands as a testament to the rich architectural and cultural legacy of Udaipur. Recognized as a premier scenic viewpoint in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bahubali Hills Udaipur Area, Udaipur",
+            city: "Udaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bahubali%20Hills%20Udaipur",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Udaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Udaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Udaipur"
+    },
+    {
+        id: 104,
+        name: "Om Banna Temple",
+        slug: "om-banna-temple",
+        city: "Pali",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Bullet Baba Shrine",
+        description: "A unique shrine on Pali highway dedicated to a 350cc Royal Enfield motorcycle and its owner Om Banna.",
+        history: `
+          <p><strong>Om Banna Temple</strong> stands as a testament to the rich architectural and cultural legacy of Pali. Recognized as a premier bullet baba shrine in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Om Banna Temple Area, Pali",
+            city: "Pali",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Om%20Banna%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Pali Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Pali Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 105,
+        name: "Longewala War Memorial",
+        slug: "longewala-war-memorial",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "War Memorial Museum",
+        description: "A historical border site commemorating the famous 1971 battle of Longewala, featuring captured enemy tanks.",
+        history: `
+          <p><strong>Longewala War Memorial</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier war memorial museum in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Longewala War Memorial Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Longewala%20War%20Memorial",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 106,
+        name: "Khaba Fort Jaisalmer",
+        slug: "khaba-fort-jaisalmer",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Desert Fort ruins",
+        description: "An abandoned desert fort offering scenic views of empty Paliwal Brahmin village ruins and the vast Thar Desert.",
+        history: `
+          <p><strong>Khaba Fort Jaisalmer</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier desert fort ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Khaba Fort Jaisalmer Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khaba%20Fort%20Jaisalmer",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 107,
+        name: "Tal Chhapar Sanctuary",
+        slug: "tal-chhapar-sanctuary",
+        city: "Churu",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Blackbuck Sanctuary",
+        description: "A unique grassland wildlife sanctuary in Churu district, famous for blackbucks and a variety of migratory raptors.",
+        history: `
+          <p><strong>Tal Chhapar Sanctuary</strong> stands as a testament to the rich architectural and cultural legacy of Churu. Recognized as a premier blackbuck sanctuary in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Tal Chhapar Sanctuary Area, Churu",
+            city: "Churu",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tal%20Chhapar%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Churu Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Churu Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Churu"
+    },
+    {
+        id: 108,
+        name: "National Chambal Sanctuary",
+        slug: "national-chambal-sanctuary",
+        city: "Kota",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "River Sanctuary",
+        description: "A riverine sanctuary established along the Chambal river, home to gharials, red-crowned turtles, and dolphins.",
+        history: `
+          <p><strong>National Chambal Sanctuary</strong> stands as a testament to the rich architectural and cultural legacy of Kota. Recognized as a premier river sanctuary in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "National Chambal Sanctuary Area, Kota",
+            city: "Kota",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/National%20Chambal%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Kota Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Kota Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 109,
+        name: "Ramdevra Temple Jaisalmer",
+        slug: "ramdevra-temple-jaisalmer",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Baba Ramdev Shrine",
+        description: "A highly popular shrine of folk deity Baba Ramdev, visited by millions during the annual Ramdevra Fair.",
+        history: `
+          <p><strong>Ramdevra Temple Jaisalmer</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier baba ramdev shrine in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 13980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Ramdevra Temple Jaisalmer Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ramdevra%20Temple%20Jaisalmer",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 110,
+        name: "Mangarh Dham Banswara",
+        slug: "mangarh-dham-banswara",
+        city: "Banswara",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Tribal Martyrs Memorial",
+        description: "A historical hilltop memorial dedicated to the tribal freedom fighters who were massacred here in 1913.",
+        history: `
+          <p><strong>Mangarh Dham Banswara</strong> stands as a testament to the rich architectural and cultural legacy of Banswara. Recognized as a premier tribal martyrs memorial in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Mangarh Dham Banswara Area, Banswara",
+            city: "Banswara",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mangarh%20Dham%20Banswara",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Banswara Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Banswara Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 111,
+        name: "Sariska Palace Alwar",
+        slug: "sariska-palace-alwar",
+        city: "Alwar",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Royal Hunting Lodge",
+        description: "Built by Maharaja Jai Singh of Alwar in 1892 as a royal hunting lodge, now converted into a heritage resort.",
+        history: `
+          <p><strong>Sariska Palace Alwar</strong> stands as a testament to the rich architectural and cultural legacy of Alwar. Recognized as a premier royal hunting lodge in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sariska Palace Alwar Area, Alwar",
+            city: "Alwar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sariska%20Palace%20Alwar",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Alwar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Alwar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Alwar"
+    },
+    {
+        id: 112,
+        name: "Mandore Gardens",
+        slug: "mandore-gardens",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Historic Garden & Cenotaphs",
+        description: "The ancient capital of Marwar, featuring grand red sandstone cenotaphs, lush green gardens, and the Hall of Heroes.",
+        history: `
+          <p><strong>Mandore Gardens</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier historic garden & cenotaphs in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Mandore Gardens Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mandore%20Gardens",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 113,
+        name: "Rao Jodha Desert Rock Park",
+        slug: "rao-jodha-desert-rock-park",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Desert Ecological Park",
+        description: "A beautifully restored volcanic rock park at the foot of Mehrangarh Fort, showcasing native Thar Desert ecology.",
+        history: `
+          <p><strong>Rao Jodha Desert Rock Park</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier desert ecological park in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Rao Jodha Desert Rock Park Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Rao%20Jodha%20Desert%20Rock%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 114,
+        name: "Balsamand Palace",
+        slug: "balsamand-palace",
+        city: "Jodhpur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Heritage Palace Resort",
+        description: "A historic red sandstone palace overlooking Balsamand Lake, famous for Rajput architecture and sprawling orchards.",
+        history: `
+          <p><strong>Balsamand Palace</strong> stands as a testament to the rich architectural and cultural legacy of Jodhpur. Recognized as a premier heritage palace resort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Balsamand Palace Area, Jodhpur",
+            city: "Jodhpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Balsamand%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jodhpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jodhpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jodhpur"
+    },
+    {
+        id: 115,
+        name: "Juna Mahal",
+        slug: "juna-mahal",
+        city: "Dungarpur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Historic Fort Palace",
+        description: "A 13th-century fort palace in Dungarpur, renowned for its elaborate frescos, murals, and intricate glasswork inside.",
+        history: `
+          <p><strong>Juna Mahal</strong> stands as a testament to the rich architectural and cultural legacy of Dungarpur. Recognized as a premier historic fort palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Juna Mahal Area, Dungarpur",
+            city: "Dungarpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Juna%20Mahal",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dungarpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dungarpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 116,
+        name: "Udai Bilas Palace",
+        slug: "udai-bilas-palace",
+        city: "Dungarpur",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Lakefront Palace",
+        description: "A stunning lakefront palace showcasing classic Rajput architecture, detailed stone carvings, and blue grey marble construction.",
+        history: `
+          <p><strong>Udai Bilas Palace</strong> stands as a testament to the rich architectural and cultural legacy of Dungarpur. Recognized as a premier lakefront palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Udai Bilas Palace Area, Dungarpur",
+            city: "Dungarpur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Udai%20Bilas%20Palace",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Dungarpur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Dungarpur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Dungarpur"
+    },
+    {
+        id: 117,
+        name: "Tripura Sundari Temple",
+        slug: "tripura-sundari-temple",
+        city: "Banswara",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Shakti Peeth Temple",
+        description: "A highly sacred temple dedicated to Goddess Tripura Sundari, featuring a black stone idol worshiped by millions.",
+        history: `
+          <p><strong>Tripura Sundari Temple</strong> stands as a testament to the rich architectural and cultural legacy of Banswara. Recognized as a premier shakti peeth temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 14940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Tripura Sundari Temple Area, Banswara",
+            city: "Banswara",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Tripura%20Sundari%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Banswara Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Banswara Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 118,
+        name: "Arthuna Temples",
+        slug: "arthuna-temples",
+        city: "Banswara",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Temple Ruins Complex",
+        description: "A historic cluster of ruined Hindu and Jain temples dating back to the 11th century, displaying exquisite stone carvings.",
+        history: `
+          <p><strong>Arthuna Temples</strong> stands as a testament to the rich architectural and cultural legacy of Banswara. Recognized as a premier temple ruins complex in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Arthuna Temples Area, Banswara",
+            city: "Banswara",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Arthuna%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Banswara Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Banswara Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Banswara"
+    },
+    {
+        id: 119,
+        name: "Amar Sagar Lake",
+        slug: "amar-sagar-lake",
+        city: "Jaisalmer",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Oasis Lake & Palace",
+        description: "A scenic lake oasis near Jaisalmer, featuring a beautifully carved palace, cenotaphs, and an ancient Jain temple.",
+        history: `
+          <p><strong>Amar Sagar Lake</strong> stands as a testament to the rich architectural and cultural legacy of Jaisalmer. Recognized as a premier oasis lake & palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Amar Sagar Lake Area, Jaisalmer",
+            city: "Jaisalmer",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Amar%20Sagar%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaisalmer Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaisalmer Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaisalmer"
+    },
+    {
+        id: 120,
+        name: "Gajner Wildlife Sanctuary",
+        slug: "gajner-wildlife-sanctuary",
+        city: "Bikaner",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Wildlife Sanctuary",
+        description: "A lakefront reserve near Bikaner, home to imperial sand grouse, blackbucks, nilgai, and wild boars.",
+        history: `
+          <p><strong>Gajner Wildlife Sanctuary</strong> stands as a testament to the rich architectural and cultural legacy of Bikaner. Recognized as a premier wildlife sanctuary in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Gajner Wildlife Sanctuary Area, Bikaner",
+            city: "Bikaner",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gajner%20Wildlife%20Sanctuary",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bikaner Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bikaner Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bikaner"
+    },
+    {
+        id: 121,
+        name: "Kolayat Lake",
+        slug: "kolayat-lake",
+        city: "Bikaner",
+        state: "Rajasthan",
+        category: "Lake",
+        subcategory: "Holy Pilgrimage Lake",
+        description: "A sacred lake in Bikaner, where Kapil Muni performed penance, famous for its historic bathing ghats and temple.",
+        history: `
+          <p><strong>Kolayat Lake</strong> stands as a testament to the rich architectural and cultural legacy of Bikaner. Recognized as a premier holy pilgrimage lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kolayat Lake Area, Bikaner",
+            city: "Bikaner",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kolayat%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bikaner Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Lake",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bikaner Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bikaner"
+    },
+    {
+        id: 122,
+        name: "Jeen Mata Temple",
+        slug: "jeen-mata-temple",
+        city: "Sikar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Folk Goddess Temple",
+        description: "An ancient temple dedicated to Jeen Mata, situated amidst scenic hills, highly revered in Rajasthani folklore.",
+        history: `
+          <p><strong>Jeen Mata Temple</strong> stands as a testament to the rich architectural and cultural legacy of Sikar. Recognized as a premier folk goddess temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Jeen Mata Temple Area, Sikar",
+            city: "Sikar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Jeen%20Mata%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sikar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sikar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 123,
+        name: "Harshnath Temple Sikar",
+        slug: "harshnath-temple-sikar",
+        city: "Sikar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ancient Hill Temple Ruins",
+        description: "A historic 10th-century Shiva temple ruin situated atop Harsh Giri hill, showcasing beautiful stone sculptures.",
+        history: `
+          <p><strong>Harshnath Temple Sikar</strong> stands as a testament to the rich architectural and cultural legacy of Sikar. Recognized as a premier ancient hill temple ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Harshnath Temple Sikar Area, Sikar",
+            city: "Sikar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Harshnath%20Temple%20Sikar",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sikar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sikar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sikar"
+    },
+    {
+        id: 124,
+        name: "Devyani Kund",
+        slug: "devyani-kund",
+        city: "Sambhar",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Sacred Bathing Pool",
+        description: "A holy water tank near Sambhar Lake, known as the 'mother of all pilgrimages' (Tirtho ki Nani) with ancient shrines.",
+        history: `
+          <p><strong>Devyani Kund</strong> stands as a testament to the rich architectural and cultural legacy of Sambhar. Recognized as a premier sacred bathing pool in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Devyani Kund Area, Sambhar",
+            city: "Sambhar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Devyani%20Kund",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Sambhar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Sambhar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Sambhar"
+    },
+    {
+        id: 125,
+        name: "Chandlai Lake",
+        slug: "chandlai-lake",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Bird Watching Lake",
+        description: "A peaceful lake on the outskirts of Jaipur, highly popular for watching migratory birds and flamingos.",
+        history: `
+          <p><strong>Chandlai Lake</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier bird watching lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 15900,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Chandlai Lake Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Chandlai%20Lake",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 126,
+        name: "Galta Ji Temple",
+        slug: "galta-ji-temple",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Monkey Temple & Springs",
+        description: "A historic Hindu pilgrimage site featuring natural mountain springs, sacred pools, and thousands of resident monkeys.",
+        history: `
+          <p><strong>Galta Ji Temple</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier monkey temple & springs in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16020,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Galta Ji Temple Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Galta%20Ji%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 127,
+        name: "Gatore Ki Chhatriyan",
+        slug: "gatore-ki-chhatriyan",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Royal Royal Cenotaphs",
+        description: "The royal crematorium complex of Jaipur's Kachwaha kings, featuring beautifully carved marble and sandstone cenotaphs.",
+        history: `
+          <p><strong>Gatore Ki Chhatriyan</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier royal royal cenotaphs in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16140,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Gatore Ki Chhatriyan Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gatore%20Ki%20Chhatriyan",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 128,
+        name: "Kanak Vrindavan Garden",
+        slug: "kanak-vrindavan-garden",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Royal Valley Garden",
+        description: "A beautiful garden at the foothills of Nahargarh, resembling the mythological Vrindavan where Lord Krishna played.",
+        history: `
+          <p><strong>Kanak Vrindavan Garden</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier royal valley garden in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16260,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kanak Vrindavan Garden Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kanak%20Vrindavan%20Garden",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 129,
+        name: "Nahargarh Biological Park",
+        slug: "nahargarh-biological-park",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Biological Park & Safari",
+        description: "A large biological park near Jaipur hosting tigers, lions, leopards, bears, and exotic birds in spacious enclosures.",
+        history: `
+          <p><strong>Nahargarh Biological Park</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier biological park & safari in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16380,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Nahargarh Biological Park Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Nahargarh%20Biological%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 130,
+        name: "Patrika Gate",
+        slug: "patrika-gate",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Artistic Monument Gate",
+        description: "A highly colorful and artistic entrance gate at Jawahar Circle, showcasing hand-painted murals of Rajasthan's history.",
+        history: `
+          <p><strong>Patrika Gate</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier artistic monument gate in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16500,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Patrika Gate Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Patrika%20Gate",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 131,
+        name: "Khole Ke Hanuman Ji",
+        slug: "khole-ke-hanuman-ji",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Hilltop Temple",
+        description: "A popular hilltop temple dedicated to Lord Hanuman, offering panoramic views of the surrounding hills.",
+        history: `
+          <p><strong>Khole Ke Hanuman Ji</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier hilltop temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16620,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Khole Ke Hanuman Ji Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Khole%20Ke%20Hanuman%20Ji",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 132,
+        name: "Moti Dungri Ganesh Temple",
+        slug: "moti-dungri-ganesh-temple",
+        city: "Jaipur",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ganesha Temple",
+        description: "One of Jaipur's most famous temples situated next to Moti Dungri Fort, dedicated to Lord Ganesha.",
+        history: `
+          <p><strong>Moti Dungri Ganesh Temple</strong> stands as a testament to the rich architectural and cultural legacy of Jaipur. Recognized as a premier ganesha temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16740,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Moti Dungri Ganesh Temple Area, Jaipur",
+            city: "Jaipur",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Moti%20Dungri%20Ganesh%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jaipur Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jaipur Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jaipur"
+    },
+    {
+        id: 133,
+        name: "Charbhuja Temple Rajsamand",
+        slug: "charbhuja-temple-rajsamand",
+        city: "Rajsamand",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ancient Vishnu Temple",
+        description: "An ancient temple dedicated to Lord Vishnu, built in 1444 AD, highly popular pilgrimage in Mewar region.",
+        history: `
+          <p><strong>Charbhuja Temple Rajsamand</strong> stands as a testament to the rich architectural and cultural legacy of Rajsamand. Recognized as a premier ancient vishnu temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16860,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Charbhuja Temple Rajsamand Area, Rajsamand",
+            city: "Rajsamand",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Charbhuja%20Temple%20Rajsamand",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Rajsamand Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Rajsamand Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Rajsamand"
+    },
+    {
+        id: 134,
+        name: "Parshuram Mahadev Cave Temple",
+        slug: "parshuram-mahadev-cave-temple",
+        city: "Pali",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Cave Temple",
+        description: "A sacred Lord Shiva cave temple situated in the Aravalli hills, reached by walking down 500 steep stairs.",
+        history: `
+          <p><strong>Parshuram Mahadev Cave Temple</strong> stands as a testament to the rich architectural and cultural legacy of Pali. Recognized as a premier cave temple in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 16980,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Parshuram Mahadev Cave Temple Area, Pali",
+            city: "Pali",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Parshuram%20Mahadev%20Cave%20Temple",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Pali Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Pali Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Pali"
+    },
+    {
+        id: 135,
+        name: "Timangarh Fort",
+        slug: "timangarh-fort",
+        city: "Karauli",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Ancient Fort ruins",
+        description: "An ancient 11th-century fort in Karauli, famous for exquisite stone carvings and archaeological ruins.",
+        history: `
+          <p><strong>Timangarh Fort</strong> stands as a testament to the rich architectural and cultural legacy of Karauli. Recognized as a premier ancient fort ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17100,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Timangarh Fort Area, Karauli",
+            city: "Karauli",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Timangarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Karauli Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Karauli Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Karauli"
+    },
+    {
+        id: 136,
+        name: "Bundi Palace Complex",
+        slug: "bundi-palace-complex",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Palace",
+        subcategory: "Heritage Palace",
+        description: "Famous for its spectacular murals, the Chitrashala art gallery, and traditional Rajput palace chambers.",
+        history: `
+          <p><strong>Bundi Palace Complex</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier heritage palace in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17220,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bundi Palace Complex Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bundi%20Palace%20Complex",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Palace",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 137,
+        name: "84 Pillared Cenotaph",
+        slug: "84-pillared-cenotaph",
+        city: "Bundi",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Cenotaph monument",
+        description: "A magnificent 17th-century double-story royal cenotaph supported by 84 intricately carved stone pillars.",
+        history: `
+          <p><strong>84 Pillared Cenotaph</strong> stands as a testament to the rich architectural and cultural legacy of Bundi. Recognized as a premier cenotaph monument in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17340,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "84 Pillared Cenotaph Area, Bundi",
+            city: "Bundi",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/84%20Pillared%20Cenotaph",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bundi Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bundi Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bundi"
+    },
+    {
+        id: 138,
+        name: "Bijolia Temples",
+        slug: "bijolia-temples",
+        city: "Bijolia",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Ancient Temple Complex",
+        description: "A group of ancient 12th-century Shiva temples featuring fine stone craftsmanship in Bhilwara district.",
+        history: `
+          <p><strong>Bijolia Temples</strong> stands as a testament to the rich architectural and cultural legacy of Bijolia. Recognized as a premier ancient temple complex in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17460,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bijolia Temples Area, Bijolia",
+            city: "Bijolia",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bijolia%20Temples",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bijolia Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bijolia Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bijolia"
+    },
+    {
+        id: 139,
+        name: "Badnor Fort",
+        slug: "badnor-fort",
+        city: "Bhilwara",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Hilltop Fort ruins",
+        description: "A grand 16th-century fortress situated on a hill, presenting classical military architecture of Mewar.",
+        history: `
+          <p><strong>Badnor Fort</strong> stands as a testament to the rich architectural and cultural legacy of Bhilwara. Recognized as a premier hilltop fort ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17580,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Badnor Fort Area, Bhilwara",
+            city: "Bhilwara",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Badnor%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Bhilwara Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Bhilwara Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Bhilwara"
+    },
+    {
+        id: 140,
+        name: "Seven Wonders Park Kota",
+        slug: "seven-wonders-park-kota",
+        city: "Kota",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Theme Park & Lake",
+        description: "A popular theme park on Kishore Sagar lake featuring replicas of the Seven Wonders of the World.",
+        history: `
+          <p><strong>Seven Wonders Park Kota</strong> stands as a testament to the rich architectural and cultural legacy of Kota. Recognized as a premier theme park & lake in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17700,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Seven Wonders Park Kota Area, Kota",
+            city: "Kota",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Seven%20Wonders%20Park%20Kota",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Kota Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Kota Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 141,
+        name: "Mukundra Hills National Park",
+        slug: "mukundra-hills-national-park",
+        city: "Kota",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Tiger Reserve",
+        description: "A sprawling national park and tiger reserve nestled along the Chambal river valley.",
+        history: `
+          <p><strong>Mukundra Hills National Park</strong> stands as a testament to the rich architectural and cultural legacy of Kota. Recognized as a premier tiger reserve in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17820,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Mukundra Hills National Park Area, Kota",
+            city: "Kota",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Mukundra%20Hills%20National%20Park",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Kota Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Kota Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Kota"
+    },
+    {
+        id: 142,
+        name: "Bhainsrorgarh Fort",
+        slug: "bhainsrorgarh-fort",
+        city: "Chittorgarh",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Heritage Fort Resort",
+        description: "A spectacular fort built on a cliff overlooking the Chambal River, often called the 'Vellore of Rajasthan'.",
+        history: `
+          <p><strong>Bhainsrorgarh Fort</strong> stands as a testament to the rich architectural and cultural legacy of Chittorgarh. Recognized as a premier heritage fort resort in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 17940,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Bhainsrorgarh Fort Area, Chittorgarh",
+            city: "Chittorgarh",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Bhainsrorgarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Chittorgarh Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Chittorgarh Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Chittorgarh"
+    },
+    {
+        id: 143,
+        name: "Gagron Fort",
+        slug: "gagron-fort",
+        city: "Jhalawar",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Water Fort (UNESCO)",
+        description: "A unique UNESCO World Heritage hill and water fort, surrounded by the waters of Ahu and Kali Sindh rivers.",
+        history: `
+          <p><strong>Gagron Fort</strong> stands as a testament to the rich architectural and cultural legacy of Jhalawar. Recognized as a premier water fort (unesco) in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18060,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Gagron Fort Area, Jhalawar",
+            city: "Jhalawar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Gagron%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jhalawar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jhalawar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jhalawar"
+    },
+    {
+        id: 144,
+        name: "Kolvi Caves",
+        slug: "kolvi-caves",
+        city: "Jhalawar",
+        state: "Rajasthan",
+        category: "Heritage",
+        subcategory: "Buddhist Rock-Cut Caves",
+        description: "An ancient site containing 50-plus rock-cut Buddhist caves, stupas, and meditation cells from the 5th century.",
+        history: `
+          <p><strong>Kolvi Caves</strong> stands as a testament to the rich architectural and cultural legacy of Jhalawar. Recognized as a premier buddhist rock-cut caves in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18180,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Kolvi Caves Area, Jhalawar",
+            city: "Jhalawar",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Kolvi%20Caves",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Jhalawar Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Heritage",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Jhalawar Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Jhalawar"
+    },
+    {
+        id: 145,
+        name: "Sitabari",
+        slug: "sitabari",
+        city: "Baran",
+        state: "Rajasthan",
+        category: "Spiritual",
+        subcategory: "Holy Oasis & Springs",
+        description: "A sacred pilgrimage site linked to Goddess Sita, featuring hot water springs and hosting the Sahariya tribal fair.",
+        history: `
+          <p><strong>Sitabari</strong> stands as a testament to the rich architectural and cultural legacy of Baran. Recognized as a premier holy oasis & springs in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18300,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Sitabari Area, Baran",
+            city: "Baran",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Sitabari",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Baran Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Spiritual",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Baran Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Baran"
+    },
+    {
+        id: 146,
+        name: "Ramgarh Crater",
+        slug: "ramgarh-crater",
+        city: "Baran",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Meteorite Impact Crater",
+        description: "A unique ring-shaped structure created by a meteorite impact millions of years ago, containing ancient temples.",
+        history: `
+          <p><strong>Ramgarh Crater</strong> stands as a testament to the rich architectural and cultural legacy of Baran. Recognized as a premier meteorite impact crater in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18420,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Ramgarh Crater Area, Baran",
+            city: "Baran",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Ramgarh%20Crater",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Baran Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Baran Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Baran"
+    },
+    {
+        id: 147,
+        name: "Guru Shikhar Peak",
+        slug: "guru-shikhar-peak",
+        city: "Mount Abu",
+        state: "Rajasthan",
+        category: "Nature",
+        subcategory: "Highest Peak in Rajasthan",
+        description: "The highest peak in Rajasthan (1,722 meters), offering stunning panoramic views of the Aravalli hills and a temple.",
+        history: `
+          <p><strong>Guru Shikhar Peak</strong> stands as a testament to the rich architectural and cultural legacy of Mount Abu. Recognized as a premier highest peak in rajasthan in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18540,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Guru Shikhar Peak Area, Mount Abu",
+            city: "Mount Abu",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Guru%20Shikhar%20Peak",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Mount Abu Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Nature",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Mount Abu Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 148,
+        name: "Achalgarh Fort",
+        slug: "achalgarh-fort",
+        city: "Mount Abu",
+        state: "Rajasthan",
+        category: "Fort",
+        subcategory: "Hilltop Fort ruins",
+        description: "A historic fort built by Paramara rulers and later rebuilt by Rana Kumbha, housing ancient temples and scenic views.",
+        history: `
+          <p><strong>Achalgarh Fort</strong> stands as a testament to the rich architectural and cultural legacy of Mount Abu. Recognized as a premier hilltop fort ruins in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18660,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Achalgarh Fort Area, Mount Abu",
+            city: "Mount Abu",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Achalgarh%20Fort",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Mount Abu Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Fort",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Mount Abu Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
+    },
+    {
+        id: 149,
+        name: "Trevor's Tank",
+        slug: "trevor-s-tank",
+        city: "Mount Abu",
+        state: "Rajasthan",
+        category: "Wildlife",
+        subcategory: "Crocodile breeding park",
+        description: "A peaceful man-made wildlife reserve in Mount Abu, famous for crocodile watching, birding, and lush green paths.",
+        history: `
+          <p><strong>Trevor's Tank</strong> stands as a testament to the rich architectural and cultural legacy of Mount Abu. Recognized as a premier crocodile breeding park in Rajasthan, it draws thousands of history enthusiasts and tourists annually.</p>
+    `,
+        images: [
+            "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg"
+        ],
+        rating: 4.5,
+        reviews: 18780,
+        timing: {
+            open: "9:00 AM",
+            close: "5:30 PM",
+            closedOn: "Open all days",
+            note: "Best visited during daylight hours."
+        },
+        ticket: {
+            isFree: false,
+            indian: 50,
+            foreigner: 200,
+            childIndian: 0,
+            childForeigner: 0,
+            camera: 0,
+            note: "Standard entry charges apply."
+        },
+        location: {
+            address: "Trevor's Tank Area, Mount Abu",
+            city: "Mount Abu",
+            pincode: "302001",
+            latitude: 26.922,
+            longitude: 75.806,
+            googleMapUrl: "https://www.google.com/maps/place/Trevor's%20Tank",
+            nearestAirport: "Jaipur International Airport",
+            nearestRailway: "Mount Abu Station",
+            distanceFromCity: "Within region limits"
+        },
+        bestTimeToVisit: {
+            months: "October - March",
+            season: "Winter",
+            weather: "Pleasant",
+            tip: "Hire a local guide to learn more about the historical significance."
+        },
+        visitDuration: {
+            minimum: "1 Hour",
+            recommended: "1.5 Hours",
+            extended: "2 Hours"
+        },
+        highlights: [
+            "Historical Architecture",
+            "Scenic Views",
+            "Cultural Importance"
+        ],
+        tags: [
+            "Wildlife",
+            "Heritage",
+            "History"
+        ],
+        facilities: [
+            "Parking",
+            "Restrooms"
+        ],
+        nearbyPlaces: [
+            "Mount Abu Center"
+        ],
+        dos: [
+            "Wear comfortable shoes",
+            "Carry water"
+        ],
+        donts: [
+            "Don't litter",
+            "Don't write on walls"
+        ],
+        isOpen: true,
+        isFeatured: false,
+        isPopular: true,
+        isUNESCO: false,
+        yearBuilt: "Historical",
+        builtBy: "Royal Rulers of Rajasthan",
+        architecture: "Traditional Rajasthani Architecture",
+        significance: "Important landmark in Mount Abu"
     }
-            ]
+];
