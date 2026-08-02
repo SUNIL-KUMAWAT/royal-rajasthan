@@ -1,11 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Script from "next/script";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import { Playfair_Display, Inter } from "next/font/google";
 
+const Google_Analytics = 'G-BETYQHSK14'
 const playfair = Playfair_Display({
   subsets: ["latin"],
   variable: "--font-playfair",
@@ -244,6 +246,22 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
+        {Google_Analytics && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${Google_Analytics}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', '${Google_Analytics}');
+              `}
+            </Script>
+          </>
+        )}
         <LanguageProvider>
           <ThemeProvider>
             <Navbar />
