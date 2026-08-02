@@ -524,12 +524,65 @@ export default function ShoppingClient() {
                                     </div>
                                 </div>
 
+                                {selectedMarket.activities && selectedMarket.activities.length > 0 && (
+                                    <div>
+                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">
+                                            {language === "hi" ? "गतिविधियाँ" : "Activities"}
+                                        </div>
+                                        <ul className="list-disc list-inside text-xs sm:text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                                            {selectedMarket.activities.map((act: string, idx: number) => (
+                                                <li key={idx}>{act}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                {selectedMarket.accessibility && selectedMarket.accessibility.length > 0 && (
+                                    <div>
+                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">
+                                            {language === "hi" ? "पहुंच और सुगमता" : "Accessibility"}
+                                        </div>
+                                        <ul className="list-disc list-inside text-xs sm:text-sm text-gray-600 dark:text-gray-300 space-y-1">
+                                            {selectedMarket.accessibility.map((acc: string, idx: number) => (
+                                                <li key={idx}>{acc}</li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                {selectedMarket.photography && (
+                                    <div className="bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-700/30 rounded-2xl p-4 text-xs sm:text-sm text-gray-600 dark:text-gray-300">
+                                        <strong>📸 {language === "hi" ? "फोटोग्राफी नियम:" : "Photography:"}</strong> {selectedMarket.photography}
+                                    </div>
+                                )}
+
                                 {selectedMarket.tips && (
                                     <div className="bg-amber-50 dark:bg-amber-500/8 border border-amber-200 dark:border-amber-500/15 rounded-2xl p-4 flex gap-3">
                                         <Compass className="text-amber-500 dark:text-amber-400 flex-shrink-0 mt-0.5" size={18} />
                                         <div>
                                             <div className="text-[10px] font-bold text-amber-700 dark:text-amber-400 uppercase tracking-wider">Pro Travel Tip</div>
                                             <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300">{selectedMarket.tips}</p>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {selectedMarket.faqs && selectedMarket.faqs.length > 0 && (
+                                    <div className="pt-2">
+                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-3">
+                                            {language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"}
+                                        </div>
+                                        <div className="space-y-3">
+                                            {selectedMarket.faqs.map((faq: any, idx: number) => (
+                                                <details key={idx} className="group border-b border-gray-100 dark:border-gray-800/60 pb-3">
+                                                    <summary className="flex justify-between items-center font-bold text-sm text-gray-700 dark:text-gray-200 cursor-pointer list-none select-none">
+                                                        <span>{faq.question}</span>
+                                                        <span className="text-[10px] transform group-open:rotate-180 transition-transform">▼</span>
+                                                    </summary>
+                                                    <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed pl-1">
+                                                        {faq.answer}
+                                                    </p>
+                                                </details>
+                                            ))}
                                         </div>
                                     </div>
                                 )}

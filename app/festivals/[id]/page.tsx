@@ -8,9 +8,49 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const festival = FESTIVALS.find(f => f.id === parseInt(id, 10));
   if (!festival) return { title: "Festival Not Found" };
   
+  const title = festival.seo?.title || `${festival.name} | Royal Rajasthan`;
+  const description = festival.seo?.description || festival.description;
+  const customKeywords = festival.seo?.keywords || festival.keywords || [];
+
   return {
-    title: `${festival.name} | Royal Rajasthan`,
-    description: festival.description,
+    title,
+    description,
+    keywords: [
+      festival.name,
+      `${festival.name} festival`,
+      `${festival.name} dates`,
+      festival.location,
+      ...customKeywords
+    ],
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large",
+        "max-snippet": -1,
+      },
+    },
+    other: {
+      "geo.region": "IN-RJ",
+      "geo.placename": `${festival.location}, Rajasthan, India`,
+    },
+    openGraph: {
+      title,
+      description,
+      images: [festival.image],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+      images: [festival.image],
+    },
+    alternates: {
+      canonical: `https://royalrajasthan.com/festivals/${festival.id}`,
+    },
   };
 }
 

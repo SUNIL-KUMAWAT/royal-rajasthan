@@ -27,6 +27,19 @@ interface Festival {
   highlights: string[];
   rating: number;
   nextDate?: string;
+  district?: string;
+  activities?: string[];
+  accessibility?: string[];
+  photography?: string;
+  relatedPlaces?: string[];
+  faqs?: { question: string; answer: string }[];
+  keywords?: string[];
+  seo?: {
+    title?: string;
+    description?: string;
+    keywords?: string[];
+  };
+  designedBy?: string;
 }
 
 interface Props {
@@ -40,8 +53,28 @@ export default function FestivalDetailClient({ festival, related }: Props) {
   const currentFestival = currentFestivals.find((f: any) => f.id === festival.id) || festival;
   const currentRelated = related.map((r: any) => currentFestivals.find((f: any) => f.id === r.id) || r);
 
+  // JSON-LD FAQ Schema
+  const faqSchema = currentFestival.faqs && currentFestival.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": currentFestival.faqs.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   return (
     <main className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a] text-gray-900 dark:text-white selection:bg-gold-500/30 overflow-hidden transition-colors duration-300">
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
       
       {/* Hero Section */}
       <section className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full flex items-center justify-center">
@@ -163,6 +196,47 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 </div>
               </div>
 
+              {/* Activities */}
+              {currentFestival.activities && currentFestival.activities.length > 0 && (
+                <div className="mb-10">
+                  <h3 className="text-base sm:text-lg font-playfair font-bold text-gray-900 dark:text-white/90 mb-3 sm:mb-4 flex items-center gap-3 transition-colors">
+                    {language === "hi" ? "मुख्य गतिविधियाँ" : "Activities to Do"}
+                  </h3>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    {currentFestival.activities.map((act: string, idx: number) => (
+                      <div key={idx} className="flex items-start gap-2.5 p-3 rounded-xl bg-gold-500/5 border border-gold-500/10 text-gray-700 dark:text-white/80">
+                        <span className="text-gold-500">🎯</span>
+                        <span className="text-xs sm:text-sm font-medium">{act}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Accessibility */}
+              {currentFestival.accessibility && currentFestival.accessibility.length > 0 && (
+                <div className="mb-10">
+                  <h3 className="text-base sm:text-lg font-playfair font-bold text-gray-900 dark:text-white/90 mb-3 sm:mb-4 flex items-center gap-3 transition-colors">
+                    {language === "hi" ? "पहुंच और सुगमता" : "Accessibility Information"}
+                  </h3>
+                  <div className="space-y-2">
+                    {currentFestival.accessibility.map((acc: string, idx: number) => (
+                      <div key={idx} className="flex items-start gap-2.5 text-gray-600 dark:text-white/70">
+                        <span className="text-blue-500">♿</span>
+                        <span className="text-xs sm:text-sm leading-relaxed">{acc}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
+              {/* Photography */}
+              {currentFestival.photography && (
+                <div className="mb-10 p-5 rounded-2xl bg-gray-50 dark:bg-white/5 border border-gray-100 dark:border-white/5 text-gray-600 dark:text-white/70 text-xs sm:text-sm leading-relaxed">
+                  <strong>📸 {language === "hi" ? "फोटोग्राफी नियम:" : "Photography Rules:"}</strong> {currentFestival.photography}
+                </div>
+              )}
+
               {/* Modern Action Bar */}
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-3xl p-4 sm:p-6 backdrop-blur-xl shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-gold-500/10 dark:from-gold-500/5 via-transparent to-gold-500/10 dark:to-gold-500/5 pointer-events-none" />
@@ -218,6 +292,33 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                   className="[&_p]:text-gray-600 dark:[&_p]:text-white/70 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-justify text-sm sm:text-lg transition-colors"
                   dangerouslySetInnerHTML={{ __html: currentFestival.history }}
                 />
+              </motion.div>
+            )}
+
+            {currentFestival.faqs && currentFestival.faqs.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-3xl p-6 sm:p-8 backdrop-blur-xl shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-300 mt-8"
+              >
+                <h2 className="text-xl sm:text-3xl font-playfair font-bold text-gray-900 dark:text-white mb-6 flex items-center gap-3 transition-colors">
+                  <span className="w-8 sm:w-10 h-[1px] bg-gold-500"></span>
+                  {language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"}
+                </h2>
+                <div className="space-y-4">
+                  {currentFestival.faqs.map((faq: any, idx: number) => (
+                    <details key={idx} className="group border-b border-gray-100 dark:border-white/10 pb-4">
+                      <summary className="flex justify-between items-center font-bold text-sm sm:text-base text-gray-800 dark:text-white cursor-pointer list-none select-none">
+                        <span>{faq.question}</span>
+                        <span className="text-xs transform group-open:rotate-180 transition-transform">▼</span>
+                      </summary>
+                      <p className="text-xs sm:text-sm text-gray-600 dark:text-white/70 mt-3 leading-relaxed pl-1">
+                        {faq.answer}
+                      </p>
+                    </details>
+                  ))}
+                </div>
               </motion.div>
             )}
 

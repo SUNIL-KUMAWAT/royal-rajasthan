@@ -164,6 +164,19 @@ export interface Festival {
     nextDate: string;
     rating: number;
     isFeatured: boolean;
+    district?: string;
+    activities?: string[];
+    accessibility?: string[];
+    photography?: string;
+    relatedPlaces?: string[];
+    faqs?: { question: string; answer: string }[];
+    keywords?: string[];
+    seo?: {
+        title?: string;
+        description?: string;
+        keywords?: string[];
+    };
+    designedBy?: string;
 }
 
 export interface Hotel {
