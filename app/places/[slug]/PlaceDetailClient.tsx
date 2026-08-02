@@ -24,6 +24,37 @@ interface Props {
     place: Place;
 }
 
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+    const [isOpen, setIsOpen] = useState(false);
+    return (
+        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden transition-all duration-300">
+            <button
+                onClick={() => setIsOpen(!isOpen)}
+                className="w-full flex items-center justify-between p-5 text-left font-bold text-gray-800 dark:text-gray-200 hover:bg-gray-50/50 dark:hover:bg-gray-700 transition-colors"
+            >
+                <span className="text-sm sm:text-base pr-4">{question}</span>
+                <span className={`text-xs transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}>
+                    ▼
+                </span>
+            </button>
+            <AnimatePresence initial={false}>
+                {isOpen && (
+                    <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        transition={{ duration: 0.2 }}
+                    >
+                        <div className="p-5 pt-0 text-gray-600 dark:text-gray-400 border-t border-gray-50 dark:border-gray-700 leading-relaxed text-sm">
+                            {answer}
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+        </div>
+    );
+}
+
 function getTimeSlotBadge(isFree: boolean, price: number) {
     if (isFree) return { text: "Free Entry", color: "bg-green-500" };
     return { text: `₹${price}`, color: "bg-yellow-500" };
@@ -41,14 +72,38 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
     const [showShareMenu, setShowShareMenu] = useState(false);
     const [copySuccess, setCopySuccess] = useState(false);
 
+    const t = {
+        quickFacts: language === "hi" ? "महत्वपूर्ण तथ्य" : "Quick Facts",
+        builtIn: language === "hi" ? "निर्माण वर्ष" : "Built In",
+        builtBy: language === "hi" ? "निर्माता" : "Built By",
+        designedBy: language === "hi" ? "वास्तुकार" : "Designed By",
+        district: language === "hi" ? "जिला" : "District",
+        architecture: language === "hi" ? "वास्तुकला" : "Architecture",
+        category: language === "hi" ? "श्रेणी" : "Category",
+        visitDuration: language === "hi" ? "घूमने की अवधि" : "Visit Duration",
+        bestTime: language === "hi" ? "सर्वोत्तम समय" : "Best Time",
+        highlights: language === "hi" ? "मुख्य आकर्षण" : "Highlights",
+        facilities: language === "hi" ? "उपलब्ध सुविधाएं" : "Facilities Available",
+        significance: language === "hi" ? "महत्व" : "Significance",
+        activities: language === "hi" ? "मुख्य गतिविधियाँ" : "Activities to Do",
+        accessibility: language === "hi" ? "पहुंच व सुगमता" : "Accessibility",
+        photography: language === "hi" ? "फोटोग्राफी नियम व जानकारी" : "Photography Rules & Info",
+        faqs: language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "FAQs",
+        relatedPlaces: language === "hi" ? "संबंधित स्थल" : "Related Places"
+    };
+
     const tabs = [
-        { id: "overview", label: "Overview" },
-        { id: "timing", label: "Timing & Tickets" },
-        { id: "location", label: "Location" },
-        { id: "history", label: "History" },
-        { id: "tips", label: "Tips" },
-        { id: "nearby", label: "Nearby" },
+        { id: "overview", label: language === "hi" ? "अवलोकन" : "Overview" },
+        { id: "timing", label: language === "hi" ? "समय और टिकट" : "Timing & Tickets" },
+        { id: "location", label: language === "hi" ? "स्थान" : "Location" },
+        { id: "history", label: language === "hi" ? "इतिहास" : "History" },
+        { id: "tips", label: language === "hi" ? "सुझाव" : "Tips" },
+        { id: "nearby", label: language === "hi" ? "आसपास" : "Nearby" },
     ];
+
+    if (place.faqs && place.faqs.length > 0) {
+        tabs.push({ id: "faqs", label: language === "hi" ? "प्रश्न-उत्तर" : "FAQs" });
+    }
 
     const handleShare = async () => {
         const url = window.location.href;
@@ -414,16 +469,18 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                         {/* Quick Facts */}
                                         <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-2xl p-6 mb-6">
                                             <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                                Quick Facts
+                                                {t.quickFacts}
                                             </h2>
                                             <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
                                                 {[
-                                                    { label: "Built In", value: place.yearBuilt },
-                                                    { label: "Built By", value: place.builtBy },
-                                                    { label: "Architecture", value: place.architecture },
-                                                    { label: "Category", value: `${place.category} - ${place.subcategory}` },
-                                                    { label: "Visit Duration", value: place.visitDuration.recommended },
-                                                    { label: "Best Time", value: place.bestTimeToVisit.months },
+                                                    { label: t.builtIn, value: place.yearBuilt },
+                                                    { label: t.builtBy, value: place.builtBy },
+                                                    ...(place.designedBy ? [{ label: t.designedBy, value: place.designedBy }] : []),
+                                                    { label: t.architecture, value: place.architecture },
+                                                    { label: t.category, value: `${place.category} - ${place.subcategory}` },
+                                                    ...(place.district ? [{ label: t.district, value: place.district }] : []),
+                                                    { label: t.visitDuration, value: place.visitDuration.recommended },
+                                                    { label: t.bestTime, value: place.bestTimeToVisit.months },
                                                 ].map((fact) => (
                                                     <div key={fact.label}>
                                                         <div className="text-xs text-gray-400 dark:text-gray-500 mb-1">
@@ -439,7 +496,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* Highlights */}
                                         <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                            Highlights
+                                            {t.highlights}
                                         </h2>
                                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
                                             {place.highlights.map((h) => (
@@ -456,9 +513,29 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             ))}
                                         </div>
 
+                                        {/* Activities */}
+                                        {place.activities && place.activities.length > 0 && (
+                                            <div className="mb-6">
+                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
+                                                    {t.activities}
+                                                </h2>
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                                    {place.activities.map((act) => (
+                                                        <div
+                                                            key={act}
+                                                            className="flex items-start gap-2.5 p-3 bg-yellow-500/5 dark:bg-yellow-500/10 border border-yellow-500/10 dark:border-yellow-500/20 rounded-xl text-gray-700 dark:text-gray-300"
+                                                        >
+                                                            <span className="text-yellow-600 dark:text-yellow-400 mt-0.5">🎯</span>
+                                                            <span className="text-sm font-medium">{act}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
                                         {/* Facilities */}
                                         <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                            Facilities Available
+                                            {t.facilities}
                                         </h2>
                                         <div className="flex flex-wrap gap-2 mb-6">
                                             {place.facilities.map((f) => (
@@ -472,6 +549,26 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             ))}
                                         </div>
 
+                                        {/* Accessibility */}
+                                        {place.accessibility && place.accessibility.length > 0 && (
+                                            <div className="mb-6">
+                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
+                                                    {t.accessibility}
+                                                </h2>
+                                                <div className="space-y-2.5">
+                                                    {place.accessibility.map((acc) => (
+                                                        <div
+                                                            key={acc}
+                                                            className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
+                                                        >
+                                                            <span className="text-blue-500 mt-0.5">♿</span>
+                                                            <span className="text-sm">{acc}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
+
                                         {/* Significance */}
                                         <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4">
                                             <div className="flex items-start gap-2">
@@ -480,7 +577,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     className="text-blue-500 mt-0.5 flex-shrink-0"
                                                 />
                                                 <p className="text-blue-700 dark:text-blue-400 text-sm">
-                                                    <strong>Significance:</strong> {place.significance}
+                                                    <strong>{t.significance}:</strong> {place.significance}
                                                 </p>
                                             </div>
                                         </div>
@@ -822,14 +919,14 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                         {/* Best Time */}
                                         <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6">
                                             <h2 className="font-bold text-blue-800 dark:text-blue-400 mb-4 text-lg">
-                                                🌤 Best Time to Visit
+                                                🌤 {t.bestTime}
                                             </h2>
                                             <div className="grid grid-cols-2 gap-4">
                                                 {[
-                                                    { label: "Best Months", value: place.bestTimeToVisit.months },
-                                                    { label: "Season", value: place.bestTimeToVisit.season },
-                                                    { label: "Weather", value: place.bestTimeToVisit.weather },
-                                                    { label: "Pro Tip", value: place.bestTimeToVisit.tip },
+                                                    { label: language === "hi" ? "सर्वोत्तम महीने" : "Best Months", value: place.bestTimeToVisit.months },
+                                                    { label: language === "hi" ? "मौसम" : "Season", value: place.bestTimeToVisit.season },
+                                                    { label: language === "hi" ? "मौसम जानकारी" : "Weather", value: place.bestTimeToVisit.weather },
+                                                    { label: language === "hi" ? "महत्वपूर्ण टिप" : "Pro Tip", value: place.bestTimeToVisit.tip },
                                                 ].map((item) => (
                                                     <div key={item.label}>
                                                         <div className="text-xs text-blue-400 mb-1">
@@ -842,6 +939,18 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                 ))}
                                             </div>
                                         </div>
+
+                                        {/* Photography Rules */}
+                                        {place.photography && (
+                                            <div className="bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-200 dark:border-yellow-900/30 rounded-2xl p-6">
+                                                <h2 className="font-bold text-yellow-800 dark:text-yellow-405 mb-3 text-lg flex items-center gap-2">
+                                                    📸 {t.photography}
+                                                </h2>
+                                                <p className="text-sm text-yellow-950/80 dark:text-yellow-300/80 leading-relaxed">
+                                                    {place.photography}
+                                                </p>
+                                            </div>
+                                        )}
                                     </motion.div>
                                 )}
 
@@ -855,7 +964,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                     >
                                         <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
                                             <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                                📍 Nearby Places
+                                                📍 {language === "hi" ? "आसपास के स्थल" : "Nearby Places"}
                                             </h2>
                                             <div className="space-y-3">
                                                 {place.nearbyPlaces.map((np) => (
@@ -873,6 +982,70 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     </div>
                                                 ))}
                                             </div>
+                                        </div>
+
+                                        {/* Related Places */}
+                                        {place.relatedPlaces && place.relatedPlaces.length > 0 && (
+                                            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mt-6">
+                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
+                                                    🔗 {t.relatedPlaces}
+                                                </h2>
+                                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                                    {place.relatedPlaces.map((rp) => {
+                                                        const matchedPlace = activePlaces.find(
+                                                            p => p.name.toLowerCase() === rp.toLowerCase() || 
+                                                            (language === "hi" && p.name === rp)
+                                                        );
+                                                        
+                                                        if (matchedPlace) {
+                                                            return (
+                                                                <Link
+                                                                    key={rp}
+                                                                    href={`/places/${matchedPlace.slug}`}
+                                                                    className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-yellow-50 dark:hover:bg-yellow-900/20 transition-all border border-transparent hover:border-yellow-200"
+                                                                >
+                                                                    <span className="text-lg">🏛️</span>
+                                                                    <span className="text-gray-800 dark:text-gray-200 text-sm font-semibold hover:text-yellow-600 transition-colors">
+                                                                        {rp}
+                                                                    </span>
+                                                                </Link>
+                                                            );
+                                                        }
+                                                        
+                                                        return (
+                                                            <div
+                                                                key={rp}
+                                                                className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl"
+                                                            >
+                                                                <span className="text-lg">🏛️</span>
+                                                                <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">
+                                                                    {rp}
+                                                                </span>
+                                                            </div>
+                                                        );
+                                                    })}
+                                                </div>
+                                            </div>
+                                        )}
+                                    </motion.div>
+                                )}
+
+                                {/* FAQs Tab */}
+                                {activeTab === "faqs" && place.faqs && place.faqs.length > 0 && (
+                                    <motion.div
+                                        key="faqs"
+                                        initial={{ opacity: 0, y: 10 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        exit={{ opacity: 0 }}
+                                        className="space-y-4"
+                                    >
+                                        <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-6 text-xl">
+                                            🙋 {t.faqs}
+                                        </h2>
+                                        <div className="space-y-4">
+                                            {place.faqs.map((faq, i) => (
+                                                <FAQItem key={i} question={faq.question} answer={faq.answer} />
+                                            ))}
                                         </div>
                                     </motion.div>
                                 )}

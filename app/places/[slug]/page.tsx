@@ -27,24 +27,31 @@ export async function generateMetadata({
         };
     }
 
+    const customKeywords = place.seo?.keywords || place.keywords || [];
+    const baseKeywords = [
+        place.name,
+        `${place.name} timing`,
+        `${place.name} entry fee`,
+        `${place.name} ticket price`,
+        `${place.name} history`,
+        `${place.city} tourist places`,
+        `places to visit in ${place.city}`,
+        `${place.category} in Rajasthan`,
+        ...place.tags,
+        ...customKeywords,
+    ];
+
+    const title = place.seo?.title || `${place.name} - Timing, Tickets & Travel Guide | Royal Rajasthan`;
+    const description = place.seo?.description || `Visit ${place.name} in ${place.city}, Rajasthan. Timing: ${place.timing.open}-${place.timing.close}. Entry: ${place.ticket.isFree ? "Free" : `₹${place.ticket.indian}`
+        }. Complete travel guide with history, tips & Google Maps.`;
+
     return {
-        title: `${place.name} - Timing, Tickets & Travel Guide | Royal Rajasthan`,
-        description: `Visit ${place.name} in ${place.city}, Rajasthan. Timing: ${place.timing.open}-${place.timing.close}. Entry: ${place.ticket.isFree ? "Free" : `₹${place.ticket.indian}`
-            }. Complete travel guide with history, tips & Google Maps.`,
-        keywords: [
-            place.name,
-            `${place.name} timing`,
-            `${place.name} entry fee`,
-            `${place.name} ticket price`,
-            `${place.name} history`,
-            `${place.city} tourist places`,
-            `places to visit in ${place.city}`,
-            `${place.category} in Rajasthan`,
-            ...place.tags,
-        ],
+        title,
+        description,
+        keywords: baseKeywords,
         openGraph: {
-            title: `${place.name} - ${place.city}, Rajasthan`,
-            description: place.description.substring(0, 155),
+            title: place.seo?.title || `${place.name} - ${place.city}, Rajasthan`,
+            description: description.substring(0, 155),
             images: [
                 {
                     url: place.images[0],
@@ -57,8 +64,8 @@ export async function generateMetadata({
         },
         twitter: {
             card: "summary_large_image",
-            title: `${place.name} - ${place.city}`,
-            description: place.description.substring(0, 155),
+            title: place.seo?.title || `${place.name} - ${place.city}`,
+            description: description.substring(0, 155),
             images: [place.images[0]],
         },
         alternates: {

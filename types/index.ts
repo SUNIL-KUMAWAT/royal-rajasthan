@@ -62,6 +62,19 @@ export interface Place {
     builtBy: string;
     architecture: string;
     significance: string;
+    district?: string;
+    activities?: string[];
+    accessibility?: string[];
+    photography?: string;
+    relatedPlaces?: string[];
+    faqs?: { question: string; answer: string }[];
+    keywords?: string[];
+    seo?: {
+        title?: string;
+        description?: string;
+        keywords?: string[];
+    };
+    designedBy?: string;
 }
 
 export interface Destination {
