@@ -95,7 +95,9 @@ const nextConfig: NextConfig = {
   poweredByHeader: false, // Remove X-Powered-By header
   reactStrictMode: true,
 
-  // ============ EXPERIMENTAL ============
+  // ============ EXPERIMENTAL & OUTPUT ============
+  outputFileTracingRoot: process.cwd(),
+
   experimental: {
     optimizeCss: true,
   },
