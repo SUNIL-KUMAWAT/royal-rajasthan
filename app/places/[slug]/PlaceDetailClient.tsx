@@ -151,6 +151,20 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
         isAccessibleForFree: place.ticket.isFree,
     };
 
+    // JSON-LD FAQ Schema
+    const faqSchema = place.faqs && place.faqs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": place.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    } : null;
+
     return (
         <>
             {/* JSON-LD Schema */}
@@ -158,6 +172,12 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
             />
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
 
             <div className="mt-16 bg-palace-white dark:bg-gray-950 min-h-screen">
                 {/* Breadcrumb */}

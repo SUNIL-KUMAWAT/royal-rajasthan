@@ -49,6 +49,23 @@ export async function generateMetadata({
         title,
         description,
         keywords: baseKeywords,
+        robots: {
+            index: true,
+            follow: true,
+            googleBot: {
+                index: true,
+                follow: true,
+                "max-video-preview": -1,
+                "max-image-preview": "large",
+                "max-snippet": -1,
+            },
+        },
+        other: {
+            "geo.region": "IN-RJ",
+            "geo.placename": `${place.city}, Rajasthan, India`,
+            "geo.position": `${place.location.latitude};${place.location.longitude}`,
+            "ICBM": `${place.location.latitude}, ${place.location.longitude}`,
+        },
         openGraph: {
             title: place.seo?.title || `${place.name} - ${place.city}, Rajasthan`,
             description: description.substring(0, 155),
