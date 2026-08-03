@@ -28,7 +28,7 @@ export const metadata: Metadata = {
             "Experience centuries-old traditions, vibrant celebrations, royal processions and unforgettable cultural festivals of Rajasthan.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1098/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Rajasthan Festivals - Royal Rajasthan Tourism",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         description:
             "Discover vibrant Rajasthan festivals - Pushkar Camel Fair, Desert Festival, Teej & Gangaur.",
         images: [
-            "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=1200",
+            "https://picsum.photos/seed/raj-1099/800/600",
         ],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
@@ -101,7 +101,7 @@ export default function CulturePage() {
                         name: "Rajasthan Tourism",
                     },
                     image:
-                        "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=800",
+                        "https://picsum.photos/seed/raj-1100/800/600",
                 },
             },
             {
@@ -126,7 +126,7 @@ export default function CulturePage() {
                     endDate: "2026-02-10",
                     eventStatus: "https://schema.org/EventScheduled",
                     image:
-                        "https://images.unsplash.com/photo-1502786129293-79981df4e689?w=800",
+                        "https://picsum.photos/seed/raj-1101/800/600",
                 },
             },
             {
@@ -151,7 +151,7 @@ export default function CulturePage() {
                     endDate: "2025-08-10",
                     eventStatus: "https://schema.org/EventScheduled",
                     image:
-                        "https://images.unsplash.com/photo-1575377427642-087cf684ad0c?w=800",
+                        "https://picsum.photos/seed/raj-1102/800/600",
                 },
             },
             {
@@ -176,7 +176,7 @@ export default function CulturePage() {
                     endDate: "2026-04-14",
                     eventStatus: "https://schema.org/EventScheduled",
                     image:
-                        "https://images.unsplash.com/photo-1567157577867-05ccb1388e66?w=800",
+                        "https://picsum.photos/seed/raj-1103/800/600",
                 },
             },
         ],

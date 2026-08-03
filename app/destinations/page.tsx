@@ -24,7 +24,7 @@ export const metadata: Metadata = {
             "Explore Jaipur, Udaipur, Jodhpur, Jaisalmer & more. Complete guide to the best destinations in Rajasthan.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1105/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Rajasthan Destinations - Royal Rajasthan Tourism",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "Rajasthan Destinations - Best Cities to Visit",
         description:
             "Explore Jaipur, Udaipur, Jodhpur, Jaisalmer & more. Best Rajasthan cities guide.",
-        images: ["https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1106/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },

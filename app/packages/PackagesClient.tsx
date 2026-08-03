@@ -178,7 +178,7 @@ export default function PackagesPage() {
                 className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1118/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -346,7 +346,7 @@ const PACKAGES = [
         discount: 25,
         groupSize: "2-15 People",
         image:
-            "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800",
+            "https://picsum.photos/seed/raj-1119/800/600",
         rating: 4.9,
         reviews: 342,
         inclusions: [
@@ -434,7 +434,7 @@ const PACKAGES = [
         discount: 21,
         groupSize: "2-10 People",
         image:
-            "https://images.unsplash.com/photo-1548013146-72479768bada?w=800",
+            "https://picsum.photos/seed/raj-1120/800/600",
         rating: 4.8,
         reviews: 215,
         inclusions: [
@@ -495,7 +495,7 @@ const PACKAGES = [
         discount: 22,
         groupSize: "2 People (Couples)",
         image:
-            "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?w=800",
+            "https://picsum.photos/seed/raj-1121/800/600",
         rating: 4.9,
         reviews: 498,
         inclusions: [
@@ -556,7 +556,7 @@ const PACKAGES = [
         discount: 20,
         groupSize: "2-8 People",
         image:
-            "https://images.unsplash.com/photo-1477587458883-47145ed94a3e?w=800",
+            "https://picsum.photos/seed/raj-1122/800/600",
         rating: 5.0,
         reviews: 89,
         inclusions: [
@@ -591,7 +591,7 @@ const PACKAGES = [
         discount: 21,
         groupSize: "2-12 People",
         image:
-            "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=800",
+            "https://picsum.photos/seed/raj-1123/800/600",
         rating: 4.7,
         reviews: 156,
         inclusions: [
@@ -625,7 +625,7 @@ const PACKAGES = [
         discount: 24,
         groupSize: "Family (4-6 People)",
         image:
-            "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=800",
+            "https://picsum.photos/seed/raj-1124/800/600",
         rating: 4.8,
         reviews: 267,
         inclusions: [

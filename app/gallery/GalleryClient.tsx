@@ -29,7 +29,7 @@ export default function GalleryClient() {
                 className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1477587458883-47145ed94a3e?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1113/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

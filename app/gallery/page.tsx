@@ -25,7 +25,7 @@ export const metadata: Metadata = {
             "Stunning photos of Rajasthan's royal forts, magnificent palaces, golden deserts and exotic wildlife.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1477587458883-47145ed94a3e?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1114/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Rajasthan Photo Gallery - Royal Rajasthan Tourism",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         title: "Rajasthan Photo Gallery - Forts, Palaces & Deserts",
         description:
             "Stunning photos of Rajasthan's royal forts, palaces, golden deserts and wildlife.",
-        images: ["https://images.unsplash.com/photo-1477587458883-47145ed94a3e?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1115/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },

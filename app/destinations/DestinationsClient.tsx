@@ -42,7 +42,7 @@ export default function DestinationsClient() {
                 className="h-64 md:h-96 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1104/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

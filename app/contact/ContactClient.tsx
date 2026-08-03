@@ -30,7 +30,7 @@ export default function ContactClient() {
                 className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1095/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
             "Explore curated Rajasthan tour packages. Golden Triangle, Royal Heritage, Desert Safari, Honeymoon & Wildlife tours.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1125/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Rajasthan Tour Packages - Royal Rajasthan Tourism",
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
         title: "Rajasthan Tour Packages - Best Holiday Packages 2025",
         description:
             "Explore curated Rajasthan holiday packages — Heritage, Desert, Wildlife & Honeymoon tours.",
-        images: ["https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1126/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },

@@ -122,21 +122,21 @@ const PACE_OPTIONS = [
 
 const CITY_IMAGES: Record<string, string> = {
     Jaipur:
-        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=400",
+        "https://picsum.photos/seed/raj-1132/800/600",
     Jodhpur:
-        "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400",
+        "https://picsum.photos/seed/raj-1133/800/600",
     Udaipur:
-        "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?w=400",
+        "https://picsum.photos/seed/raj-1134/800/600",
     Jaisalmer:
-        "https://images.unsplash.com/photo-1548013146-72479768bada?w=400",
+        "https://picsum.photos/seed/raj-1135/800/600",
     Pushkar:
-        "https://images.unsplash.com/photo-1544015759-237f2a0a8176?w=400",
+        "https://picsum.photos/seed/raj-1136/800/600",
     "Mount Abu":
-        "https://images.unsplash.com/photo-1622308644420-b20142dc993c?w=400",
+        "https://picsum.photos/seed/raj-1137/800/600",
     Bikaner:
-        "https://images.unsplash.com/photo-1603262110263-76ea9498b85f?w=400",
+        "https://picsum.photos/seed/raj-1138/800/600",
     "Sawai Madhopur":
-        "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?w=400",
+        "https://picsum.photos/seed/raj-1139/800/600",
 };
 
 const CITY_DESCRIPTIONS: Record<string, string> = {
@@ -614,7 +614,7 @@ export default function PlanTripClient() {
                 className="h-48 md:h-64 relative flex items-end justify-center pb-8"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1140/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

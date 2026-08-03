@@ -201,7 +201,7 @@ export default function ShoppingClient() {
             <section className="relative min-h-[580px] flex items-center justify-center overflow-hidden text-white pt-24 pb-12">
                 <div className="absolute inset-0 z-0">
                     <img
-                        src="https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=1920&q=80"
+                        src="https://picsum.photos/seed/raj-1143/800/600"
                         alt="Rajasthan Bazaars"
                         className="w-full h-full object-cover opacity-45 scale-105"
                     />

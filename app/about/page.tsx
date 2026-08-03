@@ -24,7 +24,7 @@ export const metadata: Metadata = {
             "Discover Rajasthan's magnificent history, vibrant culture, royal forts & palaces. India's most visited state with 6000+ years of heritage.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1093/800/600",
                 width: 1200,
                 height: 630,
                 alt: "About Rajasthan - Royal Rajasthan Tourism",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
         title: "About Rajasthan - The Land of Kings",
         description:
             "Discover Rajasthan's magnificent history, vibrant culture, royal forts & palaces.",
-        images: ["https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1094/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },

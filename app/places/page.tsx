@@ -22,7 +22,7 @@ export const metadata: Metadata = {
             "Complete guide to 12+ famous tourist places in Rajasthan with timing, tickets & maps.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200",
+                url: "https://picsum.photos/seed/raj-1127/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Famous Places in Rajasthan",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         title: "Famous Places to Visit in Rajasthan",
         description:
             "Complete guide to tourist places in Rajasthan with timing, tickets & maps.",
-        images: ["https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1128/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },

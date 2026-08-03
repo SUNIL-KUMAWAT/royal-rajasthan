@@ -29,7 +29,7 @@ export const metadata: Metadata = {
             "Explore the ultimate shopping guide to Rajasthan's famous bazaars. Find out where to buy authentic textiles, jewelry, and handicrafts.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1141/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Shopping in Rajasthan - Royal Rajasthan Tourism",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         description:
             "Explore the ultimate shopping guide to Rajasthan's famous bazaars.",
         images: [
-            "https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=1200",
+            "https://picsum.photos/seed/raj-1142/800/600",
         ],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",

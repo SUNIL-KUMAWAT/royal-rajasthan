@@ -3,6 +3,7 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   // ============ IMAGE OPTIMIZATION ============
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
@@ -10,7 +11,7 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
-        hostname: "upload.wikimedia.org", // ✅ Add this for Wikipedia images
+        hostname: "upload.wikimedia.org",
       },
       {
         protocol: "https",
@@ -23,6 +24,10 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "cdn.pixabay.com",
+      },
+      {
+        protocol: "https",
+        hostname: "picsum.photos",
       },
     ],
     formats: ["image/avif", "image/webp"],

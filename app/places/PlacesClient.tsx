@@ -97,7 +97,7 @@ export function PlacesClient() {
                 className="h-72 md:h-96 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1129/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

@@ -12,7 +12,7 @@ const BENTO_EXPERIENCES = [
         description: "Explore magnificent Rajput forts across Rajasthan",
         href: "/places?category=Fort",
         count: "5 Forts",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1144/800/600",
         className: "col-span-2 md:col-span-2 row-span-2 min-h-[380px] md:min-h-[440px]"
     },
     {
@@ -21,7 +21,7 @@ const BENTO_EXPERIENCES = [
         description: "Experience golden dunes & camel safari",
         href: "/places?category=Desert",
         count: "1 Desert",
-        image: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1145/800/600",
         className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
@@ -30,7 +30,7 @@ const BENTO_EXPERIENCES = [
         description: "Visit stunning heritage palaces",
         href: "/places?category=Palace",
         count: "2 Palaces",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1146/800/600",
         className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
@@ -39,7 +39,7 @@ const BENTO_EXPERIENCES = [
         description: "Sunset boat rides at breathtaking lakes",
         href: "/places?category=Lake",
         count: "1 Lake",
-        image: "https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1147/800/600",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
@@ -48,7 +48,7 @@ const BENTO_EXPERIENCES = [
         description: "Tiger safaris & nature trails in reserves",
         href: "/places?category=Wildlife",
         count: "1 Park",
-        image: "https://images.unsplash.com/photo-1602491453977-63adc9f166b4?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1148/800/600",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
@@ -57,7 +57,7 @@ const BENTO_EXPERIENCES = [
         description: "Vibrant folk dances & holy traditions",
         href: "/culture",
         count: "Vibrant Traditions",
-        image: "https://images.unsplash.com/photo-1605649487212-47bdab064df7?auto=format&fit=crop&w=800&q=80",
+        image: "https://picsum.photos/seed/raj-1149/800/600",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     }
 ];

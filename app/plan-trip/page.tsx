@@ -29,7 +29,7 @@ export const metadata: Metadata = {
             "Create a personalized Rajasthan itinerary in minutes. Select cities, duration & interests to get your perfect day-by-day travel plan.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1130/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Plan Your Rajasthan Trip - Royal Rajasthan Tourism",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         description:
             "Create a personalized Rajasthan itinerary in minutes. Select cities, duration & interests.",
         images: [
-            "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200",
+            "https://picsum.photos/seed/raj-1131/800/600",
         ],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",

@@ -36,7 +36,7 @@ export default function AboutClient() {
                 className="h-96 relative flex items-end justify-center pb-16 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1920)",
+                        "url(https://picsum.photos/seed/raj-1088/800/600",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -93,22 +93,22 @@ export default function AboutClient() {
                             className="grid grid-cols-2 gap-4"
                         >
                             <img
-                                src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=400"
+                                src="https://picsum.photos/seed/raj-1089/800/600"
                                 alt="Amber Fort"
                                 className="rounded-2xl w-full h-48 object-cover"
                             />
                             <img
-                                src="https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=400"
+                                src="https://picsum.photos/seed/raj-1090/800/600"
                                 alt="Mehrangarh"
                                 className="rounded-2xl w-full h-48 object-cover mt-8"
                             />
                             <img
-                                src="https://images.unsplash.com/photo-1548013146-72479768bada?w=400"
+                                src="https://picsum.photos/seed/raj-1091/800/600"
                                 alt="Desert"
                                 className="rounded-2xl w-full h-48 object-cover -mt-4"
                             />
                             <img
-                                src="https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?w=400"
+                                src="https://picsum.photos/seed/raj-1092/800/600"
                                 alt="Udaipur"
                                 className="rounded-2xl w-full h-48 object-cover mt-4"
                             />

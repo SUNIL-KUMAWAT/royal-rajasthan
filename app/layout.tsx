@@ -64,7 +64,7 @@ export const metadata: Metadata = {
       "Discover 500+ historic forts, golden deserts, royal palaces & wildlife sanctuaries. Complete travel guide with timing, tickets & trip planner.",
     images: [
       {
-        url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop",
+        url: "https://picsum.photos/seed/raj-1116/800/600",
         width: 1200,
         height: 630,
         alt: "Amber Fort Jaipur - Royal Rajasthan Tourism",
@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     description:
       "Discover 500+ historic forts, golden deserts, and royal palaces. Plan your perfect Rajasthan trip!",
     images: [
-      "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200",
+      "https://picsum.photos/seed/raj-1117/800/600",
     ],
   },
 

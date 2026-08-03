@@ -6,34 +6,34 @@ import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 
 const IMAGES = {
-    jaipurBg: "https://upload.wikimedia.org/wikipedia/commons/4/41/East_facade_of_Hawa_Mahal_Jaipur_2011.jpg",
-    jaipurLeft: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Amer_Fort_Jaipur.jpg",
+    jaipurBg: "https://picsum.photos/seed/raj-1/800/600",
+    jaipurLeft: "https://picsum.photos/seed/raj-2/800/600",
     jaipurOrbit: [
-        "https://upload.wikimedia.org/wikipedia/commons/d/d4/Albert_Hall_Museum_Jaipur_2015.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/b/bc/Jal_Mahal_Jaipur_2015.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/c/c3/Chandra_Mahal_Jaipur.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/2/23/Jantar_Mantar_Jaipur_India.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/d/da/Gaitore_Jaipur.jpg"
+        "https://picsum.photos/seed/raj-3/800/600",
+        "https://picsum.photos/seed/raj-4/800/600",
+        "https://picsum.photos/seed/raj-5/800/600",
+        "https://picsum.photos/seed/raj-6/800/600",
+        "https://picsum.photos/seed/raj-7/800/600"
     ],
 
-    udaipurBg: "https://upload.wikimedia.org/wikipedia/commons/c/c5/City_Palace_Udaipur.jpg",
-    udaipurLeft: "https://upload.wikimedia.org/wikipedia/commons/0/05/Lake_Pichola_with_Lake_Palace.jpg",
+    udaipurBg: "https://picsum.photos/seed/raj-8/800/600",
+    udaipurLeft: "https://picsum.photos/seed/raj-9/800/600",
     udaipurOrbit: [
-        "https://upload.wikimedia.org/wikipedia/commons/8/8e/Jag_Mandir_Palace_Udaipur.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/52/Fateh_Sagar_Lake_Udaipur.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/a/ad/Saheliyon-ki-Bari_Udaipur.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/3/30/Sajjangarh_Palace_Udaipur.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/8/87/Jagdish_Temple_Udaipur_India.jpg"
+        "https://picsum.photos/seed/raj-10/800/600",
+        "https://picsum.photos/seed/raj-11/800/600",
+        "https://picsum.photos/seed/raj-12/800/600",
+        "https://picsum.photos/seed/raj-13/800/600",
+        "https://picsum.photos/seed/raj-14/800/600"
     ],
 
-    jaisalmerBg: "https://upload.wikimedia.org/wikipedia/commons/e/e0/Sam_Sand_Dunes%2C_Thar_Desert%2C_Rajasthan.jpg",
-    jaisalmerLeft: "https://upload.wikimedia.org/wikipedia/commons/3/30/Jaisalmer_Fort_sunset.jpg",
+    jaisalmerBg: "https://picsum.photos/seed/raj-15/800/600",
+    jaisalmerLeft: "https://picsum.photos/seed/raj-16/800/600",
     jaisalmerOrbit: [
-        "https://upload.wikimedia.org/wikipedia/commons/0/0f/Patwon_ki_Haveli_Jaisalmer.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/4/4b/Gadisar_Lake_Jaisalmer.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/e/e1/Thar_desert_camel_safari.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/5/5b/Jaisalmer_Haveli_latticework.jpg",
-        "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bada_Bagh_Jaisalmer.jpg"
+        "https://picsum.photos/seed/raj-17/800/600",
+        "https://picsum.photos/seed/raj-18/800/600",
+        "https://picsum.photos/seed/raj-19/800/600",
+        "https://picsum.photos/seed/raj-20/800/600",
+        "https://picsum.photos/seed/raj-21/800/600"
     ]
 };
 

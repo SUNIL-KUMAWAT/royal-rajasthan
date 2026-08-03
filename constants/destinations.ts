@@ -9,12 +9,12 @@ const DESTINATIONS_RAW = [
         nickname: "The Pink City",
         description: "The capital of Rajasthan, known for its stunning pink-colored architecture, magnificent forts, and vibrant bazaars.",
         longDescription: "Jaipur, the Pink City, is a mesmerizing blend of history, culture, and modernity. Founded in 1727 by Maharaja Sawai Jai Singh II, it was the first planned city of India.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-29/800/600",
+        coverImage: "https://picsum.photos/seed/raj-30/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-31/800/600",
+            "https://picsum.photos/seed/raj-32/800/600",
+            "https://picsum.photos/seed/raj-33/800/600"
         ],
         rating: 4.8,
         reviews: 12450,
@@ -38,11 +38,11 @@ const DESTINATIONS_RAW = [
         nickname: "The City of Lakes",
         description: "Romantic city of lakes and palaces, often called the Venice of the East. Home to the magnificent Lake Palace.",
         longDescription: "Udaipur, the City of Lakes, is one of the most romantic destinations in India. Founded by Maharana Udai Singh II in 1559.",
-        image: "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1615552980649-db3722e0325d?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-34/800/600",
+        coverImage: "https://picsum.photos/seed/raj-35/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?auto=format&fit=crop&w=1200&q=80",
-            "https://images.unsplash.com/photo-1615552980649-db3722e0325d?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-36/800/600",
+            "https://picsum.photos/seed/raj-37/800/600"
         ],
         rating: 4.9,
         reviews: 15230,
@@ -66,10 +66,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Blue City",
         description: "Dominated by the majestic Mehrangarh Fort, Jodhpur's blue-painted old city creates a stunning visual spectacle.",
         longDescription: "Jodhpur, known as the Blue City and Sun City, is the second-largest city in Rajasthan.",
-        image: "https://images.unsplash.com/photo-1562141989-c5c79ac8f576?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1626082927389-6cd097cdc6ec?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-38/800/600",
+        coverImage: "https://picsum.photos/seed/raj-39/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1562141989-c5c79ac8f576?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-40/800/600"
         ],
         rating: 4.7,
         reviews: 9870,
@@ -93,10 +93,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Golden City",
         description: "Rising from the heart of the Thar Desert, the Golden City is home to a magnificent living fort and camel safaris.",
         longDescription: "Jaisalmer, the Golden City, is one of the most exotic destinations in India.",
-        image: "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-41/800/600",
+        coverImage: "https://picsum.photos/seed/raj-42/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1542401886-65d6c61db217?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-43/800/600"
         ],
         rating: 4.8,
         reviews: 11200,
@@ -120,10 +120,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Sacred City",
         description: "One of the world's oldest cities, famous for its holy lake, Brahma Temple, and the legendary Pushkar Camel Fair.",
         longDescription: "Pushkar is one of the five sacred dhams for Hindus and is built around Pushkar Lake.",
-        image: "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1575377427642-087cf684ad0c?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-44/800/600",
+        coverImage: "https://picsum.photos/seed/raj-45/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1590001155093-a3c66ab0c3ff?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-46/800/600"
         ],
         rating: 4.6,
         reviews: 7650,
@@ -147,10 +147,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Queen of Hills",
         description: "Rajasthan's only hill station offering a cool escape with the stunning Dilwara Temples and Nakki Lake.",
         longDescription: "Mount Abu is the only hill station in Rajasthan situated at 1,220 meters in the Aravalli Range.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-47/800/600",
+        coverImage: "https://picsum.photos/seed/raj-48/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-49/800/600"
         ],
         rating: 4.5,
         reviews: 6540,
@@ -174,10 +174,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Camel City",
         description: "A city of forts, temples, and havelis in the heart of the Thar Desert. Famous for Junagarh Fort and Bikaneri sweets.",
         longDescription: "Bikaner is a city in the northern part of the Thar Desert in Rajasthan, founded in 1488.",
-        image: "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1562141989-c5c79ac8f576?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-50/800/600",
+        coverImage: "https://picsum.photos/seed/raj-51/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1597075687490-8f673c6c17f6?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-52/800/600"
         ],
         rating: 4.4,
         reviews: 5430,
@@ -201,10 +201,10 @@ const DESTINATIONS_RAW = [
         nickname: "The Tiger Land",
         description: "One of India's premier wildlife destinations, famous for its tiger population and the 10th-century Ranthambore Fort.",
         longDescription: "Ranthambore National Park is one of the largest national parks in northern India.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1500627869374-13ad991b1116?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-53/800/600",
+        coverImage: "https://picsum.photos/seed/raj-54/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-55/800/600"
         ],
         rating: 4.7,
         reviews: 8970,
@@ -241,10 +241,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Gateway to Sariska stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Alwar combines colonial history, Rajput architecture, and proximity to wildlife at Sariska.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-56/800/600",
+        coverImage: "https://picsum.photos/seed/raj-57/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-58/800/600"
         ],
         rating: 4.3,
         reviews: 4320,
@@ -281,10 +281,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Sariska Tiger Reserve stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sariska Tiger Reserve offers accessible wildlife viewing and scenic Aravalli ranges.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1500627869374-13ad991b1116?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-59/800/600",
+        coverImage: "https://picsum.photos/seed/raj-60/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-61/800/600"
         ],
         rating: 4.5,
         reviews: 5210,
@@ -321,10 +321,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Open-air Art Gallery stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Shekhawati's towns like Mandawa and Nawalgarh showcase stunning haveli art from merchant families.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-62/800/600",
+        coverImage: "https://picsum.photos/seed/raj-63/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-64/800/600"
         ],
         rating: 4.6,
         reviews: 3840,
@@ -361,10 +361,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Shrinathji Temple Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Nathdwara draws devotees and art lovers for its temple rituals and traditional paintings.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-65/800/600",
+        coverImage: "https://picsum.photos/seed/raj-66/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-67/800/600"
         ],
         rating: 4.4,
         reviews: 4120,
@@ -401,10 +401,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Education Hub & Riverside City stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kota pairs industrial development with riverside palaces, museums, and wildlife nearby.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-68/800/600",
+        coverImage: "https://picsum.photos/seed/raj-69/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-70/800/600"
         ],
         rating: 4.1,
         reviews: 3320,
@@ -441,10 +441,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the City of Crafts stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Barmer is a remote desert center with vibrant textile crafts and traditional Rajasthani music.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-71/800/600",
+        coverImage: "https://picsum.photos/seed/raj-72/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-73/800/600"
         ],
         rating: 4.2,
         reviews: 2540,
@@ -481,10 +481,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Indus Valley & Fort Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Hanumangarh contains relics from ancient civilizations and a scenic fort complex.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-74/800/600",
+        coverImage: "https://picsum.photos/seed/raj-75/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-76/800/600"
         ],
         rating: 4.0,
         reviews: 1210,
@@ -521,10 +521,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the City of Sufis stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Tonk features old bazaars, mosques, and palaces reflecting its syncretic past.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-77/800/600",
+        coverImage: "https://picsum.photos/seed/raj-78/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-79/800/600"
         ],
         rating: 4.1,
         reviews: 980,
@@ -561,10 +561,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Gateway to Mount Abu stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sirohi offers access to the Aravallis and traditional Rajasthani rural life.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-80/800/600",
+        coverImage: "https://picsum.photos/seed/raj-81/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-82/800/600"
         ],
         rating: 4.0,
         reviews: 760,
@@ -601,10 +601,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Rani Sati & Ruins stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Fatehpur is a peaceful stop with religious significance and local markets.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-83/800/600",
+        coverImage: "https://picsum.photos/seed/raj-84/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-85/800/600"
         ],
         rating: 3.9,
         reviews: 420,
@@ -641,10 +641,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the River Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Luni is a small town that acts as a gateway to the rural areas around Jodhpur.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-86/800/600",
+        coverImage: "https://picsum.photos/seed/raj-87/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-88/800/600"
         ],
         rating: 3.8,
         reviews: 310,
@@ -681,10 +681,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Salt & Wheat Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Phalodi sits in the Thar Desert and has a characterful town center and markets.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-89/800/600",
+        coverImage: "https://picsum.photos/seed/raj-90/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-91/800/600"
         ],
         rating: 3.9,
         reviews: 540,
@@ -721,10 +721,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Fort & Cattle Fair Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Nagaur offers a blend of forts, handicrafts, and a lively fair culture.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-92/800/600",
+        coverImage: "https://picsum.photos/seed/raj-93/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-94/800/600"
         ],
         rating: 4.0,
         reviews: 2100,
@@ -761,10 +761,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Historic Outpost stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Dausa sits between Jaipur and Agra and has several scenic temples and ruins.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-95/800/600",
+        coverImage: "https://picsum.photos/seed/raj-96/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-97/800/600"
         ],
         rating: 3.9,
         reviews: 860,
@@ -801,10 +801,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Ranthambore Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sawai Madhopur supports tourism for Ranthambore and has its own historical fort.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-98/800/600",
+        coverImage: "https://picsum.photos/seed/raj-99/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-100/800/600"
         ],
         rating: 4.2,
         reviews: 4890,
@@ -841,10 +841,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Stepwell & Temples stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kherwa gives a glimpse of rural Mewar and historic water architecture.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-101/800/600",
+        coverImage: "https://picsum.photos/seed/raj-102/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-103/800/600"
         ],
         rating: 3.8,
         reviews: 220,
@@ -881,10 +881,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Gateway to Ranakpur stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sadri is a common stop for visitors to Ranakpur and Kumbhalgarh forts.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-104/800/600",
+        coverImage: "https://picsum.photos/seed/raj-105/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-106/800/600"
         ],
         rating: 4.0,
         reviews: 540,
@@ -921,10 +921,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Jain Temple Complex stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Ranakpur is famed for its marble architecture and peaceful temple complex set in hills.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-107/800/600",
+        coverImage: "https://picsum.photos/seed/raj-108/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-109/800/600"
         ],
         rating: 4.8,
         reviews: 6120,
@@ -961,10 +961,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Great Wall of Rajasthan stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kumbhalgarh Fort is a massive Mewar fortification with temples and battlements.",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1562141989-c5c79ac8f576?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-110/800/600",
+        coverImage: "https://picsum.photos/seed/raj-111/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-112/800/600"
         ],
         rating: 4.7,
         reviews: 7310,
@@ -1001,10 +1001,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Karni Mata & Rat Temple stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Deshnoke attracts curious visitors and devotees to its unique temple dedicated to Karni Mata.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-113/800/600",
+        coverImage: "https://picsum.photos/seed/raj-114/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-115/800/600"
         ],
         rating: 4.2,
         reviews: 1980,
@@ -1041,10 +1041,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Fort Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Jalore's fort overlooks the town and offers a glimpse into regional history.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-116/800/600",
+        coverImage: "https://picsum.photos/seed/raj-117/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-118/800/600"
         ],
         rating: 4.0,
         reviews: 740,
@@ -1081,10 +1081,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Capital of Mewar stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Chittorgarh Fort is central to Rajput legend, with grand gates, towers, and temples.",
-        image: "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1562141989-c5c79ac8f576?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-119/800/600",
+        coverImage: "https://picsum.photos/seed/raj-120/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-121/800/600"
         ],
         rating: 4.6,
         reviews: 6580,
@@ -1121,10 +1121,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Bird Sanctuary City stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Bharatpur (Keoladeo Ghana NP) is one of Asia's most important birding sites.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1500627869374-13ad991b1116?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-122/800/600",
+        coverImage: "https://picsum.photos/seed/raj-123/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-124/800/600"
         ],
         rating: 4.7,
         reviews: 7020,
@@ -1161,10 +1161,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Marble & Paintings City stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kishangarh mixes industry with a distinct painting school and historic forts.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-125/800/600",
+        coverImage: "https://picsum.photos/seed/raj-126/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-127/800/600"
         ],
         rating: 4.0,
         reviews: 890,
@@ -1201,10 +1201,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Sufi & Hill Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Ajmer blends Sufi pilgrimage, lakeside promenades, and proximity to Pushkar.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-128/800/600",
+        coverImage: "https://picsum.photos/seed/raj-129/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-130/800/600"
         ],
         rating: 4.5,
         reviews: 11230,
@@ -1241,10 +1241,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Sambhar Lake stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sambhar Lake is an important ecological area with vivid salt works and birdlife.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-131/800/600",
+        coverImage: "https://picsum.photos/seed/raj-132/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-133/800/600"
         ],
         rating: 4.1,
         reviews: 1520,
@@ -1281,10 +1281,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Coastal Outpost stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "A lesser-known coastal-feel outpost representing local fishing communities.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-134/800/600",
+        coverImage: "https://picsum.photos/seed/raj-135/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-136/800/600"
         ],
         rating: 3.7,
         reviews: 110,
@@ -1321,10 +1321,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Goddess of Miracles stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Salasar attracts devotees year-round and is a notable religious stop in Rajasthan.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-137/800/600",
+        coverImage: "https://picsum.photos/seed/raj-138/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-139/800/600"
         ],
         rating: 4.3,
         reviews: 2740,
@@ -1361,10 +1361,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Ancient Capital Near Jodhpur stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Mandore Gardens hold royal cenotaphs and ruins from Jodhpur's earlier capital.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-140/800/600",
+        coverImage: "https://picsum.photos/seed/raj-141/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-142/800/600"
         ],
         rating: 4.2,
         reviews: 1980,
@@ -1401,10 +1401,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Haveli Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Laxmangarh offers calm rural landscapes and intimate village experiences.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-143/800/600",
+        coverImage: "https://picsum.photos/seed/raj-144/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-145/800/600"
         ],
         rating: 3.9,
         reviews: 420,
@@ -1441,10 +1441,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Shekhawati Gateway stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Sikar is a commercial and cultural center of the Shekhawati region.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-146/800/600",
+        coverImage: "https://picsum.photos/seed/raj-147/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-148/800/600"
         ],
         rating: 4.1,
         reviews: 1540,
@@ -1481,10 +1481,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Salt & Trade Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Nokha is known regionally for trade and access to desert landscapes.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-149/800/600",
+        coverImage: "https://picsum.photos/seed/raj-150/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-151/800/600"
         ],
         rating: 3.8,
         reviews: 310,
@@ -1521,10 +1521,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Fort & Village stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Siwana offers an authentic desert village experience and historic fort ruins.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-152/800/600",
+        coverImage: "https://picsum.photos/seed/raj-153/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-154/800/600"
         ],
         rating: 3.7,
         reviews: 210,
@@ -1561,10 +1561,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Shekhawati Heritage stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Jhunjhunu is a Shekhawati center known for beautifully decorated mansions.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-155/800/600",
+        coverImage: "https://picsum.photos/seed/raj-156/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-157/800/600"
         ],
         rating: 4.2,
         reviews: 1320,
@@ -1601,10 +1601,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Lake & Marble stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Rajsamand is tranquil, centered on a large lake and historic ghats.",
-        image: "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1615552980649-db3722e0325d?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-158/800/600",
+        coverImage: "https://picsum.photos/seed/raj-159/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1586183189334-f83f4929f5c7?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-160/800/600"
         ],
         rating: 4.1,
         reviews: 980,
@@ -1641,10 +1641,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Garden Palace Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Deeg Palace is a seasonal water-palace famed for fountains and gardens.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-161/800/600",
+        coverImage: "https://picsum.photos/seed/raj-162/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-163/800/600"
         ],
         rating: 4.3,
         reviews: 1420,
@@ -1681,10 +1681,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Hidden Haveli stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Phool Mahal is a representative small estate showcasing local decorative styles.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-164/800/600",
+        coverImage: "https://picsum.photos/seed/raj-165/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-166/800/600"
         ],
         rating: 3.8,
         reviews: 90,
@@ -1721,10 +1721,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Stepwell & Palace Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Bundi is famed for Taragarh Fort, Bundi Palace, and scenic stepwells like Raniji ki Baori.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-167/800/600",
+        coverImage: "https://picsum.photos/seed/raj-168/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-169/800/600"
         ],
         rating: 4.5,
         reviews: 5340,
@@ -1761,10 +1761,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the River & Fort Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Karauli presents a quieter slice of Rajasthan with palace architecture and ghats.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-170/800/600",
+        coverImage: "https://picsum.photos/seed/raj-171/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-172/800/600"
         ],
         rating: 4.0,
         reviews: 880,
@@ -1801,10 +1801,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Shekhawati Artistic Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Nawalgarh's haveli art draws heritage travelers and photographers.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-173/800/600",
+        coverImage: "https://picsum.photos/seed/raj-174/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-175/800/600"
         ],
         rating: 4.4,
         reviews: 1760,
@@ -1841,10 +1841,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the City of Hundred Islands stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Banswara is green and scenic, with lakes, islands, and a different climate than the desert north.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1500627869374-13ad991b1116?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-176/800/600",
+        coverImage: "https://picsum.photos/seed/raj-177/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-178/800/600"
         ],
         rating: 4.2,
         reviews: 1250,
@@ -1881,10 +1881,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Rural Mewar stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Salumbar is known for rustic villages, temples, and scenic drives through Mewar.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-179/800/600",
+        coverImage: "https://picsum.photos/seed/raj-180/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-181/800/600"
         ],
         rating: 3.9,
         reviews: 410,
@@ -1921,10 +1921,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Tribal Heartland stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kherwara offers access to tribal handicrafts and calm countryside.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-182/800/600",
+        coverImage: "https://picsum.photos/seed/raj-183/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-184/800/600"
         ],
         rating: 3.8,
         reviews: 260,
@@ -1961,10 +1961,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Palace & Lake stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Gajner Palace overlooks a serene lake and is a pleasant wildlife and birding spot.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-185/800/600",
+        coverImage: "https://picsum.photos/seed/raj-186/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-187/800/600"
         ],
         rating: 4.3,
         reviews: 980,
@@ -2001,10 +2001,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Palace Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Shahpura's palace and lakes provide a calm stop between major Mewar sites.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-188/800/600",
+        coverImage: "https://picsum.photos/seed/raj-189/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-190/800/600"
         ],
         rating: 3.9,
         reviews: 420,
@@ -2041,10 +2041,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Village & Stepwell stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kendua showcases local stepwell architecture and quiet village life.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-191/800/600",
+        coverImage: "https://picsum.photos/seed/raj-192/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-193/800/600"
         ],
         rating: 3.8,
         reviews: 120,
@@ -2081,10 +2081,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Industrial Heritage stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Pali is a regional center with textile industries and historic sites.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-194/800/600",
+        coverImage: "https://picsum.photos/seed/raj-195/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-196/800/600"
         ],
         rating: 4.0,
         reviews: 890,
@@ -2121,10 +2121,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Border Town stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Raisinghnagar is primarily agricultural with local bazaars and farming life.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-197/800/600",
+        coverImage: "https://picsum.photos/seed/raj-198/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-199/800/600"
         ],
         rating: 3.7,
         reviews: 140,
@@ -2161,10 +2161,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Fort & Havelis stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Kuchaman Fort sits above the town and offers sunset views and heritage stays.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-200/800/600",
+        coverImage: "https://picsum.photos/seed/raj-201/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-202/800/600"
         ],
         rating: 4.2,
         reviews: 920,
@@ -2201,10 +2201,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Marble City stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Makrana's quarries produce high-quality white marble and attract industry visitors.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-203/800/600",
+        coverImage: "https://picsum.photos/seed/raj-204/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-205/800/600"
         ],
         rating: 4.1,
         reviews: 760,
@@ -2241,10 +2241,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Heritage Hotel Fort stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Neemrana Fort Palace is a popular weekend getaway with restored courtyards and pools.",
-        image: "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1524413840003-0587428385ad?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-206/800/600",
+        coverImage: "https://picsum.photos/seed/raj-207/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1477584308802-e9c378852d9a?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-208/800/600"
         ],
         rating: 4.6,
         reviews: 8230,
@@ -2281,10 +2281,10 @@ const DESTINATIONS_RAW = [
           <p>Today, the Blackbuck Sanctuary stands as a living, breathing museum of the incredible state of Rajasthan. It perfectly bridges the gap between ancient historical reverence and modern cultural tourism. For travelers and historians alike, witnessing this festival in Near Phagi, Jaipur Rural offers an unparalleled window into the soul of India's most vibrant state, proving that while empires may rise and fall, the enduring spirit and joyous celebrations of its people remain eternal.</p>
     `,
         longDescription: "Tal Chhapar Wildlife Sanctuary is a flat grassland attracting grassland species and migratory birds.",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80",
-        coverImage: "https://images.unsplash.com/photo-1500627869374-13ad991b1116?auto=format&fit=crop&w=1200&q=80",
+        image: "https://picsum.photos/seed/raj-209/800/600",
+        coverImage: "https://picsum.photos/seed/raj-210/800/600",
         gallery: [
-            "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=1200&q=80"
+            "https://picsum.photos/seed/raj-211/800/600"
         ],
         rating: 4.3,
         reviews: 1340,

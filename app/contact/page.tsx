@@ -21,7 +21,7 @@ export const metadata: Metadata = {
             "Get in touch with our expert travel consultants to plan your perfect Rajasthan adventure.",
         images: [
             {
-                url: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200&h=630&fit=crop",
+                url: "https://picsum.photos/seed/raj-1096/800/600",
                 width: 1200,
                 height: 630,
                 alt: "Contact Royal Rajasthan Tourism",
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
         title: "Contact Us - Plan Your Rajasthan Trip",
         description:
             "Get in touch with our expert travel consultants for your Rajasthan trip.",
-        images: ["https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200"],
+        images: ["https://picsum.photos/seed/raj-1097/800/600"],
         site: "@RoyalRajasthan",
         creator: "@RoyalRajasthan",
     },
