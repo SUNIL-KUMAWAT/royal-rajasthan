@@ -14,7 +14,7 @@ export const metadata: Metadata = {
         "forts in Rajasthan",
         "palaces in Rajasthan",
         "lakes in Rajasthan",
-        "Rajasthan travel guide 2024",
+        "Rajasthan travel guide 2025",
     ],
     openGraph: {
         title: "Famous Places to Visit in Rajasthan",
@@ -28,9 +28,52 @@ export const metadata: Metadata = {
                 alt: "Famous Places in Rajasthan",
             },
         ],
+        type: "website",
+        siteName: "Royal Rajasthan Tourism",
+        locale: "en_IN",
+        url: "https://royalrajasthan.com/places",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Famous Places to Visit in Rajasthan",
+        description:
+            "Complete guide to tourist places in Rajasthan with timing, tickets & maps.",
+        images: ["https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=1200"],
+        site: "@RoyalRajasthan",
+        creator: "@RoyalRajasthan",
+    },
+    alternates: {
+        canonical: "https://royalrajasthan.com/places",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
     },
 };
 
 export default function PlacesPage() {
-    return <PlacesClient />;
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
+            { "@type": "ListItem", position: 2, name: "Places", item: "https://royalrajasthan.com/places" },
+        ],
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <PlacesClient />
+        </>
+    );
 }

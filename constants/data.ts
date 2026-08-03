@@ -1,8 +1,6 @@
 // constants/data.ts
 import { Place, Destination } from "../types";
-import { PLACES } from "./places";
 export type { Place, Destination };
-
 
 export { PLACES } from './places';
 export { PLACES_HINDI } from './places-hindi';
@@ -10,6 +8,7 @@ export { RAJASTHAN_SHOPPING } from './shopping';
 export { RAJASTHAN_SHOPPING_HINDI } from './shopping-hindi';
 export { FESTIVALS } from './festivals';
 export { FESTIVALS_HINDI } from './festivals-hindi';
+export { DESTINATIONS } from './destinations';
 
 export const CATEGORIES = [
     "All",
@@ -141,9 +140,6 @@ export const NAV_LINKS = [
     { name: "Plan Trip", href: "/plan-trip" },
     { name: "Shopping", href: "/shopping" },
     { name: "Festivals", href: "/culture" },
-    // { name: "Gallery", href: "/gallery" },
-    // { name: "About", href: "/about" },
-    // { name: "Contact", href: "/contact" }
 ];
 
 export const HERO_SLIDES = [
@@ -227,35 +223,6 @@ export const GALLERY_IMAGES = [
     { id: 11, src: "https://images.unsplash.com/photo-1575377427642-087cf684ad0c?w=600", alt: "Festival", category: "Festivals", location: "Rajasthan" },
     { id: 12, src: "https://images.unsplash.com/photo-1603262110263-76ea9498b85f?w=600", alt: "Bikaner Fort", category: "Forts", location: "Bikaner" }
 ];
-
-export { DESTINATIONS } from './destinations';
-
-export const ATTRACTIONS = PLACES.filter(p => p.isFeatured || p.isPopular).map(p => ({
-    id: p.id,
-    name: p.name,
-    slug: p.slug,
-    location: p.city,
-    category: p.category,
-    description: p.description,
-    image: p.images[0],
-    rating: p.rating,
-    reviews: p.reviews,
-    entryFee: {
-        indian: p.ticket.indian,
-        foreigner: p.ticket.foreigner
-    },
-    timing: `${p.timing.open} - ${p.timing.close}`,
-    bestTime: p.bestTimeToVisit.months,
-    duration: p.visitDuration.recommended,
-    tags: p.tags,
-    highlights: p.highlights,
-    isFeatured: p.isFeatured
-}));
-
-
-
-
-
 
 export const CATEGORIES_HINDI = [
     "सभी",

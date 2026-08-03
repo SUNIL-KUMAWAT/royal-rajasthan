@@ -1,6 +1,8 @@
 // app/sitemap.ts
 import { MetadataRoute } from "next";
 import { PLACES } from "@/constants/data";
+import { FESTIVALS } from "@/constants/festivals";
+import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://royalrajasthan.com";
@@ -20,16 +22,40 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.9,
         },
         {
+            url: `${baseUrl}/culture`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.85,
+        },
+        {
+            url: `${baseUrl}/shopping`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.85,
+        },
+        {
             url: `${baseUrl}/plan-trip`,
             lastModified: new Date(),
             changeFrequency: "weekly",
             priority: 0.8,
         },
         {
+            url: `${baseUrl}/destinations`,
+            lastModified: new Date(),
+            changeFrequency: "weekly",
+            priority: 0.75,
+        },
+        {
+            url: `${baseUrl}/packages`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.7,
+        },
+        {
             url: `${baseUrl}/gallery`,
             lastModified: new Date(),
             changeFrequency: "weekly",
-            priority: 0.7,
+            priority: 0.65,
         },
         {
             url: `${baseUrl}/about`,
@@ -53,5 +79,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.85,
     }));
 
-    return [...staticPages, ...placesPages];
+    // Dynamic festival pages
+    const festivalPages: MetadataRoute.Sitemap = FESTIVALS.map((festival) => ({
+        url: `${baseUrl}/festivals/${festival.id}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.7,
+    }));
+
+    // Dynamic shopping pages (district level)
+    const shoppingPages: MetadataRoute.Sitemap = RAJASTHAN_SHOPPING.districts.map((district) => ({
+        url: `${baseUrl}/shopping/${district.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.65,
+    }));
+
+    return [...staticPages, ...placesPages, ...festivalPages, ...shoppingPages];
 }

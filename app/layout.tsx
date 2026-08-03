@@ -107,13 +107,6 @@ export const metadata: Metadata = {
     },
   },
 
-  // ============ VERIFICATION ============
-  verification: {
-    google: "your-google-verification-code",
-    yandex: "your-yandex-code",
-    yahoo: "your-yahoo-code",
-  },
-
   // ============ APP INFO ============
   applicationName: "Royal Rajasthan Tourism",
   authors: [{ name: "Royal Rajasthan Tourism" }],
@@ -156,7 +149,6 @@ export default function RootLayout({
             `,
           }}
         />
-
 
         {/* ============ STRUCTURED DATA (JSON-LD) ============ */}
         <script
@@ -273,60 +265,3 @@ export default function RootLayout({
     </html>
   );
 }
-
-// import type { Metadata } from "next";
-// import "./globals.css";
-// import { Navbar } from "@/components/layout/Navbar";
-// import { Footer } from "@/components/layout/Footer";
-// import { ThemeProvider } from "@/components/ThemeProvider";
-
-// export const metadata: Metadata = {
-//   title: "Royal Rajasthan - Explore Famous Places of Rajasthan",
-//   description:
-//     "Discover famous tourist places of Rajasthan with timing, tickets, location, history, and complete details.",
-// };
-
-// export default function RootLayout({
-//   children,
-// }: {
-//   children: React.ReactNode;
-// }) {
-//   return (
-//     <html lang="en" suppressHydrationWarning>
-//       <head>
-//         {/* Prevent dark mode flash */}
-//         <script
-//           dangerouslySetInnerHTML={{
-//             __html: `
-//               try {
-//                 const theme = localStorage.getItem('theme');
-//                 if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-//                   document.documentElement.classList.add('dark');
-//                 } else {
-//                   document.documentElement.classList.remove('dark');
-//                 }
-//               } catch (e) {}
-//             `,
-//           }}
-//         />
-//         <link rel="preconnect" href="https://fonts.googleapis.com" />
-//         <link
-//           rel="preconnect"
-//           href="https://fonts.gstatic.com"
-//           crossOrigin=""
-//         />
-//         <link
-//           href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Inter:wght@300;400;500;600;700&display=swap"
-//           rel="stylesheet"
-//         />
-//       </head>
-//       <body className="bg-palace-white dark:bg-gray-950 transition-colors duration-300">
-//         <ThemeProvider>
-//           <Navbar />
-//           <main>{children}</main>
-//           <Footer />
-//         </ThemeProvider>
-//       </body>
-//     </html>
-//   );
-// }
