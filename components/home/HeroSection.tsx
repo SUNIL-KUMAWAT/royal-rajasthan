@@ -108,7 +108,9 @@ export function HeroSection() {
     }, [currentSlides.length]);
 
     return (
-        <section className="relative h-screen min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+        <section className="relative h-[500px] md:h-screen min-h-[500px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+
+
             {/* Blurred background — crossfades between slides */}
             <AnimatePresence mode="wait">
                 <motion.div
@@ -128,7 +130,7 @@ export function HeroSection() {
             </AnimatePresence>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60" />
 
-            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-10 px-6 md:flex-row md:justify-between md:gap-6 md:px-12">
+            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
                 {/* LEFT: single framed image — crossfades between slides */}
                 <div className="relative hidden shrink-0 md:block">
                     <AnimatePresence mode="wait">
@@ -159,7 +161,7 @@ export function HeroSection() {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mb-4 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-4 py-1.5 text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
+                            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-md md:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
                         >
                             {slide.subtitle}
                         </motion.span>
@@ -172,7 +174,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -40 }}
                             transition={{ duration: 0.8, delay: 0.15 }}
-                            className="whitespace-pre-line font-playfair text-4xl font-bold leading-tight text-white md:text-5xl"
+                            className="whitespace-pre-line font-playfair text-2xl md:text-5xl font-bold leading-tight text-white"
                         >
                             {slide.title}
                         </motion.h1>
@@ -185,7 +187,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="mt-4 text-base text-white/70 md:text-md"
+                            className="mt-4 text-sm text-white/70 md:text-base"
                         >
                             {slide.description}
                         </motion.p>
@@ -195,7 +197,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.5 }}
-                        className="mt-8 flex flex-col gap-4 sm:flex-row md:justify-start justify-center"
+                        className="mt-8 flex flex-row gap-3 sm:gap-4 md:justify-start justify-center"
                     >
                         <motion.div
                             whileHover={{ scale: 1.05 }}
@@ -204,7 +206,7 @@ export function HeroSection() {
                         >
                             <Link
                                 href="/destinations"
-                                className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-gradient px-8 py-4 text-md font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
+                                className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-gradient px-4 py-3 md:px-8 md:py-4 text-xs sm:text-sm md:text-base font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
                                     {language === 'hi' ? "राजस्थान की खोज करें" : "Explore Rajasthan"}
@@ -227,7 +229,7 @@ export function HeroSection() {
                         >
                             <Link
                                 href="/plan-trip"
-                                className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-8 py-4 text-md font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20 sm:w-auto"
+                                className="group relative flex w-auto items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-4 py-3 md:px-8 md:py-4 text-xs sm:text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20"
                             >
                                 <span className="relative z-10">{language === 'hi' ? "यात्रा की योजना बनाएं" : "Plan Your Trip"}</span>
                                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />

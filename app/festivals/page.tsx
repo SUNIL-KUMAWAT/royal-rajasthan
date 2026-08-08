@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { FestivalsSection } from "@/components/home/FestivalsSection";
 
 export const metadata: Metadata = {
-    title: "Rajasthan Festivals & Culture - Complete Guide | Royal Rajasthan",
+    title: "Rajasthan Festivals & Culture - Complete Guide | Rajasthan Tourism Places",
     description:
         "Discover the vibrant festivals of Rajasthan - Pushkar Camel Fair, Desert Festival, Teej, Gangaur & more. Complete guide with dates, highlights, timings & travel tips.",
     keywords: [
@@ -30,11 +30,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1107/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Rajasthan Festivals - Royal Rajasthan Tourism",
+                alt: "Rajasthan Festivals - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/culture",
     },
@@ -242,7 +242,7 @@ export default function CulturePage() {
     const organizationSchema = {
         "@context": "https://schema.org",
         "@type": "TouristInformationCenter",
-        name: "Royal Rajasthan Tourism - Culture & Festivals",
+        name: "Rajasthan Tourism Places - Culture & Festivals",
         url: "https://rajasthanplaces.in/culture",
         description:
             "Complete guide to Rajasthan festivals, cultural events, folk traditions and celebrations.",

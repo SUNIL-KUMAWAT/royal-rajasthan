@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import PackagesPage from "./PackagesClient";
 
 export const metadata: Metadata = {
-    title: "Rajasthan Tour Packages - Best Holiday Packages 2025 | Royal Rajasthan",
+    title: "Rajasthan Tour Packages - Best Holiday Packages 2025 | Rajasthan Tourism Places",
     description:
         "Explore curated Rajasthan tour packages — Golden Triangle, Royal Heritage, Desert Safari, Honeymoon & Wildlife tours. All-inclusive packages with forts, palaces & desert camps.",
     keywords: [
@@ -28,11 +28,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1125/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Rajasthan Tour Packages - Royal Rajasthan Tourism",
+                alt: "Rajasthan Tour Packages - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/packages",
     },

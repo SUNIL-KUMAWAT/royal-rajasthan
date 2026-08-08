@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     
     if (!foundPlace) return { title: "Market Not Found" };
     
-    const title = foundPlace.seo?.title || `${foundPlace.name} - Timing, Location & Shopping Guide | Royal Rajasthan`;
+    const title = foundPlace.seo?.title || `${foundPlace.name} - Timing, Location & Shopping Guide | Rajasthan Tourism Places`;
     const description = foundPlace.seo?.description || foundPlace.description;
     
     return {

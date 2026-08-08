@@ -120,8 +120,8 @@ export default function ShoppingClient() {
         if (typeof window === "undefined") return;
 
         const defaultTitle = language === "hi" 
-            ? "राजस्थान में शॉपिंग - सर्वोत्तम बाजार और स्मृति चिन्ह | Royal Rajasthan" 
-            : "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Royal Rajasthan";
+            ? "राजस्थान में शॉपिंग - सर्वोत्तम बाजार और स्मृति चिन्ह | Rajasthan Tourism Places" 
+            : "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Rajasthan Tourism Places";
         const defaultDesc = language === "hi"
             ? "राजस्थान की प्रसिद्ध हस्तशिल्प, आभूषण, और कपड़ों की खरीददारी के लिए बाजारों की सूची।"
             : "Explore the ultimate shopping guide to Rajasthan's famous bazaars.";

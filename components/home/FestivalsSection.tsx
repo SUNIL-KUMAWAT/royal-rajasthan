@@ -102,7 +102,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative h-[80vh] rounded-[40px] overflow-hidden"
+        className="relative h-[85vh] min-h-[600px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
       >
         <img
           src={festival.image}
@@ -113,7 +113,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
         {/* Content */}
-        <div className="absolute left-6 md:left-12 bottom-24 max-w-3xl">
+        <div className="absolute left-6 right-6 md:right-auto md:left-12 bottom-32 md:bottom-24 max-w-3xl">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -166,7 +166,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         </div>
 
         {/* Navigation Buttons */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-6 z-20">
+        <div className="absolute bottom-8 left-6 md:left-1/2 md:-translate-x-1/2 flex gap-4 md:gap-6 z-20">
           <button onClick={onPrev} className="w-14 h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
             <ChevronLeft size={28} />
           </button>
@@ -176,9 +176,9 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         </div>
 
         {/* Countdown */}
-        <div className="absolute right-4 md:right-8 bottom-8 md:bottom-12
+        <div className="absolute right-4 top-24 md:top-auto md:bottom-12 md:right-8
           backdrop-blur-2xl bg-black/30 border border-white/10
-          rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-2xl">
+          rounded-2xl md:rounded-3xl p-3 md:p-6 shadow-2xl scale-75 md:scale-100 origin-top-right md:origin-bottom-right">
           <p className="text-white/70 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-widest">
             Next Festival Starts In
           </p>

@@ -4,7 +4,7 @@ import ShoppingClient from "./ShoppingClient";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 
 export const metadata: Metadata = {
-    title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Royal Rajasthan",
+    title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Rajasthan Tourism Places",
     description:
         "Explore the ultimate shopping guide to Rajasthan. Discover Johari Bazaar in Jaipur, Bapu Bazaar, Hathi Pol in Udaipur, Sardar Market in Jodhpur, and buy authentic Kundan jewelry, block-prints, mojaris & spices.",
     keywords: [
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1141/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Shopping in Rajasthan - Royal Rajasthan Tourism",
+                alt: "Shopping in Rajasthan - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/shopping",
     },
@@ -81,7 +81,7 @@ export default function ShoppingPage() {
         },
         author: {
             "@type": "Organization",
-            name: "Royal Rajasthan Tourism",
+            name: "Rajasthan Tourism Places",
             url: "https://rajasthanplaces.in",
         },
     };

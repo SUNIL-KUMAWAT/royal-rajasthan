@@ -51,16 +51,14 @@ export function Navbar() {
                                         ? "text-maroon-500 dark:text-white"
                                         : "text-white"
                                         }`}
-                                >
-                                    Royal Rajasthan
-                                </div>
+                                >Rajasthan Tourism Places</div>
                                 <div
                                     className={`text-xs tracking-widest uppercase ${isSolid
                                         ? "text-yellow-600 dark:text-yellow-400"
                                         : "text-yellow-300"
                                         }`}
                                 >
-                                    {language === 'hi' ? "पर्यटन" : "Tourism"}
+                                    {""}
                                 </div>
                             </div>
                         </Link>
@@ -159,6 +157,31 @@ export function Navbar() {
                             </button>
                         </div>
                     </div>
+                </div>
+
+                {/* Mobile Quick Tabs */}
+                <div className="lg:hidden mt-2 flex items-center justify-center px-4 pb-3 gap-2">
+                    {[
+                        { name: language === 'hi' ? "स्थान" : "Places", href: "/places" },
+                        { name: language === 'hi' ? "त्यौहार" : "Festivals", href: "/festivals" },
+                        { name: language === 'hi' ? "खरीदारी" : "Shopping", href: "/shopping" },
+                    ].map((tab) => {
+                        const isActive = pathname === tab.href || (tab.href !== "/" && pathname.startsWith(tab.href));
+                        return (
+                            <Link
+                                key={tab.name}
+                                href={tab.href}
+                                className={`flex-1 text-center px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold transition-all shadow-sm border ${isActive
+                                        ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white border-yellow-400/50 shadow-yellow-500/30"
+                                        : isSolid
+                                            ? "bg-gray-100/80 text-gray-700 border-transparent dark:bg-gray-800/80 dark:text-gray-300"
+                                            : "bg-white/20 text-white border-white/20 backdrop-blur-md"
+                                    }`}
+                            >
+                                {tab.name}
+                            </Link>
+                        );
+                    })}
                 </div>
 
                 {/* Mobile Menu */}

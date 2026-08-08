@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import PlanTripClient from "./PlanTripClient";
 
 export const metadata: Metadata = {
-    title: "Plan Your Rajasthan Trip - Free Itinerary Planner | Royal Rajasthan",
+    title: "Plan Your Rajasthan Trip - Free Itinerary Planner | Rajasthan Tourism Places",
     description:
         "Plan your perfect Rajasthan trip with our free itinerary planner. Select cities, set duration, choose interests and get a personalized day-by-day travel plan for Jaipur, Udaipur, Jodhpur, Jaisalmer & more.",
     keywords: [
@@ -32,11 +32,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1130/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Plan Your Rajasthan Trip - Royal Rajasthan Tourism",
+                alt: "Plan Your Rajasthan Trip - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/plan-trip",
     },
@@ -92,7 +92,7 @@ export default function PlanTripPage() {
         ],
         provider: {
             "@type": "Organization",
-            name: "Royal Rajasthan Tourism",
+            name: "Rajasthan Tourism Places",
             url: "https://rajasthanplaces.in",
         },
     };

@@ -447,7 +447,7 @@ function downloadPDF(itinerary: DayPlan[], cities: string[]): void {
   </style>
 </head>
 <body>
-  <h1>🏰 Royal Rajasthan Trip Itinerary</h1>
+  <h1>🏰 Rajasthan Tourism Places Trip Itinerary</h1>
   <div class="sub">Cities: ${cities.join(", ")} &nbsp;|&nbsp; Generated: ${new Date().toLocaleDateString("en-IN", { year: "numeric", month: "long", day: "numeric" })}</div>
   <div class="stats">
     <div class="stat"><strong>${itinerary.length}</strong>Days</div>
@@ -456,7 +456,7 @@ function downloadPDF(itinerary: DayPlan[], cities: string[]): void {
   </div>
   ${dayRows}
   <div class="footer">
-    Royal Rajasthan Tourism &nbsp;|&nbsp; rajasthanplaces.in &nbsp;|&nbsp; +91 98765 43210
+    Rajasthan Tourism Places &nbsp;|&nbsp; rajasthanplaces.in &nbsp;|&nbsp; +91 98765 43210
   </div>
 </body>
 </html>`;
@@ -474,7 +474,7 @@ function downloadPDF(itinerary: DayPlan[], cities: string[]): void {
 function downloadText(itinerary: DayPlan[]): void {
     const lines: string[] = [
         "═══════════════════════════════════════",
-        "   🏰 ROYAL RAJASTHAN TRIP ITINERARY",
+        "   🏰 RAJASTHAN TOURISM PLACES TRIP ITINERARY",
         "═══════════════════════════════════════",
         "",
     ];
@@ -520,7 +520,7 @@ function downloadText(itinerary: DayPlan[]): void {
     });
 
     lines.push("═══════════════════════════════════════");
-    lines.push("Royal Rajasthan Tourism");
+    lines.push("Rajasthan Tourism Places");
     lines.push("🌐 rajasthanplaces.in");
     lines.push("📞 +91 98765 43210");
     lines.push("═══════════════════════════════════════");

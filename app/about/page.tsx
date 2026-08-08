@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-    title: "About Rajasthan - History, Culture & Heritage | Royal Rajasthan Tourism",
+    title: "About Rajasthan - History, Culture & Heritage | Rajasthan Tourism Places",
     description:
         "Learn about Rajasthan — India's largest state. Discover its rich history, vibrant culture, magnificent forts & palaces, geography, and why it's India's most visited tourist destination.",
     keywords: [
@@ -27,11 +27,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1093/800/600",
                 width: 1200,
                 height: 630,
-                alt: "About Rajasthan - Royal Rajasthan Tourism",
+                alt: "About Rajasthan - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/about",
     },
@@ -72,7 +72,7 @@ export default function AboutPage() {
     const aboutSchema = {
         "@context": "https://schema.org",
         "@type": "AboutPage",
-        name: "About Rajasthan - Royal Rajasthan Tourism",
+        name: "About Rajasthan - Rajasthan Tourism Places",
         description: "Complete information about Rajasthan — history, culture, geography and tourism.",
         url: "https://rajasthanplaces.in/about",
         mainEntity: {

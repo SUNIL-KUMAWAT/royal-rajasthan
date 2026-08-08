@@ -8,7 +8,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const festival = FESTIVALS.find(f => f.id === parseInt(id, 10));
   if (!festival) return { title: "Festival Not Found" };
   
-  const title = festival.seo?.title || `${festival.name} | Royal Rajasthan`;
+  const title = festival.seo?.title || `${festival.name} | Rajasthan Tourism Places`;
   const description = festival.seo?.description || festival.description;
   const customKeywords = festival.seo?.keywords || festival.keywords || [];
 

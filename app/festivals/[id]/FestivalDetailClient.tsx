@@ -258,7 +258,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                     onClick={() => {
                       if (navigator.share) {
                         navigator.share({
-                          title: `${currentFestival.name} | Royal Rajasthan`,
+                          title: `${currentFestival.name} | Rajasthan Tourism Places`,
                           text: `Check out ${currentFestival.name} in ${currentFestival.location}!`,
                           url: window.location.href,
                         }).catch(console.error);

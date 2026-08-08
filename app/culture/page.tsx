@@ -31,17 +31,17 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1098/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Rajasthan Festivals - Royal Rajasthan Tourism",
+                alt: "Rajasthan Festivals - Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/culture",
     },
     twitter: {
         card: "summary_large_image",
-        title: "Rajasthan Festivals & Culture Guide | Royal Rajasthan Tourism",
+        title: "Rajasthan Festivals & Culture Guide | Rajasthan Tourism Places",
         description:
             "Discover vibrant Rajasthan festivals - Pushkar Camel Fair, Desert Festival, Teej & Gangaur.",
         images: [

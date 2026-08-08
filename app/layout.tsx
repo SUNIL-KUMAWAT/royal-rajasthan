@@ -25,8 +25,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   // ============ BASIC SEO ============
   title: {
-    default: "Royal Rajasthan Tourism - Explore Famous Places of Rajasthan",
-    template: "%s | Royal Rajasthan Tourism",
+    default: "Rajasthan Tourism Places - Explore Famous Places of Rajasthan",
+    template: "%s | Rajasthan Tourism Places",
   },
   description:
     "Discover the most famous tourist places in Rajasthan with complete details - timing, ticket prices, history, location & travel tips. Plan your perfect Rajasthan trip today!",
@@ -51,6 +51,11 @@ export const metadata: Metadata = {
     "Ranthambore tiger safari",
     "Pushkar camel fair",
     "Rajasthan UNESCO sites",
+    "famous places in Rajasthan",
+    "top places to visit in Rajasthan",
+    "famous tourist places in Rajasthan",
+    "must visit places in Rajasthan",
+    "Rajasthan historical places"
   ],
 
   // ============ OPEN GRAPH (Facebook/WhatsApp) ============
@@ -58,8 +63,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_IN",
     url: "https://rajasthanplaces.in",
-    siteName: "Royal Rajasthan Tourism",
-    title: "Royal Rajasthan Tourism - Explore the Land of Kings",
+    siteName: "Rajasthan Tourism Places",
+    title: "Rajasthan Tourism Places - Explore the Land of Kings",
     description:
       "Discover 500+ historic forts, golden deserts, royal palaces & wildlife sanctuaries. Complete travel guide with timing, tickets & trip planner.",
     images: [
@@ -67,7 +72,7 @@ export const metadata: Metadata = {
         url: "https://picsum.photos/seed/raj-1116/800/600",
         width: 1200,
         height: 630,
-        alt: "Amber Fort Jaipur - Royal Rajasthan Tourism",
+        alt: "Amber Fort Jaipur - Rajasthan Tourism Places",
       },
     ],
   },
@@ -77,7 +82,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@RoyalRajasthan",
     creator: "@RoyalRajasthan",
-    title: "Royal Rajasthan Tourism - Explore the Land of Kings",
+    title: "Rajasthan Tourism Places - Explore the Land of Kings",
     description:
       "Discover 500+ historic forts, golden deserts, and royal palaces. Plan your perfect Rajasthan trip!",
     images: [
@@ -108,11 +113,11 @@ export const metadata: Metadata = {
   },
 
   // ============ APP INFO ============
-  applicationName: "Royal Rajasthan Tourism",
-  authors: [{ name: "Royal Rajasthan Tourism" }],
+  applicationName: "Rajasthan Tourism Places",
+  authors: [{ name: "Rajasthan Tourism Places" }],
   generator: "Next.js",
-  creator: "Royal Rajasthan Tourism",
-  publisher: "Royal Rajasthan Tourism",
+  creator: "Rajasthan Tourism Places",
+  publisher: "Rajasthan Tourism Places",
 
   // ============ ICONS ============
   icons: {
@@ -157,7 +162,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "TravelAgency",
-              name: "Royal Rajasthan Tourism",
+              name: "Rajasthan Tourism Places",
               url: "https://rajasthanplaces.in",
               logo: "https://rajasthanplaces.in/logo.png",
               description:
@@ -197,7 +202,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "Royal Rajasthan Tourism",
+              name: "Rajasthan Tourism Places",
               url: "https://rajasthanplaces.in",
               potentialAction: {
                 "@type": "SearchAction",

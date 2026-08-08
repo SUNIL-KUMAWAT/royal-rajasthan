@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-    title: "Contact Us - Plan Your Rajasthan Trip | Royal Rajasthan Tourism",
+    title: "Contact Us - Plan Your Rajasthan Trip | Rajasthan Tourism Places",
     description:
-        "Get in touch with Royal Rajasthan Tourism. Call, email or WhatsApp us to plan your perfect Rajasthan trip. Expert travel consultants available Mon-Sat 9AM-7PM IST.",
+        "Get in touch with Rajasthan Tourism Places. Call, email or WhatsApp us to plan your perfect Rajasthan trip. Expert travel consultants available Mon-Sat 9AM-7PM IST.",
     keywords: [
-        "contact Royal Rajasthan Tourism",
+        "contact Rajasthan Tourism Places",
         "Rajasthan travel inquiry",
         "plan Rajasthan trip",
         "Rajasthan tour booking",
@@ -24,11 +24,11 @@ export const metadata: Metadata = {
                 url: "https://picsum.photos/seed/raj-1096/800/600",
                 width: 1200,
                 height: 630,
-                alt: "Contact Royal Rajasthan Tourism",
+                alt: "Contact Rajasthan Tourism Places",
             },
         ],
         type: "website",
-        siteName: "Royal Rajasthan Tourism",
+        siteName: "Rajasthan Tourism Places",
         locale: "en_IN",
         url: "https://rajasthanplaces.in/contact",
     },
@@ -60,11 +60,11 @@ export default function ContactPage() {
     const contactSchema = {
         "@context": "https://schema.org",
         "@type": "ContactPage",
-        name: "Contact Royal Rajasthan Tourism",
+        name: "Contact Rajasthan Tourism Places",
         url: "https://rajasthanplaces.in/contact",
         mainEntity: {
             "@type": "TravelAgency",
-            name: "Royal Rajasthan Tourism",
+            name: "Rajasthan Tourism Places",
             telephone: "+91-98765-43210",
             email: "info@rajasthanplaces.in",
             address: {

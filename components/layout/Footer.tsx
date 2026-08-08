@@ -126,9 +126,7 @@ export function Footer() {
                                     <span className="text-white font-bold text-xl">R</span>
                                 </div>
                                 <div>
-                                    <div className="font-playfair font-bold text-xl text-white">
-                                        Royal Rajasthan
-                                    </div>
+                                    <div className="font-playfair font-bold text-xl text-white">Rajasthan Tourism Places</div>
                                     <div className="text-gold-400 text-xs tracking-widest uppercase">
                                         Tourism
                                     </div>
@@ -250,7 +248,7 @@ export function Footer() {
             <div className="border-t border-white/10 py-6 px-4">
                 <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
                     <p className="text-gray-400 text-sm flex items-center gap-1">
-                        © 2025 Royal Rajasthan Tourism. Made with{" "}
+                        © 2025 Rajasthan Tourism Places. Made with{" "}
                         <Heart size={14} className="text-red-500 fill-red-500" /> in
                         Rajasthan
                     </p>

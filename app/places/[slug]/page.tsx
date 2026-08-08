@@ -22,7 +22,7 @@ export async function generateMetadata({
 
     if (!place) {
         return {
-            title: "Place Not Found | Royal Rajasthan Tourism",
+            title: "Place Not Found | Rajasthan Tourism Places",
             description: "The requested place could not be found.",
         };
     }
@@ -41,7 +41,7 @@ export async function generateMetadata({
         ...customKeywords,
     ];
 
-    const title = place.seo?.title || `${place.name} - Timing, Tickets & Travel Guide | Royal Rajasthan`;
+    const title = place.seo?.title || `${place.name} - Timing, Tickets & Travel Guide | Rajasthan Tourism Places`;
     const description = place.seo?.description || `Visit ${place.name} in ${place.city}, Rajasthan. Timing: ${place.timing.open}-${place.timing.close}. Entry: ${place.ticket.isFree ? "Free" : `₹${place.ticket.indian}`
         }. Complete travel guide with history, tips & Google Maps.`;
 
