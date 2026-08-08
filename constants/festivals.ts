@@ -256,7 +256,8 @@ export const FESTIVALS = [
                 "festivals in rajasthan",
                 "Jaipur"
             ]
-        }
+        },
+        "history": "\n          <p>The <strong>Gangaur Festival</strong> is one of the most vital and colorful festivals celebrated with great passion and devotion throughout Rajasthan, particularly in Jaipur and Udaipur. The word 'Gangaur' is derived from 'Gan' (a synonym for Lord Shiva) and 'Gaur' (representing Goddess Parvati). The festival celebrates marital fidelity, spring, and harvest, and is observed primarily by women who worship clay idols of Gauri and Shiva.</p>\n          <p>Historically, the festival dates back to ancient times and is deeply rooted in Rajput culture. The rulers of Jaipur and Udaipur patronized the festival, hosting grand processions featuring royal entourages, decorated elephants, horses, chariots, and folk dancers. Today, the traditional Gangaur procession in Jaipur attracts thousands of tourists globally.</p>\n        "
     },
     {
         "id": 5,
@@ -321,7 +322,8 @@ export const FESTIVALS = [
                 "festivals in rajasthan",
                 "Jaipur"
             ]
-        }
+        },
+        "history": "\n          <p>The <strong>Teej Festival</strong> is a major monsoon festival celebrated with joy and fanfare in Rajasthan, especially in Jaipur. Dedicated to the union of Lord Shiva and Goddess Parvati, Teej marks the advent of the monsoon season and is celebrated with swings, traditional songs, and dances.</p>\n          <p>Historically, the royal families of Jaipur led the grand Teej procession through the walled city, featuring the golden palanquin of Teej Mata. The celebration brings the community together in a showcase of cultural performance, traditional attire, and sweet delicacies like Ghewar.</p>\n        "
     },
     {
         "id": 6,
@@ -386,7 +388,8 @@ export const FESTIVALS = [
                 "festivals in rajasthan",
                 "Jodhpur"
             ]
-        }
+        },
+        "history": "\n          <p>The <strong>Rajasthan International Folk Festival (RIFF)</strong> is an annual music festival held at Mehrangarh Fort in Jodhpur. Established in 2007, it brings together local Rajasthani folk musicians and international artists, showcasing a fusion of global sounds and desert heritage.</p>\n          <p>Historically, Jodhpur's Mehrangarh Museum Trust and the Maharaja Gaj Singh II patronized the festival to preserve the oral traditions and musical heritage of nomadic desert communities. Today, RIFF is recognized by UNESCO as a premier people's platform for heritage and music.</p>\n        "
     },
     {
         "id": 7,
@@ -451,7 +454,8 @@ export const FESTIVALS = [
                 "festivals in rajasthan",
                 "Bikaner"
             ]
-        }
+        },
+        "history": "\n          <p>The <strong>Bikaner Camel Festival</strong> is an annual event organized in Bikaner by the Department of Tourism, Art and Culture of Rajasthan. It is dedicated to the resilient 'Ship of the Desert'—the camel—featuring camel races, acrobatics, dance, and colorful pageantry.</p>\n          <p>Historically, Bikaner has been renowned for its breeding of camel species, and the rulers of Bikaner established the famous Camel Corps (Ganga Risala) which fought in both World Wars. The festival celebrates this historical connection and local desert crafts.</p>\n        "
     },
     {
         "id": 8,
@@ -515,7 +519,8 @@ export const FESTIVALS = [
                 "festivals in rajasthan",
                 "Ajmer"
             ]
-        }
+        },
+        "history": "\n          <p>The <strong>Ajmer Urs</strong> is an annual festival held at the Ajmer Sharif Dargah in Ajmer. It commemorates the death anniversary of the revered Sufi saint Khwaja Moinuddin Chishti, drawing millions of pilgrims of all faiths from across the world.</p>\n          <p>Historically, the Urs has been observed since the 13th century, patronized by Delhi Sultans and Mughal Emperors who constructed magnificent mosques, gates, and domes at the shrine. The festival is characterized by Qawwali music, spiritual prayers, and massive community feasts.</p>\n        "
     },
     {
         "id": 9,
