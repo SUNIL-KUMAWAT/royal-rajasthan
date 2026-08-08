@@ -41,26 +41,12 @@ export function Navbar() {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex items-center justify-between h-16 md:h-20">
                         {/* Logo */}
-                        <Link href="/" className="flex items-center gap-3 group">
-                            <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-full flex items-center justify-center shadow-[0_0_15px_rgba(234,179,8,0.5)] animate-pulse-gold group-hover:scale-110 transition-transform duration-300">
-                                <span className="text-white font-bold text-lg drop-shadow-md">R</span>
-                            </div>
-                            <div>
-                                <div
-                                    className={`font-playfair font-bold text-lg leading-tight ${isSolid
-                                        ? "text-maroon-500 dark:text-white"
-                                        : "text-white"
-                                        }`}
-                                >Rajasthan Tourism Places</div>
-                                <div
-                                    className={`text-xs tracking-widest uppercase ${isSolid
-                                        ? "text-yellow-600 dark:text-yellow-400"
-                                        : "text-yellow-300"
-                                        }`}
-                                >
-                                    {""}
-                                </div>
-                            </div>
+                        <Link href="/" className="flex items-center group relative z-10 transition-transform hover:scale-105">
+                            <img
+                                src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
+                                alt="Rajasthan Tourism Places"
+                                className={`h-12 md:h-16 w-auto object-contain ${!isSolid ? "drop-shadow-lg" : ""}`}
+                            />
                         </Link>
 
                         {/* Desktop Nav */}
@@ -172,10 +158,10 @@ export function Navbar() {
                                 key={tab.name}
                                 href={tab.href}
                                 className={`flex-1 text-center px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold transition-all shadow-sm border ${isActive
-                                        ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white border-yellow-400/50 shadow-yellow-500/30"
-                                        : isSolid
-                                            ? "bg-gray-100/80 text-gray-700 border-transparent dark:bg-gray-800/80 dark:text-gray-300"
-                                            : "bg-white/20 text-white border-white/20 backdrop-blur-md"
+                                    ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white border-yellow-400/50 shadow-yellow-500/30"
+                                    : isSolid
+                                        ? "bg-gray-100/80 text-gray-700 border-transparent dark:bg-gray-800/80 dark:text-gray-300"
+                                        : "bg-white/20 text-white border-white/20 backdrop-blur-md"
                                     }`}
                             >
                                 {tab.name}

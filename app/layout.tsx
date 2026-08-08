@@ -121,9 +121,9 @@ export const metadata: Metadata = {
 
   // ============ ICONS ============
   icons: {
-    icon: "/favicon-16x16.png",
-    shortcut: "/favicon-16x16.png",
-    apple: "/apple-touch-icon.png",
+    icon: "/english-logo-bg.png",
+    shortcut: "/english-logo-bg.png",
+    apple: "/english-logo-bg.png",
   },
 
   // ============ MANIFEST ============
