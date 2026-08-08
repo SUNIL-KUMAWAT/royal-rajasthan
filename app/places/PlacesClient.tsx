@@ -158,7 +158,7 @@ export function PlacesClient() {
     const clearFilters = () => {
         setSearch("");
         setCategory("All");
-        setCity(language === 'hi' ? "सभी शहर" : "All Cities");
+        setCity("All Cities");
         setSortBy("featured");
         setEntryType("All");
     };
