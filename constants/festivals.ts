@@ -130,72 +130,6 @@ export const FESTIVALS = [
     {
         "id": 3,
         "nextDate": "2026-11-15",
-        "name": "Jaipur Literature Festival",
-        "location": "Jaipur",
-        "month": "January",
-        "duration": "5 Days",
-        "description": "The world's largest free literary festival attracting authors, thinkers and readers globally.",
-        "history": "\n          <p>The Jaipur Literature Festival (JLF) is a modern cultural phenomenon that has fundamentally redefined the literary landscape of India and the world. Earning the moniker 'The Greatest Literary Show on Earth,' the festival began in 2006 as a modest, albeit ambitious, segment of the Jaipur Heritage International Festival. Conceived by authors William Dalrymple and Namita Gokhale, alongside producer Sanjoy K. Roy, the inaugural event featured just 18 writers and drew a crowd of roughly 100 attendees, many of whom were passing tourists.</p>\n          \n          <p>However, the founders had a visionary concept: to create a completely democratic, free-to-attend platform where the world's greatest minds could engage in open dialogue, unhindered by the elitism often associated with global literary events. Set against the stunning, regal backdrop of the 19th-century Diggi Palace, the festival offered a unique juxtaposition of intellectual rigor and the vibrant, colorful hospitality of Rajasthan.</p>\n          \n          <h3>Explosive Growth and Global Prominence</h3>\n          <p>Within just a few years, word of the festival's magical atmosphere spread exponentially. By 2011, it was attracting tens of thousands of visitors. The festival's programming became renowned for its astonishing breadth, seamlessly blending Nobel Laureates, Booker Prize winners, and Pulitzer laureates with regional language writers, debut novelists, politicians, historians, and pop-culture icons. This egalitarian approach meant that a local college student could easily find themselves sitting next to a global head of state while listening to a debate on global economics or ancient mythology.</p>\n          \n          <p>The historic Diggi Palace itself plays a crucial role in the festival's identity. With its sprawling lawns, ancient banyan trees, and intricate Rajput architecture, the venue is divided into various whimsical stages—like the Front Lawn, the Baithak, and the Charbagh. The aesthetic is purely Rajasthani, featuring massive, brightly colored block-printed tents, traditional mud-work decorations, and the constant hum of classical Indian music drifting between sessions.</p>\n          \n          <h3>A Catalyst for Intellectual Discourse</h3>\n          <p>Historically, JLF has been the epicenter for some of the most critical cultural and political debates of the 21st century in South Asia. It has fiercely championed the freedom of expression, often navigating complex controversies and protests with a commitment to keeping the platform open to diverse and dissenting voices. The festival has tackled heavy subjects ranging from the legacy of colonialism and the climate crisis to gender rights and the future of artificial intelligence, making it much more than just a gathering for book lovers.</p>\n          \n          <p>Furthermore, JLF has played an unprecedented role in bridging the gap between English-language publishing and India's rich tapestry of regional literature (Bhasha). It provides a crucial global spotlight for writers working in Hindi, Urdu, Tamil, Malayalam, and dozens of other Indian languages, fostering a massive translation movement that has enriched the global literary canon.</p>\n          \n          <h3>The Cultural Carnival</h3>\n          <p>Beyond the intellectually stimulating panel discussions, the history of JLF is deeply tied to its celebration of broader arts. The mornings begin with soul-stirring musical performances, often featuring classical Hindustani or Sufi traditions, setting a meditative tone for the day. The evenings transition into high-energy cultural events, with world music concerts and heritage walks taking over the pink city.</p>\n          \n          <p>Today, the Jaipur Literature Festival draws nearly half a million footfalls over five days, making it the largest free literary festival in the world. It stands as a testament to the fact that in the heart of Rajasthan—a land historically famous for its warrior kings and epic battles—the pen has indeed become the most celebrated weapon, and ideas the greatest treasure.</p>\n        ",
-        "image": "https://images.unsplash.com/photo-1540575467063-178f50002c4b?w=800&q=80",
-        "highlights": [
-            "Authors",
-            "Books",
-            "Talk Shows",
-            "Culture"
-        ],
-        "rating": 4.9,
-        "isFeatured": true,
-        "district": "Jaipur",
-        "designedBy": "Royal court patrons & local community",
-        "activities": [
-            "Watching cultural folk dance and music performances",
-            "Participating in traditional festival contests and games",
-            "Taking pictures of colorful local heritage and celebrations"
-        ],
-        "accessibility": [
-            "General public festival areas are accessible",
-            "Crowded areas might pose difficulty for wheelchair users",
-            "Special assistance desks are set up by Rajasthan Tourism during the festival"
-        ],
-        "photography": "Photography is highly welcomed. Capturing the vibrant colors of folk performers is a delight.",
-        "relatedPlaces": [
-            "Gangaur Festival",
-            "Teej Festival",
-            "Elephant Festival"
-        ],
-        "faqs": [
-            {
-                "question": "Where is the Jaipur Literature Festival held?",
-                "answer": "It is held annually in Jaipur, Rajasthan."
-            },
-            {
-                "question": "How long does the Jaipur Literature Festival last?",
-                "answer": "The festival takes place over a period of 5 Days."
-            },
-            {
-                "question": "Do we need tickets to attend Jaipur Literature Festival?",
-                "answer": "Most public events and cultural performances hosted by Rajasthan Tourism are free for all visitors, though some special tours/activities may charge fees."
-            }
-        ],
-        "keywords": [
-            "jaipur literature festival",
-            "jaipur literature festival rajasthan",
-            "jaipur literature festival dates"
-        ],
-        "seo": {
-            "title": "Jaipur Literature Festival - Dates, Key Highlights & Celebration Guide",
-            "description": "Experience the vibrant Jaipur Literature Festival in Jaipur, Rajasthan. Learn about next dates, duration, highlights, history, and how to participate.",
-            "keywords": [
-                "Jaipur Literature Festival",
-                "rajasthan festivals",
-                "festivals in rajasthan",
-                "Jaipur"
-            ]
-        }
-    },
-    {
-        "id": 4,
-        "nextDate": "2026-11-15",
         "name": "Gangaur Festival",
         "location": "Jaipur",
         "month": "March-April",
@@ -260,7 +194,7 @@ export const FESTIVALS = [
         "history": "\n          <p>The <strong>Gangaur Festival</strong> is one of the most vital and colorful festivals celebrated with great passion and devotion throughout Rajasthan, particularly in Jaipur and Udaipur. The word 'Gangaur' is derived from 'Gan' (a synonym for Lord Shiva) and 'Gaur' (representing Goddess Parvati). The festival celebrates marital fidelity, spring, and harvest, and is observed primarily by women who worship clay idols of Gauri and Shiva.</p>\n          <p>Historically, the festival dates back to ancient times and is deeply rooted in Rajput culture. The rulers of Jaipur and Udaipur patronized the festival, hosting grand processions featuring royal entourages, decorated elephants, horses, chariots, and folk dancers. Today, the traditional Gangaur procession in Jaipur attracts thousands of tourists globally.</p>\n        "
     },
     {
-        "id": 5,
+        "id": 4,
         "nextDate": "2026-11-15",
         "name": "Teej Festival",
         "location": "Jaipur",
@@ -324,6 +258,72 @@ export const FESTIVALS = [
             ]
         },
         "history": "\n          <p>The <strong>Teej Festival</strong> is a major monsoon festival celebrated with joy and fanfare in Rajasthan, especially in Jaipur. Dedicated to the union of Lord Shiva and Goddess Parvati, Teej marks the advent of the monsoon season and is celebrated with swings, traditional songs, and dances.</p>\n          <p>Historically, the royal families of Jaipur led the grand Teej procession through the walled city, featuring the golden palanquin of Teej Mata. The celebration brings the community together in a showcase of cultural performance, traditional attire, and sweet delicacies like Ghewar.</p>\n        "
+    },
+    {
+        "id": 5,
+        "nextDate": "2026-11-15",
+        "name": "Jaipur Literature Festival",
+        "location": "Jaipur",
+        "month": "January",
+        "duration": "5 Days",
+        "description": "The world's largest free literary festival attracting authors, thinkers and readers globally.",
+        "history": "\n          <p>The Jaipur Literature Festival (JLF) is a modern cultural phenomenon that has fundamentally redefined the literary landscape of India and the world. Earning the moniker 'The Greatest Literary Show on Earth,' the festival began in 2006 as a modest, albeit ambitious, segment of the Jaipur Heritage International Festival. Conceived by authors William Dalrymple and Namita Gokhale, alongside producer Sanjoy K. Roy, the inaugural event featured just 18 writers and drew a crowd of roughly 100 attendees, many of whom were passing tourists.</p>\n          \n          <p>However, the founders had a visionary concept: to create a completely democratic, free-to-attend platform where the world's greatest minds could engage in open dialogue, unhindered by the elitism often associated with global literary events. Set against the stunning, regal backdrop of the 19th-century Diggi Palace, the festival offered a unique juxtaposition of intellectual rigor and the vibrant, colorful hospitality of Rajasthan.</p>\n          \n          <h3>Explosive Growth and Global Prominence</h3>\n          <p>Within just a few years, word of the festival's magical atmosphere spread exponentially. By 2011, it was attracting tens of thousands of visitors. The festival's programming became renowned for its astonishing breadth, seamlessly blending Nobel Laureates, Booker Prize winners, and Pulitzer laureates with regional language writers, debut novelists, politicians, historians, and pop-culture icons. This egalitarian approach meant that a local college student could easily find themselves sitting next to a global head of state while listening to a debate on global economics or ancient mythology.</p>\n          \n          <p>The historic Diggi Palace itself plays a crucial role in the festival's identity. With its sprawling lawns, ancient banyan trees, and intricate Rajput architecture, the venue is divided into various whimsical stages—like the Front Lawn, the Baithak, and the Charbagh. The aesthetic is purely Rajasthani, featuring massive, brightly colored block-printed tents, traditional mud-work decorations, and the constant hum of classical Indian music drifting between sessions.</p>\n          \n          <h3>A Catalyst for Intellectual Discourse</h3>\n          <p>Historically, JLF has been the epicenter for some of the most critical cultural and political debates of the 21st century in South Asia. It has fiercely championed the freedom of expression, often navigating complex controversies and protests with a commitment to keeping the platform open to diverse and dissenting voices. The festival has tackled heavy subjects ranging from the legacy of colonialism and the climate crisis to gender rights and the future of artificial intelligence, making it much more than just a gathering for book lovers.</p>\n          \n          <p>Furthermore, JLF has played an unprecedented role in bridging the gap between English-language publishing and India's rich tapestry of regional literature (Bhasha). It provides a crucial global spotlight for writers working in Hindi, Urdu, Tamil, Malayalam, and dozens of other Indian languages, fostering a massive translation movement that has enriched the global literary canon.</p>\n          \n          <h3>The Cultural Carnival</h3>\n          <p>Beyond the intellectually stimulating panel discussions, the history of JLF is deeply tied to its celebration of broader arts. The mornings begin with soul-stirring musical performances, often featuring classical Hindustani or Sufi traditions, setting a meditative tone for the day. The evenings transition into high-energy cultural events, with world music concerts and heritage walks taking over the pink city.</p>\n          \n          <p>Today, the Jaipur Literature Festival draws nearly half a million footfalls over five days, making it the largest free literary festival in the world. It stands as a testament to the fact that in the heart of Rajasthan—a land historically famous for its warrior kings and epic battles—the pen has indeed become the most celebrated weapon, and ideas the greatest treasure.</p>\n        ",
+        "image": "https://images.unsplash.com/photo-1540575467063-178f50002c4b?w=800&q=80",
+        "highlights": [
+            "Authors",
+            "Books",
+            "Talk Shows",
+            "Culture"
+        ],
+        "rating": 4.9,
+        "isFeatured": true,
+        "district": "Jaipur",
+        "designedBy": "Royal court patrons & local community",
+        "activities": [
+            "Watching cultural folk dance and music performances",
+            "Participating in traditional festival contests and games",
+            "Taking pictures of colorful local heritage and celebrations"
+        ],
+        "accessibility": [
+            "General public festival areas are accessible",
+            "Crowded areas might pose difficulty for wheelchair users",
+            "Special assistance desks are set up by Rajasthan Tourism during the festival"
+        ],
+        "photography": "Photography is highly welcomed. Capturing the vibrant colors of folk performers is a delight.",
+        "relatedPlaces": [
+            "Gangaur Festival",
+            "Teej Festival",
+            "Elephant Festival"
+        ],
+        "faqs": [
+            {
+                "question": "Where is the Jaipur Literature Festival held?",
+                "answer": "It is held annually in Jaipur, Rajasthan."
+            },
+            {
+                "question": "How long does the Jaipur Literature Festival last?",
+                "answer": "The festival takes place over a period of 5 Days."
+            },
+            {
+                "question": "Do we need tickets to attend Jaipur Literature Festival?",
+                "answer": "Most public events and cultural performances hosted by Rajasthan Tourism are free for all visitors, though some special tours/activities may charge fees."
+            }
+        ],
+        "keywords": [
+            "jaipur literature festival",
+            "jaipur literature festival rajasthan",
+            "jaipur literature festival dates"
+        ],
+        "seo": {
+            "title": "Jaipur Literature Festival - Dates, Key Highlights & Celebration Guide",
+            "description": "Experience the vibrant Jaipur Literature Festival in Jaipur, Rajasthan. Learn about next dates, duration, highlights, history, and how to participate.",
+            "keywords": [
+                "Jaipur Literature Festival",
+                "rajasthan festivals",
+                "festivals in rajasthan",
+                "Jaipur"
+            ]
+        }
     },
     {
         "id": 6,

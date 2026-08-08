@@ -20,6 +20,14 @@ const FAQSection = dynamic(() => import("@/components/home/FAQ").then((m) => m.F
   loading: () => <div className="h-96 w-full animate-pulse bg-gray-100 dark:bg-gray-800 rounded-3xl" />,
 });
 
+const MiniFestivals = dynamic(() => import("@/components/home/MiniFestivals").then((m) => m.MiniFestivals), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-gray-900" />,
+});
+
+const MiniShopping = dynamic(() => import("@/components/home/MiniShopping").then((m) => m.MiniShopping), {
+  loading: () => <div className="h-96 w-full animate-pulse bg-maroon-950" />,
+});
+
 export default function HomePage() {
   const { language } = useLanguage();
 
@@ -27,6 +35,8 @@ export default function HomePage() {
     <>
       <HeroSection />
       <FeaturedPlaces />
+      <MiniFestivals />
+      <MiniShopping />
       <ExperiencesSection />
       <StatsSection />
       <FAQSection />
@@ -37,7 +47,7 @@ export default function HomePage() {
             {language === 'hi' ? "क्या आप राजस्थान की यात्रा के लिए तैयार हैं?" : "Ready to Explore Rajasthan?"}
           </h2>
           <p className="text-white/80 text-xl mb-10 max-w-2xl mx-auto">
-            {language === 'hi' 
+            {language === 'hi'
               ? "राजाओं की इस पावन भूमि पर भव्य किलों, शांत झीलों, सुनहरे रेगिस्तानों और पवित्र मंदिरों का अन्वेषण करें।"
               : "Discover magnificent forts, serene lakes, golden deserts, and sacred temples across the Land of Kings."}
           </p>
