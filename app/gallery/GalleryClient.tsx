@@ -3,12 +3,10 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
-import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/data";
-import { useLanguage } from "@/components/LanguageProvider";
+import { CATEGORIES, GALLERY_IMAGES } from "@/constants/data";
 
 export default function GalleryClient() {
-    const { language } = useLanguage();
-    const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
+    const currentCategories = CATEGORIES;
     const [activeCategory, setActiveCategory] = useState("All");
     const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
 

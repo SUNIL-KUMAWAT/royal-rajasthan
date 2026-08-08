@@ -24,8 +24,7 @@ import {
     AlertCircle,
     Heart,
 } from "lucide-react";
-import { PLACES, CITIES, CITIES_HINDI } from "@/constants/data";
-import { useLanguage } from "@/components/LanguageProvider";
+import { PLACES, CITIES } from "@/constants/data";
 import type { Place } from "@/constants/data";
 
 // ============ TYPES ============
@@ -542,8 +541,7 @@ function downloadText(itinerary: DayPlan[]): void {
 
 // ============ MAIN COMPONENT ============
 export default function PlanTripClient() {
-    const { language } = useLanguage();
-    const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
+    const currentCities = CITIES;
     const [step, setStep] = useState(1);
     const [config, setConfig] = useState<TripConfig>({
         selectedCities: [],

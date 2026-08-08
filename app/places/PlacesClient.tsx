@@ -105,15 +105,13 @@ export function PlacesClient() {
     const [showFilters, setShowFilters] = useState(false);
     const [visibleCount, setVisibleCount] = useState(12);
 
-    const { language } = useLanguage();
-
     // Reset pagination when any filter changes
     useEffect(() => {
         setVisibleCount(12);
     }, [search, category, city, sortBy, entryType]);
-    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
-    const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
-    const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
+    const activePlaces = PLACES;
+    const currentCategories = CATEGORIES;
+    const currentCities = CITIES;
 
     const heroRef = useRef<HTMLDivElement>(null);
     const { scrollYProgress } = useScroll({
