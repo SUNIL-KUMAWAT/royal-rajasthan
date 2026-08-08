@@ -24,7 +24,7 @@ export function FeaturedPlaces() {
 
     const [activeFilter, setActiveFilter] = useState("All");
     const [favorites, setFavorites] = useState<number[]>([]);
-    const [visibleCount, setVisibleCount] = useState(12);
+    const [visibleCount, setVisibleCount] = useState(8);
 
     const filtered =
         activeFilter === "All" || activeFilter === "सभी"
