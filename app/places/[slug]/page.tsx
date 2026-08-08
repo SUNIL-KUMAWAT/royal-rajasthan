@@ -18,7 +18,7 @@ export async function generateMetadata({
     params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
     const { slug } = await params;
-    const place = PLACES.find((p) => p?.slug === slug);
+    const place = PLACES.find((p) => p.slug === slug);
 
     if (!place) {
         return {
@@ -98,7 +98,7 @@ export default async function PlaceDetailPage({
     params: Promise<{ slug: string }>;
 }) {
     const { slug } = await params;
-    const place = PLACES.find((p) => p?.slug === slug);
+    const place = PLACES.find((p) => p.slug === slug);
 
     if (!place) {
         return (
