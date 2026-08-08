@@ -108,7 +108,7 @@ export function HeroSection() {
     }, [currentSlides.length]);
 
     return (
-        <section className="relative h-[500px] md:h-screen min-h-[500px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+        <section className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
 
 
             {/* Blurred background — crossfades between slides */}
@@ -130,7 +130,7 @@ export function HeroSection() {
             </AnimatePresence>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60" />
 
-            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
+            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center pb-10 md:pb-0 gap-8 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
                 {/* LEFT: single framed image — crossfades between slides */}
                 <div className="relative hidden shrink-0 md:block">
                     <AnimatePresence mode="wait">
@@ -161,7 +161,7 @@ export function HeroSection() {
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-md md:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
+                            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-sm md:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
                         >
                             {slide.subtitle}
                         </motion.span>
@@ -197,7 +197,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.5 }}
-                        className="mt-8 flex flex-row gap-3 sm:gap-4 md:justify-start justify-center"
+                        className="mt-8 flex flex-row gap-3 sm:gap-4 md:justify-start justify-center "
                     >
                         <motion.div
                             whileHover={{ scale: 1.05 }}
@@ -238,14 +238,16 @@ export function HeroSection() {
                     </motion.div>
                 </div>
 
+
+
                 {/* RIGHT: Floating SHM Images */}
-                <div className="relative hidden w-full max-w-[400px] shrink-0 sm:block md:h-[550px] md:max-w-[550px] lg:h-[650px] lg:max-w-[650px] flex-1 mt-16 md:mt-24">
+                <div className=" relative hidden w-full max-w-[400px] shrink-0 sm:block md:h-[550px] md:max-w-[550px] lg:h-[650px] lg:max-w-[650px] flex-1 mt-16 md:mt-24">
                     {slide.orbitImages.map((src: string, i: number) => {
                         const staticPositions = [
                             { top: "5%", left: "-5%" },
-                            { top: "15%", right: "-10%" },
-                            { bottom: "-5%", left: "0%" },
-                            { bottom: "0%", right: "0%" },
+                            { top: "0%", right: "-20%" },
+                            { bottom: "0%", left: "0%" },
+                            { bottom: "2%", right: "0%" },
                             { top: "35%", left: "25%" },
                         ];
 
@@ -302,6 +304,25 @@ export function HeroSection() {
                         );
                     })}
                 </div>
+            </div>
+
+            {/* MOBILE ONLY: Small images row between buttons and dots */}
+            <div className="flex  sm:hidden absolute bottom-[4.5rem] left-1/2 -translate-x-1/2 w-full justify-center gap-4 px-4 z-20">
+                {currentSlides[current].orbitImages.slice(0, 3).map((src: string, i: number) => (
+                    <motion.div
+                        key={`mobile-img-${current}-${i}`}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.6 + i * 0.1 }}
+                        className="relative h-20 w-[30%] max-w-[120px] rounded-xl overflow-hidden border-2 border-white/30 shadow-[0_8px_16px_rgba(0,0,0,0.4)] backdrop-blur-sm"
+                    >
+                        <img
+                            src={src}
+                            alt={`Rajasthan preview ${i + 1}`}
+                            className="object-cover w-full h-full absolute inset-0"
+                        />
+                    </motion.div>
+                ))}
             </div>
 
             {/* Dot indicators */}

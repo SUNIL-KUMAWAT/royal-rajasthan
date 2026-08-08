@@ -146,7 +146,7 @@ export function Navbar() {
                 </div>
 
                 {/* Mobile Quick Tabs */}
-                <div className="lg:hidden mt-2 flex items-center justify-center px-4 pb-3 gap-2">
+                <div className="lg:hidden flex items-center justify-center px-4 pb-3 gap-2">
                     {[
                         { name: language === 'hi' ? "स्थान" : "Places", href: "/places" },
                         { name: language === 'hi' ? "त्यौहार" : "Festivals", href: "/festivals" },
