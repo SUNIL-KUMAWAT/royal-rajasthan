@@ -328,7 +328,7 @@ export function FestivalsSection() {
 
             {/* Highlights */}
             <div className="flex flex-wrap gap-3 mt-8">
-              {festival.highlights.map((item) => (
+              {festival.highlights.map((item: any) => (
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -340,9 +340,9 @@ export function FestivalsSection() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-10">
-              <Link href="/plan-trip">
-                <button className="px-6 md:px-8 py-3 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-sm md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
-                  <span>Plan Visit</span>
+              <Link href={`/festivals/${festival.id}`}>
+                < button className="px-6 md:px-8 py-3 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-sm md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
+                  <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
                   <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </Link>
@@ -549,8 +549,8 @@ export function FestivalsSection() {
           )}
         </div>
 
-      </div>
-    </section>
+      </div >
+    </section >
   );
 }
 
