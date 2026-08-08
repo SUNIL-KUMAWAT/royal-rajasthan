@@ -5,8 +5,7 @@ import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
     ShoppingBag, Tag, X, Compass, Map, ChevronDown,
 } from "lucide-react";
-import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI } from "@/constants/data";
-import { useLanguage } from "@/components/LanguageProvider";
+import { RAJASTHAN_SHOPPING } from "@/constants/data";
 import Link from "next/link";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
@@ -80,8 +79,7 @@ const cardVariants: any = {
 
 // ─── Main Component ───────────────────────────────────────────────────────────
 export default function ShoppingClient() {
-    const { language } = useLanguage();
-    const currentShoppingData = language === 'hi' ? RAJASTHAN_SHOPPING_HINDI : RAJASTHAN_SHOPPING;
+    const currentShoppingData = RAJASTHAN_SHOPPING;
 
     const [search, setSearch] = useState("");
     const [selectedDistrict, setSelectedDistrict] = useState("All");
