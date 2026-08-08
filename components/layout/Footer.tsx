@@ -49,18 +49,18 @@ export function Footer() {
             <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pb-12">
                 {/* 5 Column Grid for perfect distribution */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-                    
+
                     {/* 1. Brand Section */}
                     <div>
                         <Link href="/" className="inline-flex items-center group relative z-10 transition-transform hover:scale-105 mb-6">
                             <img
-                                src={language === 'hi' ? "/hindi-logo-removebg-preview.png" : "/english-logo.png"}
+                                src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
                                 alt="Rajasthan Tourism Places"
-                                className="h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
+                                className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
                             />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                            {language === 'hi' 
+                            {language === 'hi'
                                 ? "राजाओं की शानदार भूमि के लिए आपका प्रवेश द्वार। शाही विरासत, सुनहरे रेगिस्तान और जीवंत संस्कृति का अनुभव करें।"
                                 : "Your gateway to the magnificent Land of Kings. Experience royal heritage, golden deserts, and vibrant culture."}
                         </p>

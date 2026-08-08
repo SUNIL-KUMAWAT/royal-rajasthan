@@ -25,14 +25,9 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
             setTheme(saved);
             document.documentElement.classList.toggle("dark", saved === "dark");
         } else {
-            // Check system preference
-            const prefersDark = window.matchMedia(
-                "(prefers-color-scheme: dark)"
-            ).matches;
-            if (prefersDark) {
-                setTheme("dark");
-                document.documentElement.classList.add("dark");
-            }
+            // Force default light theme
+            setTheme("light");
+            document.documentElement.classList.remove("dark");
         }
     }, []);
 
