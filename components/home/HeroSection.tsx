@@ -1,43 +1,42 @@
 "use client";
 import { useState, useEffect } from "react";
-import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
 
+// Unsplash + Pexels — free to use under their licenses
 const IMAGES = {
-    jaipurBg: "https://picsum.photos/seed/raj-1/800/600",
-    jaipurLeft: "https://picsum.photos/seed/raj-2/800/600",
+    jaipurBg: "https://images.unsplash.com/photo-1709883252686-fe847b56c90b?w=1200&q=80",
+    jaipurLeft: "https://images.pexels.com/photos/784879/pexels-photo-784879.jpeg?auto=compress&cs=tinysrgb&w=1200",
     jaipurOrbit: [
-        "https://picsum.photos/seed/raj-3/800/600",
-        "https://picsum.photos/seed/raj-4/800/600",
-        "https://picsum.photos/seed/raj-5/800/600",
-        "https://picsum.photos/seed/raj-6/800/600",
-        "https://picsum.photos/seed/raj-7/800/600"
+        "https://images.pexels.com/photos/36470339/pexels-photo-36470339.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/19195932/pexels-photo-19195932.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/36470367/pexels-photo-36470367.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.unsplash.com/photo-1599661046289-e31897846e41?w=1200&q=80",
+        "https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?w=1200&q=80",
     ],
 
-    udaipurBg: "https://picsum.photos/seed/raj-8/800/600",
-    udaipurLeft: "https://picsum.photos/seed/raj-9/800/600",
+    udaipurBg: "https://images.unsplash.com/photo-1699949967693-9b0084730462?w=1200&q=80",
+    udaipurLeft: "https://images.unsplash.com/photo-1695956353120-54ce5e91632b?w=1200&q=80",
     udaipurOrbit: [
-        "https://picsum.photos/seed/raj-10/800/600",
-        "https://picsum.photos/seed/raj-11/800/600",
-        "https://picsum.photos/seed/raj-12/800/600",
-        "https://picsum.photos/seed/raj-13/800/600",
-        "https://picsum.photos/seed/raj-14/800/600"
+        "https://images.unsplash.com/photo-1703092289078-ff03b771237c?w=1200&q=80",
+        "https://images.unsplash.com/photo-1679988555665-b1686f1b3eb7?w=1200&q=80",
+        "https://images.pexels.com/photos/35455625/pexels-photo-35455625.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/7362398/pexels-photo-7362398.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/31866953/pexels-photo-31866953.jpeg?auto=compress&cs=tinysrgb&w=1200",
     ],
 
-    jaisalmerBg: "https://picsum.photos/seed/raj-15/800/600",
-    jaisalmerLeft: "https://picsum.photos/seed/raj-16/800/600",
+    jaisalmerBg: "https://images.unsplash.com/photo-1509316785289-025f5b846b35?w=1200&q=80",
+    jaisalmerLeft: "https://images.pexels.com/photos/33823962/pexels-photo-33823962.jpeg?auto=compress&cs=tinysrgb&w=1200",
     jaisalmerOrbit: [
-        "https://picsum.photos/seed/raj-17/800/600",
-        "https://picsum.photos/seed/raj-18/800/600",
-        "https://picsum.photos/seed/raj-19/800/600",
-        "https://picsum.photos/seed/raj-20/800/600",
-        "https://picsum.photos/seed/raj-21/800/600"
+        "https://images.pexels.com/photos/35098427/pexels-photo-35098427.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/36470442/pexels-photo-36470442.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/37415400/pexels-photo-37415400.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.pexels.com/photos/37415412/pexels-photo-37415412.jpeg?auto=compress&cs=tinysrgb&w=1200",
+        "https://images.unsplash.com/photo-1713682995521-22ec819b50ac?w=1200&q=80",
     ]
 };
 
-const ORBIT_RADIUS = 150;
 const ORBIT_SLIDES = [
     {
         subtitle: "Jaipur, The Pink City",
@@ -57,7 +56,7 @@ const ORBIT_SLIDES = [
     },
     {
         subtitle: "Jaisalmer, The Golden City",
-        title: "Dunes that turn\ngold at dusk",
+        title: "Dunes that turn\ngold at twilight",
         description: "A living fort rising from the Thar desert sands.",
         background: IMAGES.jaisalmerBg,
         leftImage: IMAGES.jaisalmerLeft,
@@ -120,13 +119,10 @@ export function HeroSection() {
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="absolute inset-0"
                 >
-                    <Image
+                    <img
                         src={slide.background}
                         alt={`Beautiful heritage view of ${slide.subtitle} tourism background`}
-                        fill
-                        priority={current === 0}
-                        sizes="100vw"
-                        className="object-cover blur-[6px] opacity-90"
+                        className="object-cover blur-[6px] opacity-90 w-full h-full absolute inset-0"
                     />
                 </motion.div>
             </AnimatePresence>
@@ -144,18 +140,15 @@ export function HeroSection() {
                             transition={{ duration: 0.9, ease: "easeOut" }}
                             className="relative h-[420px] w-[300px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
                         >
-                            <Image
+                            <img
                                 src={slide.leftImage}
                                 alt={`Traditional travel experience of ${slide.subtitle} in Rajasthan`}
-                                fill
-                                priority={current === 0}
-                                sizes="(max-width: 768px) 100vw, 300px"
-                                className="object-cover"
+                                className="object-cover w-full h-full absolute inset-0"
                             />
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
                         </motion.div>
                     </AnimatePresence>
-                    <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full border border-gold-400/40" />
+                    {/* <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full border border-gold-400/40" /> */}
                 </div>
 
                 {/* CENTER: text + CTAs */}
@@ -296,12 +289,10 @@ export function HeroSection() {
                                         transition={{ duration: 0.8, ease: "easeOut" }}
                                         className="relative w-full h-full"
                                     >
-                                        <Image
+                                        <img
                                             src={src}
                                             alt={`Visual travel details from ${slide.subtitle} tourist destination - Image ${i + 1}`}
-                                            fill
-                                            sizes="(max-width: 768px) 150px, 300px"
-                                            className="rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm"
+                                            className="rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm w-full h-full absolute inset-0"
                                         />
                                     </motion.div>
                                 </AnimatePresence>
