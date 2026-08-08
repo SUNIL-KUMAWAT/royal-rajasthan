@@ -62,7 +62,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
             images: [foundPlace.image],
         },
         alternates: {
-            canonical: `https://royalrajasthan.com/shopping/${slug}`,
+            canonical: `https://rajasthanplaces.in/shopping/${slug}`,
         },
     };
 }

@@ -155,7 +155,7 @@ export function Footer() {
                                 </div>
                                 <div className="flex items-center gap-3 text-gray-400">
                                     <Mail size={16} className="text-gold-400 flex-shrink-0" />
-                                    <span className="text-sm">info@royalrajasthan.com</span>
+                                    <span className="text-sm">info@rajasthanplaces.in</span>
                                 </div>
                             </div>
                             <div className="flex gap-3 mt-6">

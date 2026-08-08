@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/packages",
+        url: "https://rajasthanplaces.in/packages",
     },
     twitter: {
         card: "summary_large_image",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/packages",
+        canonical: "https://rajasthanplaces.in/packages",
     },
     robots: {
         index: true,
@@ -65,8 +65,8 @@ export default function PackagesServerPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
-            { "@type": "ListItem", position: 2, name: "Tour Packages", item: "https://royalrajasthan.com/packages" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "Tour Packages", item: "https://rajasthanplaces.in/packages" },
         ],
     };
 

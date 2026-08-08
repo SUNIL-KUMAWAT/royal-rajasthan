@@ -34,7 +34,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/gallery",
+        url: "https://rajasthanplaces.in/gallery",
     },
     twitter: {
         card: "summary_large_image",
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/gallery",
+        canonical: "https://rajasthanplaces.in/gallery",
     },
     robots: {
         index: true,
@@ -65,8 +65,8 @@ export default function GalleryPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
-            { "@type": "ListItem", position: 2, name: "Gallery", item: "https://royalrajasthan.com/gallery" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "Gallery", item: "https://rajasthanplaces.in/gallery" },
         ],
     };
 
@@ -75,7 +75,7 @@ export default function GalleryPage() {
         "@type": "ImageGallery",
         name: "Rajasthan Photo Gallery",
         description: "A stunning collection of photos from Rajasthan — forts, palaces, deserts, wildlife and culture.",
-        url: "https://royalrajasthan.com/gallery",
+        url: "https://rajasthanplaces.in/gallery",
         about: {
             "@type": "State",
             name: "Rajasthan",

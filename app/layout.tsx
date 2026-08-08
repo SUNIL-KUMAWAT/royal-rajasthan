@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_IN",
-    url: "https://royalrajasthan.com",
+    url: "https://rajasthanplaces.in",
     siteName: "Royal Rajasthan Tourism",
     title: "Royal Rajasthan Tourism - Explore the Land of Kings",
     description:
@@ -100,10 +100,10 @@ export const metadata: Metadata = {
 
   // ============ CANONICAL URL ============
   alternates: {
-    canonical: "https://royalrajasthan.com",
+    canonical: "https://rajasthanplaces.in",
     languages: {
-      "en-IN": "https://royalrajasthan.com",
-      "hi-IN": "https://royalrajasthan.com/hi",
+      "en-IN": "https://rajasthanplaces.in",
+      "hi-IN": "https://rajasthanplaces.in/hi",
     },
   },
 
@@ -116,7 +116,7 @@ export const metadata: Metadata = {
 
   // ============ ICONS ============
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon-16x16.png",
     shortcut: "/favicon-16x16.png",
     apple: "/apple-touch-icon.png",
   },
@@ -158,8 +158,8 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "TravelAgency",
               name: "Royal Rajasthan Tourism",
-              url: "https://royalrajasthan.com",
-              logo: "https://royalrajasthan.com/logo.png",
+              url: "https://rajasthanplaces.in",
+              logo: "https://rajasthanplaces.in/logo.png",
               description:
                 "Complete travel guide for Rajasthan, India. Explore 500+ historic forts, golden deserts, royal palaces, and wildlife sanctuaries.",
               address: {
@@ -171,7 +171,7 @@ export default function RootLayout({
                 addressCountry: "IN",
               },
               telephone: "+91-98765-43210",
-              email: "info@royalrajasthan.com",
+              email: "info@rajasthanplaces.in",
               sameAs: [
                 "https://facebook.com/royalrajasthan",
                 "https://twitter.com/royalrajasthan",
@@ -198,13 +198,13 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "WebSite",
               name: "Royal Rajasthan Tourism",
-              url: "https://royalrajasthan.com",
+              url: "https://rajasthanplaces.in",
               potentialAction: {
                 "@type": "SearchAction",
                 target: {
                   "@type": "EntryPoint",
                   urlTemplate:
-                    "https://royalrajasthan.com/places?search={search_term_string}",
+                    "https://rajasthanplaces.in/places?search={search_term_string}",
                 },
                 "query-input": "required name=search_term_string",
               },
@@ -224,13 +224,13 @@ export default function RootLayout({
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://royalrajasthan.com",
+                  item: "https://rajasthanplaces.in",
                 },
                 {
                   "@type": "ListItem",
                   position: 2,
                   name: "Places",
-                  item: "https://royalrajasthan.com/places",
+                  item: "https://rajasthanplaces.in/places",
                 },
               ],
             }),

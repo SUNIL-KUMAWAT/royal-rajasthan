@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/about",
+        url: "https://rajasthanplaces.in/about",
     },
     twitter: {
         card: "summary_large_image",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/about",
+        canonical: "https://rajasthanplaces.in/about",
     },
     robots: {
         index: true,
@@ -64,8 +64,8 @@ export default function AboutPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
-            { "@type": "ListItem", position: 2, name: "About", item: "https://royalrajasthan.com/about" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "About", item: "https://rajasthanplaces.in/about" },
         ],
     };
 
@@ -74,7 +74,7 @@ export default function AboutPage() {
         "@type": "AboutPage",
         name: "About Rajasthan - Royal Rajasthan Tourism",
         description: "Complete information about Rajasthan — history, culture, geography and tourism.",
-        url: "https://royalrajasthan.com/about",
+        url: "https://rajasthanplaces.in/about",
         mainEntity: {
             "@type": "State",
             name: "Rajasthan",

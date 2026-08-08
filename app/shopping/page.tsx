@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/shopping",
+        url: "https://rajasthanplaces.in/shopping",
     },
     twitter: {
         card: "summary_large_image",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/shopping",
+        canonical: "https://rajasthanplaces.in/shopping",
     },
     robots: {
         index: true,
@@ -74,7 +74,7 @@ export default function ShoppingPage() {
         name: "Royal Rajasthan Shopping Guide",
         description:
             "Guide to the best shopping places, bazaars, and traditional specialties in Rajasthan, India.",
-        url: "https://royalrajasthan.com/shopping",
+        url: "https://rajasthanplaces.in/shopping",
         about: {
             "@type": "Thing",
             name: "Shopping in Rajasthan",
@@ -82,7 +82,7 @@ export default function ShoppingPage() {
         author: {
             "@type": "Organization",
             name: "Royal Rajasthan Tourism",
-            url: "https://royalrajasthan.com",
+            url: "https://rajasthanplaces.in",
         },
     };
 
@@ -94,13 +94,13 @@ export default function ShoppingPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://royalrajasthan.com",
+                item: "https://rajasthanplaces.in",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Shopping",
-                item: "https://royalrajasthan.com/shopping",
+                item: "https://rajasthanplaces.in/shopping",
             },
         ],
     };

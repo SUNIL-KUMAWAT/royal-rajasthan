@@ -342,7 +342,7 @@ export function downloadPDF(days: DayPlan[], config: {
 
   <div class="footer">
     <div class="brand">Royal Rajasthan Tourism</div>
-    <p style="margin-top:5px;">Generated on ${new Date().toLocaleDateString("en-IN")} | www.royalrajasthan.com</p>
+    <p style="margin-top:5px;">Generated on ${new Date().toLocaleDateString("en-IN")} | www.rajasthanplaces.in</p>
     <p style="margin-top:5px;">💡 Tip: Print this or save as PDF using Ctrl+P / Cmd+P</p>
   </div>
 
@@ -428,7 +428,7 @@ ${generateTextSummary(days)}
 
 ${"=".repeat(50)}
 Created with Royal Rajasthan Tourism
-www.royalrajasthan.com`;
+www.rajasthanplaces.in`;
 
     const blob = new Blob([text], { type: "text/plain" });
     const url = URL.createObjectURL(blob);

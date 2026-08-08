@@ -19,7 +19,7 @@ export default function robots(): MetadataRoute.Robots {
                 crawlDelay: 2,
             },
         ],
-        sitemap: "https://royalrajasthan.com/sitemap.xml",
-        host: "https://royalrajasthan.com",
+        sitemap: "https://rajasthanplaces.in/sitemap.xml",
+        host: "https://rajasthanplaces.in",
     };
 }

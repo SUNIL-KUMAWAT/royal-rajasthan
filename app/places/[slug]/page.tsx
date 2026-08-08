@@ -86,7 +86,7 @@ export async function generateMetadata({
             images: [place.images[0]],
         },
         alternates: {
-            canonical: `https://royalrajasthan.com/places/${place.slug}`,
+            canonical: `https://rajasthanplaces.in/places/${place.slug}`,
         },
     };
 }

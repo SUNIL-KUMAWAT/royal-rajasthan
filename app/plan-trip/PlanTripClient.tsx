@@ -348,7 +348,7 @@ async function shareItinerary(
             return `Day ${day.day} (${day.city}): ${places || "Leisure"}`;
         }),
         "",
-        "🌐 Plan your trip: royalrajasthan.com/plan-trip",
+        "🌐 Plan your trip: rajasthanplaces.in/plan-trip",
     ].join("\n");
 
     if (navigator.share) {
@@ -456,7 +456,7 @@ function downloadPDF(itinerary: DayPlan[], cities: string[]): void {
   </div>
   ${dayRows}
   <div class="footer">
-    Royal Rajasthan Tourism &nbsp;|&nbsp; royalrajasthan.com &nbsp;|&nbsp; +91 98765 43210
+    Royal Rajasthan Tourism &nbsp;|&nbsp; rajasthanplaces.in &nbsp;|&nbsp; +91 98765 43210
   </div>
 </body>
 </html>`;
@@ -521,7 +521,7 @@ function downloadText(itinerary: DayPlan[]): void {
 
     lines.push("═══════════════════════════════════════");
     lines.push("Royal Rajasthan Tourism");
-    lines.push("🌐 royalrajasthan.com");
+    lines.push("🌐 rajasthanplaces.in");
     lines.push("📞 +91 98765 43210");
     lines.push("═══════════════════════════════════════");
 

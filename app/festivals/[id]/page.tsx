@@ -49,7 +49,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
       images: [festival.image],
     },
     alternates: {
-      canonical: `https://royalrajasthan.com/festivals/${festival.id}`,
+      canonical: `https://rajasthanplaces.in/festivals/${festival.id}`,
     },
   };
 }

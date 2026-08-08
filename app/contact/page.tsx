@@ -30,7 +30,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/contact",
+        url: "https://rajasthanplaces.in/contact",
     },
     twitter: {
         card: "summary_large_image",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/contact",
+        canonical: "https://rajasthanplaces.in/contact",
     },
     robots: {
         index: true,
@@ -61,12 +61,12 @@ export default function ContactPage() {
         "@context": "https://schema.org",
         "@type": "ContactPage",
         name: "Contact Royal Rajasthan Tourism",
-        url: "https://royalrajasthan.com/contact",
+        url: "https://rajasthanplaces.in/contact",
         mainEntity: {
             "@type": "TravelAgency",
             name: "Royal Rajasthan Tourism",
             telephone: "+91-98765-43210",
-            email: "info@royalrajasthan.com",
+            email: "info@rajasthanplaces.in",
             address: {
                 "@type": "PostalAddress",
                 streetAddress: "MI Road",
@@ -89,8 +89,8 @@ export default function ContactPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
-            { "@type": "ListItem", position: 2, name: "Contact", item: "https://royalrajasthan.com/contact" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "Contact", item: "https://rajasthanplaces.in/contact" },
         ],
     };
 

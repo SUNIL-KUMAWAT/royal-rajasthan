@@ -75,7 +75,7 @@ export default function ContactClient() {
                                     {
                                         icon: Mail,
                                         title: "Email Us",
-                                        info: "info@royalrajasthan.com",
+                                        info: "info@rajasthanplaces.in",
                                         sub: "We reply within 2 hours",
                                     },
                                     {

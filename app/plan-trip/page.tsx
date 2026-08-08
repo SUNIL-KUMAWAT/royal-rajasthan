@@ -38,7 +38,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/plan-trip",
+        url: "https://rajasthanplaces.in/plan-trip",
     },
     twitter: {
         card: "summary_large_image",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/plan-trip",
+        canonical: "https://rajasthanplaces.in/plan-trip",
     },
     robots: {
         index: true,
@@ -74,7 +74,7 @@ export default function PlanTripPage() {
         name: "Royal Rajasthan Trip Planner",
         description:
             "Free online tool to plan your Rajasthan trip itinerary. Select cities, duration and interests to get a personalized travel plan.",
-        url: "https://royalrajasthan.com/plan-trip",
+        url: "https://rajasthanplaces.in/plan-trip",
         applicationCategory: "TravelApplication",
         operatingSystem: "Web Browser",
         offers: {
@@ -93,7 +93,7 @@ export default function PlanTripPage() {
         provider: {
             "@type": "Organization",
             name: "Royal Rajasthan Tourism",
-            url: "https://royalrajasthan.com",
+            url: "https://rajasthanplaces.in",
         },
     };
 
@@ -105,13 +105,13 @@ export default function PlanTripPage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://royalrajasthan.com",
+                item: "https://rajasthanplaces.in",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Plan Trip",
-                item: "https://royalrajasthan.com/plan-trip",
+                item: "https://rajasthanplaces.in/plan-trip",
             },
         ],
     };

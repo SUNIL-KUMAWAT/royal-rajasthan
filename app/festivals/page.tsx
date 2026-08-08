@@ -36,7 +36,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/culture",
+        url: "https://rajasthanplaces.in/culture",
     },
     twitter: {
         card: "summary_large_image",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
         site: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/culture",
+        canonical: "https://rajasthanplaces.in/culture",
     },
     robots: {
         index: true,
@@ -71,7 +71,7 @@ export default function CulturePage() {
         name: "Famous Festivals of Rajasthan",
         description:
             "A list of the most famous and vibrant festivals celebrated in Rajasthan, India.",
-        url: "https://royalrajasthan.com/culture",
+        url: "https://rajasthanplaces.in/culture",
         numberOfItems: 4,
         itemListElement: [
             {
@@ -189,13 +189,13 @@ export default function CulturePage() {
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://royalrajasthan.com",
+                item: "https://rajasthanplaces.in",
             },
             {
                 "@type": "ListItem",
                 position: 2,
                 name: "Culture & Festivals",
-                item: "https://royalrajasthan.com/culture",
+                item: "https://rajasthanplaces.in/culture",
             },
         ],
     };
@@ -243,7 +243,7 @@ export default function CulturePage() {
         "@context": "https://schema.org",
         "@type": "TouristInformationCenter",
         name: "Royal Rajasthan Tourism - Culture & Festivals",
-        url: "https://royalrajasthan.com/culture",
+        url: "https://rajasthanplaces.in/culture",
         description:
             "Complete guide to Rajasthan festivals, cultural events, folk traditions and celebrations.",
         areaServed: {

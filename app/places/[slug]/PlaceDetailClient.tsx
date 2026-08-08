@@ -128,7 +128,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
         name: place.name,
         description: place.description,
         image: place.images,
-        url: `https://royalrajasthan.com/places/${place.slug}`,
+        url: `https://rajasthanplaces.in/places/${place.slug}`,
         address: {
             "@type": "PostalAddress",
             streetAddress: place.location.address,

@@ -33,7 +33,7 @@ export const metadata: Metadata = {
         type: "website",
         siteName: "Royal Rajasthan Tourism",
         locale: "en_IN",
-        url: "https://royalrajasthan.com/destinations",
+        url: "https://rajasthanplaces.in/destinations",
     },
     twitter: {
         card: "summary_large_image",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
         creator: "@RoyalRajasthan",
     },
     alternates: {
-        canonical: "https://royalrajasthan.com/destinations",
+        canonical: "https://rajasthanplaces.in/destinations",
     },
     robots: {
         index: true,
@@ -64,8 +64,8 @@ export default function DestinationsPage() {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            { "@type": "ListItem", position: 1, name: "Home", item: "https://royalrajasthan.com" },
-            { "@type": "ListItem", position: 2, name: "Destinations", item: "https://royalrajasthan.com/destinations" },
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "Destinations", item: "https://rajasthanplaces.in/destinations" },
         ],
     };
 

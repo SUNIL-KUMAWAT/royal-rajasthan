@@ -5,7 +5,7 @@ import { FESTIVALS } from "@/constants/festivals";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = "https://royalrajasthan.com";
+    const baseUrl = "https://rajasthanplaces.in";
 
     // Static pages
     const staticPages: MetadataRoute.Sitemap = [
