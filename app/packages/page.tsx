@@ -1,9 +1,5 @@
-"use client";
-import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Star, Clock, Users, Check, X, MapPin, ArrowRight, Tag } from "lucide-react";
-import { PACKAGES } from "@/constants/data";
-
+import { Metadata } from "next";
+import PackagesPage from "./PackagesClient";
 export const metadata: Metadata = {
     title: "Rajasthan Tour Packages - Best Holiday Packages 2025 | Royal Rajasthan",
     description:
