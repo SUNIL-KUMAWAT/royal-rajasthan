@@ -94,6 +94,7 @@ function Countdown({ targetDate }: { targetDate?: string }) {
 
 // ============ FESTIVAL HERO ============
 function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext: () => void, onPrev: () => void }) {
+  const { language } = useLanguage();
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -166,6 +167,20 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
           >
             {festival.description}
           </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4 }}
+            className="mt-4 md:mt-6"
+          >
+            <Link href={`/festivals/${festival.id}`}>
+              <button className="inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-bold text-xs md:text-sm shadow-[0_4px_12px_rgba(251,191,36,0.3)] hover:shadow-[0_6px_20px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 group/hero-btn">
+                <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
+                <ArrowRight size={14} className="md:w-4 md:h-4 group-hover/hero-btn:translate-x-1 transition-transform" />
+              </button>
+            </Link>
+          </motion.div>
         </div>
 
         {/* Navigation Buttons - Placed bottom-left under content */}
