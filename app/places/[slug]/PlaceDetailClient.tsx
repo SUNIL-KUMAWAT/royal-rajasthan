@@ -165,12 +165,42 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
         }))
     } : null;
 
+    // JSON-LD Breadcrumb Schema
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rajasthanplaces.in"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Places",
+                "item": "https://rajasthanplaces.in/places"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": place.name,
+                "item": `https://rajasthanplaces.in/places/${place.slug}`
+            }
+        ]
+    };
+
     return (
         <>
             {/* JSON-LD Schema */}
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(placeSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
             {faqSchema && (
                 <script

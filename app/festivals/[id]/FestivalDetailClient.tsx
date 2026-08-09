@@ -67,6 +67,87 @@ export default function FestivalDetailClient({ festival, related }: Props) {
     }))
   } : null;
 
+  // Helper to parse dates with offset
+  const getEventDates = (startDateStr?: string, durationStr?: string) => {
+    if (!startDateStr) return null;
+    const start = new Date(startDateStr);
+    let daysToAdd = 1;
+    if (durationStr) {
+      const match = durationStr.match(/(\d+)\s*Day/i);
+      if (match) {
+        daysToAdd = parseInt(match[1]);
+      }
+    }
+    const end = new Date(start.getTime() + (daysToAdd - 1) * 24 * 60 * 60 * 1000);
+    
+    const formatOffset = (date: Date, endOfDay: boolean) => {
+      const pad = (n: number) => String(n).padStart(2, '0');
+      const y = date.getFullYear();
+      const m = pad(date.getMonth() + 1);
+      const d = pad(date.getDate());
+      const time = endOfDay ? '23:59:59' : '00:00:00';
+      return `${y}-${m}-${d}T${time}+05:30`;
+    };
+    
+    return {
+      startDate: formatOffset(start, false),
+      endDate: formatOffset(end, true)
+    };
+  };
+
+  const eventDates = getEventDates(currentFestival.nextDate, currentFestival.duration);
+
+  // JSON-LD Event Schema
+  const eventSchema = eventDates ? {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "@id": `https://rajasthanplaces.in/festivals/${currentFestival.id}#event`,
+    "name": currentFestival.name,
+    "description": currentFestival.description,
+    "url": `https://rajasthanplaces.in/festivals/${currentFestival.id}`,
+    "image": [currentFestival.image],
+    "startDate": eventDates.startDate,
+    "endDate": eventDates.endDate,
+    "location": {
+      "@type": "Place",
+      "name": currentFestival.location,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": currentFestival.location,
+        "addressRegion": "Rajasthan",
+        "addressCountry": "IN"
+      }
+    },
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "eventStatus": "https://schema.org/EventScheduled"
+  } : null;
+
+  // JSON-LD Breadcrumb Schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rajasthanplaces.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Festivals",
+        "item": "https://rajasthanplaces.in/festivals"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": currentFestival.name,
+        "item": `https://rajasthanplaces.in/festivals/${currentFestival.id}`
+      }
+    ]
+  };
+
   return (
     <main className="min-h-screen bg-[#fafafa] dark:bg-[#0a0a0a] text-gray-900 dark:text-white selection:bg-gold-500/30 overflow-hidden transition-colors duration-300">
       {faqSchema && (
@@ -75,6 +156,16 @@ export default function FestivalDetailClient({ festival, related }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
+      {eventSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+        />
+      )}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       
       {/* Hero Section */}
       <section className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full flex items-center justify-center">
