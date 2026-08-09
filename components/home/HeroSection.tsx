@@ -108,7 +108,7 @@ export function HeroSection() {
     }, [currentSlides.length]);
 
     return (
-        <section className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+        <section className="relative h-[600px] md:h-screen min-h-[600px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
 
 
             {/* Blurred background — crossfades between slides */}
@@ -130,9 +130,9 @@ export function HeroSection() {
             </AnimatePresence>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60" />
 
-            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center pb-10 md:pb-0 gap-8 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
+            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center pt-36 pb-24 md:pt-0 md:pb-0 gap-8 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
                 {/* LEFT: single framed image — crossfades between slides */}
-                <div className="relative hidden shrink-0 md:block">
+                <div className="relative hidden shrink-0 xl:block">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={`left-${current}`}
@@ -140,7 +140,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, x: 0, rotate: -4 }}
                             exit={{ opacity: 0, x: -20 }}
                             transition={{ duration: 0.9, ease: "easeOut" }}
-                            className="relative h-[420px] w-[300px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
+                            className="relative h-[420px] w-[280px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
                         >
                             <img
                                 src={slide.leftImage}
@@ -150,18 +150,17 @@ export function HeroSection() {
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
                         </motion.div>
                     </AnimatePresence>
-                    {/* <div className="absolute -bottom-4 -right-4 h-24 w-24 rounded-full border border-gold-400/40" /> */}
                 </div>
 
                 {/* CENTER: text + CTAs */}
-                <div className="max-w-md text-center md:text-left">
+                <div className="max-w-md lg:max-w-lg text-center md:text-left z-20 flex flex-col justify-center">
                     <AnimatePresence mode="wait">
                         <motion.span
                             key={`tag-${current}`}
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mb-6 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-sm md:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
+                            className="mb-4 md:mb-6 mx-auto md:mx-0 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-xs sm:text-sm md:text-md lg:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
                         >
                             {slide.subtitle}
                         </motion.span>
@@ -174,7 +173,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: -40 }}
                             transition={{ duration: 0.8, delay: 0.15 }}
-                            className="whitespace-pre-line font-playfair text-2xl md:text-5xl font-bold leading-tight text-white"
+                            className="whitespace-pre-line font-playfair text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white"
                         >
                             {slide.title}
                         </motion.h1>
@@ -187,7 +186,7 @@ export function HeroSection() {
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0 }}
                             transition={{ duration: 0.8, delay: 0.3 }}
-                            className="mt-4 text-sm text-white/70 md:text-base"
+                            className="mt-3 md:mt-4 text-xs sm:text-sm text-white/70 md:text-base"
                         >
                             {slide.description}
                         </motion.p>
@@ -197,7 +196,7 @@ export function HeroSection() {
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.5 }}
-                        className="mt-8 flex flex-row gap-3 sm:gap-4 md:justify-start justify-center "
+                        className="mt-6 md:mt-8 flex flex-row gap-2 sm:gap-4 md:justify-start justify-center "
                     >
                         <motion.div
                             whileHover={{ scale: 1.05 }}
@@ -206,9 +205,9 @@ export function HeroSection() {
                         >
                             <Link
                                 href="/destinations"
-                                className="group relative flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-gold-gradient px-4 py-3 md:px-8 md:py-4 text-xs sm:text-sm md:text-base font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
+                                className="group relative flex w-full items-center justify-center gap-1 sm:gap-2 overflow-hidden rounded-full bg-gold-gradient px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 lg:px-8 md:py-3 lg:py-4 text-[11px] sm:text-xs md:text-sm lg:text-base font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
                             >
-                                <span className="relative z-10 flex items-center gap-2">
+                                <span className="relative z-10 flex items-center gap-1 sm:gap-2 whitespace-nowrap">
                                     {language === 'hi' ? "राजस्थान की खोज करें" : "Explore Rajasthan"}
                                     <motion.span
                                         className="inline-block"
@@ -229,7 +228,7 @@ export function HeroSection() {
                         >
                             <Link
                                 href="/plan-trip"
-                                className="group relative flex w-auto items-center justify-center gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-4 py-3 md:px-8 md:py-4 text-xs sm:text-sm md:text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20"
+                                className="group relative flex w-auto items-center justify-center gap-1 sm:gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 lg:px-8 md:py-3 lg:py-4 text-[11px] sm:text-xs md:text-sm lg:text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20 whitespace-nowrap"
                             >
                                 <span className="relative z-10">{language === 'hi' ? "यात्रा की योजना बनाएं" : "Plan Your Trip"}</span>
                                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
@@ -241,7 +240,7 @@ export function HeroSection() {
 
 
                 {/* RIGHT: Floating SHM Images */}
-                <div className=" relative hidden w-full max-w-[400px] shrink-0 sm:block md:h-[550px] md:max-w-[550px] lg:h-[650px] lg:max-w-[650px] flex-1 mt-16 md:mt-24">
+                <div className=" relative hidden w-full md:w-[45%] max-w-[400px] shrink-0 md:block md:h-[400px] lg:h-[550px] lg:max-w-[550px] xl:h-[650px] xl:max-w-[650px] flex-1 mt-16 md:mt-24">
                     {slide.orbitImages.map((src: string, i: number) => {
                         const staticPositions = [
                             { top: "5%", left: "-5%" },
@@ -259,11 +258,11 @@ export function HeroSection() {
                         const delay = i * 0.4;
 
                         const sizes = [
-                            "h-32 w-32 md:h-48 md:w-48",
-                            "h-40 w-40 md:h-60 md:w-60",
-                            "h-36 w-36 md:h-52 md:w-52",
-                            "h-28 w-28 md:h-40 md:w-40",
-                            "h-48 w-48 md:h-72 md:w-72"
+                            "h-32 w-32 md:h-36 md:w-36 lg:h-48 lg:w-48",
+                            "h-40 w-40 md:h-44 md:w-44 lg:h-60 lg:w-60",
+                            "h-36 w-36 md:h-40 md:w-40 lg:h-52 lg:w-52",
+                            "h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40",
+                            "h-48 w-48 md:h-52 md:w-52 lg:h-72 lg:w-72"
                         ];
                         const sizeClass = sizes[i % sizes.length];
 
@@ -307,7 +306,7 @@ export function HeroSection() {
             </div>
 
             {/* MOBILE ONLY: Small images row between buttons and dots */}
-            <div className="flex  sm:hidden absolute bottom-[4.5rem] left-1/2 -translate-x-1/2 w-full justify-center gap-4 px-4 z-20">
+            <div className="flex md:hidden absolute bottom-[4.5rem] left-1/2 -translate-x-1/2 w-full justify-center gap-4 px-4 z-20">
                 {currentSlides[current].orbitImages.slice(0, 3).map((src: string, i: number) => (
                     <motion.div
                         key={`mobile-img-${current}-${i}`}

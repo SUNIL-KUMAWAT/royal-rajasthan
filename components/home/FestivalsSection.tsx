@@ -102,7 +102,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative h-[85vh] min-h-[600px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
+        className="relative h-[85vh]  min-h-[600px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
       >
         <img
           src={festival.image}
@@ -176,9 +176,9 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         </div>
 
         {/* Countdown */}
-        <div className="absolute right-4 top-24 md:top-auto md:bottom-12 md:right-8
+        <div className="absolute right-4 top-24 lg:top-auto lg:bottom-12 lg:right-8
           backdrop-blur-2xl bg-black/30 border border-white/10
-          rounded-2xl md:rounded-3xl p-3 md:p-6 shadow-2xl scale-75 md:scale-100 origin-top-right md:origin-bottom-right">
+          rounded-2xl md:rounded-3xl p-3 md:p-6 shadow-2xl scale-75 md:scale-100 origin-top-right md:origin-bottom-right z-20">
           <p className="text-white/70 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-widest">
             Next Festival Starts In
           </p>
@@ -188,7 +188,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         {/* Rating */}
         <div className="absolute top-8 right-8 flex items-center gap-2
           backdrop-blur-xl bg-black/30 border border-white/20
-          rounded-full px-5 py-2.5 shadow-lg">
+          rounded-full px-5 py-2.5 shadow-lg z-20">
           <Star size={18} className="text-yellow-400 fill-yellow-400" />
           <span className="text-white font-bold text-lg">{festival.rating}</span>
         </div>
@@ -249,7 +249,7 @@ export function FestivalsSection() {
   };
 
   return (
-    <section className="relative bg-[#070b16] overflow-hidden pt-16 pb-32">
+    <section className="relative bg-[#070b16] overflow-hidden pt-36 md:pt-28 pb-32">
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px]
         bg-yellow-500/10 rounded-full blur-[180px] pointer-events-none" />
