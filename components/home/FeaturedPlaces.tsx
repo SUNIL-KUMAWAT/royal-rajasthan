@@ -210,9 +210,9 @@ export function FeaturedPlaces() {
 
                                             {/* Info Overlay */}
                                             <div className="absolute bottom-4 left-4 right-4" style={{ transform: "translateZ(25px)" }}>
-                                                <div className="font-playfair font-bold text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+                                                <h3 className="font-playfair font-bold text-2xl text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
                                                     {place.name}
-                                                </div>
+                                                </h3>
                                                 <div className="flex items-center gap-2 text-white/90 text-sm mt-1 drop-shadow-md">
                                                     <MapPin size={12} className="text-gold-400" />
                                                     <span className="font-medium">{place.city}</span>

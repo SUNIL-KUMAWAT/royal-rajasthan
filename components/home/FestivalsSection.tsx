@@ -129,7 +129,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
 
         {/* Content - Vertically centered on the left with padding to avoid header/button/badge overlap */}
         <div className="absolute inset-y-0 left-6 right-6 md:right-auto md:left-16 flex flex-col justify-center pt-24 pb-20 md:py-0 max-w-3xl z-10">
-          <motion.h2
+          <motion.h1
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
@@ -137,7 +137,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
               text-white mb-3 font-playfair drop-shadow-xl leading-tight"
           >
             {festival.name}
-          </motion.h2>
+          </motion.h1>
 
           <motion.div
             initial={{ opacity: 0, y: 40 }}
@@ -333,10 +333,10 @@ export function FestivalsSection() {
               Festival Details
             </span>
 
-            <h2 className="mt-4 text-2xl md:text-5xl font-bold
+            <h3 className="mt-4 text-2xl md:text-5xl font-bold
               text-gray-900 dark:text-white font-playfair">
               {festival.name}
-            </h2>
+            </h3>
 
             <div className="flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-6 mb-6 md:mb-8">
               {[
@@ -423,9 +423,9 @@ export function FestivalsSection() {
                     </span>
                   </div>
                 ) : (
-                  <h3 className="text-base md:text-3xl font-bold text-gray-900 dark:text-white drop-shadow-md">
+                  <div className="text-base md:text-3xl font-bold text-gray-900 dark:text-white drop-shadow-md">
                     {item.value}
-                  </h3>
+                  </div>
                 )}
               </div>
             ))}
@@ -446,14 +446,14 @@ export function FestivalsSection() {
               Rajasthan Festivals
             </span>
 
-            <h1 className="mt-2 md:mt-4 text-xl sm:text-4xl md:text-5xl lg:text-6xl
+            <h2 className="mt-2 md:mt-4 text-xl sm:text-4xl md:text-5xl lg:text-6xl
               font-bold text-gray-900 dark:text-white leading-tight font-playfair">
               Experience The{" "}
               <span className="bg-gradient-to-r from-yellow-400 via-orange-400
                 to-red-400 bg-clip-text text-transparent">
                 Magic
               </span>
-            </h1>
+            </h2>
             <p className="text-gray-600 dark:text-white/60 mt-3 md:mt-6 max-w-3xl mx-auto text-xs
               sm:text-base md:text-lg leading-relaxed">
               Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,

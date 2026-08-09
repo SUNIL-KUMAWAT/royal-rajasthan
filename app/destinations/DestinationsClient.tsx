@@ -153,9 +153,9 @@ export default function DestinationsClient() {
                                         />
                                     </button>
                                     <div className="absolute bottom-3 left-3 text-white">
-                                        <div className="font-playfair font-bold text-xl">
+                                        <h2 className="font-playfair font-bold text-xl">
                                             {dest.name}
-                                        </div>
+                                        </h2>
                                         <div className="text-white/80 text-xs">{dest.nickname}</div>
                                     </div>
                                     <div className="absolute bottom-3 right-3 flex items-center gap-1 bg-black/30 backdrop-blur-sm rounded-full px-2 py-1">

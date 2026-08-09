@@ -143,9 +143,9 @@ export default function GalleryClient() {
                                 className="w-full max-h-[80vh] object-contain rounded-lg"
                             />
                             <div className="text-center mt-4 text-white">
-                                <div className="font-playfair text-xl font-bold">
+                                <h2 className="font-playfair text-xl font-bold">
                                     {filtered[lightboxIndex].alt}
-                                </div>
+                                </h2>
                                 <div className="flex items-center gap-1 justify-center text-white/60 text-sm mt-1">
                                     <MapPin size={12} />
                                     {filtered[lightboxIndex].location}

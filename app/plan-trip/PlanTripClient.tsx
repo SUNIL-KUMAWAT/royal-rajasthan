@@ -1276,9 +1276,9 @@ export default function PlanTripClient() {
                                                                                     />
                                                                                     <div className="flex-1 min-w-0">
                                                                                         <div className="flex items-start justify-between gap-2">
-                                                                                            <h4 className="font-bold text-gray-800 dark:text-white group-hover:text-yellow-600 transition-colors text-sm md:text-base">
+                                                                                            <h3 className="font-bold text-gray-800 dark:text-white group-hover:text-yellow-600 transition-colors text-sm md:text-base">
                                                                                                 {placeSlot.place.name}
-                                                                                            </h4>
+                                                                                            </h3>
                                                                                             <div className="flex items-center gap-1 flex-shrink-0">
                                                                                                 <Star
                                                                                                     size={12}

@@ -188,7 +188,7 @@ export default function ShoppingDetailClient({ place }: Props) {
                         <Clock size={20} />
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.timings}</h4>
+                        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.timings}</h3>
                         <p className="text-sm font-bold text-gray-800 dark:text-white mt-0.5">{localizedPlace.timings}</p>
                         <p className="text-xs text-gray-400 mt-0.5">{t.closedOn}: {localizedPlace.closedOn || (language === "hi" ? "कभी नहीं" : "None")}</p>
                       </div>
@@ -199,7 +199,7 @@ export default function ShoppingDetailClient({ place }: Props) {
                         <Tag size={20} />
                       </div>
                       <div>
-                        <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.budget}</h4>
+                        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.budget}</h3>
                         <p className="text-sm font-bold text-gray-800 dark:text-white mt-0.5">{localizedPlace.priceRange}</p>
                       </div>
                     </div>
@@ -212,9 +212,9 @@ export default function ShoppingDetailClient({ place }: Props) {
                     <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500">
                       <MapPin size={24} />
                     </div>
-                    <h3 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
+                    <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
                       {t.mapLocation}
-                    </h3>
+                    </h2>
                     <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-medium">
                       {localizedPlace.location}
                     </p>
@@ -238,10 +238,10 @@ export default function ShoppingDetailClient({ place }: Props) {
                   <div className="lg:col-span-2 space-y-6 sm:space-y-8">
                       {/* Specialties Preview */}
                       <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none">
-                          <h3 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                          <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                               <span className="w-1.5 h-5 rounded bg-amber-500" />
                               {t.famousFor}
-                          </h3>
+                          </h2>
                           <div className="flex flex-wrap gap-2">
                               {localizedPlace.famousFor.map((item: string, idx: number) => (
                                   <span key={idx} className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/10">
@@ -254,10 +254,10 @@ export default function ShoppingDetailClient({ place }: Props) {
                       {/* Activities Preview */}
                       {localizedPlace.activities && localizedPlace.activities.length > 0 && (
                           <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none">
-                              <h3 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
                                   <span className="w-1.5 h-5 rounded bg-amber-500" />
                                   {t.activities}
-                              </h3>
+                              </h2>
                               <ul className="space-y-2">
                                   {localizedPlace.activities.map((act: string, idx: number) => (
                                       <li key={idx} className="flex gap-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">
@@ -279,7 +279,7 @@ export default function ShoppingDetailClient({ place }: Props) {
                                   <Compass size={20} />
                               </div>
                               <div>
-                                  <h4 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h4>
+                                  <h2 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h2>
                                   <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300 font-medium">{localizedPlace.tips}</p>
                               </div>
                           </div>
@@ -288,10 +288,10 @@ export default function ShoppingDetailClient({ place }: Props) {
                       {/* First FAQ Preview */}
                       {localizedPlace.faqs && localizedPlace.faqs.length > 0 && (
                           <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none space-y-3">
-                              <h4 className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1.5">
+                              <h2 className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1.5">
                                   <HelpCircle size={14} className="text-amber-500" />
                                   {language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Featured FAQ"}
-                              </h4>
+                              </h2>
                               <p className="text-sm font-bold text-gray-800 dark:text-white">{localizedPlace.faqs[0].question}</p>
                               <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">{localizedPlace.faqs[0].answer}</p>
                           </div>
@@ -307,10 +307,10 @@ export default function ShoppingDetailClient({ place }: Props) {
                 
                 {/* Famous Specialties */}
                 <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl">
-                  <h3 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                  <h2 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                     <span className="w-1.5 h-6 rounded bg-amber-500" />
                     {t.famousFor}
-                  </h3>
+                  </h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
                     {localizedPlace.famousFor.map((item: string, idx: number) => (
                       <div 
@@ -327,16 +327,16 @@ export default function ShoppingDetailClient({ place }: Props) {
                 {/* Activities Grid */}
                 {localizedPlace.activities && localizedPlace.activities.length > 0 && (
                   <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <h3 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
+                    <h2 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
                       <span className="w-1.5 h-6 rounded bg-amber-500" />
                       {t.activities}
-                    </h3>
+                    </h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
                       {localizedPlace.activities.map((act: string, idx: number) => (
                         <div key={idx} className="flex gap-4 p-5 rounded-2xl bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-800/40 hover:-translate-y-1 transition-all">
                           <span className="text-2xl mt-0.5">⭐</span>
                           <div>
-                            <h4 className="text-sm font-bold text-gray-800 dark:text-white">{language === "hi" ? `गतिविधि ${idx + 1}` : `Activity ${idx + 1}`}</h4>
+                            <h3 className="text-sm font-bold text-gray-800 dark:text-white">{language === "hi" ? `गतिविधि ${idx + 1}` : `Activity ${idx + 1}`}</h3>
                             <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1 leading-relaxed font-medium">{act}</p>
                           </div>
                         </div>
@@ -359,9 +359,9 @@ export default function ShoppingDetailClient({ place }: Props) {
                       <div className="w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500">
                         <Accessibility size={18} />
                       </div>
-                      <h3 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
+                      <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
                         {t.accessibility}
-                      </h3>
+                      </h2>
                     </div>
                     <ul className="space-y-3">
                       {localizedPlace.accessibility.map((acc: string, idx: number) => (
@@ -382,9 +382,9 @@ export default function ShoppingDetailClient({ place }: Props) {
                         <div className="w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400">
                           <Camera size={18} />
                         </div>
-                        <h3 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
+                        <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
                           {t.photoRules}
-                        </h3>
+                        </h2>
                       </div>
                       <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
                         {localizedPlace.photography}
@@ -398,7 +398,7 @@ export default function ShoppingDetailClient({ place }: Props) {
                         <Compass size={20} />
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h4>
+                        <h2 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h2>
                         <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300 font-medium">{localizedPlace.tips}</p>
                       </div>
                     </div>

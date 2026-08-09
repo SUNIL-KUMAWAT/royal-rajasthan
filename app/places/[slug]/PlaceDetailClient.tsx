@@ -1105,9 +1105,9 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                         {/* Right Sidebar */}
                         <div>
                             <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 sticky top-24">
-                                <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-5 text-lg">
+                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-5 text-lg">
                                     Quick Info
-                                </h3>
+                                </h2>
 
                                 <div className="space-y-4">
                                     <div className="flex items-start gap-3">

@@ -358,7 +358,7 @@ export default function ShoppingClient() {
                         <div className="text-amber-500 dark:text-amber-400 mb-4 inline-block p-5 bg-amber-50 dark:bg-amber-500/10 rounded-full">
                             <ShoppingBag size={44} />
                         </div>
-                        <h3 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-2">No Markets Found</h3>
+                        <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-2">No Markets Found</h2>
                         <p className="text-gray-500 dark:text-gray-400 max-w-md mx-auto text-sm leading-relaxed">
                             No shopping places match your current filters. Try resetting or different keywords.
                         </p>
@@ -424,12 +424,12 @@ export default function ShoppingClient() {
                                                     </div>
 
                                                     {/* Name */}
-                                                    <h3 className="font-playfair text-lg font-bold mb-2 leading-snug
+                                                    <h2 className="font-playfair text-lg font-bold mb-2 leading-snug
                                                         text-gray-900 dark:text-white
                                                         group-hover:text-amber-600 dark:group-hover:text-amber-300
                                                         transition-colors duration-300">
                                                         {place.name}
-                                                    </h3>
+                                                    </h2>
 
                                                     {/* Description */}
                                                     <p className="text-xs line-clamp-2 leading-relaxed mb-4 text-gray-500 dark:text-gray-400">
