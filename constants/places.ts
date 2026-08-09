@@ -148,6 +148,30 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the difference between Amber Fort and Jaigarh Fort?",
                 "answer": "Amber Fort was the royal palace complex for residence, whereas Jaigarh Fort was a military fort built higher up to protect it. They are connected by a subterranean passage."
+            },
+            {
+                "question": "What are the visiting hours for Amber Fort?",
+                "answer": "Amber Fort is open from 9 AM to 5 PM. Amber Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Amber Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Amber Fort completely?",
+                "answer": "A thorough visit to Amber Fort typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Amber Fort?",
+                "answer": "Photography is generally permitted for personal use at Amber Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Amber Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Amber Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Amber Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
             }
         ],
         "keywords": [
@@ -306,6 +330,30 @@ export const PLACES: Place[] = [
             {
                 "question": "How long does it take to see Hawa Mahal?",
                 "answer": "It typically takes about 1 hour to explore the corridors, courtyards, and the small archeological museum inside."
+            },
+            {
+                "question": "What are the visiting hours for Hawa Mahal?",
+                "answer": "Hawa Mahal is open from 9 AM to 5 PM. Hawa Mahal is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Hawa Mahal?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "Is photography allowed at Hawa Mahal?",
+                "answer": "Photography is generally permitted for personal use at Hawa Mahal. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Hawa Mahal accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Hawa Mahal?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Hawa Mahal. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Hawa Mahal?",
+                "answer": "Hawa Mahal is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
             }
         ],
         "keywords": [
@@ -453,6 +501,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit City Palace Jaipur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant, 10°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for City Palace Jaipur?",
+                "answer": "City Palace Jaipur is open from 9 AM to 5 PM. City Palace Jaipur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at City Palace Jaipur?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore City Palace Jaipur completely?",
+                "answer": "A thorough visit to City Palace Jaipur typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at City Palace Jaipur?",
+                "answer": "Photography is generally permitted for personal use at City Palace Jaipur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is City Palace Jaipur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at City Palace Jaipur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of City Palace Jaipur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach City Palace Jaipur?",
+                "answer": "City Palace Jaipur is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near City Palace Jaipur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at City Palace Jaipur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -595,6 +679,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jantar Mantar Jaipur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jantar Mantar Jaipur?",
+                "answer": "Jantar Mantar Jaipur is open from 9 AM to 5 PM. Jantar Mantar Jaipur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jantar Mantar Jaipur?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jantar Mantar Jaipur completely?",
+                "answer": "A thorough visit to Jantar Mantar Jaipur typically takes around 1-1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jantar Mantar Jaipur?",
+                "answer": "Photography is generally permitted for personal use at Jantar Mantar Jaipur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jantar Mantar Jaipur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jantar Mantar Jaipur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jantar Mantar Jaipur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jantar Mantar Jaipur?",
+                "answer": "Jantar Mantar Jaipur is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jantar Mantar Jaipur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jantar Mantar Jaipur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -741,6 +861,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nahargarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant, 10°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Nahargarh Fort?",
+                "answer": "Nahargarh Fort is open from 9 AM to 5 PM. Nahargarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nahargarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nahargarh Fort completely?",
+                "answer": "A thorough visit to Nahargarh Fort typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nahargarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Nahargarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nahargarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nahargarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nahargarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nahargarh Fort?",
+                "answer": "Nahargarh Fort is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nahargarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nahargarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -886,6 +1042,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Albert Hall Museum?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Albert Hall Museum?",
+                "answer": "Albert Hall Museum is open from 9 AM to 5 PM. Albert Hall Museum is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Albert Hall Museum?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Albert Hall Museum completely?",
+                "answer": "A thorough visit to Albert Hall Museum typically takes around 2 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Albert Hall Museum?",
+                "answer": "Photography is generally permitted for personal use at Albert Hall Museum. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Albert Hall Museum accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Albert Hall Museum?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Albert Hall Museum. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Albert Hall Museum?",
+                "answer": "Albert Hall Museum is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Albert Hall Museum?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Albert Hall Museum?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1036,6 +1228,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mehrangarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Cool and pleasant, 8°C - 28°C."
+            },
+            {
+                "question": "What are the visiting hours for Mehrangarh Fort?",
+                "answer": "Mehrangarh Fort is open from 9 AM to 5 PM. Mehrangarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mehrangarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mehrangarh Fort completely?",
+                "answer": "A thorough visit to Mehrangarh Fort typically takes around 3-4 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mehrangarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Mehrangarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mehrangarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mehrangarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mehrangarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mehrangarh Fort?",
+                "answer": "Mehrangarh Fort is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mehrangarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mehrangarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1182,6 +1410,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Umaid Bhawan Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Cool, 8°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Umaid Bhawan Palace?",
+                "answer": "Umaid Bhawan Palace is open from 9 AM to 5 PM. Umaid Bhawan Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Umaid Bhawan Palace?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Umaid Bhawan Palace completely?",
+                "answer": "A thorough visit to Umaid Bhawan Palace typically takes around 2 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Umaid Bhawan Palace?",
+                "answer": "Photography is generally permitted for personal use at Umaid Bhawan Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Umaid Bhawan Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Umaid Bhawan Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Umaid Bhawan Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Umaid Bhawan Palace?",
+                "answer": "Umaid Bhawan Palace is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Umaid Bhawan Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Umaid Bhawan Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1329,6 +1593,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit City Palace Udaipur?",
                 "answer": "The best season to visit is during the Winter / Post-Monsoon months (September - March) when the weather is Pleasant, 10°C - 30°C."
+            },
+            {
+                "question": "What are the visiting hours for City Palace Udaipur?",
+                "answer": "City Palace Udaipur is open from 9 AM to 5 PM. City Palace Udaipur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at City Palace Udaipur?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore City Palace Udaipur completely?",
+                "answer": "A thorough visit to City Palace Udaipur typically takes around 3-4 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at City Palace Udaipur?",
+                "answer": "Photography is generally permitted for personal use at City Palace Udaipur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is City Palace Udaipur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at City Palace Udaipur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of City Palace Udaipur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach City Palace Udaipur?",
+                "answer": "City Palace Udaipur is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near City Palace Udaipur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at City Palace Udaipur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1477,6 +1777,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Lake Pichola?",
                 "answer": "The best season to visit is during the Post-Monsoon / Winter months (September - March) when the weather is Pleasant, 12°C - 28°C."
+            },
+            {
+                "question": "What are the visiting hours for Lake Pichola?",
+                "answer": "Lake Pichola is open from 9 AM to 5 PM. Lake Pichola is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Lake Pichola?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Lake Pichola completely?",
+                "answer": "A thorough visit to Lake Pichola typically takes around 2-3 Hours (with boat ride). If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Lake Pichola?",
+                "answer": "Photography is generally permitted for personal use at Lake Pichola. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Lake Pichola accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Lake Pichola?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Lake Pichola. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Lake Pichola?",
+                "answer": "Lake Pichola is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Lake Pichola?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Lake Pichola?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1621,6 +1957,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sajjangarh Palace?",
                 "answer": "The best season to visit is during the Monsoon/Post-Monsoon/Winter months (July - March) when the weather is Cool/Misty during monsoon, pleasant in winter."
+            },
+            {
+                "question": "What are the visiting hours for Sajjangarh Palace?",
+                "answer": "Sajjangarh Palace is open from 9 AM to 5 PM. Sajjangarh Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sajjangarh Palace?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sajjangarh Palace completely?",
+                "answer": "A thorough visit to Sajjangarh Palace typically takes around 1.5-2 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sajjangarh Palace?",
+                "answer": "Photography is generally permitted for personal use at Sajjangarh Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sajjangarh Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sajjangarh Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sajjangarh Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sajjangarh Palace?",
+                "answer": "Sajjangarh Palace is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sajjangarh Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sajjangarh Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1769,6 +2141,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jaisalmer Fort?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Cool, 5°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Jaisalmer Fort?",
+                "answer": "Jaisalmer Fort is open from 9 AM to 5 PM. Jaisalmer Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jaisalmer Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jaisalmer Fort completely?",
+                "answer": "A thorough visit to Jaisalmer Fort typically takes around 3-4 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jaisalmer Fort?",
+                "answer": "Photography is generally permitted for personal use at Jaisalmer Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jaisalmer Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jaisalmer Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jaisalmer Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jaisalmer Fort?",
+                "answer": "Jaisalmer Fort is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jaisalmer Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jaisalmer Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -1918,6 +2326,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sam Sand Dunes?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Cool nights 5°C, warm days 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Sam Sand Dunes?",
+                "answer": "Sam Sand Dunes is open from 9 AM to 5 PM. Sam Sand Dunes is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sam Sand Dunes?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sam Sand Dunes completely?",
+                "answer": "A thorough visit to Sam Sand Dunes typically takes around Overnight (desert camping). If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sam Sand Dunes?",
+                "answer": "Photography is generally permitted for personal use at Sam Sand Dunes. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sam Sand Dunes accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sam Sand Dunes?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sam Sand Dunes. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sam Sand Dunes?",
+                "answer": "Sam Sand Dunes is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sam Sand Dunes?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sam Sand Dunes?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2062,6 +2506,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Patwon Ki Haveli?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Cool, 5°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Patwon Ki Haveli?",
+                "answer": "Patwon Ki Haveli is open from 9 AM to 5 PM. Patwon Ki Haveli is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Patwon Ki Haveli?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Patwon Ki Haveli completely?",
+                "answer": "A thorough visit to Patwon Ki Haveli typically takes around 1-1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Patwon Ki Haveli?",
+                "answer": "Photography is generally permitted for personal use at Patwon Ki Haveli. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Patwon Ki Haveli accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Patwon Ki Haveli?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Patwon Ki Haveli. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Patwon Ki Haveli?",
+                "answer": "Patwon Ki Haveli is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Patwon Ki Haveli?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Patwon Ki Haveli?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2207,6 +2687,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Pushkar Lake & Brahma Temple?",
                 "answer": "The best season to visit is during the Winter / Festival Season months (October - March) when the weather is Pleasant, 8°C - 28°C."
+            },
+            {
+                "question": "What are the visiting hours for Pushkar Lake & Brahma Temple?",
+                "answer": "Pushkar Lake & Brahma Temple is open from 9 AM to 5 PM. Pushkar Lake & Brahma Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Pushkar Lake & Brahma Temple?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Pushkar Lake & Brahma Temple completely?",
+                "answer": "A thorough visit to Pushkar Lake & Brahma Temple typically takes around Half Day. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Pushkar Lake & Brahma Temple?",
+                "answer": "Photography is generally permitted for personal use at Pushkar Lake & Brahma Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Pushkar Lake & Brahma Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Pushkar Lake & Brahma Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Pushkar Lake & Brahma Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Pushkar Lake & Brahma Temple?",
+                "answer": "Pushkar Lake & Brahma Temple is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Pushkar Lake & Brahma Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Pushkar Lake & Brahma Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2358,6 +2874,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ranthambore National Park?",
                 "answer": "The best season to visit is during the Winter best, Summer highest tiger sightings months (October - June (Park Open Season)) when the weather is 10°C - 45°C varies by season."
+            },
+            {
+                "question": "What are the visiting hours for Ranthambore National Park?",
+                "answer": "Ranthambore National Park is open from 9 AM to 5 PM. Ranthambore National Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ranthambore National Park?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ranthambore National Park completely?",
+                "answer": "A thorough visit to Ranthambore National Park typically takes around 2-3 Safaris (2 Days). If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ranthambore National Park?",
+                "answer": "Photography is generally permitted for personal use at Ranthambore National Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ranthambore National Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ranthambore National Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ranthambore National Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ranthambore National Park?",
+                "answer": "Ranthambore National Park is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ranthambore National Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ranthambore National Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2504,6 +3056,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Dilwara Temples?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Cool, 5°C - 22°C."
+            },
+            {
+                "question": "What are the visiting hours for Dilwara Temples?",
+                "answer": "Dilwara Temples is open from 9 AM to 5 PM. Dilwara Temples is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Dilwara Temples?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Dilwara Temples completely?",
+                "answer": "A thorough visit to Dilwara Temples typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Dilwara Temples?",
+                "answer": "Photography is generally permitted for personal use at Dilwara Temples. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Dilwara Temples accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Dilwara Temples?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Dilwara Temples. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Dilwara Temples?",
+                "answer": "Dilwara Temples is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Dilwara Temples?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Dilwara Temples?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2649,6 +3237,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Junagarh Fort?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Cool, 5°C - 22°C."
+            },
+            {
+                "question": "What are the visiting hours for Junagarh Fort?",
+                "answer": "Junagarh Fort is open from 9 AM to 5 PM. Junagarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Junagarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Junagarh Fort completely?",
+                "answer": "A thorough visit to Junagarh Fort typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Junagarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Junagarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Junagarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Junagarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Junagarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Junagarh Fort?",
+                "answer": "Junagarh Fort is located in Bikaner, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Junagarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Junagarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2796,6 +3420,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Chittorgarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant, 10°C - 28°C."
+            },
+            {
+                "question": "What are the visiting hours for Chittorgarh Fort?",
+                "answer": "Chittorgarh Fort is open from 9 AM to 5 PM. Chittorgarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Chittorgarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Chittorgarh Fort completely?",
+                "answer": "A thorough visit to Chittorgarh Fort typically takes around 5-6 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Chittorgarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Chittorgarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Chittorgarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Chittorgarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Chittorgarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Chittorgarh Fort?",
+                "answer": "Chittorgarh Fort is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Chittorgarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Chittorgarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -2942,6 +3602,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kumbhalgarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Cool, 8°C - 25°C."
+            },
+            {
+                "question": "What are the visiting hours for Kumbhalgarh Fort?",
+                "answer": "Kumbhalgarh Fort is open from 9 AM to 5 PM. Kumbhalgarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kumbhalgarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kumbhalgarh Fort completely?",
+                "answer": "A thorough visit to Kumbhalgarh Fort typically takes around 3-4 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kumbhalgarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Kumbhalgarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kumbhalgarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kumbhalgarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kumbhalgarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kumbhalgarh Fort?",
+                "answer": "Kumbhalgarh Fort is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kumbhalgarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kumbhalgarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3090,6 +3786,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ranakpur Jain Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant, 10°C - 28°C."
+            },
+            {
+                "question": "What are the visiting hours for Ranakpur Jain Temple?",
+                "answer": "Ranakpur Jain Temple is open from 9 AM to 5 PM. Ranakpur Jain Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ranakpur Jain Temple?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ranakpur Jain Temple completely?",
+                "answer": "A thorough visit to Ranakpur Jain Temple typically takes around 2-3 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ranakpur Jain Temple?",
+                "answer": "Photography is generally permitted for personal use at Ranakpur Jain Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ranakpur Jain Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ranakpur Jain Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ranakpur Jain Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ranakpur Jain Temple?",
+                "answer": "Ranakpur Jain Temple is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ranakpur Jain Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ranakpur Jain Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3242,6 +3974,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Keoladeo National Park?",
                 "answer": "The best season to visit is during the Winter (peak migratory season) months (November - February) when the weather is Cool, 5°C - 22°C."
+            },
+            {
+                "question": "What are the visiting hours for Keoladeo National Park?",
+                "answer": "Keoladeo National Park is open from 9 AM to 5 PM. Keoladeo National Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Keoladeo National Park?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Keoladeo National Park completely?",
+                "answer": "A thorough visit to Keoladeo National Park typically takes around Half Day. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Keoladeo National Park?",
+                "answer": "Photography is generally permitted for personal use at Keoladeo National Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Keoladeo National Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Keoladeo National Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Keoladeo National Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Keoladeo National Park?",
+                "answer": "Keoladeo National Park is located in Rajasthan, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Keoladeo National Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Keoladeo National Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3385,6 +4153,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jaigarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant and cool."
+            },
+            {
+                "question": "What are the visiting hours for Jaigarh Fort?",
+                "answer": "Jaigarh Fort is open from 9 AM to 5 PM. Jaigarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jaigarh Fort?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jaigarh Fort completely?",
+                "answer": "A thorough visit to Jaigarh Fort typically takes around 2 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jaigarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Jaigarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jaigarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jaigarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jaigarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jaigarh Fort?",
+                "answer": "Jaigarh Fort is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jaigarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jaigarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3526,6 +4330,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jal Mahal?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jal Mahal?",
+                "answer": "Jal Mahal is open from 9 AM to 5 PM. Jal Mahal is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jal Mahal?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jal Mahal completely?",
+                "answer": "A thorough visit to Jal Mahal typically takes around 45 Minutes. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jal Mahal?",
+                "answer": "Photography is generally permitted for personal use at Jal Mahal. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jal Mahal accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jal Mahal?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jal Mahal. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jal Mahal?",
+                "answer": "Jal Mahal is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jal Mahal?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jal Mahal?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3664,6 +4504,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Panna Meena Ka Kund?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Panna Meena Ka Kund?",
+                "answer": "Panna Meena Ka Kund is open from 9 AM to 5 PM. Panna Meena Ka Kund is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Panna Meena Ka Kund?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Panna Meena Ka Kund completely?",
+                "answer": "A thorough visit to Panna Meena Ka Kund typically takes around 45 Minutes. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Panna Meena Ka Kund?",
+                "answer": "Photography is generally permitted for personal use at Panna Meena Ka Kund. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Panna Meena Ka Kund accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Panna Meena Ka Kund?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Panna Meena Ka Kund. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Panna Meena Ka Kund?",
+                "answer": "Panna Meena Ka Kund is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Panna Meena Ka Kund?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Panna Meena Ka Kund?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3803,6 +4679,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jaswant Thada?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jaswant Thada?",
+                "answer": "Jaswant Thada is open from 9 AM to 5 PM. Jaswant Thada is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jaswant Thada?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jaswant Thada completely?",
+                "answer": "A thorough visit to Jaswant Thada typically takes around 45 Minutes. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jaswant Thada?",
+                "answer": "Photography is generally permitted for personal use at Jaswant Thada. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jaswant Thada accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jaswant Thada?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jaswant Thada. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jaswant Thada?",
+                "answer": "Jaswant Thada is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jaswant Thada?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jaswant Thada?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -3945,6 +4857,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Fateh Sagar Lake?",
                 "answer": "The best season to visit is during the Post-Monsoon / Winter months (September - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Fateh Sagar Lake?",
+                "answer": "Fateh Sagar Lake is open from 9 AM to 5 PM. Fateh Sagar Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Fateh Sagar Lake?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Fateh Sagar Lake completely?",
+                "answer": "A thorough visit to Fateh Sagar Lake typically takes around 1-2 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Fateh Sagar Lake?",
+                "answer": "Photography is generally permitted for personal use at Fateh Sagar Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Fateh Sagar Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Fateh Sagar Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Fateh Sagar Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Fateh Sagar Lake?",
+                "answer": "Fateh Sagar Lake is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Fateh Sagar Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Fateh Sagar Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4085,6 +5033,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Saheliyon Ki Bari?",
                 "answer": "The best season to visit is during the Monsoon / Winter months (July - March) when the weather is Cool and lush."
+            },
+            {
+                "question": "What are the visiting hours for Saheliyon Ki Bari?",
+                "answer": "Saheliyon Ki Bari is open from 9 AM to 5 PM. Saheliyon Ki Bari is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Saheliyon Ki Bari?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Saheliyon Ki Bari completely?",
+                "answer": "A thorough visit to Saheliyon Ki Bari typically takes around 1 Hour. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Saheliyon Ki Bari?",
+                "answer": "Photography is generally permitted for personal use at Saheliyon Ki Bari. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Saheliyon Ki Bari accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Saheliyon Ki Bari?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Saheliyon Ki Bari. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Saheliyon Ki Bari?",
+                "answer": "Saheliyon Ki Bari is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Saheliyon Ki Bari?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Saheliyon Ki Bari?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4228,6 +5212,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Gadisar Lake?",
                 "answer": "The best season to visit is during the Winter months (November - February) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Gadisar Lake?",
+                "answer": "Gadisar Lake is open from 9 AM to 5 PM. Gadisar Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Gadisar Lake?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Gadisar Lake completely?",
+                "answer": "A thorough visit to Gadisar Lake typically takes around 1 Hour. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Gadisar Lake?",
+                "answer": "Photography is generally permitted for personal use at Gadisar Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Gadisar Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Gadisar Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Gadisar Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Gadisar Lake?",
+                "answer": "Gadisar Lake is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Gadisar Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Gadisar Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4368,6 +5388,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Karni Mata Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Karni Mata Temple?",
+                "answer": "Karni Mata Temple is open from 9 AM to 5 PM. Karni Mata Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Karni Mata Temple?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Karni Mata Temple completely?",
+                "answer": "A thorough visit to Karni Mata Temple typically takes around 1 Hour. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Karni Mata Temple?",
+                "answer": "Photography is generally permitted for personal use at Karni Mata Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Karni Mata Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Karni Mata Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Karni Mata Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Karni Mata Temple?",
+                "answer": "Karni Mata Temple is located in Deshnok, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Karni Mata Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Karni Mata Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4508,6 +5564,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Chand Baori?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Chand Baori?",
+                "answer": "Chand Baori is open from 9 AM to 5 PM. Chand Baori is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Chand Baori?",
+                "answer": "Entry to this place is completely free for all visitors. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Chand Baori completely?",
+                "answer": "A thorough visit to Chand Baori typically takes around 1 Hour. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Chand Baori?",
+                "answer": "Photography is generally permitted for personal use at Chand Baori. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Chand Baori accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Chand Baori?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Chand Baori. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Chand Baori?",
+                "answer": "Chand Baori is located in Abhaneri, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Chand Baori?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Chand Baori?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4640,6 +5732,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ajmer Sharif Dargah?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Ajmer Sharif Dargah?",
+                "answer": "Ajmer Sharif Dargah is open from 9:00 AM to 5:30 PM. Ajmer Sharif Dargah is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ajmer Sharif Dargah?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ajmer Sharif Dargah completely?",
+                "answer": "A thorough visit to Ajmer Sharif Dargah typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ajmer Sharif Dargah?",
+                "answer": "Photography is generally permitted for personal use at Ajmer Sharif Dargah. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ajmer Sharif Dargah accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ajmer Sharif Dargah?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ajmer Sharif Dargah. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ajmer Sharif Dargah?",
+                "answer": "Ajmer Sharif Dargah is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ajmer Sharif Dargah?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ajmer Sharif Dargah?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4772,6 +5900,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bhangarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bhangarh Fort?",
+                "answer": "Bhangarh Fort is open from 9:00 AM to 5:30 PM. Bhangarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bhangarh Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bhangarh Fort completely?",
+                "answer": "A thorough visit to Bhangarh Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bhangarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Bhangarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bhangarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bhangarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bhangarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bhangarh Fort?",
+                "answer": "Bhangarh Fort is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bhangarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bhangarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -4904,6 +6068,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kuldhara Village?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kuldhara Village?",
+                "answer": "Kuldhara Village is open from 9:00 AM to 5:30 PM. Kuldhara Village is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kuldhara Village?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kuldhara Village completely?",
+                "answer": "A thorough visit to Kuldhara Village typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kuldhara Village?",
+                "answer": "Photography is generally permitted for personal use at Kuldhara Village. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kuldhara Village accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kuldhara Village?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kuldhara Village. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kuldhara Village?",
+                "answer": "Kuldhara Village is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kuldhara Village?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kuldhara Village?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5036,6 +6236,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Taragarh Fort Bundi?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Taragarh Fort Bundi?",
+                "answer": "Taragarh Fort Bundi is open from 9:00 AM to 5:30 PM. Taragarh Fort Bundi is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Taragarh Fort Bundi?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Taragarh Fort Bundi completely?",
+                "answer": "A thorough visit to Taragarh Fort Bundi typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Taragarh Fort Bundi?",
+                "answer": "Photography is generally permitted for personal use at Taragarh Fort Bundi. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Taragarh Fort Bundi accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Taragarh Fort Bundi?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Taragarh Fort Bundi. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Taragarh Fort Bundi?",
+                "answer": "Taragarh Fort Bundi is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Taragarh Fort Bundi?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Taragarh Fort Bundi?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5168,6 +6404,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nakki Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nakki Lake?",
+                "answer": "Nakki Lake is open from 9:00 AM to 5:30 PM. Nakki Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nakki Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nakki Lake completely?",
+                "answer": "A thorough visit to Nakki Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nakki Lake?",
+                "answer": "Photography is generally permitted for personal use at Nakki Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nakki Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nakki Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nakki Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nakki Lake?",
+                "answer": "Nakki Lake is located in Mount Abu, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nakki Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nakki Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5300,6 +6572,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Birla Mandir Jaipur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Birla Mandir Jaipur?",
+                "answer": "Birla Mandir Jaipur is open from 9 AM to 5:30 PM. Birla Mandir Jaipur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Birla Mandir Jaipur?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Birla Mandir Jaipur completely?",
+                "answer": "A thorough visit to Birla Mandir Jaipur typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Birla Mandir Jaipur?",
+                "answer": "Photography is generally permitted for personal use at Birla Mandir Jaipur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Birla Mandir Jaipur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Birla Mandir Jaipur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Birla Mandir Jaipur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Birla Mandir Jaipur?",
+                "answer": "Birla Mandir Jaipur is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Birla Mandir Jaipur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Birla Mandir Jaipur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5432,6 +6740,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jaisamand Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jaisamand Lake?",
+                "answer": "Jaisamand Lake is open from 9:00 AM to 5:30 PM. Jaisamand Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jaisamand Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jaisamand Lake completely?",
+                "answer": "A thorough visit to Jaisamand Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jaisamand Lake?",
+                "answer": "Photography is generally permitted for personal use at Jaisamand Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jaisamand Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jaisamand Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jaisamand Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jaisamand Lake?",
+                "answer": "Jaisamand Lake is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jaisamand Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jaisamand Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5564,6 +6908,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ranthambore Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Ranthambore Fort?",
+                "answer": "Ranthambore Fort is open from 9 AM to 5:30 PM. Ranthambore Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ranthambore Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ranthambore Fort completely?",
+                "answer": "A thorough visit to Ranthambore Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ranthambore Fort?",
+                "answer": "Photography is generally permitted for personal use at Ranthambore Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ranthambore Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ranthambore Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ranthambore Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ranthambore Fort?",
+                "answer": "Ranthambore Fort is located in Sawai Madhopur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ranthambore Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ranthambore Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5696,6 +7076,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Deeg Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Deeg Palace?",
+                "answer": "Deeg Palace is open from 9:00 AM to 5:30 PM. Deeg Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Deeg Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Deeg Palace completely?",
+                "answer": "A thorough visit to Deeg Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Deeg Palace?",
+                "answer": "Photography is generally permitted for personal use at Deeg Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Deeg Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Deeg Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Deeg Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Deeg Palace?",
+                "answer": "Deeg Palace is located in Deeg, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Deeg Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Deeg Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5828,6 +7244,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Neemrana Fort Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Neemrana Fort Palace?",
+                "answer": "Neemrana Fort Palace is open from 9:00 AM to 5:30 PM. Neemrana Fort Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Neemrana Fort Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Neemrana Fort Palace completely?",
+                "answer": "A thorough visit to Neemrana Fort Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Neemrana Fort Palace?",
+                "answer": "Photography is generally permitted for personal use at Neemrana Fort Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Neemrana Fort Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Neemrana Fort Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Neemrana Fort Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Neemrana Fort Palace?",
+                "answer": "Neemrana Fort Palace is located in Neemrana, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Neemrana Fort Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Neemrana Fort Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -5960,6 +7412,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kalibangan Museum?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kalibangan Museum?",
+                "answer": "Kalibangan Museum is open from 9 AM to 5:30 PM. Kalibangan Museum is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kalibangan Museum?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kalibangan Museum completely?",
+                "answer": "A thorough visit to Kalibangan Museum typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kalibangan Museum?",
+                "answer": "Photography is generally permitted for personal use at Kalibangan Museum. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kalibangan Museum accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kalibangan Museum?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kalibangan Museum. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kalibangan Museum?",
+                "answer": "Kalibangan Museum is located in Hanumangarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kalibangan Museum?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kalibangan Museum?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6092,6 +7580,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sariska National Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sariska National Park?",
+                "answer": "Sariska National Park is open from 9:00 AM to 5:30 PM. Sariska National Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sariska National Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sariska National Park completely?",
+                "answer": "A thorough visit to Sariska National Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sariska National Park?",
+                "answer": "Photography is generally permitted for personal use at Sariska National Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sariska National Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sariska National Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sariska National Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sariska National Park?",
+                "answer": "Sariska National Park is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sariska National Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sariska National Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6225,6 +7749,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Garbhaji Waterfall?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Garbhaji Waterfall?",
+                "answer": "Garbhaji Waterfall is open from 9:00 AM to 5:30 PM. Garbhaji Waterfall is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Garbhaji Waterfall?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Garbhaji Waterfall completely?",
+                "answer": "A thorough visit to Garbhaji Waterfall typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Garbhaji Waterfall?",
+                "answer": "Photography is generally permitted for personal use at Garbhaji Waterfall. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Garbhaji Waterfall accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Garbhaji Waterfall?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Garbhaji Waterfall. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Garbhaji Waterfall?",
+                "answer": "Garbhaji Waterfall is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Garbhaji Waterfall?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Garbhaji Waterfall?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6357,6 +7917,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sambhar Salt Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sambhar Salt Lake?",
+                "answer": "Sambhar Salt Lake is open from 9:00 AM to 5:30 PM. Sambhar Salt Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sambhar Salt Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sambhar Salt Lake completely?",
+                "answer": "A thorough visit to Sambhar Salt Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sambhar Salt Lake?",
+                "answer": "Photography is generally permitted for personal use at Sambhar Salt Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sambhar Salt Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sambhar Salt Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sambhar Salt Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sambhar Salt Lake?",
+                "answer": "Sambhar Salt Lake is located in Sambhar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sambhar Salt Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sambhar Salt Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6489,6 +8085,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Khimsar Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Khimsar Fort?",
+                "answer": "Khimsar Fort is open from 9:00 AM to 5:30 PM. Khimsar Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Khimsar Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Khimsar Fort completely?",
+                "answer": "A thorough visit to Khimsar Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Khimsar Fort?",
+                "answer": "Photography is generally permitted for personal use at Khimsar Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Khimsar Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Khimsar Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Khimsar Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Khimsar Fort?",
+                "answer": "Khimsar Fort is located in Nagaur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Khimsar Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Khimsar Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6621,6 +8253,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Samode Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Samode Palace?",
+                "answer": "Samode Palace is open from 9:00 AM to 5:30 PM. Samode Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Samode Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Samode Palace completely?",
+                "answer": "A thorough visit to Samode Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Samode Palace?",
+                "answer": "Photography is generally permitted for personal use at Samode Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Samode Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Samode Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Samode Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Samode Palace?",
+                "answer": "Samode Palace is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Samode Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Samode Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6753,6 +8421,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Rambagh Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Rambagh Palace?",
+                "answer": "Rambagh Palace is open from 9:00 AM to 5:30 PM. Rambagh Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Rambagh Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Rambagh Palace completely?",
+                "answer": "A thorough visit to Rambagh Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Rambagh Palace?",
+                "answer": "Photography is generally permitted for personal use at Rambagh Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Rambagh Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Rambagh Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Rambagh Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Rambagh Palace?",
+                "answer": "Rambagh Palace is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Rambagh Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Rambagh Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -6885,6 +8589,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sisodia Rani Ka Bagh?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sisodia Rani Ka Bagh?",
+                "answer": "Sisodia Rani Ka Bagh is open from 9:00 AM to 5:30 PM. Sisodia Rani Ka Bagh is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sisodia Rani Ka Bagh?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sisodia Rani Ka Bagh completely?",
+                "answer": "A thorough visit to Sisodia Rani Ka Bagh typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sisodia Rani Ka Bagh?",
+                "answer": "Photography is generally permitted for personal use at Sisodia Rani Ka Bagh. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sisodia Rani Ka Bagh accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sisodia Rani Ka Bagh?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sisodia Rani Ka Bagh. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sisodia Rani Ka Bagh?",
+                "answer": "Sisodia Rani Ka Bagh is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sisodia Rani Ka Bagh?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sisodia Rani Ka Bagh?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7018,6 +8758,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Pandu Pol Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Pandu Pol Temple?",
+                "answer": "Pandu Pol Temple is open from 9:00 AM to 5:30 PM. Pandu Pol Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Pandu Pol Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Pandu Pol Temple completely?",
+                "answer": "A thorough visit to Pandu Pol Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Pandu Pol Temple?",
+                "answer": "Photography is generally permitted for personal use at Pandu Pol Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Pandu Pol Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Pandu Pol Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Pandu Pol Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Pandu Pol Temple?",
+                "answer": "Pandu Pol Temple is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Pandu Pol Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Pandu Pol Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7150,6 +8926,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bagru Block Printing Village?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bagru Block Printing Village?",
+                "answer": "Bagru Block Printing Village is open from 9:00 AM to 5:30 PM. Bagru Block Printing Village is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bagru Block Printing Village?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bagru Block Printing Village completely?",
+                "answer": "A thorough visit to Bagru Block Printing Village typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bagru Block Printing Village?",
+                "answer": "Photography is generally permitted for personal use at Bagru Block Printing Village. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bagru Block Printing Village accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bagru Block Printing Village?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bagru Block Printing Village. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bagru Block Printing Village?",
+                "answer": "Bagru Block Printing Village is located in Bagru, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bagru Block Printing Village?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bagru Block Printing Village?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7282,6 +9094,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kishangarh Dumping Yard?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kishangarh Dumping Yard?",
+                "answer": "Kishangarh Dumping Yard is open from 9 AM to 5:30 PM. Kishangarh Dumping Yard is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kishangarh Dumping Yard?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kishangarh Dumping Yard completely?",
+                "answer": "A thorough visit to Kishangarh Dumping Yard typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kishangarh Dumping Yard?",
+                "answer": "Photography is generally permitted for personal use at Kishangarh Dumping Yard. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kishangarh Dumping Yard accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kishangarh Dumping Yard?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kishangarh Dumping Yard. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kishangarh Dumping Yard?",
+                "answer": "Kishangarh Dumping Yard is located in Kishangarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kishangarh Dumping Yard?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kishangarh Dumping Yard?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7414,6 +9262,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Trinetra Ganesh Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Trinetra Ganesh Temple?",
+                "answer": "Trinetra Ganesh Temple is open from 9 AM to 5 PM. Trinetra Ganesh Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Trinetra Ganesh Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Trinetra Ganesh Temple completely?",
+                "answer": "A thorough visit to Trinetra Ganesh Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Trinetra Ganesh Temple?",
+                "answer": "Photography is generally permitted for personal use at Trinetra Ganesh Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Trinetra Ganesh Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Trinetra Ganesh Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Trinetra Ganesh Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Trinetra Ganesh Temple?",
+                "answer": "Trinetra Ganesh Temple is located in Sawai Madhopur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Trinetra Ganesh Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Trinetra Ganesh Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7546,6 +9430,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Fateh Prakash Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Fateh Prakash Palace?",
+                "answer": "Fateh Prakash Palace is open from 9:00 AM to 5:30 PM. Fateh Prakash Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Fateh Prakash Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Fateh Prakash Palace completely?",
+                "answer": "A thorough visit to Fateh Prakash Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Fateh Prakash Palace?",
+                "answer": "Photography is generally permitted for personal use at Fateh Prakash Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Fateh Prakash Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Fateh Prakash Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Fateh Prakash Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Fateh Prakash Palace?",
+                "answer": "Fateh Prakash Palace is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Fateh Prakash Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Fateh Prakash Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7678,6 +9598,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Haldighati Pass?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Haldighati Pass?",
+                "answer": "Haldighati Pass is open from 9:00 AM to 5:30 PM. Haldighati Pass is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Haldighati Pass?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Haldighati Pass completely?",
+                "answer": "A thorough visit to Haldighati Pass typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Haldighati Pass?",
+                "answer": "Photography is generally permitted for personal use at Haldighati Pass. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Haldighati Pass accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Haldighati Pass?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Haldighati Pass. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Haldighati Pass?",
+                "answer": "Haldighati Pass is located in Rajsamand, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Haldighati Pass?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Haldighati Pass?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7811,6 +9767,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Vintage Car Museum?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Vintage Car Museum?",
+                "answer": "Vintage Car Museum is open from 9:00 AM to 5:30 PM. Vintage Car Museum is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Vintage Car Museum?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Vintage Car Museum completely?",
+                "answer": "A thorough visit to Vintage Car Museum typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Vintage Car Museum?",
+                "answer": "Photography is generally permitted for personal use at Vintage Car Museum. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Vintage Car Museum accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Vintage Car Museum?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Vintage Car Museum. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Vintage Car Museum?",
+                "answer": "Vintage Car Museum is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Vintage Car Museum?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Vintage Car Museum?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -7943,6 +9935,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Clock Tower Jodhpur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Clock Tower Jodhpur?",
+                "answer": "Clock Tower Jodhpur is open from 9:00 AM to 5:30 PM. Clock Tower Jodhpur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Clock Tower Jodhpur?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Clock Tower Jodhpur completely?",
+                "answer": "A thorough visit to Clock Tower Jodhpur typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Clock Tower Jodhpur?",
+                "answer": "Photography is generally permitted for personal use at Clock Tower Jodhpur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Clock Tower Jodhpur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Clock Tower Jodhpur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Clock Tower Jodhpur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Clock Tower Jodhpur?",
+                "answer": "Clock Tower Jodhpur is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Clock Tower Jodhpur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Clock Tower Jodhpur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8075,6 +10103,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nawalgarh Havelis?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nawalgarh Havelis?",
+                "answer": "Nawalgarh Havelis is open from 9 AM to 5:30 PM. Nawalgarh Havelis is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nawalgarh Havelis?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nawalgarh Havelis completely?",
+                "answer": "A thorough visit to Nawalgarh Havelis typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nawalgarh Havelis?",
+                "answer": "Photography is generally permitted for personal use at Nawalgarh Havelis. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nawalgarh Havelis accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nawalgarh Havelis?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nawalgarh Havelis. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nawalgarh Havelis?",
+                "answer": "Nawalgarh Havelis is located in Nawalgarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nawalgarh Havelis?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nawalgarh Havelis?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8207,6 +10271,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Eklingji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Eklingji Temple?",
+                "answer": "Eklingji Temple is open from 9 AM to 5:30 PM. Eklingji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Eklingji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Eklingji Temple completely?",
+                "answer": "A thorough visit to Eklingji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Eklingji Temple?",
+                "answer": "Photography is generally permitted for personal use at Eklingji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Eklingji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Eklingji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Eklingji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Eklingji Temple?",
+                "answer": "Eklingji Temple is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Eklingji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Eklingji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8339,6 +10439,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bagore Ki Haveli?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bagore Ki Haveli?",
+                "answer": "Bagore Ki Haveli is open from 9:00 AM to 5:30 PM. Bagore Ki Haveli is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bagore Ki Haveli?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bagore Ki Haveli completely?",
+                "answer": "A thorough visit to Bagore Ki Haveli typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bagore Ki Haveli?",
+                "answer": "Photography is generally permitted for personal use at Bagore Ki Haveli. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bagore Ki Haveli accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bagore Ki Haveli?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bagore Ki Haveli. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bagore Ki Haveli?",
+                "answer": "Bagore Ki Haveli is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bagore Ki Haveli?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bagore Ki Haveli?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8471,6 +10607,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Toorji Ka Jhalra?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Toorji Ka Jhalra?",
+                "answer": "Toorji Ka Jhalra is open from 9:00 AM to 5:30 PM. Toorji Ka Jhalra is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Toorji Ka Jhalra?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Toorji Ka Jhalra completely?",
+                "answer": "A thorough visit to Toorji Ka Jhalra typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Toorji Ka Jhalra?",
+                "answer": "Photography is generally permitted for personal use at Toorji Ka Jhalra. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Toorji Ka Jhalra accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Toorji Ka Jhalra?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Toorji Ka Jhalra. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Toorji Ka Jhalra?",
+                "answer": "Toorji Ka Jhalra is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Toorji Ka Jhalra?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Toorji Ka Jhalra?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8603,6 +10775,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Salim Singh Ki Haveli?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Salim Singh Ki Haveli?",
+                "answer": "Salim Singh Ki Haveli is open from 9 AM to 5:30 PM. Salim Singh Ki Haveli is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Salim Singh Ki Haveli?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Salim Singh Ki Haveli completely?",
+                "answer": "A thorough visit to Salim Singh Ki Haveli typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Salim Singh Ki Haveli?",
+                "answer": "Photography is generally permitted for personal use at Salim Singh Ki Haveli. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Salim Singh Ki Haveli accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Salim Singh Ki Haveli?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Salim Singh Ki Haveli. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Salim Singh Ki Haveli?",
+                "answer": "Salim Singh Ki Haveli is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Salim Singh Ki Haveli?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Salim Singh Ki Haveli?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8735,6 +10943,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nathmal Ki Haveli?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nathmal Ki Haveli?",
+                "answer": "Nathmal Ki Haveli is open from 9 AM to 5:30 PM. Nathmal Ki Haveli is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nathmal Ki Haveli?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nathmal Ki Haveli completely?",
+                "answer": "A thorough visit to Nathmal Ki Haveli typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nathmal Ki Haveli?",
+                "answer": "Photography is generally permitted for personal use at Nathmal Ki Haveli. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nathmal Ki Haveli accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nathmal Ki Haveli?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nathmal Ki Haveli. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nathmal Ki Haveli?",
+                "answer": "Nathmal Ki Haveli is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nathmal Ki Haveli?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nathmal Ki Haveli?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -8868,6 +11112,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Khuri Sand Dunes?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Khuri Sand Dunes?",
+                "answer": "Khuri Sand Dunes is open from 9:00 AM to 5:30 PM. Khuri Sand Dunes is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Khuri Sand Dunes?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Khuri Sand Dunes completely?",
+                "answer": "A thorough visit to Khuri Sand Dunes typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Khuri Sand Dunes?",
+                "answer": "Photography is generally permitted for personal use at Khuri Sand Dunes. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Khuri Sand Dunes accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Khuri Sand Dunes?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Khuri Sand Dunes. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Khuri Sand Dunes?",
+                "answer": "Khuri Sand Dunes is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Khuri Sand Dunes?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Khuri Sand Dunes?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9001,6 +11281,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Vyas Chhatri?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Vyas Chhatri?",
+                "answer": "Vyas Chhatri is open from 9:00 AM to 5:30 PM. Vyas Chhatri is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Vyas Chhatri?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Vyas Chhatri completely?",
+                "answer": "A thorough visit to Vyas Chhatri typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Vyas Chhatri?",
+                "answer": "Photography is generally permitted for personal use at Vyas Chhatri. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Vyas Chhatri accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Vyas Chhatri?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Vyas Chhatri. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Vyas Chhatri?",
+                "answer": "Vyas Chhatri is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Vyas Chhatri?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Vyas Chhatri?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9133,6 +11449,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Pokhran Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Pokhran Fort?",
+                "answer": "Pokhran Fort is open from 9:00 AM to 5:30 PM. Pokhran Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Pokhran Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Pokhran Fort completely?",
+                "answer": "A thorough visit to Pokhran Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Pokhran Fort?",
+                "answer": "Photography is generally permitted for personal use at Pokhran Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Pokhran Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Pokhran Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Pokhran Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Pokhran Fort?",
+                "answer": "Pokhran Fort is located in Pokhran, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Pokhran Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Pokhran Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9265,6 +11617,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Desert National Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Desert National Park?",
+                "answer": "Desert National Park is open from 9:00 AM to 5:30 PM. Desert National Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Desert National Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Desert National Park completely?",
+                "answer": "A thorough visit to Desert National Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Desert National Park?",
+                "answer": "Photography is generally permitted for personal use at Desert National Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Desert National Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Desert National Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Desert National Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Desert National Park?",
+                "answer": "Desert National Park is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Desert National Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Desert National Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9397,6 +11785,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bada Bagh?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bada Bagh?",
+                "answer": "Bada Bagh is open from 9:00 AM to 5:30 PM. Bada Bagh is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bada Bagh?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bada Bagh completely?",
+                "answer": "A thorough visit to Bada Bagh typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bada Bagh?",
+                "answer": "Photography is generally permitted for personal use at Bada Bagh. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bada Bagh accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bada Bagh?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bada Bagh. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bada Bagh?",
+                "answer": "Bada Bagh is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bada Bagh?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bada Bagh?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9529,6 +11953,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Tanot Mata Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Tanot Mata Temple?",
+                "answer": "Tanot Mata Temple is open from 9 AM to 5:30 PM. Tanot Mata Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Tanot Mata Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Tanot Mata Temple completely?",
+                "answer": "A thorough visit to Tanot Mata Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Tanot Mata Temple?",
+                "answer": "Photography is generally permitted for personal use at Tanot Mata Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Tanot Mata Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Tanot Mata Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Tanot Mata Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Tanot Mata Temple?",
+                "answer": "Tanot Mata Temple is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Tanot Mata Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Tanot Mata Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9661,6 +12121,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ana Sagar Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Ana Sagar Lake?",
+                "answer": "Ana Sagar Lake is open from 9:00 AM to 5:30 PM. Ana Sagar Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ana Sagar Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ana Sagar Lake completely?",
+                "answer": "A thorough visit to Ana Sagar Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ana Sagar Lake?",
+                "answer": "Photography is generally permitted for personal use at Ana Sagar Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ana Sagar Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ana Sagar Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ana Sagar Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ana Sagar Lake?",
+                "answer": "Ana Sagar Lake is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ana Sagar Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ana Sagar Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9794,6 +12290,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Balsamand Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Balsamand Lake?",
+                "answer": "Balsamand Lake is open from 9:00 AM to 5:30 PM. Balsamand Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Balsamand Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Balsamand Lake completely?",
+                "answer": "A thorough visit to Balsamand Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Balsamand Lake?",
+                "answer": "Photography is generally permitted for personal use at Balsamand Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Balsamand Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Balsamand Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Balsamand Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Balsamand Lake?",
+                "answer": "Balsamand Lake is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Balsamand Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Balsamand Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -9926,6 +12458,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Savitri Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Savitri Temple?",
+                "answer": "Savitri Temple is open from 9 AM to 5:30 PM. Savitri Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Savitri Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Savitri Temple completely?",
+                "answer": "A thorough visit to Savitri Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Savitri Temple?",
+                "answer": "Photography is generally permitted for personal use at Savitri Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Savitri Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Savitri Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Savitri Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Savitri Temple?",
+                "answer": "Savitri Temple is located in Pushkar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Savitri Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Savitri Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10058,6 +12626,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Akbar Palace and Museum?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Akbar Palace and Museum?",
+                "answer": "Akbar Palace and Museum is open from 9:00 AM to 5:30 PM. Akbar Palace and Museum is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Akbar Palace and Museum?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Akbar Palace and Museum completely?",
+                "answer": "A thorough visit to Akbar Palace and Museum typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Akbar Palace and Museum?",
+                "answer": "Photography is generally permitted for personal use at Akbar Palace and Museum. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Akbar Palace and Museum accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Akbar Palace and Museum?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Akbar Palace and Museum. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Akbar Palace and Museum?",
+                "answer": "Akbar Palace and Museum is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Akbar Palace and Museum?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Akbar Palace and Museum?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10190,6 +12794,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nasiyan Jain Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nasiyan Jain Temple?",
+                "answer": "Nasiyan Jain Temple is open from 9:00 AM to 5:30 PM. Nasiyan Jain Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nasiyan Jain Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nasiyan Jain Temple completely?",
+                "answer": "A thorough visit to Nasiyan Jain Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nasiyan Jain Temple?",
+                "answer": "Photography is generally permitted for personal use at Nasiyan Jain Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nasiyan Jain Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nasiyan Jain Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nasiyan Jain Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nasiyan Jain Temple?",
+                "answer": "Nasiyan Jain Temple is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nasiyan Jain Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nasiyan Jain Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10322,6 +12962,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nareli Jain Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nareli Jain Temple?",
+                "answer": "Nareli Jain Temple is open from 9:00 AM to 5:30 PM. Nareli Jain Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nareli Jain Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nareli Jain Temple completely?",
+                "answer": "A thorough visit to Nareli Jain Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nareli Jain Temple?",
+                "answer": "Photography is generally permitted for personal use at Nareli Jain Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nareli Jain Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nareli Jain Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nareli Jain Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nareli Jain Temple?",
+                "answer": "Nareli Jain Temple is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nareli Jain Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nareli Jain Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10455,6 +13131,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Adhai Din Ka Jhopra?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Adhai Din Ka Jhopra?",
+                "answer": "Adhai Din Ka Jhopra is open from 9:00 AM to 5:30 PM. Adhai Din Ka Jhopra is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Adhai Din Ka Jhopra?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Adhai Din Ka Jhopra completely?",
+                "answer": "A thorough visit to Adhai Din Ka Jhopra typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Adhai Din Ka Jhopra?",
+                "answer": "Photography is generally permitted for personal use at Adhai Din Ka Jhopra. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Adhai Din Ka Jhopra accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Adhai Din Ka Jhopra?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Adhai Din Ka Jhopra. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Adhai Din Ka Jhopra?",
+                "answer": "Adhai Din Ka Jhopra is located in Ajmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Adhai Din Ka Jhopra?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Adhai Din Ka Jhopra?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10587,6 +13299,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Salasar Balaji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Salasar Balaji Temple?",
+                "answer": "Salasar Balaji Temple is open from 9 AM to 5:30 PM. Salasar Balaji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Salasar Balaji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Salasar Balaji Temple completely?",
+                "answer": "A thorough visit to Salasar Balaji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Salasar Balaji Temple?",
+                "answer": "Photography is generally permitted for personal use at Salasar Balaji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Salasar Balaji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Salasar Balaji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Salasar Balaji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Salasar Balaji Temple?",
+                "answer": "Salasar Balaji Temple is located in Sikar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Salasar Balaji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Salasar Balaji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10719,6 +13467,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Siliserh Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Siliserh Lake?",
+                "answer": "Siliserh Lake is open from 9:00 AM to 5:30 PM. Siliserh Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Siliserh Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Siliserh Lake completely?",
+                "answer": "A thorough visit to Siliserh Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Siliserh Lake?",
+                "answer": "Photography is generally permitted for personal use at Siliserh Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Siliserh Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Siliserh Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Siliserh Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Siliserh Lake?",
+                "answer": "Siliserh Lake is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Siliserh Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Siliserh Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10851,6 +13635,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Gaib Sagar Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Gaib Sagar Lake?",
+                "answer": "Gaib Sagar Lake is open from 9:00 AM to 5:30 PM. Gaib Sagar Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Gaib Sagar Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Gaib Sagar Lake completely?",
+                "answer": "A thorough visit to Gaib Sagar Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Gaib Sagar Lake?",
+                "answer": "Photography is generally permitted for personal use at Gaib Sagar Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Gaib Sagar Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Gaib Sagar Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Gaib Sagar Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Gaib Sagar Lake?",
+                "answer": "Gaib Sagar Lake is located in Dungarpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Gaib Sagar Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Gaib Sagar Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -10984,6 +13804,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Beneshwar Dham?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Beneshwar Dham?",
+                "answer": "Beneshwar Dham is open from 9 AM to 5:30 PM. Beneshwar Dham is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Beneshwar Dham?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Beneshwar Dham completely?",
+                "answer": "A thorough visit to Beneshwar Dham typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Beneshwar Dham?",
+                "answer": "Photography is generally permitted for personal use at Beneshwar Dham. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Beneshwar Dham accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Beneshwar Dham?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Beneshwar Dham. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Beneshwar Dham?",
+                "answer": "Beneshwar Dham is located in Dungarpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Beneshwar Dham?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Beneshwar Dham?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11116,6 +13972,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Deo Somnath Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Deo Somnath Temple?",
+                "answer": "Deo Somnath Temple is open from 9 AM to 5:30 PM. Deo Somnath Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Deo Somnath Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Deo Somnath Temple completely?",
+                "answer": "A thorough visit to Deo Somnath Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Deo Somnath Temple?",
+                "answer": "Photography is generally permitted for personal use at Deo Somnath Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Deo Somnath Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Deo Somnath Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Deo Somnath Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Deo Somnath Temple?",
+                "answer": "Deo Somnath Temple is located in Dungarpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Deo Somnath Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Deo Somnath Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11248,6 +14140,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Menal Waterfall?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Menal Waterfall?",
+                "answer": "Menal Waterfall is open from 9:00 AM to 5:30 PM. Menal Waterfall is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Menal Waterfall?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Menal Waterfall completely?",
+                "answer": "A thorough visit to Menal Waterfall typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Menal Waterfall?",
+                "answer": "Photography is generally permitted for personal use at Menal Waterfall. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Menal Waterfall accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Menal Waterfall?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Menal Waterfall. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Menal Waterfall?",
+                "answer": "Menal Waterfall is located in Chittorgarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Menal Waterfall?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Menal Waterfall?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11381,6 +14309,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bhimlat Waterfall?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bhimlat Waterfall?",
+                "answer": "Bhimlat Waterfall is open from 9:00 AM to 5:30 PM. Bhimlat Waterfall is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bhimlat Waterfall?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bhimlat Waterfall completely?",
+                "answer": "A thorough visit to Bhimlat Waterfall typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bhimlat Waterfall?",
+                "answer": "Photography is generally permitted for personal use at Bhimlat Waterfall. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bhimlat Waterfall accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bhimlat Waterfall?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bhimlat Waterfall. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bhimlat Waterfall?",
+                "answer": "Bhimlat Waterfall is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bhimlat Waterfall?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bhimlat Waterfall?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11513,6 +14477,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Garadiya Mahadev?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Garadiya Mahadev?",
+                "answer": "Garadiya Mahadev is open from 9:00 AM to 5:30 PM. Garadiya Mahadev is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Garadiya Mahadev?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Garadiya Mahadev completely?",
+                "answer": "A thorough visit to Garadiya Mahadev typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Garadiya Mahadev?",
+                "answer": "Photography is generally permitted for personal use at Garadiya Mahadev. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Garadiya Mahadev accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Garadiya Mahadev?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Garadiya Mahadev. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Garadiya Mahadev?",
+                "answer": "Garadiya Mahadev is located in Kota, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Garadiya Mahadev?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Garadiya Mahadev?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11646,6 +14646,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Chuliya Waterfall?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Chuliya Waterfall?",
+                "answer": "Chuliya Waterfall is open from 9:00 AM to 5:30 PM. Chuliya Waterfall is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Chuliya Waterfall?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Chuliya Waterfall completely?",
+                "answer": "A thorough visit to Chuliya Waterfall typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Chuliya Waterfall?",
+                "answer": "Photography is generally permitted for personal use at Chuliya Waterfall. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Chuliya Waterfall accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Chuliya Waterfall?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Chuliya Waterfall. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Chuliya Waterfall?",
+                "answer": "Chuliya Waterfall is located in Rawatbhata, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Chuliya Waterfall?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Chuliya Waterfall?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11778,6 +14814,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mahi Bajaj Sagar Dam?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Mahi Bajaj Sagar Dam?",
+                "answer": "Mahi Bajaj Sagar Dam is open from 9:00 AM to 5:30 PM. Mahi Bajaj Sagar Dam is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mahi Bajaj Sagar Dam?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mahi Bajaj Sagar Dam completely?",
+                "answer": "A thorough visit to Mahi Bajaj Sagar Dam typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mahi Bajaj Sagar Dam?",
+                "answer": "Photography is generally permitted for personal use at Mahi Bajaj Sagar Dam. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mahi Bajaj Sagar Dam accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mahi Bajaj Sagar Dam?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mahi Bajaj Sagar Dam. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mahi Bajaj Sagar Dam?",
+                "answer": "Mahi Bajaj Sagar Dam is located in Banswara, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mahi Bajaj Sagar Dam?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mahi Bajaj Sagar Dam?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -11910,6 +14982,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kaylana Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kaylana Lake?",
+                "answer": "Kaylana Lake is open from 9:00 AM to 5:30 PM. Kaylana Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kaylana Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kaylana Lake completely?",
+                "answer": "A thorough visit to Kaylana Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kaylana Lake?",
+                "answer": "Photography is generally permitted for personal use at Kaylana Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kaylana Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kaylana Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kaylana Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kaylana Lake?",
+                "answer": "Kaylana Lake is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kaylana Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kaylana Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12042,6 +15150,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Machia Biological Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Machia Biological Park?",
+                "answer": "Machia Biological Park is open from 9:00 AM to 5:30 PM. Machia Biological Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Machia Biological Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Machia Biological Park completely?",
+                "answer": "A thorough visit to Machia Biological Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Machia Biological Park?",
+                "answer": "Photography is generally permitted for personal use at Machia Biological Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Machia Biological Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Machia Biological Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Machia Biological Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Machia Biological Park?",
+                "answer": "Machia Biological Park is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Machia Biological Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Machia Biological Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12174,6 +15318,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Machkund Dholpur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Machkund Dholpur?",
+                "answer": "Machkund Dholpur is open from 9 AM to 5:30 PM. Machkund Dholpur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Machkund Dholpur?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Machkund Dholpur completely?",
+                "answer": "A thorough visit to Machkund Dholpur typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Machkund Dholpur?",
+                "answer": "Photography is generally permitted for personal use at Machkund Dholpur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Machkund Dholpur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Machkund Dholpur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Machkund Dholpur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Machkund Dholpur?",
+                "answer": "Machkund Dholpur is located in Dholpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Machkund Dholpur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Machkund Dholpur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12306,6 +15486,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Lodurva Jain Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Lodurva Jain Temple?",
+                "answer": "Lodurva Jain Temple is open from 9 AM to 5:30 PM. Lodurva Jain Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Lodurva Jain Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Lodurva Jain Temple completely?",
+                "answer": "A thorough visit to Lodurva Jain Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Lodurva Jain Temple?",
+                "answer": "Photography is generally permitted for personal use at Lodurva Jain Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Lodurva Jain Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Lodurva Jain Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Lodurva Jain Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Lodurva Jain Temple?",
+                "answer": "Lodurva Jain Temple is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Lodurva Jain Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Lodurva Jain Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12438,6 +15654,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kiradu Temples?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kiradu Temples?",
+                "answer": "Kiradu Temples is open from 9:00 AM to 5:30 PM. Kiradu Temples is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kiradu Temples?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kiradu Temples completely?",
+                "answer": "A thorough visit to Kiradu Temples typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kiradu Temples?",
+                "answer": "Photography is generally permitted for personal use at Kiradu Temples. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kiradu Temples accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kiradu Temples?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kiradu Temples. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kiradu Temples?",
+                "answer": "Kiradu Temples is located in Barmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kiradu Temples?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kiradu Temples?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12570,6 +15822,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nakoda Jain Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nakoda Jain Temple?",
+                "answer": "Nakoda Jain Temple is open from 9 AM to 5:30 PM. Nakoda Jain Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nakoda Jain Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nakoda Jain Temple completely?",
+                "answer": "A thorough visit to Nakoda Jain Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nakoda Jain Temple?",
+                "answer": "Photography is generally permitted for personal use at Nakoda Jain Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nakoda Jain Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nakoda Jain Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nakoda Jain Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nakoda Jain Temple?",
+                "answer": "Nakoda Jain Temple is located in Barmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nakoda Jain Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nakoda Jain Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12702,6 +15990,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Govind Dev Ji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Govind Dev Ji Temple?",
+                "answer": "Govind Dev Ji Temple is open from 9 AM to 5:30 PM. Govind Dev Ji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Govind Dev Ji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Govind Dev Ji Temple completely?",
+                "answer": "A thorough visit to Govind Dev Ji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Govind Dev Ji Temple?",
+                "answer": "Photography is generally permitted for personal use at Govind Dev Ji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Govind Dev Ji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Govind Dev Ji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Govind Dev Ji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Govind Dev Ji Temple?",
+                "answer": "Govind Dev Ji Temple is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Govind Dev Ji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Govind Dev Ji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12834,6 +16158,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Khatu Shyam Ji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Khatu Shyam Ji Temple?",
+                "answer": "Khatu Shyam Ji Temple is open from 9 AM to 5:30 PM. Khatu Shyam Ji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Khatu Shyam Ji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Khatu Shyam Ji Temple completely?",
+                "answer": "A thorough visit to Khatu Shyam Ji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Khatu Shyam Ji Temple?",
+                "answer": "Photography is generally permitted for personal use at Khatu Shyam Ji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Khatu Shyam Ji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Khatu Shyam Ji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Khatu Shyam Ji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Khatu Shyam Ji Temple?",
+                "answer": "Khatu Shyam Ji Temple is located in Sikar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Khatu Shyam Ji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Khatu Shyam Ji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -12966,6 +16326,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kaila Devi Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kaila Devi Temple?",
+                "answer": "Kaila Devi Temple is open from 9 AM to 5:30 PM. Kaila Devi Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kaila Devi Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kaila Devi Temple completely?",
+                "answer": "A thorough visit to Kaila Devi Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kaila Devi Temple?",
+                "answer": "Photography is generally permitted for personal use at Kaila Devi Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kaila Devi Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kaila Devi Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kaila Devi Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kaila Devi Temple?",
+                "answer": "Kaila Devi Temple is located in Karauli, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kaila Devi Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kaila Devi Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13098,6 +16494,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mehandipur Balaji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Mehandipur Balaji Temple?",
+                "answer": "Mehandipur Balaji Temple is open from 9 AM to 5:30 PM. Mehandipur Balaji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mehandipur Balaji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mehandipur Balaji Temple completely?",
+                "answer": "A thorough visit to Mehandipur Balaji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mehandipur Balaji Temple?",
+                "answer": "Photography is generally permitted for personal use at Mehandipur Balaji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mehandipur Balaji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mehandipur Balaji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mehandipur Balaji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mehandipur Balaji Temple?",
+                "answer": "Mehandipur Balaji Temple is located in Dausa, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mehandipur Balaji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mehandipur Balaji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13230,6 +16662,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sukh Mahal Bundi?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sukh Mahal Bundi?",
+                "answer": "Sukh Mahal Bundi is open from 9:00 AM to 5:30 PM. Sukh Mahal Bundi is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sukh Mahal Bundi?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sukh Mahal Bundi completely?",
+                "answer": "A thorough visit to Sukh Mahal Bundi typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sukh Mahal Bundi?",
+                "answer": "Photography is generally permitted for personal use at Sukh Mahal Bundi. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sukh Mahal Bundi accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sukh Mahal Bundi?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sukh Mahal Bundi. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sukh Mahal Bundi?",
+                "answer": "Sukh Mahal Bundi is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sukh Mahal Bundi?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sukh Mahal Bundi?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13362,6 +16830,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Garh Palace Bundi?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Garh Palace Bundi?",
+                "answer": "Garh Palace Bundi is open from 9:00 AM to 5:30 PM. Garh Palace Bundi is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Garh Palace Bundi?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Garh Palace Bundi completely?",
+                "answer": "A thorough visit to Garh Palace Bundi typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Garh Palace Bundi?",
+                "answer": "Photography is generally permitted for personal use at Garh Palace Bundi. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Garh Palace Bundi accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Garh Palace Bundi?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Garh Palace Bundi. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Garh Palace Bundi?",
+                "answer": "Garh Palace Bundi is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Garh Palace Bundi?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Garh Palace Bundi?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13494,6 +16998,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Rani Ji Ki Baori?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Rani Ji Ki Baori?",
+                "answer": "Rani Ji Ki Baori is open from 9:00 AM to 5:30 PM. Rani Ji Ki Baori is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Rani Ji Ki Baori?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Rani Ji Ki Baori completely?",
+                "answer": "A thorough visit to Rani Ji Ki Baori typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Rani Ji Ki Baori?",
+                "answer": "Photography is generally permitted for personal use at Rani Ji Ki Baori. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Rani Ji Ki Baori accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Rani Ji Ki Baori?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Rani Ji Ki Baori. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Rani Ji Ki Baori?",
+                "answer": "Rani Ji Ki Baori is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Rani Ji Ki Baori?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Rani Ji Ki Baori?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13626,6 +17166,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Vijay Stambh Chittorgarh?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Vijay Stambh Chittorgarh?",
+                "answer": "Vijay Stambh Chittorgarh is open from 9 AM to 5:30 PM. Vijay Stambh Chittorgarh is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Vijay Stambh Chittorgarh?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Vijay Stambh Chittorgarh completely?",
+                "answer": "A thorough visit to Vijay Stambh Chittorgarh typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Vijay Stambh Chittorgarh?",
+                "answer": "Photography is generally permitted for personal use at Vijay Stambh Chittorgarh. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Vijay Stambh Chittorgarh accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Vijay Stambh Chittorgarh?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Vijay Stambh Chittorgarh. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Vijay Stambh Chittorgarh?",
+                "answer": "Vijay Stambh Chittorgarh is located in Chittorgarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Vijay Stambh Chittorgarh?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Vijay Stambh Chittorgarh?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13758,6 +17334,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kirti Stambh Chittorgarh?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kirti Stambh Chittorgarh?",
+                "answer": "Kirti Stambh Chittorgarh is open from 9 AM to 5:30 PM. Kirti Stambh Chittorgarh is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kirti Stambh Chittorgarh?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kirti Stambh Chittorgarh completely?",
+                "answer": "A thorough visit to Kirti Stambh Chittorgarh typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kirti Stambh Chittorgarh?",
+                "answer": "Photography is generally permitted for personal use at Kirti Stambh Chittorgarh. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kirti Stambh Chittorgarh accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kirti Stambh Chittorgarh?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kirti Stambh Chittorgarh. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kirti Stambh Chittorgarh?",
+                "answer": "Kirti Stambh Chittorgarh is located in Chittorgarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kirti Stambh Chittorgarh?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kirti Stambh Chittorgarh?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -13890,6 +17502,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jawai Bandh?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jawai Bandh?",
+                "answer": "Jawai Bandh is open from 9:00 AM to 5:30 PM. Jawai Bandh is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jawai Bandh?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jawai Bandh completely?",
+                "answer": "A thorough visit to Jawai Bandh typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jawai Bandh?",
+                "answer": "Photography is generally permitted for personal use at Jawai Bandh. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jawai Bandh accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jawai Bandh?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jawai Bandh. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jawai Bandh?",
+                "answer": "Jawai Bandh is located in Pali, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jawai Bandh?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jawai Bandh?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14022,6 +17670,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bahubali Hills Udaipur?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bahubali Hills Udaipur?",
+                "answer": "Bahubali Hills Udaipur is open from 9:00 AM to 5:30 PM. Bahubali Hills Udaipur is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bahubali Hills Udaipur?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bahubali Hills Udaipur completely?",
+                "answer": "A thorough visit to Bahubali Hills Udaipur typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bahubali Hills Udaipur?",
+                "answer": "Photography is generally permitted for personal use at Bahubali Hills Udaipur. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bahubali Hills Udaipur accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bahubali Hills Udaipur?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bahubali Hills Udaipur. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bahubali Hills Udaipur?",
+                "answer": "Bahubali Hills Udaipur is located in Udaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bahubali Hills Udaipur?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bahubali Hills Udaipur?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14154,6 +17838,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Om Banna Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Om Banna Temple?",
+                "answer": "Om Banna Temple is open from 9:00 AM to 5:30 PM. Om Banna Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Om Banna Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Om Banna Temple completely?",
+                "answer": "A thorough visit to Om Banna Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Om Banna Temple?",
+                "answer": "Photography is generally permitted for personal use at Om Banna Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Om Banna Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Om Banna Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Om Banna Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Om Banna Temple?",
+                "answer": "Om Banna Temple is located in Pali, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Om Banna Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Om Banna Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14287,6 +18007,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Longewala War Memorial?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Longewala War Memorial?",
+                "answer": "Longewala War Memorial is open from 9 AM to 5:30 PM. Longewala War Memorial is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Longewala War Memorial?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Longewala War Memorial completely?",
+                "answer": "A thorough visit to Longewala War Memorial typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Longewala War Memorial?",
+                "answer": "Photography is generally permitted for personal use at Longewala War Memorial. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Longewala War Memorial accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Longewala War Memorial?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Longewala War Memorial. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Longewala War Memorial?",
+                "answer": "Longewala War Memorial is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Longewala War Memorial?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Longewala War Memorial?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14420,6 +18176,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Khaba Fort Jaisalmer?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Khaba Fort Jaisalmer?",
+                "answer": "Khaba Fort Jaisalmer is open from 9 AM to 5:30 PM. Khaba Fort Jaisalmer is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Khaba Fort Jaisalmer?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Khaba Fort Jaisalmer completely?",
+                "answer": "A thorough visit to Khaba Fort Jaisalmer typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Khaba Fort Jaisalmer?",
+                "answer": "Photography is generally permitted for personal use at Khaba Fort Jaisalmer. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Khaba Fort Jaisalmer accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Khaba Fort Jaisalmer?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Khaba Fort Jaisalmer. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Khaba Fort Jaisalmer?",
+                "answer": "Khaba Fort Jaisalmer is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Khaba Fort Jaisalmer?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Khaba Fort Jaisalmer?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14552,6 +18344,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Tal Chhapar Sanctuary?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Tal Chhapar Sanctuary?",
+                "answer": "Tal Chhapar Sanctuary is open from 9:00 AM to 5:30 PM. Tal Chhapar Sanctuary is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Tal Chhapar Sanctuary?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Tal Chhapar Sanctuary completely?",
+                "answer": "A thorough visit to Tal Chhapar Sanctuary typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Tal Chhapar Sanctuary?",
+                "answer": "Photography is generally permitted for personal use at Tal Chhapar Sanctuary. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Tal Chhapar Sanctuary accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Tal Chhapar Sanctuary?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Tal Chhapar Sanctuary. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Tal Chhapar Sanctuary?",
+                "answer": "Tal Chhapar Sanctuary is located in Churu, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Tal Chhapar Sanctuary?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Tal Chhapar Sanctuary?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14684,6 +18512,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit National Chambal Sanctuary?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for National Chambal Sanctuary?",
+                "answer": "National Chambal Sanctuary is open from 9:00 AM to 5:30 PM. National Chambal Sanctuary is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at National Chambal Sanctuary?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore National Chambal Sanctuary completely?",
+                "answer": "A thorough visit to National Chambal Sanctuary typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at National Chambal Sanctuary?",
+                "answer": "Photography is generally permitted for personal use at National Chambal Sanctuary. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is National Chambal Sanctuary accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at National Chambal Sanctuary?",
+                "answer": "Certified government guides are usually available for hire at the entrance of National Chambal Sanctuary. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach National Chambal Sanctuary?",
+                "answer": "National Chambal Sanctuary is located in Kota, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near National Chambal Sanctuary?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at National Chambal Sanctuary?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14816,6 +18680,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ramdevra Temple Jaisalmer?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Ramdevra Temple Jaisalmer?",
+                "answer": "Ramdevra Temple Jaisalmer is open from 9 AM to 5 PM. Ramdevra Temple Jaisalmer is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ramdevra Temple Jaisalmer?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ramdevra Temple Jaisalmer completely?",
+                "answer": "A thorough visit to Ramdevra Temple Jaisalmer typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ramdevra Temple Jaisalmer?",
+                "answer": "Photography is generally permitted for personal use at Ramdevra Temple Jaisalmer. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ramdevra Temple Jaisalmer accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ramdevra Temple Jaisalmer?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ramdevra Temple Jaisalmer. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ramdevra Temple Jaisalmer?",
+                "answer": "Ramdevra Temple Jaisalmer is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ramdevra Temple Jaisalmer?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ramdevra Temple Jaisalmer?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -14948,6 +18848,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mangarh Dham Banswara?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Mangarh Dham Banswara?",
+                "answer": "Mangarh Dham Banswara is open from 9 AM to 5:30 PM. Mangarh Dham Banswara is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mangarh Dham Banswara?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mangarh Dham Banswara completely?",
+                "answer": "A thorough visit to Mangarh Dham Banswara typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mangarh Dham Banswara?",
+                "answer": "Photography is generally permitted for personal use at Mangarh Dham Banswara. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mangarh Dham Banswara accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mangarh Dham Banswara?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mangarh Dham Banswara. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mangarh Dham Banswara?",
+                "answer": "Mangarh Dham Banswara is located in Banswara, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mangarh Dham Banswara?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mangarh Dham Banswara?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15080,6 +19016,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sariska Palace Alwar?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sariska Palace Alwar?",
+                "answer": "Sariska Palace Alwar is open from 9:00 AM to 5:30 PM. Sariska Palace Alwar is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sariska Palace Alwar?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sariska Palace Alwar completely?",
+                "answer": "A thorough visit to Sariska Palace Alwar typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sariska Palace Alwar?",
+                "answer": "Photography is generally permitted for personal use at Sariska Palace Alwar. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sariska Palace Alwar accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sariska Palace Alwar?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sariska Palace Alwar. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sariska Palace Alwar?",
+                "answer": "Sariska Palace Alwar is located in Alwar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sariska Palace Alwar?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sariska Palace Alwar?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15212,6 +19184,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mandore Gardens?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Mandore Gardens?",
+                "answer": "Mandore Gardens is open from 9:00 AM to 5:30 PM. Mandore Gardens is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mandore Gardens?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mandore Gardens completely?",
+                "answer": "A thorough visit to Mandore Gardens typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mandore Gardens?",
+                "answer": "Photography is generally permitted for personal use at Mandore Gardens. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mandore Gardens accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mandore Gardens?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mandore Gardens. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mandore Gardens?",
+                "answer": "Mandore Gardens is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mandore Gardens?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mandore Gardens?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15344,6 +19352,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Rao Jodha Desert Rock Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Rao Jodha Desert Rock Park?",
+                "answer": "Rao Jodha Desert Rock Park is open from 9:00 AM to 5:30 PM. Rao Jodha Desert Rock Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Rao Jodha Desert Rock Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Rao Jodha Desert Rock Park completely?",
+                "answer": "A thorough visit to Rao Jodha Desert Rock Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Rao Jodha Desert Rock Park?",
+                "answer": "Photography is generally permitted for personal use at Rao Jodha Desert Rock Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Rao Jodha Desert Rock Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Rao Jodha Desert Rock Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Rao Jodha Desert Rock Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Rao Jodha Desert Rock Park?",
+                "answer": "Rao Jodha Desert Rock Park is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Rao Jodha Desert Rock Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Rao Jodha Desert Rock Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15476,6 +19520,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Balsamand Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Balsamand Palace?",
+                "answer": "Balsamand Palace is open from 9:00 AM to 5:30 PM. Balsamand Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Balsamand Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Balsamand Palace completely?",
+                "answer": "A thorough visit to Balsamand Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Balsamand Palace?",
+                "answer": "Photography is generally permitted for personal use at Balsamand Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Balsamand Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Balsamand Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Balsamand Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Balsamand Palace?",
+                "answer": "Balsamand Palace is located in Jodhpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Balsamand Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Balsamand Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15608,6 +19688,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Juna Mahal?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Juna Mahal?",
+                "answer": "Juna Mahal is open from 9:00 AM to 5:30 PM. Juna Mahal is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Juna Mahal?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Juna Mahal completely?",
+                "answer": "A thorough visit to Juna Mahal typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Juna Mahal?",
+                "answer": "Photography is generally permitted for personal use at Juna Mahal. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Juna Mahal accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Juna Mahal?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Juna Mahal. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Juna Mahal?",
+                "answer": "Juna Mahal is located in Dungarpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Juna Mahal?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Juna Mahal?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15740,6 +19856,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Udai Bilas Palace?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Udai Bilas Palace?",
+                "answer": "Udai Bilas Palace is open from 9 AM to 5:30 PM. Udai Bilas Palace is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Udai Bilas Palace?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Udai Bilas Palace completely?",
+                "answer": "A thorough visit to Udai Bilas Palace typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Udai Bilas Palace?",
+                "answer": "Photography is generally permitted for personal use at Udai Bilas Palace. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Udai Bilas Palace accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Udai Bilas Palace?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Udai Bilas Palace. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Udai Bilas Palace?",
+                "answer": "Udai Bilas Palace is located in Dungarpur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Udai Bilas Palace?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Udai Bilas Palace?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -15872,6 +20024,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Tripura Sundari Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Tripura Sundari Temple?",
+                "answer": "Tripura Sundari Temple is open from 9 AM to 5:30 PM. Tripura Sundari Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Tripura Sundari Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Tripura Sundari Temple completely?",
+                "answer": "A thorough visit to Tripura Sundari Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Tripura Sundari Temple?",
+                "answer": "Photography is generally permitted for personal use at Tripura Sundari Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Tripura Sundari Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Tripura Sundari Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Tripura Sundari Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Tripura Sundari Temple?",
+                "answer": "Tripura Sundari Temple is located in Banswara, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Tripura Sundari Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Tripura Sundari Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16004,6 +20192,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Arthuna Temples?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Arthuna Temples?",
+                "answer": "Arthuna Temples is open from 9 AM to 5:30 PM. Arthuna Temples is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Arthuna Temples?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Arthuna Temples completely?",
+                "answer": "A thorough visit to Arthuna Temples typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Arthuna Temples?",
+                "answer": "Photography is generally permitted for personal use at Arthuna Temples. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Arthuna Temples accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Arthuna Temples?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Arthuna Temples. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Arthuna Temples?",
+                "answer": "Arthuna Temples is located in Banswara, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Arthuna Temples?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Arthuna Temples?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16137,6 +20361,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Amar Sagar Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Amar Sagar Lake?",
+                "answer": "Amar Sagar Lake is open from 9:00 AM to 5:30 PM. Amar Sagar Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Amar Sagar Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Amar Sagar Lake completely?",
+                "answer": "A thorough visit to Amar Sagar Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Amar Sagar Lake?",
+                "answer": "Photography is generally permitted for personal use at Amar Sagar Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Amar Sagar Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Amar Sagar Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Amar Sagar Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Amar Sagar Lake?",
+                "answer": "Amar Sagar Lake is located in Jaisalmer, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Amar Sagar Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Amar Sagar Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16269,6 +20529,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Gajner Wildlife Sanctuary?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Gajner Wildlife Sanctuary?",
+                "answer": "Gajner Wildlife Sanctuary is open from 9:00 AM to 5:30 PM. Gajner Wildlife Sanctuary is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Gajner Wildlife Sanctuary?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Gajner Wildlife Sanctuary completely?",
+                "answer": "A thorough visit to Gajner Wildlife Sanctuary typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Gajner Wildlife Sanctuary?",
+                "answer": "Photography is generally permitted for personal use at Gajner Wildlife Sanctuary. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Gajner Wildlife Sanctuary accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Gajner Wildlife Sanctuary?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Gajner Wildlife Sanctuary. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Gajner Wildlife Sanctuary?",
+                "answer": "Gajner Wildlife Sanctuary is located in Bikaner, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Gajner Wildlife Sanctuary?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Gajner Wildlife Sanctuary?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16402,6 +20698,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kolayat Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kolayat Lake?",
+                "answer": "Kolayat Lake is open from 9:00 AM to 5:30 PM. Kolayat Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kolayat Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kolayat Lake completely?",
+                "answer": "A thorough visit to Kolayat Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kolayat Lake?",
+                "answer": "Photography is generally permitted for personal use at Kolayat Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kolayat Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kolayat Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kolayat Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kolayat Lake?",
+                "answer": "Kolayat Lake is located in Bikaner, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kolayat Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kolayat Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16534,6 +20866,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Jeen Mata Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Jeen Mata Temple?",
+                "answer": "Jeen Mata Temple is open from 9:00 AM to 5:30 PM. Jeen Mata Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Jeen Mata Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Jeen Mata Temple completely?",
+                "answer": "A thorough visit to Jeen Mata Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Jeen Mata Temple?",
+                "answer": "Photography is generally permitted for personal use at Jeen Mata Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Jeen Mata Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Jeen Mata Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Jeen Mata Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Jeen Mata Temple?",
+                "answer": "Jeen Mata Temple is located in Sikar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Jeen Mata Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Jeen Mata Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16666,6 +21034,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Harshnath Temple Sikar?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Harshnath Temple Sikar?",
+                "answer": "Harshnath Temple Sikar is open from 9 AM to 5:30 PM. Harshnath Temple Sikar is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Harshnath Temple Sikar?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Harshnath Temple Sikar completely?",
+                "answer": "A thorough visit to Harshnath Temple Sikar typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Harshnath Temple Sikar?",
+                "answer": "Photography is generally permitted for personal use at Harshnath Temple Sikar. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Harshnath Temple Sikar accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Harshnath Temple Sikar?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Harshnath Temple Sikar. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Harshnath Temple Sikar?",
+                "answer": "Harshnath Temple Sikar is located in Sikar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Harshnath Temple Sikar?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Harshnath Temple Sikar?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16799,6 +21203,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Devyani Kund?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Devyani Kund?",
+                "answer": "Devyani Kund is open from 9:00 AM to 5:30 PM. Devyani Kund is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Devyani Kund?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Devyani Kund completely?",
+                "answer": "A thorough visit to Devyani Kund typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Devyani Kund?",
+                "answer": "Photography is generally permitted for personal use at Devyani Kund. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Devyani Kund accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Devyani Kund?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Devyani Kund. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Devyani Kund?",
+                "answer": "Devyani Kund is located in Sambhar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Devyani Kund?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Devyani Kund?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -16932,6 +21372,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Chandlai Lake?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Chandlai Lake?",
+                "answer": "Chandlai Lake is open from 9:00 AM to 5:30 PM. Chandlai Lake is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Chandlai Lake?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Chandlai Lake completely?",
+                "answer": "A thorough visit to Chandlai Lake typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Chandlai Lake?",
+                "answer": "Photography is generally permitted for personal use at Chandlai Lake. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Chandlai Lake accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Chandlai Lake?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Chandlai Lake. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Chandlai Lake?",
+                "answer": "Chandlai Lake is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Chandlai Lake?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Chandlai Lake?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17064,6 +21540,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Galta Ji Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Galta Ji Temple?",
+                "answer": "Galta Ji Temple is open from 9:00 AM to 5:30 PM. Galta Ji Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Galta Ji Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Galta Ji Temple completely?",
+                "answer": "A thorough visit to Galta Ji Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Galta Ji Temple?",
+                "answer": "Photography is generally permitted for personal use at Galta Ji Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Galta Ji Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Galta Ji Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Galta Ji Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Galta Ji Temple?",
+                "answer": "Galta Ji Temple is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Galta Ji Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Galta Ji Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17197,6 +21709,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Gatore Ki Chhatriyan?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Gatore Ki Chhatriyan?",
+                "answer": "Gatore Ki Chhatriyan is open from 9:00 AM to 5:30 PM. Gatore Ki Chhatriyan is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Gatore Ki Chhatriyan?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Gatore Ki Chhatriyan completely?",
+                "answer": "A thorough visit to Gatore Ki Chhatriyan typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Gatore Ki Chhatriyan?",
+                "answer": "Photography is generally permitted for personal use at Gatore Ki Chhatriyan. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Gatore Ki Chhatriyan accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Gatore Ki Chhatriyan?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Gatore Ki Chhatriyan. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Gatore Ki Chhatriyan?",
+                "answer": "Gatore Ki Chhatriyan is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Gatore Ki Chhatriyan?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Gatore Ki Chhatriyan?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17329,6 +21877,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kanak Vrindavan Garden?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kanak Vrindavan Garden?",
+                "answer": "Kanak Vrindavan Garden is open from 9:00 AM to 5:30 PM. Kanak Vrindavan Garden is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kanak Vrindavan Garden?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kanak Vrindavan Garden completely?",
+                "answer": "A thorough visit to Kanak Vrindavan Garden typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kanak Vrindavan Garden?",
+                "answer": "Photography is generally permitted for personal use at Kanak Vrindavan Garden. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kanak Vrindavan Garden accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kanak Vrindavan Garden?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kanak Vrindavan Garden. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kanak Vrindavan Garden?",
+                "answer": "Kanak Vrindavan Garden is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kanak Vrindavan Garden?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kanak Vrindavan Garden?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17461,6 +22045,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Nahargarh Biological Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Nahargarh Biological Park?",
+                "answer": "Nahargarh Biological Park is open from 9:00 AM to 5:30 PM. Nahargarh Biological Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Nahargarh Biological Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Nahargarh Biological Park completely?",
+                "answer": "A thorough visit to Nahargarh Biological Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Nahargarh Biological Park?",
+                "answer": "Photography is generally permitted for personal use at Nahargarh Biological Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Nahargarh Biological Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Nahargarh Biological Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Nahargarh Biological Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Nahargarh Biological Park?",
+                "answer": "Nahargarh Biological Park is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Nahargarh Biological Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Nahargarh Biological Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17593,6 +22213,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Patrika Gate?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Patrika Gate?",
+                "answer": "Patrika Gate is open from 9:00 AM to 5:30 PM. Patrika Gate is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Patrika Gate?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Patrika Gate completely?",
+                "answer": "A thorough visit to Patrika Gate typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Patrika Gate?",
+                "answer": "Photography is generally permitted for personal use at Patrika Gate. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Patrika Gate accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Patrika Gate?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Patrika Gate. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Patrika Gate?",
+                "answer": "Patrika Gate is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Patrika Gate?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Patrika Gate?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17725,6 +22381,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Khole Ke Hanuman Ji?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Khole Ke Hanuman Ji?",
+                "answer": "Khole Ke Hanuman Ji is open from 9 AM to 5:30 PM. Khole Ke Hanuman Ji is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Khole Ke Hanuman Ji?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Khole Ke Hanuman Ji completely?",
+                "answer": "A thorough visit to Khole Ke Hanuman Ji typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Khole Ke Hanuman Ji?",
+                "answer": "Photography is generally permitted for personal use at Khole Ke Hanuman Ji. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Khole Ke Hanuman Ji accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Khole Ke Hanuman Ji?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Khole Ke Hanuman Ji. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Khole Ke Hanuman Ji?",
+                "answer": "Khole Ke Hanuman Ji is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Khole Ke Hanuman Ji?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Khole Ke Hanuman Ji?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17857,6 +22549,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Moti Dungri Ganesh Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Moti Dungri Ganesh Temple?",
+                "answer": "Moti Dungri Ganesh Temple is open from 9 AM to 5:30 PM. Moti Dungri Ganesh Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Moti Dungri Ganesh Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Moti Dungri Ganesh Temple completely?",
+                "answer": "A thorough visit to Moti Dungri Ganesh Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Moti Dungri Ganesh Temple?",
+                "answer": "Photography is generally permitted for personal use at Moti Dungri Ganesh Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Moti Dungri Ganesh Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Moti Dungri Ganesh Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Moti Dungri Ganesh Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Moti Dungri Ganesh Temple?",
+                "answer": "Moti Dungri Ganesh Temple is located in Jaipur, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Moti Dungri Ganesh Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Moti Dungri Ganesh Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -17990,6 +22718,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Charbhuja Temple Rajsamand?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Charbhuja Temple Rajsamand?",
+                "answer": "Charbhuja Temple Rajsamand is open from 9 AM to 5 PM. Charbhuja Temple Rajsamand is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Charbhuja Temple Rajsamand?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Charbhuja Temple Rajsamand completely?",
+                "answer": "A thorough visit to Charbhuja Temple Rajsamand typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Charbhuja Temple Rajsamand?",
+                "answer": "Photography is generally permitted for personal use at Charbhuja Temple Rajsamand. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Charbhuja Temple Rajsamand accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Charbhuja Temple Rajsamand?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Charbhuja Temple Rajsamand. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Charbhuja Temple Rajsamand?",
+                "answer": "Charbhuja Temple Rajsamand is located in Rajsamand, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Charbhuja Temple Rajsamand?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Charbhuja Temple Rajsamand?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18122,6 +22886,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Parshuram Mahadev Cave Temple?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Parshuram Mahadev Cave Temple?",
+                "answer": "Parshuram Mahadev Cave Temple is open from 9 AM to 5:30 PM. Parshuram Mahadev Cave Temple is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Parshuram Mahadev Cave Temple?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Parshuram Mahadev Cave Temple completely?",
+                "answer": "A thorough visit to Parshuram Mahadev Cave Temple typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Parshuram Mahadev Cave Temple?",
+                "answer": "Photography is generally permitted for personal use at Parshuram Mahadev Cave Temple. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Parshuram Mahadev Cave Temple accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Parshuram Mahadev Cave Temple?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Parshuram Mahadev Cave Temple. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Parshuram Mahadev Cave Temple?",
+                "answer": "Parshuram Mahadev Cave Temple is located in Pali, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Parshuram Mahadev Cave Temple?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Parshuram Mahadev Cave Temple?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18254,6 +23054,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Timangarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Timangarh Fort?",
+                "answer": "Timangarh Fort is open from 9:00 AM to 5:30 PM. Timangarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Timangarh Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Timangarh Fort completely?",
+                "answer": "A thorough visit to Timangarh Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Timangarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Timangarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Timangarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Timangarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Timangarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Timangarh Fort?",
+                "answer": "Timangarh Fort is located in Karauli, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Timangarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Timangarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18386,6 +23222,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bundi Palace Complex?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bundi Palace Complex?",
+                "answer": "Bundi Palace Complex is open from 9:00 AM to 5:30 PM. Bundi Palace Complex is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bundi Palace Complex?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bundi Palace Complex completely?",
+                "answer": "A thorough visit to Bundi Palace Complex typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bundi Palace Complex?",
+                "answer": "Photography is generally permitted for personal use at Bundi Palace Complex. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bundi Palace Complex accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bundi Palace Complex?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bundi Palace Complex. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bundi Palace Complex?",
+                "answer": "Bundi Palace Complex is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bundi Palace Complex?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bundi Palace Complex?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18518,6 +23390,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit 84 Pillared Cenotaph?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for 84 Pillared Cenotaph?",
+                "answer": "84 Pillared Cenotaph is open from 9:00 AM to 5:30 PM. 84 Pillared Cenotaph is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at 84 Pillared Cenotaph?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore 84 Pillared Cenotaph completely?",
+                "answer": "A thorough visit to 84 Pillared Cenotaph typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at 84 Pillared Cenotaph?",
+                "answer": "Photography is generally permitted for personal use at 84 Pillared Cenotaph. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is 84 Pillared Cenotaph accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at 84 Pillared Cenotaph?",
+                "answer": "Certified government guides are usually available for hire at the entrance of 84 Pillared Cenotaph. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach 84 Pillared Cenotaph?",
+                "answer": "84 Pillared Cenotaph is located in Bundi, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near 84 Pillared Cenotaph?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at 84 Pillared Cenotaph?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18650,6 +23558,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bijolia Temples?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bijolia Temples?",
+                "answer": "Bijolia Temples is open from 9 AM to 5:30 PM. Bijolia Temples is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bijolia Temples?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bijolia Temples completely?",
+                "answer": "A thorough visit to Bijolia Temples typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bijolia Temples?",
+                "answer": "Photography is generally permitted for personal use at Bijolia Temples. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bijolia Temples accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bijolia Temples?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bijolia Temples. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bijolia Temples?",
+                "answer": "Bijolia Temples is located in Bijolia, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bijolia Temples?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bijolia Temples?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18783,6 +23727,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Badnor Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Badnor Fort?",
+                "answer": "Badnor Fort is open from 9:00 AM to 5:30 PM. Badnor Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Badnor Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Badnor Fort completely?",
+                "answer": "A thorough visit to Badnor Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Badnor Fort?",
+                "answer": "Photography is generally permitted for personal use at Badnor Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Badnor Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Badnor Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Badnor Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Badnor Fort?",
+                "answer": "Badnor Fort is located in Bhilwara, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Badnor Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Badnor Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -18915,6 +23895,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Seven Wonders Park Kota?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Seven Wonders Park Kota?",
+                "answer": "Seven Wonders Park Kota is open from 9:00 AM to 5:30 PM. Seven Wonders Park Kota is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Seven Wonders Park Kota?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Seven Wonders Park Kota completely?",
+                "answer": "A thorough visit to Seven Wonders Park Kota typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Seven Wonders Park Kota?",
+                "answer": "Photography is generally permitted for personal use at Seven Wonders Park Kota. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Seven Wonders Park Kota accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Seven Wonders Park Kota?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Seven Wonders Park Kota. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Seven Wonders Park Kota?",
+                "answer": "Seven Wonders Park Kota is located in Kota, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Seven Wonders Park Kota?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Seven Wonders Park Kota?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19047,6 +24063,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Mukundra Hills National Park?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Mukundra Hills National Park?",
+                "answer": "Mukundra Hills National Park is open from 9:00 AM to 5:30 PM. Mukundra Hills National Park is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Mukundra Hills National Park?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Mukundra Hills National Park completely?",
+                "answer": "A thorough visit to Mukundra Hills National Park typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Mukundra Hills National Park?",
+                "answer": "Photography is generally permitted for personal use at Mukundra Hills National Park. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Mukundra Hills National Park accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Mukundra Hills National Park?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Mukundra Hills National Park. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Mukundra Hills National Park?",
+                "answer": "Mukundra Hills National Park is located in Kota, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Mukundra Hills National Park?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Mukundra Hills National Park?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19179,6 +24231,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Bhainsrorgarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Bhainsrorgarh Fort?",
+                "answer": "Bhainsrorgarh Fort is open from 9 AM to 5:30 PM. Bhainsrorgarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Bhainsrorgarh Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Bhainsrorgarh Fort completely?",
+                "answer": "A thorough visit to Bhainsrorgarh Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Bhainsrorgarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Bhainsrorgarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Bhainsrorgarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Bhainsrorgarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Bhainsrorgarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Bhainsrorgarh Fort?",
+                "answer": "Bhainsrorgarh Fort is located in Chittorgarh, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Bhainsrorgarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Bhainsrorgarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19311,6 +24399,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Gagron Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Gagron Fort?",
+                "answer": "Gagron Fort is open from 9:00 AM to 5:30 PM. Gagron Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Gagron Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Gagron Fort completely?",
+                "answer": "A thorough visit to Gagron Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Gagron Fort?",
+                "answer": "Photography is generally permitted for personal use at Gagron Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Gagron Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Gagron Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Gagron Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Gagron Fort?",
+                "answer": "Gagron Fort is located in Jhalawar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Gagron Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Gagron Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19443,6 +24567,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Kolvi Caves?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Kolvi Caves?",
+                "answer": "Kolvi Caves is open from 9:00 AM to 5:30 PM. Kolvi Caves is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Kolvi Caves?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Kolvi Caves completely?",
+                "answer": "A thorough visit to Kolvi Caves typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Kolvi Caves?",
+                "answer": "Photography is generally permitted for personal use at Kolvi Caves. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Kolvi Caves accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Kolvi Caves?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Kolvi Caves. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Kolvi Caves?",
+                "answer": "Kolvi Caves is located in Jhalawar, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Kolvi Caves?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Kolvi Caves?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19575,6 +24735,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Sitabari?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Sitabari?",
+                "answer": "Sitabari is open from 9:00 AM to 5:30 PM. Sitabari is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Sitabari?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Sitabari completely?",
+                "answer": "A thorough visit to Sitabari typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Sitabari?",
+                "answer": "Photography is generally permitted for personal use at Sitabari. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Sitabari accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Sitabari?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Sitabari. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Sitabari?",
+                "answer": "Sitabari is located in Baran, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Sitabari?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Sitabari?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19707,6 +24903,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Ramgarh Crater?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Ramgarh Crater?",
+                "answer": "Ramgarh Crater is open from 9:00 AM to 5:30 PM. Ramgarh Crater is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Ramgarh Crater?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Ramgarh Crater completely?",
+                "answer": "A thorough visit to Ramgarh Crater typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Ramgarh Crater?",
+                "answer": "Photography is generally permitted for personal use at Ramgarh Crater. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Ramgarh Crater accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Ramgarh Crater?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Ramgarh Crater. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Ramgarh Crater?",
+                "answer": "Ramgarh Crater is located in Baran, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Ramgarh Crater?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Ramgarh Crater?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19839,6 +25071,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Guru Shikhar Peak?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Guru Shikhar Peak?",
+                "answer": "Guru Shikhar Peak is open from 9:00 AM to 5:30 PM. Guru Shikhar Peak is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Guru Shikhar Peak?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Guru Shikhar Peak completely?",
+                "answer": "A thorough visit to Guru Shikhar Peak typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Guru Shikhar Peak?",
+                "answer": "Photography is generally permitted for personal use at Guru Shikhar Peak. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Guru Shikhar Peak accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Guru Shikhar Peak?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Guru Shikhar Peak. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Guru Shikhar Peak?",
+                "answer": "Guru Shikhar Peak is located in Mount Abu, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Guru Shikhar Peak?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Guru Shikhar Peak?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -19971,6 +25239,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Achalgarh Fort?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Achalgarh Fort?",
+                "answer": "Achalgarh Fort is open from 9:00 AM to 5:30 PM. Achalgarh Fort is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Achalgarh Fort?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Achalgarh Fort completely?",
+                "answer": "A thorough visit to Achalgarh Fort typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Achalgarh Fort?",
+                "answer": "Photography is generally permitted for personal use at Achalgarh Fort. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Achalgarh Fort accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Achalgarh Fort?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Achalgarh Fort. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Achalgarh Fort?",
+                "answer": "Achalgarh Fort is located in Mount Abu, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Achalgarh Fort?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Achalgarh Fort?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
@@ -20103,6 +25407,42 @@ export const PLACES: Place[] = [
             {
                 "question": "What is the best season to visit Trevor's Tank?",
                 "answer": "The best season to visit is during the Winter months (October - March) when the weather is Pleasant."
+            },
+            {
+                "question": "What are the visiting hours for Trevor's Tank?",
+                "answer": "Trevor's Tank is open from 9:00 AM to 5:30 PM. Trevor's Tank is open all days of the week. It is advisable to visit early in the morning to avoid crowds and afternoon heat."
+            },
+            {
+                "question": "What is the entry fee at Trevor's Tank?",
+                "answer": "The entry ticket for Indian nationals is ₹50 and for foreign tourists it is ₹200. Children below a certain age are often admitted free of charge. Camera and video charges may apply separately."
+            },
+            {
+                "question": "How long does it take to explore Trevor's Tank completely?",
+                "answer": "A thorough visit to Trevor's Tank typically takes around 1.5 Hours. If you are interested in the history and want to explore every section carefully, consider allocating an additional hour."
+            },
+            {
+                "question": "Is photography allowed at Trevor's Tank?",
+                "answer": "Photography is generally permitted for personal use at Trevor's Tank. However, professional photography, videography, and drone flights may require special permission and an additional fee. Always check at the entrance."
+            },
+            {
+                "question": "Is Trevor's Tank accessible for people with disabilities?",
+                "answer": "Many heritage monuments in Rajasthan have limited accessibility for people with physical disabilities due to their ancient construction. Ramps and elevators may not be available at all sections. Contact the monument administration in advance for specific assistance."
+            },
+            {
+                "question": "Is there a guided tour available at Trevor's Tank?",
+                "answer": "Certified government guides are usually available for hire at the entrance of Trevor's Tank. Audio guides may also be available at major tourist sites. A knowledgeable guide significantly enriches the experience."
+            },
+            {
+                "question": "How do I reach Trevor's Tank?",
+                "answer": "Trevor's Tank is located in Mount Abu, Rajasthan. It is accessible by auto-rickshaw, taxi, or cab-hailing apps like Ola and Uber. The nearest railway station and bus stand will have regular local transport connections to the site."
+            },
+            {
+                "question": "Is parking available near Trevor's Tank?",
+                "answer": "A designated parking area is usually available near major tourist attractions in Rajasthan. The parking fee is nominal. It is advisable to arrive early to secure a parking spot, especially during peak season and weekends."
+            },
+            {
+                "question": "Are there food and water facilities available at Trevor's Tank?",
+                "answer": "Small canteens, tea stalls, or government-approved food courts are available near or inside most major monuments. However, it is always recommended to carry your own water bottle, especially during summer months."
             }
         ],
         "keywords": [
