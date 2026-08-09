@@ -178,13 +178,14 @@ export function Footer() {
 
             {/* Bottom Bar */}
             <div className="relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                    <p className="text-gray-400 text-sm flex items-center gap-1.5">
-                        © {new Date().getFullYear()} Rajasthan Tourism Places. Made with{" "}
-                        <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> in
-                        Rajasthan
+                <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+                    <p className="text-gray-400 text-[10px] flex flex-wrap justify-center md:justify-start items-center gap-1.5">
+                        © {new Date().getFullYear()} Rajasthan Tourism Places.
+                        <span className="flex items-center gap-1.5">
+                            Made with <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> in Rajasthan
+                        </span>
                     </p>
-                    <div className="flex gap-6">
+                    <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
                         {[
                             { name: "Privacy Policy", href: "/privacy-policy" },
                             { name: "Terms of Service", href: "/terms-of-service" },
@@ -193,7 +194,7 @@ export function Footer() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-gray-500 hover:text-gold-400 text-sm transition-colors duration-300"
+                                className="text-gray-500 hover:text-gold-400 text-[10px] transition-colors duration-300 whitespace-nowrap"
                             >
                                 {item.name}
                             </Link>

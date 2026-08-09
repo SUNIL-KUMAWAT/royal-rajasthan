@@ -102,7 +102,7 @@ export function FeaturedPlaces() {
                 </motion.div>
 
                 {/* Filters */}
-                <div className="relative flex flex-wrap gap-2 md:gap-3 justify-center mb-6 md:mb-12">
+                <div className="relative flex flex-wrap gap-1 md:gap-3 justify-center mb-6 md:mb-12">
                     {currentCategories.map((cat, i) => {
                         const isActive = activeFilter === cat;
                         return (

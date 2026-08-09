@@ -109,7 +109,7 @@ export function HeroSection() {
     }, [currentSlides.length]);
 
     return (
-        <section className="relative h-[600px] md:h-screen min-h-[600px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+        <section className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
 
 
             {/* Blurred background — crossfades between slides */}
@@ -132,7 +132,7 @@ export function HeroSection() {
             </AnimatePresence>
             <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60" />
 
-            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-center pt-36 pb-24 md:pt-0 md:pb-0 gap-8 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
+            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-start md:justify-center pt-48 pb-48 md:pt-0 md:pb-0 gap-6 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
                 {/* LEFT: single framed image — crossfades between slides */}
                 <div className="relative hidden shrink-0 xl:block">
                     <AnimatePresence mode="wait">
@@ -156,14 +156,14 @@ export function HeroSection() {
                 </div>
 
                 {/* CENTER: text + CTAs */}
-                <div className="max-w-md lg:max-w-lg text-center md:text-left z-20 flex flex-col justify-center">
+                <div className="max-w-md mt-[-50px] lg:max-w-lg text-center md:text-left z-20 flex flex-col justify-center">
                     <AnimatePresence mode="wait">
                         <motion.span
                             key={`tag-${current}`}
                             initial={{ opacity: 0, y: -20 }}
                             animate={{ opacity: 1, y: 0 }}
                             exit={{ opacity: 0, y: 20 }}
-                            className="mb-4 md:mb-6 mx-auto md:mx-0 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-xs sm:text-sm md:text-md lg:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
+                            className=" w-fit  mb-4 md:mb-6 mx-auto md:mx-0 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-xs sm:text-sm md:text-md lg:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
                         >
                             {slide.subtitle}
                         </motion.span>
