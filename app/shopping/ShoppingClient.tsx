@@ -5,7 +5,7 @@ import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
     ShoppingBag, Tag, X, Compass, Map, ChevronDown,
 } from "lucide-react";
-import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI } from "@/constants/data";
+import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI, SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 import Link from "next/link";
 
@@ -668,6 +668,82 @@ export default function ShoppingClient() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            {/* Visual FAQ Section */}
+            <FAQSection 
+                faqs={language === "hi" ? SHOPPING_FAQS_HINDI : SHOPPING_FAQS_ENGLISH} 
+                title={language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"} 
+            />
+
+            {/* Dynamic JSON-LD FAQ Schema */}
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify({
+                        "@context": "https://schema.org",
+                        "@type": "FAQPage",
+                        "mainEntity": (language === "hi" ? SHOPPING_FAQS_HINDI : SHOPPING_FAQS_ENGLISH).map(faq => ({
+                            "@type": "Question",
+                            "name": faq.question,
+                            "acceptedAnswer": {
+                                "@type": "Answer",
+                                "text": faq.answer
+                            }
+                        }))
+                    })
+                }}
+            />
         </div>
+    );
+}
+
+// ============ REUSABLE FAQ SECTION COMPONENT ============
+function FAQSection({ faqs, title }: { faqs: { question: string, answer: string }[], title: string }) {
+    const [openIndex, setOpenIndex] = useState<number | null>(null);
+
+    return (
+        <section className="py-16 border-t border-gray-200 dark:border-white/10 mt-16">
+            <div className="max-w-4xl mx-auto px-4">
+                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-10">
+                    {title}
+                </h2>
+                <div className="space-y-4">
+                    {faqs.map((faq, idx) => {
+                        const isOpen = openIndex === idx;
+                        return (
+                            <div 
+                                key={idx}
+                                className="bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm transition-all"
+                            >
+                                <button
+                                    onClick={() => setOpenIndex(isOpen ? null : idx)}
+                                    className="w-full px-6 py-4 flex items-center justify-between gap-4 text-left text-gray-900 dark:text-white font-semibold text-sm md:text-base hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
+                                >
+                                    <span>{faq.question}</span>
+                                    <ChevronDown 
+                                        size={18} 
+                                        className={`text-gray-500 dark:text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
+                                    />
+                                </button>
+                                <AnimatePresence initial={false}>
+                                    {isOpen && (
+                                        <motion.div
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.2 }}
+                                        >
+                                            <div className="px-6 pb-5 pt-1 text-gray-600 dark:text-white/70 text-xs md:text-sm border-t border-gray-100 dark:border-white/5 leading-relaxed">
+                                                {faq.answer}
+                                            </div>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </div>
+                        );
+                    })}
+                </div>
+            </div>
+        </section>
     );
 }

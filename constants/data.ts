@@ -9,6 +9,14 @@ export { RAJASTHAN_SHOPPING_HINDI } from './shopping-hindi';
 export { FESTIVALS } from './festivals';
 export { FESTIVALS_HINDI } from './festivals-hindi';
 export { DESTINATIONS } from './destinations';
+export {
+    PLACES_FAQS_ENGLISH,
+    PLACES_FAQS_HINDI,
+    FESTIVALS_FAQS_ENGLISH,
+    FESTIVALS_FAQS_HINDI,
+    SHOPPING_FAQS_ENGLISH,
+    SHOPPING_FAQS_HINDI
+} from './faqs';
 
 export const CATEGORIES = [
     "All",

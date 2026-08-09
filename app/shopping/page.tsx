@@ -105,44 +105,7 @@ export default function ShoppingPage() {
         ],
     };
 
-    const faqSchema = {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        mainEntity: [
-            {
-                "@type": "Question",
-                name: "What is famous in Rajasthan for shopping?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Rajasthan is world-famous for Kundan and Meenakari jewelry, block-printed textiles (Bandhani, Sanganeri), Mojari leather footwear, blue pottery, brassware, and authentic local spices.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Which is the best market in Jaipur for shopping?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Johari Bazaar is the most famous for jewelry and gemstones. Bapu Bazaar is best for fabrics, prints, and leather juttis, while Tripolia Bazaar is ideal for lac bangles.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Can I bargain in Rajasthani markets?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "Yes, bargaining is highly expected and common in the traditional street bazaars of Rajasthan. You can usually start negotiations around 50-60% of the initial quoted price.",
-                },
-            },
-            {
-                "@type": "Question",
-                name: "Where can I buy authentic handicrafts with fixed prices?",
-                acceptedAnswer: {
-                    "@type": "Answer",
-                    text: "For authentic handicrafts with fixed prices, you should visit Rajasthali, the official government-run emporium located in Jaipur.",
-                },
-            },
-        ],
-    };
+
 
     // Dynamically build ItemList for all shopping places to optimize Search Engine crawling
     const allShoppingPlaces = RAJASTHAN_SHOPPING.districts.flatMap((d) => 
@@ -188,12 +151,7 @@ export default function ShoppingPage() {
                     __html: JSON.stringify(breadcrumbSchema),
                 }}
             />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(faqSchema),
-                }}
-            />
+
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{
