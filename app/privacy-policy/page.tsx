@@ -10,8 +10,21 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicyPage() {
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        itemListElement: [
+            { "@type": "ListItem", position: 1, name: "Home", item: "https://rajasthanplaces.in" },
+            { "@type": "ListItem", position: 2, name: "Privacy Policy", item: "https://rajasthanplaces.in/privacy-policy" },
+        ],
+    };
+
     return (
         <main className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
             <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
                     <span className="text-yellow-600 dark:text-yellow-400 text-xs md:text-sm font-semibold tracking-widest uppercase">
