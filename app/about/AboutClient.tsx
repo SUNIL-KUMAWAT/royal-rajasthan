@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function AboutClient() {
     const stats = [
@@ -92,24 +93,32 @@ export default function AboutClient() {
                             viewport={{ once: true }}
                             className="grid grid-cols-2 gap-4"
                         >
-                            <img
+                            <Image
                                 src="https://picsum.photos/seed/raj-1089/800/600"
                                 alt="Amber Fort"
+                                width={400}
+                                height={300}
                                 className="rounded-2xl w-full h-48 object-cover"
                             />
-                            <img
+                            <Image
                                 src="https://picsum.photos/seed/raj-1090/800/600"
                                 alt="Mehrangarh"
+                                width={400}
+                                height={300}
                                 className="rounded-2xl w-full h-48 object-cover mt-8"
                             />
-                            <img
+                            <Image
                                 src="https://picsum.photos/seed/raj-1091/800/600"
                                 alt="Desert"
+                                width={400}
+                                height={300}
                                 className="rounded-2xl w-full h-48 object-cover -mt-4"
                             />
-                            <img
+                            <Image
                                 src="https://picsum.photos/seed/raj-1092/800/600"
                                 alt="Udaipur"
+                                width={400}
+                                height={300}
                                 className="rounded-2xl w-full h-48 object-cover mt-4"
                             />
                         </motion.div>

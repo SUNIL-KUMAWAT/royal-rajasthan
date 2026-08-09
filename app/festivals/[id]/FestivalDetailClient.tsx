@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import { 
   Calendar, 
   Clock, 
@@ -443,9 +444,10 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                       className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-gray-200 dark:border-white/10 hover:border-gold-500/50 dark:hover:border-gold-400/50 transform-gpu z-10"
                       style={{ transform: "translateZ(30px)" }}
                     >
-                      <img
+                      <Image
                         src={f.image}
                         alt={f.name}
+                        fill
                         className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                         loading="lazy"
                       />

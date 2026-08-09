@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
     MapPin,
     Star,
@@ -245,7 +246,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                         >
                             {place.images.map((img, i) => (
                                 <div key={i} className="w-full h-full flex-shrink-0 snap-center relative" onClick={() => setShowLightbox(true)}>
-                                    <img src={img} alt={place.name} className="w-full h-full object-cover" referrerPolicy="no-referrer" />
+                                    <Image src={img} alt={place.name} fill className="w-full h-full object-cover" />
                                     <div className="absolute inset-0 bg-black/10" />
                                 </div>
                             ))}
@@ -289,10 +290,10 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                 className="col-span-2 row-span-2 relative cursor-pointer overflow-hidden group"
                                 onClick={() => { setActiveImage(0); setShowLightbox(true); }}
                             >
-                                <img
+                                <Image
                                     src={place.images[0]}
                                     alt={place.name}
-                                    referrerPolicy="no-referrer"
+                                    fill
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
@@ -316,10 +317,10 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                     className="col-span-2 row-span-1 relative cursor-pointer overflow-hidden group"
                                     onClick={() => { setActiveImage(1); setShowLightbox(true); }}
                                 >
-                                    <img
+                                    <Image
                                         src={place.images[1]}
                                         alt={place.name}
-                                        referrerPolicy="no-referrer"
+                                        fill
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
@@ -332,10 +333,10 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                     className="col-span-1 row-span-1 relative cursor-pointer overflow-hidden group"
                                     onClick={() => { setActiveImage(2); setShowLightbox(true); }}
                                 >
-                                    <img
+                                    <Image
                                         src={place.images[2]}
                                         alt={place.name}
-                                        referrerPolicy="no-referrer"
+                                        fill
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     <div className="absolute inset-0 bg-black/10 group-hover:bg-transparent transition-colors duration-500" />
@@ -348,10 +349,10 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                     className="col-span-1 row-span-1 relative cursor-pointer overflow-hidden group"
                                     onClick={() => { setActiveImage(3); setShowLightbox(true); }}
                                 >
-                                    <img
+                                    <Image
                                         src={place.images[3]}
                                         alt={place.name}
-                                        referrerPolicy="no-referrer"
+                                        fill
                                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
                                     <div className="absolute inset-0 bg-black/30 group-hover:bg-black/20 transition-colors duration-500" />

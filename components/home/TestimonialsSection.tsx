@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 export function TestimonialsSection() {
     const [current, setCurrent] = useState(0);
@@ -58,9 +59,11 @@ export function TestimonialsSection() {
                                 &ldquo;{TESTIMONIALS[current].review}&rdquo;
                             </p>
                             <div className="flex items-center gap-4">
-                                <img
+                                <Image
                                     src={TESTIMONIALS[current].avatar}
                                     alt={TESTIMONIALS[current].name}
+                                    width={56}
+                                    height={56}
                                     className="w-14 h-14 rounded-full object-cover border-4 border-gold-400"
                                 />
                                 <div>
@@ -126,9 +129,11 @@ export function TestimonialsSection() {
                                 }`}
                         >
                             <div className="flex items-center gap-3 mb-3">
-                                <img
+                                <Image
                                     src={t.avatar}
                                     alt={t.name}
+                                    width={40}
+                                    height={40}
                                     className="w-10 h-10 rounded-full object-cover"
                                 />
                                 <div>

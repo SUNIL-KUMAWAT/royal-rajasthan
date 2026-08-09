@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
 
 // Unsplash + Pexels — free to use under their licenses
@@ -121,9 +122,10 @@ export function HeroSection() {
                     transition={{ duration: 1.5, ease: "easeInOut" }}
                     className="absolute inset-0"
                 >
-                    <img
+                    <Image
                         src={slide.background}
                         alt={`Beautiful heritage view of ${slide.subtitle} tourism background`}
+                        fill
                         className="object-cover blur-[6px] opacity-90 w-full h-full absolute inset-0"
                     />
                 </motion.div>
@@ -142,9 +144,10 @@ export function HeroSection() {
                             transition={{ duration: 0.9, ease: "easeOut" }}
                             className="relative h-[420px] w-[280px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
                         >
-                            <img
+                            <Image
                                 src={slide.leftImage}
                                 alt={`Traditional travel experience of ${slide.subtitle} in Rajasthan`}
+                                fill
                                 className="object-cover w-full h-full absolute inset-0"
                             />
                             <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
@@ -292,9 +295,10 @@ export function HeroSection() {
                                         transition={{ duration: 0.8, ease: "easeOut" }}
                                         className="relative w-full h-full"
                                     >
-                                        <img
+                                        <Image
                                             src={src}
                                             alt={`Visual travel details from ${slide.subtitle} tourist destination - Image ${i + 1}`}
+                                            fill
                                             className="rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm w-full h-full absolute inset-0"
                                         />
                                     </motion.div>
@@ -315,9 +319,10 @@ export function HeroSection() {
                         transition={{ delay: 0.6 + i * 0.1 }}
                         className="relative h-20 w-[30%] max-w-[120px] rounded-xl overflow-hidden border-2 border-white/30 shadow-[0_8px_16px_rgba(0,0,0,0.4)] backdrop-blur-sm"
                     >
-                        <img
+                        <Image
                             src={src}
                             alt={`Rajasthan preview ${i + 1}`}
+                            fill
                             className="object-cover w-full h-full absolute inset-0"
                         />
                     </motion.div>

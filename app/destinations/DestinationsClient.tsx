@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Search, Star, MapPin, Clock, ArrowRight, Heart } from "lucide-react";
 import { DESTINATIONS } from "@/constants/data";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function DestinationsClient() {
     const [search, setSearch] = useState("");
@@ -121,10 +122,10 @@ export default function DestinationsClient() {
                                 className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-royal transition-all duration-500 hover:-translate-y-2"
                             >
                                 <div className="relative h-56 overflow-hidden">
-                                    <img
+                                    <Image
                                         src={dest.image}
                                         alt={dest.name}
-                                        referrerPolicy="no-referrer"
+                                        fill
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

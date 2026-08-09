@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import {
     MapPin,
     Phone,
@@ -53,9 +54,11 @@ export function Footer() {
                     {/* 1. Brand Section */}
                     <div>
                         <Link href="/" className="inline-flex items-center group relative z-10 transition-transform hover:scale-105 mb-6">
-                            <img
+                            <Image
                                 src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
                                 alt="Rajasthan Tourism Places"
+                                width={300}
+                                height={120}
                                 className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
                             />
                         </Link>

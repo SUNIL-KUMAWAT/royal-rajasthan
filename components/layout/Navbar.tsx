@@ -7,6 +7,7 @@ import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useTheme } from "@/components/ThemeProvider";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 export function Navbar() {
     const pathname = usePathname();
@@ -42,9 +43,11 @@ export function Navbar() {
                     <div className="flex items-center justify-between h-18 md:h-20">
                         {/* Logo */}
                         <Link href="/" className="flex items-center group relative z-10 transition-transform hover:scale-105">
-                            <img
+                            <Image
                                 src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
                                 alt="Rajasthan Tourism Places"
+                                width={300}
+                                height={120}
                                 className={`mt-2 h-12 md:h-20 w-auto object-contain ${!isSolid ? "drop-shadow-lg" : ""}`}
                             />
                         </Link>

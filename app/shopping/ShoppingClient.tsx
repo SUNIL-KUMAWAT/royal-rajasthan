@@ -8,6 +8,7 @@ import {
 import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI, SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 import Link from "next/link";
+import Image from "next/image";
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────
 const ShoppingHelpers = {
@@ -200,9 +201,10 @@ export default function ShoppingClient() {
             {/* Hero is always dark (image backdrop) regardless of theme */}
             <section className="relative min-h-[580px] flex items-center justify-center overflow-hidden text-white pt-24 pb-12">
                 <div className="absolute inset-0 z-0">
-                    <img
+                    <Image
                         src="https://picsum.photos/seed/raj-1143/800/600"
                         alt="Rajasthan Bazaars"
+                        fill
                         className="w-full h-full object-cover opacity-45 scale-105"
                     />
                     <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-900/75 to-slate-950/95" />
@@ -386,9 +388,9 @@ export default function ShoppingClient() {
 
                                             {/* ── Image ── */}
                                             <div className="relative h-52 overflow-hidden flex-shrink-0">
-                                                <img
+                                                <Image
                                                     src={place.image} alt={place.name}
-                                                    referrerPolicy="no-referrer"
+                                                    fill
                                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
@@ -539,7 +541,7 @@ export default function ShoppingClient() {
 
                             {/* Image banner */}
                             <div className="relative h-60 overflow-hidden flex-shrink-0">
-                                <img src={selectedMarket.image} alt={selectedMarket.name} className="w-full h-full object-cover scale-105" />
+                                <Image src={selectedMarket.image} alt={selectedMarket.name} fill className="w-full h-full object-cover scale-105" />
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
                                 <div className="absolute bottom-5 left-6 right-14 text-white">
                                     <div className="flex items-center gap-1 text-amber-400 text-xs font-semibold mb-1.5">

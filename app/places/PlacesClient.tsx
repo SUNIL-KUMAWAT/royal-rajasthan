@@ -2,6 +2,7 @@
 import { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
     Search,
     Star,
@@ -400,12 +401,11 @@ export function PlacesClient() {
                             >
                                 {/* Image */}
                                 <div className="relative h-52 overflow-hidden">
-                                    <img
+                                    <Image
                                         src={place.images[0]}
                                         alt={`${place.name} ${place.city} Rajasthan`}
-                                        referrerPolicy="no-referrer"
+                                        fill
                                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                        loading="lazy"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
 

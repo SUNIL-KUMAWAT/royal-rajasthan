@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import {
     MapPin,
     Calendar,
@@ -732,12 +733,11 @@ export default function PlanTripClient() {
                                                 }`}
                                         >
                                             <div className="relative h-36">
-                                                <img
+                                                <Image
                                                     src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
                                                     alt={`${city} - Rajasthan`}
-                                                    referrerPolicy="no-referrer"
+                                                    fill
                                                     className="w-full h-full object-cover"
-                                                    loading="lazy"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
                                                 {isSelected && (
@@ -1265,14 +1265,12 @@ export default function PlanTripClient() {
                                                                                 className="block bg-gray-50 dark:bg-gray-800 rounded-xl p-4 hover:shadow-md transition-all group"
                                                                             >
                                                                                 <div className="flex gap-3">
-                                                                                    <img
-                                                                                        src={
-                                                                                            placeSlot.place.images[0]
-                                                                                        }
+                                                                                    <Image
+                                                                                        src={placeSlot.place.images[0]}
                                                                                         alt={placeSlot.place.name}
-                                                                                        referrerPolicy="no-referrer"
+                                                                                        width={80}
+                                                                                        height={80}
                                                                                         className="w-20 h-20 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform"
-                                                                                        loading="lazy"
                                                                                     />
                                                                                     <div className="flex-1 min-w-0">
                                                                                         <div className="flex items-start justify-between gap-2">

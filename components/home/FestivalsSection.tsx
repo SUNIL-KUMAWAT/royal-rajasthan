@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useMemo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   Calendar,
@@ -106,9 +107,10 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         transition={{ duration: 0.6 }}
         className="relative h-[50vh] min-h-[380px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
       >
-        <img
+        <Image
           src={festival.image}
           alt={festival.name}
+          fill
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
@@ -517,9 +519,10 @@ export function FestivalsSection() {
                         className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-white/10 hover:border-gold-400/50 transform-gpu z-10"
                         style={{ transform: "translateZ(30px)" }}
                       >
-                        <img
+                        <Image
                           src={f.image}
                           alt={f.name}
+                          fill
                           className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                           loading="lazy"
                         />

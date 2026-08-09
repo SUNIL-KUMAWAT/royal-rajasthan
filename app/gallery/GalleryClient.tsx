@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -81,11 +82,14 @@ export default function GalleryClient() {
                                     className="group relative overflow-hidden rounded-xl cursor-pointer break-inside-avoid"
                                     onClick={() => setLightboxIndex(i)}
                                 >
-                                    <img
+                                    <Image
                                         src={img.src}
                                         alt={img.alt}
-                                        referrerPolicy="no-referrer"
-                                        className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
+                                        width={0}
+                                        height={0}
+                                        sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                                        style={{ width: '100%', height: 'auto' }}
+                                        className="group-hover:scale-105 transition-transform duration-500"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <div className="absolute bottom-3 left-3 text-white">
@@ -136,10 +140,11 @@ export default function GalleryClient() {
                             animate={{ scale: 1, opacity: 1 }}
                             className="max-w-4xl w-full"
                         >
-                            <img
+                            <Image
                                 src={filtered[lightboxIndex].src.replace("600", "1200")}
                                 alt={filtered[lightboxIndex].alt}
-                                referrerPolicy="no-referrer"
+                                width={1200}
+                                height={800}
                                 className="w-full max-h-[80vh] object-contain rounded-lg"
                             />
                             <div className="text-center mt-4 text-white">
