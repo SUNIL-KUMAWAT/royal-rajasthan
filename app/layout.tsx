@@ -241,6 +241,9 @@ export default function RootLayout({
             }),
           }}
         />
+        {/* Moved GTM script to body to prevent Next.js head hydration errors */}
+      </head>
+      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
         <Script id="google-tag-manager" strategy="afterInteractive">
           {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -250,8 +253,6 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-K9BN2J7Z');
           `}
         </Script>
-      </head>
-      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
