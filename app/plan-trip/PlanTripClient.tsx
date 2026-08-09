@@ -457,7 +457,7 @@ function downloadPDF(itinerary: DayPlan[], cities: string[]): void {
   </div>
   ${dayRows}
   <div class="footer">
-    Rajasthan Tourism Places &nbsp;|&nbsp; rajasthanplaces.in &nbsp;|&nbsp; +91 98765 43210
+    Rajasthan Tourism Places &nbsp;|&nbsp; rajasthanplaces.in &nbsp;|&nbsp; +91 99999-99999
   </div>
 </body>
 </html>`;
@@ -523,7 +523,7 @@ function downloadText(itinerary: DayPlan[]): void {
     lines.push("═══════════════════════════════════════");
     lines.push("Rajasthan Tourism Places");
     lines.push("🌐 rajasthanplaces.in");
-    lines.push("📞 +91 98765 43210");
+    lines.push("📞 +91 99999-99999");
     lines.push("═══════════════════════════════════════");
 
     const blob = new Blob([lines.join("\n")], {
@@ -650,10 +650,10 @@ export default function PlanTripClient() {
                                         <motion.div
                                             animate={{ scale: isActive ? 1.1 : 1 }}
                                             className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${isCompleted
-                                                    ? "bg-green-500 text-white"
-                                                    : isActive
-                                                        ? "bg-yellow-500 text-white shadow-lg ring-4 ring-yellow-200 dark:ring-yellow-800"
-                                                        : "bg-gray-100 dark:bg-gray-800 text-gray-400"
+                                                ? "bg-green-500 text-white"
+                                                : isActive
+                                                    ? "bg-yellow-500 text-white shadow-lg ring-4 ring-yellow-200 dark:ring-yellow-800"
+                                                    : "bg-gray-100 dark:bg-gray-800 text-gray-400"
                                                 }`}
                                         >
                                             {isCompleted ? (
@@ -665,10 +665,10 @@ export default function PlanTripClient() {
                                         <div className="mt-2 text-center hidden sm:block">
                                             <div
                                                 className={`text-xs font-medium ${isActive
-                                                        ? "text-yellow-600 dark:text-yellow-400"
-                                                        : isCompleted
-                                                            ? "text-green-600"
-                                                            : "text-gray-400"
+                                                    ? "text-yellow-600 dark:text-yellow-400"
+                                                    : isCompleted
+                                                        ? "text-green-600"
+                                                        : "text-gray-400"
                                                     }`}
                                             >
                                                 {s.title}
@@ -681,8 +681,8 @@ export default function PlanTripClient() {
                                     {i < STEPS.length - 1 && (
                                         <div
                                             className={`flex-1 h-0.5 mx-2 mt-[-20px] sm:mt-0 transition-all duration-500 ${step > s.id
-                                                    ? "bg-green-500"
-                                                    : "bg-gray-200 dark:bg-gray-700"
+                                                ? "bg-green-500"
+                                                : "bg-gray-200 dark:bg-gray-700"
                                                 }`}
                                         />
                                     )}
@@ -728,8 +728,8 @@ export default function PlanTripClient() {
                                             whileTap={{ scale: 0.98 }}
                                             onClick={() => toggleCity(city)}
                                             className={`relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ${isSelected
-                                                    ? "ring-2 ring-yellow-500 shadow-lg"
-                                                    : "ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-yellow-300"
+                                                ? "ring-2 ring-yellow-500 shadow-lg"
+                                                : "ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-yellow-300"
                                                 }`}
                                         >
                                             <div className="relative h-36">
@@ -758,8 +758,8 @@ export default function PlanTripClient() {
                                             </div>
                                             <div
                                                 className={`p-3 text-xs transition-colors ${isSelected
-                                                        ? "bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400"
-                                                        : "bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"
+                                                    ? "bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400"
+                                                    : "bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"
                                                     }`}
                                             >
                                                 {CITY_DESCRIPTIONS[city] || "Explore this city"}
@@ -884,8 +884,8 @@ export default function PlanTripClient() {
                                                     setConfig((p) => ({ ...p, days: d }))
                                                 }
                                                 className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${config.days === d
-                                                        ? "bg-yellow-500 text-white"
-                                                        : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-yellow-100"
+                                                    ? "bg-yellow-500 text-white"
+                                                    : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-yellow-100"
                                                     }`}
                                             >
                                                 {d} Days
@@ -919,8 +919,8 @@ export default function PlanTripClient() {
                                                     setConfig((p) => ({ ...p, pace: pace.id }))
                                                 }
                                                 className={`p-4 rounded-xl border-2 text-center transition-all ${config.pace === pace.id
-                                                        ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
-                                                        : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
+                                                    ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
+                                                    : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
                                                     }`}
                                             >
                                                 <div className="text-3xl mb-2">{pace.icon}</div>
@@ -968,15 +968,15 @@ export default function PlanTripClient() {
                                                 whileTap={{ scale: 0.95 }}
                                                 onClick={() => toggleInterest(interest.id)}
                                                 className={`p-4 rounded-xl border-2 text-center transition-all ${isSelected
-                                                        ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
-                                                        : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
+                                                    ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
+                                                    : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
                                                     }`}
                                             >
                                                 <div className="text-3xl mb-2">{interest.icon}</div>
                                                 <div
                                                     className={`text-sm font-medium ${isSelected
-                                                            ? "text-yellow-700 dark:text-yellow-400"
-                                                            : "text-gray-600 dark:text-gray-400"
+                                                        ? "text-yellow-700 dark:text-yellow-400"
+                                                        : "text-gray-600 dark:text-gray-400"
                                                         }`}
                                                 >
                                                     {interest.label}
@@ -1307,9 +1307,9 @@ export default function PlanTripClient() {
                                                                                             </span>
                                                                                             <span
                                                                                                 className={`text-xs font-medium px-2 py-0.5 rounded-full ${placeSlot.place.ticket
-                                                                                                        .isFree
-                                                                                                        ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400"
-                                                                                                        : "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400"
+                                                                                                    .isFree
+                                                                                                    ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400"
+                                                                                                    : "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400"
                                                                                                     }`}
                                                                                             >
                                                                                                 {placeSlot.place.ticket
@@ -1383,8 +1383,8 @@ export default function PlanTripClient() {
                             onClick={handleBack}
                             disabled={step === 1}
                             className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${step === 1
-                                    ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-                                    : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
+                                ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+                                : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
                                 }`}
                         >
                             <ArrowLeft size={18} />
@@ -1394,8 +1394,8 @@ export default function PlanTripClient() {
                             onClick={handleNext}
                             disabled={!canProceed()}
                             className={`flex items-center gap-2 px-8 py-3 rounded-full font-semibold transition-all ${canProceed()
-                                    ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-lg hover:shadow-xl hover:scale-105"
-                                    : "bg-gray-200 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
+                                ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-lg hover:shadow-xl hover:scale-105"
+                                : "bg-gray-200 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
                                 }`}
                         >
                             {step === 3 ? (

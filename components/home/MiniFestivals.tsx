@@ -7,6 +7,15 @@ import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
 import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
 
+// Helper: Convert festival name to URL slug
+function toSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
 export function MiniFestivals() {
   const { language } = useLanguage();
   const t = {
@@ -62,7 +71,7 @@ export function MiniFestivals() {
                 <p className="text-white/80 text-sm line-clamp-3 mb-4 grow">
                   {fest.description}
                 </p>
-                <Link href={`/festivals/${fest.id}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
+                <Link href={`/festivals/${toSlug(fest.name)}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
                   {t.knowMore} <ArrowRight size={14} />
                 </Link>
               </div>

@@ -16,6 +16,15 @@ import { TiltCard } from "@/components/home/TiltCard";
 import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 
+// Helper: Convert festival name to URL slug
+function toSlug(name: string): string {
+  return name
+    .toLowerCase()
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-");
+}
+
 interface Festival {
   id: number;
   name: string;
@@ -102,10 +111,10 @@ export default function FestivalDetailClient({ festival, related }: Props) {
   const eventSchema = eventDates ? {
     "@context": "https://schema.org",
     "@type": "Event",
-    "@id": `https://rajasthanplaces.in/festivals/${currentFestival.id}#event`,
+    "@id": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}#event`,
     "name": currentFestival.name,
     "description": currentFestival.description,
-    "url": `https://rajasthanplaces.in/festivals/${currentFestival.id}`,
+    "url": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`,
     "image": [currentFestival.image],
     "startDate": eventDates.startDate,
     "endDate": eventDates.endDate,
@@ -144,7 +153,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
         "@type": "ListItem",
         "position": 3,
         "name": currentFestival.name,
-        "item": `https://rajasthanplaces.in/festivals/${currentFestival.id}`
+        "item": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`
       }
     ]
   };
@@ -269,7 +278,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 {currentFestival.description}
               </p>
               
-              {/* Key Highlights (Moved inside About section) */}
+              {/* Key Highlights */}
               <div className="mb-10">
                 <h3 className="text-base sm:text-lg font-playfair font-bold text-gray-900 dark:text-white/90 mb-3 sm:mb-4 flex items-center gap-3 transition-colors">
                   Key Highlights
@@ -435,7 +444,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {currentRelated.map((f: any, idx: number) => (
                 <TiltCard key={f.id} maxTilt={10} className="h-full">
-                  <Link href={`/festivals/${f.id}`} className="block h-full">
+                  <Link href={`/festivals/${toSlug(f.name)}`} className="block h-full">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}

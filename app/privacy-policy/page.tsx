@@ -84,12 +84,12 @@ export default function PrivacyPolicyPage() {
                         </p>
                     </section>
 
-                    {/* <section>
+                    <section>
                         <h2 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white mb-3">7. Contact Us</h2>
                         <p>
-                            If you have questions or concerns about this Privacy Policy, please contact us at <span className="font-semibold text-yellow-600 dark:text-yellow-400">info@rajasthanplaces.in</span> or visit our Contact page.
+                            If you have questions or concerns about this Privacy Policy, please contact us at <span className="font-semibold text-yellow-600 dark:text-yellow-400">sunilkumawat.india@gmail.com</span> or visit our Contact page.
                         </p>
-                    </section> */}
+                    </section>
                 </div>
             </div>
         </main>

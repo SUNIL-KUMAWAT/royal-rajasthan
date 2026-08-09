@@ -69,13 +69,13 @@ export default function ContactClient() {
                                     {
                                         icon: Phone,
                                         title: "Call Us",
-                                        info: "+91 98765 43210",
+                                        info: "+91 99999-99999",
                                         sub: "Mon-Sat 9AM - 7PM IST",
                                     },
                                     {
                                         icon: Mail,
                                         title: "Email Us",
-                                        info: "info@rajasthanplaces.in",
+                                        info: "sunilkumawat.india@gmail.com",
                                         sub: "We reply within 2 hours",
                                     },
                                     {
@@ -105,7 +105,7 @@ export default function ContactClient() {
                             </div>
 
                             <a
-                                href="https://wa.me/919876543210"
+                                href="https://wa.me/9999999999"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="inline-flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all hover:scale-105 shadow-lg"

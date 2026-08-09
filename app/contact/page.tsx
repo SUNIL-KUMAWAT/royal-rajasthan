@@ -65,8 +65,8 @@ export default function ContactPage() {
         mainEntity: {
             "@type": "TravelAgency",
             name: "Rajasthan Tourism Places",
-            telephone: "+91-98765-43210",
-            email: "info@rajasthanplaces.in",
+            telephone: "+91-99999-99999",
+            email: "sunilkumawat.india@gmail.com",
             address: {
                 "@type": "PostalAddress",
                 streetAddress: "MI Road",
@@ -78,7 +78,7 @@ export default function ContactPage() {
             openingHours: "Mo-Sa 09:00-19:00",
             contactPoint: {
                 "@type": "ContactPoint",
-                telephone: "+91-98765-43210",
+                telephone: "+91-99999-99999",
                 contactType: "customer service",
                 availableLanguage: ["English", "Hindi"],
             },

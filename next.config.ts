@@ -1,6 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // Disable ESLint during builds due to version incompatibility
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  
   // ============ IMAGE OPTIMIZATION ============
   images: {
     unoptimized: true,

@@ -175,8 +175,8 @@ export default function RootLayout({
                 postalCode: "302001",
                 addressCountry: "IN",
               },
-              telephone: "+91-98765-43210",
-              email: "info@rajasthanplaces.in",
+              telephone: "+91-99999-99999",
+              email: "sunilkumawat.india@gmail.com",
               sameAs: [
                 "https://facebook.com/royalrajasthan",
                 "https://twitter.com/royalrajasthan",

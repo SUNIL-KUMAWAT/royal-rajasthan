@@ -4,6 +4,15 @@ import { PLACES } from "@/constants/data";
 import { FESTIVALS } from "@/constants/festivals";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 
+// Helper: Convert festival name to URL slug
+function toSlug(name: string): string {
+    return name
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, "")
+        .trim()
+        .replace(/\s+/g, "-");
+}
+
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://rajasthanplaces.in";
 
@@ -81,7 +90,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // Dynamic festival pages
     const festivalPages: MetadataRoute.Sitemap = FESTIVALS.map((festival) => ({
-        url: `${baseUrl}/festivals/${festival.id}`,
+        url: `${baseUrl}/festivals/${toSlug(festival.name)}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
         priority: 0.7,

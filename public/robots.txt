@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
+
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 2
+
+Sitemap: https://rajasthanplaces.in/sitemap.xml
