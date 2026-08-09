@@ -182,13 +182,17 @@ export function Footer() {
                         Rajasthan
                     </p>
                     <div className="flex gap-6">
-                        {["Privacy Policy", "Terms of Service", "Cookie Policy"].map((item) => (
+                        {[
+                            { name: "Privacy Policy", href: "/privacy-policy" },
+                            { name: "Terms of Service", href: "/terms-of-service" },
+                            { name: "Cookie Policy", href: "/cookie-policy" }
+                        ].map((item) => (
                             <Link
-                                key={item}
-                                href="#"
+                                key={item.name}
+                                href={item.href}
                                 className="text-gray-500 hover:text-gold-400 text-sm transition-colors duration-300"
                             >
-                                {item}
+                                {item.name}
                             </Link>
                         ))}
                     </div>
