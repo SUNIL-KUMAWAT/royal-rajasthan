@@ -75,17 +75,17 @@ function Countdown({ targetDate }: { targetDate?: string }) {
   }
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-1.5 md:gap-3">
       {[
         { value: timeLeft.days, label: "Days" },
         { value: timeLeft.hours, label: "Hours" },
         { value: timeLeft.minutes, label: "Min" },
       ].map((item) => (
         <div key={item.label} className="text-center group">
-          <div className="w-16 h-16 rounded-2xl bg-white/10 dark:bg-gray-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/10 flex items-center justify-center text-white font-bold text-2xl shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_8px_16px_rgba(0,0,0,0.4)] group-hover:shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_12px_24px_rgba(251,191,36,0.3)] transition-all duration-300">
+          <div className="w-9 h-9 md:w-16 md:h-16 rounded-lg md:rounded-2xl bg-white/10 dark:bg-gray-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/10 flex items-center justify-center text-white font-bold text-xs md:text-2xl shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_8px_16px_rgba(0,0,0,0.4)] group-hover:shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_12px_24px_rgba(251,191,36,0.3)] transition-all duration-300">
             <span className="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">{String(item.value).padStart(2, "0")}</span>
           </div>
-          <p className="text-xs text-white/80 mt-2 font-medium uppercase tracking-wider">{item.label}</p>
+          <p className="text-[8px] md:text-xs text-white/80 mt-1 font-medium uppercase tracking-wider">{item.label}</p>
         </div>
       ))}
     </div>
@@ -102,34 +102,37 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
         animate={{ opacity: 1, scale: 1 }}
         exit={{ opacity: 0 }}
         transition={{ duration: 0.6 }}
-        className="relative h-[85vh]  min-h-[600px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
+        className="relative h-[50vh] min-h-[380px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
       >
         <img
           src={festival.image}
           alt={festival.name}
           className="absolute inset-0 w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
 
-        {/* Content */}
-        <div className="absolute left-6 right-6 md:right-auto md:left-12 bottom-32 md:bottom-24 max-w-3xl">
+        {/* Featured Festival Badge - Top Left */}
+        <div className="absolute top-6 left-4 md:top-8 md:left-8 z-20">
           <motion.span
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block px-4 py-2 rounded-full
+            className="inline-flex px-3 py-1.5 md:px-4 md:py-2 rounded-full
               bg-yellow-500/20 border border-yellow-400/20
-              text-yellow-300 mb-6 text-sm backdrop-blur-md"
+              text-yellow-300 text-xs md:text-sm backdrop-blur-md font-medium shadow-lg"
           >
             Featured Festival
           </motion.span>
+        </div>
 
+        {/* Content - Vertically centered on the left with padding to avoid header/button/badge overlap */}
+        <div className="absolute inset-y-0 left-6 right-6 md:right-auto md:left-16 flex flex-col justify-center pt-24 pb-20 md:py-0 max-w-3xl z-10">
           <motion.h2
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl lg:text-7xl font-bold
-              text-white mb-4 font-playfair drop-shadow-xl"
+            className="text-2xl md:text-5xl lg:text-7xl font-bold
+              text-white mb-3 font-playfair drop-shadow-xl leading-tight"
           >
             {festival.name}
           </motion.h2>
@@ -138,19 +141,19 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="flex flex-wrap gap-4 mt-6 mb-6 text-white/90 font-medium"
+            className="flex flex-wrap gap-2 md:gap-3 mt-3 mb-4 text-white/90 font-medium"
           >
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
-              <MapPin size={16} className="text-gold-400" />
-              <span className="text-sm">{festival.location}</span>
+            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
+              <MapPin size={12} className="text-gold-400" />
+              <span className="text-[10px] md:text-sm">{festival.location}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
-              <Calendar size={16} className="text-gold-400" />
-              <span className="text-sm">{festival.month}</span>
+            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
+              <Calendar size={12} className="text-gold-400" />
+              <span className="text-[10px] md:text-sm">{festival.month}</span>
             </div>
-            <div className="flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 shadow-lg">
-              <Clock size={16} className="text-gold-400" />
-              <span className="text-sm">{festival.duration}</span>
+            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
+              <Clock size={12} className="text-gold-400" />
+              <span className="text-[10px] md:text-sm">{festival.duration}</span>
             </div>
           </motion.div>
 
@@ -165,32 +168,34 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
           </motion.p>
         </div>
 
-        {/* Navigation Buttons */}
-        <div className="absolute bottom-8 left-6 md:left-1/2 md:-translate-x-1/2 flex gap-4 md:gap-6 z-20">
-          <button onClick={onPrev} className="w-14 h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
-            <ChevronLeft size={28} />
+        {/* Navigation Buttons - Placed bottom-left under content */}
+        <div className="absolute bottom-6 left-6 md:left-16 flex gap-4 md:gap-6 z-20">
+          <button onClick={onPrev} className="w-11 h-11 md:w-14 md:h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
+            <ChevronLeft size={22} className="md:w-7 md:h-7" />
           </button>
-          <button onClick={onNext} className="w-14 h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
-            <ChevronRight size={28} />
+          <button onClick={onNext} className="w-11 h-11 md:w-14 md:h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
+            <ChevronRight size={22} className="md:w-7 md:h-7" />
           </button>
         </div>
 
-        {/* Countdown */}
-        <div className="absolute right-4 top-24 lg:top-auto lg:bottom-12 lg:right-8
-          backdrop-blur-2xl bg-black/30 border border-white/10
-          rounded-2xl md:rounded-3xl p-3 md:p-6 shadow-2xl scale-75 md:scale-100 origin-top-right md:origin-bottom-right z-20">
-          <p className="text-white/70 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-widest">
-            Next Festival Starts In
-          </p>
-          <Countdown targetDate={festival.nextDate} />
-        </div>
+        {/* Top Right Sidebar Stack: Rating + Countdown */}
+        <div className="absolute top-6 right-4 md:top-8 md:right-8 flex flex-col items-end gap-2 md:gap-3.5 z-20">
+          {/* Rating */}
+          <div className="flex items-center gap-1.5
+            backdrop-blur-xl bg-black/40 border border-white/20
+            rounded-full px-3.5 py-1.5 shadow-lg">
+            <Star size={14} className="text-yellow-400 fill-yellow-400 md:w-[16px] md:h-[16px]" />
+            <span className="text-white font-bold text-xs md:text-base">{festival.rating}</span>
+          </div>
 
-        {/* Rating */}
-        <div className="absolute top-8 right-8 flex items-center gap-2
-          backdrop-blur-xl bg-black/30 border border-white/20
-          rounded-full px-5 py-2.5 shadow-lg z-20">
-          <Star size={18} className="text-yellow-400 fill-yellow-400" />
-          <span className="text-white font-bold text-lg">{festival.rating}</span>
+          {/* Countdown */}
+          <div className="backdrop-blur-2xl bg-black/45 border border-white/15
+            rounded-xl md:rounded-3xl p-2.5 md:p-5 shadow-2xl origin-top-right">
+            <p className="text-white/70 text-[9px] md:text-xs mb-1.5 md:mb-3 font-medium uppercase tracking-widest text-right">
+              Starts In
+            </p>
+            <Countdown targetDate={festival.nextDate} />
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>
@@ -249,7 +254,7 @@ export function FestivalsSection() {
   };
 
   return (
-    <section className="relative bg-[#070b16] overflow-hidden pt-36 md:pt-28 pb-32">
+    <section className="relative bg-[#070b16] overflow-hidden pt-28 md:pt-28 pb-16 md:pb-32">
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px]
         bg-yellow-500/10 rounded-full blur-[180px] pointer-events-none" />
@@ -290,7 +295,7 @@ export function FestivalsSection() {
         </div>
 
         {/* Festival Details */}
-        <div className="mt-32 grid lg:grid-cols-2 gap-12 items-center">
+        <div className="mt-12 md:mt-32 grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           {/* Left */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -298,52 +303,52 @@ export function FestivalsSection() {
             viewport={{ once: true }}
           >
             <span className="text-yellow-400 uppercase tracking-[4px]
-              font-semibold text-sm">
+              font-semibold text-xs md:text-sm">
               Festival Details
             </span>
 
-            <h2 className="mt-4 text-3xl md:text-5xl font-bold
+            <h2 className="mt-4 text-2xl md:text-5xl font-bold
               text-white font-playfair">
               {festival.name}
             </h2>
 
-            <div className="flex flex-wrap gap-6 mt-6 mb-8">
+            <div className="flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-6 mb-6 md:mb-8">
               {[
                 { icon: MapPin, text: festival.location },
                 { icon: Calendar, text: festival.month },
                 { icon: Clock, text: festival.duration },
               ].map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2 text-yellow-400 bg-white/5 px-4 py-2 rounded-lg border border-white/5">
-                  <Icon size={18} />
-                  <span className="text-white/90 text-sm md:text-base font-medium">
+                <div key={text} className="flex items-center gap-2 text-yellow-400 bg-white/5 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-white/5">
+                  <Icon size={14} className="md:w-[18px] md:h-[18px]" />
+                  <span className="text-white/90 text-xs md:text-base font-medium">
                     {text}
                   </span>
                 </div>
               ))}
             </div>
 
-            <p className="text-white/70 leading-8 text-base md:text-lg">
+            <p className="text-white/70 leading-relaxed md:leading-8 text-xs md:text-lg">
               {festival.description}
             </p>
 
             {/* Highlights */}
-            <div className="flex flex-wrap gap-3 mt-8">
+            <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
               {festival.highlights.map((item: any) => (
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-4 py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-white text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
+                  className="px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-white text-xs md:text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
                 >
                   {item}
                 </motion.div>
               ))}
             </div>
 
-            <div className="flex flex-wrap gap-4 mt-10">
+            <div className="flex flex-wrap gap-4 mt-8 md:mt-10">
               <Link href={`/festivals/${festival.id}`}>
-                < button className="px-6 md:px-8 py-3 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-sm md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
+                <button className="px-5 md:px-8 py-2.5 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-xs md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
                   <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
-                  <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
+                  <ArrowRight size={16} className="md:w-[18px] md:h-[18px] group-hover/btn:translate-x-1 transition-transform" />
                 </button>
               </Link>
             </div>
@@ -354,7 +359,7 @@ export function FestivalsSection() {
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
-            className="grid grid-cols-2 gap-5"
+            className="grid grid-cols-2 gap-4 md:gap-5"
           >
             {[
               {
@@ -380,19 +385,19 @@ export function FestivalsSection() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="group relative rounded-3xl p-6 bg-white/5 border border-white/10 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
+                className="group relative rounded-2xl md:rounded-3xl p-4 md:p-6 bg-white/5 border border-white/10 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-3xl pointer-events-none" />
-                <h4 className="text-white/60 text-sm mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
+                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl md:rounded-3xl pointer-events-none" />
+                <h4 className="text-white/60 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
                 {item.isRating ? (
                   <div className="flex items-center gap-2">
-                    <Star className="text-gold-400 fill-gold-400 w-6 h-6 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-3xl md:text-4xl font-bold text-white drop-shadow-md">
+                    <Star className="text-gold-400 fill-gold-400 w-4 h-4 md:w-6 md:h-6 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-xl md:text-4xl font-bold text-white drop-shadow-md">
                       {item.value}
                     </span>
                   </div>
                 ) : (
-                  <h3 className="text-2xl md:text-3xl font-bold text-white drop-shadow-md">
+                  <h3 className="text-base md:text-3xl font-bold text-white drop-shadow-md">
                     {item.value}
                   </h3>
                 )}
@@ -402,20 +407,20 @@ export function FestivalsSection() {
         </div>
 
         {/* Experience The Magic */}
-        <div className="mt-32 border-t border-white/10 pt-24">
+        <div className="mt-12 md:mt-32 border-t border-white/10 pt-12 md:pt-24">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-center mb-16"
+            className="text-center mb-8 md:mb-16"
           >
             <span className="uppercase tracking-[6px] text-yellow-400
-              font-semibold text-sm">
+              font-semibold text-xs md:text-sm">
               Rajasthan Festivals
             </span>
 
-            <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl lg:text-6xl
+            <h1 className="mt-2 md:mt-4 text-xl sm:text-4xl md:text-5xl lg:text-6xl
               font-bold text-white leading-tight font-playfair">
               Experience The{" "}
               <span className="bg-gradient-to-r from-yellow-400 via-orange-400
@@ -423,7 +428,7 @@ export function FestivalsSection() {
                 Magic
               </span>
             </h1>
-            <p className="text-white/60 mt-6 max-w-3xl mx-auto text-sm
+            <p className="text-white/60 mt-3 md:mt-6 max-w-3xl mx-auto text-xs
               sm:text-base md:text-lg leading-relaxed">
               Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,
               royal processions and unforgettable cultural festivals.
@@ -431,7 +436,7 @@ export function FestivalsSection() {
           </motion.div>
 
           {/* Filters & Search */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6 mb-12 bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-md">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12 bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-md">
             <div className="relative w-full md:w-1/2">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={20} />
               <input
@@ -442,7 +447,7 @@ export function FestivalsSection() {
                   setSearchTerm(e.target.value);
                   setVisibleCount(8);
                 }}
-                className="w-full bg-black/40 border border-white/10 rounded-2xl py-3 pl-12 pr-4 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner"
+                className="w-full bg-black/40 border border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-4 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner text-xs md:text-sm"
               />
             </div>
 
@@ -454,7 +459,7 @@ export function FestivalsSection() {
                   setSelectedLocation(e.target.value);
                   setVisibleCount(8);
                 }}
-                className="w-full bg-black/40 border border-white/10 rounded-2xl py-3 pl-12 pr-10 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer"
+                className="w-full bg-black/40 border border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-10 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer text-xs md:text-sm"
               >
                 {uniqueLocations.map(loc => (
                   <option key={loc} value={loc} className="bg-gray-900 text-white">{loc}</option>
@@ -520,7 +525,7 @@ export function FestivalsSection() {
             <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
-              className="mt-16 flex flex-col items-center gap-3"
+              className="mt-8 md:mt-16 flex flex-col items-center gap-3"
             >
               <p className="text-sm text-white/50 font-medium">
                 Showing {visibleFestivals.length} of {filteredFestivals.length} festivals
