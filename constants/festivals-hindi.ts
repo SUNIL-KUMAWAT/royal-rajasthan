@@ -65,7 +65,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 2,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-08",
         "name": "रेगिस्तान महोत्सव",
         "location": "जैसलमेर",
         "month": "फ़रवरी",
@@ -129,7 +129,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 3,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-22",
         "name": "जयपुर लिटरेचर फेस्टिवल",
         "location": "जयपुर",
         "month": "जनवरी",
@@ -195,7 +195,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 4,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-28",
         "name": "गणगौर महोत्सव",
         "location": "जयपुर",
         "month": "मार्च अप्रैल",
@@ -261,7 +261,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 5,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "तीज महोत्सव",
         "location": "जयपुर",
         "month": "अगस्त",
@@ -327,7 +327,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 6,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "राजस्थान अंतर्राष्ट्रीय लोक महोत्सव",
         "location": "जोधपुर",
         "month": "अक्टूबर",
@@ -393,7 +393,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 7,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "बीकानेर ऊँट महोत्सव",
         "location": "बीकानेर",
         "month": "जनवरी",
@@ -524,7 +524,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 9,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "मेवाड़ महोत्सव",
         "location": "उदयपुर",
         "month": "मार्च अप्रैल",
@@ -590,7 +590,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 10,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "कोटा दशहरा महोत्सव",
         "location": "कोटा",
         "month": "अक्टूबर",
@@ -652,7 +652,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 11,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "हाथी उत्सव",
         "location": "जयपुर",
         "month": "मार्च",
@@ -718,7 +718,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 12,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "बृज होली महोत्सव",
         "location": "भरतपुर",
         "month": "मार्च",
@@ -782,7 +782,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 13,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "नागौर पशु मेला",
         "location": "नागौर",
         "month": "जनवरी",
@@ -848,7 +848,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 14,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "शिल्पग्राम महोत्सव",
         "location": "उदयपुर",
         "month": "दिसंबर",
@@ -979,7 +979,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 16,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "विश्व सूफ़ी आत्मा महोत्सव",
         "location": "जोधपुर",
         "month": "फ़रवरी",
@@ -1045,7 +1045,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 17,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "मारवाड़ महोत्सव",
         "location": "जोधपुर",
         "month": "अक्टूबर",
@@ -1111,7 +1111,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 18,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "बाणेश्वर मेला",
         "location": "डूंगरपुर",
         "month": "फ़रवरी",
@@ -1176,7 +1176,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 19,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "कैला देवी मेला",
         "location": "करौली",
         "month": "मार्च",
@@ -1240,7 +1240,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 20,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "गर्मियों का त्योहार",
         "location": "माउंट आबू",
         "month": "मई",
@@ -1305,7 +1305,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 21,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "शीतकालीन महोत्सव",
         "location": "माउंट आबू",
         "month": "दिसंबर",
@@ -1370,7 +1370,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 22,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "शेखावाटी महोत्सव",
         "location": "नवलगढ़",
         "month": "फ़रवरी",
@@ -1432,7 +1432,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 23,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "करणी माता मेला",
         "location": "देशनोक",
         "month": "मार्च",
@@ -1494,7 +1494,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 24,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "रामदेवरा मेला",
         "location": "रामदेवरा",
         "month": "अगस्त",
@@ -1556,7 +1556,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 25,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "जयपुर संगीत मंच",
         "location": "जयपुर",
         "month": "जनवरी",
@@ -1686,7 +1686,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 27,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "जोधपुर फ्लेमेंको और जिप्सी महोत्सव",
         "location": "जोधपुर",
         "month": "मार्च",
@@ -1882,7 +1882,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 30,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "महावीरजी मेला",
         "location": "करौली",
         "month": "अप्रैल",
@@ -1946,7 +1946,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 31,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "तिलवाड़ा पशु मेला",
         "location": "बाड़मेर",
         "month": "अप्रैल",
@@ -2012,7 +2012,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 32,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "गवरी महोत्सव",
         "location": "उदयपुर",
         "month": "अगस्त सितम्बर",
@@ -2144,7 +2144,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 34,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "गोगामेड़ी मेला",
         "location": "हनुमानगढ़",
         "month": "अगस्त",
@@ -2206,7 +2206,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 35,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "तेजाजी मेला",
         "location": "नागौर",
         "month": "सितम्बर",
@@ -2272,7 +2272,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 36,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "वागड़ महोत्सव",
         "location": "बांसवाड़ा",
         "month": "जनवरी",
@@ -2337,7 +2337,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 37,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "बेणेश्वर धाम महोत्सव",
         "location": "डूंगरपुर",
         "month": "फ़रवरी",
@@ -2402,7 +2402,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 38,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "रणकपुर महोत्सव",
         "location": "पाली",
         "month": "दिसंबर",
@@ -2664,7 +2664,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 42,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "सीताबाड़ी मेला",
         "location": "बारां",
         "month": "मई",
@@ -2728,7 +2728,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 43,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "हरियाली तीज",
         "location": "जयपुर",
         "month": "अगस्त",
@@ -2794,7 +2794,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 44,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "कजली तीज",
         "location": "बूंदी",
         "month": "अगस्त",
@@ -2923,7 +2923,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 46,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "जनमाष्टमी महोत्सव",
         "location": "नाथद्वारा",
         "month": "अगस्त",
@@ -2987,7 +2987,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 47,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "नवरात्रि महोत्सव",
         "location": "जयपुर",
         "month": "सितंबर-अक्टूबर",
@@ -3053,7 +3053,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 48,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "दिवाली महोत्सव",
         "location": "जयपुर",
         "month": "अक्टूबर-नवंबर",
@@ -3119,7 +3119,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 49,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "मकर संक्रांति पतंग महोत्सव",
         "location": "जयपुर",
         "month": "जनवरी",
@@ -3185,7 +3185,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 50,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "बसंत पंचमी",
         "location": "जयपुर",
         "month": "फ़रवरी",
@@ -3251,7 +3251,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 51,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "रामनवमी",
         "location": "अजमेर",
         "month": "अप्रैल",
@@ -3316,7 +3316,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 52,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "होली का त्यौहार",
         "location": "जयपुर",
         "month": "मार्च",
@@ -3382,7 +3382,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 53,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "दशहरा महोत्सव",
         "location": "जयपुर",
         "month": "अक्टूबर",
@@ -3448,7 +3448,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 54,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "शरद महोत्सव",
         "location": "माउंट आबू",
         "month": "अक्टूबर",
@@ -3577,7 +3577,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 56,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "भील महोत्सव",
         "location": "बांसवाड़ा",
         "month": "मार्च",
@@ -3708,7 +3708,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 58,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "राजस्थान विरासत सप्ताह",
         "location": "जयपुर",
         "month": "दिसंबर",
@@ -3774,7 +3774,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 59,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "गणतंत्र दिवस महोत्सव",
         "location": "जयपुर",
         "month": "जनवरी",
@@ -3840,7 +3840,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 60,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "स्वतंत्रता दिवस महोत्सव",
         "location": "जयपुर",
         "month": "अगस्त",
@@ -3906,7 +3906,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 61,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "कुंभलगढ़ महोत्सव",
         "location": "कुंभलगढ़",
         "month": "दिसंबर",
@@ -3968,7 +3968,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 62,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "चुंबकीय क्षेत्र महोत्सव",
         "location": "अलसीसर",
         "month": "दिसंबर",
@@ -4030,7 +4030,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 63,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "आभानेरी महोत्सव",
         "location": "दौसा",
         "month": "अक्टूबर",
@@ -4094,7 +4094,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 64,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "धुलण्डी महोत्सव",
         "location": "जयपुर",
         "month": "मार्च",
@@ -4160,7 +4160,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 65,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "थार महोत्सव",
         "location": "बाड़मेर",
         "month": "मार्च",
@@ -4226,7 +4226,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 66,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "शीतला माता मेला",
         "location": "जयपुर",
         "month": "मार्च अप्रैल",
@@ -4292,7 +4292,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 67,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "गोडवार महोत्सव",
         "location": "पाली",
         "month": "मार्च",
@@ -4358,7 +4358,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 68,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "घोटिया आंबा मेला",
         "location": "बांसवाड़ा",
         "month": "मार्च",
@@ -4423,7 +4423,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 69,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "खाटू श्यामजी मेला",
         "location": "सीकर",
         "month": "फरवरी-मार्च",
@@ -4487,7 +4487,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 70,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "सालासर बालाजी मेला",
         "location": "चुरू",
         "month": "अप्रैल",
@@ -4549,7 +4549,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 71,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "मेहंदीपुर बालाजी मेला",
         "location": "दौसा",
         "month": "अप्रैल",
@@ -4613,7 +4613,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 72,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "रानी सती मेला",
         "location": "झुंझुनूं",
         "month": "अगस्त सितम्बर",
@@ -4678,7 +4678,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 73,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "जीण माता मेला",
         "location": "सीकर",
         "month": "अप्रैल",
@@ -4742,7 +4742,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 74,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "बाणगंगा मेला",
         "location": "जयपुर",
         "month": "अप्रैल-मई",
@@ -4808,7 +4808,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 75,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "कल्याणजी मेला",
         "location": "टोंक",
         "month": "अगस्त",
@@ -4870,7 +4870,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 76,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-06-15",
         "name": "सीता माता मेला",
         "location": "प्रतापगढ़",
         "month": "जून",
@@ -4934,7 +4934,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 77,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "जम्भेश्वर मेला",
         "location": "बीकानेर",
         "month": "फरवरी-मार्च",
@@ -5000,7 +5000,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 78,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "गौतमेश्वर मेला",
         "location": "प्रतापगढ़",
         "month": "मई",
@@ -5064,7 +5064,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 79,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-06-15",
         "name": "हल्दीघाटी महोत्सव",
         "location": "राजसमंद",
         "month": "जून",
@@ -5128,7 +5128,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 80,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "रणथंभौर महोत्सव",
         "location": "सवाई माधोपुर",
         "month": "जनवरी",
@@ -5192,7 +5192,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 81,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "जोहार मेला",
         "location": "चित्तौड़गढ़",
         "month": "फरवरी-मार्च",
@@ -5258,7 +5258,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 82,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "फूल डोल मेला",
         "location": "शाहपुरा",
         "month": "मार्च",
@@ -5320,7 +5320,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 83,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "मचकुंड मेला",
         "location": "धौलपुर",
         "month": "सितम्बर",
@@ -5382,7 +5382,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 84,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "मातृकुंडिया मेला",
         "location": "चित्तौड़गढ़",
         "month": "मई",
@@ -5448,7 +5448,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 85,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "एकलिंगजी मेला",
         "location": "उदयपुर",
         "month": "फरवरी-मार्च",
@@ -5514,7 +5514,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 86,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "राम रावण मेला",
         "location": "बड़ी सादड़ी",
         "month": "अप्रैल",
@@ -5642,7 +5642,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 88,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "रामदेव पशु मेला",
         "location": "नागौर",
         "month": "जनवरी फ़रवरी",
@@ -5708,7 +5708,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 89,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "खेतलाजी मेला",
         "location": "पाली",
         "month": "मार्च अप्रैल",
@@ -5774,7 +5774,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 90,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "गलताजी मेला",
         "location": "जयपुर",
         "month": "जनवरी",
@@ -5840,7 +5840,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 91,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "चौथ माता मेला",
         "location": "सवाई माधोपुर",
         "month": "जनवरी फ़रवरी",
@@ -5970,7 +5970,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 93,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "दधिमती माता मेला",
         "location": "नागौर",
         "month": "अप्रैल और अक्टूबर",
@@ -6036,7 +6036,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 94,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "विरात्रा माता मेला",
         "location": "बाड़मेर",
         "month": "अप्रैल, अगस्त और दिसंबर",
@@ -6102,7 +6102,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 95,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "भादरिया माता मेला",
         "location": "जैसलमेर",
         "month": "अप्रैल और अक्टूबर",
@@ -6166,7 +6166,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 96,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "सियावा का गौर मेला",
         "location": "सिरोही",
         "month": "अप्रैल",
@@ -6231,7 +6231,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 97,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "कोड़ामार होली",
         "location": "अजमेर",
         "month": "मार्च",
@@ -6296,7 +6296,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 98,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "पत्थरमार होली",
         "location": "बाड़मेर",
         "month": "मार्च",
@@ -6362,7 +6362,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 99,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "भगोरिया मेला",
         "location": "उदयपुर",
         "month": "मार्च",
@@ -6428,7 +6428,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 100,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "महनसर शेखावाटी महोत्सव",
         "location": "झुंझुनूं",
         "month": "फ़रवरी",
@@ -6493,7 +6493,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 101,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "धींगा गवर",
         "location": "जोधपुर",
         "month": "अप्रैल",
@@ -6559,7 +6559,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 102,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "देवनारायण मेला",
         "location": "भीलवाड़ा",
         "month": "सितम्बर",
@@ -6621,7 +6621,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 103,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "पाबूजी मेला",
         "location": "जोधपुर",
         "month": "अप्रैल",
@@ -6687,7 +6687,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 104,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "सच्चिया माता मेला",
         "location": "ओसियान",
         "month": "अप्रैल और अक्टूबर",
@@ -6749,7 +6749,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 105,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "चामुंडा माता मेला",
         "location": "जोधपुर",
         "month": "सितंबर-अक्टूबर",
@@ -6815,7 +6815,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 106,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "गोविंद देवजी मेला",
         "location": "जयपुर",
         "month": "अगस्त",
@@ -6881,7 +6881,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 107,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "कालिका माता मेला",
         "location": "चित्तौड़गढ़",
         "month": "अक्टूबर",
@@ -6947,7 +6947,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 108,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "मणिभद्र वीर मेला",
         "location": "सिरोही",
         "month": "फ़रवरी",
@@ -7012,7 +7012,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 109,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "मार्कंडेश्वर मेला",
         "location": "सिरोही",
         "month": "सितम्बर",
@@ -7077,7 +7077,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 110,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "ऋषभदेव मेला",
         "location": "उदयपुर",
         "month": "मार्च",
@@ -7143,7 +7143,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 111,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "चारभुजा नाथ मेला",
         "location": "राजसमंद",
         "month": "अगस्त सितम्बर",
@@ -7207,7 +7207,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 112,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "सांवलियाजी मेला",
         "location": "चित्तौड़गढ़",
         "month": "अगस्त सितम्बर",
@@ -7273,7 +7273,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 113,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "परशुराम महादेव मेला",
         "location": "पाली",
         "month": "अगस्त",
@@ -7339,7 +7339,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 114,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "ब्रह्माणी माता मेला",
         "location": "बारां",
         "month": "फ़रवरी",
@@ -7469,7 +7469,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 116,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "भर्तृहरि मेला",
         "location": "अलवर",
         "month": "अगस्त सितम्बर",
@@ -7535,7 +7535,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 117,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "पांडुपोल हनुमान मेला",
         "location": "अलवर",
         "month": "सितम्बर",
@@ -7601,7 +7601,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 118,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "नरहड़ पीर उर्स",
         "location": "झुंझुनूं",
         "month": "अगस्त",
@@ -7666,7 +7666,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 119,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "जसवन्त पशु मेला",
         "location": "भरतपुर",
         "month": "सितंबर-अक्टूबर",
@@ -7730,7 +7730,7 @@ export const FESTIVALS_HINDI = [
     },
     {
         "id": 120,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "सेवड़िया पशु मेला",
         "location": "जालौर",
         "month": "अप्रैल",

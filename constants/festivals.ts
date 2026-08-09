@@ -65,7 +65,7 @@ export const FESTIVALS = [
     },
     {
         "id": 2,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-08",
         "name": "Desert Festival",
         "location": "Jaisalmer",
         "month": "February",
@@ -129,7 +129,7 @@ export const FESTIVALS = [
     },
     {
         "id": 3,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-28",
         "name": "Gangaur Festival",
         "location": "Jaipur",
         "month": "March-April",
@@ -195,7 +195,7 @@ export const FESTIVALS = [
     },
     {
         "id": 4,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Teej Festival",
         "location": "Jaipur",
         "month": "August",
@@ -261,7 +261,7 @@ export const FESTIVALS = [
     },
     {
         "id": 5,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-22",
         "name": "Jaipur Literature Festival",
         "location": "Jaipur",
         "month": "January",
@@ -327,7 +327,7 @@ export const FESTIVALS = [
     },
     {
         "id": 6,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Rajasthan International Folk Festival",
         "location": "Jodhpur",
         "month": "October",
@@ -393,7 +393,7 @@ export const FESTIVALS = [
     },
     {
         "id": 7,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Bikaner Camel Festival",
         "location": "Bikaner",
         "month": "January",
@@ -524,7 +524,7 @@ export const FESTIVALS = [
     },
     {
         "id": 9,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Mewar Festival",
         "location": "Udaipur",
         "month": "March-April",
@@ -590,7 +590,7 @@ export const FESTIVALS = [
     },
     {
         "id": 10,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Kota Dussehra Festival",
         "location": "Kota",
         "month": "October",
@@ -652,7 +652,7 @@ export const FESTIVALS = [
     },
     {
         "id": 11,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Elephant Festival",
         "location": "Jaipur",
         "month": "March",
@@ -718,7 +718,7 @@ export const FESTIVALS = [
     },
     {
         "id": 12,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Brij Holi Festival",
         "location": "Bharatpur",
         "month": "March",
@@ -782,7 +782,7 @@ export const FESTIVALS = [
     },
     {
         "id": 13,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Nagaur Cattle Fair",
         "location": "Nagaur",
         "month": "January",
@@ -848,7 +848,7 @@ export const FESTIVALS = [
     },
     {
         "id": 14,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Shilpgram Festival",
         "location": "Udaipur",
         "month": "December",
@@ -979,7 +979,7 @@ export const FESTIVALS = [
     },
     {
         "id": 16,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "World Sufi Spirit Festival",
         "location": "Jodhpur",
         "month": "February",
@@ -1045,7 +1045,7 @@ export const FESTIVALS = [
     },
     {
         "id": 17,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Marwar Festival",
         "location": "Jodhpur",
         "month": "October",
@@ -1111,7 +1111,7 @@ export const FESTIVALS = [
     },
     {
         "id": 18,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Baneshwar Fair",
         "location": "Dungarpur",
         "month": "February",
@@ -1176,7 +1176,7 @@ export const FESTIVALS = [
     },
     {
         "id": 19,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Kaila Devi Fair",
         "location": "Karauli",
         "month": "March",
@@ -1240,7 +1240,7 @@ export const FESTIVALS = [
     },
     {
         "id": 20,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "Summer Festival",
         "location": "Mount Abu",
         "month": "May",
@@ -1305,7 +1305,7 @@ export const FESTIVALS = [
     },
     {
         "id": 21,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Winter Festival",
         "location": "Mount Abu",
         "month": "December",
@@ -1370,7 +1370,7 @@ export const FESTIVALS = [
     },
     {
         "id": 22,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Shekhawati Festival",
         "location": "Nawalgarh",
         "month": "February",
@@ -1432,7 +1432,7 @@ export const FESTIVALS = [
     },
     {
         "id": 23,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Karni Mata Fair",
         "location": "Deshnok",
         "month": "March",
@@ -1494,7 +1494,7 @@ export const FESTIVALS = [
     },
     {
         "id": 24,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Ramdevra Fair",
         "location": "Ramdevra",
         "month": "August",
@@ -1556,7 +1556,7 @@ export const FESTIVALS = [
     },
     {
         "id": 25,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Jaipur Music Stage",
         "location": "Jaipur",
         "month": "January",
@@ -1686,7 +1686,7 @@ export const FESTIVALS = [
     },
     {
         "id": 27,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Jodhpur Flamenco & Gypsy Festival",
         "location": "Jodhpur",
         "month": "March",
@@ -1882,7 +1882,7 @@ export const FESTIVALS = [
     },
     {
         "id": 30,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Mahavirji Fair",
         "location": "Karauli",
         "month": "April",
@@ -1946,7 +1946,7 @@ export const FESTIVALS = [
     },
     {
         "id": 31,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Tilwara Cattle Fair",
         "location": "Barmer",
         "month": "April",
@@ -2012,7 +2012,7 @@ export const FESTIVALS = [
     },
     {
         "id": 32,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Gavri Festival",
         "location": "Udaipur",
         "month": "August-September",
@@ -2144,7 +2144,7 @@ export const FESTIVALS = [
     },
     {
         "id": 34,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Gogamedi Fair",
         "location": "Hanumangarh",
         "month": "August",
@@ -2206,7 +2206,7 @@ export const FESTIVALS = [
     },
     {
         "id": 35,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Tejaji Fair",
         "location": "Nagaur",
         "month": "September",
@@ -2272,7 +2272,7 @@ export const FESTIVALS = [
     },
     {
         "id": 36,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Vagad Festival",
         "location": "Banswara",
         "month": "January",
@@ -2337,7 +2337,7 @@ export const FESTIVALS = [
     },
     {
         "id": 37,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Beneshwar Dham Festival",
         "location": "Dungarpur",
         "month": "February",
@@ -2402,7 +2402,7 @@ export const FESTIVALS = [
     },
     {
         "id": 38,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Ranakpur Festival",
         "location": "Pali",
         "month": "December",
@@ -2664,7 +2664,7 @@ export const FESTIVALS = [
     },
     {
         "id": 42,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "Sitabari Fair",
         "location": "Baran",
         "month": "May",
@@ -2728,7 +2728,7 @@ export const FESTIVALS = [
     },
     {
         "id": 43,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Hariyali Teej",
         "location": "Jaipur",
         "month": "August",
@@ -2794,7 +2794,7 @@ export const FESTIVALS = [
     },
     {
         "id": 44,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Kajli Teej",
         "location": "Bundi",
         "month": "August",
@@ -2923,7 +2923,7 @@ export const FESTIVALS = [
     },
     {
         "id": 46,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Janmashtami Festival",
         "location": "Nathdwara",
         "month": "August",
@@ -2987,7 +2987,7 @@ export const FESTIVALS = [
     },
     {
         "id": 47,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Navratri Festival",
         "location": "Jaipur",
         "month": "September-October",
@@ -3053,7 +3053,7 @@ export const FESTIVALS = [
     },
     {
         "id": 48,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Diwali Festival",
         "location": "Jaipur",
         "month": "October-November",
@@ -3119,7 +3119,7 @@ export const FESTIVALS = [
     },
     {
         "id": 49,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Makar Sankranti Kite Festival",
         "location": "Jaipur",
         "month": "January",
@@ -3185,7 +3185,7 @@ export const FESTIVALS = [
     },
     {
         "id": 50,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Basant Panchami",
         "location": "Jaipur",
         "month": "February",
@@ -3251,7 +3251,7 @@ export const FESTIVALS = [
     },
     {
         "id": 51,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Ram Navami",
         "location": "Ajmer",
         "month": "April",
@@ -3316,7 +3316,7 @@ export const FESTIVALS = [
     },
     {
         "id": 52,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Holi Festival",
         "location": "Jaipur",
         "month": "March",
@@ -3382,7 +3382,7 @@ export const FESTIVALS = [
     },
     {
         "id": 53,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Dussehra Festival",
         "location": "Jaipur",
         "month": "October",
@@ -3448,7 +3448,7 @@ export const FESTIVALS = [
     },
     {
         "id": 54,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Sharad Festival",
         "location": "Mount Abu",
         "month": "October",
@@ -3577,7 +3577,7 @@ export const FESTIVALS = [
     },
     {
         "id": 56,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Bhil Festival",
         "location": "Banswara",
         "month": "March",
@@ -3708,7 +3708,7 @@ export const FESTIVALS = [
     },
     {
         "id": 58,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Rajasthan Heritage Week",
         "location": "Jaipur",
         "month": "December",
@@ -3774,7 +3774,7 @@ export const FESTIVALS = [
     },
     {
         "id": 59,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Republic Day Festival",
         "location": "Jaipur",
         "month": "January",
@@ -3840,7 +3840,7 @@ export const FESTIVALS = [
     },
     {
         "id": 60,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Independence Day Festival",
         "location": "Jaipur",
         "month": "August",
@@ -3906,7 +3906,7 @@ export const FESTIVALS = [
     },
     {
         "id": 61,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Kumbhalgarh Festival",
         "location": "Kumbhalgarh",
         "month": "December",
@@ -3968,7 +3968,7 @@ export const FESTIVALS = [
     },
     {
         "id": 62,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-12-15",
         "name": "Magnetic Fields Festival",
         "location": "Alsisar",
         "month": "December",
@@ -4030,7 +4030,7 @@ export const FESTIVALS = [
     },
     {
         "id": 63,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Abhaneri Festival",
         "location": "Dausa",
         "month": "October",
@@ -4094,7 +4094,7 @@ export const FESTIVALS = [
     },
     {
         "id": 64,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Dhulandi Festival",
         "location": "Jaipur",
         "month": "March",
@@ -4160,7 +4160,7 @@ export const FESTIVALS = [
     },
     {
         "id": 65,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Thar Festival",
         "location": "Barmer",
         "month": "March",
@@ -4226,7 +4226,7 @@ export const FESTIVALS = [
     },
     {
         "id": 66,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Sheetla Mata Fair",
         "location": "Jaipur",
         "month": "March-April",
@@ -4292,7 +4292,7 @@ export const FESTIVALS = [
     },
     {
         "id": 67,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Godwar Festival",
         "location": "Pali",
         "month": "March",
@@ -4358,7 +4358,7 @@ export const FESTIVALS = [
     },
     {
         "id": 68,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Ghotia Amba Fair",
         "location": "Banswara",
         "month": "March",
@@ -4423,7 +4423,7 @@ export const FESTIVALS = [
     },
     {
         "id": 69,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Khatu Shyamji Fair",
         "location": "Sikar",
         "month": "February-March",
@@ -4487,7 +4487,7 @@ export const FESTIVALS = [
     },
     {
         "id": 70,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Salasar Balaji Fair",
         "location": "Churu",
         "month": "April",
@@ -4549,7 +4549,7 @@ export const FESTIVALS = [
     },
     {
         "id": 71,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Mehandipur Balaji Fair",
         "location": "Dausa",
         "month": "April",
@@ -4613,7 +4613,7 @@ export const FESTIVALS = [
     },
     {
         "id": 72,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Rani Sati Fair",
         "location": "Jhunjhunu",
         "month": "August-September",
@@ -4678,7 +4678,7 @@ export const FESTIVALS = [
     },
     {
         "id": 73,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Jeen Mata Fair",
         "location": "Sikar",
         "month": "April",
@@ -4742,7 +4742,7 @@ export const FESTIVALS = [
     },
     {
         "id": 74,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Banganga Fair",
         "location": "Jaipur",
         "month": "April-May",
@@ -4808,7 +4808,7 @@ export const FESTIVALS = [
     },
     {
         "id": 75,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Kalyanji Fair",
         "location": "Tonk",
         "month": "August",
@@ -4870,7 +4870,7 @@ export const FESTIVALS = [
     },
     {
         "id": 76,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-06-15",
         "name": "Sita Mata Fair",
         "location": "Pratapgarh",
         "month": "June",
@@ -4934,7 +4934,7 @@ export const FESTIVALS = [
     },
     {
         "id": 77,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Jambheswar Fair",
         "location": "Bikaner",
         "month": "February-March",
@@ -5000,7 +5000,7 @@ export const FESTIVALS = [
     },
     {
         "id": 78,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "Gautameshwar Fair",
         "location": "Pratapgarh",
         "month": "May",
@@ -5064,7 +5064,7 @@ export const FESTIVALS = [
     },
     {
         "id": 79,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-06-15",
         "name": "Haldighati Mahotsav",
         "location": "Rajsamand",
         "month": "June",
@@ -5128,7 +5128,7 @@ export const FESTIVALS = [
     },
     {
         "id": 80,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Ranthambore Festival",
         "location": "Sawai Madhopur",
         "month": "January",
@@ -5192,7 +5192,7 @@ export const FESTIVALS = [
     },
     {
         "id": 81,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Johar Mela",
         "location": "Chittorgarh",
         "month": "February-March",
@@ -5258,7 +5258,7 @@ export const FESTIVALS = [
     },
     {
         "id": 82,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Phool Dol Fair",
         "location": "Shahpura",
         "month": "March",
@@ -5320,7 +5320,7 @@ export const FESTIVALS = [
     },
     {
         "id": 83,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Machkund Fair",
         "location": "Dholpur",
         "month": "September",
@@ -5382,7 +5382,7 @@ export const FESTIVALS = [
     },
     {
         "id": 84,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-05-15",
         "name": "Matrikundiya Fair",
         "location": "Chittorgarh",
         "month": "May",
@@ -5448,7 +5448,7 @@ export const FESTIVALS = [
     },
     {
         "id": 85,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Eklingji Fair",
         "location": "Udaipur",
         "month": "February-March",
@@ -5514,7 +5514,7 @@ export const FESTIVALS = [
     },
     {
         "id": 86,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Ram Ravan Fair",
         "location": "Badi Sadri",
         "month": "April",
@@ -5642,7 +5642,7 @@ export const FESTIVALS = [
     },
     {
         "id": 88,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Ramdev Cattle Fair",
         "location": "Nagaur",
         "month": "January-February",
@@ -5708,7 +5708,7 @@ export const FESTIVALS = [
     },
     {
         "id": 89,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Khetlaji Fair",
         "location": "Pali",
         "month": "March-April",
@@ -5774,7 +5774,7 @@ export const FESTIVALS = [
     },
     {
         "id": 90,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Galtaji Fair",
         "location": "Jaipur",
         "month": "January",
@@ -5840,7 +5840,7 @@ export const FESTIVALS = [
     },
     {
         "id": 91,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-01-15",
         "name": "Chauth Mata Fair",
         "location": "Sawai Madhopur",
         "month": "January-February",
@@ -5970,7 +5970,7 @@ export const FESTIVALS = [
     },
     {
         "id": 93,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Dadhimati Mata Fair",
         "location": "Nagaur",
         "month": "April & October",
@@ -6036,7 +6036,7 @@ export const FESTIVALS = [
     },
     {
         "id": 94,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Viratra Mata Fair",
         "location": "Barmer",
         "month": "April, August & December",
@@ -6102,7 +6102,7 @@ export const FESTIVALS = [
     },
     {
         "id": 95,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Bhadriya Mata Fair",
         "location": "Jaisalmer",
         "month": "April & October",
@@ -6166,7 +6166,7 @@ export const FESTIVALS = [
     },
     {
         "id": 96,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Siyawa's Gaur Fair",
         "location": "Sirohi",
         "month": "April",
@@ -6231,7 +6231,7 @@ export const FESTIVALS = [
     },
     {
         "id": 97,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Kodamar Holi",
         "location": "Ajmer",
         "month": "March",
@@ -6296,7 +6296,7 @@ export const FESTIVALS = [
     },
     {
         "id": 98,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Patharmar Holi",
         "location": "Barmer",
         "month": "March",
@@ -6362,7 +6362,7 @@ export const FESTIVALS = [
     },
     {
         "id": 99,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Bhagoriya Fair",
         "location": "Udaipur",
         "month": "March",
@@ -6428,7 +6428,7 @@ export const FESTIVALS = [
     },
     {
         "id": 100,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Mahansar Shekhawati Festival",
         "location": "Jhunjhunu",
         "month": "February",
@@ -6493,7 +6493,7 @@ export const FESTIVALS = [
     },
     {
         "id": 101,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Dhinga Gavar",
         "location": "Jodhpur",
         "month": "April",
@@ -6559,7 +6559,7 @@ export const FESTIVALS = [
     },
     {
         "id": 102,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Devnarayan Fair",
         "location": "Bhilwara",
         "month": "September",
@@ -6621,7 +6621,7 @@ export const FESTIVALS = [
     },
     {
         "id": 103,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Pabuji Fair",
         "location": "Jodhpur",
         "month": "April",
@@ -6687,7 +6687,7 @@ export const FESTIVALS = [
     },
     {
         "id": 104,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Sachiya Mata Fair",
         "location": "Osian",
         "month": "April & October",
@@ -6749,7 +6749,7 @@ export const FESTIVALS = [
     },
     {
         "id": 105,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Chamunda Mata Fair",
         "location": "Jodhpur",
         "month": "September-October",
@@ -6815,7 +6815,7 @@ export const FESTIVALS = [
     },
     {
         "id": 106,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Govind Devji Fair",
         "location": "Jaipur",
         "month": "August",
@@ -6881,7 +6881,7 @@ export const FESTIVALS = [
     },
     {
         "id": 107,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-10-15",
         "name": "Kalika Mata Fair",
         "location": "Chittorgarh",
         "month": "October",
@@ -6947,7 +6947,7 @@ export const FESTIVALS = [
     },
     {
         "id": 108,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Manibhadra Veer Fair",
         "location": "Sirohi",
         "month": "February",
@@ -7012,7 +7012,7 @@ export const FESTIVALS = [
     },
     {
         "id": 109,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Markandeshwar Fair",
         "location": "Sirohi",
         "month": "September",
@@ -7077,7 +7077,7 @@ export const FESTIVALS = [
     },
     {
         "id": 110,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-03-15",
         "name": "Rishabhdeo Fair",
         "location": "Udaipur",
         "month": "March",
@@ -7143,7 +7143,7 @@ export const FESTIVALS = [
     },
     {
         "id": 111,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Charbhuja Nath Fair",
         "location": "Rajsamand",
         "month": "August-September",
@@ -7207,7 +7207,7 @@ export const FESTIVALS = [
     },
     {
         "id": 112,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Sanwaliyaji Fair",
         "location": "Chittorgarh",
         "month": "August-September",
@@ -7273,7 +7273,7 @@ export const FESTIVALS = [
     },
     {
         "id": 113,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Parshuram Mahadev Fair",
         "location": "Pali",
         "month": "August",
@@ -7339,7 +7339,7 @@ export const FESTIVALS = [
     },
     {
         "id": 114,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-02-15",
         "name": "Brahmani Mata Fair",
         "location": "Baran",
         "month": "February",
@@ -7469,7 +7469,7 @@ export const FESTIVALS = [
     },
     {
         "id": 116,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Bhartrihari Fair",
         "location": "Alwar",
         "month": "August-September",
@@ -7535,7 +7535,7 @@ export const FESTIVALS = [
     },
     {
         "id": 117,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Pandupole Hanuman Fair",
         "location": "Alwar",
         "month": "September",
@@ -7601,7 +7601,7 @@ export const FESTIVALS = [
     },
     {
         "id": 118,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-08-25",
         "name": "Narhad Pir Urs",
         "location": "Jhunjhunu",
         "month": "August",
@@ -7666,7 +7666,7 @@ export const FESTIVALS = [
     },
     {
         "id": 119,
-        "nextDate": "2026-11-15",
+        "nextDate": "2026-09-15",
         "name": "Jaswant Cattle Fair",
         "location": "Bharatpur",
         "month": "September-October",
@@ -7730,7 +7730,7 @@ export const FESTIVALS = [
     },
     {
         "id": 120,
-        "nextDate": "2026-11-15",
+        "nextDate": "2027-04-15",
         "name": "Sevadiya Cattle Fair",
         "location": "Jalore",
         "month": "April",
