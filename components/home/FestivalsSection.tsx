@@ -263,7 +263,7 @@ export function FestivalsSection() {
   };
 
   return (
-    <section className="relative bg-[#070b16] overflow-hidden pt-28 md:pt-28 pb-16 md:pb-32">
+    <section className="relative bg-white dark:bg-[#070b16] overflow-hidden pt-28 md:pt-28 pb-16 md:pb-32">
       {/* Glow Effects */}
       <div className="absolute top-0 left-0 w-[500px] h-[500px]
         bg-yellow-500/10 rounded-full blur-[180px] pointer-events-none" />
@@ -294,7 +294,7 @@ export function FestivalsSection() {
         <FestivalHero festival={festival} onNext={handleNext} onPrev={handlePrev} />
 
         {/* Progress Bar */}
-        <div className="mt-8 h-1.5 bg-white/10 rounded-full overflow-hidden max-w-2xl mx-auto">
+        <div className="mt-8 h-1.5 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden max-w-2xl mx-auto">
           <motion.div
             className="h-full bg-gradient-to-r from-yellow-400
               via-orange-500 to-red-500"
@@ -317,7 +317,7 @@ export function FestivalsSection() {
             </span>
 
             <h2 className="mt-4 text-2xl md:text-5xl font-bold
-              text-white font-playfair">
+              text-gray-900 dark:text-white font-playfair">
               {festival.name}
             </h2>
 
@@ -327,16 +327,16 @@ export function FestivalsSection() {
                 { icon: Calendar, text: festival.month },
                 { icon: Clock, text: festival.duration },
               ].map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2 text-yellow-400 bg-white/5 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-white/5">
+                <div key={text} className="flex items-center gap-2 text-yellow-500 dark:text-yellow-400 bg-gray-100 dark:bg-white/5 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-gray-200/50 dark:border-white/5">
                   <Icon size={14} className="md:w-[18px] md:h-[18px]" />
-                  <span className="text-white/90 text-xs md:text-base font-medium">
+                  <span className="text-gray-800 dark:text-white/90 text-xs md:text-base font-medium">
                     {text}
                   </span>
                 </div>
               ))}
             </div>
 
-            <p className="text-white/70 leading-relaxed md:leading-8 text-xs md:text-lg">
+            <p className="text-gray-600 dark:text-white/70 leading-relaxed md:leading-8 text-xs md:text-lg">
               {festival.description}
             </p>
 
@@ -346,7 +346,7 @@ export function FestivalsSection() {
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-white/5 border border-white/10 backdrop-blur-md text-white text-xs md:text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-white/10 hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
+                  className="px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-md text-gray-800 dark:text-white text-xs md:text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-gray-200 dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
                 >
                   {item}
                 </motion.div>
@@ -394,19 +394,19 @@ export function FestivalsSection() {
             ].map((item) => (
               <div
                 key={item.label}
-                className="group relative rounded-2xl md:rounded-3xl p-4 md:p-6 bg-white/5 border border-white/10 backdrop-blur-md shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
+                className="group relative rounded-2xl md:rounded-3xl p-4 md:p-6 bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-md shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-gray-100 dark:hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-gray-300 dark:hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl md:rounded-3xl pointer-events-none" />
-                <h4 className="text-white/60 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-100/50 to-transparent dark:from-white/5 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl md:rounded-3xl pointer-events-none" />
+                <h4 className="text-gray-500 dark:text-white/60 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
                 {item.isRating ? (
                   <div className="flex items-center gap-2">
                     <Star className="text-gold-400 fill-gold-400 w-4 h-4 md:w-6 md:h-6 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-xl md:text-4xl font-bold text-white drop-shadow-md">
+                    <span className="text-xl md:text-4xl font-bold text-gray-900 dark:text-white drop-shadow-md">
                       {item.value}
                     </span>
                   </div>
                 ) : (
-                  <h3 className="text-base md:text-3xl font-bold text-white drop-shadow-md">
+                  <h3 className="text-base md:text-3xl font-bold text-gray-900 dark:text-white drop-shadow-md">
                     {item.value}
                   </h3>
                 )}
@@ -416,7 +416,7 @@ export function FestivalsSection() {
         </div>
 
         {/* Experience The Magic */}
-        <div className="mt-12 md:mt-32 border-t border-white/10 pt-12 md:pt-24">
+        <div className="mt-12 md:mt-32 border-t border-gray-200 dark:border-white/10 pt-12 md:pt-24">
 
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -424,20 +424,20 @@ export function FestivalsSection() {
             viewport={{ once: true }}
             className="text-center mb-8 md:mb-16"
           >
-            <span className="uppercase tracking-[6px] text-yellow-400
+            <span className="uppercase tracking-[6px] text-yellow-500 dark:text-yellow-400
               font-semibold text-xs md:text-sm">
               Rajasthan Festivals
             </span>
 
             <h1 className="mt-2 md:mt-4 text-xl sm:text-4xl md:text-5xl lg:text-6xl
-              font-bold text-white leading-tight font-playfair">
+              font-bold text-gray-900 dark:text-white leading-tight font-playfair">
               Experience The{" "}
               <span className="bg-gradient-to-r from-yellow-400 via-orange-400
                 to-red-400 bg-clip-text text-transparent">
                 Magic
               </span>
             </h1>
-            <p className="text-white/60 mt-3 md:mt-6 max-w-3xl mx-auto text-xs
+            <p className="text-gray-600 dark:text-white/60 mt-3 md:mt-6 max-w-3xl mx-auto text-xs
               sm:text-base md:text-lg leading-relaxed">
               Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,
               royal processions and unforgettable cultural festivals.
@@ -445,9 +445,9 @@ export function FestivalsSection() {
           </motion.div>
 
           {/* Filters & Search */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12 bg-white/5 p-4 rounded-3xl border border-white/10 backdrop-blur-md">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12 bg-gray-50 dark:bg-white/5 p-4 rounded-3xl border border-gray-200 dark:border-white/10 backdrop-blur-md">
             <div className="relative w-full md:w-1/2">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={20} />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" size={20} />
               <input
                 type="text"
                 placeholder="Search festival by name (e.g. desert|camel)"
@@ -456,26 +456,26 @@ export function FestivalsSection() {
                   setSearchTerm(e.target.value);
                   setVisibleCount(8);
                 }}
-                className="w-full bg-black/40 border border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-4 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner text-xs md:text-sm"
+                className="w-full bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-4 text-gray-900 dark:text-white focus:outline-none focus:border-yellow-500 dark:focus:border-yellow-400/50 transition-colors shadow-inner text-xs md:text-sm"
               />
             </div>
 
             <div className="relative w-full md:w-auto min-w-[200px]">
-              <Filter className="absolute left-4 top-1/2 -translate-y-1/2 text-white/40" size={20} />
+              <Filter className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" size={20} />
               <select
                 value={selectedLocation}
                 onChange={(e) => {
                   setSelectedLocation(e.target.value);
                   setVisibleCount(8);
                 }}
-                className="w-full bg-black/40 border border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-10 text-white focus:outline-none focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer text-xs md:text-sm"
+                className="w-full bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-10 text-gray-900 dark:text-white focus:outline-none focus:border-yellow-500 dark:focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer text-xs md:text-sm"
               >
                 {uniqueLocations.map(loc => (
-                  <option key={loc} value={loc} className="bg-gray-900 text-white">{loc}</option>
+                  <option key={loc} value={loc} className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">{loc}</option>
                 ))}
               </select>
               {/* Custom arrow */}
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-white/40">
+              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 dark:text-white/40">
                 <ChevronRight size={16} className="rotate-90" />
               </div>
             </div>
@@ -525,7 +525,7 @@ export function FestivalsSection() {
 
           {filteredFestivals.length === 0 && (
             <div className="text-center py-20">
-              <p className="text-white/60 text-lg">No festivals found matching your criteria.</p>
+              <p className="text-gray-500 dark:text-white/60 text-lg">No festivals found matching your criteria.</p>
             </div>
           )}
 
@@ -536,7 +536,7 @@ export function FestivalsSection() {
               animate={{ opacity: 1, y: 0 }}
               className="mt-8 md:mt-16 flex flex-col items-center gap-3"
             >
-              <p className="text-sm text-white/50 font-medium">
+              <p className="text-sm text-gray-500 dark:text-white/50 font-medium">
                 Showing {visibleFestivals.length} of {filteredFestivals.length} festivals
               </p>
               <motion.button
@@ -548,14 +548,14 @@ export function FestivalsSection() {
                   handleLoadMore();
                 }}
                 className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300
-                  bg-transparent border-2 border-yellow-500
-                  text-yellow-400
-                  hover:bg-yellow-500 hover:text-black
-                  shadow-md hover:shadow-yellow-500/30 group"
+                  bg-transparent border-2 border-yellow-600 dark:border-yellow-500
+                  text-yellow-600 dark:text-yellow-400
+                  hover:bg-yellow-600 dark:hover:bg-yellow-500 hover:text-white dark:hover:text-black
+                  shadow-md hover:shadow-yellow-600/30 dark:hover:shadow-yellow-500/30 group"
               >
-                <Calendar size={16} className="group-hover:text-black" />
+                <Calendar size={16} className="group-hover:text-white dark:group-hover:text-black" />
                 Load More Festivals
-                <span className="bg-yellow-500/20 group-hover:bg-black/20 text-yellow-400 group-hover:text-black px-2 py-0.5 rounded-full text-xs font-bold border border-transparent transition-colors">
+                <span className="bg-yellow-500/10 dark:bg-yellow-500/20 group-hover:bg-yellow-700/20 dark:group-hover:bg-black/20 text-yellow-600 dark:text-yellow-400 group-hover:text-yellow-700 dark:group-hover:text-black px-2 py-0.5 rounded-full text-xs font-bold border border-transparent transition-colors">
                   +{Math.min(8, filteredFestivals.length - visibleCount)} more
                 </span>
               </motion.button>
