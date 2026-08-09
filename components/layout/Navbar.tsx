@@ -45,7 +45,7 @@ export function Navbar() {
                             <img
                                 src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
                                 alt="Rajasthan Tourism Places"
-                                className={`h-16 md:h-20 w-auto object-contain ${!isSolid ? "drop-shadow-lg" : ""}`}
+                                className={`mt-2 h-12 md:h-20 w-auto object-contain ${!isSolid ? "drop-shadow-lg" : ""}`}
                             />
                         </Link>
 

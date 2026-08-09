@@ -178,7 +178,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
           </button>
         </div>
 
-        {/* Top Right Sidebar Stack: Rating + Countdown */}
+        {/* Top Right Sidebar Stack: Rating + Date Card */}
         <div className="absolute top-6 right-4 md:top-8 md:right-8 flex flex-col items-end gap-2 md:gap-3.5 z-20">
           {/* Rating */}
           <div className="flex items-center gap-1.5
@@ -188,13 +188,22 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
             <span className="text-white font-bold text-xs md:text-base">{festival.rating}</span>
           </div>
 
-          {/* Countdown */}
+          {/* Date Card */}
           <div className="backdrop-blur-2xl bg-black/45 border border-white/15
-            rounded-xl md:rounded-3xl p-2.5 md:p-5 shadow-2xl origin-top-right">
-            <p className="text-white/70 text-[9px] md:text-xs mb-1.5 md:mb-3 font-medium uppercase tracking-widest text-right">
-              Starts In
+            rounded-xl md:rounded-2xl p-2.5 md:p-4 shadow-2xl origin-top-right text-right">
+            <p className="text-white/50 text-[9px] md:text-[10px] mb-1 font-semibold uppercase tracking-wider">
+              Date
             </p>
-            <Countdown targetDate={festival.nextDate} />
+            <p className="text-white font-bold text-xs md:text-sm tracking-wide whitespace-nowrap">
+              {(() => {
+                if (!festival.nextDate) return "Coming Soon";
+                const parts = festival.nextDate.split('-');
+                if (parts.length !== 3) return festival.nextDate;
+                const [year, month, day] = parts;
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${day} ${months[parseInt(month) - 1]} ${year}`;
+              })()}
+            </p>
           </div>
         </div>
       </motion.div>
