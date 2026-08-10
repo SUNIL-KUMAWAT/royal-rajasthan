@@ -21,6 +21,7 @@ import {
 import { PLACES, PLACES_HINDI } from "@/constants/data";
 import type { Place } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 interface Props {
     place: Place;
 }
@@ -1501,6 +1502,8 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                         </div>
                     </div>
                 </section>
+                {/* SEO Interlinks — Explore More */}
+                <ExploreMoreSection currentPage="places" language={language} />
             </div>
 
             {/* Lightbox */}

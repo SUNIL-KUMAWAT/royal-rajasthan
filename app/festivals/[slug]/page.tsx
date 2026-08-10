@@ -93,7 +93,83 @@ export default async function FestivalDetailPage({ params }: { params: Promise<{
     related.push(...additional);
   }
 
+  // JSON-LD Schemas for AI Search & Google Rich Snippets
+  const eventSchema = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": festival.name,
+    "description": festival.description,
+    "image": festival.image,
+    "location": {
+      "@type": "Place",
+      "name": festival.location,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": festival.location,
+        "addressRegion": "Rajasthan",
+        "addressCountry": "IN"
+      }
+    },
+    "startDate": festival.nextDate || undefined,
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rajasthanplaces.in"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Festivals",
+        "item": "https://rajasthanplaces.in/culture"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": festival.name,
+        "item": `https://rajasthanplaces.in/festivals/${slug}`
+      }
+    ]
+  };
+
+  const faqSchema = festival.faqs && festival.faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": festival.faqs.map(faq => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
   return (
-    <FestivalDetailClient festival={festival} related={related} />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(eventSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      {faqSchema && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+      )}
+      <FestivalDetailClient festival={festival} related={related} />
+    </>
   );
 }

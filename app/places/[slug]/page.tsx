@@ -122,6 +122,89 @@ export default async function PlaceDetailPage({
         );
     }
 
-    // Pass JSON data to client component
-    return <PlaceDetailClient place={place} />;
+    // JSON-LD Schemas for AI Search Engines & Google Rich Snippets
+    const touristAttractionSchema = {
+        "@context": "https://schema.org",
+        "@type": "TouristAttraction",
+        "name": place.name,
+        "description": place.description,
+        "image": place.images,
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": place.location.city,
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": place.location.latitude,
+            "longitude": place.location.longitude
+        },
+        "openingHoursSpecification": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "opens": place.timing.open,
+                "closes": place.timing.close,
+                "dayOfWeek": "https://schema.org/Everyday"
+            }
+        ]
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rajasthanplaces.in"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Places",
+                "item": "https://rajasthanplaces.in/places"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": place.name,
+                "item": `https://rajasthanplaces.in/places/${place.slug}`
+            }
+        ]
+    };
+
+    const faqSchema = place.faqs && place.faqs.length > 0 ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": place.faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    } : null;
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(touristAttractionSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            {faqSchema && (
+                <script
+                    type="application/ld+json"
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+                />
+            )}
+            <PlaceDetailClient place={place} />
+        </>
+    );
 }

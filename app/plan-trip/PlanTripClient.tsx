@@ -28,6 +28,7 @@ import {
 import { PLACES, CITIES, CITIES_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { Place } from "@/constants/data";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 // ============ TYPES ============
 interface DayPlan {
@@ -1428,6 +1429,11 @@ export default function PlanTripClient() {
                 {/* Spacer so content isn't hidden behind sticky bar */}
                 {step < 4 && <div className="h-24" />}
             </div>
+
+            {/* SEO Interlinks — Explore More (only shown when itinerary is generated) */}
+            {step === 4 && (
+                <ExploreMoreSection currentPage="places" language={language} />
+            )}
 
             {/* ── Sticky Bottom Navigation Bar ── */}
             {step < 4 && (

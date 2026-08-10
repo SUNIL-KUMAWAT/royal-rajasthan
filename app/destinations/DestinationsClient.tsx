@@ -6,8 +6,11 @@ import { Search, Star, MapPin, Clock, ArrowRight, Heart } from "lucide-react";
 import { DESTINATIONS } from "@/constants/data";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from "@/components/LanguageProvider";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export default function DestinationsClient() {
+    const { language } = useLanguage();
     const [search, setSearch] = useState("");
     const [category, setCategory] = useState("All");
     const [favorites, setFavorites] = useState<number[]>([]);
@@ -197,6 +200,9 @@ export default function DestinationsClient() {
                     </div>
                 </div>
             </section>
+
+            {/* SEO Interlinks — Explore More */}
+            <ExploreMoreSection currentPage="places" language={language} />
         </>
     );
 }

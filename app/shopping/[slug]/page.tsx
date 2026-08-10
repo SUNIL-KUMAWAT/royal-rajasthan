@@ -83,5 +83,58 @@ export default async function ShoppingDetailPage({ params }: { params: Promise<{
         notFound();
     }
 
-    return <ShoppingDetailClient place={foundPlace} />;
+    // JSON-LD Schemas for AI Search & Google Rich Snippets
+    const localBusinessSchema = {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": foundPlace.name,
+        "description": foundPlace.description,
+        "image": foundPlace.image,
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": foundPlace.district,
+            "addressRegion": "Rajasthan",
+            "addressCountry": "IN"
+        },
+        "priceRange": foundPlace.priceRange || "$$"
+    };
+
+    const breadcrumbSchema = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://rajasthanplaces.in"
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Shopping",
+                "item": "https://rajasthanplaces.in/shopping"
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "name": foundPlace.name,
+                "item": `https://rajasthanplaces.in/shopping/${slug}`
+            }
+        ]
+    };
+
+    return (
+        <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+            />
+            <ShoppingDetailClient place={foundPlace} />
+        </>
+    );
 }
