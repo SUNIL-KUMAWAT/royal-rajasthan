@@ -633,7 +633,7 @@ export function PlacesClient() {
             </section>
 
             {/* SEO Interlinks — Explore More */}
-            <ExploreMoreSection currentPage="places" language={language as "en" | "hi"} />
+            <ExploreMoreSection currentPage="places" language={language} />
 
             {/* Dynamic JSON-LD FAQ Schema */}
             <script

@@ -67,7 +67,7 @@ const ALL_SECTIONS = [
 interface Props {
     /** Pass the current page id to exclude it from the links */
     currentPage: "places" | "festivals" | "culture" | "shopping";
-    language?: "en" | "hi";
+    language?: string;
 }
 
 export function ExploreMoreSection({ currentPage, language = "en" }: Props) {

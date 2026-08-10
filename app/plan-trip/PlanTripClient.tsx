@@ -122,33 +122,41 @@ const PACE_OPTIONS = [
 ];
 
 const CITY_IMAGES: Record<string, string> = {
-    Jaipur:
-        "https://picsum.photos/seed/raj-1132/800/600",
-    Jodhpur:
-        "https://picsum.photos/seed/raj-1133/800/600",
-    Udaipur:
-        "https://picsum.photos/seed/raj-1134/800/600",
-    Jaisalmer:
-        "https://picsum.photos/seed/raj-1135/800/600",
-    Pushkar:
-        "https://picsum.photos/seed/raj-1136/800/600",
-    "Mount Abu":
-        "https://picsum.photos/seed/raj-1137/800/600",
-    Bikaner:
-        "https://picsum.photos/seed/raj-1138/800/600",
-    "Sawai Madhopur":
-        "https://picsum.photos/seed/raj-1139/800/600",
+    Jaipur: "https://picsum.photos/seed/raj-1132/800/600",
+    "जयपुर": "https://picsum.photos/seed/raj-1132/800/600",
+    Jodhpur: "https://picsum.photos/seed/raj-1133/800/600",
+    "जोधपुर": "https://picsum.photos/seed/raj-1133/800/600",
+    Udaipur: "https://picsum.photos/seed/raj-1134/800/600",
+    "उदयपुर": "https://picsum.photos/seed/raj-1134/800/600",
+    Jaisalmer: "https://picsum.photos/seed/raj-1135/800/600",
+    "जैसलमेर": "https://picsum.photos/seed/raj-1135/800/600",
+    Pushkar: "https://picsum.photos/seed/raj-1136/800/600",
+    "पुष्कर": "https://picsum.photos/seed/raj-1136/800/600",
+    "Mount Abu": "https://picsum.photos/seed/raj-1137/800/600",
+    "माउंट आबू": "https://picsum.photos/seed/raj-1137/800/600",
+    Bikaner: "https://picsum.photos/seed/raj-1138/800/600",
+    "बीकानेर": "https://picsum.photos/seed/raj-1138/800/600",
+    "Sawai Madhopur": "https://picsum.photos/seed/raj-1139/800/600",
+    "सवाई माधोपुर": "https://picsum.photos/seed/raj-1139/800/600",
 };
 
 const CITY_DESCRIPTIONS: Record<string, string> = {
     Jaipur: "The Pink City - Forts, Palaces & Markets",
+    "जयपुर": "पिंक सिटी - किले, महल और बाजार",
     Jodhpur: "The Blue City - Mehrangarh & Blue Houses",
+    "जोधपुर": "ब्लू सिटी - मेहरानगढ़ और नीले घर",
     Udaipur: "The Lake City - Romantic Palaces & Lakes",
+    "उदयपुर": "झीलों की नगरी - रोमांटिक महल और झीलें",
     Jaisalmer: "The Golden City - Desert Forts & Sand Dunes",
+    "जैसलमेर": "गोल्डन सिटी - रेगिस्तानी किले और रेत के टीले",
     Pushkar: "The Sacred City - Holy Lake & Only Brahma Temple",
+    "पुष्कर": "पवित्र नगरी - पवित्र झील और एकमात्र ब्रह्मा मंदिर",
     "Mount Abu": "The Hill Station - Cool Climate & Jain Temples",
+    "माउंट आबू": "हिल स्टेशन - ठंडा मौसम और जैन मंदिर",
     Bikaner: "The Camel City - Junagarh Fort & Sweets",
+    "बीकानेर": "ऊंटों की नगरी - जूनागढ़ किला और मिठाइयां",
     "Sawai Madhopur": "Tiger Land - Ranthambore National Park",
+    "सवाई माधोपुर": "बाघों की भूमि - रणथंभौर राष्ट्रीय उद्यान",
 };
 
 // ============ HELPERS ============
@@ -181,12 +189,19 @@ function getTimeSlotInfo(slot: "morning" | "afternoon" | "evening") {
     }
 }
 
+function getEnglishCityName(city: string): string {
+    const hindiIdx = CITIES_HINDI.indexOf(city);
+    return hindiIdx !== -1 ? CITIES[hindiIdx] : city;
+}
+
 function generateItinerary(config: TripConfig): DayPlan[] {
     const { selectedCities, startDate, days, pace } = config;
     const itinerary: DayPlan[] = [];
 
+    const englishSelectedCities = selectedCities.map(getEnglishCityName);
+
     const relevantPlaces = PLACES.filter((p) =>
-        selectedCities.includes(p.city)
+        englishSelectedCities.includes(p.city)
     ).sort((a, b) => b.rating - a.rating);
 
     const usedPlaceIds = new Set<number>();
@@ -203,8 +218,9 @@ function generateItinerary(config: TripConfig): DayPlan[] {
     let dayCount = 0;
 
     selectedCities.forEach((city) => {
+        const engCity = getEnglishCityName(city);
         const cityPlaces = relevantPlaces.filter(
-            (p) => p.city === city
+            (p) => p.city === engCity
         );
         const cityDays = daysPerCity[city];
 
@@ -556,7 +572,12 @@ export default function PlanTripClient() {
     const [itinerary, setItinerary] = useState<DayPlan[]>([]);
     const [expandedDay, setExpandedDay] = useState<number | null>(null);
 
-    const availableCities = currentCities.filter((c) => c !== "All Cities" && c !== "सभी शहर");
+    const availableCities = currentCities.filter((c) => {
+        if (c === "All Cities" || c === "सभी शहर") return false;
+        const engCity = getEnglishCityName(c);
+        const count = PLACES.filter((p) => p.city === engCity).length;
+        return count > 0;
+    });
 
     const canProceed = () => {
         if (step === 1) return config.selectedCities.length > 0;
@@ -705,99 +726,95 @@ export default function PlanTripClient() {
                             animate={{ opacity: 1, x: 0 }}
                             exit={{ opacity: 0, x: -50 }}
                         >
-                            <div className="text-center mb-8">
-                                <h2 className="font-playfair text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                            <div className="text-center mb-6">
+                                <h2 className="font-playfair text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
                                     Which cities do you want to visit?
                                 </h2>
-                                <p className="text-gray-500 dark:text-gray-400">
-                                    Select one or more cities ({config.selectedCities.length}{" "}
-                                    selected)
+                                <p className="text-gray-500 dark:text-gray-400 text-sm">
+                                    Tap to select — multiple cities allowed
                                 </p>
                             </div>
 
-                            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                            {/* Selected cities sticky bar */}
+                            {config.selectedCities.length > 0 && (
+                                <motion.div
+                                    initial={{ opacity: 0, y: -10 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    className="sticky top-20 z-30 mb-4 bg-yellow-50/90 dark:bg-yellow-900/30 backdrop-blur-md border border-yellow-200 dark:border-yellow-800 rounded-2xl px-4 py-3 flex items-center gap-2 flex-wrap shadow-md"
+                                >
+                                    <span className="text-yellow-700 dark:text-yellow-400 font-semibold text-xs shrink-0">✓ Selected:</span>
+                                    {config.selectedCities.map((city) => (
+                                        <span key={city} className="flex items-center gap-1 bg-yellow-400 text-yellow-900 px-2.5 py-1 rounded-full text-xs font-bold">
+                                            {city}
+                                            <button
+                                                onClick={(e) => { e.stopPropagation(); toggleCity(city); }}
+                                                className="ml-0.5 hover:text-red-700 transition-colors"
+                                            >
+                                                <X size={11} />
+                                            </button>
+                                        </span>
+                                    ))}
+                                    <span className="ml-auto text-yellow-600 dark:text-yellow-500 text-xs font-medium">{config.selectedCities.length} city selected</span>
+                                </motion.div>
+                            )}
+
+                            {/* Compact city grid — 2 cols mobile, 4 cols desktop */}
+                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
                                 {availableCities.map((city) => {
                                     const isSelected = config.selectedCities.includes(city);
-                                    const cityPlaces = PLACES.filter(
-                                        (p) => p.city === city
-                                    ).length;
+                                    const engCityName = getEnglishCityName(city);
+                                    const cityPlaces = PLACES.filter((p) => p.city === engCityName).length;
                                     return (
-                                        <motion.div
+                                        <motion.button
                                             key={city}
-                                            whileHover={{ scale: 1.03 }}
-                                            whileTap={{ scale: 0.98 }}
+                                            whileTap={{ scale: 0.96 }}
                                             onClick={() => toggleCity(city)}
-                                            className={`relative rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ${isSelected
-                                                ? "ring-2 ring-yellow-500 shadow-lg"
-                                                : "ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-yellow-300"
-                                                }`}
+                                            className={`relative rounded-xl overflow-hidden cursor-pointer transition-all duration-200 text-left w-full ${
+                                                isSelected
+                                                    ? "ring-2 ring-yellow-500 shadow-lg shadow-yellow-500/20"
+                                                    : "ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-yellow-300 hover:shadow-md"
+                                            }`}
                                         >
-                                            <div className="relative h-36">
+                                            {/* Image — smaller height */}
+                                            <div className="relative h-24 sm:h-28">
                                                 <Image
                                                     src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
                                                     alt={`${city} - Rajasthan`}
                                                     fill
                                                     className="w-full h-full object-cover"
+                                                    sizes="(max-width:640px) 50vw, 25vw"
                                                 />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                                                {isSelected && (
-                                                    <motion.div
-                                                        initial={{ scale: 0 }}
-                                                        animate={{ scale: 1 }}
-                                                        className="absolute top-3 right-3 w-7 h-7 bg-yellow-500 rounded-full flex items-center justify-center"
-                                                    >
-                                                        <Check size={16} className="text-white" />
-                                                    </motion.div>
-                                                )}
-                                                <div className="absolute bottom-3 left-3 text-white">
-                                                    <div className="font-bold text-lg">{city}</div>
-                                                    <div className="text-white/70 text-xs">
-                                                        {cityPlaces} places
-                                                    </div>
+                                                <div className={`absolute inset-0 transition-all duration-200 ${
+                                                    isSelected
+                                                        ? "bg-gradient-to-t from-yellow-900/80 via-black/30 to-transparent"
+                                                        : "bg-gradient-to-t from-black/70 to-transparent"
+                                                }`} />
+                                                {/* Check badge */}
+                                                <div className={`absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200 ${
+                                                    isSelected
+                                                        ? "bg-yellow-400 scale-100"
+                                                        : "bg-white/20 scale-75 opacity-0"
+                                                }`}>
+                                                    <Check size={13} className="text-yellow-900" />
+                                                </div>
+                                                {/* City name on image */}
+                                                <div className="absolute bottom-2 left-2 right-2">
+                                                    <div className="font-bold text-white text-sm leading-tight">{city}</div>
+                                                    <div className="text-white/70 text-[10px]">{cityPlaces} places</div>
                                                 </div>
                                             </div>
-                                            <div
-                                                className={`p-3 text-xs transition-colors ${isSelected
+                                            {/* Description row */}
+                                            <div className={`px-2.5 py-2 text-[10px] leading-snug transition-colors ${
+                                                isSelected
                                                     ? "bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400"
                                                     : "bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"
-                                                    }`}
-                                            >
+                                            }`}>
                                                 {CITY_DESCRIPTIONS[city] || "Explore this city"}
                                             </div>
-                                        </motion.div>
+                                        </motion.button>
                                     );
                                 })}
                             </div>
-
-                            {config.selectedCities.length > 0 && (
-                                <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
-                                    className="mt-6 bg-yellow-50 dark:bg-yellow-900/20 rounded-2xl p-4 flex items-center gap-3 flex-wrap"
-                                >
-                                    <span className="text-yellow-700 dark:text-yellow-400 font-medium text-sm">
-                                        Selected:
-                                    </span>
-                                    {config.selectedCities.map((city) => (
-                                        <span
-                                            key={city}
-                                            className="flex items-center gap-1 bg-yellow-100 dark:bg-yellow-800/30 text-yellow-800 dark:text-yellow-300 px-3 py-1 rounded-full text-sm"
-                                        >
-                                            <MapPin size={12} />
-                                            {city}
-                                            <button
-                                                onClick={(e) => {
-                                                    e.stopPropagation();
-                                                    toggleCity(city);
-                                                }}
-                                                className="ml-1 hover:text-red-500"
-                                            >
-                                                <X size={12} />
-                                            </button>
-                                        </span>
-                                    ))}
-                                </motion.div>
-                            )}
                         </motion.div>
                     )}
 
@@ -1053,6 +1070,27 @@ export default function PlanTripClient() {
                                     {stats?.totalCities} Cities •{" "}
                                     {stats?.totalPlaces} Places
                                 </p>
+
+                                {/* Selected Cities Photo Strip */}
+                                <div className="flex justify-center gap-3 mt-6 flex-wrap">
+                                    {config.selectedCities.map((city) => (
+                                        <div key={city} className="relative group">
+                                            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden ring-2 ring-yellow-400 shadow-lg">
+                                                <Image
+                                                    src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
+                                                    alt={city}
+                                                    fill
+                                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                                    sizes="112px"
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+                                                <div className="absolute bottom-2 left-0 right-0 text-center">
+                                                    <span className="text-white text-xs font-bold drop-shadow">{city}</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
                             {/* Stats */}
@@ -1154,17 +1192,28 @@ export default function PlanTripClient() {
                                                     expandedDay === day.day ? null : day.day
                                                 )
                                             }
-                                            className="w-full flex items-center justify-between p-5 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-all"
+                                            className="w-full flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-all"
                                         >
-                                            <div className="flex items-center gap-4">
-                                                <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-yellow-600 rounded-xl flex items-center justify-center text-white font-bold text-lg shadow-md">
-                                                    {day.day}
+                                            <div className="flex items-center gap-3">
+                                                {/* City image thumbnail */}
+                                                <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-md">
+                                                    <Image
+                                                        src={CITY_IMAGES[day.city] || CITY_IMAGES.Jaipur}
+                                                        alt={day.city}
+                                                        fill
+                                                        className="object-cover"
+                                                        sizes="56px"
+                                                    />
+                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                                                    <div className="absolute bottom-0.5 left-0 right-0 text-center">
+                                                        <span className="text-white text-[9px] font-bold leading-tight">{day.day}</span>
+                                                    </div>
                                                 </div>
                                                 <div className="text-left">
-                                                    <div className="font-bold text-gray-800 dark:text-white">
+                                                    <div className="font-bold text-gray-800 dark:text-white text-sm md:text-base">
                                                         Day {day.day} — {day.city}
                                                     </div>
-                                                    <div className="text-sm text-gray-400">
+                                                    <div className="text-xs text-gray-400">
                                                         {day.date}
                                                     </div>
                                                 </div>
@@ -1376,43 +1425,75 @@ export default function PlanTripClient() {
                     )}
                 </AnimatePresence>
 
-                {/* Navigation Buttons */}
-                {step < 4 && (
-                    <div className="flex justify-between mt-10 max-w-2xl mx-auto">
+                {/* Spacer so content isn't hidden behind sticky bar */}
+                {step < 4 && <div className="h-24" />}
+            </div>
+
+            {/* ── Sticky Bottom Navigation Bar ── */}
+            {step < 4 && (
+                <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 shadow-[0_-4px_24px_rgba(0,0,0,0.08)] safe-area-bottom">
+                    <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
+                        {/* Back button */}
                         <button
                             onClick={handleBack}
                             disabled={step === 1}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-full font-medium transition-all ${step === 1
-                                ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-                                : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
-                                }`}
+                            className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all text-sm shrink-0 ${
+                                step === 1
+                                    ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+                                    : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
+                            }`}
                         >
-                            <ArrowLeft size={18} />
+                            <ArrowLeft size={16} />
                             Back
                         </button>
-                        <button
+
+                        {/* Step hint */}
+                        <div className="flex-1 text-center">
+                            {step === 1 && (
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    {config.selectedCities.length === 0
+                                        ? "Select at least 1 city to continue"
+                                        : `${config.selectedCities.length} city selected — ready to continue!`}
+                                </p>
+                            )}
+                            {step === 2 && (
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    Set your travel dates and pace
+                                </p>
+                            )}
+                            {step === 3 && (
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    Choose your interests &amp; generate plan
+                                </p>
+                            )}
+                        </div>
+
+                        {/* Continue / Generate button */}
+                        <motion.button
+                            whileTap={{ scale: 0.97 }}
                             onClick={handleNext}
                             disabled={!canProceed()}
-                            className={`flex items-center gap-2 px-8 py-3 rounded-full font-semibold transition-all ${canProceed()
-                                ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white shadow-lg hover:shadow-xl hover:scale-105"
-                                : "bg-gray-200 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
-                                }`}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all shrink-0 ${
+                                canProceed()
+                                    ? "bg-gradient-to-r from-yellow-500 to-amber-500 text-white shadow-lg shadow-yellow-500/30 hover:shadow-xl hover:scale-105"
+                                    : "bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
+                            }`}
                         >
                             {step === 3 ? (
                                 <>
-                                    Generate Itinerary
-                                    <Check size={18} />
+                                    <span>Generate Plan</span>
+                                    <Check size={16} />
                                 </>
                             ) : (
                                 <>
-                                    Continue
-                                    <ArrowRight size={18} />
+                                    <span>Continue</span>
+                                    <ArrowRight size={16} />
                                 </>
                             )}
-                        </button>
+                        </motion.button>
                     </div>
-                )}
-            </div>
+                </div>
+            )}
         </div>
     );
-}
+}
