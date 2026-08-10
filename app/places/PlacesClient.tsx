@@ -18,6 +18,7 @@ import {
 } from "lucide-react";
 import { PLACES, PLACES_HINDI, CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI, PLACES_FAQS_ENGLISH, PLACES_FAQS_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export function PlacesClient() {
     const [search, setSearch] = useState("");
@@ -630,6 +631,9 @@ export function PlacesClient() {
                     />
                 </div>
             </section>
+
+            {/* SEO Interlinks — Explore More */}
+            <ExploreMoreSection currentPage="places" language={language as "en" | "hi"} />
 
             {/* Dynamic JSON-LD FAQ Schema */}
             <script

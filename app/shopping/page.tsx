@@ -2,6 +2,7 @@
 import type { Metadata } from "next";
 import ShoppingClient from "./ShoppingClient";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export const metadata: Metadata = {
     title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Rajasthan Tourism Places",
@@ -161,6 +162,9 @@ export default function ShoppingPage() {
 
             {/* Client Component */}
             <ShoppingClient />
+
+            {/* SEO Interlinks — Explore More */}
+            <ExploreMoreSection currentPage="shopping" />
         </>
     );
 }

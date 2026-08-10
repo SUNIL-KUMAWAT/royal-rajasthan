@@ -1,6 +1,7 @@
 // app/culture/page.tsx
 import type { Metadata } from "next";
 import { FestivalsSection } from "@/components/home/FestivalsSection";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export const metadata: Metadata = {
     // ✅ FIXED - No pipe | at end, template will add it automatically
@@ -261,6 +262,9 @@ export default function CulturePage() {
                 }}
             />
             <FestivalsSection />
+
+            {/* SEO Interlinks — Explore More */}
+            <ExploreMoreSection currentPage="culture" />
         </>
     );
 }

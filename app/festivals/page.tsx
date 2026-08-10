@@ -1,6 +1,7 @@
-// app/culture/page.tsx
+// app/festivals/page.tsx
 import type { Metadata } from "next";
 import { FestivalsSection } from "@/components/home/FestivalsSection";
+import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export const metadata: Metadata = {
     title: "Rajasthan Festivals & Culture - Complete Guide | Rajasthan Tourism Places",
@@ -283,6 +284,9 @@ export default function CulturePage() {
 
             {/* Client Component */}
             <FestivalsSection />
+
+            {/* SEO Interlinks — Explore More */}
+            <ExploreMoreSection currentPage="festivals" />
         </>
     );
 }
