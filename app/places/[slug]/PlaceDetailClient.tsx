@@ -505,20 +505,22 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                             {/* Tab Content */}
                             <AnimatePresence mode="wait">
-                                {/* Overview Tab */}
+                                {/* Overview Tab — shows ALL sections on scroll */}
                                 {activeTab === "overview" && (
                                     <motion.div
                                         key="overview"
                                         initial={{ opacity: 0, y: 10 }}
                                         animate={{ opacity: 1, y: 0 }}
                                         exit={{ opacity: 0 }}
+                                        className="space-y-10"
                                     >
-                                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6">
+                                        {/* ── Description ── */}
+                                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
                                             {place.description}
                                         </p>
 
-                                        {/* Quick Facts */}
-                                        <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-2xl p-6 mb-6">
+                                        {/* ── Quick Facts ── */}
+                                        <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-2xl p-6">
                                             <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
                                                 {t.quickFacts}
                                             </h2>
@@ -534,48 +536,33 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     { label: t.bestTime, value: place.bestTimeToVisit.months },
                                                 ].map((fact) => (
                                                     <div key={fact.label}>
-                                                        <div className="text-xs text-gray-400 dark:text-gray-500 mb-1">
-                                                            {fact.label}
-                                                        </div>
-                                                        <div className="font-medium text-gray-800 dark:text-gray-200 text-sm">
-                                                            {fact.value}
-                                                        </div>
+                                                        <div className="text-xs text-gray-400 dark:text-gray-500 mb-1">{fact.label}</div>
+                                                        <div className="font-medium text-gray-800 dark:text-gray-200 text-sm">{fact.value}</div>
                                                     </div>
                                                 ))}
                                             </div>
                                         </div>
 
-                                        {/* Highlights */}
-                                        <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                            {t.highlights}
-                                        </h2>
-                                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 mb-6">
-                                            {place.highlights.map((h) => (
-                                                <div
-                                                    key={h}
-                                                    className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
-                                                >
-                                                    <Star
-                                                        size={14}
-                                                        className="text-yellow-500 mt-0.5 flex-shrink-0 fill-yellow-500"
-                                                    />
-                                                    <span className="text-sm">{h}</span>
-                                                </div>
-                                            ))}
+                                        {/* ── Highlights ── */}
+                                        <div>
+                                            <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.highlights}</h2>
+                                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                                                {place.highlights.map((h) => (
+                                                    <div key={h} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
+                                                        <Star size={14} className="text-yellow-500 mt-0.5 flex-shrink-0 fill-yellow-500" />
+                                                        <span className="text-sm">{h}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
                                         </div>
 
-                                        {/* Activities */}
+                                        {/* ── Activities ── */}
                                         {place.activities && place.activities.length > 0 && (
-                                            <div className="mb-6">
-                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                                    {t.activities}
-                                                </h2>
+                                            <div>
+                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.activities}</h2>
                                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                                     {place.activities.map((act) => (
-                                                        <div
-                                                            key={act}
-                                                            className="flex items-start gap-2.5 p-3 bg-yellow-500/5 dark:bg-yellow-500/10 border border-yellow-500/10 dark:border-yellow-500/20 rounded-xl text-gray-700 dark:text-gray-300"
-                                                        >
+                                                        <div key={act} className="flex items-start gap-2.5 p-3 bg-yellow-500/5 dark:bg-yellow-500/10 border border-yellow-500/10 dark:border-yellow-500/20 rounded-xl text-gray-700 dark:text-gray-300">
                                                             <span className="text-yellow-600 dark:text-yellow-400 mt-0.5">🎯</span>
                                                             <span className="text-sm font-medium">{act}</span>
                                                         </div>
@@ -584,34 +571,26 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             </div>
                                         )}
 
-                                        {/* Facilities */}
-                                        <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                            {t.facilities}
-                                        </h2>
-                                        <div className="flex flex-wrap gap-2 mb-6">
-                                            {place.facilities.map((f) => (
-                                                <span
-                                                    key={f}
-                                                    className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm rounded-full"
-                                                >
-                                                    <Check size={12} className="text-green-500" />
-                                                    {f}
-                                                </span>
-                                            ))}
+                                        {/* ── Facilities ── */}
+                                        <div>
+                                            <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.facilities}</h2>
+                                            <div className="flex flex-wrap gap-2">
+                                                {place.facilities.map((f) => (
+                                                    <span key={f} className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm rounded-full">
+                                                        <Check size={12} className="text-green-500" />
+                                                        {f}
+                                                    </span>
+                                                ))}
+                                            </div>
                                         </div>
 
-                                        {/* Accessibility */}
+                                        {/* ── Accessibility ── */}
                                         {place.accessibility && place.accessibility.length > 0 && (
-                                            <div className="mb-6">
-                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">
-                                                    {t.accessibility}
-                                                </h2>
+                                            <div>
+                                                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.accessibility}</h2>
                                                 <div className="space-y-2.5">
                                                     {place.accessibility.map((acc) => (
-                                                        <div
-                                                            key={acc}
-                                                            className="flex items-start gap-2 text-gray-600 dark:text-gray-400"
-                                                        >
+                                                        <div key={acc} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
                                                             <span className="text-blue-500 mt-0.5">♿</span>
                                                             <span className="text-sm">{acc}</span>
                                                         </div>
@@ -620,18 +599,302 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             </div>
                                         )}
 
-                                        {/* Significance */}
+                                        {/* ── Significance ── */}
                                         <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4">
                                             <div className="flex items-start gap-2">
-                                                <AlertCircle
-                                                    size={16}
-                                                    className="text-blue-500 mt-0.5 flex-shrink-0"
-                                                />
+                                                <AlertCircle size={16} className="text-blue-500 mt-0.5 flex-shrink-0" />
                                                 <p className="text-blue-700 dark:text-blue-400 text-sm">
                                                     <strong>{t.significance}:</strong> {place.significance}
                                                 </p>
                                             </div>
                                         </div>
+
+                                        {/* ══════════ TIMING & TICKETS ══════════ */}
+                                        <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-2">
+                                                <Clock size={22} className="text-yellow-500" />
+                                                {language === "hi" ? "समय और टिकट" : "Timing & Tickets"}
+                                            </h2>
+                                            <div className="space-y-6">
+                                                {/* Timing */}
+                                                <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+                                                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center gap-2 text-base">
+                                                        <Clock size={18} className="text-yellow-500" />
+                                                        {language === "hi" ? "खुलने का समय" : "Opening Hours"}
+                                                    </h3>
+                                                    <div className="space-y-3">
+                                                        {[
+                                                            { label: language === "hi" ? "खुलता है" : "Opens At", value: place.timing.open, cls: "text-green-600 font-bold text-xl" },
+                                                            { label: language === "hi" ? "बंद होता है" : "Closes At", value: place.timing.close, cls: "text-red-500 font-bold text-xl" },
+                                                            { label: language === "hi" ? "बंद रहता है" : "Closed On", value: place.timing.closedOn, cls: "font-medium text-gray-800 dark:text-gray-200" },
+                                                        ].map((row) => (
+                                                            <div key={row.label} className="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-700 last:border-0">
+                                                                <span className="text-gray-500 dark:text-gray-400">{row.label}</span>
+                                                                <span className={row.cls}>{row.value}</span>
+                                                            </div>
+                                                        ))}
+                                                        <div className="flex justify-between items-center py-3">
+                                                            <span className="text-gray-500 dark:text-gray-400">{language === "hi" ? "अभी की स्थिति" : "Current Status"}</span>
+                                                            <span className={`font-bold flex items-center gap-1 ${place.isOpen ? "text-green-600" : "text-red-500"}`}>
+                                                                <div className={`w-2 h-2 rounded-full ${place.isOpen ? "bg-green-500 animate-pulse" : "bg-red-500"}`} />
+                                                                {place.isOpen ? (language === "hi" ? "अभी खुला है" : "Open Now") : (language === "hi" ? "बंद है" : "Closed")}
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                    {place.timing.note && (
+                                                        <div className="mt-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl p-3 text-blue-700 dark:text-blue-400 text-sm flex items-start gap-2">
+                                                            <AlertCircle size={16} className="mt-0.5 flex-shrink-0" />
+                                                            {place.timing.note}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                {/* Tickets */}
+                                                <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+                                                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">
+                                                        🎫 {language === "hi" ? "प्रवेश टिकट" : "Entry Tickets"}
+                                                    </h3>
+                                                    {place.ticket.isFree ? (
+                                                        <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 text-center">
+                                                            <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-1">FREE ENTRY</div>
+                                                            <div className="text-green-500 text-sm">{language === "hi" ? "प्रवेश के लिए कोई टिकट नहीं" : "No ticket required for entry"}</div>
+                                                        </div>
+                                                    ) : (
+                                                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                                                            {[
+                                                                { label: language === "hi" ? "भारतीय वयस्क" : "Indian Adult", value: `₹${place.ticket.indian}`, color: "orange" },
+                                                                { label: language === "hi" ? "विदेशी वयस्क" : "Foreigner Adult", value: `₹${place.ticket.foreigner}`, color: "blue" },
+                                                                { label: language === "hi" ? "भारतीय बच्चा" : "Indian Child", value: place.ticket.childIndian === 0 ? "Free" : `₹${place.ticket.childIndian}`, color: "green" },
+                                                                { label: language === "hi" ? "कैमरा शुल्क" : "Camera Fee", value: place.ticket.camera === 0 ? "Free" : `₹${place.ticket.camera}`, color: "purple" },
+                                                            ].map((t) => (
+                                                                <div key={t.label} className={`bg-${t.color}-50 dark:bg-${t.color}-900/20 rounded-xl p-4 text-center`}>
+                                                                    <div className={`text-xs text-${t.color}-400 mb-1`}>{t.label}</div>
+                                                                    <div className={`text-2xl font-bold text-${t.color}-600 dark:text-${t.color}-400`}>{t.value}</div>
+                                                                </div>
+                                                            ))}
+                                                        </div>
+                                                    )}
+                                                    {place.ticket.note && (
+                                                        <div className="mt-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-3 text-yellow-700 dark:text-yellow-400 text-sm flex items-start gap-2">
+                                                            <AlertCircle size={16} className="mt-0.5 flex-shrink-0" />
+                                                            {place.ticket.note}
+                                                        </div>
+                                                    )}
+                                                </div>
+
+                                                {/* Visit Duration */}
+                                                <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+                                                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">
+                                                        ⏱ {language === "hi" ? "घूमने की अनुशंसित अवधि" : "Recommended Visit Duration"}
+                                                    </h3>
+                                                    <div className="grid grid-cols-3 gap-3">
+                                                        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 text-center">
+                                                            <div className="text-xs text-gray-400 mb-1">{language === "hi" ? "न्यूनतम" : "Minimum"}</div>
+                                                            <div className="font-bold text-gray-700 dark:text-gray-300">{place.visitDuration.minimum}</div>
+                                                        </div>
+                                                        <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-4 text-center border-2 border-yellow-300 dark:border-yellow-700">
+                                                            <div className="text-xs text-yellow-600 dark:text-yellow-400 mb-1">⭐ {language === "hi" ? "अनुशंसित" : "Recommended"}</div>
+                                                            <div className="font-bold text-yellow-700 dark:text-yellow-400">{place.visitDuration.recommended}</div>
+                                                        </div>
+                                                        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 text-center">
+                                                            <div className="text-xs text-gray-400 mb-1">{language === "hi" ? "विस्तारित" : "Extended"}</div>
+                                                            <div className="font-bold text-gray-700 dark:text-gray-300">{place.visitDuration.extended}</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* ══════════ LOCATION ══════════ */}
+                                        <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-2">
+                                                <MapPin size={22} className="text-yellow-500" />
+                                                {language === "hi" ? "स्थान" : "Location"}
+                                            </h2>
+                                            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mb-4">
+                                                <div className="space-y-3">
+                                                    {[
+                                                        { label: language === "hi" ? "पता" : "Address", value: place.location.address },
+                                                        { label: language === "hi" ? "शहर" : "City", value: `${place.location.city}, ${place.state}` },
+                                                        { label: language === "hi" ? "पिनकोड" : "Pincode", value: place.location.pincode },
+                                                        { label: language === "hi" ? "शहर से दूरी" : "From City Center", value: place.location.distanceFromCity },
+                                                        { label: language === "hi" ? "नजदीकी हवाई अड्डा" : "Nearest Airport", value: place.location.nearestAirport },
+                                                        { label: language === "hi" ? "नजदीकी रेलवे" : "Nearest Railway", value: place.location.nearestRailway },
+                                                    ].map((item) => (
+                                                        <div key={item.label} className="flex justify-between items-start py-2 border-b border-gray-50 dark:border-gray-700 last:border-0">
+                                                            <span className="text-gray-500 dark:text-gray-400 text-sm flex-shrink-0">{item.label}</span>
+                                                            <span className="font-medium text-gray-800 dark:text-gray-200 text-sm text-right ml-4">{item.value}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                                <a
+                                                    href={place.location.googleMapUrl}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="mt-6 w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all"
+                                                >
+                                                    <MapPin size={18} />
+                                                    {language === "hi" ? "Google Maps में खोलें" : "Open in Google Maps"}
+                                                </a>
+                                            </div>
+                                            <div className="rounded-2xl overflow-hidden h-64 md:h-80 border border-gray-200 dark:border-gray-700">
+                                                <iframe
+                                                    src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000!2d${place.location.longitude}!3d${place.location.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin`}
+                                                    width="100%"
+                                                    height="100%"
+                                                    style={{ border: 0 }}
+                                                    allowFullScreen
+                                                    loading="lazy"
+                                                    title={`${place.name} Map Location`}
+                                                />
+                                            </div>
+                                        </div>
+
+                                        {/* ══════════ HISTORY ══════════ */}
+                                        <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                                📜 {language === "hi" ? `${place.name} का इतिहास` : `History of ${place.name}`}
+                                            </h2>
+                                            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+                                                <div
+                                                    className="[&_p]:text-gray-600 dark:[&_p]:text-gray-300 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-justify text-sm sm:text-lg transition-colors"
+                                                    dangerouslySetInnerHTML={{ __html: place.history }}
+                                                />
+                                                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
+                                                    {[
+                                                        { label: language === "hi" ? "निर्माण वर्ष" : "Year Built", value: place.yearBuilt, color: "yellow" },
+                                                        { label: language === "hi" ? "निर्माता" : "Built By", value: place.builtBy, color: "maroon" },
+                                                        { label: language === "hi" ? "वास्तुकला" : "Architecture", value: place.architecture, color: "blue" },
+                                                        { label: language === "hi" ? "धरोहर स्थिति" : "Heritage Status", value: place.isUNESCO ? "UNESCO World Heritage" : "State Heritage", color: "green" },
+                                                    ].map((item) => (
+                                                        <div key={item.label} className={`bg-${item.color}-50 dark:bg-${item.color}-900/20 rounded-xl p-3 text-center`}>
+                                                            <div className={`text-xs text-${item.color}-400 mb-1`}>{item.label}</div>
+                                                            <div className={`font-bold text-${item.color}-700 dark:text-${item.color}-400 text-sm`}>{item.value}</div>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {/* ══════════ TIPS ══════════ */}
+                                        <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                                💡 {language === "hi" ? "सुझाव" : "Tips"}
+                                            </h2>
+                                            <div className="space-y-6">
+                                                <div className="bg-green-50 dark:bg-green-900/20 rounded-2xl p-6">
+                                                    <h3 className="font-bold text-green-800 dark:text-green-400 mb-4 text-base">✅ {language === "hi" ? "क्या करें" : "Do's"}</h3>
+                                                    <div className="space-y-2">
+                                                        {place.dos.map((d) => (
+                                                            <div key={d} className="flex items-start gap-2 text-green-700 dark:text-green-400">
+                                                                <Check size={16} className="mt-0.5 flex-shrink-0" />
+                                                                <span className="text-sm">{d}</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                <div className="bg-red-50 dark:bg-red-900/20 rounded-2xl p-6">
+                                                    <h3 className="font-bold text-red-800 dark:text-red-400 mb-4 text-base">❌ {language === "hi" ? "क्या न करें" : "Don'ts"}</h3>
+                                                    <div className="space-y-2">
+                                                        {place.donts.map((d) => (
+                                                            <div key={d} className="flex items-start gap-2 text-red-700 dark:text-red-400">
+                                                                <X size={16} className="mt-0.5 flex-shrink-0" />
+                                                                <span className="text-sm">{d}</span>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6">
+                                                    <h3 className="font-bold text-blue-800 dark:text-blue-400 mb-4 text-base">🌤 {t.bestTime}</h3>
+                                                    <div className="grid grid-cols-2 gap-4">
+                                                        {[
+                                                            { label: language === "hi" ? "सर्वोत्तम महीने" : "Best Months", value: place.bestTimeToVisit.months },
+                                                            { label: language === "hi" ? "मौसम" : "Season", value: place.bestTimeToVisit.season },
+                                                            { label: language === "hi" ? "मौसम जानकारी" : "Weather", value: place.bestTimeToVisit.weather },
+                                                            { label: language === "hi" ? "महत्वपूर्ण टिप" : "Pro Tip", value: place.bestTimeToVisit.tip },
+                                                        ].map((item) => (
+                                                            <div key={item.label}>
+                                                                <div className="text-xs text-blue-400 mb-1">{item.label}</div>
+                                                                <div className="font-medium text-blue-800 dark:text-blue-300 text-sm">{item.value}</div>
+                                                            </div>
+                                                        ))}
+                                                    </div>
+                                                </div>
+                                                {place.photography && (
+                                                    <div className="bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-200 dark:border-yellow-900/30 rounded-2xl p-6">
+                                                        <h3 className="font-bold text-yellow-800 dark:text-yellow-400 mb-3 text-base flex items-center gap-2">
+                                                            📸 {t.photography}
+                                                        </h3>
+                                                        <p className="text-sm text-yellow-950/80 dark:text-yellow-300/80 leading-relaxed">{place.photography}</p>
+                                                    </div>
+                                                )}
+                                            </div>
+                                        </div>
+
+                                        {/* ══════════ NEARBY ══════════ */}
+                                        <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                                📍 {language === "hi" ? "आसपास" : "Nearby"}
+                                            </h2>
+                                            <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
+                                                <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">
+                                                    {language === "hi" ? "आसपास के स्थल" : "Nearby Places"}
+                                                </h3>
+                                                <div className="space-y-3">
+                                                    {place.nearbyPlaces.map((np) => (
+                                                        <div key={np} className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-yellow-50 dark:hover:bg-yellow-900/20 transition-all">
+                                                            <MapPin size={16} className="text-yellow-500 flex-shrink-0" />
+                                                            <span className="text-gray-700 dark:text-gray-300 text-sm">{np}</span>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
+                                            {place.relatedPlaces && place.relatedPlaces.length > 0 && (
+                                                <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6 mt-6">
+                                                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">🔗 {t.relatedPlaces}</h3>
+                                                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                                                        {place.relatedPlaces.map((rp) => {
+                                                            const matchedPlace = activePlaces.find(
+                                                                p => p.name.toLowerCase() === rp.toLowerCase() ||
+                                                                (language === "hi" && p.name === rp)
+                                                            );
+                                                            if (matchedPlace) {
+                                                                return (
+                                                                    <Link
+                                                                        key={rp}
+                                                                        href={`/places/${matchedPlace.slug}`}
+                                                                        className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-yellow-50 dark:hover:bg-yellow-900/20 transition-all border border-transparent hover:border-yellow-200"
+                                                                    >
+                                                                        <span className="text-lg">🏛️</span>
+                                                                        <span className="text-gray-800 dark:text-gray-200 text-sm font-semibold hover:text-yellow-600 transition-colors">{rp}</span>
+                                                                    </Link>
+                                                                );
+                                                            }
+                                                            return (
+                                                                <div key={rp} className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
+                                                                    <span className="text-lg">🏛️</span>
+                                                                    <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">{rp}</span>
+                                                                </div>
+                                                            );
+                                                        })}
+                                                    </div>
+                                                </div>
+                                            )}
+                                        </div>
+
+                                        {/* ══════════ FAQs ══════════ */}
+                                        {place.faqs && place.faqs.length > 0 && (
+                                            <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
+                                                <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                                    🙋 {t.faqs}
+                                                </h2>
+                                                <div className="space-y-4">
+                                                    {place.faqs.map((faq, i) => (
+                                                        <FAQItem key={i} question={faq.question} answer={faq.answer} />
+                                                    ))}
+                                                </div>
+                                            </div>
+                                        )}
                                     </motion.div>
                                 )}
 

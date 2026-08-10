@@ -160,6 +160,7 @@ export function Navbar() {
                             <Link
                                 key={tab.name}
                                 href={tab.href}
+                                onClick={() => setIsOpen(false)}
                                 className={`flex-1 text-center px-3 py-1.5 rounded-full text-[11px] sm:text-xs font-bold transition-all shadow-sm border ${isActive
                                     ? "bg-gradient-to-r from-yellow-500 to-yellow-600 text-white border-yellow-400/50 shadow-yellow-500/30"
                                     : isSolid
@@ -200,7 +201,7 @@ export function Navbar() {
                                         {language === 'hi' ? "भाषा" : "Language"}
                                     </span>
                                     <button
-                                        onClick={toggleLanguage}
+                                        onClick={() => { toggleLanguage(); setIsOpen(false); }}
                                         className="px-3 py-1 bg-gray-100 dark:bg-gray-800 text-gray-800 dark:text-gray-200 text-sm font-bold rounded-full"
                                     >
                                         {language === "en" ? "English" : "हिंदी"}
@@ -213,7 +214,7 @@ export function Navbar() {
                                         {theme === "dark" ? "Dark Mode" : "Light Mode"}
                                     </span>
                                     <button
-                                        onClick={toggleTheme}
+                                        onClick={() => { toggleTheme(); setIsOpen(false); }}
                                         className={`relative w-14 h-7 rounded-full transition-all duration-500 ${theme === "dark" ? "bg-indigo-600" : "bg-yellow-400"
                                             }`}
                                     >
