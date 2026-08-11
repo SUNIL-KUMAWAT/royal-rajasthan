@@ -125,7 +125,7 @@ export default async function PlaceDetailPage({
     // JSON-LD Schemas for AI Search Engines & Google Rich Snippets
     const touristAttractionSchema = {
         "@context": "https://schema.org",
-        "@type": "TouristAttraction",
+        "@type": ["TouristAttraction", "LocalBusiness"],
         "name": place.name,
         "description": place.description,
         "image": place.images,

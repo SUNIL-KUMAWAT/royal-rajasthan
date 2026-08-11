@@ -84,6 +84,7 @@ export default function CulturePage() {
                     name: "Pushkar Camel Fair",
                     description:
                         "The world's largest camel fair held annually in Pushkar, Rajasthan.",
+                    url: "https://rajasthanplaces.in/festivals/pushkar-camel-fair",
                     location: {
                         "@type": "Place",
                         name: "Pushkar",
@@ -97,9 +98,22 @@ export default function CulturePage() {
                     startDate: "2025-11-15",
                     endDate: "2025-11-20",
                     eventStatus: "https://schema.org/EventScheduled",
+                    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
                     organizer: {
                         "@type": "Organization",
-                        name: "Rajasthan Tourism",
+                        name: "Department of Tourism, Government of Rajasthan",
+                        url: "https://www.tourism.rajasthan.gov.in",
+                    },
+                    performer: {
+                        "@type": "PerformingGroup",
+                        name: "Local Folk Artists",
+                    },
+                    offers: {
+                        "@type": "Offer",
+                        price: "0",
+                        priceCurrency: "INR",
+                        availability: "https://schema.org/InStock",
+                        url: "https://rajasthanplaces.in/festivals/pushkar-camel-fair",
                     },
                     image:
                         "https://picsum.photos/seed/raj-1100/800/600",
@@ -113,6 +127,7 @@ export default function CulturePage() {
                     name: "Desert Festival Jaisalmer",
                     description:
                         "A vibrant 3-day celebration of Rajasthan desert culture.",
+                    url: "https://rajasthanplaces.in/festivals/desert-festival",
                     location: {
                         "@type": "Place",
                         name: "Jaisalmer",
@@ -126,6 +141,23 @@ export default function CulturePage() {
                     startDate: "2026-02-08",
                     endDate: "2026-02-10",
                     eventStatus: "https://schema.org/EventScheduled",
+                    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+                    organizer: {
+                        "@type": "Organization",
+                        name: "Department of Tourism, Government of Rajasthan",
+                        url: "https://www.tourism.rajasthan.gov.in",
+                    },
+                    performer: {
+                        "@type": "PerformingGroup",
+                        name: "Local Folk Artists",
+                    },
+                    offers: {
+                        "@type": "Offer",
+                        price: "0",
+                        priceCurrency: "INR",
+                        availability: "https://schema.org/InStock",
+                        url: "https://rajasthanplaces.in/festivals/desert-festival",
+                    },
                     image:
                         "https://picsum.photos/seed/raj-1101/800/600",
                 },
@@ -138,6 +170,7 @@ export default function CulturePage() {
                     name: "Teej Festival",
                     description:
                         "A vibrant monsoon festival celebrated by women in Jaipur.",
+                    url: "https://rajasthanplaces.in/festivals/teej-festival",
                     location: {
                         "@type": "Place",
                         name: "Jaipur",
@@ -151,6 +184,23 @@ export default function CulturePage() {
                     startDate: "2025-08-08",
                     endDate: "2025-08-10",
                     eventStatus: "https://schema.org/EventScheduled",
+                    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+                    organizer: {
+                        "@type": "Organization",
+                        name: "Department of Tourism, Government of Rajasthan",
+                        url: "https://www.tourism.rajasthan.gov.in",
+                    },
+                    performer: {
+                        "@type": "PerformingGroup",
+                        name: "Local Folk Artists",
+                    },
+                    offers: {
+                        "@type": "Offer",
+                        price: "0",
+                        priceCurrency: "INR",
+                        availability: "https://schema.org/InStock",
+                        url: "https://rajasthanplaces.in/festivals/teej-festival",
+                    },
                     image:
                         "https://picsum.photos/seed/raj-1102/800/600",
                 },
@@ -163,6 +213,7 @@ export default function CulturePage() {
                     name: "Gangaur Festival",
                     description:
                         "The most important festival of Rajasthan with 18 days of celebrations.",
+                    url: "https://rajasthanplaces.in/festivals/gangaur-festival",
                     location: {
                         "@type": "Place",
                         name: "Udaipur",
@@ -176,6 +227,23 @@ export default function CulturePage() {
                     startDate: "2026-03-28",
                     endDate: "2026-04-14",
                     eventStatus: "https://schema.org/EventScheduled",
+                    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+                    organizer: {
+                        "@type": "Organization",
+                        name: "Department of Tourism, Government of Rajasthan",
+                        url: "https://www.tourism.rajasthan.gov.in",
+                    },
+                    performer: {
+                        "@type": "PerformingGroup",
+                        name: "Local Folk Artists",
+                    },
+                    offers: {
+                        "@type": "Offer",
+                        price: "0",
+                        priceCurrency: "INR",
+                        availability: "https://schema.org/InStock",
+                        url: "https://rajasthanplaces.in/festivals/gangaur-festival",
+                    },
                     image:
                         "https://picsum.photos/seed/raj-1103/800/600",
                 },

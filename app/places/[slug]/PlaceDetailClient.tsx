@@ -126,7 +126,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
     // JSON-LD Schema for SEO
     const placeSchema = {
         "@context": "https://schema.org",
-        "@type": "TouristAttraction",
+        "@type": ["TouristAttraction", "LocalBusiness"],
         name: place.name,
         description: place.description,
         image: place.images,

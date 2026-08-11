@@ -100,6 +100,7 @@ export default async function FestivalDetailPage({ params }: { params: Promise<{
     "name": festival.name,
     "description": festival.description,
     "image": festival.image,
+    "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`,
     "location": {
       "@type": "Place",
       "name": festival.location,
@@ -112,7 +113,23 @@ export default async function FestivalDetailPage({ params }: { params: Promise<{
     },
     "startDate": festival.nextDate || undefined,
     "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode"
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Department of Tourism, Government of Rajasthan",
+      "url": "https://www.tourism.rajasthan.gov.in"
+    },
+    "performer": {
+      "@type": "PerformingGroup",
+      "name": "Local Folk Artists"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`
+    }
   };
 
   const breadcrumbSchema = {

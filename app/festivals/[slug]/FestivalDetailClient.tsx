@@ -129,7 +129,23 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       }
     },
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "eventStatus": "https://schema.org/EventScheduled"
+    "eventStatus": "https://schema.org/EventScheduled",
+    "organizer": {
+      "@type": "Organization",
+      "name": "Department of Tourism, Government of Rajasthan",
+      "url": "https://www.tourism.rajasthan.gov.in"
+    },
+    "performer": {
+      "@type": "PerformingGroup",
+      "name": "Local Folk Artists"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR",
+      "availability": "https://schema.org/InStock",
+      "url": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`
+    }
   } : null;
 
   // JSON-LD Breadcrumb Schema
