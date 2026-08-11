@@ -49,16 +49,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
             priority: 0.8,
         },
         {
-            url: `${baseUrl}/destinations`,
-            lastModified: new Date(),
-            changeFrequency: "weekly",
-            priority: 0.75,
-        },
-        {
-            url: `${baseUrl}/packages`,
+            url: `${baseUrl}/privacy-policy`,
             lastModified: new Date(),
             changeFrequency: "monthly",
-            priority: 0.7,
+            priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/terms-of-service`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.5,
+        },
+        {
+            url: `${baseUrl}/cookie-policy`,
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.5,
         },
         {
             url: `${baseUrl}/gallery`,

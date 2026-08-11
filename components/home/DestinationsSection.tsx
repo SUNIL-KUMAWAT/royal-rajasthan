@@ -174,7 +174,7 @@ export function DestinationsSection() {
                     className="text-center mt-12"
                 >
                     <Link
-                        href="/destinations"
+                        href="/places"
                         className="inline-flex items-center gap-2 bg-gold-gradient text-white px-8 py-4 rounded-full font-semibold hover:shadow-gold-lg transition-all hover:scale-105"
                     >
                         View All Destinations

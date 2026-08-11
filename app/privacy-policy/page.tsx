@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Privacy Policy | Rajasthan Tourism Places",
     description: "Read our privacy policy to understand how we collect, use, and protect your personal information when using our website.",
+    alternates: {
+        canonical: "https://rajasthanplaces.in/privacy-policy",
+    },
     robots: {
         index: true,
         follow: true,

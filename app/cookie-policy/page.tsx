@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Cookie Policy | Rajasthan Tourism Places",
     description: "Read our Cookie Policy to learn how we use cookies and similar tracking technologies to improve your experience.",
+    alternates: {
+        canonical: "https://rajasthanplaces.in/cookie-policy",
+    },
     robots: {
         index: true,
         follow: true,

@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
     title: "Terms of Service | Rajasthan Tourism Places",
     description: "Read our Terms of Service to understand the rules, guidelines, and agreements for using our website and services.",
+    alternates: {
+        canonical: "https://rajasthanplaces.in/terms-of-service",
+    },
     robots: {
         index: true,
         follow: true,
