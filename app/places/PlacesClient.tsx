@@ -16,7 +16,10 @@ import {
     X,
     ChevronDown,
 } from "lucide-react";
-import { PLACES, PLACES_HINDI, CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI, PLACES_FAQS_ENGLISH, PLACES_FAQS_HINDI } from "@/constants/data";
+import { PLACES } from "@/constants/places";
+import { PLACES_HINDI } from "@/constants/places-hindi";
+import { CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI } from "@/constants/data";
+import { PLACES_FAQS_ENGLISH, PLACES_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 

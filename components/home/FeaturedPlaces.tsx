@@ -13,13 +13,23 @@ import {
     Calendar,
     Sparkles,
 } from "lucide-react";
-import { PLACES, PLACES_HINDI, CATEGORIES, CATEGORIES_HINDI } from "@/constants/data";
+import { PLACES } from "@/constants/places";
+import { CATEGORIES, CATEGORIES_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
+import { useEffect } from "react";
 
 export function FeaturedPlaces() {
     const { language } = useLanguage();
-    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
+    const [hindiPlaces, setHindiPlaces] = useState<any[]>([]);
+
+    useEffect(() => {
+        if (language === "hi" && hindiPlaces.length === 0) {
+            import("@/constants/places-hindi").then((m) => setHindiPlaces(m.PLACES_HINDI));
+        }
+    }, [language, hindiPlaces.length]);
+
+    const activePlaces = (language === "hi" && hindiPlaces.length > 0) ? hindiPlaces : PLACES;
     const currentCategories = language === "hi" ? CATEGORIES_HINDI : CATEGORIES;
 
     const [activeFilter, setActiveFilter] = useState("All");
@@ -32,7 +42,7 @@ export function FeaturedPlaces() {
             : activePlaces.filter(
                 (p) =>
                     (p.category && p.category.toLowerCase() === activeFilter.toLowerCase()) ||
-                    (p.tags && p.tags.some((t) => t.toLowerCase() === activeFilter.toLowerCase())) ||
+                    (p.tags && p.tags.some((t: any) => t.toLowerCase() === activeFilter.toLowerCase())) ||
                     (activeFilter.toLowerCase() === "unesco" && p.isUNESCO)
             );
 
@@ -276,7 +286,7 @@ export function FeaturedPlaces() {
 
                                         {/* Tags */}
                                         <div className="flex flex-wrap gap-2 mb-5">
-                                            {place.tags.slice(0, 3).map((tag) => (
+                                            {place.tags.slice(0, 3).map((tag: any) => (
                                                 <span
                                                     key={tag}
                                                     className="px-3 py-1 bg-white/60 dark:bg-gray-800/60 backdrop-blur-md border border-white/50 dark:border-white/10 text-gray-700 dark:text-gray-300 text-xs font-semibold rounded-xl shadow-sm"

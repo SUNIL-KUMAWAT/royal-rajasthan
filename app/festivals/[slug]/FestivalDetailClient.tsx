@@ -13,7 +13,8 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { TiltCard } from "@/components/home/TiltCard";
-import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
+import { FESTIVALS } from "@/constants/festivals";
+import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
 import { useLanguage } from "@/components/LanguageProvider";
 
 // Helper: Convert festival name to URL slug

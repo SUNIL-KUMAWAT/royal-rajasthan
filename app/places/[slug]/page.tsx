@@ -1,7 +1,7 @@
 // app/places/[slug]/page.tsx
 // NO "use client" here
 import type { Metadata } from "next";
-import { PLACES } from "@/constants/data";
+import { PLACES } from "@/constants/places";
 import { PlaceDetailClient } from "./PlaceDetailClient";
 
 // ✅ generateStaticParams works in Server Component

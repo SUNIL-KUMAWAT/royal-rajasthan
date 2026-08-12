@@ -1,6 +1,6 @@
 // app/places/[slug]/PlaceDetailClient.tsx
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
@@ -18,8 +18,8 @@ import {
     AlertCircle,
     Grid,
 } from "lucide-react";
-import { PLACES, PLACES_HINDI } from "@/constants/data";
-import type { Place } from "@/constants/data";
+import { PLACES } from "@/constants/places";
+import type { Place } from "@/types";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 interface Props {
@@ -64,8 +64,21 @@ function getTimeSlotBadge(isFree: boolean, price: number) {
 
 export function PlaceDetailClient({ place: initialPlace }: Props) {
     const { language } = useLanguage();
-    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
-    const place = activePlaces.find(p => p.slug === initialPlace.slug) || initialPlace;
+    const [hindiPlace, setHindiPlace] = useState<Place | null>(null);
+    const [allHindiPlaces, setAllHindiPlaces] = useState<Place[]>([]);
+
+    useEffect(() => {
+        if (language === "hi") {
+            import("@/constants/places-hindi").then((mod) => {
+                setAllHindiPlaces(mod.PLACES_HINDI);
+                const found = mod.PLACES_HINDI.find((p) => p.slug === initialPlace.slug);
+                if (found) setHindiPlace(found);
+            });
+        }
+    }, [language, initialPlace.slug]);
+
+    const place = (language === "hi" && hindiPlace) ? hindiPlace : initialPlace;
+    const activePlaces = (language === "hi" && allHindiPlaces.length > 0) ? allHindiPlaces : PLACES;
 
     const [activeImage, setActiveImage] = useState(0);
     const [showLightbox, setShowLightbox] = useState(false);
@@ -494,8 +507,8 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             key={tab.id}
                                             onClick={() => setActiveTab(tab.id)}
                                             className={`px-3 sm:px-6 py-2.5 sm:py-3 text-[13px] sm:text-base font-semibold whitespace-nowrap border-b-2 transition-all flex-shrink-0 ${activeTab === tab.id
-                                                    ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
-                                                    : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50"
+                                                ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
+                                                : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50"
                                                 }`}
                                         >
                                             {tab.label}
@@ -856,8 +869,8 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                                         {place.relatedPlaces.map((rp) => {
                                                             const matchedPlace = activePlaces.find(
-                                                                p => p.name.toLowerCase() === rp.toLowerCase() ||
-                                                                (language === "hi" && p.name === rp)
+                                                                (p: any) => p.name.toLowerCase() === rp.toLowerCase() ||
+                                                                    (language === "hi" && p.name === rp)
                                                             );
                                                             if (matchedPlace) {
                                                                 return (
@@ -1308,10 +1321,10 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                                                     {place.relatedPlaces.map((rp) => {
                                                         const matchedPlace = activePlaces.find(
-                                                            p => p.name.toLowerCase() === rp.toLowerCase() || 
-                                                            (language === "hi" && p.name === rp)
+                                                            (p: any) => p.name.toLowerCase() === rp.toLowerCase() ||
+                                                                (language === "hi" && p.name === rp)
                                                         );
-                                                        
+
                                                         if (matchedPlace) {
                                                             return (
                                                                 <Link
@@ -1326,7 +1339,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                                 </Link>
                                                             );
                                                         }
-                                                        
+
                                                         return (
                                                             <div
                                                                 key={rp}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { 
   Clock, 
@@ -19,27 +19,33 @@ import {
   Compass
 } from "lucide-react";
 import Link from "next/link";
-import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI } from "@/constants/data";
+import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 import { useLanguage } from "@/components/LanguageProvider";
 
 interface Props {
   place: any;
 }
 
-export default function ShoppingDetailClient({ place }: Props) {
+export default function ShoppingDetailClient({ place: initialPlace }: Props) {
   const { language } = useLanguage();
-  const currentShoppingData = language === 'hi' ? RAJASTHAN_SHOPPING_HINDI : RAJASTHAN_SHOPPING;
-  
-  // Find localized item
-  const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-  let localizedPlace = place;
-  for (const d of currentShoppingData.districts) {
-      const p = d.shoppingPlaces.find((x: any) => getSlug(x.name) === getSlug(place.name) || x.id === place.id);
-      if (p) {
-          localizedPlace = { ...p, district: d.district };
-          break;
-      }
-  }
+  const [hindiPlace, setHindiPlace] = useState<any>(null);
+
+  useEffect(() => {
+    if (language === "hi" && !hindiPlace) {
+      import("@/constants/shopping-hindi").then((mod) => {
+        const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+        for (const d of mod.RAJASTHAN_SHOPPING_HINDI.districts) {
+          const p = d.shoppingPlaces.find((x: any) => getSlug(x.name) === getSlug(initialPlace.name) || x.id === initialPlace.id);
+          if (p) {
+            setHindiPlace({ ...p, district: d.district });
+            break;
+          }
+        }
+      });
+    }
+  }, [language, initialPlace, hindiPlace]);
+
+  const localizedPlace = (language === "hi" && hindiPlace) ? hindiPlace : initialPlace;
 
   const [activeTab, setActiveTab] = useState("overview");
 

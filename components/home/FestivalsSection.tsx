@@ -29,7 +29,8 @@ import {
   ChevronDown
 } from "lucide-react";
 
-import { FESTIVALS, FESTIVALS_HINDI, FESTIVALS_FAQS_ENGLISH, FESTIVALS_FAQS_HINDI } from "@/constants/data";
+import { FESTIVALS } from "@/constants/festivals";
+import { FESTIVALS_FAQS_ENGLISH, FESTIVALS_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
 
@@ -243,7 +244,15 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
 // ============ MAIN COMPONENT (Named Export) ============
 export function FestivalsSection() {
   const { language } = useLanguage();
-  const currentFestivals = language === 'hi' ? FESTIVALS_HINDI : FESTIVALS;
+  const [hindiFestivals, setHindiFestivals] = useState<any[]>([]);
+
+  useEffect(() => {
+    if (language === "hi" && hindiFestivals.length === 0) {
+      import("@/constants/festivals-hindi").then((m) => setHindiFestivals(m.FESTIVALS_HINDI));
+    }
+  }, [language, hindiFestivals.length]);
+
+  const currentFestivals = (language === 'hi' && hindiFestivals.length > 0) ? hindiFestivals : FESTIVALS;
 
   const [active, setActive] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");

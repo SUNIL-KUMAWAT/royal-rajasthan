@@ -5,7 +5,9 @@ import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
     ShoppingBag, Tag, X, Compass, Map, ChevronDown,
 } from "lucide-react";
-import { RAJASTHAN_SHOPPING, RAJASTHAN_SHOPPING_HINDI, SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/data";
+import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { RAJASTHAN_SHOPPING_HINDI } from "@/constants/shopping-hindi";
+import { SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import Link from "next/link";
 import Image from "next/image";

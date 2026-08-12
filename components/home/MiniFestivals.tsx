@@ -24,15 +24,15 @@ export function MiniFestivals() {
     viewAll: language === "hi" ? "सभी उत्सव देखें" : "View All Festivals",
     knowMore: language === "hi" ? "और जानें" : "Know More"
   };
-  
+
   const festivalsList = language === "hi" ? FESTIVALS_HINDI : FESTIVALS;
   const topFestivals = festivalsList.slice(0, 3);
 
   return (
-    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/%28A%29_Camel_Pushkar_fair.jpg/1280px-%28A%29_Camel_Pushkar_fair.jpg')" }}>
+    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/Camel_Pushkar.webp')" }}>
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-gray-950/70"></div>
-      
+
       <div className="max-w-7xl mx-auto px-4 relative z-10">
         <div className="text-center mb-12">
           <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
@@ -43,7 +43,7 @@ export function MiniFestivals() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           {topFestivals.map((fest, idx) => (
-            <motion.div 
+            <motion.div
               key={fest.id}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -52,10 +52,11 @@ export function MiniFestivals() {
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden group hover:bg-white/20 transition-all flex flex-col h-full"
             >
               <div className="relative h-48 w-full overflow-hidden shrink-0">
-                <Image 
+                <Image
                   src={fest.image}
                   alt={fest.name}
                   fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
                   className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
