@@ -72,7 +72,7 @@ export function MiniFestivals() {
                 <p className="text-white/80 text-sm line-clamp-3 mb-4 grow">
                   {fest.description}
                 </p>
-                <Link href={`/festivals/${toSlug(fest.name)}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
+                <Link href={`/festivals/${toSlug(FESTIVALS.find(f => f.id === fest.id)?.name || fest.name)}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
                   {t.knowMore} <ArrowRight size={14} />
                 </Link>
               </div>

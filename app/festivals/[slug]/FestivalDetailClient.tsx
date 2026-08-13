@@ -112,10 +112,10 @@ export default function FestivalDetailClient({ festival, related }: Props) {
   const eventSchema = eventDates ? {
     "@context": "https://schema.org",
     "@type": "Event",
-    "@id": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}#event`,
+    "@id": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}#event`,
     "name": currentFestival.name,
     "description": currentFestival.description,
-    "url": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`,
+    "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`,
     "image": [currentFestival.image],
     "startDate": eventDates.startDate,
     "endDate": eventDates.endDate,
@@ -145,7 +145,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       "price": "0",
       "priceCurrency": "INR",
       "availability": "https://schema.org/InStock",
-      "url": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`
+      "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`
     }
   } : null;
 
@@ -170,7 +170,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
         "@type": "ListItem",
         "position": 3,
         "name": currentFestival.name,
-        "item": `https://rajasthanplaces.in/festivals/${toSlug(currentFestival.name)}`
+        "item": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`
       }
     ]
   };
@@ -461,7 +461,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {currentRelated.map((f: any, idx: number) => (
                 <TiltCard key={f.id} maxTilt={10} className="h-full">
-                  <Link href={`/festivals/${toSlug(f.name)}`} className="block h-full">
+                  <Link href={`/festivals/${toSlug(FESTIVALS.find(engF => engF.id === f.id)?.name || f.name)}`} className="block h-full">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
