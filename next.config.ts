@@ -48,9 +48,9 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
+        // Security headers for ALL routes
         source: "/(.*)",
         headers: [
-          // Security
           {
             key: "X-Frame-Options",
             value: "DENY",
@@ -67,7 +67,12 @@ const nextConfig: NextConfig = {
             key: "Permissions-Policy",
             value: "camera=(), microphone=(), geolocation=(self)",
           },
-          // Cache Control for static assets
+        ],
+      },
+      {
+        // Static assets ONLY — immutable long-term cache
+        source: "/_next/static/(.*)",
+        headers: [
           {
             key: "Cache-Control",
             value: "public, max-age=31536000, immutable",
@@ -75,8 +80,8 @@ const nextConfig: NextConfig = {
         ],
       },
       {
-        // HTML pages - shorter cache
-        source: "/:path*",
+        // HTML pages & API routes — short cache so Google gets fresh content
+        source: "/((?!_next/static).*)",
         headers: [
           {
             key: "Cache-Control",

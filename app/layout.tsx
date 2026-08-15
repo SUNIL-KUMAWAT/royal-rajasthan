@@ -23,6 +23,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  // ============ BASE URL (Required for OG image resolution) ============
+  metadataBase: new URL("https://rajasthanplaces.in"),
+
   // ============ BASIC SEO ============
   title: {
     default: "Rajasthan Tourism Places - Explore Famous Places of Rajasthan",
@@ -69,7 +72,7 @@ export const metadata: Metadata = {
       "Discover 500+ historic forts, golden deserts, royal palaces & wildlife sanctuaries. Complete travel guide with timing, tickets & trip planner.",
     images: [
       {
-        url: "https://picsum.photos/seed/raj-1116/800/600",
+        url: "https://rajasthanplaces.in/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Amber Fort Jaipur - Rajasthan Tourism Places",
@@ -86,7 +89,7 @@ export const metadata: Metadata = {
     description:
       "Discover 500+ historic forts, golden deserts, and royal palaces. Plan your perfect Rajasthan trip!",
     images: [
-      "https://picsum.photos/seed/raj-1117/800/600",
+      "https://rajasthanplaces.in/og-image.jpg",
     ],
   },
 
@@ -106,10 +109,6 @@ export const metadata: Metadata = {
   // ============ CANONICAL URL ============
   alternates: {
     canonical: "https://rajasthanplaces.in",
-    languages: {
-      "en-IN": "https://rajasthanplaces.in",
-      "hi-IN": "https://rajasthanplaces.in/hi",
-    },
   },
 
   // ============ APP INFO ============
