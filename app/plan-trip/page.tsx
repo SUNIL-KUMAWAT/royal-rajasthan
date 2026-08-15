@@ -48,8 +48,8 @@ export const metadata: Metadata = {
         images: [
             "https://picsum.photos/seed/raj-1131/800/600",
         ],
-        site: "@RoyalRajasthan",
-        creator: "@RoyalRajasthan",
+        site: "@rajasthanplaces",
+        creator: "@rajasthanplaces",
     },
     alternates: {
         canonical: "https://rajasthanplaces.in/plan-trip",

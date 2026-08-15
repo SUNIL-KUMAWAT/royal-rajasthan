@@ -83,8 +83,8 @@ export const metadata: Metadata = {
   // ============ TWITTER CARD ============
   twitter: {
     card: "summary_large_image",
-    site: "@RoyalRajasthan",
-    creator: "@RoyalRajasthan",
+    site: "@Rajasthan-places",
+    creator: "@Rajasthan-places",
     title: "Rajasthan Tourism Places - Explore the Land of Kings",
     description:
       "Discover 500+ historic forts, golden deserts, and royal palaces. Plan your perfect Rajasthan trip!",
@@ -177,10 +177,10 @@ export default function RootLayout({
               telephone: "+91-99999-99999",
               email: "sunilkumawat.india@gmail.com",
               sameAs: [
-                "https://facebook.com/royalrajasthan",
-                "https://twitter.com/royalrajasthan",
-                "https://instagram.com/royalrajasthan",
-                "https://youtube.com/royalrajasthan",
+                "https://facebook.com/rajasthan-places",
+                "https://twitter.com/rajasthan-places",
+                "https://instagram.com/rajasthan-places",
+                "https://youtube.com/rajasthan-places",
               ],
               areaServed: {
                 "@type": "State",

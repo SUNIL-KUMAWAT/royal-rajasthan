@@ -41,8 +41,8 @@ export const metadata: Metadata = {
         description:
             "Explore Jaipur, Udaipur, Jodhpur, Jaisalmer & more. Best Rajasthan cities guide.",
         images: ["https://picsum.photos/seed/raj-1106/800/600"],
-        site: "@RoyalRajasthan",
-        creator: "@RoyalRajasthan",
+        site: "@rajasthanplaces",
+        creator: "@rajasthanplaces",
     },
     alternates: {
         canonical: "https://rajasthanplaces.in/destinations",

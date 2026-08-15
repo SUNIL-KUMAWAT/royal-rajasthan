@@ -38,8 +38,8 @@ export const metadata: Metadata = {
         description:
             "Get in touch with our expert travel consultants for your Rajasthan trip.",
         images: ["https://picsum.photos/seed/raj-1097/800/600"],
-        site: "@RoyalRajasthan",
-        creator: "@RoyalRajasthan",
+        site: "@rajasthanplaces",
+        creator: "@rajasthanplaces",
     },
     alternates: {
         canonical: "https://rajasthanplaces.in/contact",

@@ -42,8 +42,8 @@ export const metadata: Metadata = {
         description:
             "Stunning photos of Rajasthan's royal forts, palaces, golden deserts and wildlife.",
         images: ["https://picsum.photos/seed/raj-1115/800/600"],
-        site: "@RoyalRajasthan",
-        creator: "@RoyalRajasthan",
+        site: "@rajasthanplaces",
+        creator: "@rajasthanplaces",
     },
     alternates: {
         canonical: "https://rajasthanplaces.in/gallery",

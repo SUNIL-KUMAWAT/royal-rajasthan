@@ -39,8 +39,8 @@ export const metadata: Metadata = {
         description:
             "Complete guide to tourist places in Rajasthan with timing, tickets & maps.",
         images: ["https://picsum.photos/seed/raj-1128/800/600"],
-        site: "@RoyalRajasthan",
-        creator: "@RoyalRajasthan",
+        site: "@rajasthanplaces",
+        creator: "@rajasthanplaces",
     },
     alternates: {
         canonical: "https://rajasthanplaces.in/places",
