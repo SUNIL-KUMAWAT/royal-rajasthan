@@ -229,51 +229,50 @@ export default function RootLayout({
             }),
           }}
         />
-        {/* Moved GTM script to body to prevent Next.js head hydration errors */}
       </head>
-      <Script id="google-tag-manager" strategy="afterInteractive">
-        {`
+      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
+        <noscript>
+          <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
+            height="0"
+            width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          />
+        </noscript>
+        <Script id="google-tag-manager" strategy="afterInteractive">
+          {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-K9BN2J7Z');
           `}
-      </Script>
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
-          height="0"
-          width="0"
-          style={{ display: "none", visibility: "hidden" }}
-        />
-      </noscript>
-      {Google_Analytics && (
-        <>
-          <Script
-            src={`https://www.googletagmanager.com/gtag/js?id=${Google_Analytics}`}
-            strategy="afterInteractive"
-          />
-          <Script id="google-analytics" strategy="afterInteractive">
-            {`
+        </Script>
+        {Google_Analytics && (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${Google_Analytics}`}
+              strategy="afterInteractive"
+            />
+            <Script id="google-analytics" strategy="afterInteractive">
+              {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${Google_Analytics}');
               `}
-          </Script>
-        </>
-      )}
-      <Script id="microsoft-clarity" strategy="afterInteractive">
-        {`
+            </Script>
+          </>
+        )}
+        <Script id="microsoft-clarity" strategy="afterInteractive">
+          {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "xz3u5w08vs");
             `}
-      </Script>
-      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
+        </Script>
         <LanguageProvider>
           <ThemeProvider>
             <Navbar />
