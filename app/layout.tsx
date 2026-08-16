@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Script from "next/script";
 import { Navbar } from "@/components/layout/Navbar";
@@ -22,6 +22,17 @@ const inter = Inter({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
+  maximumScale: 5.0,
+  colorScheme: "light dark",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
+  ],
+};
+
 export const metadata: Metadata = {
   // ============ BASE URL (Required for OG image resolution) ============
   metadataBase: new URL("https://rajasthanplaces.in"),
@@ -33,33 +44,7 @@ export const metadata: Metadata = {
   },
   description:
     "Discover the most famous tourist places in Rajasthan with complete details - timing, ticket prices, history, location & travel tips. Plan your perfect Rajasthan trip today!",
-  keywords: [
-    "Rajasthan tourism",
-    "places to visit in Rajasthan",
-    "Rajasthan tourist places",
-    "Jaipur tourist places",
-    "Udaipur tourist places",
-    "Jodhpur tourist places",
-    "Jaisalmer tourist places",
-    "Amber Fort Jaipur",
-    "Hawa Mahal",
-    "Mehrangarh Fort",
-    "Lake Pichola",
-    "Rajasthan travel guide",
-    "Rajasthan trip planner",
-    "best places in Rajasthan",
-    "Rajasthan heritage sites",
-    "Rajasthan forts and palaces",
-    "Rajasthan desert safari",
-    "Ranthambore tiger safari",
-    "Pushkar camel fair",
-    "Rajasthan UNESCO sites",
-    "famous places in Rajasthan",
-    "top places to visit in Rajasthan",
-    "famous tourist places in Rajasthan",
-    "must visit places in Rajasthan",
-    "Rajasthan historical places"
-  ],
+  keywords: "Rajasthan tourism, places to visit in Rajasthan, Rajasthan tourist places, Jaipur tourist places, Udaipur tourist places, Jodhpur tourist places, Jaisalmer tourist places, Amber Fort Jaipur, Hawa Mahal, Mehrangarh Fort, Lake Pichola, Rajasthan travel guide, Rajasthan trip planner",
 
   // ============ OPEN GRAPH (Facebook/WhatsApp) ============
   openGraph: {
@@ -113,10 +98,14 @@ export const metadata: Metadata = {
 
   // ============ APP INFO ============
   applicationName: "Rajasthan Tourism Places",
-  authors: [{ name: "Rajasthan Tourism Places" }],
-  generator: "Next.js",
+  authors: [{ name: "Rajasthan Tourism Places", url: "https://rajasthanplaces.in" }],
   creator: "Rajasthan Tourism Places",
   publisher: "Rajasthan Tourism Places",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
 
   // ============ ICONS ============
   icons: {
@@ -242,49 +231,49 @@ export default function RootLayout({
         />
         {/* Moved GTM script to body to prevent Next.js head hydration errors */}
       </head>
-      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
-        <Script id="google-tag-manager" strategy="afterInteractive">
-          {`
+      <Script id="google-tag-manager" strategy="afterInteractive">
+        {`
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer','GTM-K9BN2J7Z');
           `}
-        </Script>
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
+      </Script>
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
+          height="0"
+          width="0"
+          style={{ display: "none", visibility: "hidden" }}
+        />
+      </noscript>
+      {Google_Analytics && (
+        <>
+          <Script
+            src={`https://www.googletagmanager.com/gtag/js?id=${Google_Analytics}`}
+            strategy="afterInteractive"
           />
-        </noscript>
-        {Google_Analytics && (
-          <>
-            <Script
-              src={`https://www.googletagmanager.com/gtag/js?id=${Google_Analytics}`}
-              strategy="afterInteractive"
-            />
-            <Script id="google-analytics" strategy="afterInteractive">
-              {`
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
                 window.dataLayer = window.dataLayer || [];
                 function gtag(){dataLayer.push(arguments);}
                 gtag('js', new Date());
                 gtag('config', '${Google_Analytics}');
               `}
-            </Script>
-          </>
-        )}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
-          {`
+          </Script>
+        </>
+      )}
+      <Script id="microsoft-clarity" strategy="afterInteractive">
+        {`
             (function(c,l,a,r,i,t,y){
-                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
                 t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
                 y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
             })(window, document, "clarity", "script", "xz3u5w08vs");
-          `}
-        </Script>
+            `}
+      </Script>
+      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
         <LanguageProvider>
           <ThemeProvider>
             <Navbar />
