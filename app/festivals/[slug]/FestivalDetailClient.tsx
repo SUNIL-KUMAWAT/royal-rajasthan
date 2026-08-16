@@ -1,12 +1,13 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Script from "next/script";
 import Image from "next/image";
-import { 
-  Calendar, 
-  Clock, 
-  MapPin, 
-  Star, 
+import {
+  Calendar,
+  Clock,
+  MapPin,
+  Star,
   ArrowLeft,
   Share2,
   Info
@@ -90,7 +91,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       }
     }
     const end = new Date(start.getTime() + (daysToAdd - 1) * 24 * 60 * 60 * 1000);
-    
+
     const formatOffset = (date: Date, endOfDay: boolean) => {
       const pad = (n: number) => String(n).padStart(2, '0');
       const y = date.getFullYear();
@@ -99,7 +100,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       const time = endOfDay ? '23:59:59' : '00:00:00';
       return `${y}-${m}-${d}T${time}+05:30`;
     };
-    
+
     return {
       startDate: formatOffset(start, false),
       endDate: formatOffset(end, true)
@@ -193,16 +194,16 @@ export default function FestivalDetailClient({ festival, related }: Props) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      
+
       {/* Hero Section */}
       <section className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full flex items-center justify-center">
         {/* Background Image with Parallax & Gradient */}
         <div className="absolute inset-0 z-0">
-          <motion.img 
+          <motion.img
             initial={{ scale: 1.1 }}
             animate={{ scale: 1 }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src={currentFestival.image} 
+            src={currentFestival.image}
             alt={currentFestival.name}
             className="w-full h-full object-cover"
           />
@@ -211,9 +212,9 @@ export default function FestivalDetailClient({ festival, related }: Props) {
 
         {/* Hero Content */}
         <div className="relative z-10 container mx-auto px-4 h-full flex flex-col justify-end pb-12 sm:pb-24">
-          
+
           <Link href="/#festivals">
-            <motion.button 
+            <motion.button
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.2 }}
@@ -240,7 +241,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 {currentFestival.rating}
               </span>
             </div>
-            
+
             <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-playfair mb-4 sm:mb-6 text-white drop-shadow-lg leading-tight">
               {currentFestival.name}
             </h1>
@@ -272,12 +273,12 @@ export default function FestivalDetailClient({ festival, related }: Props) {
       {/* Main Content */}
       <section className="relative z-20 container mx-auto px-4 py-16 -mt-10">
         <div className="max-w-5xl mx-auto space-y-12 relative z-10">
-          
+
           {/* Main Content Area */}
           <div className="space-y-12">
-            
+
             {/* Description & Highlights Glass Card */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -286,7 +287,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
               <div className="absolute top-0 right-0 p-8 opacity-5 text-gray-900 dark:text-white">
                 <Info size={100} />
               </div>
-              
+
               <h2 className="text-xl sm:text-3xl font-playfair font-bold text-gray-900 dark:text-white mb-4 sm:mb-6 flex items-center gap-2 sm:gap-3 transition-colors">
                 <span className="w-8 sm:w-10 h-[1px] bg-gold-500"></span>
                 About the Festival
@@ -294,7 +295,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
               <p className="text-sm sm:text-lg text-gray-600 dark:text-white/70 leading-relaxed mb-8 sm:mb-10 transition-colors">
                 {currentFestival.description}
               </p>
-              
+
               {/* Key Highlights */}
               <div className="mb-10">
                 <h3 className="text-base sm:text-lg font-playfair font-bold text-gray-900 dark:text-white/90 mb-3 sm:mb-4 flex items-center gap-3 transition-colors">
@@ -358,21 +359,21 @@ export default function FestivalDetailClient({ festival, related }: Props) {
               {/* Modern Action Bar */}
               <div className="mt-12 flex flex-col sm:flex-row items-center justify-center gap-6 bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-3xl p-4 sm:p-6 backdrop-blur-xl shadow-xl dark:shadow-2xl relative overflow-hidden transition-colors duration-300">
                 <div className="absolute inset-0 bg-gradient-to-r from-gold-500/10 dark:from-gold-500/5 via-transparent to-gold-500/10 dark:to-gold-500/5 pointer-events-none" />
-                
+
                 {currentFestival.nextDate && (
                   <div className="flex flex-col items-center justify-center sm:pr-6 sm:border-r border-gray-200 dark:border-white/10 w-full sm:w-auto transition-colors">
                     <p className="text-gold-600 dark:text-gold-400 text-[10px] sm:text-xs font-semibold uppercase tracking-widest mb-0.5 sm:mb-1">Next Expected Date</p>
                     <p className="text-lg sm:text-2xl text-gray-900 dark:text-white font-bold font-playfair">{new Date(currentFestival.nextDate).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
                   </div>
                 )}
-                
+
                 <div className="flex flex-row items-center gap-2 sm:gap-4 w-full sm:w-auto flex-1 justify-center mt-3 sm:mt-0">
                   <Link href="/plan-trip" className="flex-1 w-full sm:w-auto">
                     <button className="w-full px-2 sm:px-8 py-2.5 sm:py-4 rounded-2xl bg-gold-500 hover:bg-gold-400 text-black font-bold text-xs sm:text-lg transition-all shadow-[0_0_20px_rgba(251,191,36,0.3)] hover:shadow-[0_0_30px_rgba(251,191,36,0.5)] hover:-translate-y-1 whitespace-nowrap">
                       Plan Your Trip
                     </button>
                   </Link>
-                  <button 
+                  <button
                     onClick={() => {
                       if (navigator.share) {
                         navigator.share({
@@ -396,7 +397,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             </motion.div>
 
             {currentFestival.history && (
-              <motion.div 
+              <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -406,7 +407,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                 <h2 className="text-xl sm:text-4xl font-playfair font-bold text-gray-900 dark:text-white mb-6 sm:mb-8 text-center drop-shadow-md transition-colors">
                   History & Heritage
                 </h2>
-                <div 
+                <div
                   className="[&_p]:text-gray-600 dark:[&_p]:text-white/70 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-justify text-sm sm:text-lg transition-colors"
                   dangerouslySetInnerHTML={{ __html: currentFestival.history }}
                 />
@@ -441,7 +442,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             )}
 
           </div>
-          
+
         </div>
       </section>
 
@@ -478,7 +479,7 @@ export default function FestivalDetailClient({ festival, related }: Props) {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-500 group-hover:opacity-80" />
-                      
+
                       <div className="absolute bottom-4 left-4 right-4 transform transition-transform duration-500 group-hover:-translate-y-2" style={{ transform: "translateZ(20px)" }}>
                         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-3">
                           <MapPin size={12} className="text-gold-400" />

@@ -12,6 +12,7 @@ import {
     Ticket,
     Calendar,
     Sparkles,
+    Search,
 } from "lucide-react";
 import { PLACES } from "@/constants/places";
 import { CATEGORIES, CATEGORIES_HINDI } from "@/constants/data";
@@ -29,22 +30,34 @@ export function FeaturedPlaces() {
         }
     }, [language, hindiPlaces.length]);
 
-    const activePlaces = (language === "hi" && hindiPlaces.length > 0) ? hindiPlaces : PLACES;
+    const activePlacesSource = (language === "hi" && hindiPlaces.length > 0) ? hindiPlaces : PLACES;
+    const activePlaces = [...activePlacesSource].sort((a, b) => {
+        if (a.isFeatured && !b.isFeatured) return -1;
+        if (!a.isFeatured && b.isFeatured) return 1;
+        return (b.rating || 0) - (a.rating || 0);
+    });
     const currentCategories = language === "hi" ? CATEGORIES_HINDI : CATEGORIES;
 
     const [activeFilter, setActiveFilter] = useState("All");
     const [favorites, setFavorites] = useState<number[]>([]);
     const [visibleCount, setVisibleCount] = useState(8);
+    const [searchQuery, setSearchQuery] = useState("");
 
-    const filtered =
-        activeFilter === "All" || activeFilter === "सभी"
-            ? activePlaces
-            : activePlaces.filter(
-                (p) =>
-                    (p.category && p.category.toLowerCase() === activeFilter.toLowerCase()) ||
-                    (p.tags && p.tags.some((t: any) => t.toLowerCase() === activeFilter.toLowerCase())) ||
-                    (activeFilter.toLowerCase() === "unesco" && p.isUNESCO)
-            );
+    const filtered = activePlaces.filter((p) => {
+        const matchesFilter = activeFilter === "All" || activeFilter === "सभी" ||
+            (p.category && p.category.toLowerCase() === activeFilter.toLowerCase()) ||
+            (p.tags && p.tags.some((t: any) => t.toLowerCase() === activeFilter.toLowerCase())) ||
+            (activeFilter.toLowerCase() === "unesco" && p.isUNESCO);
+
+        if (!matchesFilter) return false;
+
+        if (searchQuery.trim() !== "") {
+            const query = searchQuery.toLowerCase().trim();
+            return p.name.toLowerCase().includes(query) || p.city.toLowerCase().includes(query);
+        }
+
+        return true;
+    });
 
     const visiblePlaces = filtered.slice(0, visibleCount);
 
@@ -88,7 +101,7 @@ export function FeaturedPlaces() {
                     initial={{ opacity: 0, y: 30 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    className="text-center mb-6 md:mb-16"
+                    className="text-center mb-4 md:mb-10"
                 >
                     {/* <motion.span
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -100,7 +113,7 @@ export function FeaturedPlaces() {
                         <span>Explore Rajasthan</span>
                     </motion.span> */}
 
-                    <h2 className="font-playfair text-2xl md:text-6xl font-bold text-gray-900 dark:text-white mt-3  relative inline-block">
+                    <h2 className="font-playfair text-2xl md:text-6xl font-bold text-gray-900 dark:text-white mt-2  relative inline-block">
                         <span className="relative z-10 bg-gradient-to-r from-gold-600 via-gold-400 to-gold-600 bg-clip-text text-transparent">
                             Famous Places to Visit
                         </span>
@@ -111,8 +124,24 @@ export function FeaturedPlaces() {
                     </p> */}
                 </motion.div>
 
+                {/* Search Bar */}
+                <div className="relative max-w-md mx-auto mb-4 md:mb-6 px-4 sm:px-0">
+                    <div className="relative flex items-center w-full h-10 md:h-12 rounded-full shadow-sm bg-white dark:bg-gray-800/50 border border-gray-200 dark:border-gray-700 overflow-hidden focus-within:ring-2 focus-within:ring-gold-500 focus-within:border-transparent transition-all">
+                        <div className="grid place-items-center h-full w-12 text-gray-400">
+                            <Search size={20} />
+                        </div>
+                        <input
+                            className="peer h-full w-full outline-none text-sm text-gray-700 dark:text-gray-200 bg-transparent pr-4"
+                            type="text"
+                            placeholder={language === 'hi' ? 'जगह का नाम या शहर खोजें...' : 'Search for a place or city...'}
+                            value={searchQuery}
+                            onChange={(e) => setSearchQuery(e.target.value)}
+                        />
+                    </div>
+                </div>
+
                 {/* Filters */}
-                <div className="relative flex flex-wrap gap-1 md:gap-3 justify-center mb-6 md:mb-12">
+                <div className="relative flex flex-wrap gap-1 md:gap-3 justify-center mb-4 md:mb-12">
                     {currentCategories.map((cat, i) => {
                         const isActive = activeFilter === cat;
                         return (
@@ -126,7 +155,7 @@ export function FeaturedPlaces() {
                                     setActiveFilter(cat);
                                     setVisibleCount(12);
                                 }}
-                                className={`relative px-4 md:px-5 py-2.5 rounded-full text-xs md:text-sm font-semibold transition-colors duration-300 z-10 ${isActive
+                                className={`relative px-2.5 md:px-5 py-1 rounded-full text-xs md:text-sm font-semibold transition-colors duration-300 z-10 ${isActive
                                     ? "text-white"
                                     : "bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-gold-400 hover:text-gold-600 hover:shadow-md"
                                     }`}

@@ -46,6 +46,7 @@ const ORBIT_SLIDES = [
         background: IMAGES.jaipurBg,
         leftImage: IMAGES.jaipurLeft,
         orbitImages: IMAGES.jaipurOrbit,
+        slug: "amber-fort",
     },
     {
         subtitle: "Udaipur, City of Lakes",
@@ -54,6 +55,7 @@ const ORBIT_SLIDES = [
         background: IMAGES.udaipurBg,
         leftImage: IMAGES.udaipurLeft,
         orbitImages: IMAGES.udaipurOrbit,
+        slug: "umaid-bhawan-palace",
     },
     {
         subtitle: "Jaisalmer, The Golden City",
@@ -62,6 +64,7 @@ const ORBIT_SLIDES = [
         background: IMAGES.jaisalmerBg,
         leftImage: IMAGES.jaisalmerLeft,
         orbitImages: IMAGES.jaisalmerOrbit,
+        slug: "jaisalmer-fort",
     },
 ];
 
@@ -73,6 +76,7 @@ const ORBIT_SLIDES_HINDI = [
         background: IMAGES.jaipurBg,
         leftImage: IMAGES.jaipurLeft,
         orbitImages: IMAGES.jaipurOrbit,
+        slug: "amber-fort",
     },
     {
         subtitle: "उदयपुर, झीलों का शहर",
@@ -81,6 +85,7 @@ const ORBIT_SLIDES_HINDI = [
         background: IMAGES.udaipurBg,
         leftImage: IMAGES.udaipurLeft,
         orbitImages: IMAGES.udaipurOrbit,
+        slug: "umaid-bhawan-palace",
     },
     {
         subtitle: "जैसलमेर, स्वर्ण शहर",
@@ -89,6 +94,7 @@ const ORBIT_SLIDES_HINDI = [
         background: IMAGES.jaisalmerBg,
         leftImage: IMAGES.jaisalmerLeft,
         orbitImages: IMAGES.jaisalmerOrbit,
+        slug: "jaisalmer-fort",
     },
 ];
 
@@ -100,6 +106,8 @@ export function HeroSection() {
 
     const [current, setCurrent] = useState(0);
     const slide = currentSlides[current];
+    const [touchStart, setTouchStart] = useState(0);
+    const [touchEnd, setTouchEnd] = useState(0);
 
     useEffect(() => {
         const timer = setInterval(() => {
@@ -108,9 +116,34 @@ export function HeroSection() {
         return () => clearInterval(timer);
     }, [currentSlides.length]);
 
-    return (
-        <section className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]">
+    const handleTouchStart = (e: React.TouchEvent) => {
+        setTouchStart(e.targetTouches[0].clientX);
+    };
 
+    const handleTouchMove = (e: React.TouchEvent) => {
+        setTouchEnd(e.targetTouches[0].clientX);
+    };
+
+    const handleTouchEnd = () => {
+        if (!touchStart || !touchEnd) return;
+        const distance = touchStart - touchEnd;
+        const isLeftSwipe = distance > 50;
+        const isRightSwipe = distance < -50;
+
+        if (isLeftSwipe) setCurrent((prev) => (prev + 1) % currentSlides.length);
+        if (isRightSwipe) setCurrent((prev) => (prev - 1 + currentSlides.length) % currentSlides.length);
+
+        setTouchStart(0);
+        setTouchEnd(0);
+    };
+
+    return (
+        <section
+            className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]"
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={handleTouchEnd}
+        >
 
             {/* Blurred background — crossfades between slides */}
             <AnimatePresence mode="wait">
@@ -126,15 +159,15 @@ export function HeroSection() {
                         src={slide.background}
                         alt={`Beautiful heritage view of ${slide.subtitle} tourism background`}
                         fill
-                        className="object-cover blur-[6px] opacity-90 w-full h-full absolute inset-0"
+                        className="object-cover blur-[6px] opacity-90 w-full h-full absolute inset-0 pointer-events-none"
                     />
                 </motion.div>
             </AnimatePresence>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60" />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60 pointer-events-none" />
 
             <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-start md:justify-center pt-48 pb-48 md:pt-0 md:pb-0 gap-6 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
                 {/* LEFT: single framed image — crossfades between slides */}
-                <div className="relative hidden shrink-0 xl:block">
+                <div className="relative hidden shrink-0 xl:block pointer-events-none">
                     <AnimatePresence mode="wait">
                         <motion.div
                             key={`left-${current}`}
@@ -230,20 +263,18 @@ export function HeroSection() {
                             transition={{ type: "spring", stiffness: 400, damping: 15 }}
                         >
                             <Link
-                                href="/plan-trip"
+                                href={`/places/${slide.slug}`}
                                 className="group relative flex w-auto items-center justify-center gap-1 sm:gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 lg:px-8 md:py-3 lg:py-4 text-[11px] sm:text-xs md:text-sm lg:text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20 whitespace-nowrap"
                             >
-                                <span className="relative z-10">{language === 'hi' ? "यात्रा की योजना बनाएं" : "Plan Your Trip"}</span>
+                                <span className="relative z-10">{language === 'hi' ? "अधिक जानकारी" : "More Details"}</span>
                                 <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
                             </Link>
                         </motion.div>
                     </motion.div>
                 </div>
 
-
-
                 {/* RIGHT: Floating SHM Images */}
-                <div className=" relative hidden w-full md:w-[45%] max-w-[400px] shrink-0 md:block md:h-[400px] lg:h-[550px] lg:max-w-[550px] xl:h-[650px] xl:max-w-[650px] flex-1 mt-16 md:mt-24">
+                <div className=" relative hidden w-full md:w-[45%] max-w-[400px] shrink-0 md:block md:h-[400px] lg:h-[550px] lg:max-w-[550px] xl:h-[650px] xl:max-w-[650px] flex-1 mt-16 md:mt-24 pointer-events-none">
                     {slide.orbitImages.map((src: string, i: number) => {
                         const staticPositions = [
                             { top: "5%", left: "-5%" },
@@ -319,12 +350,14 @@ export function HeroSection() {
                         transition={{ delay: 0.6 + i * 0.1 }}
                         className="relative h-20 w-[30%] max-w-[120px] rounded-xl overflow-hidden border-2 border-white/30 shadow-[0_8px_16px_rgba(0,0,0,0.4)] backdrop-blur-sm"
                     >
-                        <Image
-                            src={src}
-                            alt={`Rajasthan preview ${i + 1}`}
-                            fill
-                            className="object-cover w-full h-full absolute inset-0"
-                        />
+                        <Link href={`/places/${slide.slug}`} className="block w-full h-full">
+                            <Image
+                                src={src}
+                                alt={`Rajasthan preview ${i + 1}`}
+                                fill
+                                className="object-cover w-full h-full absolute inset-0"
+                            />
+                        </Link>
                     </motion.div>
                 ))}
             </div>

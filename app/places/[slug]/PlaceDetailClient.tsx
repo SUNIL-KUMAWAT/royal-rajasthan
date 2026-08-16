@@ -57,10 +57,6 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
     );
 }
 
-function getTimeSlotBadge(isFree: boolean, price: number) {
-    if (isFree) return { text: "Free Entry", color: "bg-green-500" };
-    return { text: `₹${price}`, color: "bg-yellow-500" };
-}
 
 export function PlaceDetailClient({ place: initialPlace }: Props) {
     const { language } = useLanguage();
@@ -406,7 +402,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                             </span>
                                         )}
                                     </div>
-                                    <h1 className="font-playfair text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
+                                    <h1 className="font-playfair text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
                                         {place.name}
                                     </h1>
                                     <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400 flex-wrap">
@@ -529,7 +525,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                         className="space-y-10"
                                     >
                                         {/* ── Description ── */}
-                                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                                        <p className="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">
                                             {place.description}
                                         </p>
 
@@ -625,7 +621,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* ══════════ TIMING & TICKETS ══════════ */}
                                         <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
-                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-2">
+                                            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6 flex items-center gap-2">
                                                 <Clock size={22} className="text-yellow-500" />
                                                 {language === "hi" ? "समय और टिकट" : "Timing & Tickets"}
                                             </h2>
@@ -638,8 +634,8 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     </h3>
                                                     <div className="space-y-3">
                                                         {[
-                                                            { label: language === "hi" ? "खुलता है" : "Opens At", value: place.timing.open, cls: "text-green-600 font-bold text-xl" },
-                                                            { label: language === "hi" ? "बंद होता है" : "Closes At", value: place.timing.close, cls: "text-red-500 font-bold text-xl" },
+                                                            { label: language === "hi" ? "खुलता है" : "Opens At", value: place.timing.open, cls: "text-green-600 font-bold text-lg md:text-xl" },
+                                                            { label: language === "hi" ? "बंद होता है" : "Closes At", value: place.timing.close, cls: "text-red-500 font-bold text-lg md:text-xl" },
                                                             { label: language === "hi" ? "बंद रहता है" : "Closed On", value: place.timing.closedOn, cls: "font-medium text-gray-800 dark:text-gray-200" },
                                                         ].map((row) => (
                                                             <div key={row.label} className="flex justify-between items-center py-3 border-b border-gray-100 dark:border-gray-700 last:border-0">
@@ -670,7 +666,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     </h3>
                                                     {place.ticket.isFree ? (
                                                         <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 text-center">
-                                                            <div className="text-4xl font-bold text-green-600 dark:text-green-400 mb-1">FREE ENTRY</div>
+                                                            <div className="text-2xl md:text-4xl font-bold text-green-600 dark:text-green-400 mb-1">FREE ENTRY</div>
                                                             <div className="text-green-500 text-sm">{language === "hi" ? "प्रवेश के लिए कोई टिकट नहीं" : "No ticket required for entry"}</div>
                                                         </div>
                                                     ) : (
@@ -683,7 +679,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                             ].map((t) => (
                                                                 <div key={t.label} className={`bg-${t.color}-50 dark:bg-${t.color}-900/20 rounded-xl p-4 text-center`}>
                                                                     <div className={`text-xs text-${t.color}-400 mb-1`}>{t.label}</div>
-                                                                    <div className={`text-2xl font-bold text-${t.color}-600 dark:text-${t.color}-400`}>{t.value}</div>
+                                                                    <div className={`text-xl md:text-2xl font-bold text-${t.color}-600 dark:text-${t.color}-400`}>{t.value}</div>
                                                                 </div>
                                                             ))}
                                                         </div>
@@ -701,7 +697,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
                                                     <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">
                                                         ⏱ {language === "hi" ? "घूमने की अनुशंसित अवधि" : "Recommended Visit Duration"}
                                                     </h3>
-                                                    <div className="grid grid-cols-3 gap-3">
+                                                    <div className="grid grid-cpos-1 md:grid-cols-3 gap-1 md:gap-3">
                                                         <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 text-center">
                                                             <div className="text-xs text-gray-400 mb-1">{language === "hi" ? "न्यूनतम" : "Minimum"}</div>
                                                             <div className="font-bold text-gray-700 dark:text-gray-300">{place.visitDuration.minimum}</div>
@@ -721,7 +717,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* ══════════ LOCATION ══════════ */}
                                         <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
-                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6 flex items-center gap-2">
+                                            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6 flex items-center gap-2">
                                                 <MapPin size={22} className="text-yellow-500" />
                                                 {language === "hi" ? "स्थान" : "Location"}
                                             </h2>
@@ -766,7 +762,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* ══════════ HISTORY ══════════ */}
                                         <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
-                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6">
                                                 📜 {language === "hi" ? `${place.name} का इतिहास` : `History of ${place.name}`}
                                             </h2>
                                             <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
@@ -792,7 +788,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* ══════════ TIPS ══════════ */}
                                         <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
-                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6">
                                                 💡 {language === "hi" ? "सुझाव" : "Tips"}
                                             </h2>
                                             <div className="space-y-6">
@@ -847,7 +843,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
 
                                         {/* ══════════ NEARBY ══════════ */}
                                         <div className="border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8">
-                                            <h2 className="font-playfair text-2xl font-bold text-gray-800 dark:text-white mb-6">
+                                            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6">
                                                 📍 {language === "hi" ? "आसपास" : "Nearby"}
                                             </h2>
                                             <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6">
