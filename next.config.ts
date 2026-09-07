@@ -98,17 +98,45 @@ const nextConfig: NextConfig = {
   // ============ REDIRECTS ============
   async redirects() {
     return [
-      // Redirect old URLs if any
+      // 301 Permanent Redirects for SEO clean-up
       {
-        source: "/destinations",
-        destination: "/places",
-        permanent: true, // 301 redirect - good for SEO
-      },
-      {
-        source: "/destinations/:slug",
-        destination: "/places/:slug",
+        source: "/hi",
+        destination: "/",
         permanent: true,
       },
+      {
+        source: "/$",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/&",
+        destination: "/",
+        permanent: true,
+      },
+      // Festivals Redirects
+      {
+        source: "/festivals/mewar",
+        destination: "/festivals/mewar-festival",
+        permanent: true,
+      },
+      {
+        source: "/festivals/teej",
+        destination: "/festivals/teej-festival",
+        permanent: true,
+      },
+      // Shopping Redirects
+      {
+        source: "/shopping/sardar-market",
+        destination: "/shopping/sardar-market-clock-tower",
+        permanent: true,
+      },
+      {
+        source: "/shopping/hathi-pol",
+        destination: "/shopping/hathi-pol-bazaar",
+        permanent: true,
+      },
+      // Legacy redirects
       {
         source: "/hotels",
         destination: "/places",

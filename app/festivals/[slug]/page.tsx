@@ -1,6 +1,5 @@
 import { FESTIVALS } from "@/constants/data";
 import { notFound } from "next/navigation";
-// import FestivalDetailClient from "./FestivalDetailClient";
 import { Metadata } from "next";
 import FestivalDetailClient from "./FestivalDetailClient";
 
@@ -13,6 +12,18 @@ function toSlug(name: string): string {
     .replace(/\s+/g, "-");
 }
 
+function findFestivalBySlug(slug: string) {
+  const cleanSlug = slug.toLowerCase().trim();
+  return FESTIVALS.find((f) => {
+    const s = toSlug(f.name);
+    return (
+      s === cleanSlug ||
+      s === `${cleanSlug}-festival` ||
+      cleanSlug === s.replace("-festival", "")
+    );
+  });
+}
+
 // Generate all static params for SSG
 export async function generateStaticParams() {
   return FESTIVALS.map((festival) => ({
@@ -20,11 +31,16 @@ export async function generateStaticParams() {
   }));
 }
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
   const { slug } = await params;
-  const festival = FESTIVALS.find(f => toSlug(f.name) === slug);
+  const festival = findFestivalBySlug(slug);
   if (!festival) return { title: "Festival Not Found" };
 
+  const canonicalSlug = toSlug(festival.name);
   const title = festival.seo?.title || `${festival.name} | Rajasthan Tourism Places`;
   const description = festival.seo?.description || festival.description;
   const customKeywords = festival.seo?.keywords || festival.keywords || [];
@@ -37,7 +53,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       `${festival.name} festival`,
       `${festival.name} dates`,
       festival.location,
-      ...customKeywords
+      ...customKeywords,
     ],
     robots: {
       index: true,
@@ -66,29 +82,36 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       images: [festival.image],
     },
     alternates: {
-      canonical: `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`,
+      canonical: `https://rajasthanplaces.in/festivals/${canonicalSlug}`,
     },
   };
 }
 
-export default async function FestivalDetailPage({ params }: { params: Promise<{ slug: string }> }) {
+export default async function FestivalDetailPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
   const { slug } = await params;
-  const festival = FESTIVALS.find(f => toSlug(f.name) === slug);
+  const festival = findFestivalBySlug(slug);
 
   if (!festival) {
     notFound();
   }
 
+  const canonicalSlug = toSlug(festival.name);
+
   // Find related festivals (same location or month, exclude self)
-  const related = FESTIVALS.filter(f =>
-    f.id !== festival.id &&
-    (f.location === festival.location || f.month === festival.month)
+  const related = FESTIVALS.filter(
+    (f) =>
+      f.id !== festival.id &&
+      (f.location === festival.location || f.month === festival.month)
   ).slice(0, 4);
 
   // If not enough related by location/month, fill with random ones
   if (related.length < 4) {
-    const additional = FESTIVALS.filter(f =>
-      f.id !== festival.id && !related.find(r => r.id === f.id)
+    const additional = FESTIVALS.filter(
+      (f) => f.id !== festival.id && !related.find((r) => r.id === f.id)
     ).slice(0, 4 - related.length);
     related.push(...additional);
   }
@@ -97,78 +120,81 @@ export default async function FestivalDetailPage({ params }: { params: Promise<{
   const eventSchema = {
     "@context": "https://schema.org",
     "@type": "Event",
-    "name": festival.name,
-    "description": festival.description,
-    "image": festival.image,
-    "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`,
-    "location": {
+    name: festival.name,
+    description: festival.description,
+    image: festival.image,
+    url: `https://rajasthanplaces.in/festivals/${canonicalSlug}`,
+    location: {
       "@type": "Place",
-      "name": festival.location,
-      "address": {
+      name: festival.location,
+      address: {
         "@type": "PostalAddress",
-        "addressLocality": festival.location,
-        "addressRegion": "Rajasthan",
-        "addressCountry": "IN"
-      }
+        addressLocality: festival.location,
+        addressRegion: "Rajasthan",
+        addressCountry: "IN",
+      },
     },
-    "startDate": festival.nextDate || undefined,
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
-    "organizer": {
+    startDate: festival.nextDate || undefined,
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+    organizer: {
       "@type": "Organization",
-      "name": "Department of Tourism, Government of Rajasthan",
-      "url": "https://www.tourism.rajasthan.gov.in"
+      name: "Department of Tourism, Government of Rajasthan",
+      url: "https://www.tourism.rajasthan.gov.in",
     },
-    "performer": {
+    performer: {
       "@type": "PerformingGroup",
-      "name": "Local Folk Artists"
+      name: "Local Folk Artists",
     },
-    "offers": {
+    offers: {
       "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "INR",
-      "availability": "https://schema.org/InStock",
-      "url": `https://rajasthanplaces.in/festivals/${toSlug(festival.name)}`
-    }
+      price: "0",
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      url: `https://rajasthanplaces.in/festivals/${canonicalSlug}`,
+    },
   };
 
   const breadcrumbSchema = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    "itemListElement": [
+    itemListElement: [
       {
         "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://rajasthanplaces.in"
+        position: 1,
+        name: "Home",
+        item: "https://rajasthanplaces.in",
       },
       {
         "@type": "ListItem",
-        "position": 2,
-        "name": "Festivals",
-        "item": "https://rajasthanplaces.in/culture"
+        position: 2,
+        name: "Festivals",
+        item: "https://rajasthanplaces.in/culture",
       },
       {
         "@type": "ListItem",
-        "position": 3,
-        "name": festival.name,
-        "item": `https://rajasthanplaces.in/festivals/${slug}`
-      }
-    ]
+        position: 3,
+        name: festival.name,
+        item: `https://rajasthanplaces.in/festivals/${canonicalSlug}`,
+      },
+    ],
   };
 
-  const faqSchema = festival.faqs && festival.faqs.length > 0 ? {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": festival.faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  } : null;
+  const faqSchema =
+    festival.faqs && festival.faqs.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: festival.faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: faq.answer,
+            },
+          })),
+        }
+      : null;
 
   return (
     <>

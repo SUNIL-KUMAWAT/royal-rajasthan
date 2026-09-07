@@ -1,5 +1,42 @@
+# robots.txt for https://rajasthanplaces.in
+
+# General Crawlers
 User-agent: *
 Allow: /
 Disallow: /admin/
 
+# AI Search Engines & LLMs (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps & LLMs.txt
 Sitemap: https://rajasthanplaces.in/sitemap.xml
+# LLMs specification: https://llmstxt.org
+# LLM Knowledge Base: https://rajasthanplaces.in/llms.txt

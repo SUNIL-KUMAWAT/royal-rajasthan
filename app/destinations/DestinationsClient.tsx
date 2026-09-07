@@ -188,7 +188,7 @@ export default function DestinationsClient() {
                                         <span>{dest.distance}</span>
                                     </div>
                                     <Link
-                                        href={`/destinations/${dest.slug}`}
+                                        href={`/places?city=${encodeURIComponent(dest.name)}`}
                                         className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-maroon-500 to-maroon-600 text-white py-2.5 rounded-xl text-sm font-semibold hover:shadow-lg transition-all"
                                     >
                                         View Details

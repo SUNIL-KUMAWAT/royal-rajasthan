@@ -35,6 +35,28 @@ export function PlacesClient() {
 
     const { language } = useLanguage();
 
+    // Parse query params on mount (e.g. ?city=Jaipur, ?category=Fort, ?search=Amber)
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+        const params = new URLSearchParams(window.location.search);
+        const urlCity = params.get("city");
+        const urlCategory = params.get("category");
+        const urlSearch = params.get("search");
+
+        if (urlCity) {
+            const foundCity = CITIES.find((c) => c.toLowerCase() === urlCity.toLowerCase());
+            if (foundCity) setCity(foundCity);
+            else setCity(urlCity);
+        }
+        if (urlCategory) {
+            const foundCat = CATEGORIES.find((c) => c.toLowerCase() === urlCategory.toLowerCase());
+            if (foundCat) setCategory(foundCat);
+        }
+        if (urlSearch) {
+            setSearch(urlSearch);
+        }
+    }, []);
+
     // Reset pagination when any filter changes
     useEffect(() => {
         setVisibleCount(12);

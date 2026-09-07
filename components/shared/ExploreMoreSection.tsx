@@ -19,7 +19,7 @@ const ALL_SECTIONS = [
     },
     {
         id: "festivals",
-        href: "/festivals",
+        href: "/culture",
         emoji: "🎪",
         title: "Festivals & Events",
         titleHi: "त्यौहार और उत्सव",

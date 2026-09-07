@@ -23,16 +23,16 @@ const FAMOUS_PLACES = [
 const FESTIVALS = [
     { name: "Pushkar Camel Fair", nameHi: "पुष्कर मेला", href: "/festivals/pushkar-camel-fair" },
     { name: "Desert Festival", nameHi: "मरु महोत्सव", href: "/festivals/desert-festival" },
-    { name: "Teej Festival", nameHi: "तीज महोत्सव", href: "/festivals/teej" },
-    { name: "Mewar Festival", nameHi: "मेवाड़ महोत्सव", href: "/festivals/mewar" },
+    { name: "Teej Festival", nameHi: "तीज महोत्सव", href: "/festivals/teej-festival" },
+    { name: "Mewar Festival", nameHi: "मेवाड़ महोत्सव", href: "/festivals/mewar-festival" },
     { name: "View All Festivals", nameHi: "सभी त्यौहार", href: "/culture" },
 ];
 
 const SHOPPING = [
     { name: "Johari Bazaar", nameHi: "जौहरी बाज़ार", href: "/shopping/johari-bazaar" },
     { name: "Bapu Bazaar", nameHi: "बापू बाज़ार", href: "/shopping/bapu-bazaar" },
-    { name: "Sardar Market", nameHi: "सरदार मार्केट", href: "/shopping/sardar-market" },
-    { name: "Hathi Pol", nameHi: "हाथी पोल", href: "/shopping/hathi-pol" },
+    { name: "Sardar Market", nameHi: "सरदार मार्केट", href: "/shopping/sardar-market-clock-tower" },
+    { name: "Hathi Pol", nameHi: "हाथी पोल", href: "/shopping/hathi-pol-bazaar" },
     { name: "Shopping Guide", nameHi: "शॉपिंग गाइड", href: "/shopping" },
 ];
 

@@ -143,6 +143,9 @@ export default function RootLayout({
           }}
         />
 
+        {/* LLM & AI Search Engine Discovery */}
+        <link rel="alternate" type="text/markdown" title="LLMs.txt" href="https://rajasthanplaces.in/llms.txt" />
+
         {/* ============ STRUCTURED DATA (JSON-LD) ============ */}
         <script
           type="application/ld+json"

@@ -81,7 +81,7 @@ export function MiniFestivals() {
         </div>
 
         <div className="text-center">
-          <Link href="/festivals" className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-medium hover:bg-white/20 hover:scale-105 transition-all">
+          <Link href="/culture" className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-medium hover:bg-white/20 hover:scale-105 transition-all">
             {t.viewAll} <ArrowRight size={16} />
           </Link>
         </div>
