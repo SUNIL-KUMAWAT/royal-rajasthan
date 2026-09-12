@@ -24,6 +24,7 @@ import {
     ChevronUp,
     AlertCircle,
     Heart,
+    Sparkles,
 } from "lucide-react";
 import { PLACES, CITIES, CITIES_HINDI } from "@/constants/data";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -122,42 +123,737 @@ const PACE_OPTIONS = [
     },
 ];
 
-const CITY_IMAGES: Record<string, string> = {
-    Jaipur: "https://picsum.photos/seed/raj-1132/800/600",
-    "जयपुर": "https://picsum.photos/seed/raj-1132/800/600",
-    Jodhpur: "https://picsum.photos/seed/raj-1133/800/600",
-    "जोधपुर": "https://picsum.photos/seed/raj-1133/800/600",
-    Udaipur: "https://picsum.photos/seed/raj-1134/800/600",
-    "उदयपुर": "https://picsum.photos/seed/raj-1134/800/600",
-    Jaisalmer: "https://picsum.photos/seed/raj-1135/800/600",
-    "जैसलमेर": "https://picsum.photos/seed/raj-1135/800/600",
-    Pushkar: "https://picsum.photos/seed/raj-1136/800/600",
-    "पुष्कर": "https://picsum.photos/seed/raj-1136/800/600",
-    "Mount Abu": "https://picsum.photos/seed/raj-1137/800/600",
-    "माउंट आबू": "https://picsum.photos/seed/raj-1137/800/600",
-    Bikaner: "https://picsum.photos/seed/raj-1138/800/600",
-    "बीकानेर": "https://picsum.photos/seed/raj-1138/800/600",
-    "Sawai Madhopur": "https://picsum.photos/seed/raj-1139/800/600",
-    "सवाई माधोपुर": "https://picsum.photos/seed/raj-1139/800/600",
-};
+interface CityMeta {
+    icon: string;
+    tag: string;
+    tagHi: string;
+    desc: string;
+    descHi: string;
+    highlights: string;
+    highlightsHi: string;
+}
 
-const CITY_DESCRIPTIONS: Record<string, string> = {
-    Jaipur: "The Pink City - Forts, Palaces & Markets",
-    "जयपुर": "पिंक सिटी - किले, महल और बाजार",
-    Jodhpur: "The Blue City - Mehrangarh & Blue Houses",
-    "जोधपुर": "ब्लू सिटी - मेहरानगढ़ और नीले घर",
-    Udaipur: "The Lake City - Romantic Palaces & Lakes",
-    "उदयपुर": "झीलों की नगरी - रोमांटिक महल और झीलें",
-    Jaisalmer: "The Golden City - Desert Forts & Sand Dunes",
-    "जैसलमेर": "गोल्डन सिटी - रेगिस्तानी किले और रेत के टीले",
-    Pushkar: "The Sacred City - Holy Lake & Only Brahma Temple",
-    "पुष्कर": "पवित्र नगरी - पवित्र झील और एकमात्र ब्रह्मा मंदिर",
-    "Mount Abu": "The Hill Station - Cool Climate & Jain Temples",
-    "माउंट आबू": "हिल स्टेशन - ठंडा मौसम और जैन मंदिर",
-    Bikaner: "The Camel City - Junagarh Fort & Sweets",
-    "बीकानेर": "ऊंटों की नगरी - जूनागढ़ किला और मिठाइयां",
-    "Sawai Madhopur": "Tiger Land - Ranthambore National Park",
-    "सवाई माधोपुर": "बाघों की भूमि - रणथंभौर राष्ट्रीय उद्यान",
+const CITY_METADATA: Record<string, CityMeta> = {
+    Jaipur: {
+        icon: "🏰",
+        tag: "Pink City",
+        tagHi: "गुलाबी नगरी",
+        desc: "Magnificent forts, royal palaces and vibrant heritage bazaars",
+        descHi: "भव्य ऐतिहासिक किले, शाही महल और प्रसिद्ध पारंपरिक बाजार",
+        highlights: "Hawa Mahal • Amber Fort • City Palace",
+        highlightsHi: "हवा महल • आमेर किला • सिटी पैलेस",
+    },
+    "जयपुर": {
+        icon: "🏰",
+        tag: "Pink City",
+        tagHi: "गुलाबी नगरी",
+        desc: "Magnificent forts, royal palaces and vibrant heritage bazaars",
+        descHi: "भव्य ऐतिहासिक किले, शाही महल और प्रसिद्ध पारंपरिक बाजार",
+        highlights: "Hawa Mahal • Amber Fort • City Palace",
+        highlightsHi: "हवा महल • आमेर किला • सिटी पैलेस",
+    },
+    Jodhpur: {
+        icon: "☀️",
+        tag: "Blue City",
+        tagHi: "नीली नगरी",
+        desc: "Mighty Mehrangarh citadel, blue houses and royal cenotaphs",
+        descHi: "विशाल मेहरानगढ़ दुर्ग, नीले मकान और ऐतिहासिक उम्मेद भवन",
+        highlights: "Mehrangarh Fort • Umaid Bhawan • Jaswant Thada",
+        highlightsHi: "मेहरानगढ़ • उम्मेद भवन • जसवंत थड़ा",
+    },
+    "जोधपुर": {
+        icon: "☀️",
+        tag: "Blue City",
+        tagHi: "नीली नगरी",
+        desc: "Mighty Mehrangarh citadel, blue houses and royal cenotaphs",
+        descHi: "विशाल मेहरानगढ़ दुर्ग, नीले मकान और ऐतिहासिक उम्मेद भवन",
+        highlights: "Mehrangarh Fort • Umaid Bhawan • Jaswant Thada",
+        highlightsHi: "मेहरानगढ़ • उम्मेद भवन • जसवंत थड़ा",
+    },
+    Udaipur: {
+        icon: "👑",
+        tag: "City of Lakes",
+        tagHi: "झीलों की नगरी",
+        desc: "Romantic lakes, floating marble palaces and scenic Aravalli hills",
+        descHi: "पिछोला झील, संगमरमर के शाही महल और खूबसूरत अरावली वादियां",
+        highlights: "Lake Pichola • City Palace • Jag Mandir",
+        highlightsHi: "पिछोला झील • सिटी पैलेस • जग मंदिर",
+    },
+    "उदयपुर": {
+        icon: "👑",
+        tag: "City of Lakes",
+        tagHi: "झीलों की नगरी",
+        desc: "Romantic lakes, floating marble palaces and scenic Aravalli hills",
+        descHi: "पिछोला झील, संगमरमर के शाही महल और खूबसूरत अरावली वादियां",
+        highlights: "Lake Pichola • City Palace • Jag Mandir",
+        highlightsHi: "पिछोला झील • सिटी पैलेस • जग मंदिर",
+    },
+    Jaisalmer: {
+        icon: "🏜️",
+        tag: "Golden City",
+        tagHi: "स्वर्ण नगरी",
+        desc: "Living yellow sandstone fort, Thar Desert dunes and camel safaris",
+        descHi: "सोनार किला, थार मरुस्थल के रेतीले धोरे और रोमांचक ऊंट सफारी",
+        highlights: "Jaisalmer Fort • Sam Sand Dunes • Patwon Haveli",
+        highlightsHi: "जैसलमेर किला • सैम सैंड ड्यून्स • पटवों की हवेली",
+    },
+    "जैसलमेर": {
+        icon: "🏜️",
+        tag: "Golden City",
+        tagHi: "स्वर्ण नगरी",
+        desc: "Living yellow sandstone fort, Thar Desert dunes and camel safaris",
+        descHi: "सोनार किला, थार मरुस्थल के रेतीले धोरे और रोमांचक ऊंट सफारी",
+        highlights: "Jaisalmer Fort • Sam Sand Dunes • Patwon Haveli",
+        highlightsHi: "जैसलमेर किला • सैम सैंड ड्यून्स • पटवों की हवेली",
+    },
+    Pushkar: {
+        icon: "🦚",
+        tag: "Sacred Oasis",
+        tagHi: "पवित्र तीर्थ",
+        desc: "Sacred Brahma Temple, holy ghats and world-famous camel fair",
+        descHi: "जगतपिता ब्रह्मा मंदिर, पावन 52 घाट और विश्व प्रसिद्ध पुष्कर मेला",
+        highlights: "Brahma Temple • Pushkar Lake • Savitri Temple",
+        highlightsHi: "ब्रह्मा मंदिर • पुष्कर झील • सावित्री मंदिर",
+    },
+    "पुष्कर": {
+        icon: "🦚",
+        tag: "Sacred Oasis",
+        tagHi: "पवित्र तीर्थ",
+        desc: "Sacred Brahma Temple, holy ghats and world-famous camel fair",
+        descHi: "जगतपिता ब्रह्मा मंदिर, पावन 52 घाट और विश्व प्रसिद्ध पुष्कर मेला",
+        highlights: "Brahma Temple • Pushkar Lake • Savitri Temple",
+        highlightsHi: "ब्रह्मा मंदिर • पुष्कर झील • सावित्री मंदिर",
+    },
+    "Mount Abu": {
+        icon: "🌲",
+        tag: "Hill Station",
+        tagHi: "पर्वतीय स्थल",
+        desc: "Cool mountain retreat, intricate Dilwara temples and serene Nakki Lake",
+        descHi: "सुहावना मौसम, नक्काशीदार दिलवाड़ा मंदिर और खूबसूरत नक्की झील",
+        highlights: "Dilwara Temples • Nakki Lake • Guru Shikhar",
+        highlightsHi: "दिलवाड़ा मंदिर • नक्की झील • गुरु शिखर",
+    },
+    "माउंट आबू": {
+        icon: "🌲",
+        tag: "Hill Station",
+        tagHi: "पर्वतीय स्थल",
+        desc: "Cool mountain retreat, intricate Dilwara temples and serene Nakki Lake",
+        descHi: "सुहावना मौसम, नक्काशीदार दिलवाड़ा मंदिर और खूबसूरत नक्की झील",
+        highlights: "Dilwara Temples • Nakki Lake • Guru Shikhar",
+        highlightsHi: "दिलवाड़ा मंदिर • नक्की झील • गुरु शिखर",
+    },
+    Bikaner: {
+        icon: "🐪",
+        tag: "Camel Country",
+        tagHi: "ऊंटों की धरती",
+        desc: "Impregnable Junagarh Fort, Karni Mata Temple and desert heritage",
+        descHi: "अजेय जूनागढ़ किला, देशनोक करणी माता मंदिर और बीकानेरी संस्कृति",
+        highlights: "Junagarh Fort • Karni Mata Temple • Rampuria Haveli",
+        highlightsHi: "जूनागढ़ किला • करणी माता • रामपुरिया हवेली",
+    },
+    "बीकानेर": {
+        icon: "🐪",
+        tag: "Camel Country",
+        tagHi: "ऊंटों की धरती",
+        desc: "Impregnable Junagarh Fort, Karni Mata Temple and desert heritage",
+        descHi: "अजेय जूनागढ़ किला, देशनोक करणी माता मंदिर और बीकानेरी संस्कृति",
+        highlights: "Junagarh Fort • Karni Mata Temple • Rampuria Haveli",
+        highlightsHi: "जूनागढ़ किला • करणी माता • रामपुरिया हवेली",
+    },
+    "Sawai Madhopur": {
+        icon: "🐅",
+        tag: "Tiger Capital",
+        tagHi: "बाघों की भूमि",
+        desc: "World-renowned Ranthambore Royal Bengal Tigers and historic hill fort",
+        descHi: "विश्वप्रसिद्ध रणथंभौर राष्ट्रीय उद्यान और प्राचीन ऐतिहासिक किला",
+        highlights: "Ranthambore National Park • Ranthambore Fort",
+        highlightsHi: "रणथंभौर नेशनल पार्क • रणथंभौर दुर्ग",
+    },
+    "सवाई माधोपुर": {
+        icon: "🐅",
+        tag: "Tiger Capital",
+        tagHi: "बाघों की भूमि",
+        desc: "World-renowned Ranthambore Royal Bengal Tigers and historic hill fort",
+        descHi: "विश्वप्रसिद्ध रणथंभौर राष्ट्रीय उद्यान और प्राचीन ऐतिहासिक किला",
+        highlights: "Ranthambore National Park • Ranthambore Fort",
+        highlightsHi: "रणथंभौर नेशनल पार्क • रणथंभौर दुर्ग",
+    },
+    Ajmer: {
+        icon: "🕊️",
+        tag: "Spiritual Harmony",
+        tagHi: "सूफी संगम",
+        desc: "Revered Dargah Sharif, historic Taragarh Fort and Ana Sagar Lake",
+        descHi: "ख्वाजा गरीब नवाज दरगाह, ऐतिहासिक तारागढ़ और आना सागर झील",
+        highlights: "Ajmer Sharif Dargah • Ana Sagar Lake • Taragarh",
+        highlightsHi: "अजमेर शरीफ • आना सागर • तारागढ़ किला",
+    },
+    "अजमेर": {
+        icon: "🕊️",
+        tag: "Spiritual Harmony",
+        tagHi: "सूफी संगम",
+        desc: "Revered Dargah Sharif, historic Taragarh Fort and Ana Sagar Lake",
+        descHi: "ख्वाजा गरीब नवाज दरगाह, ऐतिहासिक तारागढ़ और आना सागर झील",
+        highlights: "Ajmer Sharif Dargah • Ana Sagar Lake • Taragarh",
+        highlightsHi: "अजमेर शरीफ • आना सागर • तारागढ़ किला",
+    },
+    Chittorgarh: {
+        icon: "⚔️",
+        tag: "Pride & Valour",
+        tagHi: "शौर्य और वीरता",
+        desc: "Legendary hilltop fort, Vijay Stambha and heroic Rajput history",
+        descHi: "भारत का सबसे बड़ा ऐतिहासिक दुर्ग, विजय स्तंभ और रानी पद्मिनी महल",
+        highlights: "Chittorgarh Fort • Vijay Stambha • Padmini Palace",
+        highlightsHi: "चित्तौड़गढ़ दुर्ग • विजय स्तंभ • पद्मिनी पैलेस",
+    },
+    "चित्तौड़गढ़": {
+        icon: "⚔️",
+        tag: "Pride & Valour",
+        tagHi: "शौर्य और वीरता",
+        desc: "Legendary hilltop fort, Vijay Stambha and heroic Rajput history",
+        descHi: "भारत का सबसे बड़ा ऐतिहासिक दुर्ग, विजय स्तंभ और रानी पद्मिनी महल",
+        highlights: "Chittorgarh Fort • Vijay Stambha • Padmini Palace",
+        highlightsHi: "चित्तौड़गढ़ दुर्ग • विजय स्तंभ • पद्मिनी पैलेस",
+    },
+    Alwar: {
+        icon: "🏛️",
+        tag: "Gateway of Rajasthan",
+        tagHi: "राजस्थान का सिंह द्वार",
+        desc: "Bala Qila, mysterious Bhangarh ruins and Sariska Tiger Reserve",
+        descHi: "सरिस्का टाइगर रिजर्व, ऐतिहासिक बाला किला और रहस्यमयी भानगढ़",
+        highlights: "Bala Qila • Sariska Tiger Reserve • Bhangarh Fort",
+        highlightsHi: "बाला किला • सरिस्का अभयारण्य • भानगढ़",
+    },
+    "अलवर": {
+        icon: "🏛️",
+        tag: "Gateway of Rajasthan",
+        tagHi: "राजस्थान का सिंह द्वार",
+        desc: "Bala Qila, mysterious Bhangarh ruins and Sariska Tiger Reserve",
+        descHi: "सरिस्का टाइगर रिजर्व, ऐतिहासिक बाला किला और रहस्यमयी भानगढ़",
+        highlights: "Bala Qila • Sariska Tiger Reserve • Bhangarh Fort",
+        highlightsHi: "बाला किला • सरिस्का अभयारण्य • भानगढ़",
+    },
+    Bharatpur: {
+        icon: "🦩",
+        tag: "Bird Haven",
+        tagHi: "पक्षियों का स्वर्ग",
+        desc: "UNESCO Keoladeo National Park wetlands and historic Lohagarh Fort",
+        descHi: "यूनेस्को केवलादेव पक्षी अभयारण्य और अजेय ऐतिहासिक लोहागढ़ किला",
+        highlights: "Keoladeo National Park • Lohagarh Fort • Deeg Palace",
+        highlightsHi: "केवलादेव नेशनल पार्क • लोहागढ़ किला",
+    },
+    "भरतपुर": {
+        icon: "🦩",
+        tag: "Bird Haven",
+        tagHi: "पक्षियों का स्वर्ग",
+        desc: "UNESCO Keoladeo National Park wetlands and historic Lohagarh Fort",
+        descHi: "यूनेस्को केवलादेव पक्षी अभयारण्य और अजेय ऐतिहासिक लोहागढ़ किला",
+        highlights: "Keoladeo National Park • Lohagarh Fort • Deeg Palace",
+        highlightsHi: "केवलादेव नेशनल पार्क • लोहागढ़ किला",
+    },
+    Bundi: {
+        icon: "⛲",
+        tag: "City of Stepwells",
+        tagHi: "बावड़ियों का शहर",
+        desc: "Intricate stepwells, Taragarh Fort paintings and royal Chhatris",
+        descHi: "कलात्मक बावड़ियां, तारागढ़ दुर्ग के दुर्लभ भित्तिचित्र और छतरियां",
+        highlights: "Taragarh Fort • Raniji ki Baori • Sukh Mahal",
+        highlightsHi: "तारागढ़ दुर्ग • रानीजी की बावड़ी • सुख महल",
+    },
+    "बूंदी": {
+        icon: "⛲",
+        tag: "City of Stepwells",
+        tagHi: "बावड़ियों का शहर",
+        desc: "Intricate stepwells, Taragarh Fort paintings and royal Chhatris",
+        descHi: "कलात्मक बावड़ियां, तारागढ़ दुर्ग के दुर्लभ भित्तिचित्र और छतरियां",
+        highlights: "Taragarh Fort • Raniji ki Baori • Sukh Mahal",
+        highlightsHi: "तारागढ़ दुर्ग • रानीजी की बावड़ी • सुख महल",
+    },
+    Kota: {
+        icon: "🌊",
+        tag: "Chambal Heritage",
+        tagHi: "चम्बल की नगरी",
+        desc: "Scenic Chambal Riverfront, Seven Wonders Park and Kota Garh Palace",
+        descHi: "भव्य चम्बल रिवरफ्रंट, सेवन वंडर्स पार्क और ऐतिहासिक कोटा गढ़",
+        highlights: "Chambal Riverfront • Seven Wonders • Garh Palace",
+        highlightsHi: "चम्बल रिवरफ्रंट • सेवन वंडर्स • गढ़ पैलेस",
+    },
+    "कोटा": {
+        icon: "🌊",
+        tag: "Chambal Heritage",
+        tagHi: "चम्बल की नगरी",
+        desc: "Scenic Chambal Riverfront, Seven Wonders Park and Kota Garh Palace",
+        descHi: "भव्य चम्बल रिवरफ्रंट, सेवन वंडर्स पार्क और ऐतिहासिक कोटा गढ़",
+        highlights: "Chambal Riverfront • Seven Wonders • Garh Palace",
+        highlightsHi: "चम्बल रिवरफ्रंट • सेवन वंडर्स • गढ़ पैलेस",
+    },
+    Kumbhalgarh: {
+        icon: "🛡️",
+        tag: "Great Wall of India",
+        tagHi: "अजेय दुर्ग",
+        desc: "World's second-longest wall, Badal Mahal and Mewar history",
+        descHi: "विश्व की दूसरी सबसे लंबी परकोटा दीवार और महाराणा प्रताप की जन्मस्थली",
+        highlights: "Kumbhalgarh Fort • Badal Mahal • Wildlife Sanctuary",
+        highlightsHi: "कुंभलगढ़ दुर्ग • बादल महल • अभयारण्य",
+    },
+    "कुंभलगढ़": {
+        icon: "🛡️",
+        tag: "Great Wall of India",
+        tagHi: "अजेय दुर्ग",
+        desc: "World's second-longest wall, Badal Mahal and Mewar history",
+        descHi: "विश्व की दूसरी सबसे लंबी परकोटा दीवार और महाराणा प्रताप की जन्मस्थली",
+        highlights: "Kumbhalgarh Fort • Badal Mahal • Wildlife Sanctuary",
+        highlightsHi: "कुंभलगढ़ दुर्ग • बादल महल • अभयारण्य",
+    },
+    Ranakpur: {
+        icon: "🛕",
+        tag: "Marble Symphony",
+        tagHi: "संगमरमर का चमत्कार",
+        desc: "1444 uniquely carved marble pillars in a tranquil forest valley",
+        descHi: "1444 नक्काशीदार खंभों वाला अलौकिक श्वेत संगमरमर का जैन मंदिर",
+        highlights: "Chaumukha Temple • Surya Temple",
+        highlightsHi: "चौमुखा जैन मंदिर • सूर्य मंदिर",
+    },
+    "राणकपुर": {
+        icon: "🛕",
+        tag: "Marble Symphony",
+        tagHi: "संगमरमर का चमत्कार",
+        desc: "1444 uniquely carved marble pillars in a tranquil forest valley",
+        descHi: "1444 नक्काशीदार खंभों वाला अलौकिक श्वेत संगमरमर का जैन मंदिर",
+        highlights: "Chaumukha Temple • Surya Temple",
+        highlightsHi: "चौमुखा जैन मंदिर • सूर्य मंदिर",
+    },
+    Mandawa: {
+        icon: "🎨",
+        tag: "Open-Air Art Gallery",
+        tagHi: "भित्तिचित्रों की नगरी",
+        desc: "Exquisite Shekhawati fresco mansions and royal merchant heritage",
+        descHi: "शेखावाटी की विश्वविख्यात कलात्मक हवेलियां और भित्तिचित्र",
+        highlights: "Mandawa Fort • Murmuria Haveli • Chokhani Haveli",
+        highlightsHi: "मंडावा किला • मुरमुरिया हवेली • हवेलियां",
+    },
+    "मंडावा": {
+        icon: "🎨",
+        tag: "Open-Air Art Gallery",
+        tagHi: "भित्तिचित्रों की नगरी",
+        desc: "Exquisite Shekhawati fresco mansions and royal merchant heritage",
+        descHi: "शेखावाटी की विश्वविख्यात कलात्मक हवेलियां और भित्तिचित्र",
+        highlights: "Mandawa Fort • Murmuria Haveli • Chokhani Haveli",
+        highlightsHi: "मंडावा किला • मुरमुरिया हवेली • हवेलियां",
+    },
+    Shekhawati: {
+        icon: "🖌️",
+        tag: "Fresco Paradise",
+        tagHi: "हवेलियों का अंचल",
+        desc: "Sprawling region of painted palaces, heritage towns and grand cenotaphs",
+        descHi: "रंग-बिरंगे भित्तिचित्रों, शाही छतरियों और ऐतिहासिक हवेलियों का क्षेत्र",
+        highlights: "Nawalgarh • Fatehpur • Dundlod Haveli",
+        highlightsHi: "नवलगढ़ • फतेहपुर • डूंडलोद हवेलियां",
+    },
+    "शेखावाटी": {
+        icon: "🖌️",
+        tag: "Fresco Paradise",
+        tagHi: "हवेलियों का अंचल",
+        desc: "Sprawling region of painted palaces, heritage towns and grand cenotaphs",
+        descHi: "रंग-बिरंगे भित्तिचित्रों, शाही छतरियों और ऐतिहासिक हवेलियों का क्षेत्र",
+        highlights: "Nawalgarh • Fatehpur • Dundlod Haveli",
+        highlightsHi: "नवलगढ़ • फतेहपुर • डूंडलोद हवेलियां",
+    },
+    Jhalawar: {
+        icon: "🏰",
+        tag: "Water Fort Capital",
+        tagHi: "जलदुर्ग की भूमि",
+        desc: "UNESCO Gagron Water Fort, Sun Temple and Chandrabhaga heritage",
+        descHi: "यूनेस्को विश्व धरोहर गागरोन जलदुर्ग और प्रसिद्ध सूर्य मंदिर",
+        highlights: "Gagron Fort • Sun Temple Jhalrapatan • Garh Palace",
+        highlightsHi: "गागरोन दुर्ग • सूर्य मंदिर • गढ़ पैलेस",
+    },
+    "झालावाड़": {
+        icon: "🏰",
+        tag: "Water Fort Capital",
+        tagHi: "जलदुर्ग की भूमि",
+        desc: "UNESCO Gagron Water Fort, Sun Temple and Chandrabhaga heritage",
+        descHi: "यूनेस्को विश्व धरोहर गागरोन जलदुर्ग और प्रसिद्ध सूर्य मंदिर",
+        highlights: "Gagron Fort • Sun Temple Jhalrapatan • Garh Palace",
+        highlightsHi: "गागरोन दुर्ग • सूर्य मंदिर • गढ़ पैलेस",
+    },
+    Nagaur: {
+        icon: "🛡️",
+        tag: "Fortified Heritage",
+        tagHi: "अहिच्छत्रपुर की धरोहर",
+        desc: "Historic Ahhichatragarh Fort, Tarkeen Dargah and traditional fairs",
+        descHi: "भव्य अहिच्छत्रगढ़ दुर्ग, सूफी दरगाह और प्रसिद्ध नागौर मेला",
+        highlights: "Nagaur Fort • Tarkeen Dargah • Glass Jain Temple",
+        highlightsHi: "नागौर किला • तारकीन दरगाह • कांच का मंदिर",
+    },
+    "नागौर": {
+        icon: "🛡️",
+        tag: "Fortified Heritage",
+        tagHi: "अहिच्छत्रपुर की धरोहर",
+        desc: "Historic Ahhichatragarh Fort, Tarkeen Dargah and traditional fairs",
+        descHi: "भव्य अहिच्छत्रगढ़ दुर्ग, सूफी दरगाह और प्रसिद्ध नागौर मेला",
+        highlights: "Nagaur Fort • Tarkeen Dargah • Glass Jain Temple",
+        highlightsHi: "नागौर किला • तारकीन दरगाह • कांच का मंदिर",
+    },
+    Pali: {
+        icon: "🏍️",
+        tag: "Sacred Trails",
+        tagHi: "आस्था और संस्कृति",
+        desc: "Om Banna Temple, Bangur Museum and Jawai Leopard safari region",
+        descHi: "प्रसिद्ध ॐ बन्ना धाम, बांगड़ संग्रहालय और जवाई तेंदुआ सफारी",
+        highlights: "Om Banna Temple • Jawai Leopard Reserve • Bangur Museum",
+        highlightsHi: "ॐ बन्ना धाम • जवाई लेपर्ड सफारी • बांगड़ म्यूजियम",
+    },
+    "पाली": {
+        icon: "🏍️",
+        tag: "Sacred Trails",
+        tagHi: "आस्था और संस्कृति",
+        desc: "Om Banna Temple, Bangur Museum and Jawai Leopard safari region",
+        descHi: "प्रसिद्ध ॐ बन्ना धाम, बांगड़ संग्रहालय और जवाई तेंदुआ सफारी",
+        highlights: "Om Banna Temple • Jawai Leopard Reserve • Bangur Museum",
+        highlightsHi: "ॐ बन्ना धाम • जवाई लेपर्ड सफारी • बांगड़ म्यूजियम",
+    },
+    Sikar: {
+        icon: "🚩",
+        tag: "Divine Shrines",
+        tagHi: "श्याम बाबा की भूमि",
+        desc: "Sacred Khatu Shyam Ji Temple, Jeen Mata and Harsh Nath Peak",
+        descHi: "विश्वप्रसिद्ध खाटू श्याम जी धाम, जीण माता मंदिर और हर्षनाथ पर्वत",
+        highlights: "Khatu Shyamji • Jeen Mata • Harsh Parvat",
+        highlightsHi: "खाटू श्याम जी • जीण माता • हर्ष पर्वत",
+    },
+    "सीकर": {
+        icon: "🚩",
+        tag: "Divine Shrines",
+        tagHi: "श्याम बाबा की भूमि",
+        desc: "Sacred Khatu Shyam Ji Temple, Jeen Mata and Harsh Nath Peak",
+        descHi: "विश्वप्रसिद्ध खाटू श्याम जी धाम, जीण माता मंदिर और हर्षनाथ पर्वत",
+        highlights: "Khatu Shyamji • Jeen Mata • Harsh Parvat",
+        highlightsHi: "खाटू श्याम जी • जीण माता • हर्ष पर्वत",
+    },
+    Jhunjhunu: {
+        icon: "🦚",
+        tag: "Rani Sati Shrine",
+        tagHi: "राणी सती धाम",
+        desc: "Historic Rani Sati Temple, Khetri Mahal and artistic Shekhawati havelis",
+        descHi: "विशाल राणी सती मंदिर, हवादार खेतड़ी महल और भव्य हवेलियां",
+        highlights: "Rani Sati Temple • Khetri Mahal • Modi Haveli",
+        highlightsHi: "राणी सती मंदिर • खेतड़ी महल • मोदी हवेली",
+    },
+    "झुंझुनू": {
+        icon: "🦚",
+        tag: "Rani Sati Shrine",
+        tagHi: "राणी सती धाम",
+        desc: "Historic Rani Sati Temple, Khetri Mahal and artistic Shekhawati havelis",
+        descHi: "विशाल राणी सती मंदिर, हवादार खेतड़ी महल और भव्य हवेलियां",
+        highlights: "Rani Sati Temple • Khetri Mahal • Modi Haveli",
+        highlightsHi: "राणी सती मंदिर • खेतड़ी महल • मोदी हवेली",
+    },
+    Banswara: {
+        icon: "🏝️",
+        tag: "City of Hundred Islands",
+        tagHi: "सौ द्वीपों का शहर",
+        desc: "Scenic Mahi Dam backwaters, lush green hills and tribal culture",
+        descHi: "माही बांध के सैकड़ों द्वीप, मनमोहक झरने और शांत प्राकृतिक वादियां",
+        highlights: "Mahi Bajaj Sagar • Anand Sagar • Kagdi Pick Up",
+        highlightsHi: "माही बजाज सागर • आनंद सागर • कागदी पिकअप",
+    },
+    "बांसवाड़ा": {
+        icon: "🏝️",
+        tag: "City of Hundred Islands",
+        tagHi: "सौ द्वीपों का शहर",
+        desc: "Scenic Mahi Dam backwaters, lush green hills and tribal culture",
+        descHi: "माही बांध के सैकड़ों द्वीप, मनमोहक झरने और शांत प्राकृतिक वादियां",
+        highlights: "Mahi Bajaj Sagar • Anand Sagar • Kagdi Pick Up",
+        highlightsHi: "माही बजाज सागर • आनंद सागर • कागदी पिकअप",
+    },
+    Dungarpur: {
+        icon: "🏛️",
+        tag: "Green Marble Capital",
+        tagHi: "पहाड़ों की नगरी",
+        desc: "Juna Mahal frescoes, Udai Bilas lakeside Palace and Gaib Sagar",
+        descHi: "जूना महल के चित्र, उदय बिलास पैलेस और गैब सागर झील",
+        highlights: "Juna Mahal • Udai Bilas Palace • Gaib Sagar Lake",
+        highlightsHi: "जूना महल • उदय बिलास • गैब सागर झील",
+    },
+    "डूंगरपुर": {
+        icon: "🏛️",
+        tag: "Green Marble Capital",
+        tagHi: "पहाड़ों की नगरी",
+        desc: "Juna Mahal frescoes, Udai Bilas lakeside Palace and Gaib Sagar",
+        descHi: "जूना महल के चित्र, उदय बिलास पैलेस और गैब सागर झील",
+        highlights: "Juna Mahal • Udai Bilas Palace • Gaib Sagar Lake",
+        highlightsHi: "जूना महल • उदय बिलास • गैब सागर झील",
+    },
+    Dausa: {
+        icon: "🪜",
+        tag: "Ancient Stepwells",
+        tagHi: "बावड़ियों की धरोहर",
+        desc: "World-famous Chand Baori stepwell and revered Mehandipur Balaji",
+        descHi: "विश्वप्रसिद्ध आभानेरी चांद बावड़ी और मेहंदीपुर बालाजी धाम",
+        highlights: "Chand Baori Abhaneri • Mehandipur Balaji Temple",
+        highlightsHi: "चांद बावड़ी • मेहंदीपुर बालाजी मंदिर",
+    },
+    "दौसा": {
+        icon: "🪜",
+        tag: "Ancient Stepwells",
+        tagHi: "बावड़ियों की धरोहर",
+        desc: "World-famous Chand Baori stepwell and revered Mehandipur Balaji",
+        descHi: "विश्वप्रसिद्ध आभानेरी चांद बावड़ी और मेहंदीपुर बालाजी धाम",
+        highlights: "Chand Baori Abhaneri • Mehandipur Balaji Temple",
+        highlightsHi: "चांद बावड़ी • मेहंदीपुर बालाजी मंदिर",
+    },
+    Tonk: {
+        icon: "✨",
+        tag: "Nawabi Heritage",
+        tagHi: "नवाबों का शहर",
+        desc: "Golden Sunehri Kothi, historic Arabic-Persian Institute and Bisalpur",
+        descHi: "शीशमहल सुनहरी कोठी, अरबी-फारसी शोध संस्थान और बीसलपुर",
+        highlights: "Sunehri Kothi • Bisalpur Dam • Arabic Persian Institute",
+        highlightsHi: "सुनहरी कोठी • बीसलपुर बांध • शोध संस्थान",
+    },
+    "टोंक": {
+        icon: "✨",
+        tag: "Nawabi Heritage",
+        tagHi: "नवाबों का शहर",
+        desc: "Golden Sunehri Kothi, historic Arabic-Persian Institute and Bisalpur",
+        descHi: "शीशमहल सुनहरी कोठी, अरबी-फारसी शोध संस्थान और बीसलपुर",
+        highlights: "Sunehri Kothi • Bisalpur Dam • Arabic Persian Institute",
+        highlightsHi: "सुनहरी कोठी • बीसलपुर बांध • शोध संस्थान",
+    },
+    Barmer: {
+        icon: "🏜️",
+        tag: "Thar Heartland",
+        tagHi: "थार का हृदय",
+        desc: "Ancient Kiradu temples, wooden handicrafts and sand dunes",
+        descHi: "राजस्थान का खजुराहो किराडू मंदिर, हस्तशिल्प और मरुस्थलीय संस्कृति",
+        highlights: "Kiradu Temples • Mahabar Sand Dunes • Barmer Fort",
+        highlightsHi: "किराडू मंदिर • महाबार धोरे • बाड़मेर किला",
+    },
+    "बाड़मेर": {
+        icon: "🏜️",
+        tag: "Thar Heartland",
+        tagHi: "थार का हृदय",
+        desc: "Ancient Kiradu temples, wooden handicrafts and sand dunes",
+        descHi: "राजस्थान का खजुराहो किराडू मंदिर, हस्तशिल्प और मरुस्थलीय संस्कृति",
+        highlights: "Kiradu Temples • Mahabar Sand Dunes • Barmer Fort",
+        highlightsHi: "किराडू मंदिर • महाबार धोरे • बाड़मेर किला",
+    },
+    Jalore: {
+        icon: "🏰",
+        tag: "Granite City",
+        tagHi: "स्वर्णगिरि दुर्ग",
+        desc: "Imposing Golden Fort of Jalore, Sundha Mata shrine and ropeway",
+        descHi: "ऐतिहासिक स्वर्णगिरि दुर्ग, प्रसिद्ध सुंधा माता मंदिर और रोप-वे",
+        highlights: "Jalore Fort • Sundha Mata Temple • Topkhana",
+        highlightsHi: "जालौर दुर्ग • सुंधा माता • तोपखाना",
+    },
+    "जालौर": {
+        icon: "🏰",
+        tag: "Granite City",
+        tagHi: "स्वर्णगिरि दुर्ग",
+        desc: "Imposing Golden Fort of Jalore, Sundha Mata shrine and ropeway",
+        descHi: "ऐतिहासिक स्वर्णगिरि दुर्ग, प्रसिद्ध सुंधा माता मंदिर और रोप-वे",
+        highlights: "Jalore Fort • Sundha Mata Temple • Topkhana",
+        highlightsHi: "जालौर दुर्ग • सुंधा माता • तोपखाना",
+    },
+    Sirohi: {
+        icon: "⛰️",
+        tag: "Cradle of Aravalli",
+        tagHi: "देवनागरी सिरोही",
+        desc: "Ancient temples, Mirpur Jain shrine and Aravalli mountain views",
+        descHi: "ऐतिहासिक मीरपुर जैन मंदिर, प्राचीन दुर्ग और अरावली पर्वतमाला",
+        highlights: "Mirpur Jain Temple • Sirohi Fort • Pavapuri",
+        highlightsHi: "मीरपुर जैन तीर्थ • सिरोही किला • पावापुरी",
+    },
+    "सिरोही": {
+        icon: "⛰️",
+        tag: "Cradle of Aravalli",
+        tagHi: "देवनागरी सिरोही",
+        desc: "Ancient temples, Mirpur Jain shrine and Aravalli mountain views",
+        descHi: "ऐतिहासिक मीरपुर जैन मंदिर, प्राचीन दुर्ग और अरावली पर्वतमाला",
+        highlights: "Mirpur Jain Temple • Sirohi Fort • Pavapuri",
+        highlightsHi: "मीरपुर जैन तीर्थ • सिरोही किला • पावापुरी",
+    },
+    Rajsamand: {
+        icon: "⛵",
+        tag: "Royal Embankment",
+        tagHi: "राजसमंद झील",
+        desc: "Grand marble Nauchowki Ghat, Srinathji Nathdwara and Dwarkadhish",
+        descHi: "ऐतिहासिक नौचौकी पाल, नाथद्वारा श्रीनाथजी और द्वारकाधीश मंदिर",
+        highlights: "Rajsamand Lake • Shrinathji Nathdwara • Haldighati",
+        highlightsHi: "राजसमंद झील • नाथद्वारा श्रीनाथजी • हल्दीघाटी",
+    },
+    "राजसमंद": {
+        icon: "⛵",
+        tag: "Royal Embankment",
+        tagHi: "राजसमंद झील",
+        desc: "Grand marble Nauchowki Ghat, Srinathji Nathdwara and Dwarkadhish",
+        descHi: "ऐतिहासिक नौचौकी पाल, नाथद्वारा श्रीनाथजी और द्वारकाधीश मंदिर",
+        highlights: "Rajsamand Lake • Shrinathji Nathdwara • Haldighati",
+        highlightsHi: "राजसमंद झील • नाथद्वारा श्रीनाथजी • हल्दीघाटी",
+    },
+    Bhilwara: {
+        icon: "🧵",
+        tag: "Textile City",
+        tagHi: "वस्त्र नगरी",
+        desc: "Menal waterfalls, historic Harni Mahadev and Badnore Fort",
+        descHi: "मेनाल जलप्रपात, ऐतिहासिक हरणी महादेव और बदनोर दुर्ग",
+        highlights: "Menal Waterfall • Harni Mahadev • Badnore Fort",
+        highlightsHi: "मेनाल वॉटरफॉल • हरणी महादेव • बदनोर किला",
+    },
+    "भीलवाड़ा": {
+        icon: "🧵",
+        tag: "Textile City",
+        tagHi: "वस्त्र नगरी",
+        desc: "Menal waterfalls, historic Harni Mahadev and Badnore Fort",
+        descHi: "मेनाल जलप्रपात, ऐतिहासिक हरणी महादेव और बदनोर दुर्ग",
+        highlights: "Menal Waterfall • Harni Mahadev • Badnore Fort",
+        highlightsHi: "मेनाल वॉटरफॉल • हरणी महादेव • बदनोर किला",
+    },
+    Pratapgarh: {
+        icon: "💎",
+        tag: "Thewa Art Centre",
+        tagHi: "थेवा कला की धरती",
+        desc: "World-famed gold-on-glass Thewa art, Sita Mata Wildlife and waterfalls",
+        descHi: "विश्वप्रसिद्ध कांच पर स्वर्ण थेवा कला और सीता माता अभयारण्य",
+        highlights: "Sita Mata Wildlife • Jakham Dam • Thewa Art",
+        highlightsHi: "सीता माता अभयारण्य • जाखम बांध • थेवा कला",
+    },
+    "प्रतापगढ़": {
+        icon: "💎",
+        tag: "Thewa Art Centre",
+        tagHi: "थेवा कला की धरती",
+        desc: "World-famed gold-on-glass Thewa art, Sita Mata Wildlife and waterfalls",
+        descHi: "विश्वप्रसिद्ध कांच पर स्वर्ण थेवा कला और सीता माता अभयारण्य",
+        highlights: "Sita Mata Wildlife • Jakham Dam • Thewa Art",
+        highlightsHi: "सीता माता अभयारण्य • जाखम बांध • थेवा कला",
+    },
+    Karauli: {
+        icon: "🛕",
+        tag: "Bhakti Heritage",
+        tagHi: "मदन मोहन जी की धरा",
+        desc: "Sacred Madan Mohan Ji Temple, City Palace and Kaila Devi shrine",
+        descHi: "प्रसिद्ध मदन मोहन जी, कैला देवी धाम और भव्य सिटी पैलेस",
+        highlights: "Madan Mohan Ji • City Palace • Kaila Devi Temple",
+        highlightsHi: "मदन मोहन जी • सिटी पैलेस • कैला देवी",
+    },
+    "करौली": {
+        icon: "🛕",
+        tag: "Bhakti Heritage",
+        tagHi: "मदन मोहन जी की धरा",
+        desc: "Sacred Madan Mohan Ji Temple, City Palace and Kaila Devi shrine",
+        descHi: "प्रसिद्ध मदन मोहन जी, कैला देवी धाम और भव्य सिटी पैलेस",
+        highlights: "Madan Mohan Ji • City Palace • Kaila Devi Temple",
+        highlightsHi: "मदन मोहन जी • सिटी पैलेस • कैला देवी",
+    },
+    Dholpur: {
+        icon: "🏰",
+        tag: "Red Sandstone Realm",
+        tagHi: "लाल पत्थरों का शहर",
+        desc: "Historic Machkund sacred pond, National Chambal Sanctuary and palaces",
+        descHi: "तीर्थराज मचकुंड, राष्ट्रीय चम्बल घड़ियाल अभयारण्य और राजमहल",
+        highlights: "Machkund • Chambal Safari • Talab-e-Shahi",
+        highlightsHi: "मचकुंड तीर्थ • चम्बल सफारी • तालाब-ए-शाही",
+    },
+    "धौलपुर": {
+        icon: "🏰",
+        tag: "Red Sandstone Realm",
+        tagHi: "लाल पत्थरों का शहर",
+        desc: "Historic Machkund sacred pond, National Chambal Sanctuary and palaces",
+        descHi: "तीर्थराज मचकुंड, राष्ट्रीय चम्बल घड़ियाल अभयारण्य और राजमहल",
+        highlights: "Machkund • Chambal Safari • Talab-e-Shahi",
+        highlightsHi: "मचकुंड तीर्थ • चम्बल सफारी • तालाब-ए-शाही",
+    },
+    Hanumangarh: {
+        icon: "🛡️",
+        tag: "Northern Sentinel",
+        tagHi: "भटनेर का प्राचीन दुर्ग",
+        desc: "1700-year-old Bhatner Fort, historic Saraswati river valley ruins",
+        descHi: "1700 वर्ष पुराना विशाल भटनेर किला और कालीबंगा पुरातत्व स्थल",
+        highlights: "Bhatner Fort • Kalibangan Ruins • Bhadrakali Temple",
+        highlightsHi: "भटनेर दुर्ग • कालीबंगा • भद्रकाली मंदिर",
+    },
+    "हनुमानगढ़": {
+        icon: "🛡️",
+        tag: "Northern Sentinel",
+        tagHi: "भटनेर का प्राचीन दुर्ग",
+        desc: "1700-year-old Bhatner Fort, historic Saraswati river valley ruins",
+        descHi: "1700 वर्ष पुराना विशाल भटनेर किला और कालीबंगा पुरातत्व स्थल",
+        highlights: "Bhatner Fort • Kalibangan Ruins • Bhadrakali Temple",
+        highlightsHi: "भटनेर दुर्ग • कालीबंगा • भद्रकाली मंदिर",
+    },
+    "Sri Ganganagar": {
+        icon: "🌾",
+        tag: "Granary of Rajasthan",
+        tagHi: "राजस्थान का अन्न भंडार",
+        desc: "Lush green canals, historic Hindumalkot border and peaceful orchards",
+        descHi: "हरियाली से लहलहाते खेत, गंग नहर और ऐतिहासिक हिन्दुमलकोट बॉर्डर",
+        highlights: "Hindumalkot Border • Gang Canal • Laila Majnu Tomb",
+        highlightsHi: "हिन्दुमलकोट सीमा • गंग नहर • लैला मजनू मजार",
+    },
+    "श्रीगंगानगर": {
+        icon: "🌾",
+        tag: "Granary of Rajasthan",
+        tagHi: "राजस्थान का अन्न भंडार",
+        desc: "Lush green canals, historic Hindumalkot border and peaceful orchards",
+        descHi: "हरियाली से लहलहाते खेत, गंग नहर और ऐतिहासिक हिन्दुमलकोट बॉर्डर",
+        highlights: "Hindumalkot Border • Gang Canal • Laila Majnu Tomb",
+        highlightsHi: "हिन्दुमलकोट सीमा • गंग नहर • लैला मजनू मजार",
+    },
+    Churu: {
+        icon: "🦌",
+        tag: "Gateway to the Thar",
+        tagHi: "काले हिरणों का अभयारण्य",
+        desc: "Tal Chhapar Blackbuck Sanctuary, grand frescoes and Surana Haveli",
+        descHi: "ताल छापर कृष्णमृग अभयारण्य, सुराणा की 1100 खिड़कियों वाली हवेली",
+        highlights: "Tal Chhapar Sanctuary • Surana Haveli • Salasar Balaji",
+        highlightsHi: "ताल छापर अभयारण्य • सुराणा हवेली • सालासर बालाजी",
+    },
+    "चुरू": {
+        icon: "🦌",
+        tag: "Gateway to the Thar",
+        tagHi: "काले हिरणों का अभयारण्य",
+        desc: "Tal Chhapar Blackbuck Sanctuary, grand frescoes and Surana Haveli",
+        descHi: "ताल छापर कृष्णमृग अभयारण्य, सुराणा की 1100 खिड़कियों वाली हवेली",
+        highlights: "Tal Chhapar Sanctuary • Surana Haveli • Salasar Balaji",
+        highlightsHi: "ताल छापर अभयारण्य • सुराणा हवेली • सालासर बालाजी",
+    },
+    Deeg: {
+        icon: "⛲",
+        tag: "Water Palace Capital",
+        tagHi: "जलमहलों की नगरी",
+        desc: "Splendid fountains, monsoon pleasure palaces and Bharatpur Jat history",
+        descHi: "सैकड़ों रंगीन फव्वारे, ऐतिहासिक जलमहल और रूपसागर जलाशय",
+        highlights: "Deeg Palace • Keshav Bhavan • Gopal Bhavan",
+        highlightsHi: "डीग जलमहल • केशव भवन • गोपाल भवन",
+    },
+    "डीग": {
+        icon: "⛲",
+        tag: "Water Palace Capital",
+        tagHi: "जलमहलों की नगरी",
+        desc: "Splendid fountains, monsoon pleasure palaces and Bharatpur Jat history",
+        descHi: "सैकड़ों रंगीन फव्वारे, ऐतिहासिक जलमहल और रूपसागर जलाशय",
+        highlights: "Deeg Palace • Keshav Bhavan • Gopal Bhavan",
+        highlightsHi: "डीग जलमहल • केशव भवन • गोपाल भवन",
+    },
+    Baran: {
+        icon: "🌌",
+        tag: "Ancient Wonder",
+        tagHi: "क्रेटर और प्राकृतिक धाम",
+        desc: "Rare prehistoric Ramgarh meteorite crater and Sitabari natural springs",
+        descHi: "लाखों वर्ष पुराना दुर्लभ रामगढ़ उल्कापिंड क्रेटर और सीताबाड़ी प्राकृतिक धाम",
+        highlights: "Ramgarh Crater • Sitabari Wildlife",
+        highlightsHi: "रामगढ़ क्रेटर • सीताबाड़ी धाम",
+    },
+    "बारां": {
+        icon: "🌌",
+        tag: "Ancient Wonder",
+        tagHi: "क्रेटर और प्राकृतिक धाम",
+        desc: "Rare prehistoric Ramgarh meteorite crater and Sitabari natural springs",
+        descHi: "लाखों वर्ष पुराना दुर्लभ रामगढ़ उल्कापिंड क्रेटर और सीताबाड़ी प्राकृतिक धाम",
+        highlights: "Ramgarh Crater • Sitabari Wildlife",
+        highlightsHi: "रामगढ़ क्रेटर • सीताबाड़ी धाम",
+    },
 };
 
 // ============ HELPERS ============
@@ -759,58 +1455,76 @@ export default function PlanTripClient() {
                                 </motion.div>
                             )}
 
-                            {/* Compact city grid — 2 cols mobile, 4 cols desktop */}
-                            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3">
+                            {/* Modern City Grid */}
+                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
                                 {availableCities.map((city) => {
                                     const isSelected = config.selectedCities.includes(city);
                                     const engCityName = getEnglishCityName(city);
                                     const cityPlaces = PLACES.filter((p) => p.city === engCityName).length;
+                                    const meta = CITY_METADATA[city] || CITY_METADATA[engCityName] || {
+                                        icon: "📍",
+                                        tag: "Royal Heritage",
+                                        tagHi: "शाही धरोहर",
+                                        desc: "Discover historical places, culture and vibrant architecture",
+                                        descHi: "ऐतिहासिक स्थल, संस्कृति और वास्तुकला का अन्वेषण करें",
+                                        highlights: "Heritage • Culture • Sights",
+                                        highlightsHi: "धरोहर • संस्कृति • दर्शनीय स्थल",
+                                    };
+                                    const isHi = language === "hi";
+
                                     return (
                                         <motion.button
                                             key={city}
-                                            whileTap={{ scale: 0.96 }}
+                                            whileTap={{ scale: 0.98 }}
                                             onClick={() => toggleCity(city)}
-                                            className={`relative rounded-xl overflow-hidden cursor-pointer transition-all duration-200 text-left w-full ${
-                                                isSelected
-                                                    ? "ring-2 ring-yellow-500 shadow-lg shadow-yellow-500/20"
-                                                    : "ring-1 ring-gray-200 dark:ring-gray-700 hover:ring-yellow-300 hover:shadow-md"
-                                            }`}
+                                            className={`group relative rounded-2xl p-4 text-left w-full transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
+                                                ? "bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-amber-500/5 dark:from-yellow-950/40 dark:via-gray-800 dark:to-amber-900/30 border-2 border-amber-500 dark:border-amber-400 shadow-md shadow-amber-500/10"
+                                                : "bg-white dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700/80 hover:border-amber-400/80 dark:hover:border-amber-500/50 hover:shadow-md hover:bg-amber-50/20 dark:hover:bg-gray-800"
+                                                }`}
                                         >
-                                            {/* Image — smaller height */}
-                                            <div className="relative h-24 sm:h-28">
-                                                <Image
-                                                    src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
-                                                    alt={`${city} - Rajasthan`}
-                                                    fill
-                                                    className="w-full h-full object-cover"
-                                                    sizes="(max-width:640px) 50vw, 25vw"
-                                                />
-                                                <div className={`absolute inset-0 transition-all duration-200 ${
-                                                    isSelected
-                                                        ? "bg-gradient-to-t from-yellow-900/80 via-black/30 to-transparent"
-                                                        : "bg-gradient-to-t from-black/70 to-transparent"
-                                                }`} />
-                                                {/* Check badge */}
-                                                <div className={`absolute top-2 right-2 w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200 ${
-                                                    isSelected
-                                                        ? "bg-yellow-400 scale-100"
-                                                        : "bg-white/20 scale-75 opacity-0"
-                                                }`}>
-                                                    <Check size={13} className="text-yellow-900" />
+                                            {/* Header: Icon + Places badge + Check badge */}
+                                            <div>
+                                                <div className="flex items-center justify-between gap-2 mb-2.5">
+                                                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl bg-gradient-to-br from-amber-100 to-yellow-50 dark:from-yellow-950/60 dark:to-amber-900/40 border border-amber-200/80 dark:border-amber-700/50 shadow-inner flex-shrink-0 group-hover:scale-105 transition-transform">
+                                                        <span>{meta.icon}</span>
+                                                    </div>
+                                                    <div className="flex items-center gap-2">
+                                                        <span className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full transition-colors ${isSelected
+                                                            ? "bg-amber-200/80 text-amber-900 dark:bg-amber-900/60 dark:text-amber-200"
+                                                            : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                                                            }`}>
+                                                            {cityPlaces} {isHi ? "स्थान" : "places"}
+                                                        </span>
+                                                        <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200 ${isSelected
+                                                            ? "bg-amber-500 text-white shadow-sm scale-100"
+                                                            : "bg-gray-100 dark:bg-gray-800 text-gray-300 dark:text-gray-600 border border-gray-200 dark:border-gray-700 scale-90 opacity-60 group-hover:opacity-100"
+                                                            }`}>
+                                                            <Check size={13} className={isSelected ? "stroke-[3]" : ""} />
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                {/* City name on image */}
-                                                <div className="absolute bottom-2 left-2 right-2">
-                                                    <div className="font-bold text-white text-sm leading-tight">{city}</div>
-                                                    <div className="text-white/70 text-[10px]">{cityPlaces} places</div>
+
+                                                {/* City Name & Royal Tagline */}
+                                                <div>
+                                                    <div className="font-playfair font-bold text-gray-900 dark:text-white text-base leading-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                                                        {city}
+                                                    </div>
+                                                    <div className="text-amber-700 dark:text-amber-400 text-xs font-semibold tracking-wide flex items-center gap-1 mt-0.5">
+                                                        <Sparkles size={11} className="shrink-0 text-amber-500" />
+                                                        <span className="truncate">{isHi ? meta.tagHi : meta.tag}</span>
+                                                    </div>
                                                 </div>
+
+                                                {/* Description */}
+                                                <p className="text-xs text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mt-1.5">
+                                                    {isHi ? meta.descHi : meta.desc}
+                                                </p>
                                             </div>
-                                            {/* Description row */}
-                                            <div className={`px-2.5 py-2 text-[10px] leading-snug transition-colors ${
-                                                isSelected
-                                                    ? "bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400"
-                                                    : "bg-white dark:bg-gray-900 text-gray-500 dark:text-gray-400"
-                                            }`}>
-                                                {CITY_DESCRIPTIONS[city] || "Explore this city"}
+
+                                            {/* Landmarks highlight footer */}
+                                            <div className="mt-3 pt-2.5 border-t border-gray-100 dark:border-gray-700/60 flex items-center gap-1.5 text-[11px] text-gray-500 dark:text-gray-400 font-medium">
+                                                <span className="text-amber-500 shrink-0 text-xs">🏛️</span>
+                                                <span className="truncate">{isHi ? meta.highlightsHi : meta.highlights}</span>
                                             </div>
                                         </motion.button>
                                     );
@@ -1072,25 +1786,37 @@ export default function PlanTripClient() {
                                     {stats?.totalPlaces} Places
                                 </p>
 
-                                {/* Selected Cities Photo Strip */}
-                                <div className="flex justify-center gap-3 mt-6 flex-wrap">
-                                    {config.selectedCities.map((city) => (
-                                        <div key={city} className="relative group">
-                                            <div className="relative w-24 h-24 sm:w-28 sm:h-28 rounded-2xl overflow-hidden ring-2 ring-yellow-400 shadow-lg">
-                                                <Image
-                                                    src={CITY_IMAGES[city] || CITY_IMAGES.Jaipur}
-                                                    alt={city}
-                                                    fill
-                                                    className="object-cover group-hover:scale-110 transition-transform duration-500"
-                                                    sizes="112px"
-                                                />
-                                                <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
-                                                <div className="absolute bottom-2 left-0 right-0 text-center">
-                                                    <span className="text-white text-xs font-bold drop-shadow">{city}</span>
+                                {/* Selected Cities Strip */}
+                                <div className="flex justify-center gap-2.5 mt-6 flex-wrap">
+                                    {config.selectedCities.map((city) => {
+                                        const eng = getEnglishCityName(city);
+                                        const meta = CITY_METADATA[city] || CITY_METADATA[eng] || {
+                                            icon: "📍",
+                                            tag: "Royal Heritage",
+                                            tagHi: "शाही धरोहर",
+                                            desc: "",
+                                            descHi: "",
+                                            highlights: "",
+                                            highlightsHi: "",
+                                        };
+                                        const isHi = language === "hi";
+                                        return (
+                                            <div
+                                                key={city}
+                                                className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-amber-50/90 dark:bg-yellow-950/40 border border-amber-200/80 dark:border-amber-700/60 shadow-sm"
+                                            >
+                                                <span className="text-xl">{meta.icon}</span>
+                                                <div className="text-left">
+                                                    <div className="text-xs font-bold text-gray-900 dark:text-amber-100 leading-tight">
+                                                        {city}
+                                                    </div>
+                                                    <div className="text-[10px] text-amber-700 dark:text-amber-400 font-medium">
+                                                        {isHi ? meta.tagHi : meta.tag}
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    ))}
+                                        );
+                                    })}
                                 </div>
                             </div>
 
@@ -1196,20 +1922,19 @@ export default function PlanTripClient() {
                                             className="w-full flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-all"
                                         >
                                             <div className="flex items-center gap-3">
-                                                {/* City image thumbnail */}
-                                                <div className="relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 shadow-md">
-                                                    <Image
-                                                        src={CITY_IMAGES[day.city] || CITY_IMAGES.Jaipur}
-                                                        alt={day.city}
-                                                        fill
-                                                        className="object-cover"
-                                                        sizes="56px"
-                                                    />
-                                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                                                    <div className="absolute bottom-0.5 left-0 right-0 text-center">
-                                                        <span className="text-white text-[9px] font-bold leading-tight">{day.day}</span>
-                                                    </div>
-                                                </div>
+                                                {/* City themed badge */}
+                                                {(() => {
+                                                    const eng = getEnglishCityName(day.city);
+                                                    const meta = CITY_METADATA[day.city] || CITY_METADATA[eng] || { icon: "📍" };
+                                                    return (
+                                                        <div className="w-12 h-12 rounded-xl flex flex-col items-center justify-center bg-gradient-to-br from-amber-100 to-yellow-50 dark:from-yellow-950/50 dark:to-amber-900/30 border border-amber-300/80 dark:border-amber-700/60 shadow-sm flex-shrink-0">
+                                                            <span className="text-lg leading-none">{meta.icon}</span>
+                                                            <span className="text-[9px] font-black text-amber-900 dark:text-amber-300 uppercase leading-none mt-1">
+                                                                Day {day.day}
+                                                            </span>
+                                                        </div>
+                                                    );
+                                                })()}
                                                 <div className="text-left">
                                                     <div className="font-bold text-gray-800 dark:text-white text-sm md:text-base">
                                                         Day {day.day} — {day.city}
@@ -1443,11 +2168,10 @@ export default function PlanTripClient() {
                         <button
                             onClick={handleBack}
                             disabled={step === 1}
-                            className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all text-sm shrink-0 ${
-                                step === 1
-                                    ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-                                    : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
-                            }`}
+                            className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all text-sm shrink-0 ${step === 1
+                                ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
+                                : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
+                                }`}
                         >
                             <ArrowLeft size={16} />
                             Back
@@ -1479,11 +2203,10 @@ export default function PlanTripClient() {
                             whileTap={{ scale: 0.97 }}
                             onClick={handleNext}
                             disabled={!canProceed()}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all shrink-0 ${
-                                canProceed()
-                                    ? "bg-gradient-to-r from-yellow-500 to-amber-500 text-white shadow-lg shadow-yellow-500/30 hover:shadow-xl hover:scale-105"
-                                    : "bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
-                            }`}
+                            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all shrink-0 ${canProceed()
+                                ? "bg-gradient-to-r from-yellow-500 to-amber-500 text-white shadow-lg shadow-yellow-500/30 hover:shadow-xl hover:scale-105"
+                                : "bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
+                                }`}
                         >
                             {step === 3 ? (
                                 <>
@@ -1502,4 +2225,4 @@ export default function PlanTripClient() {
             )}
         </div>
     );
-}
+}
