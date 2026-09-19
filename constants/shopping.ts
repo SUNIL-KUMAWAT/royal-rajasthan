@@ -112,7 +112,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/World_Trade_Park.jpg"
                 },
                 {
                     "id": "jaipur-real-1",
@@ -218,7 +218,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/SelectCityWalkMall.jpg"
                 },
                 {
                     "id": "jaipur-real-2",
@@ -324,7 +324,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/DLF_Mall_of_India.jpg"
                 },
                 {
                     "id": "jaipur-real-3",
@@ -430,7 +430,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pacific_Mall_2023.jpg"
                 },
                 {
                     "id": "jaipur-real-4",
@@ -536,7 +536,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg"
                 },
                 {
                     "id": "jaipur-real-5",
@@ -644,7 +644,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Phoenix_Marketcity_Kurla.jpg"
                 },
                 {
                     "id": "jaipur-real-6",
@@ -750,7 +750,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/2018_Mall_of_America_01.jpg"
                 },
                 {
                     "id": "jaipur-real-7",
@@ -858,7 +858,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Departmental Store"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 },
                 {
                     "id": "jaipur-real-8",
@@ -964,7 +964,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Cathedral_Virgin_Mary-7.jpg"
                 },
                 {
                     "id": "jaipur-real-9",
@@ -1070,7 +1070,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 },
                 {
                     "id": "jaipur-real-10",
@@ -1176,7 +1176,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Women_wearing_bangles_in_Chittagong_%2802%29.jpg"
                 },
                 {
                     "id": "jaipur-real-11",
@@ -1282,7 +1282,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jaipur-real-12",
@@ -1388,7 +1388,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jaipur-real-13",
@@ -1496,7 +1496,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 },
                 {
                     "id": "jaipur-real-14",
@@ -1602,7 +1602,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "jaipur-real-15",
@@ -1708,7 +1708,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "jaipur-real-16",
@@ -1814,7 +1814,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "jaipur-real-17",
@@ -1922,7 +1922,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "jaipur-real-18",
@@ -2030,7 +2030,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "jp-1",
@@ -2140,7 +2140,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 },
                 {
                     "id": "jp-2",
@@ -2250,7 +2250,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "jp-3",
@@ -2360,7 +2360,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Women_wearing_bangles_in_Chittagong_%2802%29.jpg"
                 },
                 {
                     "id": "jp-4",
@@ -2471,7 +2471,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market Area"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "jp-5",
@@ -2582,7 +2582,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market Area"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 },
                 {
                     "id": "jp-6",
@@ -2692,7 +2692,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale & Retail Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "jp-7",
@@ -2801,7 +2801,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandhani_Dupatta.jpg"
                 },
                 {
                     "id": "jp-8",
@@ -2912,7 +2912,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/WTP_By_Shubham_Goyal.jpg"
                 },
                 {
                     "id": "jp-9",
@@ -3023,7 +3023,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mannequins_in_a_Shopping_Mall.jpg"
                 },
                 {
                     "id": "jp-10",
@@ -3133,7 +3133,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pacific_Mall_2023.jpg"
                 },
                 {
                     "id": "jp-11",
@@ -3241,7 +3241,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "jp-12",
@@ -3350,7 +3350,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jp-13",
@@ -3459,7 +3459,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "jp-14",
@@ -3568,7 +3568,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "jp-15",
@@ -3677,7 +3677,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jp-16",
@@ -3786,7 +3786,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Designer Store"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "jp-17",
@@ -3896,7 +3896,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Government Emporium"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "jp-18",
@@ -4006,7 +4006,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Street"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Queen-Sirikit-Navaratna.jpg"
                 },
                 {
                     "id": "jp-19",
@@ -4115,7 +4115,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Artisan Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Block_printing_in_Jaipur.jpg"
                 },
                 {
                     "id": "jp-20",
@@ -4225,7 +4225,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/World_Trade_Park.jpg"
                 }
             ]
         },
@@ -4341,7 +4341,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "udaipur-real-1",
@@ -4449,7 +4449,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "udaipur-real-2",
@@ -4557,7 +4557,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 },
                 {
                     "id": "udaipur-real-3",
@@ -4665,7 +4665,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Handloom.jpg"
                 },
                 {
                     "id": "udaipur-real-4",
@@ -4773,7 +4773,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Crafts Village"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kota_Doria_weaving.jpg"
                 },
                 {
                     "id": "udaipur-real-5",
@@ -4881,7 +4881,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/SelectCityWalkMall.jpg"
                 },
                 {
                     "id": "udaipur-real-6",
@@ -4987,7 +4987,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/DLF_Mall_of_India.jpg"
                 },
                 {
                     "id": "udaipur-real-7",
@@ -5093,7 +5093,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 },
                 {
                     "id": "udaipur-real-8",
@@ -5199,7 +5199,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "udaipur-real-9",
@@ -5305,7 +5305,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "ud-1",
@@ -5414,7 +5414,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "ud-2",
@@ -5524,7 +5524,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "ud-3",
@@ -5634,7 +5634,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Area"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 },
                 {
                     "id": "ud-4",
@@ -5743,7 +5743,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "ud-5",
@@ -5854,7 +5854,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Craft Village"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "ud-6",
@@ -5962,7 +5962,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Store"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "ud-7",
@@ -6072,7 +6072,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pacific_Mall_2023.jpg"
                 },
                 {
                     "id": "ud-8",
@@ -6180,7 +6180,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 }
             ]
         },
@@ -6298,7 +6298,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "jodhpur-real-1",
@@ -6406,7 +6406,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 },
                 {
                     "id": "jodhpur-real-2",
@@ -6514,7 +6514,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jodhpur-real-3",
@@ -6620,7 +6620,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "jodhpur-real-4",
@@ -6726,7 +6726,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 },
                 {
                     "id": "jodhpur-real-5",
@@ -6832,7 +6832,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandhani_Dupatta.jpg"
                 },
                 {
                     "id": "jodhpur-real-6",
@@ -6938,7 +6938,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "jodhpur-real-7",
@@ -7044,7 +7044,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Boutiques"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 },
                 {
                     "id": "jodhpur-real-8",
@@ -7150,7 +7150,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg"
                 },
                 {
                     "id": "jodhpur-real-9",
@@ -7256,7 +7256,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Phoenix_Marketcity_Kurla.jpg"
                 },
                 {
                     "id": "jd-1",
@@ -7367,7 +7367,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "jd-2",
@@ -7475,7 +7475,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jd-3",
@@ -7585,7 +7585,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Street"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 },
                 {
                     "id": "jd-4",
@@ -7694,7 +7694,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "jd-5",
@@ -7802,7 +7802,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ghevar_with_Malai_Topping.jpg"
                 },
                 {
                     "id": "jd-6",
@@ -7911,7 +7911,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Queen-Sirikit-Navaratna.jpg"
                 },
                 {
                     "id": "jd-7",
@@ -8021,7 +8021,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/2018_Mall_of_America_01.jpg"
                 }
             ]
         },
@@ -8135,7 +8135,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jaisalmer-real-1",
@@ -8243,7 +8243,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "jaisalmer-real-2",
@@ -8349,7 +8349,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "jaisalmer-real-3",
@@ -8455,7 +8455,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "jaisalmer-real-4",
@@ -8561,7 +8561,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Crafts Village"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jsl-1",
@@ -8670,7 +8670,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jsl-2",
@@ -8779,7 +8779,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "jsl-3",
@@ -8888,7 +8888,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 },
                 {
                     "id": "jsl-4",
@@ -8996,7 +8996,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Jewelry Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 },
                 {
                     "id": "jsl-5",
@@ -9105,7 +9105,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Craft Gallery"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 }
             ]
         },
@@ -9221,7 +9221,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "bikaner-real-1",
@@ -9329,7 +9329,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Block_printing_in_Jaipur.jpg"
                 },
                 {
                     "id": "bikaner-real-2",
@@ -9435,7 +9435,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "bikaner-real-3",
@@ -9541,7 +9541,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Boutique"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Handloom.jpg"
                 },
                 {
                     "id": "bikaner-real-4",
@@ -9649,7 +9649,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kota_Doria_weaving.jpg"
                 },
                 {
                     "id": "bk-1",
@@ -9758,7 +9758,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 },
                 {
                     "id": "bk-2",
@@ -9867,7 +9867,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Food Store"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "bk-3",
@@ -9976,7 +9976,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "bk-4",
@@ -10085,7 +10085,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "bk-5",
@@ -10193,7 +10193,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 },
                 {
                     "id": "bk-6",
@@ -10302,7 +10302,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 }
             ]
         },
@@ -10418,7 +10418,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%28A%29_Camel_Pushkar_fair.jpg"
                 },
                 {
                     "id": "ajmer-real-1",
@@ -10526,7 +10526,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "ajmer-real-2",
@@ -10634,7 +10634,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 },
                 {
                     "id": "ajmer-real-3",
@@ -10742,7 +10742,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "ajmer-real-4",
@@ -10848,7 +10848,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Queen-Sirikit-Navaratna.jpg"
                 },
                 {
                     "id": "aj-1",
@@ -10959,7 +10959,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Religious Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%28A%29_Camel_Pushkar_fair.jpg"
                 },
                 {
                     "id": "aj-2",
@@ -11068,7 +11068,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "aj-3",
@@ -11176,7 +11176,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 }
             ]
         },
@@ -11292,7 +11292,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Seasonal Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "pushkar-real-1",
@@ -11400,7 +11400,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "pushkar-real-2",
@@ -11506,7 +11506,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 },
                 {
                     "id": "pushkar-real-3",
@@ -11612,7 +11612,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "pk-1",
@@ -11723,7 +11723,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Flea Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 },
                 {
                     "id": "pk-2",
@@ -11834,7 +11834,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Annual Fair Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 },
                 {
                     "id": "pk-3",
@@ -11943,7 +11943,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 }
             ]
         },
@@ -12059,7 +12059,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "alwar-real-1",
@@ -12165,7 +12165,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandhani_Dupatta.jpg"
                 },
                 {
                     "id": "alwar-real-2",
@@ -12273,7 +12273,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "alwar-real-3",
@@ -12379,7 +12379,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "alwar-real-4",
@@ -12485,7 +12485,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 },
                 {
                     "id": "al-1",
@@ -12595,7 +12595,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "al-2",
@@ -12703,7 +12703,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "al-3",
@@ -12811,7 +12811,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Handicraft Center"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 }
             ]
         },
@@ -12926,7 +12926,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ghevar_with_Malai_Topping.jpg"
                 },
                 {
                     "id": "bharatpur-real-1",
@@ -13032,7 +13032,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "bharatpur-real-2",
@@ -13138,7 +13138,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "bt-1",
@@ -13244,7 +13244,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "bt-2",
@@ -13350,7 +13350,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Souvenir Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 }
             ]
         },
@@ -13467,7 +13467,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "sawai-madhopur-real-1",
@@ -13573,7 +13573,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "sawai-madhopur-real-2",
@@ -13679,7 +13679,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "sawai-madhopur-real-3",
@@ -13787,7 +13787,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "sawai-madhopur-real-4",
@@ -13893,7 +13893,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/WTP_By_Shubham_Goyal.jpg"
                 },
                 {
                     "id": "sm-1",
@@ -13999,7 +13999,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Block_printing_in_Jaipur.jpg"
                 },
                 {
                     "id": "sm-2",
@@ -14104,7 +14104,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Handloom.jpg"
                 }
             ]
         },
@@ -14219,7 +14219,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Queen-Sirikit-Navaratna.jpg"
                 },
                 {
                     "id": "chittorgarh-real-1",
@@ -14325,7 +14325,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kota_Doria_weaving.jpg"
                 },
                 {
                     "id": "chittorgarh-real-2",
@@ -14431,7 +14431,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "ct-1",
@@ -14537,7 +14537,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "ct-2",
@@ -14643,7 +14643,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 }
             ]
         },
@@ -14758,7 +14758,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 },
                 {
                     "id": "kota-real-1",
@@ -14866,7 +14866,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "kota-real-2",
@@ -14972,7 +14972,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Shopping Complex"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "kota-real-3",
@@ -15078,7 +15078,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "kota-real-4",
@@ -15184,7 +15184,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "kota-real-5",
@@ -15290,7 +15290,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg"
                 },
                 {
                     "id": "kt-1",
@@ -15396,7 +15396,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Textile Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandhani_Dupatta.jpg"
                 },
                 {
                     "id": "kt-2",
@@ -15502,7 +15502,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "kt-3",
@@ -15609,7 +15609,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "kt-4",
@@ -15716,7 +15716,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Area"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "kt-5",
@@ -15821,7 +15821,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 }
             ]
         },
@@ -15938,7 +15938,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "bundi-real-1",
@@ -16044,7 +16044,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "bundi-real-2",
@@ -16150,7 +16150,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "bundi-real-3",
@@ -16258,7 +16258,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "bundi-real-4",
@@ -16364,7 +16364,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mannequins_in_a_Shopping_Mall.jpg"
                 },
                 {
                     "id": "bn-1",
@@ -16469,7 +16469,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "bn-2",
@@ -16576,7 +16576,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1d/British_Museum_The_Islamic_world_Necklace_Kundan_India_21022019_7703.jpg"
                 }
             ]
         },
@@ -16691,7 +16691,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "barmer-real-1",
@@ -16797,7 +16797,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Ghevar_with_Malai_Topping.jpg"
                 },
                 {
                     "id": "barmer-real-2",
@@ -16905,7 +16905,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Block_printing_in_Jaipur.jpg"
                 },
                 {
                     "id": "bar-1",
@@ -17011,7 +17011,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Craft Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Handloom.jpg"
                 },
                 {
                     "id": "bar-2",
@@ -17117,7 +17117,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Craft Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kota_Doria_weaving.jpg"
                 },
                 {
                     "id": "bar-3",
@@ -17222,7 +17222,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 }
             ]
         },
@@ -17339,7 +17339,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "nagaur-real-1",
@@ -17445,7 +17445,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "nagaur-real-2",
@@ -17551,7 +17551,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "nagaur-real-3",
@@ -17659,7 +17659,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "nagaur-real-4",
@@ -17765,7 +17765,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/World_Trade_Park.jpg"
                 },
                 {
                     "id": "ng-1",
@@ -17871,7 +17871,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Annual Fair"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "ng-2",
@@ -17976,7 +17976,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Warp_in_Progress.jpg"
                 }
             ]
         },
@@ -18093,7 +18093,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "pali-real-1",
@@ -18199,7 +18199,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "pali-real-2",
@@ -18305,7 +18305,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "pali-real-3",
@@ -18413,7 +18413,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "pali-real-4",
@@ -18519,7 +18519,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/SelectCityWalkMall.jpg"
                 },
                 {
                     "id": "pl-1",
@@ -18625,7 +18625,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Textile Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "pl-2",
@@ -18731,7 +18731,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 }
             ]
         },
@@ -18850,7 +18850,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "sikar-real-1",
@@ -18956,7 +18956,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "sikar-real-2",
@@ -19062,7 +19062,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bandhani_Dupatta.jpg"
                 },
                 {
                     "id": "sikar-real-3",
@@ -19170,7 +19170,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Bandhani_of_Rajasthan.jpg"
                 },
                 {
                     "id": "sikar-real-4",
@@ -19276,7 +19276,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Blue_mural_embroidery%2C_Hathi_Pol_Bazaar.jpg"
                 },
                 {
                     "id": "sikar-real-5",
@@ -19382,7 +19382,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Street Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%28A%29_Camel_Pushkar_fair.jpg"
                 },
                 {
                     "id": "sk-1",
@@ -19489,7 +19489,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "sk-2",
@@ -19595,7 +19595,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Craft Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/en/0/0b/Thewa.jpg"
                 }
             ]
         },
@@ -19712,7 +19712,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "jhunjhunu-real-1",
@@ -19818,7 +19818,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jhunjhunu-real-2",
@@ -19924,7 +19924,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "jhunjhunu-real-3",
@@ -20032,7 +20032,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "jhunjhunu-real-4",
@@ -20138,7 +20138,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/DLF_Mall_of_India.jpg"
                 },
                 {
                     "id": "jj-1",
@@ -20243,7 +20243,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "jj-2",
@@ -20348,7 +20348,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 }
             ]
         },
@@ -20465,7 +20465,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "churu-real-1",
@@ -20571,7 +20571,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "churu-real-2",
@@ -20677,7 +20677,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "churu-real-3",
@@ -20785,7 +20785,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "churu-real-4",
@@ -20891,7 +20891,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pacific_Mall_2023.jpg"
                 },
                 {
                     "id": "ch-1",
@@ -20996,7 +20996,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 }
             ]
         },
@@ -21113,7 +21113,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "hanumangarh-real-1",
@@ -21219,7 +21219,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "hanumangarh-real-2",
@@ -21325,7 +21325,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "hanumangarh-real-3",
@@ -21433,7 +21433,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "hanumangarh-real-4",
@@ -21539,7 +21539,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg"
                 },
                 {
                     "id": "hg-1",
@@ -21644,7 +21644,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "hg-2",
@@ -21749,7 +21749,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 }
             ]
         },
@@ -21866,7 +21866,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "ganganagar-real-1",
@@ -21972,7 +21972,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "ganganagar-real-2",
@@ -22078,7 +22078,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "ganganagar-real-3",
@@ -22186,7 +22186,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "ganganagar-real-4",
@@ -22292,7 +22292,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Phoenix_Marketcity_Kurla.jpg"
                 },
                 {
                     "id": "gg-1",
@@ -22399,7 +22399,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Agricultural Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "gg-2",
@@ -22506,7 +22506,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Commercial Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 }
             ]
         },
@@ -22623,7 +22623,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "tonk-real-1",
@@ -22729,7 +22729,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "tonk-real-2",
@@ -22835,7 +22835,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg"
                 },
                 {
                     "id": "tonk-real-3",
@@ -22943,7 +22943,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "tonk-real-4",
@@ -23049,7 +23049,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/2018_Mall_of_America_01.jpg"
                 },
                 {
                     "id": "tn-1",
@@ -23154,7 +23154,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg"
                 }
             ]
         },
@@ -23271,7 +23271,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "dausa-real-1",
@@ -23377,7 +23377,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "dausa-real-2",
@@ -23483,7 +23483,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "dausa-real-3",
@@ -23591,7 +23591,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "dausa-real-4",
@@ -23697,7 +23697,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/WTP_By_Shubham_Goyal.jpg"
                 },
                 {
                     "id": "da-1",
@@ -23802,7 +23802,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 }
             ]
         },
@@ -23919,7 +23919,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "dholpur-real-1",
@@ -24025,7 +24025,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "dholpur-real-2",
@@ -24131,7 +24131,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "dholpur-real-3",
@@ -24239,7 +24239,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "dholpur-real-4",
@@ -24345,7 +24345,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mannequins_in_a_Shopping_Mall.jpg"
                 },
                 {
                     "id": "dl-1",
@@ -24450,7 +24450,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "dl-2",
@@ -24555,7 +24555,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b2/Block_printing_in_Jaipur.jpg"
                 }
             ]
         },
@@ -24672,7 +24672,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "karauli-real-1",
@@ -24778,7 +24778,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "karauli-real-2",
@@ -24884,7 +24884,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "karauli-real-3",
@@ -24992,7 +24992,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "karauli-real-4",
@@ -25098,7 +25098,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/World_Trade_Park.jpg"
                 },
                 {
                     "id": "kr-1",
@@ -25203,7 +25203,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 }
             ]
         },
@@ -25320,7 +25320,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "sirohi-real-1",
@@ -25426,7 +25426,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "sirohi-real-2",
@@ -25532,7 +25532,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "sirohi-real-3",
@@ -25640,7 +25640,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "sirohi-real-4",
@@ -25746,7 +25746,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/SelectCityWalkMall.jpg"
                 },
                 {
                     "id": "si-1",
@@ -25853,7 +25853,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Tourist Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg"
                 },
                 {
                     "id": "si-2",
@@ -25958,7 +25958,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 }
             ]
         },
@@ -26075,7 +26075,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "jalor-real-1",
@@ -26181,7 +26181,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "jalor-real-2",
@@ -26287,7 +26287,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%28A%29_Camel_Pushkar_fair.jpg"
                 },
                 {
                     "id": "jalor-real-3",
@@ -26395,7 +26395,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "jalor-real-4",
@@ -26501,7 +26501,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/3f/DLF_Mall_of_India.jpg"
                 },
                 {
                     "id": "jl-1",
@@ -26606,7 +26606,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b7/%28A%29_Camel_Pushkar_fair.jpg"
                 }
             ]
         },
@@ -26723,7 +26723,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "banswara-real-1",
@@ -26829,7 +26829,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "banswara-real-2",
@@ -26935,7 +26935,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "banswara-real-3",
@@ -27043,7 +27043,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "banswara-real-4",
@@ -27149,7 +27149,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/09/Pacific_Mall_2023.jpg"
                 },
                 {
                     "id": "bs-1",
@@ -27255,7 +27255,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Tribal Craft Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/70/Queen-Sirikit-Navaratna.jpg"
                 },
                 {
                     "id": "bs-2",
@@ -27360,7 +27360,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Indian_Handloom.jpg"
                 }
             ]
         },
@@ -27477,7 +27477,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "dungarpur-real-1",
@@ -27583,7 +27583,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "dungarpur-real-2",
@@ -27689,7 +27689,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "dungarpur-real-3",
@@ -27797,7 +27797,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "dungarpur-real-4",
@@ -27903,7 +27903,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg"
                 },
                 {
                     "id": "dg-1",
@@ -28009,7 +28009,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 }
             ]
         },
@@ -28126,7 +28126,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "rajsamand-real-1",
@@ -28232,7 +28232,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "rajsamand-real-2",
@@ -28338,7 +28338,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/New_Market%2C_Kolkata%2C_2011.jpg"
                 },
                 {
                     "id": "rajsamand-real-3",
@@ -28446,7 +28446,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/The_delicious_Rajasthani_food.png"
                 },
                 {
                     "id": "rajsamand-real-4",
@@ -28552,7 +28552,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Phoenix_Marketcity_Kurla.jpg"
                 },
                 {
                     "id": "rj-1",
@@ -28658,7 +28658,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Religious Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_Names_of_Amenemhat_III_MET_DP251139.jpg"
                 },
                 {
                     "id": "rj-2",
@@ -28764,7 +28764,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 }
             ]
         },
@@ -28881,7 +28881,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "pratapgarh-real-1",
@@ -28987,7 +28987,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "pratapgarh-real-2",
@@ -29093,7 +29093,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "pratapgarh-real-3",
@@ -29201,7 +29201,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "pratapgarh-real-4",
@@ -29307,7 +29307,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/59/2018_Mall_of_America_01.jpg"
                 },
                 {
                     "id": "pg-1",
@@ -29413,7 +29413,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Specialty Jewelry Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 }
             ]
         },
@@ -29530,7 +29530,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Spices1.jpg"
                 },
                 {
                     "id": "baran-real-1",
@@ -29636,7 +29636,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/43/Bazaarchitecture5_%284060282163%29.jpg"
                 },
                 {
                     "id": "baran-real-2",
@@ -29742,7 +29742,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg"
                 },
                 {
                     "id": "baran-real-3",
@@ -29850,7 +29850,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "baran-real-4",
@@ -29956,7 +29956,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/WTP_By_Shubham_Goyal.jpg"
                 },
                 {
                     "id": "ba-1",
@@ -30061,7 +30061,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg"
                 }
             ]
         },
@@ -30178,7 +30178,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Garammasalaphoto.jpg"
                 },
                 {
                     "id": "jhalawar-real-1",
@@ -30284,7 +30284,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg"
                 },
                 {
                     "id": "jhalawar-real-2",
@@ -30390,7 +30390,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "jhalawar-real-3",
@@ -30498,7 +30498,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "jhalawar-real-4",
@@ -30604,7 +30604,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Mannequins_in_a_Shopping_Mall.jpg"
                 },
                 {
                     "id": "jh-1",
@@ -30709,7 +30709,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Turkey_%2868742801%29.jpeg"
                 },
                 {
                     "id": "jh-2",
@@ -30814,7 +30814,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/38/Meenakaari_art_from_Iran.jpg"
                 }
             ]
         },
@@ -30931,7 +30931,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "jodhpur-rural-real-1",
@@ -31037,7 +31037,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/3/36/Shilpgram_SWM_1.JPG"
                 },
                 {
                     "id": "jodhpur-rural-real-2",
@@ -31143,7 +31143,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "jodhpur-rural-real-3",
@@ -31251,7 +31251,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/02017_0119_Kardamom%2C_Winter_in_den_Beskiden.jpg"
                 },
                 {
                     "id": "jodhpur-rural-real-4",
@@ -31357,7 +31357,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/World_Trade_Park.jpg"
                 },
                 {
                     "id": "jdr-1",
@@ -31462,7 +31462,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Heritage Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Kota_Doria_weaving.jpg"
                 }
             ]
         },
@@ -31579,7 +31579,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Traditional Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Turmeric_inflorescence.jpg"
                 },
                 {
                     "id": "jaipur-rural-real-1",
@@ -31685,7 +31685,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 },
                 {
                     "id": "jaipur-rural-real-2",
@@ -31791,7 +31791,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png"
                 },
                 {
                     "id": "jaipur-rural-real-3",
@@ -31899,7 +31899,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Wholesale Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/13/Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
                 },
                 {
                     "id": "jaipur-rural-real-4",
@@ -32005,7 +32005,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Local Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4b/SelectCityWalkMall.jpg"
                 },
                 {
                     "id": "jpr-1",
@@ -32111,7 +32111,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Artisan Village Market"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg"
                 },
                 {
                     "id": "jpr-2",
@@ -32215,7 +32215,7 @@ export const RAJASTHAN_SHOPPING = {
                             "Artisan Village"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Dilli_Haat_-_INA.jpg"
                 }
             ]
         }
