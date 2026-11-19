@@ -15,7 +15,7 @@ import {
     Search,
 } from "lucide-react";
 import { PLACES } from "@/constants/places";
-import { CATEGORIES, CATEGORIES_HINDI } from "@/constants/data";
+import { CATEGORIES, CATEGORIES_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
 import { useEffect } from "react";
@@ -150,7 +150,7 @@ export function FeaturedPlaces() {
                                 initial={{ opacity: 0, y: 20 }}
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
-                                transition={{ delay: i * 0.05 }}
+                                transition={{ delay: Math.min(i, 8) * 0.05 }}
                                 onClick={() => {
                                     setActiveFilter(cat);
                                     setVisibleCount(12);

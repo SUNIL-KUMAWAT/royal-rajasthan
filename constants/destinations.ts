@@ -1,5 +1,3 @@
-import { Place } from "../types";
-import { PLACES } from "./places";
 
 const DESTINATIONS_RAW = [
     {
@@ -2300,10 +2298,7 @@ const DESTINATIONS_RAW = [
     }
 ];
 
-export const DESTINATIONS: any = DESTINATIONS_RAW.map(dest => ({
-    ...dest,
-    attractionsList: dest.attractions.map(attName =>
-        PLACES.find(p => p.name.toLowerCase() === attName.toLowerCase())
-    ).filter((x): x is Place => !!x)
-}));
+// Note: an `attractionsList` of full Place objects used to be derived here. Nothing read it, and it pulled
+// the whole PLACES dataset (MBs) into every client bundle that imported DESTINATIONS.
+export const DESTINATIONS: any = DESTINATIONS_RAW;
 

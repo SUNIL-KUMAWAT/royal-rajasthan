@@ -14,8 +14,6 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { TiltCard } from "@/components/home/TiltCard";
-import { FESTIVALS } from "@/constants/festivals";
-import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
 import { useLanguage } from "@/components/LanguageProvider";
 
 // Helper: Convert festival name to URL slug
@@ -57,13 +55,15 @@ interface Festival {
 interface Props {
   festival: Festival;
   related: Festival[];
+  /** Hindi versions picked on the server, so the client never imports the full datasets */
+  festivalHi?: Festival;
+  relatedHi: Festival[];
 }
 
-export default function FestivalDetailClient({ festival, related }: Props) {
+export default function FestivalDetailClient({ festival, related, festivalHi, relatedHi }: Props) {
   const { language } = useLanguage();
-  const currentFestivals = language === 'hi' ? FESTIVALS_HINDI : FESTIVALS;
-  const currentFestival = currentFestivals.find((f: any) => f.id === festival.id) || festival;
-  const currentRelated = related.map((r: any) => currentFestivals.find((f: any) => f.id === r.id) || r);
+  const currentFestival = (language === 'hi' && festivalHi) || festival;
+  const currentRelated = language === 'hi' ? relatedHi : related;
 
   // JSON-LD FAQ Schema
   const faqSchema = currentFestival.faqs && currentFestival.faqs.length > 0 ? {
@@ -462,12 +462,12 @@ export default function FestivalDetailClient({ festival, related }: Props) {
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
               {currentRelated.map((f: any, idx: number) => (
                 <TiltCard key={f.id} maxTilt={10} className="h-full">
-                  <Link href={`/festivals/${toSlug(FESTIVALS.find(engF => engF.id === f.id)?.name || f.name)}`} className="block h-full">
+                  <Link href={`/festivals/${toSlug(related.find((engF) => engF.id === f.id)?.name || f.name)}`} className="block h-full">
                     <motion.div
                       initial={{ opacity: 0, y: 20 }}
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
-                      transition={{ delay: idx * 0.1 }}
+                      transition={{ delay: Math.min(idx, 8) * 0.1 }}
                       className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-gray-200 dark:border-white/10 hover:border-gold-500/50 dark:hover:border-gold-400/50 transform-gpu z-10"
                       style={{ transform: "translateZ(30px)" }}
                     >

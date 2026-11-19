@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { 
   Clock, 
   MapPin, 
@@ -19,25 +19,31 @@ import {
   Compass
 } from "lucide-react";
 import Link from "next/link";
-import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { mapsSearchUrl } from "@/lib/shopping-utils";
 import { useLanguage } from "@/components/LanguageProvider";
+
+interface LinkItem {
+  name: string;
+  slug: string;
+}
 
 interface Props {
   place: any;
+  relatedLinks: LinkItem[];
+  districtSiblings: LinkItem[];
 }
 
-export default function ShoppingDetailClient({ place: initialPlace }: Props) {
+export default function ShoppingDetailClient({ place: initialPlace, relatedLinks, districtSiblings }: Props) {
   const { language } = useLanguage();
   const [hindiPlace, setHindiPlace] = useState<any>(null);
 
   useEffect(() => {
     if (language === "hi" && !hindiPlace) {
       import("@/constants/shopping-hindi").then((mod) => {
-        const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
         for (const d of mod.RAJASTHAN_SHOPPING_HINDI.districts) {
-          const p = d.shoppingPlaces.find((x: any) => getSlug(x.name) === getSlug(initialPlace.name) || x.id === initialPlace.id);
+          const p = d.shoppingPlaces.find((x: any) => x.id === initialPlace.id);
           if (p) {
-            setHindiPlace({ ...p, district: d.district });
+            setHindiPlace({ ...p, district: d.district, districtSlug: initialPlace.districtSlug });
             break;
           }
         }
@@ -87,11 +93,32 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
             animate={{ scale: 1 }}
             transition={{ duration: 1.8, ease: "easeOut" }}
             src={localizedPlace.image} 
-            alt={localizedPlace.name}
+            alt={`${initialPlace.name}, ${initialPlace.district}`}
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-[#fcfbf9] via-black/30 to-black/60 dark:from-gray-950 dark:via-black/40 dark:to-black/70" />
         </div>
+
+        {/* Photo attribution (required by Creative Commons licences) + representative-photo notice */}
+        {(initialPlace.imageCredit || initialPlace.imageRepresentative) && (
+          <div className="absolute top-20 right-3 z-10 max-w-[75%] flex flex-col items-end gap-1">
+            {initialPlace.imageRepresentative && (
+              <span className="px-2 py-0.5 rounded bg-amber-500/90 text-[10px] font-bold text-white">
+                {language === "hi" ? "प्रतीकात्मक चित्र" : "Representative photo"}
+              </span>
+            )}
+            {initialPlace.imageCredit && (
+              <a
+                href={initialPlace.imageSource}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="max-w-full truncate px-2 py-0.5 rounded bg-black/40 text-[10px] text-white/80 hover:text-white backdrop-blur-sm"
+              >
+                {initialPlace.imageCredit}
+              </a>
+            )}
+          </div>
+        )}
 
         {/* Back Button and Quick Details */}
         <div className="absolute inset-x-0 bottom-0 z-10">
@@ -118,10 +145,12 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
                   <MapPin size={12} />
                   {localizedPlace.district}
                 </span>
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/40 text-white border border-white/10 text-xs font-semibold backdrop-blur-md">
-                  <Star size={13} className="text-yellow-400 fill-yellow-400" />
-                  {localizedPlace.rating} / 5
-                </span>
+                {localizedPlace.rating && (
+                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/40 text-white border border-white/10 text-xs font-semibold backdrop-blur-md">
+                    <Star size={13} className="text-yellow-400 fill-yellow-400" />
+                    {localizedPlace.rating} / 5
+                  </span>
+                )}
                 <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-600/20 text-amber-300 border border-amber-500/20 text-[10px] sm:text-xs font-semibold backdrop-blur-sm">
                   {localizedPlace.type}
                 </span>
@@ -161,19 +190,11 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
 
       {/* Tab Contents */}
       <section className="max-w-6xl mx-auto px-4 mt-8 sm:mt-10">
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeTab}
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -15 }}
-            transition={{ duration: 0.28 }}
-            className="space-y-6 sm:space-y-8"
-          >
+        {/* All tab panels are server-rendered so search engines see the full content; inactive ones are hidden with CSS */}
+        <div className="space-y-6 sm:space-y-8">
             
             {/* OVERVIEW TAB */}
-            {activeTab === "overview" && (
-              <>
+            <div role="tabpanel" className={activeTab === "overview" ? "block" : "hidden"}>
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
                 
                 {/* About Market */}
@@ -227,7 +248,7 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
                   </div>
 
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${localizedPlace.coordinates?.lat || 26.91},${localizedPlace.coordinates?.lng || 75.81}`}
+                    href={mapsSearchUrl(initialPlace.name, initialPlace.district)}
                     target="_blank" rel="noopener noreferrer"
                     className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3.5 px-6 rounded-2xl transition-all shadow-lg shadow-amber-500/20 text-sm hover:scale-[1.02]"
                   >
@@ -304,12 +325,10 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
                       )}
                   </div>
               </div>
-            </>
-          )}
+            </div>
 
             {/* EXPLORE & SPECIALTIES TAB */}
-            {activeTab === "explore" && (
-              <div className="space-y-6 sm:space-y-8">
+            <div role="tabpanel" className={activeTab === "explore" ? "space-y-6 sm:space-y-8" : "hidden"}>
                 
                 {/* Famous Specialties */}
                 <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl">
@@ -351,12 +370,10 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
                   </div>
                 )}
 
-              </div>
-            )}
+            </div>
 
             {/* TIPS, ACCESS & PHOTOGRAPHY TAB */}
-            {activeTab === "rules" && (
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
+            <div role="tabpanel" className={activeTab === "rules" ? "grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" : "hidden"}>
                 
                 {/* Accessibility */}
                 {localizedPlace.accessibility && localizedPlace.accessibility.length > 0 && (
@@ -411,12 +428,11 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
                   )}
                 </div>
 
-              </div>
-            )}
+            </div>
 
             {/* FAQS TAB */}
-            {activeTab === "faqs" && localizedPlace.faqs && localizedPlace.faqs.length > 0 && (
-              <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6">
+            {localizedPlace.faqs && localizedPlace.faqs.length > 0 && (
+              <div role="tabpanel" className={`${activeTab === "faqs" ? "" : "hidden "}bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6`}>
                 <div className="flex items-center gap-2">
                   <HelpCircle className="text-amber-500" size={20} />
                   <h2 className="text-xl sm:text-2xl font-playfair font-extrabold text-gray-900 dark:text-white">
@@ -442,8 +458,58 @@ export default function ShoppingDetailClient({ place: initialPlace }: Props) {
               </div>
             )}
 
-          </motion.div>
-        </AnimatePresence>
+        </div>
+      </section>
+
+      {/* Internal links: related & nearby markets */}
+      <section className="max-w-6xl mx-auto px-4 mt-10 sm:mt-12">
+        <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none space-y-6">
+          {relatedLinks.length > 0 && (
+            <div>
+              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-5 rounded bg-amber-500" />
+                {language === "hi" ? "संबंधित बाजार" : "Related Markets"}
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {relatedLinks.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/shopping/${r.slug}`}
+                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/10 hover:bg-amber-500 hover:text-white transition-colors"
+                  >
+                    {r.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          {districtSiblings.length > 0 && (
+            <div>
+              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
+                <span className="w-1.5 h-5 rounded bg-amber-500" />
+                {language === "hi" ? `${initialPlace.district} के अन्य बाजार` : `More Markets in ${initialPlace.district}`}
+              </h2>
+              <div className="flex flex-wrap gap-2">
+                {districtSiblings.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/shopping/${r.slug}`}
+                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-amber-500 hover:text-white transition-colors"
+                  >
+                    {r.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+          <Link
+            href={`/shopping/${initialPlace.districtSlug}`}
+            className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 hover:underline"
+          >
+            {language === "hi" ? `${initialPlace.district} शॉपिंग गाइड देखें` : `Complete ${initialPlace.district} Shopping Guide`}
+            <ArrowRight size={16} />
+          </Link>
+        </div>
       </section>
 
     </main>

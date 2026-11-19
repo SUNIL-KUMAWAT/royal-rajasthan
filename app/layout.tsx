@@ -5,6 +5,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/components/LanguageProvider";
+import { MotionProvider } from "@/components/MotionProvider";
 import { Playfair_Display, Inter } from "next/font/google";
 
 const Google_Analytics = 'G-BETYQHSK14'
@@ -278,9 +279,11 @@ export default function RootLayout({
         </Script>
         <LanguageProvider>
           <ThemeProvider>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
+            <MotionProvider>
+              <Navbar />
+              <main>{children}</main>
+              <Footer />
+            </MotionProvider>
           </ThemeProvider>
         </LanguageProvider>
       </body>

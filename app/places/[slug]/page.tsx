@@ -3,6 +3,13 @@
 import type { Metadata } from "next";
 import { PLACES } from "@/constants/places";
 import { PlaceDetailClient } from "./PlaceDetailClient";
+import { PLACES_HINDI } from "@/constants/places-hindi";
+
+// Only what the client needs to turn "related place" names into links
+const PLACE_LINKS = {
+    en: PLACES.map((p) => ({ name: p.name, slug: p.slug })),
+    hi: (PLACES_HINDI as { name: string; slug: string }[]).map((p) => ({ name: p.name, slug: p.slug })),
+};
 
 // ✅ generateStaticParams works in Server Component
 export async function generateStaticParams() {
@@ -204,7 +211,7 @@ export default async function PlaceDetailPage({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
                 />
             )}
-            <PlaceDetailClient place={place} />
+            <PlaceDetailClient place={place} placeLinks={PLACE_LINKS} />
         </>
     );
 }

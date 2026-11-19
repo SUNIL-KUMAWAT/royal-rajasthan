@@ -8,7 +8,7 @@ import {
     ArrowRight,
     Heart,
 } from "lucide-react";
-import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/data";
+import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 
 const FAMOUS_PLACES = [

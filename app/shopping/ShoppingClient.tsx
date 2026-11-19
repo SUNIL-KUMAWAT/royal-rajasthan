@@ -5,40 +5,13 @@ import {
     Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
     ShoppingBag, Tag, X, Compass, Map, ChevronDown,
 } from "lucide-react";
-import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
-import { RAJASTHAN_SHOPPING_HINDI } from "@/constants/shopping-hindi";
 import { SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import type { ShoppingCard } from "@/lib/shopping";
 
-// ─── Helpers ─────────────────────────────────────────────────────────────────
-const ShoppingHelpers = {
-    getAllShoppingPlaces: () =>
-        RAJASTHAN_SHOPPING.districts.flatMap((district) =>
-            district.shoppingPlaces.map((place) => ({
-                ...place,
-                district: district.district,
-                districtSlug: district.slug,
-            }))
-        ),
-    getAllCategories: () => {
-        const categories = new Set<string>();
-        RAJASTHAN_SHOPPING.districts.forEach((d) =>
-            d.shoppingPlaces.forEach((p) => p.category.forEach((c) => categories.add(c)))
-        );
-        return Array.from(categories).sort();
-    },
-    getAllTypes: () => {
-        const types = new Set<string>();
-        RAJASTHAN_SHOPPING.districts.forEach((d) =>
-            d.shoppingPlaces.forEach((p) => types.add(p.type))
-        );
-        return Array.from(types).sort();
-    },
-};
-
-export { ShoppingHelpers };
 
 // ─── 3D Tilt Card ─────────────────────────────────────────────────────────────
 function TiltCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -82,90 +55,37 @@ const cardVariants: any = {
 };
 
 // ─── Main Component ───────────────────────────────────────────────────────────
-export default function ShoppingClient() {
+interface Props {
+    places: ShoppingCard[];
+    placesHi: ShoppingCard[];
+}
+
+export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
     const { language } = useLanguage();
-    const currentShoppingData = language === 'hi' ? RAJASTHAN_SHOPPING_HINDI : RAJASTHAN_SHOPPING;
+    const router = useRouter();
+    const allPlaces = language === "hi" ? placesHi : placesEn;
+    const districtOptions = useMemo(() => {
+        // (lucide's `Map` icon shadows the global Map in this file, so use a plain object)
+        const seen: Record<string, string> = {};
+        allPlaces.forEach((p) => { if (!(p.districtSlug in seen)) seen[p.districtSlug] = p.district; });
+        return Object.entries(seen).map(([slug, district]) => ({ slug, district }));
+    }, [allPlaces]);
 
     const [search, setSearch] = useState("");
     const [selectedDistrict, setSelectedDistrict] = useState("All");
     const [favorites, setFavorites] = useState<string[]>([]);
-    const [selectedMarket, setSelectedMarket] = useState<any | null>(null);
     const [visibleCount, setVisibleCount] = useState(12);
 
-    // Helper to generate slug
-    const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
-
-    // Deep linking: Open modal on mount if URL contains ?market=name-slug
+    // Legacy deep links (/shopping?market=slug) now go to the market's own page
     useEffect(() => {
-        if (typeof window === "undefined") return;
-
-        const params = new URLSearchParams(window.location.search);
-        const marketSlug = params.get("market");
-        if (marketSlug) {
-            const allPlaces = currentShoppingData.districts.flatMap((district: any) =>
-                district.shoppingPlaces.map((place: any) => ({
-                    ...place,
-                    district: district.district,
-                    districtSlug: district.slug,
-                }))
-            );
-            const matchedMarket = allPlaces.find(
-                (p: any) => getSlug(p.name) === marketSlug
-            );
-            if (matchedMarket) {
-                setSelectedMarket(matchedMarket);
-            }
-        }
-    }, [currentShoppingData]);
-
-    // Dynamic SEO & URL updating when modal state changes
-    useEffect(() => {
-        if (typeof window === "undefined") return;
-
-        const defaultTitle = language === "hi" 
-            ? "राजस्थान में शॉपिंग - सर्वोत्तम बाजार और स्मृति चिन्ह | Rajasthan Tourism Places" 
-            : "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Rajasthan Tourism Places";
-        const defaultDesc = language === "hi"
-            ? "राजस्थान की प्रसिद्ध हस्तशिल्प, आभूषण, और कपड़ों की खरीददारी के लिए बाजारों की सूची।"
-            : "Explore the ultimate shopping guide to Rajasthan's famous bazaars.";
-
-        const descMeta = document.querySelector('meta[name="description"]');
-
-        if (selectedMarket) {
-            // Update URL query param
-            const slug = getSlug(selectedMarket.name);
-            window.history.replaceState(null, "", `?market=${slug}`);
-
-            // Update page Title and Meta Description
-            document.title = selectedMarket.seo?.title || `${selectedMarket.name} - Shopping in ${selectedMarket.district}`;
-            if (descMeta) {
-                descMeta.setAttribute("content", selectedMarket.seo?.description || selectedMarket.description);
-            }
-        } else {
-            // Restore URL query param
-            const params = new URLSearchParams(window.location.search);
-            if (params.has("market")) {
-                window.history.replaceState(null, "", window.location.pathname);
-            }
-
-            // Restore original Meta
-            document.title = defaultTitle;
-            if (descMeta) {
-                descMeta.setAttribute("content", defaultDesc);
-            }
-        }
-    }, [selectedMarket, language]);
+        const marketSlug = new URLSearchParams(window.location.search).get("market");
+        if (marketSlug) router.replace(`/shopping/${marketSlug}`);
+    }, [router]);
 
     const popularDistricts = ["All", "Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Bikaner", "Ajmer", "Pushkar"];
 
     const filteredPlaces = useMemo(() => {
-        let places = currentShoppingData.districts.flatMap((district: any) =>
-            district.shoppingPlaces.map((place: any) => ({
-                ...place,
-                district: district.district,
-                districtSlug: district.slug,
-            }))
-        );
+        let places = allPlaces;
         if (search) {
             const q = search.toLowerCase();
             places = places.filter((p) =>
@@ -179,7 +99,7 @@ export default function ShoppingClient() {
             places = places.filter((p) => p.district.toLowerCase() === selectedDistrict.toLowerCase());
         }
         return places;
-    }, [search, selectedDistrict, currentShoppingData]);
+    }, [search, selectedDistrict, allPlaces]);
 
     // Reset visible count whenever filters change
     const setSearchWithReset = (val: string) => { setSearch(val); setVisibleCount(12); };
@@ -322,7 +242,7 @@ export default function ShoppingClient() {
                                     style={{ WebkitAppearance: "none" }}
                                 >
                                     <option value="All" className="bg-gray-900 text-white">All Districts</option>
-                                    {currentShoppingData.districts.map((d: any) => (
+                                    {districtOptions.map((d) => (
                                         <option key={d.slug} value={d.district} className="bg-gray-900 pl-3  text-white">
                                             {d.district}
                                         </option>
@@ -378,15 +298,15 @@ export default function ShoppingClient() {
                         variants={containerVariants} initial="hidden" animate="show"
                         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
                     >
-                        <AnimatePresence mode="popLayout">
+                        <AnimatePresence initial={false}>
                             {visiblePlaces.map((place: any) => (
-                                <motion.div key={place.id} variants={cardVariants} layout exit={cardVariants.exit}>
+                                <motion.div key={place.id} variants={cardVariants} exit={cardVariants.exit}>
                                     <TiltCard className="group h-full">
                                         {/*
                                          * LIGHT: white card, gray-100 border, light shadow
                                          * DARK:  near-transparent glass card
                                          */}
-                                        <div className="h-full bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/50 rounded-3xl overflow-hidden shadow-md hover:shadow-xl dark:shadow-none hover:border-amber-300 dark:hover:border-amber-500/40 transition-all duration-400 flex flex-col backdrop-blur-sm">
+                                        <div className="h-full bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/50 rounded-3xl overflow-hidden shadow-md hover:shadow-xl dark:shadow-none hover:border-amber-300 dark:hover:border-amber-500/40 transition-all duration-300 flex flex-col">
 
                                             {/* ── Image ── */}
                                             <div className="relative h-52 overflow-hidden flex-shrink-0">
@@ -396,12 +316,6 @@ export default function ShoppingClient() {
                                                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
                                                 />
                                                 <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/15 to-transparent" />
-
-                                                {/* Rating */}
-                                                <div className="absolute top-3 right-3 flex items-center gap-1 bg-black/50 backdrop-blur-md rounded-full px-2.5 py-1 text-white text-xs font-bold border border-white/10">
-                                                    <Star size={11} className="text-amber-400 fill-amber-400" />
-                                                    {place.rating}
-                                                </div>
 
                                                 {/* Favourite */}
                                                 <motion.button
@@ -416,6 +330,13 @@ export default function ShoppingClient() {
                                                 <div className="absolute bottom-3 left-3 bg-gradient-to-r from-amber-500 to-amber-600 text-white text-[10px] font-extrabold tracking-wide uppercase px-2.5 py-1 rounded-full shadow">
                                                     {place.type}
                                                 </div>
+
+                                                {/* Photo is not of this exact market */}
+                                                {place.imageRepresentative && (
+                                                    <div className="absolute bottom-3 right-3 bg-black/55 backdrop-blur-sm text-white/90 text-[9px] font-semibold px-2 py-0.5 rounded-full">
+                                                        {language === "hi" ? "प्रतीकात्मक चित्र" : "Representative photo"}
+                                                    </div>
+                                                )}
                                             </div>
 
                                             {/* ── Content ── */}
@@ -467,7 +388,7 @@ export default function ShoppingClient() {
                                                         </span>
                                                     </div>
                                                     <Link
-                                                        href={`/shopping/${getSlug(place.name)}`}
+                                                        href={`/shopping/${place.slug}`}
                                                         className="flex items-center gap-1.5 px-3.5 py-2 rounded-xl font-semibold text-xs transition-all duration-250
                                                             bg-amber-50 text-amber-700 border border-amber-200 hover:bg-amber-500 hover:text-white hover:border-amber-500
                                                             dark:bg-amber-500/10 dark:text-amber-400 dark:border-transparent dark:hover:bg-amber-500 dark:hover:text-white"
@@ -514,164 +435,6 @@ export default function ShoppingClient() {
                     </motion.div>
                 )}
             </section>
-
-            {/* ══ MODAL ════════════════════════════════════════════════════ */}
-            <AnimatePresence>
-                {selectedMarket && (
-                    <motion.div
-                        initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}
-                        transition={{ duration: 0.22 }}
-                        onClick={() => setSelectedMarket(null)}
-                        className="fixed inset-0 z-50 bg-black/60 backdrop-blur-md flex items-center justify-center p-4"
-                    >
-                        <motion.div
-                            initial={{ scale: 0.88, y: 30, opacity: 0 }}
-                            animate={{ scale: 1, y: 0, opacity: 1 }}
-                            exit={{ scale: 0.88, y: 30, opacity: 0 }}
-                            transition={{ type: "spring", stiffness: 280, damping: 28 }}
-                            onClick={(e) => e.stopPropagation()}
-                            /* LIGHT: white modal. DARK: dark-900 */
-                            className="bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700/60 rounded-3xl max-w-2xl w-full overflow-hidden shadow-2xl relative max-h-[90vh] overflow-y-auto scrollbar-none"
-                        >
-                            {/* Close */}
-                            <button
-                                onClick={() => setSelectedMarket(null)}
-                                className="absolute top-4 right-4 z-10 w-10 h-10 bg-black/40 backdrop-blur-md text-white hover:bg-black/70 rounded-full flex items-center justify-center transition-colors"
-                            >
-                                <X size={17} />
-                            </button>
-
-                            {/* Image banner */}
-                            <div className="relative h-60 overflow-hidden flex-shrink-0">
-                                <Image src={selectedMarket.image} alt={selectedMarket.name} fill className="w-full h-full object-cover scale-105" />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/35 to-transparent" />
-                                <div className="absolute bottom-5 left-6 right-14 text-white">
-                                    <div className="flex items-center gap-1 text-amber-400 text-xs font-semibold mb-1.5">
-                                        <MapPin size={12} /><span>{selectedMarket.district}, Rajasthan</span>
-                                    </div>
-                                    <h2 className="font-playfair text-2xl sm:text-3xl font-bold leading-tight">{selectedMarket.name}</h2>
-                                </div>
-                            </div>
-
-                            {/* Body */}
-                            <div className="p-6 sm:p-8 space-y-5">
-                                <p className="text-sm sm:text-base leading-relaxed text-gray-600 dark:text-gray-300">
-                                    {selectedMarket.description}
-                                </p>
-
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                                    <div className="bg-gray-50 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/40 rounded-2xl p-4 flex gap-3">
-                                        <Clock className="text-amber-500 dark:text-amber-400 flex-shrink-0 mt-0.5" size={18} />
-                                        <div>
-                                            <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Market Hours</div>
-                                            <div className="text-sm font-bold text-gray-800 dark:text-white mt-1">{selectedMarket.timings}</div>
-                                            <div className="text-xs text-gray-400 mt-0.5">Closed: {selectedMarket.closedOn || "Open all days"}</div>
-                                        </div>
-                                    </div>
-                                    <div className="bg-gray-50 dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/40 rounded-2xl p-4 flex gap-3">
-                                        <Tag className="text-amber-500 dark:text-amber-400 flex-shrink-0 mt-0.5" size={18} />
-                                        <div>
-                                            <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider">Est. Price Range</div>
-                                            <div className="text-sm font-bold text-gray-800 dark:text-white mt-1">{selectedMarket.priceRange}</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div>
-                                    <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-3">Famous For</div>
-                                    <div className="flex flex-wrap gap-2">
-                                        {selectedMarket.famousFor.map((item: string, idx: number) => (
-                                            <span key={idx}
-                                                className="px-3 py-1 rounded-full text-xs font-bold
-                                                    bg-amber-50 text-amber-700 border border-amber-200
-                                                    dark:bg-amber-500/15 dark:text-amber-300 dark:border-amber-500/15"
-                                            >
-                                                {item}
-                                            </span>
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {selectedMarket.activities && selectedMarket.activities.length > 0 && (
-                                    <div>
-                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">
-                                            {language === "hi" ? "गतिविधियाँ" : "Activities"}
-                                        </div>
-                                        <ul className="list-disc list-inside text-xs sm:text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                                            {selectedMarket.activities.map((act: string, idx: number) => (
-                                                <li key={idx}>{act}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {selectedMarket.accessibility && selectedMarket.accessibility.length > 0 && (
-                                    <div>
-                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-2">
-                                            {language === "hi" ? "पहुंच और सुगमता" : "Accessibility"}
-                                        </div>
-                                        <ul className="list-disc list-inside text-xs sm:text-sm text-gray-600 dark:text-gray-300 space-y-1">
-                                            {selectedMarket.accessibility.map((acc: string, idx: number) => (
-                                                <li key={idx}>{acc}</li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                )}
-
-                                {selectedMarket.photography && (
-                                    <div className="bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-700/30 rounded-2xl p-4 text-xs sm:text-sm text-gray-600 dark:text-gray-300">
-                                        <strong>📸 {language === "hi" ? "फोटोग्राफी नियम:" : "Photography:"}</strong> {selectedMarket.photography}
-                                    </div>
-                                )}
-
-                                {selectedMarket.tips && (
-                                    <div className="bg-amber-50 dark:bg-amber-500/8 border border-amber-200 dark:border-amber-500/15 rounded-2xl p-4 flex gap-3">
-                                        <Compass className="text-amber-500 dark:text-amber-400 flex-shrink-0 mt-0.5" size={18} />
-                                        <div>
-                                            <div className="text-[10px] font-bold text-amber-700 dark:text-amber-400 uppercase tracking-wider">Pro Travel Tip</div>
-                                            <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300">{selectedMarket.tips}</p>
-                                        </div>
-                                    </div>
-                                )}
-
-                                {selectedMarket.faqs && selectedMarket.faqs.length > 0 && (
-                                    <div className="pt-2">
-                                        <div className="text-[10px] font-bold text-gray-400 dark:text-gray-500 uppercase tracking-wider mb-3">
-                                            {language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"}
-                                        </div>
-                                        <div className="space-y-3">
-                                            {selectedMarket.faqs.map((faq: any, idx: number) => (
-                                                <details key={idx} className="group border-b border-gray-100 dark:border-gray-800/60 pb-3">
-                                                    <summary className="flex justify-between items-center font-bold text-sm text-gray-700 dark:text-gray-200 cursor-pointer list-none select-none">
-                                                        <span>{faq.question}</span>
-                                                        <span className="text-[10px] transform group-open:rotate-180 transition-transform">▼</span>
-                                                    </summary>
-                                                    <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-2 leading-relaxed pl-1">
-                                                        {faq.answer}
-                                                    </p>
-                                                </details>
-                                            ))}
-                                        </div>
-                                    </div>
-                                )}
-
-                                <div className="pt-4 border-t border-gray-100 dark:border-gray-700/40 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-                                    <div className="flex items-center gap-1.5 text-xs text-gray-400 dark:text-gray-500">
-                                        <Map size={14} /><span>{selectedMarket.location}</span>
-                                    </div>
-                                    <a
-                                        href={`https://www.google.com/maps/search/?api=1&query=${selectedMarket.coordinates?.lat || 26.91},${selectedMarket.coordinates?.lng || 75.81}`}
-                                        target="_blank" rel="noopener noreferrer"
-                                        className="inline-flex items-center gap-1.5 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold px-5 py-2.5 rounded-xl transition-all shadow-lg shadow-amber-500/20 text-sm"
-                                    >
-                                        Get Directions <ArrowRight size={14} />
-                                    </a>
-                                </div>
-                            </div>
-                        </motion.div>
-                    </motion.div>
-                )}
-            </AnimatePresence>
 
             {/* Visual FAQ Section */}
             <FAQSection 

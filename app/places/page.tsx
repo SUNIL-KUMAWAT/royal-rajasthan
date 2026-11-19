@@ -1,6 +1,9 @@
 // app/places/page.tsx
 import type { Metadata } from "next";
 import { PlacesClient } from "./PlacesClient";
+import { PLACES } from "@/constants/places";
+import { PLACES_HINDI } from "@/constants/places-hindi";
+import { toPlaceCards } from "@/lib/places";
 
 export const metadata: Metadata = {
     title: "Famous Places to Visit in Rajasthan - Complete Guide",
@@ -73,7 +76,7 @@ export default function PlacesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            <PlacesClient />
+            <PlacesClient places={toPlaceCards(PLACES)} placesHi={toPlaceCards(PLACES_HINDI as any)} />
         </>
     );
 }

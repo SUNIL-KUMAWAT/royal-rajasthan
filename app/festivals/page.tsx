@@ -1,6 +1,9 @@
 // app/festivals/page.tsx
 import type { Metadata } from "next";
 import { FestivalsSection } from "@/components/home/FestivalsSection";
+import { FESTIVALS } from "@/constants/festivals";
+import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
+import { toFestivalCards } from "@/lib/festivals";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 export const metadata: Metadata = {
@@ -351,7 +354,7 @@ export default function CulturePage() {
             />
 
             {/* Client Component */}
-            <FestivalsSection />
+            <FestivalsSection festivals={toFestivalCards(FESTIVALS)} festivalsHi={toFestivalCards(FESTIVALS_HINDI as any, FESTIVALS)} />
 
             {/* SEO Interlinks — Explore More */}
             <ExploreMoreSection currentPage="festivals" />

@@ -1,6 +1,7 @@
 import { PLACES } from "@/constants/places";
 import { FESTIVALS } from "@/constants/festivals";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { getPlaceSlug } from "@/lib/shopping";
 
 function toSlug(name: string): string {
     return name
@@ -10,12 +11,6 @@ function toSlug(name: string): string {
         .replace(/\s+/g, "-");
 }
 
-function getShoppingSlug(name: string): string {
-    return name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-}
 
 export async function GET() {
     const baseUrl = "https://rajasthanplaces.in";
@@ -82,7 +77,7 @@ ${f.highlights && f.highlights.length > 0 ? `- Key Highlights: ${f.highlights.jo
 - Bazaars & Markets:
 `;
         for (const p of d.shoppingPlaces) {
-            content += `  * [${p.name}](${baseUrl}/shopping/${getShoppingSlug(p.name)}): ${p.type} — ${p.description} (Timings: ${p.timings || "Open daily"})\n`;
+            content += `  * [${p.name}](${baseUrl}/shopping/${getPlaceSlug(p.id, p.name)}): ${p.type} — ${p.description} (Timings: ${p.timings || "Open daily"})\n`;
         }
         content += "\n";
     }

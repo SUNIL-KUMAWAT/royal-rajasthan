@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Star, MapPin, Clock, ArrowRight, Heart } from "lucide-react";
-import { DESTINATIONS } from "@/constants/data";
+import { DESTINATIONS } from "@/constants/destinations";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -121,7 +121,7 @@ export default function DestinationsClient() {
                                 key={dest.id}
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ delay: i * 0.05 }}
+                                transition={{ delay: Math.min(i, 8) * 0.05 }}
                                 className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-royal transition-all duration-500 hover:-translate-y-2"
                             >
                                 <div className="relative h-56 overflow-hidden">

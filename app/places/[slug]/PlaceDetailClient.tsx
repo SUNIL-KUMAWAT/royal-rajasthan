@@ -18,12 +18,17 @@ import {
     AlertCircle,
     Grid,
 } from "lucide-react";
-import { PLACES } from "@/constants/places";
 import type { Place } from "@/types";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
+interface PlaceLink {
+    name: string;
+    slug: string;
+}
+
 interface Props {
     place: Place;
+    placeLinks: { en: PlaceLink[]; hi: PlaceLink[] };
 }
 
 function FAQItem({ question, answer }: { question: string; answer: string }) {
@@ -58,15 +63,13 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
 }
 
 
-export function PlaceDetailClient({ place: initialPlace }: Props) {
+export function PlaceDetailClient({ place: initialPlace, placeLinks }: Props) {
     const { language } = useLanguage();
     const [hindiPlace, setHindiPlace] = useState<Place | null>(null);
-    const [allHindiPlaces, setAllHindiPlaces] = useState<Place[]>([]);
 
     useEffect(() => {
         if (language === "hi") {
             import("@/constants/places-hindi").then((mod) => {
-                setAllHindiPlaces(mod.PLACES_HINDI);
                 const found = mod.PLACES_HINDI.find((p) => p.slug === initialPlace.slug);
                 if (found) setHindiPlace(found);
             });
@@ -74,7 +77,7 @@ export function PlaceDetailClient({ place: initialPlace }: Props) {
     }, [language, initialPlace.slug]);
 
     const place = (language === "hi" && hindiPlace) ? hindiPlace : initialPlace;
-    const activePlaces = (language === "hi" && allHindiPlaces.length > 0) ? allHindiPlaces : PLACES;
+    const activePlaces = language === "hi" ? placeLinks.hi : placeLinks.en;
 
     const [activeImage, setActiveImage] = useState(0);
     const [showLightbox, setShowLightbox] = useState(false);

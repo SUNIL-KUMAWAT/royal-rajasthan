@@ -112,7 +112,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/India_-_World_Trade_Park_Jaipur_%282022%29_-_img_04.jpg/1280px-India_-_World_Trade_Park_Jaipur_%282022%29_-_img_04.jpg",
+                    "imageCredit": "Photo: Chainwit / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_-_World_Trade_Park_Jaipur_(2022)_-_img_04.jpg"
                 },
                 {
                     "id": "jaipur-real-1",
@@ -218,7 +220,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-2",
@@ -316,7 +321,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-3",
@@ -418,7 +426,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Construction_of_a_mall_in_Jaipur.jpg/1280px-Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Devendracarpenter / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-4",
@@ -520,7 +531,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-5",
@@ -624,7 +638,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-6",
@@ -730,7 +747,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Construction_of_a_mall_in_Jaipur.jpg/1280px-Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Devendracarpenter / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-7",
@@ -825,7 +845,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विभागीय स्टोर"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-8",
@@ -931,7 +954,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-9",
@@ -1037,7 +1063,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jaipur-Hawa_Mahal_Bazaar-20131016.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-10",
@@ -1139,7 +1168,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-11",
@@ -1241,7 +1273,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-12",
@@ -1347,7 +1382,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Nehru_Bazaar_03_%285337168996%29.jpg/1280px-Nehru_Bazaar_03_%285337168996%29.jpg",
+                    "imageCredit": "Photo: Mike From Vancouver Canada / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Nehru_Bazaar_03_(5337168996).jpg"
                 },
                 {
                     "id": "jaipur-real-13",
@@ -1419,7 +1456,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Confectioners-stall-jaipur.jpg",
+                    "imageCredit": "Photo: Paper Jewels / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Confectioners-stall-jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-14",
@@ -1525,7 +1565,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-15",
@@ -1631,7 +1674,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-16",
@@ -1737,7 +1783,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jaipur-Hawa_Mahal_Bazaar-20131016.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-17",
@@ -1845,7 +1894,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-real-18",
@@ -1953,7 +2005,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-1",
@@ -2063,7 +2118,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Johari-bazaar_0.jpg",
+                    "imageCredit": "Photo: Paper Jewels / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari-bazaar_0.jpg"
                 },
                 {
                     "id": "jp-2",
@@ -2173,7 +2230,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Confectioners-stall-jaipur.jpg",
+                    "imageCredit": "Photo: Paper Jewels / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Confectioners-stall-jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-3",
@@ -2270,7 +2330,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-4",
@@ -2381,7 +2444,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट क्षेत्र"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-5",
@@ -2492,7 +2558,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट क्षेत्र"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jaipur-Hawa_Mahal_Bazaar-20131016.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-6",
@@ -2590,7 +2659,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक एवं खुदरा बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-7",
@@ -2699,7 +2771,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-8",
@@ -2774,7 +2849,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/WTP_By_Shubham_Goyal.jpg/1280px-WTP_By_Shubham_Goyal.jpg",
+                    "imageCredit": "Photo: Mewhofly / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:WTP_By_Shubham_Goyal.jpg"
                 },
                 {
                     "id": "jp-9",
@@ -2881,7 +2958,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-10",
@@ -2978,7 +3058,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Construction_of_a_mall_in_Jaipur.jpg/1280px-Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Devendracarpenter / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-11",
@@ -3086,7 +3169,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-12",
@@ -3195,7 +3281,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Nehru_Bazaar_01_%285336554163%29.jpg/1280px-Nehru_Bazaar_01_%285336554163%29.jpg",
+                    "imageCredit": "Photo: Mike From Vancouver Canada / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Nehru_Bazaar_01_(5336554163).jpg"
                 },
                 {
                     "id": "jp-13",
@@ -3304,7 +3392,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Confectioners-stall-jaipur.jpg",
+                    "imageCredit": "Photo: Paper Jewels / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Confectioners-stall-jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-14",
@@ -3413,7 +3504,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-15",
@@ -3509,7 +3603,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-16",
@@ -3618,7 +3715,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "डिज़ाइनर स्टोर"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Anokhi_Cafe.jpg/1280px-Anokhi_Cafe.jpg",
+                    "imageCredit": "Photo: Ketayun Katz / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Anokhi_Cafe.jpg"
                 },
                 {
                     "id": "jp-17",
@@ -3728,7 +3827,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सरकारी एम्पोरियम"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jaipur-Hawa_Mahal_Bazaar-20131016.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-18",
@@ -3834,7 +3936,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कॉमर्शियल स्ट्रीट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-19",
@@ -3939,7 +4044,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कारीगर बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-Going_to_the_market-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jp-20",
@@ -4049,7 +4157,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -4161,7 +4272,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-1",
@@ -4269,7 +4383,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-2",
@@ -4377,7 +4494,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-3",
@@ -4485,7 +4605,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-4",
@@ -4593,7 +4716,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शिल्प ग्राम"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Shilpgram%2C_Udaipur_01.jpg/1280px-Shilpgram%2C_Udaipur_01.jpg",
+                    "imageCredit": "Photo: Khc Khushtar Heritage / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shilpgram,_Udaipur_01.jpg"
                 },
                 {
                     "id": "udaipur-real-5",
@@ -4701,7 +4826,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-6",
@@ -4807,7 +4935,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "Shopping Mall"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-7",
@@ -4905,7 +5036,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-8",
@@ -5011,7 +5145,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Construction_of_a_mall_in_Jaipur.jpg/1280px-Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Devendracarpenter / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "udaipur-real-9",
@@ -5113,7 +5250,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/20191207_Jagdish_Temple%2C_Udaipur%2C_0609_7008.jpg/1280px-20191207_Jagdish_Temple%2C_Udaipur%2C_0609_7008.jpg",
+                    "imageCredit": "Photo: Jakub Ha Un / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:20191207_Jagdish_Temple,_Udaipur,_0609_7008.jpg"
                 },
                 {
                     "id": "ud-1",
@@ -5214,7 +5353,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-2",
@@ -5324,7 +5466,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-3",
@@ -5422,7 +5567,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक क्षेत्र"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-4",
@@ -5523,7 +5671,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-5",
@@ -5630,7 +5781,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शिल्प ग्राम"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-6",
@@ -5738,7 +5892,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष दुकान"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg/1280px-India_%28Udaipur%29_Indian_women_with_traditional_dress_in_the_bazaar_%2832122738353%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Udaipur)_Indian_women_with_traditional_dress_in_the_bazaar_(32122738353).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-7",
@@ -5840,7 +5997,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ud-8",
@@ -5928,7 +6088,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -6026,7 +6189,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Ghanta_Ghar_%28Clock_Tower%29%2C_Jodhpur%2C_Rajasthan.jpg/1280px-Ghanta_Ghar_%28Clock_Tower%29%2C_Jodhpur%2C_Rajasthan.jpg",
+                    "imageCredit": "Photo: Reema Jalihal / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Ghanta_Ghar_(Clock_Tower),_Jodhpur,_Rajasthan.jpg"
                 },
                 {
                     "id": "jodhpur-real-1",
@@ -6134,7 +6299,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodhpur%2C_India%2C_Market.jpg/1280px-Jodhpur%2C_India%2C_Market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Market.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-2",
@@ -6242,7 +6410,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg/1280px-Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil S Mehta / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_Tower_of_Sardar_Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-3",
@@ -6344,7 +6515,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/75/Jodhpur%2C_India%2C_Street_market.jpg/1280px-Jodhpur%2C_India%2C_Street_market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Street_market.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-4",
@@ -6446,7 +6620,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-5",
@@ -6552,7 +6729,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Jodhpur%2C_market_%286270006129%29.jpg/1280px-Jodhpur%2C_market_%286270006129%29.jpg",
+                    "imageCredit": "Photo: Arian Zwegers / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_market_(6270006129).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-6",
@@ -6658,7 +6838,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sardar_Market_Jodhpur_-_panoramio.jpg/1280px-Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageCredit": "Photo: Blue Cab / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-7",
@@ -6756,7 +6939,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "बुटीक"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Jodhpur%2C_market_%286270574168%29.jpg/1280px-Jodhpur%2C_market_%286270574168%29.jpg",
+                    "imageCredit": "Photo: Arian Zwegers / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_market_(6270574168).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-8",
@@ -6862,7 +7048,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Construction_of_a_mall_in_Jaipur.jpg/1280px-Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Devendracarpenter / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Construction_of_a_mall_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-real-9",
@@ -6964,7 +7153,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-1",
@@ -7071,7 +7263,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clock_tower_Sardar_market_jodhpur.jpg/1280px-Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageCredit": "Photo: Theanshulvyas / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_tower_Sardar_market_jodhpur.jpg"
                 },
                 {
                     "id": "jd-2",
@@ -7179,7 +7373,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sardar_Market_Watchtower_in_Jodhpur.jpg/1280px-Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil Mehta / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-3",
@@ -7289,7 +7486,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कॉमर्शियल स्ट्रीट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-4",
@@ -7385,7 +7585,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-5",
@@ -7480,7 +7683,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Market_-_Jodhpur_%288029690225%29.jpg/1280px-Market_-_Jodhpur_%288029690225%29.jpg",
+                    "imageCredit": "Photo: Fulvio Spada From Torino Italy / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Market_-_Jodhpur_(8029690225).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-6",
@@ -7585,7 +7791,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Market%2C_Jodhpur.jpg/1280px-Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jd-7",
@@ -7682,7 +7891,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शॉपिंग मॉल"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Shopping_Mall%2C_Jaipur.jpg/1280px-Shopping_Mall%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Rolling Okie / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Shopping_Mall,_Jaipur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -7796,7 +8008,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaisalmer-real-1",
@@ -7904,7 +8119,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaisalmer-real-2",
@@ -8002,7 +8220,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaisalmer-real-3",
@@ -8108,7 +8329,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaisalmer-real-4",
@@ -8214,7 +8438,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शिल्प ग्राम"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jsl-1",
@@ -8323,7 +8550,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jsl-2",
@@ -8432,7 +8662,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jsl-3",
@@ -8541,7 +8774,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Khejer_Para%2C_Manak_Chowk%2C_Amar_Sagar_Pol%2C_Jaisalmer%2C_Rajasthan_345001%2C_India_-_panoramio.jpg/1280px-Khejer_Para%2C_Manak_Chowk%2C_Amar_Sagar_Pol%2C_Jaisalmer%2C_Rajasthan_345001%2C_India_-_panoramio.jpg",
+                    "imageCredit": "Photo: Chirayumistry / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Khejer_Para,_Manak_Chowk,_Amar_Sagar_Pol,_Jaisalmer,_Rajasthan_345001,_India_-_panoramio.jpg"
                 },
                 {
                     "id": "jsl-4",
@@ -8636,7 +8871,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "आभूषण बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jsl-5",
@@ -8741,7 +8979,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शिल्प गैलरी"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg/1280px-Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer-Amar_Sagar_Pol_Bazar-10-20131010.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -8857,7 +9098,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bikaner-real-1",
@@ -8965,7 +9209,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bikaner-real-2",
@@ -9067,7 +9314,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bikaner-real-3",
@@ -9165,7 +9415,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "बूटिक"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bikaner-real-4",
@@ -9265,7 +9518,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-1",
@@ -9366,7 +9622,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-2",
@@ -9471,7 +9730,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष खाद्य भंडार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-3",
@@ -9572,7 +9834,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-4",
@@ -9669,7 +9934,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-5",
@@ -9765,7 +10033,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bk-6",
@@ -9862,7 +10133,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Snack_shop%2C_Bikaner.jpg/1280px-Snack_shop%2C_Bikaner.jpg",
+                    "imageCredit": "Photo: Cl Ment Bardot / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Snack_shop,_Bikaner.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -9978,7 +10252,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: Donvikro / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_Vendor_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ajmer-real-1",
@@ -10086,7 +10363,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: John Johnston / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_seller_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ajmer-real-2",
@@ -10194,7 +10474,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: Donvikro / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_Vendor_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ajmer-real-3",
@@ -10302,7 +10585,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: John Johnston / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_seller_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ajmer-real-4",
@@ -10408,7 +10694,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: Donvikro / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_Vendor_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "aj-1",
@@ -10519,7 +10808,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "धार्मिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: John Johnston / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_seller_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "aj-2",
@@ -10628,7 +10920,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_Vendor_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: Donvikro / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_Vendor_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "aj-3",
@@ -10732,7 +11027,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg/1280px-Flower_seller_outside_Chisti_Dargah%2C_Ajmer.jpg",
+                    "imageCredit": "Photo: John Johnston / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Flower_seller_outside_Chisti_Dargah,_Ajmer.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -10835,7 +11133,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "मौसमी बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Pushkar_Fair_%284042342708%29.jpg",
+                    "imageCredit": "Photo: Koshy Koshy From Faridabad Haryana India / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Pushkar_Fair_(4042342708).jpg"
                 },
                 {
                     "id": "pushkar-real-1",
@@ -10943,7 +11243,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pushkar-real-2",
@@ -11049,7 +11352,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_vegetable_seller_in_Pushkar.jpg",
+                    "imageCredit": "Photo: Andrew Mclagan / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:A_vegetable_seller_in_Pushkar.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pushkar-real-3",
@@ -11155,7 +11461,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pk-1",
@@ -11254,7 +11563,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कबाड़ी बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_vegetable_seller_in_Pushkar.jpg",
+                    "imageCredit": "Photo: Andrew Mclagan / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:A_vegetable_seller_in_Pushkar.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pk-2",
@@ -11361,7 +11673,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वार्षिक मेला बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pk-3",
@@ -11462,7 +11777,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/A_vegetable_seller_in_Pushkar.jpg",
+                    "imageCredit": "Photo: Andrew Mclagan / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:A_vegetable_seller_in_Pushkar.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -11578,7 +11896,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Hope_Circus%2C_Alwar_-_panoramio.jpg/1280px-Hope_Circus%2C_Alwar_-_panoramio.jpg",
+                    "imageCredit": "Photo: Vivekmangala / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Hope_Circus,_Alwar_-_panoramio.jpg"
                 },
                 {
                     "id": "alwar-real-1",
@@ -11676,7 +11996,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jodhpur%2C_Sardar_Market_20230209_01.jpg/1280px-Jodhpur%2C_Sardar_Market_20230209_01.jpg",
+                    "imageCredit": "Photo: Bok / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_Sardar_Market_20230209_01.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "alwar-real-2",
@@ -11780,7 +12103,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "alwar-real-3",
@@ -11886,7 +12212,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodhpur%2C_India%2C_Market.jpg/1280px-Jodhpur%2C_India%2C_Market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Market.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "alwar-real-4",
@@ -11992,7 +12321,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sardar_market_-_the_city_market_of_jodhpur.jpg/1280px-Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageCredit": "Photo: Naman Gulechha / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "al-1",
@@ -12089,7 +12421,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg/1280px-Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "al-2",
@@ -12193,7 +12528,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571796150%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571796150).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "al-3",
@@ -12293,7 +12631,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हस्तशिल्प केंद्र"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571797464).jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -12408,7 +12749,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571795194).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bharatpur-real-1",
@@ -12510,7 +12854,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571163629%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571163629).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bharatpur-real-2",
@@ -12608,7 +12955,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49233982443).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bt-1",
@@ -12714,7 +13064,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49234661092).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bt-2",
@@ -12807,7 +13160,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्मारिका बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clock_tower_Sardar_market_jodhpur.jpg/1280px-Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageCredit": "Photo: Theanshulvyas / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -12924,7 +13280,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_5.jpg/1280px-Jaisalmer_market_5.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_5.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sawai-madhopur-real-1",
@@ -13030,7 +13389,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jaisalmer_market_14.jpg/1280px-Jaisalmer_market_14.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sawai-madhopur-real-2",
@@ -13128,7 +13490,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jaisalmer_market_9.jpg/1280px-Jaisalmer_market_9.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_9.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sawai-madhopur-real-3",
@@ -13228,7 +13593,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Jaisalmer_market_12.jpg/1280px-Jaisalmer_market_12.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sawai-madhopur-real-4",
@@ -13334,7 +13702,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_market_7.jpg/1280px-Jaisalmer_market_7.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_7.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sm-1",
@@ -13440,7 +13811,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jaisalmer_market_8.jpg/1280px-Jaisalmer_market_8.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_8.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sm-2",
@@ -13532,7 +13906,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jaisalmer_market_16.jpg/1280px-Jaisalmer_market_16.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_16.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -13647,7 +14024,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jaisalmer_market_15.jpg/1280px-Jaisalmer_market_15.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_15.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "chittorgarh-real-1",
@@ -13753,7 +14133,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_13.jpg/1280px-Jaisalmer_market_13.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_13.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "chittorgarh-real-2",
@@ -13855,7 +14238,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jaisalmer_market_2.jpg/1280px-Jaisalmer_market_2.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_2.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ct-1",
@@ -13957,7 +14343,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jaisalmer_market_6.jpg/1280px-Jaisalmer_market_6.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_6.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ct-2",
@@ -14067,7 +14456,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jaisalmer_market_10.jpg/1280px-Jaisalmer_market_10.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_10.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -14182,7 +14574,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Genuine_handloom_kota_doria_masterpiece.jpg/1280px-Genuine_handloom_kota_doria_masterpiece.jpg",
+                    "imageCredit": "Photo: Victoria Singh / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Genuine_handloom_kota_doria_masterpiece.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kota-real-1",
@@ -14286,7 +14681,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kota-real-2",
@@ -14392,7 +14790,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "दुकानों का समूह"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/PVR_Mall_of_Jaipur.jpg/1280px-PVR_Mall_of_Jaipur.jpg",
+                    "imageCredit": "Photo: Pooja Sirsat26 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:PVR_Mall_of_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kota-real-3",
@@ -14490,7 +14891,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg/1280px-Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil S Mehta / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_Tower_of_Sardar_Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kota-real-4",
@@ -14596,7 +15000,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Textile_factory_in_Jaipur3.jpg/1280px-Textile_factory_in_Jaipur3.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Textile_factory_in_Jaipur3.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kota-real-5",
@@ -14698,7 +15105,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sardar_Market_Jodhpur_-_panoramio.jpg/1280px-Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageCredit": "Photo: Blue Cab / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kt-1",
@@ -14791,7 +15201,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष कपड़ा बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Genuine_handloom_kota_doria_masterpiece.jpg/1280px-Genuine_handloom_kota_doria_masterpiece.jpg",
+                    "imageCredit": "Photo: Victoria Singh / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Genuine_handloom_kota_doria_masterpiece.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kt-2",
@@ -14897,7 +15310,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kt-3",
@@ -15004,7 +15420,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sardar_Market_Watchtower_in_Jodhpur.jpg/1280px-Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil Mehta / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kt-4",
@@ -15107,7 +15526,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक क्षेत्र"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kt-5",
@@ -15216,7 +15638,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jaipur_03-2016_10_textile_printing.jpg/1280px-Jaipur_03-2016_10_textile_printing.jpg",
+                    "imageCredit": "Photo: A Savin / FAL / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur_03-2016_10_textile_printing.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -15333,7 +15758,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg"
                 },
                 {
                     "id": "bundi-real-1",
@@ -15439,7 +15866,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bundi-Sadar_Bazaar-Haberdasher-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Haberdasher-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Haberdasher-20131015.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bundi-real-2",
@@ -15541,7 +15971,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Bundi-Sadar_Bazaar-Main_street-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Main_street-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Main_street-20131015.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bundi-real-3",
@@ -15645,7 +16078,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Bundi-Sadar_Bazaar-Pachmina_weaver-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Pachmina_weaver-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Pachmina_weaver-20131015.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bundi-real-4",
@@ -15751,7 +16187,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Bundi-Sadar_Bazaar-Chogan_gate_VSB-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Chogan_gate_VSB-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Chogan_gate_VSB-20131015.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bn-1",
@@ -15860,7 +16299,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Bundi-Sadar_Bazaar-Chogan_Gate_VMF-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Chogan_Gate_VMF-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Chogan_Gate_VMF-20131015.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bn-2",
@@ -15967,7 +16409,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg/1280px-Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bundi-Sadar_Bazaar-Jewellery_Quarter-20131015.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -16082,7 +16527,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "barmer-real-1",
@@ -16188,7 +16636,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jaisalmer_market_3.jpg/1280px-Jaisalmer_market_3.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_3.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "barmer-real-2",
@@ -16296,7 +16747,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bar-1",
@@ -16402,7 +16856,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष शिल्प बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bar-2",
@@ -16508,7 +16965,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष शिल्प बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jaisalmer_market_4.jpg/1280px-Jaisalmer_market_4.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_4.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bar-3",
@@ -16609,7 +17069,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -16726,7 +17189,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "nagaur-real-1",
@@ -16832,7 +17298,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "nagaur-real-2",
@@ -16934,7 +17403,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "nagaur-real-3",
@@ -17038,7 +17510,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "nagaur-real-4",
@@ -17144,7 +17619,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jodhpur_Bazaar.jpg/1280px-Jodhpur_Bazaar.jpg",
+                    "imageCredit": "Photo: Nishant Chawla123 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur_Bazaar.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ng-1",
@@ -17250,7 +17728,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वार्षिक मेला"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ng-2",
@@ -17355,7 +17836,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -17472,7 +17956,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg/1280px-Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil S Mehta / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_Tower_of_Sardar_Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pali-real-1",
@@ -17578,7 +18065,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sardar_Market_Jodhpur_-_panoramio.jpg/1280px-Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageCredit": "Photo: Blue Cab / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pali-real-2",
@@ -17680,7 +18170,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pali-real-3",
@@ -17780,7 +18273,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sardar_Market_Watchtower_in_Jodhpur.jpg/1280px-Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil Mehta / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pali-real-4",
@@ -17886,7 +18382,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pl-1",
@@ -17992,7 +18491,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक कपड़ा बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pl-2",
@@ -18098,7 +18600,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sardar_Market%2C_Jodhpur_%282279996699%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%282279996699%29.jpg",
+                    "imageCredit": "Photo: Dan From Brussels Europe / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(2279996699).jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -18217,7 +18722,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jodhpur%2C_Sardar_Market_20230209_01.jpg/1280px-Jodhpur%2C_Sardar_Market_20230209_01.jpg",
+                    "imageCredit": "Photo: Bok / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_Sardar_Market_20230209_01.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sikar-real-1",
@@ -18323,7 +18831,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sikar-real-2",
@@ -18429,7 +18940,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodhpur%2C_India%2C_Market.jpg/1280px-Jodhpur%2C_India%2C_Market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Market.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sikar-real-3",
@@ -18533,7 +19047,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sardar_market_-_the_city_market_of_jodhpur.jpg/1280px-Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageCredit": "Photo: Naman Gulechha / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sikar-real-4",
@@ -18635,7 +19152,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg/1280px-Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sikar-real-5",
@@ -18737,7 +19257,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "सड़क का बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571796150%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571796150).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sk-1",
@@ -18844,7 +19367,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571797464).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sk-2",
@@ -18942,7 +19468,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "शिल्प बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571795194).jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -19059,7 +19588,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571163629%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571163629).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhunjhunu-real-1",
@@ -19165,7 +19697,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49233982443).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhunjhunu-real-2",
@@ -19271,7 +19806,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49234661092).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhunjhunu-real-3",
@@ -19375,7 +19913,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clock_tower_Sardar_market_jodhpur.jpg/1280px-Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageCredit": "Photo: Theanshulvyas / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhunjhunu-real-4",
@@ -19481,7 +20022,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_5.jpg/1280px-Jaisalmer_market_5.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_5.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jj-1",
@@ -19586,7 +20130,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jaisalmer_market_14.jpg/1280px-Jaisalmer_market_14.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jj-2",
@@ -19691,7 +20238,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jaisalmer_market_9.jpg/1280px-Jaisalmer_market_9.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_9.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -19808,7 +20358,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Jaisalmer_market_12.jpg/1280px-Jaisalmer_market_12.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "churu-real-1",
@@ -19914,7 +20467,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_market_7.jpg/1280px-Jaisalmer_market_7.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_7.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "churu-real-2",
@@ -20016,7 +20572,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jaisalmer_market_8.jpg/1280px-Jaisalmer_market_8.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_8.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "churu-real-3",
@@ -20116,7 +20675,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jaisalmer_market_16.jpg/1280px-Jaisalmer_market_16.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_16.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "churu-real-4",
@@ -20222,7 +20784,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jaisalmer_market_15.jpg/1280px-Jaisalmer_market_15.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_15.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ch-1",
@@ -20327,7 +20892,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_13.jpg/1280px-Jaisalmer_market_13.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_13.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -20444,7 +21012,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jaisalmer_market_2.jpg/1280px-Jaisalmer_market_2.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_2.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hanumangarh-real-1",
@@ -20550,7 +21121,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jaisalmer_market_6.jpg/1280px-Jaisalmer_market_6.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_6.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hanumangarh-real-2",
@@ -20648,7 +21222,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jaisalmer_market_10.jpg/1280px-Jaisalmer_market_10.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_10.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hanumangarh-real-3",
@@ -20756,7 +21333,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hanumangarh-real-4",
@@ -20862,7 +21442,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jaisalmer_market_3.jpg/1280px-Jaisalmer_market_3.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_3.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hg-1",
@@ -20963,7 +21546,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "hg-2",
@@ -21068,7 +21654,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -21185,7 +21774,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jaisalmer_market_4.jpg/1280px-Jaisalmer_market_4.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_4.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ganganagar-real-1",
@@ -21291,7 +21883,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ganganagar-real-2",
@@ -21397,7 +21992,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ganganagar-real-3",
@@ -21501,7 +22099,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ganganagar-real-4",
@@ -21607,7 +22208,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/2018_Mall_of_America_01.jpg/960px-2018_Mall_of_America_01.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "gg-1",
@@ -21714,7 +22318,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कृषि बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "gg-2",
@@ -21821,7 +22428,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "वाणिज्यिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jodhpur_Bazaar.jpg/1280px-Jodhpur_Bazaar.jpg",
+                    "imageCredit": "Photo: Nishant Chawla123 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur_Bazaar.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -21938,7 +22548,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "tonk-real-1",
@@ -22044,7 +22657,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "tonk-real-2",
@@ -22146,7 +22762,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg/1280px-Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil S Mehta / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_Tower_of_Sardar_Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "tonk-real-3",
@@ -22246,7 +22865,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sardar_Market_Jodhpur_-_panoramio.jpg/1280px-Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageCredit": "Photo: Blue Cab / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "tonk-real-4",
@@ -22352,7 +22974,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "tn-1",
@@ -22457,7 +23082,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sardar_Market_Watchtower_in_Jodhpur.jpg/1280px-Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil Mehta / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -22574,7 +23202,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dausa-real-1",
@@ -22680,7 +23311,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dausa-real-2",
@@ -22782,7 +23416,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sardar_Market%2C_Jodhpur_%282279996699%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%282279996699%29.jpg",
+                    "imageCredit": "Photo: Dan From Brussels Europe / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(2279996699).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dausa-real-3",
@@ -22882,7 +23519,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jodhpur%2C_Sardar_Market_20230209_01.jpg/1280px-Jodhpur%2C_Sardar_Market_20230209_01.jpg",
+                    "imageCredit": "Photo: Bok / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_Sardar_Market_20230209_01.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dausa-real-4",
@@ -22988,7 +23628,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "da-1",
@@ -23093,7 +23736,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodhpur%2C_India%2C_Market.jpg/1280px-Jodhpur%2C_India%2C_Market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Market.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -23210,7 +23856,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sardar_market_-_the_city_market_of_jodhpur.jpg/1280px-Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageCredit": "Photo: Naman Gulechha / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dholpur-real-1",
@@ -23316,7 +23965,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg/1280px-Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dholpur-real-2",
@@ -23422,7 +24074,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571796150%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571796150).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dholpur-real-3",
@@ -23526,7 +24181,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571797464).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dholpur-real-4",
@@ -23632,7 +24290,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571795194).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dl-1",
@@ -23737,7 +24398,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571163629%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571163629).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dl-2",
@@ -23842,7 +24506,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49233982443).jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -23959,7 +24626,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49234661092).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "karauli-real-1",
@@ -24065,7 +24735,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clock_tower_Sardar_market_jodhpur.jpg/1280px-Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageCredit": "Photo: Theanshulvyas / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "karauli-real-2",
@@ -24167,7 +24840,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_5.jpg/1280px-Jaisalmer_market_5.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_5.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "karauli-real-3",
@@ -24271,7 +24947,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jaisalmer_market_14.jpg/1280px-Jaisalmer_market_14.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "karauli-real-4",
@@ -24377,7 +25056,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jaisalmer_market_9.jpg/1280px-Jaisalmer_market_9.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_9.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "kr-1",
@@ -24482,7 +25164,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Jaisalmer_market_12.jpg/1280px-Jaisalmer_market_12.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_12.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -24599,7 +25284,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_market_7.jpg/1280px-Jaisalmer_market_7.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_7.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sirohi-real-1",
@@ -24705,7 +25393,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jaisalmer_market_8.jpg/1280px-Jaisalmer_market_8.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_8.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sirohi-real-2",
@@ -24811,7 +25502,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Jaisalmer_market_16.jpg/1280px-Jaisalmer_market_16.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_16.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sirohi-real-3",
@@ -24915,7 +25609,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/Jaisalmer_market_15.jpg/1280px-Jaisalmer_market_15.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_15.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "sirohi-real-4",
@@ -25021,7 +25718,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_13.jpg/1280px-Jaisalmer_market_13.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_13.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "si-1",
@@ -25128,7 +25828,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "पर्यटक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Jaisalmer_market_2.jpg/1280px-Jaisalmer_market_2.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_2.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "si-2",
@@ -25233,7 +25936,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Jaisalmer_market_6.jpg/1280px-Jaisalmer_market_6.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_6.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -25350,7 +26056,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Jaisalmer_market_10.jpg/1280px-Jaisalmer_market_10.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_10.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jalor-real-1",
@@ -25456,7 +26165,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jalor-real-2",
@@ -25558,7 +26270,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Jaisalmer_market_3.jpg/1280px-Jaisalmer_market_3.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_3.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jalor-real-3",
@@ -25662,7 +26377,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_38.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jalor-real-4",
@@ -25768,7 +26486,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_15.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jl-1",
@@ -25873,7 +26594,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Jaisalmer_market_4.jpg/1280px-Jaisalmer_market_4.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_4.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -25990,7 +26714,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_30.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "banswara-real-1",
@@ -26096,7 +26823,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_37.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "banswara-real-2",
@@ -26194,7 +26924,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg/1280px-Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageCredit": "Photo: Pinakpani / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Buildings_and_street_market_inside_the_Jaisalmer_Fort_at_Jaisalmer_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "banswara-real-3",
@@ -26302,7 +27035,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg/1280px-Bazaar_in_the_evening%2C_Pushkar_Fair_2019_%2849147091372%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_the_evening,_Pushkar_Fair_2019_(49147091372).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "banswara-real-4",
@@ -26408,7 +27144,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bs-1",
@@ -26482,7 +27221,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "जनजातीय शिल्प बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Jodhpur_Bazaar.jpg/1280px-Jodhpur_Bazaar.jpg",
+                    "imageCredit": "Photo: Nishant Chawla123 / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur_Bazaar.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "bs-2",
@@ -26583,7 +27325,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -26700,7 +27445,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dungarpur-real-1",
@@ -26806,7 +27554,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg/1280px-Clock_Tower_of_Sardar_Market%2C_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil S Mehta / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_Tower_of_Sardar_Market,_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dungarpur-real-2",
@@ -26904,7 +27655,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Sardar_Market_Jodhpur_-_panoramio.jpg/1280px-Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageCredit": "Photo: Blue Cab / CC BY 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Jodhpur_-_panoramio.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dungarpur-real-3",
@@ -27012,7 +27766,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-entrance-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dungarpur-real-4",
@@ -27118,7 +27875,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Sardar_Market_Watchtower_in_Jodhpur.jpg/1280px-Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageCredit": "Photo: Harshil Mehta / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market_Watchtower_in_Jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "dg-1",
@@ -27220,7 +27980,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-00.JPG",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -27337,7 +28100,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-vegetable-stalls-Apr-2004-01.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rajsamand-real-1",
@@ -27443,7 +28209,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Sardar_Market%2C_Jodhpur_%282279996699%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%282279996699%29.jpg",
+                    "imageCredit": "Photo: Dan From Brussels Europe / CC BY-SA 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(2279996699).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rajsamand-real-2",
@@ -27549,7 +28318,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Jodhpur%2C_Sardar_Market_20230209_01.jpg/1280px-Jodhpur%2C_Sardar_Market_20230209_01.jpg",
+                    "imageCredit": "Photo: Bok / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_Sardar_Market_20230209_01.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rajsamand-real-3",
@@ -27653,7 +28425,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rajsamand-real-4",
@@ -27759,7 +28534,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodhpur%2C_India%2C_Market.jpg/1280px-Jodhpur%2C_India%2C_Market.jpg",
+                    "imageCredit": "Photo: Vyacheslav Argenberg / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur,_India,_Market.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rj-1",
@@ -27865,7 +28643,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "धार्मिक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Turkey_%2868742801%29.jpeg/960px-Turkey_%2868742801%29.jpeg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Sardar_market_-_the_city_market_of_jodhpur.jpg/1280px-Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageCredit": "Photo: Naman Gulechha / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_market_-_the_city_market_of_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "rj-2",
@@ -27971,7 +28752,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg/1280px-Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jodhpur-Mehrangarh_Fort-10-Sardar_Bazar-20131011.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -28088,7 +28872,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571796150%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571796150).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pratapgarh-real-1",
@@ -28194,7 +28981,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571797464).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pratapgarh-real-2",
@@ -28292,7 +29082,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571795194%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571795194).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pratapgarh-real-3",
@@ -28400,7 +29193,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571163629%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571163629).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pratapgarh-real-4",
@@ -28506,7 +29302,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849233982443%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49233982443).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "pg-1",
@@ -28612,7 +29411,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "विशेष आभूषण बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg/960px-Pectoral_and_Necklace_of_Sithathoryunet_with_the_Name_of_Senwosret_II_MET_DT531.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg/1280px-Sardar_Market%2C_Jodhpur_%2849234661092%29.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sardar_Market,_Jodhpur_(49234661092).jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -28729,7 +29531,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "baran-real-1",
@@ -28835,7 +29640,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "baran-real-2",
@@ -28937,7 +29745,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "baran-real-3",
@@ -29041,7 +29852,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "baran-real-4",
@@ -29147,7 +29961,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "ba-1",
@@ -29252,7 +30069,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Baran_Handy_Shop.jpg/1280px-Baran_Handy_Shop.jpg",
+                    "imageCredit": "Photo: Go Staw / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Baran_Handy_Shop.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -29369,7 +30189,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Clock_tower_Sardar_market_jodhpur.jpg/1280px-Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageCredit": "Photo: Theanshulvyas / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Clock_tower_Sardar_market_jodhpur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhalawar-real-1",
@@ -29475,7 +30298,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Jaisalmer_market_5.jpg/1280px-Jaisalmer_market_5.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_5.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhalawar-real-2",
@@ -29573,7 +30399,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Jaisalmer_market_14.jpg/1280px-Jaisalmer_market_14.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_14.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhalawar-real-3",
@@ -29681,7 +30510,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Jaisalmer_market_9.jpg/1280px-Jaisalmer_market_9.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_9.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jhalawar-real-4",
@@ -29787,7 +30619,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Mantrisquarefront.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Jaisalmer_market_12.jpg/1280px-Jaisalmer_market_12.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_12.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jh-1",
@@ -29888,7 +30723,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_market_7.jpg/1280px-Jaisalmer_market_7.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_7.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jh-2",
@@ -29993,7 +30831,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Jaisalmer_market_8.jpg/1280px-Jaisalmer_market_8.jpg",
+                    "imageCredit": "Photo: Rakzika / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaisalmer_market_8.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -30110,7 +30951,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/Sadar_Bazaar_in_Jodhpur_%282133135421%29.jpg/1280px-Sadar_Bazaar_in_Jodhpur_%282133135421%29.jpg",
+                    "imageCredit": "Photo: Tom Thai From New York Usa / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Sadar_Bazaar_in_Jodhpur_(2133135421).jpg"
                 },
                 {
                     "id": "jodhpur-rural-real-1",
@@ -30216,7 +31059,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG/1280px-Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageCredit": "Photo: Acred99 / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Rajasthan-Jodhpur-Sardar-Market-side-streets-Apr-2004-02.JPG",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-rural-real-2",
@@ -30310,7 +31156,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Crawford_Market.png?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571796150%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571796150).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-rural-real-3",
@@ -30410,7 +31259,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg/1280px-Festival_procession_near_Sardar_Market_in_Jodhpur_%284571797464%29.jpg",
+                    "imageCredit": "Photo: Jon Connell From Cambridge Uk / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Festival_procession_near_Sardar_Market_in_Jodhpur_(4571797464).jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jodhpur-rural-real-4",
@@ -30516,7 +31368,9 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/World_Trade_Park.jpg/960px-World_Trade_Park.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/India_%28Jodhpur%29_Colorful_Bazaar_at_city_center_%2832918001792%29.jpg/1280px-India_%28Jodhpur%29_Colorful_Bazaar_at_city_center_%2832918001792%29.jpg",
+                    "imageCredit": "Photo: G Ldem St N From Istanbul Turkey / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:India_(Jodhpur)_Colorful_Bazaar_at_city_center_(32918001792).jpg"
                 },
                 {
                     "id": "jdr-1",
@@ -30621,7 +31475,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "हेरिटेज मार्केट"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Textile_factory_in_Jaipur3.jpg/1280px-Textile_factory_in_Jaipur3.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Textile_factory_in_Jaipur3.jpg",
+                    "imageRepresentative": true
                 }
             ]
         },
@@ -30738,7 +31595,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "परंपरागत बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Jaipur_03-2016_10_textile_printing.jpg/1280px-Jaipur_03-2016_10_textile_printing.jpg",
+                    "imageCredit": "Photo: A Savin / FAL / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur_03-2016_10_textile_printing.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-rural-real-1",
@@ -30844,7 +31704,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg/960px-Gurudwara_Sisganj_Sahib_Chandni_Chowk_19.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Bazaar_in_Jaipur.jpg/1280px-Bazaar_in_Jaipur.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Bazaar_in_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-rural-real-2",
@@ -30938,7 +31801,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Cherish_parrish_indian_market_2007.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Johari_Bazaar%2C_Jaipur.jpg/1280px-Johari_Bazaar%2C_Jaipur.jpg",
+                    "imageCredit": "Photo: Tuckdb Postcards / CC BY 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Johari_Bazaar,_Jaipur.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-rural-real-3",
@@ -31038,7 +31904,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "थोक बाज़ार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Spices1.jpg/960px-Spices1.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Jaipur-Hawa_Mahal_Bazaar-20131016.jpg/1280px-Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal_Bazaar-20131016.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jaipur-rural-real-4",
@@ -31144,7 +32013,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "स्थानीय बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Phoenix_Marketcity_Kurla.jpg/960px-Phoenix_Marketcity_Kurla.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg/1280px-Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageCredit": "Photo: Daniel Villafruela / CC BY-SA 3.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Jaipur-Hawa_Mahal-Bazaar_view-20131017.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jpr-1",
@@ -31254,7 +32126,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कारीगर ग्राम बाजार"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Warp_in_Progress.jpg/960px-Warp_in_Progress.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Textile_factory_in_Jaipur3.jpg/1280px-Textile_factory_in_Jaipur3.jpg",
+                    "imageCredit": "Photo: Ninara / CC BY 2.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Textile_factory_in_Jaipur3.jpg",
+                    "imageRepresentative": true
                 },
                 {
                     "id": "jpr-2",
@@ -31358,7 +32233,10 @@ export const RAJASTHAN_SHOPPING_HINDI = {
                             "कारीगर गांव"
                         ]
                     },
-                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a3/Women_Making_Batik%2C_Ketelan_crop.jpg/960px-Women_Making_Batik%2C_Ketelan_crop.jpg?utm_source=en.wikipedia.org"
+                    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Blue_pottery_from_Jaipur.jpg/1280px-Blue_pottery_from_Jaipur.jpg",
+                    "imageCredit": "Photo: Atcelsius / CC BY-SA 4.0 / Wikimedia Commons",
+                    "imageSource": "https://commons.wikimedia.org/wiki/File:Blue_pottery_from_Jaipur.jpg",
+                    "imageRepresentative": true
                 }
             ]
         }

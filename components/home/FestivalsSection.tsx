@@ -29,7 +29,7 @@ import {
   ChevronDown
 } from "lucide-react";
 
-import { FESTIVALS } from "@/constants/festivals";
+import type { FestivalCard } from "@/lib/festivals";
 import { FESTIVALS_FAQS_ENGLISH, FESTIVALS_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
@@ -38,6 +38,7 @@ import { TiltCard } from "./TiltCard";
 interface Festival {
   id: number;
   name: string;
+  engName?: string;
   image: string;
   location: string;
   month: string;
@@ -189,7 +190,7 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
             transition={{ delay: 0.4 }}
             className="mt-4 md:mt-6"
           >
-            <Link href={`/festivals/${toSlug(FESTIVALS.find(f => f.id === festival.id)?.name || festival.name)}`}>
+            <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`}>
               <button className="inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-bold text-xs md:text-sm shadow-[0_4px_12px_rgba(251,191,36,0.3)] hover:shadow-[0_6px_20px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 group/hero-btn">
                 <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
                 <ArrowRight size={14} className="md:w-4 md:h-4 group-hover/hero-btn:translate-x-1 transition-transform" />
@@ -242,17 +243,9 @@ function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext
 }
 
 // ============ MAIN COMPONENT (Named Export) ============
-export function FestivalsSection() {
+export function FestivalsSection({ festivals, festivalsHi }: { festivals: FestivalCard[]; festivalsHi: FestivalCard[] }) {
   const { language } = useLanguage();
-  const [hindiFestivals, setHindiFestivals] = useState<any[]>([]);
-
-  useEffect(() => {
-    if (language === "hi" && hindiFestivals.length === 0) {
-      import("@/constants/festivals-hindi").then((m) => setHindiFestivals(m.FESTIVALS_HINDI));
-    }
-  }, [language, hindiFestivals.length]);
-
-  const currentFestivals = (language === 'hi' && hindiFestivals.length > 0) ? hindiFestivals : FESTIVALS;
+  const currentFestivals = language === 'hi' ? festivalsHi : festivals;
 
   const [active, setActive] = useState(0);
   const [searchTerm, setSearchTerm] = useState("");
@@ -311,7 +304,7 @@ export function FestivalsSection() {
 
       {/* Floating Particles */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(20)].map((_, index) => (
+        {[...Array(10)].map((_, index) => (
           <motion.div
             key={index}
             initial={{ opacity: 0, y: -100 }}
@@ -393,7 +386,7 @@ export function FestivalsSection() {
             </div>
 
             <div className="flex flex-wrap gap-4 mt-8 md:mt-10">
-              <Link href={`/festivals/${toSlug(FESTIVALS.find(f => f.id === festival.id)?.name || festival.name)}`}>
+              <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`}>
                 <button className="px-5 md:px-8 py-2.5 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-xs md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
                   <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
                   <ArrowRight size={16} className="md:w-[18px] md:h-[18px] group-hover/btn:translate-x-1 transition-transform" />
@@ -534,7 +527,7 @@ export function FestivalsSection() {
                   className="scroll-mt-32"
                 >
                   <TiltCard maxTilt={10} className="h-full">
-                    <Link href={`/festivals/${toSlug(FESTIVALS.find(engF => engF.id === f.id)?.name || f.name)}`} className="block h-full">
+                    <Link href={`/festivals/${toSlug(f.engName || f.name)}`} className="block h-full">
                       <div
                         className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-white/10 hover:border-gold-400/50 transform-gpu z-10"
                         style={{ transform: "translateZ(30px)" }}

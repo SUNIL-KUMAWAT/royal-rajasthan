@@ -167,7 +167,7 @@ export default function AboutClient() {
               className="relative"
             >
               <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <img
+                <img loading="lazy" decoding="async"
                   src="/Camel_Pushkar.webp"
                   alt="Rajasthan Culture and Tourism"
                   className="w-full h-80 sm:h-96 object-cover"

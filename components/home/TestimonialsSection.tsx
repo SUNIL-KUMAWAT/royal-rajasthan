@@ -123,7 +123,7 @@ export function TestimonialsSection() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
+                            transition={{ delay: Math.min(i, 8) * 0.1 }}
                             onClick={() => setCurrent(i)}
                             className={`bg-white rounded-2xl p-5 cursor-pointer transition-all hover:-translate-y-1 shadow-sm hover:shadow-md ${i === current ? "ring-2 ring-gold-400" : ""
                                 }`}

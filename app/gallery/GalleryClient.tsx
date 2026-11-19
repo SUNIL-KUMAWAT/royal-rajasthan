@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/data";
+import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 
 export default function GalleryClient() {
@@ -78,7 +78,7 @@ export default function GalleryClient() {
                                     initial={{ opacity: 0, scale: 0.9 }}
                                     animate={{ opacity: 1, scale: 1 }}
                                     exit={{ opacity: 0, scale: 0.9 }}
-                                    transition={{ delay: i * 0.03 }}
+                                    transition={{ delay: Math.min(i, 8) * 0.03 }}
                                     className="group relative overflow-hidden rounded-xl cursor-pointer break-inside-avoid"
                                     onClick={() => setLightboxIndex(i)}
                                 >

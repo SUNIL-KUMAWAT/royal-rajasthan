@@ -16,14 +16,13 @@ import {
     X,
     ChevronDown,
 } from "lucide-react";
-import { PLACES } from "@/constants/places";
-import { PLACES_HINDI } from "@/constants/places-hindi";
-import { CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI } from "@/constants/data";
+import type { PlaceCard } from "@/lib/places";
+import { CATEGORIES, CITIES, CATEGORIES_HINDI, CITIES_HINDI } from "@/constants/ui";
 import { PLACES_FAQS_ENGLISH, PLACES_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
-export function PlacesClient() {
+export function PlacesClient({ places, placesHi }: { places: PlaceCard[]; placesHi: PlaceCard[] }) {
     const [search, setSearch] = useState("");
     const [category, setCategory] = useState("All");
     const [city, setCity] = useState("All Cities");
@@ -61,7 +60,7 @@ export function PlacesClient() {
     useEffect(() => {
         setVisibleCount(12);
     }, [search, category, city, sortBy, entryType]);
-    const activePlaces = language === "hi" ? PLACES_HINDI : PLACES;
+    const activePlaces = language === "hi" ? placesHi : places;
     const currentCategories = language === 'hi' ? CATEGORIES_HINDI : CATEGORIES;
     const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
 

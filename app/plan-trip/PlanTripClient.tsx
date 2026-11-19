@@ -26,9 +26,9 @@ import {
     Heart,
     Sparkles,
 } from "lucide-react";
-import { PLACES, CITIES, CITIES_HINDI } from "@/constants/data";
+import { CITIES, CITIES_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
-import type { Place } from "@/constants/data";
+import type { TripPlace as Place } from "@/lib/places";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
 // ============ TYPES ============
@@ -891,7 +891,7 @@ function getEnglishCityName(city: string): string {
     return hindiIdx !== -1 ? CITIES[hindiIdx] : city;
 }
 
-function generateItinerary(config: TripConfig): DayPlan[] {
+function generateItinerary(config: TripConfig, PLACES: Place[]): DayPlan[] {
     const { selectedCities, startDate, days, pace } = config;
     const itinerary: DayPlan[] = [];
 
@@ -1255,7 +1255,7 @@ function downloadText(itinerary: DayPlan[]): void {
 }
 
 // ============ MAIN COMPONENT ============
-export default function PlanTripClient() {
+export default function PlanTripClient({ places: PLACES }: { places: Place[] }) {
     const { language } = useLanguage();
     const currentCities = language === 'hi' ? CITIES_HINDI : CITIES;
     const [step, setStep] = useState(1);
@@ -1284,7 +1284,7 @@ export default function PlanTripClient() {
 
     const handleNext = () => {
         if (step === 3) {
-            const plan = generateItinerary(config);
+            const plan = generateItinerary(config, PLACES);
             setItinerary(plan);
             setExpandedDay(1);
         }

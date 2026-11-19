@@ -2,6 +2,7 @@ import { FESTIVALS } from "@/constants/data";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import FestivalDetailClient from "./FestivalDetailClient";
+import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
 
 // Helper: Convert festival name to URL slug
 function toSlug(name: string): string {
@@ -212,7 +213,12 @@ export default async function FestivalDetailPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
       )}
-      <FestivalDetailClient festival={festival} related={related} />
+      <FestivalDetailClient
+        festival={festival}
+        related={related}
+        festivalHi={FESTIVALS_HINDI.find((f) => f.id === festival.id) as any}
+        relatedHi={related.map((r) => (FESTIVALS_HINDI.find((f) => f.id === r.id) || r) as any)}
+      />
     </>
   );
 }

@@ -103,7 +103,7 @@ export function FAQSection() {
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.05 }}
+                            transition={{ delay: Math.min(i, 8) * 0.05 }}
                             className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden"
                         >
                             <button

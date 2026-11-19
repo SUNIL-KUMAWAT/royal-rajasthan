@@ -56,7 +56,7 @@ export function MiniShopping() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              transition={{ duration: 0.5, delay: Math.min(idx, 8) * 0.1 }}
               className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 group hover:bg-white/10 transition-all flex flex-col"
             >
               <div className="relative h-48 w-full rounded-xl overflow-hidden mb-6 shrink-0 shadow-lg">

@@ -3,6 +3,7 @@ import { MetadataRoute } from "next";
 import { PLACES } from "@/constants/data";
 import { FESTIVALS } from "@/constants/festivals";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { getAllShoppingEntries } from "@/lib/shopping";
 
 // Helper: Convert name to URL slug
 function toSlug(name: string): string {
@@ -13,12 +14,6 @@ function toSlug(name: string): string {
         .replace(/\s+/g, "-");
 }
 
-function getShoppingSlug(name: string): string {
-    return name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-}
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = "https://rajasthanplaces.in";
@@ -123,18 +118,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }));
 
-    // Dynamic shopping place pages (individual markets & bazaars)
-    const uniqueShoppingPlaces = new Map<string, string>();
-    RAJASTHAN_SHOPPING.districts.forEach((d) => {
-        d.shoppingPlaces.forEach((p) => {
-            const slug = getShoppingSlug(p.name);
-            if (!uniqueShoppingPlaces.has(slug)) {
-                uniqueShoppingPlaces.set(slug, p.name);
-            }
-        });
-    });
-
-    const shoppingMarketPages: MetadataRoute.Sitemap = Array.from(uniqueShoppingPlaces.keys()).map((slug) => ({
+    // Dynamic shopping place pages (individual markets & bazaars).
+    // Generic names shared by many districts are noindex, so they stay out of the sitemap.
+    const shoppingMarketPages: MetadataRoute.Sitemap = getAllShoppingEntries()
+        .filter((e) => e.indexable)
+        .map(({ slug }) => ({
         url: `${baseUrl}/shopping/${slug}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,

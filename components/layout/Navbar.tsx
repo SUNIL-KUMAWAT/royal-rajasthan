@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, Sun, Moon, Phone } from "lucide-react";
-import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/data";
+import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useTheme } from "@/components/ThemeProvider";
 import { usePathname } from "next/navigation";

@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { useLanguage } from "@/components/LanguageProvider";
+import { getDistrictFaqs, slugify } from "@/lib/shopping-utils";
 
 interface Props {
   district: {
@@ -29,9 +30,12 @@ interface Props {
     description: string;
     shoppingPlaces: any[];
   };
+  /** place id -> URL slug (computed on the server so duplicate names get unique URLs) */
+  placeSlugs: Record<string, string>;
+  otherDistricts: { name: string; slug: string }[];
 }
 
-export default function DistrictShoppingClient({ district }: Props) {
+export default function DistrictShoppingClient({ district, placeSlugs, otherDistricts }: Props) {
   const { language } = useLanguage();
   const isHi = language === "hi";
 
@@ -39,7 +43,6 @@ export default function DistrictShoppingClient({ district }: Props) {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
 
-  const getSlug = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
   // Extract all categories available in this district
   const categories = useMemo(() => {
@@ -66,27 +69,8 @@ export default function DistrictShoppingClient({ district }: Props) {
     });
   }, [district, searchQuery, selectedCategory]);
 
-  // District FAQs
-  const districtFaqs = [
-    {
-      q: isHi ? `${district.district} में खरीदारी के लिए सबसे प्रसिद्ध बाजार कौन से हैं?` : `What are the most famous shopping markets in ${district.district}?`,
-      a: isHi 
-        ? `${district.district} में प्रसिद्ध बाजारों में ${district.shoppingPlaces.slice(0, 3).map(p => p.name).join(", ")} शामिल हैं, जहाँ पारंपरिक हस्तशिल्प और स्थानीय उत्पाद मिलते हैं।`
-        : `Top shopping destinations in ${district.district} include ${district.shoppingPlaces.slice(0, 3).map(p => p.name).join(", ")}, known for authentic handicrafts and local specialties.`
-    },
-    {
-      q: isHi ? `${district.district} में बाजारों का सामान्य समय क्या है?` : `What are the general market timings in ${district.district}?`,
-      a: isHi 
-        ? `अधिकांश बाजार सुबह 10:00 या 11:00 बजे खुलते हैं और रात 8:30 से 9:00 बजे तक खुले रहते हैं। कुछ बाजार रविवार या किसी निर्धारित दिन बंद रह सकते हैं।`
-        : `Most markets and bazaars in ${district.district} open around 10:00 AM - 11:00 AM and stay open until 8:30 PM - 9:00 PM.`
-    },
-    {
-      q: isHi ? `क्या ${district.district} के बाजारों में ऑनलाइन/UPI भुगतान स्वीकार किया जाता है?` : `Are digital payments (UPI) accepted in ${district.district} markets?`,
-      a: isHi
-        ? `हाँ, अधिकांश प्रमुख दुकानों और स्टालों पर Google Pay, PhonePe, Paytm जैसे UPI विकल्प उपलब्ध हैं। फिर भी छोटे विक्रेताओं के लिए थोड़ी नकदी रखना सुविधाजनक है।`
-        : `Yes, UPI payments (GPay, PhonePe, Paytm) are widely accepted across most shops in ${district.district}. Carrying some spare cash for small street vendors is recommended.`
-    }
-  ];
+  // District FAQs (same source as the FAQPage JSON-LD on the server)
+  const districtFaqs = getDistrictFaqs(district, isHi);
 
   return (
     <main className="min-h-screen bg-[#070b16] text-white">
@@ -181,19 +165,19 @@ export default function DistrictShoppingClient({ district }: Props) {
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredPlaces.map((place, idx) => {
-                const placeSlug = getSlug(place.name);
+                const placeSlug = placeSlugs[place.id] || slugify(place.name);
                 return (
                   <motion.div
                     key={place.id || idx}
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.4, delay: idx * 0.05 }}
+                    transition={{ duration: 0.4, delay: Math.min(idx, 8) * 0.05 }}
                     className="bg-white/[0.03] border border-white/10 rounded-2xl overflow-hidden hover:border-amber-500/40 hover:bg-white/[0.05] transition-all flex flex-col justify-between group"
                   >
                     <div>
                       {/* Image Header */}
                       <div className="relative h-48 w-full overflow-hidden bg-gray-900">
-                        <img
+                        <img loading="lazy" decoding="async"
                           src={place.image || "https://picsum.photos/seed/shop-raj/600/400"}
                           alt={place.name}
                           className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
@@ -305,12 +289,31 @@ export default function DistrictShoppingClient({ district }: Props) {
                     }`}
                   />
                 </button>
-                {openFaqIndex === idx && (
-                  <div className="px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/5 pt-3">
-                    {faq.a}
-                  </div>
-                )}
+                {/* Always rendered so the answer is in the HTML; toggled with CSS */}
+                <div className={`${openFaqIndex === idx ? "block" : "hidden"} px-5 pb-4 text-xs sm:text-sm text-gray-300 leading-relaxed border-t border-white/5 pt-3`}>
+                  {faq.a}
+                </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Shopping in other districts (crawlable internal links) */}
+      <section className="py-12 border-t border-white/10">
+        <div className="max-w-6xl mx-auto px-6 lg:px-8">
+          <h2 className="text-xl sm:text-2xl font-playfair font-bold text-white mb-6 text-center">
+            {isHi ? "अन्य जिलों में खरीदारी" : "Shopping in Other Districts of Rajasthan"}
+          </h2>
+          <div className="flex flex-wrap justify-center gap-2">
+            {otherDistricts.map((d) => (
+              <Link
+                key={d.slug}
+                href={`/shopping/${d.slug}`}
+                className="px-3.5 py-1.5 rounded-full text-xs font-medium bg-white/[0.04] text-gray-300 hover:bg-amber-500 hover:text-black border border-white/10 transition-colors"
+              >
+                {d.name}
+              </Link>
             ))}
           </div>
         </div>
@@ -323,7 +326,7 @@ export default function DistrictShoppingClient({ district }: Props) {
           className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-medium transition-all"
         >
           <ArrowLeft size={16} />
-          <span>{isHi ? "सभी 33 जिलों की शॉपिंग देखें" : "Explore Shopping in All 33 Districts"}</span>
+          <span>{isHi ? `सभी ${otherDistricts.length + 1} जिलों की शॉपिंग देखें` : `Explore Shopping in All ${otherDistricts.length + 1} Districts`}</span>
         </Link>
       </section>
     </main>

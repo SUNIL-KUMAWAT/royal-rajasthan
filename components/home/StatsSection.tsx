@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
-import { STATISTICS, STATISTICS_HINDI } from "@/constants/data";
+import { STATISTICS, STATISTICS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 
 function CountUp({
@@ -74,7 +74,7 @@ export function StatsSection() {
                             initial={{ opacity: 0, y: 40 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: i * 0.1 }}
+                            transition={{ delay: Math.min(i, 8) * 0.1 }}
                             className="text-center group"
                         >
                             <div className="text-4xl md:text-5xl font-bold text-gold-400 font-playfair mb-2 group-hover:scale-110 transition-transform">

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Star, Clock, ArrowRight, Heart } from "lucide-react";
-import { DESTINATIONS } from "@/constants/data";
+import { DESTINATIONS } from "@/constants/destinations";
 
 export function DestinationsSection() {
     const [activeFilter, setActiveFilter] = useState("All");
@@ -76,7 +76,7 @@ export function DestinationsSection() {
                                 initial={{ opacity: 0, scale: 0.9 }}
                                 animate={{ opacity: 1, scale: 1 }}
                                 exit={{ opacity: 0, scale: 0.9 }}
-                                transition={{ delay: i * 0.05 }}
+                                transition={{ delay: Math.min(i, 8) * 0.05 }}
                                 className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-royal transition-all duration-500 hover:-translate-y-2"
                             >
                                 <div className="relative h-56 overflow-hidden">

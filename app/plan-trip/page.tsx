@@ -2,6 +2,8 @@
 // NO "use client" here
 import type { Metadata } from "next";
 import PlanTripClient from "./PlanTripClient";
+import { PLACES } from "@/constants/places";
+import { toTripPlaces } from "@/lib/places";
 
 export const metadata: Metadata = {
     title: "Plan Your Rajasthan Trip - Free Itinerary Planner | Rajasthan Tourism Places",
@@ -178,7 +180,7 @@ export default function PlanTripPage() {
             />
 
             {/* Client Component */}
-            <PlanTripClient />
+            <PlanTripClient places={toTripPlaces(PLACES)} />
         </>
     );
 }

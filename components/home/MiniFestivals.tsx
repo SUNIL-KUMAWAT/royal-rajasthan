@@ -5,7 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
-import { FESTIVALS, FESTIVALS_HINDI } from "@/constants/data";
+import { FESTIVALS } from "@/constants/festivals";
+import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
 
 // Helper: Convert festival name to URL slug
 function toSlug(name: string): string {
@@ -48,7 +49,7 @@ export function MiniFestivals() {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
+              transition={{ duration: 0.5, delay: Math.min(idx, 8) * 0.1 }}
               className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden group hover:bg-white/20 transition-all flex flex-col h-full"
             >
               <div className="relative h-48 w-full overflow-hidden shrink-0">

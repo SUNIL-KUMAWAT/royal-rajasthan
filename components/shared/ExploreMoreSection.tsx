@@ -104,7 +104,7 @@ export function ExploreMoreSection({ currentPage, language = "en" }: Props) {
                             {/* Image */}
                             <div className="relative h-44 overflow-hidden">
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img
+                                <img decoding="async"
                                     src={section.img}
                                     alt={`${isHi ? section.titleHi : section.title} in Rajasthan`}
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"

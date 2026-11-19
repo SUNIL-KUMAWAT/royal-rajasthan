@@ -1,14 +1,18 @@
-import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 import { notFound } from "next/navigation";
 import ShoppingDetailClient from "./ShoppingDetailClient";
 import DistrictShoppingClient from "./DistrictShoppingClient";
 import { Metadata } from "next";
-
-const getSlug = (name: string) =>
-    name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
+import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import {
+    SITE_URL,
+    getAllShoppingEntries,
+    getDistrictFaqs,
+    getDistrictSiblings,
+    getPlaceSlug,
+    getRelatedLinks,
+    getShoppingDistrict,
+    getShoppingEntry,
+} from "@/lib/shopping";
 
 // Common aliases map for old or shortened URLs
 const ALIASES: Record<string, string> = {
@@ -16,44 +20,40 @@ const ALIASES: Record<string, string> = {
     "hathi-pol": "hathi-pol-bazaar",
 };
 
-// Helper to resolve a slug to either a District or a Shopping Place
+// Resolve a slug to either a District or a Shopping Place
 function findBySlug(slug: string) {
-    const resolvedSlug = ALIASES[slug] || slug;
+    const district = getShoppingDistrict(slug);
+    if (district) return { type: "district" as const, data: district };
 
-    // 1. Check if it's a district slug
-    const foundDistrict = RAJASTHAN_SHOPPING.districts.find(
-        (d) => d.slug === slug || getSlug(d.district) === slug
-    );
-    if (foundDistrict) {
-        return { type: "district" as const, data: foundDistrict };
-    }
-
-    // 2. Check if it's an individual shopping place
-    for (const d of RAJASTHAN_SHOPPING.districts) {
-        const p = d.shoppingPlaces.find(
-            (x) => getSlug(x.name) === resolvedSlug || getSlug(x.name) === slug
-        );
-        if (p) {
-            return {
-                type: "place" as const,
-                data: { ...p, district: d.district, districtSlug: d.slug },
-            };
-        }
-    }
+    const entry = getShoppingEntry(ALIASES[slug] || slug);
+    if (entry) return { type: "place" as const, data: entry };
 
     return null;
 }
 
+/** Name with district appended when the bare name doesn't already say where it is. */
+function displayName(name: string, district: string) {
+    return name.toLowerCase().includes(district.toLowerCase()) ? name : `${name}, ${district}`;
+}
+
+const INDEX_ROBOTS = {
+    index: true,
+    follow: true,
+    googleBot: {
+        index: true,
+        follow: true,
+        "max-image-preview": "large" as const,
+        "max-snippet": -1,
+    },
+};
+
+const NOINDEX_ROBOTS = { index: false, follow: true };
+
 export async function generateStaticParams() {
-    const districtSlugs = RAJASTHAN_SHOPPING.districts.map((d) => ({
-        slug: d.slug,
-    }));
-    const placeSlugs = RAJASTHAN_SHOPPING.districts.flatMap((d) =>
-        d.shoppingPlaces.map((p) => ({
-            slug: getSlug(p.name),
-        }))
-    );
-    return [...districtSlugs, ...placeSlugs];
+    return [
+        ...RAJASTHAN_SHOPPING.districts.map((d) => ({ slug: d.slug })),
+        ...getAllShoppingEntries().map((e) => ({ slug: e.slug })),
+    ];
 }
 
 export async function generateMetadata({
@@ -68,7 +68,7 @@ export async function generateMetadata({
 
     if (match.type === "district") {
         const district = match.data;
-        const title = `Shopping in ${district.district}, Rajasthan - Best Markets, Bazaars & Guide | Rajasthan Tourism Places`;
+        const title = `Shopping in ${district.district}, Rajasthan - Best Markets, Bazaars & Guide`;
         const description = `Discover the best shopping places, local bazaars, handicrafts, and markets in ${district.district}, Rajasthan. Complete guide with timings and famous specialties.`;
 
         return {
@@ -82,16 +82,7 @@ export async function generateMetadata({
                 "Rajasthan shopping",
                 "handicrafts Rajasthan",
             ],
-            robots: {
-                index: true,
-                follow: true,
-                googleBot: {
-                    index: true,
-                    follow: true,
-                    "max-image-preview": "large",
-                    "max-snippet": -1,
-                },
-            },
+            robots: INDEX_ROBOTS,
             other: {
                 "geo.region": "IN-RJ",
                 "geo.placename": `${district.district}, Rajasthan, India`,
@@ -99,64 +90,66 @@ export async function generateMetadata({
             openGraph: {
                 title,
                 description,
-                images: ["https://rajasthanplaces.in/og-image.jpg"],
+                images: [`${SITE_URL}/og-image.jpg`],
                 type: "website",
             },
             twitter: {
                 card: "summary_large_image",
                 title,
                 description,
-                images: ["https://rajasthanplaces.in/og-image.jpg"],
+                images: [`${SITE_URL}/og-image.jpg`],
             },
             alternates: {
-                canonical: `https://rajasthanplaces.in/shopping/${district.slug}`,
+                canonical: `${SITE_URL}/shopping/${district.slug}`,
             },
         };
     }
 
     // Place type
-    const foundPlace = match.data;
-    const placeSlug = getSlug(foundPlace.name);
+    const entry = match.data;
+    const place: any = entry.place;
+    const fullName = displayName(place.name, entry.district);
+    // Generic SEO titles ("Gandhi Chowk Shopping Guide...") don't say which city; build one that does
+    const seoTitle: string | undefined = place.seo?.title;
     const title =
-        foundPlace.seo?.title ||
-        `${foundPlace.name} - Timing, Location & Shopping Guide | Rajasthan Tourism Places`;
-    const description = foundPlace.seo?.description || foundPlace.description;
+        seoTitle && seoTitle.toLowerCase().includes(entry.district.toLowerCase())
+            ? seoTitle
+            : `${fullName} - Shopping Guide, Timings & What to Buy`;
+    const famous = (place.famousFor || []).slice(0, 3).join(", ");
+    const description =
+        `${fullName}, Rajasthan: ${place.type}${famous ? ` known for ${famous}` : ""}. ` +
+        `Timings ${place.timings}, budget ${place.priceRange}, shopping tips, FAQs and nearby markets.`;
 
     return {
         title,
         description,
-        keywords: foundPlace.seo?.keywords || foundPlace.keywords || [],
-        robots: {
-            index: true,
-            follow: true,
-            googleBot: {
-                index: true,
-                follow: true,
-                "max-image-preview": "large",
-                "max-snippet": -1,
-            },
-        },
+        keywords: place.seo?.keywords || place.keywords || [],
+        robots: entry.indexable ? INDEX_ROBOTS : NOINDEX_ROBOTS,
         other: {
             "geo.region": "IN-RJ",
-            "geo.placename": `${foundPlace.district}, Rajasthan, India`,
+            "geo.placename": `${entry.district}, Rajasthan, India`,
         },
         openGraph: {
             title,
             description,
-            images: [foundPlace.image],
+            images: [place.image],
             type: "article",
         },
         twitter: {
             card: "summary_large_image",
             title,
             description,
-            images: [foundPlace.image],
+            images: [place.image],
         },
         alternates: {
-            canonical: `https://rajasthanplaces.in/shopping/${placeSlug}`,
+            canonical: `${SITE_URL}/shopping/${entry.slug}`,
         },
     };
 }
+
+const JsonLd = ({ data }: { data: object }) => (
+    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(data) }} />
+);
 
 export default async function ShoppingDetailPage({
     params,
@@ -172,14 +165,16 @@ export default async function ShoppingDetailPage({
 
     if (match.type === "district") {
         const district = match.data;
+        const placeSlugs: Record<string, string> = Object.fromEntries(
+            district.shoppingPlaces.map((p) => [p.id, getPlaceSlug(p.id, p.name)])
+        );
 
-        // JSON-LD Schemas for District Shopping
         const districtShoppingSchema = {
             "@context": "https://schema.org",
             "@type": "ItemList",
             name: `Shopping Markets in ${district.district}, Rajasthan`,
             description: district.description,
-            url: `https://rajasthanplaces.in/shopping/${district.slug}`,
+            url: `${SITE_URL}/shopping/${district.slug}`,
             numberOfItems: district.shoppingPlaces.length,
             itemListElement: district.shoppingPlaces.map((p, idx) => ({
                 "@type": "ListItem",
@@ -196,7 +191,7 @@ export default async function ShoppingDetailPage({
                         addressCountry: "IN",
                     },
                     priceRange: p.priceRange || "$$",
-                    url: `https://rajasthanplaces.in/shopping/${getSlug(p.name)}`,
+                    url: `${SITE_URL}/shopping/${placeSlugs[p.id]}`,
                 },
             })),
         };
@@ -205,106 +200,106 @@ export default async function ShoppingDetailPage({
             "@context": "https://schema.org",
             "@type": "BreadcrumbList",
             itemListElement: [
-                {
-                    "@type": "ListItem",
-                    position: 1,
-                    name: "Home",
-                    item: "https://rajasthanplaces.in",
-                },
-                {
-                    "@type": "ListItem",
-                    position: 2,
-                    name: "Shopping",
-                    item: "https://rajasthanplaces.in/shopping",
-                },
+                { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+                { "@type": "ListItem", position: 2, name: "Shopping", item: `${SITE_URL}/shopping` },
                 {
                     "@type": "ListItem",
                     position: 3,
                     name: district.district,
-                    item: `https://rajasthanplaces.in/shopping/${district.slug}`,
+                    item: `${SITE_URL}/shopping/${district.slug}`,
                 },
             ],
         };
 
+        const faqSchema = {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: getDistrictFaqs(district, false).map((f) => ({
+                "@type": "Question",
+                name: f.q,
+                acceptedAnswer: { "@type": "Answer", text: f.a },
+            })),
+        };
+
+        const otherDistricts = RAJASTHAN_SHOPPING.districts
+            .filter((d) => d.slug !== district.slug)
+            .map((d) => ({ name: d.district, slug: d.slug }));
+
         return (
             <>
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(districtShoppingSchema),
-                    }}
+                <JsonLd data={districtShoppingSchema} />
+                <JsonLd data={breadcrumbSchema} />
+                <JsonLd data={faqSchema} />
+                <DistrictShoppingClient
+                    district={district}
+                    placeSlugs={placeSlugs}
+                    otherDistricts={otherDistricts}
                 />
-                <script
-                    type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(breadcrumbSchema),
-                    }}
-                />
-                <DistrictShoppingClient district={district} />
             </>
         );
     }
 
     // Place type
-    const foundPlace = match.data;
-    const placeSlug = getSlug(foundPlace.name);
+    const entry = match.data;
+    const place: any = entry.place;
+    const pageUrl = `${SITE_URL}/shopping/${entry.slug}`;
 
-    // JSON-LD Schemas for Local Business & Rich Snippets
     const localBusinessSchema = {
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
-        name: foundPlace.name,
-        description: foundPlace.description,
-        image: foundPlace.image,
+        name: place.name,
+        description: place.description,
+        image: place.image,
+        url: pageUrl,
         address: {
             "@type": "PostalAddress",
-            addressLocality: foundPlace.district,
+            addressLocality: entry.district,
             addressRegion: "Rajasthan",
             addressCountry: "IN",
         },
-        priceRange: foundPlace.priceRange || "$$",
+        priceRange: place.priceRange || "$$",
     };
 
     const breadcrumbSchema = {
         "@context": "https://schema.org",
         "@type": "BreadcrumbList",
         itemListElement: [
-            {
-                "@type": "ListItem",
-                position: 1,
-                name: "Home",
-                item: "https://rajasthanplaces.in",
-            },
-            {
-                "@type": "ListItem",
-                position: 2,
-                name: "Shopping",
-                item: "https://rajasthanplaces.in/shopping",
-            },
+            { "@type": "ListItem", position: 1, name: "Home", item: SITE_URL },
+            { "@type": "ListItem", position: 2, name: "Shopping", item: `${SITE_URL}/shopping` },
             {
                 "@type": "ListItem",
                 position: 3,
-                name: foundPlace.name,
-                item: `https://rajasthanplaces.in/shopping/${placeSlug}`,
+                name: entry.district,
+                item: `${SITE_URL}/shopping/${entry.districtSlug}`,
             },
+            { "@type": "ListItem", position: 4, name: place.name, item: pageUrl },
         ],
     };
 
+    const faqs: { question: string; answer: string }[] = place.faqs || [];
+    const faqSchema =
+        faqs.length > 0
+            ? {
+                  "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  mainEntity: faqs.map((f) => ({
+                      "@type": "Question",
+                      name: f.question,
+                      acceptedAnswer: { "@type": "Answer", text: f.answer },
+                  })),
+              }
+            : null;
+
     return (
         <>
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(localBusinessSchema),
-                }}
+            <JsonLd data={localBusinessSchema} />
+            <JsonLd data={breadcrumbSchema} />
+            {faqSchema && <JsonLd data={faqSchema} />}
+            <ShoppingDetailClient
+                place={{ ...place, district: entry.district, districtSlug: entry.districtSlug }}
+                relatedLinks={getRelatedLinks(entry)}
+                districtSiblings={getDistrictSiblings(entry)}
             />
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(breadcrumbSchema),
-                }}
-            />
-            <ShoppingDetailClient place={foundPlace} />
         </>
     );
 }

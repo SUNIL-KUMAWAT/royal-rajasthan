@@ -2,10 +2,13 @@
 import type { Metadata } from "next";
 import ShoppingClient from "./ShoppingClient";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { RAJASTHAN_SHOPPING_HINDI } from "@/constants/shopping-hindi";
+import { toShoppingCards } from "@/lib/shopping";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
+import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs | Rajasthan Tourism Places",
+    title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs",
     description:
         "Explore the ultimate shopping guide to Rajasthan. Discover Johari Bazaar in Jaipur, Bapu Bazaar, Hathi Pol in Udaipur, Sardar Market in Jodhpur, and buy authentic Kundan jewelry, block-prints, mojaris & spices.",
     keywords: [
@@ -161,7 +164,34 @@ export default function ShoppingPage() {
             />
 
             {/* Client Component */}
-            <ShoppingClient />
+            <ShoppingClient
+                places={toShoppingCards(RAJASTHAN_SHOPPING)}
+                placesHi={toShoppingCards(RAJASTHAN_SHOPPING_HINDI)}
+            />
+
+            {/* Server-rendered district links so every district guide (and through it every market) is crawlable */}
+            <section className="bg-amber-50/60 dark:bg-gray-950 pb-16">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                        Shopping Guides by District
+                    </h2>
+                    <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+                        {RAJASTHAN_SHOPPING.districts.map((d) => (
+                            <li key={d.slug}>
+                                <Link
+                                    href={`/shopping/${d.slug}`}
+                                    className="block px-4 py-3 rounded-2xl bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/50 hover:border-amber-400 text-sm font-semibold text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-300 transition-colors"
+                                >
+                                    Shopping in {d.district}
+                                    <span className="block text-xs font-normal text-gray-500 dark:text-gray-400">
+                                        {d.shoppingPlaces.length} markets
+                                    </span>
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </section>
 
             {/* SEO Interlinks — Explore More */}
             <ExploreMoreSection currentPage="shopping" />
