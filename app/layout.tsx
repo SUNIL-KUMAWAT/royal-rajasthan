@@ -6,21 +6,43 @@ import { Footer } from "@/components/layout/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { LanguageProvider } from "@/components/LanguageProvider";
 import { MotionProvider } from "@/components/MotionProvider";
-import { Playfair_Display, Inter } from "next/font/google";
+import { Cormorant_Garamond, Manrope, Tiro_Devanagari_Hindi, Noto_Sans_Devanagari } from "next/font/google";
+import { AmbientBackground } from "@/components/ui/AmbientBackground";
 
 const Google_Analytics = 'G-BETYQHSK14'
-const playfair = Playfair_Display({
+
+// Display: classical editorial serif. Body: clean geometric sans.
+// Devanagari faces follow in the font stack so Hindi text gets proper glyphs.
+const display = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-playfair",
-  weight: ["400", "600", "700", "900"],
+  variable: "--font-display",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
   display: "swap",
 });
 
-const inter = Inter({
+const body = Manrope({
   subsets: ["latin"],
-  variable: "--font-inter",
-  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-body",
+  weight: ["400", "500", "600", "700"],
   display: "swap",
+});
+
+const displayHi = Tiro_Devanagari_Hindi({
+  subsets: ["devanagari"],
+  variable: "--font-display-hi",
+  weight: "400",
+  style: ["normal", "italic"],
+  display: "swap",
+  preload: false,
+});
+
+const bodyHi = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-body-hi",
+  weight: ["400", "500", "600", "700"],
+  display: "swap",
+  preload: false,
 });
 
 export const viewport: Viewport = {
@@ -29,8 +51,8 @@ export const viewport: Viewport = {
   maximumScale: 5.0,
   colorScheme: "light dark",
   themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#1a1a1a" },
+    { media: "(prefers-color-scheme: light)", color: "#F8F3EA" },
+    { media: "(prefers-color-scheme: dark)", color: "#0B0A08" },
   ],
 };
 
@@ -186,7 +208,7 @@ export default function RootLayout({
         />
 
       </head>
-      <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
+      <body className={`${display.variable} ${body.variable} ${displayHi.variable} ${bodyHi.variable} font-sans`}>
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-K9BN2J7Z"
@@ -232,8 +254,9 @@ export default function RootLayout({
         <LanguageProvider>
           <ThemeProvider>
             <MotionProvider>
+              <AmbientBackground />
               <Navbar />
-              <main>{children}</main>
+              <main className="relative">{children}</main>
               <Footer />
             </MotionProvider>
           </ThemeProvider>

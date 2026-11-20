@@ -5,6 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, X } from "lucide-react";
 import type { DetailText } from "./text";
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
 type Props = {
     open: boolean;
     images: string[];
@@ -38,6 +40,9 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
         };
     }, [open, index, count, onClose, onIndexChange]);
 
+    const navBtn =
+        "absolute z-10 grid h-12 w-12 place-items-center rounded-full glass-dark text-white transition-all duration-500 ease-lux hover:scale-105 hover:bg-white/20 md:h-14 md:w-14";
+
     return (
         <AnimatePresence>
             {open && (
@@ -48,18 +53,36 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit={{ opacity: 0 }}
-                    className="fixed inset-0 z-[60] bg-black/95 flex items-center justify-center p-4"
+                    transition={{ duration: 0.4, ease: EASE }}
+                    className="fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/95 p-4 backdrop-blur-xl"
                     onClick={onClose}
                 >
-                    <button
-                        ref={closeRef}
-                        type="button"
-                        onClick={onClose}
-                        aria-label={t.close}
-                        className="absolute top-4 right-4 w-11 h-11 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 z-10"
-                    >
-                        <X size={20} />
-                    </button>
+                    {/* Soft blurred echo of the current photo as ambient light */}
+                    <div className="pointer-events-none absolute inset-0 overflow-hidden opacity-30" aria-hidden="true">
+                        <Image src={images[index]} alt="" fill sizes="10vw" className="scale-110 object-cover blur-3xl" />
+                    </div>
+
+                    {/* Top bar: title + counter + close */}
+                    <div className="absolute inset-x-4 top-4 z-10 flex items-center justify-between gap-4 md:inset-x-6 md:top-6">
+                        <div className="min-w-0 text-ivory-50">
+                            <p className="truncate font-display text-xl font-medium md:text-2xl">{name}</p>
+                            <p className="text-xs tracking-[0.2em] text-ivory-100/60" aria-hidden="true">
+                                <span className="font-display text-base italic text-gold-300">
+                                    {String(index + 1).padStart(2, "0")}
+                                </span>{" "}
+                                / {String(count).padStart(2, "0")}
+                            </p>
+                        </div>
+                        <button
+                            ref={closeRef}
+                            type="button"
+                            onClick={onClose}
+                            aria-label={t.close}
+                            className="grid h-12 w-12 shrink-0 place-items-center rounded-full glass-dark text-white transition-all duration-500 ease-lux hover:rotate-90 hover:bg-white/20"
+                        >
+                            <X size={20} />
+                        </button>
+                    </div>
 
                     {count > 1 && (
                         <button
@@ -69,7 +92,7 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
                                 go(-1);
                             }}
                             aria-label={t.previous}
-                            className="absolute left-4 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 z-10"
+                            className={`${navBtn} left-3 md:left-6`}
                         >
                             <ChevronLeft size={24} />
                         </button>
@@ -77,9 +100,10 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
 
                     <motion.div
                         key={index}
-                        initial={{ opacity: 0, scale: 0.95 }}
+                        initial={{ opacity: 0, scale: 0.96 }}
                         animate={{ opacity: 1, scale: 1 }}
-                        className="relative w-full max-w-5xl h-[85vh]"
+                        transition={{ duration: 0.6, ease: EASE }}
+                        className="relative h-[72vh] w-full max-w-5xl md:h-[78vh]"
                         onClick={(e) => e.stopPropagation()}
                     >
                         <Image
@@ -87,7 +111,7 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
                             alt={t.photoOf(name, index + 1)}
                             fill
                             sizes="(min-width: 1024px) 1024px, 100vw"
-                            className="object-contain rounded-lg"
+                            className="rounded-2xl object-contain"
                         />
                     </motion.div>
 
@@ -99,14 +123,14 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
                                 go(1);
                             }}
                             aria-label={t.next}
-                            className="absolute right-4 w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white hover:bg-white/20 z-10"
+                            className={`${navBtn} right-3 md:right-6`}
                         >
                             <ChevronRight size={24} />
                         </button>
                     )}
 
                     {count > 1 && (
-                        <div className="absolute bottom-6 flex gap-1 z-10">
+                        <div className="absolute bottom-5 z-10 flex gap-0.5 rounded-full glass-dark px-2 md:bottom-8">
                             {images.map((img, i) => (
                                 <button
                                     type="button"
@@ -120,8 +144,8 @@ export function Lightbox({ open, images, name, index, onIndexChange, onClose, t 
                                     className="p-2"
                                 >
                                     <span
-                                        className={`block rounded-full transition-all ${
-                                            i === index ? "w-6 h-2 bg-yellow-500" : "w-2 h-2 bg-white/40"
+                                        className={`block h-1.5 rounded-full transition-all duration-500 ease-lux ${
+                                            i === index ? "w-6 bg-gold-300" : "w-1.5 bg-white/40 hover:bg-white/70"
                                         }`}
                                     />
                                 </button>

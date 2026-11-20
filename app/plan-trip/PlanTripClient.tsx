@@ -30,6 +30,7 @@ import { CITIES, CITIES_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 import type { TripPlace as Place } from "@/lib/places";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
+import { PageHero } from "@/components/ui/PageHero";
 
 // ============ TYPES ============
 interface DayPlan {
@@ -57,6 +58,11 @@ interface TripConfig {
 }
 
 // ============ CONSTANTS ============
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const PANEL_LABEL =
+    "mb-3 block text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-500 dark:text-ivory-200/60";
+
 const STEPS = [
     {
         id: 1,
@@ -864,24 +870,24 @@ function getTimeSlotInfo(slot: "morning" | "afternoon" | "evening") {
                 icon: Sunrise,
                 label: "Morning",
                 time: "8:00 AM - 12:00 PM",
-                color: "text-orange-500",
-                bg: "bg-orange-50 dark:bg-orange-900/20",
+                color: "text-royal-orange",
+                bg: "bg-royal-orange/10",
             };
         case "afternoon":
             return {
                 icon: Sun,
                 label: "Afternoon",
                 time: "1:00 PM - 5:00 PM",
-                color: "text-yellow-500",
-                bg: "bg-yellow-50 dark:bg-yellow-900/20",
+                color: "text-gold-600 dark:text-gold-400",
+                bg: "bg-gold-500/15",
             };
         case "evening":
             return {
                 icon: Sunset,
                 label: "Evening",
                 time: "5:00 PM - 8:00 PM",
-                color: "text-purple-500",
-                bg: "bg-purple-50 dark:bg-purple-900/20",
+                color: "text-maroon-500 dark:text-maroon-300",
+                bg: "bg-maroon-500/10 dark:bg-maroon-500/20",
             };
     }
 }
@@ -1027,10 +1033,12 @@ function showToast(message: string) {
     const toast = document.createElement("div");
     toast.textContent = message;
     toast.style.cssText = `
-    position:fixed; top:80px; left:50%; transform:translateX(-50%);
-    background:#1f2937; color:white; padding:12px 24px;
+    position:fixed; top:96px; left:50%; transform:translateX(-50%);
+    background:rgba(14,12,10,0.88); color:#F8F3EA; padding:12px 24px;
     border-radius:50px; z-index:9999; font-size:14px;
-    font-weight:500; box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    -webkit-backdrop-filter:blur(16px); backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,0.12);
+    font-weight:500; box-shadow:0 20px 50px -12px rgba(14,12,10,0.45);
     white-space:nowrap;
   `;
     document.body.appendChild(toast);
@@ -1327,82 +1335,78 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
     const stats = itinerary.length > 0 ? calculateTripStats(itinerary) : null;
 
     return (
-        <div className="min-h-screen bg-palace-white dark:bg-gray-950 mt-16">
+        <div className="relative isolate min-h-screen">
             {/* Hero */}
-            <section
-                className="h-48 md:h-64 relative flex items-end justify-center pb-8"
-                style={{
-                    backgroundImage:
-                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg)",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-            >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-black/30" />
-                <div className="relative z-10 text-center px-4">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="font-playfair text-3xl md:text-5xl font-bold text-white mb-2"
-                    >
-                        Plan Your{" "}
-                        <span className="text-yellow-400">Rajasthan Trip</span>
-                    </motion.h1>
-                    <p className="text-white/70 text-sm md:text-base">
-                        Create a personalized itinerary in minutes
-                    </p>
-                </div>
-            </section>
+            <PageHero
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg"
+                imageAlt="Mehrangarh Fort, Jodhpur"
+                eyebrow="Trip Planner"
+                title={
+                    <>
+                        Plan Your <em>Rajasthan Trip</em>
+                    </>
+                }
+                subtitle="Create a personalized itinerary in minutes"
+                breadcrumbs={[{ label: "Home", href: "/" }, { label: "Plan Trip" }]}
+            />
 
-            {/* Step Indicator */}
-            <div className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 py-6">
-                <div className="max-w-4xl mx-auto px-4">
+            {/* Ambient light behind the planner */}
+            <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-[60svh] -z-10 h-[120vh] overflow-hidden">
+                <div className="absolute -left-40 top-0 h-[32rem] w-[32rem] rounded-full bg-gold-500/15 blur-[140px] dark:bg-gold-500/10" />
+                <div className="absolute -right-40 top-1/2 h-[30rem] w-[30rem] rounded-full bg-maroon-500/10 blur-[140px] dark:bg-maroon-500/20" />
+            </div>
+
+            {/* Step Indicator — floating glass rail overlapping the hero */}
+            <div className="relative z-10 -mt-12 px-4 md:-mt-14">
+                <div className="glass-strong mx-auto max-w-4xl rounded-[1.75rem] px-4 py-5 sm:px-8 sm:py-6">
                     <div className="flex items-center justify-between">
                         {STEPS.map((s, i) => {
                             const Icon = s.icon;
                             const isActive = step === s.id;
                             const isCompleted = step > s.id;
                             return (
-                                <div key={s.id} className="flex items-center flex-1">
+                                <div key={s.id} className="flex items-center flex-1 last:flex-none">
                                     <div className="flex flex-col items-center">
                                         <motion.div
-                                            animate={{ scale: isActive ? 1.1 : 1 }}
-                                            className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm transition-all duration-300 ${isCompleted
-                                                ? "bg-green-500 text-white"
+                                            animate={{ scale: isActive ? 1.08 : 1 }}
+                                            transition={{ duration: 0.5, ease: EASE }}
+                                            aria-current={isActive ? "step" : undefined}
+                                            className={`flex h-11 w-11 items-center justify-center rounded-full text-sm font-bold transition-all duration-500 ease-lux sm:h-12 sm:w-12 ${isCompleted
+                                                ? "bg-ink-900 text-gold-300 dark:bg-ivory-100 dark:text-ink-900"
                                                 : isActive
-                                                    ? "bg-yellow-500 text-white shadow-lg ring-4 ring-yellow-200 dark:ring-yellow-800"
-                                                    : "bg-gray-100 dark:bg-gray-800 text-gray-400"
+                                                    ? "bg-gold-400 text-ink-900 shadow-gold ring-4 ring-gold-400/25"
+                                                    : "border border-ink-900/10 bg-white/50 text-ink-400 dark:border-white/10 dark:bg-white/5 dark:text-ivory-200/40"
                                                 }`}
                                         >
                                             {isCompleted ? (
-                                                <Check size={20} />
+                                                <Check size={18} />
                                             ) : (
-                                                <Icon size={20} />
+                                                <Icon size={18} />
                                             )}
                                         </motion.div>
-                                        <div className="mt-2 text-center hidden sm:block">
+                                        <div className="mt-2.5 hidden text-center sm:block">
                                             <div
-                                                className={`text-xs font-medium ${isActive
-                                                    ? "text-yellow-600 dark:text-yellow-400"
+                                                className={`text-xs font-semibold ${isActive
+                                                    ? "text-ink-900 dark:text-ivory-50"
                                                     : isCompleted
-                                                        ? "text-green-600"
-                                                        : "text-gray-400"
+                                                        ? "text-gold-700 dark:text-gold-400"
+                                                        : "text-ink-400 dark:text-ivory-200/45"
                                                     }`}
                                             >
                                                 {s.title}
                                             </div>
-                                            <div className="text-xs text-gray-400 mt-0.5">
+                                            <div className="mt-0.5 text-[11px] text-ink-400 dark:text-ivory-200/45">
                                                 {s.description}
                                             </div>
                                         </div>
                                     </div>
                                     {i < STEPS.length - 1 && (
-                                        <div
-                                            className={`flex-1 h-0.5 mx-2 mt-[-20px] sm:mt-0 transition-all duration-500 ${step > s.id
-                                                ? "bg-green-500"
-                                                : "bg-gray-200 dark:bg-gray-700"
-                                                }`}
-                                        />
+                                        <div className="relative mx-2 h-px flex-1 overflow-hidden rounded-full bg-ink-900/10 sm:-mt-10 dark:bg-white/10">
+                                            <div
+                                                className={`absolute inset-y-0 left-0 bg-gold-500 transition-all duration-700 ease-lux ${step > s.id ? "w-full" : "w-0"
+                                                    }`}
+                                            />
+                                        </div>
                                     )}
                                 </div>
                             );
@@ -1412,51 +1416,51 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
             </div>
 
             {/* Content */}
-            <div className="max-w-5xl mx-auto px-4 py-8">
+            <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
                 <AnimatePresence mode="wait">
 
                     {/* ========== STEP 1: CITIES ========== */}
                     {step === 1 && (
                         <motion.div
                             key="step1"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: 40 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
+                            exit={{ opacity: 0, x: -40 }}
+                            transition={{ duration: 0.5, ease: EASE }}
                         >
-                            <div className="text-center mb-6">
-                                <h2 className="font-playfair text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    Which cities do you want to visit?
-                                </h2>
-                                <p className="text-gray-500 dark:text-gray-400 text-sm">
-                                    Tap to select — multiple cities allowed
-                                </p>
-                            </div>
+                            <StepHeading
+                                eyebrow="Step 01"
+                                title="Which cities do you want to visit?"
+                                subtitle="Tap to select — multiple cities allowed"
+                            />
 
                             {/* Selected cities sticky bar */}
                             {config.selectedCities.length > 0 && (
                                 <motion.div
                                     initial={{ opacity: 0, y: -10 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    className="sticky top-20 z-30 mb-4 bg-yellow-50/90 dark:bg-yellow-900/30 backdrop-blur-md border border-yellow-200 dark:border-yellow-800 rounded-2xl px-4 py-3 flex items-center gap-2 flex-wrap shadow-md"
+                                    transition={{ duration: 0.4, ease: EASE }}
+                                    className="glass-strong sticky top-20 z-30 mb-6 flex flex-wrap items-center gap-2 rounded-full px-3 py-2 md:top-24"
                                 >
-                                    <span className="text-yellow-700 dark:text-yellow-400 font-semibold text-xs shrink-0">✓ Selected:</span>
+                                    <span className="shrink-0 pl-2 text-xs font-semibold text-gold-700 dark:text-gold-400">✓ Selected:</span>
                                     {config.selectedCities.map((city) => (
-                                        <span key={city} className="flex items-center gap-1 bg-yellow-400 text-yellow-900 px-2.5 py-1 rounded-full text-xs font-bold">
+                                        <span key={city} className="flex items-center gap-1 rounded-full bg-ink-900 py-1 pl-3 pr-1.5 text-xs font-semibold text-ivory-50 dark:bg-gold-400 dark:text-ink-900">
                                             {city}
                                             <button
                                                 onClick={(e) => { e.stopPropagation(); toggleCity(city); }}
-                                                className="ml-0.5 hover:text-red-700 transition-colors"
+                                                aria-label={`Remove ${city}`}
+                                                className="ml-0.5 flex h-5 w-5 items-center justify-center rounded-full transition-colors hover:bg-white/20 dark:hover:bg-ink-900/15"
                                             >
                                                 <X size={11} />
                                             </button>
                                         </span>
                                     ))}
-                                    <span className="ml-auto text-yellow-600 dark:text-yellow-500 text-xs font-medium">{config.selectedCities.length} city selected</span>
+                                    <span className="ml-auto pr-2 text-xs font-medium text-ink-500 dark:text-ivory-200/60">{config.selectedCities.length} city selected</span>
                                 </motion.div>
                             )}
 
                             {/* Modern City Grid */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3.5">
+                            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                                 {availableCities.map((city) => {
                                     const isSelected = config.selectedCities.includes(city);
                                     const engCityName = getEnglishCityName(city);
@@ -1477,27 +1481,28 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                             key={city}
                                             whileTap={{ scale: 0.98 }}
                                             onClick={() => toggleCity(city)}
-                                            className={`group relative rounded-2xl p-4 text-left w-full transition-all duration-200 cursor-pointer flex flex-col justify-between ${isSelected
-                                                ? "bg-gradient-to-br from-amber-500/15 via-yellow-500/10 to-amber-500/5 dark:from-yellow-950/40 dark:via-gray-800 dark:to-amber-900/30 border-2 border-amber-500 dark:border-amber-400 shadow-md shadow-amber-500/10"
-                                                : "bg-white dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700/80 hover:border-amber-400/80 dark:hover:border-amber-500/50 hover:shadow-md hover:bg-amber-50/20 dark:hover:bg-gray-800"
+                                            aria-pressed={isSelected}
+                                            className={`group relative flex w-full cursor-pointer flex-col justify-between rounded-[1.5rem] p-5 text-left transition-all duration-500 ease-lux hover:-translate-y-1 ${isSelected
+                                                ? "glass-strong !border-gold-500/70 shadow-gold ring-1 ring-gold-500/50"
+                                                : "glass hover:shadow-float-lg"
                                                 }`}
                                         >
                                             {/* Header: Icon + Places badge + Check badge */}
                                             <div>
-                                                <div className="flex items-center justify-between gap-2 mb-2.5">
-                                                    <div className="w-10 h-10 rounded-xl flex items-center justify-center text-xl bg-gradient-to-br from-amber-100 to-yellow-50 dark:from-yellow-950/60 dark:to-amber-900/40 border border-amber-200/80 dark:border-amber-700/50 shadow-inner flex-shrink-0 group-hover:scale-105 transition-transform">
+                                                <div className="mb-4 flex items-center justify-between gap-2">
+                                                    <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-gold-500/25 bg-gold-500/10 text-xl transition-transform duration-500 ease-lux group-hover:scale-110 group-hover:-rotate-6">
                                                         <span>{meta.icon}</span>
                                                     </div>
                                                     <div className="flex items-center gap-2">
-                                                        <span className={`text-[11px] font-semibold px-2.5 py-0.5 rounded-full transition-colors ${isSelected
-                                                            ? "bg-amber-200/80 text-amber-900 dark:bg-amber-900/60 dark:text-amber-200"
-                                                            : "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-400"
+                                                        <span className={`rounded-full px-2.5 py-0.5 text-[11px] font-semibold transition-colors ${isSelected
+                                                            ? "bg-gold-400/25 text-gold-800 dark:text-gold-200"
+                                                            : "bg-ink-900/5 text-ink-500 dark:bg-white/5 dark:text-ivory-200/60"
                                                             }`}>
                                                             {cityPlaces} {isHi ? "स्थान" : "places"}
                                                         </span>
-                                                        <div className={`w-6 h-6 rounded-full flex items-center justify-center transition-all duration-200 ${isSelected
-                                                            ? "bg-amber-500 text-white shadow-sm scale-100"
-                                                            : "bg-gray-100 dark:bg-gray-800 text-gray-300 dark:text-gray-600 border border-gray-200 dark:border-gray-700 scale-90 opacity-60 group-hover:opacity-100"
+                                                        <div className={`flex h-6 w-6 items-center justify-center rounded-full transition-all duration-300 ease-lux ${isSelected
+                                                            ? "scale-100 bg-gold-400 text-ink-900 shadow-sm"
+                                                            : "scale-90 border border-ink-900/10 text-ink-300 opacity-60 group-hover:opacity-100 dark:border-white/10 dark:text-ivory-200/30"
                                                             }`}>
                                                             <Check size={13} className={isSelected ? "stroke-[3]" : ""} />
                                                         </div>
@@ -1506,24 +1511,24 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
 
                                                 {/* City Name & Royal Tagline */}
                                                 <div>
-                                                    <div className="font-playfair font-bold text-gray-900 dark:text-white text-base leading-tight group-hover:text-amber-600 dark:group-hover:text-amber-400 transition-colors">
+                                                    <div className="font-display text-2xl font-medium leading-tight tracking-tight text-ink-900 transition-colors dark:text-ivory-50">
                                                         {city}
                                                     </div>
-                                                    <div className="text-amber-700 dark:text-amber-400 text-xs font-semibold tracking-wide flex items-center gap-1 mt-0.5">
-                                                        <Sparkles size={11} className="shrink-0 text-amber-500" />
+                                                    <div className="mt-1 flex items-center gap-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-700 dark:text-gold-400">
+                                                        <Sparkles size={11} className="shrink-0" />
                                                         <span className="truncate">{isHi ? meta.tagHi : meta.tag}</span>
                                                     </div>
                                                 </div>
 
                                                 {/* Description */}
-                                                <p className="text-xs text-gray-600 dark:text-gray-300 line-clamp-2 leading-relaxed mt-1.5">
+                                                <p className="mt-3 line-clamp-2 text-xs leading-relaxed text-ink-500 dark:text-ivory-200/65">
                                                     {isHi ? meta.descHi : meta.desc}
                                                 </p>
                                             </div>
 
                                             {/* Landmarks highlight footer */}
-                                            <div className="mt-3 pt-2.5 border-t border-gray-100 dark:border-gray-700/60 flex items-center gap-1.5 text-[11px] text-gray-500 dark:text-gray-400 font-medium">
-                                                <span className="text-amber-500 shrink-0 text-xs">🏛️</span>
+                                            <div className="mt-4 flex items-center gap-1.5 border-t border-ink-900/10 pt-3 text-[11px] font-medium text-ink-500 dark:border-white/10 dark:text-ivory-200/55">
+                                                <span className="shrink-0 text-xs">🏛️</span>
                                                 <span className="truncate">{isHi ? meta.highlightsHi : meta.highlights}</span>
                                             </div>
                                         </motion.button>
@@ -1537,26 +1542,25 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                     {step === 2 && (
                         <motion.div
                             key="step2"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: 40 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
+                            exit={{ opacity: 0, x: -40 }}
+                            transition={{ duration: 0.5, ease: EASE }}
                         >
-                            <div className="text-center mb-8">
-                                <h2 className="font-playfair text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    How long is your trip?
-                                </h2>
-                                <p className="text-gray-500 dark:text-gray-400">
-                                    Set your travel dates and pace
-                                </p>
-                            </div>
+                            <StepHeading
+                                eyebrow="Step 02"
+                                title="How long is your trip?"
+                                subtitle="Set your travel dates and pace"
+                            />
 
-                            <div className="max-w-2xl mx-auto space-y-6">
+                            <div className="mx-auto grid max-w-4xl gap-5 md:grid-cols-5">
                                 {/* Start Date */}
-                                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-                                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                                <div className="glass rounded-[1.75rem] p-6 md:col-span-2 md:p-7">
+                                    <label htmlFor="trip-start-date" className={PANEL_LABEL}>
                                         📅 Start Date
                                     </label>
                                     <input
+                                        id="trip-start-date"
                                         type="date"
                                         value={config.startDate}
                                         min={new Date().toISOString().split("T")[0]}
@@ -1566,16 +1570,16 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                 startDate: e.target.value,
                                             }))
                                         }
-                                        className="w-full border border-gray-200 dark:border-gray-700 dark:bg-gray-800 dark:text-white rounded-xl px-4 py-3 outline-none focus:border-yellow-400 text-lg transition-colors"
+                                        className="field !text-base dark:[color-scheme:dark]"
                                     />
                                 </div>
 
                                 {/* Number of Days */}
-                                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-                                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-4">
+                                <div className="glass rounded-[1.75rem] p-6 md:col-span-3 md:row-span-2 md:p-7">
+                                    <label className={PANEL_LABEL}>
                                         📆 Number of Days
                                     </label>
-                                    <div className="flex items-center gap-6 justify-center mb-4">
+                                    <div className="mb-6 mt-2 flex items-center justify-center gap-8">
                                         <button
                                             onClick={() =>
                                                 setConfig((p) => ({
@@ -1583,15 +1587,16 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                     days: Math.max(1, p.days - 1),
                                                 }))
                                             }
-                                            className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 flex items-center justify-center text-2xl hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-all"
+                                            aria-label="Decrease days"
+                                            className="btn-glass !h-12 !w-12 !p-0 text-2xl"
                                         >
                                             −
                                         </button>
-                                        <div className="text-center">
-                                            <div className="text-5xl font-bold text-yellow-600 dark:text-yellow-400 font-playfair">
+                                        <div className="min-w-[6rem] text-center" aria-live="polite">
+                                            <div className="font-display text-7xl font-medium leading-none tracking-tight text-ink-900 dark:text-ivory-50">
                                                 {config.days}
                                             </div>
-                                            <div className="text-gray-400 text-sm mt-1">
+                                            <div className="mt-2 text-[11px] font-semibold uppercase tracking-eyebrow text-gold-700 dark:text-gold-400">
                                                 {config.days === 1 ? "Day" : "Days"}
                                             </div>
                                         </div>
@@ -1602,33 +1607,32 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                     days: Math.min(14, p.days + 1),
                                                 }))
                                             }
-                                            className="w-12 h-12 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 flex items-center justify-center text-2xl hover:bg-yellow-100 dark:hover:bg-yellow-900/30 transition-all"
+                                            aria-label="Increase days"
+                                            className="btn-glass !h-12 !w-12 !p-0 text-2xl"
                                         >
                                             +
                                         </button>
                                     </div>
 
-                                    <div className="flex justify-center gap-2 flex-wrap">
+                                    <div className="flex flex-wrap justify-center gap-2">
                                         {[2, 3, 5, 7, 10].map((d) => (
                                             <button
                                                 key={d}
                                                 onClick={() =>
                                                     setConfig((p) => ({ ...p, days: d }))
                                                 }
-                                                className={`px-4 py-1.5 rounded-full text-sm font-medium transition-all ${config.days === d
-                                                    ? "bg-yellow-500 text-white"
-                                                    : "bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 hover:bg-yellow-100"
-                                                    }`}
+                                                aria-pressed={config.days === d}
+                                                className={config.days === d ? "chip-active" : "chip-idle"}
                                             >
                                                 {d} Days
                                             </button>
                                         ))}
                                     </div>
 
-                                    <div className="mt-4 bg-blue-50 dark:bg-blue-900/20 rounded-xl p-3 text-sm text-blue-700 dark:text-blue-400 flex items-start gap-2">
+                                    <div className="mt-6 flex items-start gap-2 rounded-2xl border border-gold-500/20 bg-gold-500/10 p-3.5 text-sm text-ink-700 dark:text-ivory-100/85">
                                         <AlertCircle
                                             size={16}
-                                            className="mt-0.5 flex-shrink-0"
+                                            className="mt-0.5 flex-shrink-0 text-gold-700 dark:text-gold-400"
                                         />
                                         <span>
                                             Recommended:{" "}
@@ -1639,28 +1643,31 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                 </div>
 
                                 {/* Travel Pace */}
-                                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-                                    <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-4">
+                                <div className="glass rounded-[1.75rem] p-6 md:col-span-2 md:p-7">
+                                    <label className={PANEL_LABEL}>
                                         🏃 Travel Pace
                                     </label>
-                                    <div className="grid grid-cols-3 gap-3">
+                                    <div className="grid grid-cols-3 gap-2.5 md:grid-cols-1">
                                         {PACE_OPTIONS.map((pace) => (
                                             <button
                                                 key={pace.id}
                                                 onClick={() =>
                                                     setConfig((p) => ({ ...p, pace: pace.id }))
                                                 }
-                                                className={`p-4 rounded-xl border-2 text-center transition-all ${config.pace === pace.id
-                                                    ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
-                                                    : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
+                                                aria-pressed={config.pace === pace.id}
+                                                className={`flex flex-col items-center gap-1 rounded-2xl p-3 text-center transition-all duration-300 ease-lux md:flex-row md:gap-3 md:text-left ${config.pace === pace.id
+                                                    ? "bg-ink-900 text-ivory-50 shadow-float dark:bg-gold-400 dark:text-ink-900"
+                                                    : "border border-ink-900/10 bg-white/40 text-ink-800 hover:border-gold-500/50 dark:border-white/10 dark:bg-white/5 dark:text-ivory-100"
                                                     }`}
                                             >
-                                                <div className="text-3xl mb-2">{pace.icon}</div>
-                                                <div className="font-bold text-sm text-gray-800 dark:text-gray-200">
-                                                    {pace.label}
-                                                </div>
-                                                <div className="text-xs text-gray-400 mt-1">
-                                                    {pace.description}
+                                                <div className="text-2xl">{pace.icon}</div>
+                                                <div>
+                                                    <div className="text-sm font-semibold">
+                                                        {pace.label}
+                                                    </div>
+                                                    <div className="mt-0.5 text-[11px] opacity-60">
+                                                        {pace.description}
+                                                    </div>
                                                 </div>
                                             </button>
                                         ))}
@@ -1674,21 +1681,19 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                     {step === 3 && (
                         <motion.div
                             key="step3"
-                            initial={{ opacity: 0, x: 50 }}
+                            initial={{ opacity: 0, x: 40 }}
                             animate={{ opacity: 1, x: 0 }}
-                            exit={{ opacity: 0, x: -50 }}
+                            exit={{ opacity: 0, x: -40 }}
+                            transition={{ duration: 0.5, ease: EASE }}
                         >
-                            <div className="text-center mb-8">
-                                <h2 className="font-playfair text-3xl font-bold text-gray-900 dark:text-white mb-2">
-                                    What interests you?
-                                </h2>
-                                <p className="text-gray-500 dark:text-gray-400">
-                                    Select your interests to personalize (optional)
-                                </p>
-                            </div>
+                            <StepHeading
+                                eyebrow="Step 03"
+                                title="What interests you?"
+                                subtitle="Select your interests to personalize (optional)"
+                            />
 
-                            <div className="max-w-2xl mx-auto">
-                                <div className="grid grid-cols-3 sm:grid-cols-4 gap-3 mb-8">
+                            <div className="mx-auto max-w-4xl">
+                                <div className="mb-8 grid grid-cols-3 gap-3 sm:grid-cols-4 lg:grid-cols-6">
                                     {INTERESTS.map((interest) => {
                                         const isSelected = config.interests.includes(
                                             interest.id
@@ -1696,28 +1701,26 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                         return (
                                             <motion.button
                                                 key={interest.id}
-                                                whileHover={{ scale: 1.05 }}
-                                                whileTap={{ scale: 0.95 }}
+                                                whileHover={{ y: -4 }}
+                                                whileTap={{ scale: 0.96 }}
                                                 onClick={() => toggleInterest(interest.id)}
-                                                className={`p-4 rounded-xl border-2 text-center transition-all ${isSelected
-                                                    ? "border-yellow-500 bg-yellow-50 dark:bg-yellow-900/20"
-                                                    : "border-gray-200 dark:border-gray-700 hover:border-yellow-300"
+                                                aria-pressed={isSelected}
+                                                className={`relative rounded-[1.25rem] p-4 text-center transition-colors duration-300 ease-lux ${isSelected
+                                                    ? "bg-ink-900 text-ivory-50 shadow-float dark:bg-gold-400 dark:text-ink-900"
+                                                    : "glass text-ink-600 dark:text-ivory-200/80"
                                                     }`}
                                             >
-                                                <div className="text-3xl mb-2">{interest.icon}</div>
-                                                <div
-                                                    className={`text-sm font-medium ${isSelected
-                                                        ? "text-yellow-700 dark:text-yellow-400"
-                                                        : "text-gray-600 dark:text-gray-400"
-                                                        }`}
-                                                >
+                                                <div className="mb-2 text-3xl">{interest.icon}</div>
+                                                <div className="text-sm font-medium">
                                                     {interest.label}
                                                 </div>
                                                 {isSelected && (
-                                                    <Check
-                                                        size={14}
-                                                        className="text-yellow-500 mx-auto mt-1"
-                                                    />
+                                                    <span className="absolute right-2 top-2 flex h-5 w-5 items-center justify-center rounded-full bg-gold-400 text-ink-900 dark:bg-ink-900 dark:text-gold-300">
+                                                        <Check
+                                                            size={12}
+                                                            className="stroke-[3]"
+                                                        />
+                                                    </span>
                                                 )}
                                             </motion.button>
                                         );
@@ -1725,36 +1728,29 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                 </div>
 
                                 {/* Summary */}
-                                <div className="bg-white dark:bg-gray-900 rounded-2xl p-6 border border-gray-200 dark:border-gray-700">
-                                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4">
+                                <div className="glass-strong rounded-[1.75rem] p-6 md:p-8">
+                                    <h3 className="font-display text-2xl font-medium text-ink-900 dark:text-ivory-50">
                                         📋 Trip Summary
                                     </h3>
-                                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                                        <div className="text-center p-3 bg-yellow-50 dark:bg-yellow-900/20 rounded-xl">
-                                            <div className="text-2xl font-bold text-yellow-600 dark:text-yellow-400">
-                                                {config.selectedCities.length}
+                                    <div className="hairline my-5" />
+                                    <div className="grid grid-cols-2 gap-4 md:grid-cols-4">
+                                        {[
+                                            { label: "Cities", value: config.selectedCities.length },
+                                            { label: "Days", value: config.days },
+                                            {
+                                                label: "Places/Day",
+                                                value: PACE_OPTIONS.find((p) => p.id === config.pace)
+                                                    ?.placesPerDay || 2,
+                                            },
+                                            { label: "Interests", value: config.interests.length },
+                                        ].map((s) => (
+                                            <div key={s.label} className="rounded-2xl bg-ink-900/[0.03] p-4 text-center dark:bg-white/[0.04]">
+                                                <div className="font-display text-4xl font-medium leading-none text-ink-900 dark:text-ivory-50">
+                                                    {s.value}
+                                                </div>
+                                                <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-gold-700 dark:text-gold-400">{s.label}</div>
                                             </div>
-                                            <div className="text-xs text-gray-500">Cities</div>
-                                        </div>
-                                        <div className="text-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
-                                            <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">
-                                                {config.days}
-                                            </div>
-                                            <div className="text-xs text-gray-500">Days</div>
-                                        </div>
-                                        <div className="text-center p-3 bg-green-50 dark:bg-green-900/20 rounded-xl">
-                                            <div className="text-2xl font-bold text-green-600 dark:text-green-400">
-                                                {PACE_OPTIONS.find((p) => p.id === config.pace)
-                                                    ?.placesPerDay || 2}
-                                            </div>
-                                            <div className="text-xs text-gray-500">Places/Day</div>
-                                        </div>
-                                        <div className="text-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-xl">
-                                            <div className="text-2xl font-bold text-purple-600 dark:text-purple-400">
-                                                {config.interests.length}
-                                            </div>
-                                            <div className="text-xs text-gray-500">Interests</div>
-                                        </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
@@ -1767,27 +1763,30 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                             key="step4"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, ease: EASE }}
                         >
                             {/* Header */}
-                            <div className="text-center mb-8">
+                            <div className="mb-10 text-center">
                                 <motion.div
                                     initial={{ scale: 0 }}
                                     animate={{ scale: 1 }}
-                                    className="text-5xl mb-4"
+                                    transition={{ type: "spring", stiffness: 260, damping: 18 }}
+                                    className="glass mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full text-4xl"
                                 >
                                     🎉
                                 </motion.div>
-                                <h2 className="font-playfair text-3xl font-bold text-gray-900 dark:text-white mb-2">
+                                <span className="eyebrow">Step 04</span>
+                                <h2 className="display-title mt-4 text-4xl sm:text-5xl md:text-6xl">
                                     Your Itinerary is Ready!
                                 </h2>
-                                <p className="text-gray-500 dark:text-gray-400">
+                                <p className="mt-4 text-ink-500 dark:text-ivory-200/70">
                                     {stats?.totalDays} Days •{" "}
                                     {stats?.totalCities} Cities •{" "}
                                     {stats?.totalPlaces} Places
                                 </p>
 
                                 {/* Selected Cities Strip */}
-                                <div className="flex justify-center gap-2.5 mt-6 flex-wrap">
+                                <div className="mt-8 flex flex-wrap justify-center gap-2.5">
                                     {config.selectedCities.map((city) => {
                                         const eng = getEnglishCityName(city);
                                         const meta = CITY_METADATA[city] || CITY_METADATA[eng] || {
@@ -1803,14 +1802,14 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                         return (
                                             <div
                                                 key={city}
-                                                className="flex items-center gap-2.5 px-3.5 py-2 rounded-2xl bg-amber-50/90 dark:bg-yellow-950/40 border border-amber-200/80 dark:border-amber-700/60 shadow-sm"
+                                                className="glass flex items-center gap-2.5 rounded-full py-1.5 pl-2 pr-4"
                                             >
-                                                <span className="text-xl">{meta.icon}</span>
+                                                <span className="flex h-8 w-8 items-center justify-center rounded-full bg-gold-500/15 text-lg">{meta.icon}</span>
                                                 <div className="text-left">
-                                                    <div className="text-xs font-bold text-gray-900 dark:text-amber-100 leading-tight">
+                                                    <div className="text-xs font-semibold leading-tight text-ink-900 dark:text-ivory-50">
                                                         {city}
                                                     </div>
-                                                    <div className="text-[10px] text-amber-700 dark:text-amber-400 font-medium">
+                                                    <div className="text-[10px] font-medium text-gold-700 dark:text-gold-400">
                                                         {isHi ? meta.tagHi : meta.tag}
                                                     </div>
                                                 </div>
@@ -1822,22 +1821,22 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
 
                             {/* Stats */}
                             {stats && (
-                                <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-8">
+                                <div className="mb-8 grid grid-cols-2 gap-3 md:grid-cols-5">
                                     {[
-                                        { label: "Days", value: stats.totalDays, color: "text-yellow-600" },
-                                        { label: "Cities", value: stats.totalCities, color: "text-blue-600" },
-                                        { label: "Places", value: stats.totalPlaces, color: "text-green-600" },
-                                        { label: "Free Entry", value: stats.freeEntryCount, color: "text-purple-600" },
-                                        { label: "Est. Cost", value: `₹${stats.totalCost}`, color: "text-orange-600" },
-                                    ].map((s) => (
+                                        { label: "Days", value: stats.totalDays },
+                                        { label: "Cities", value: stats.totalCities },
+                                        { label: "Places", value: stats.totalPlaces },
+                                        { label: "Free Entry", value: stats.freeEntryCount },
+                                        { label: "Est. Cost", value: `₹${stats.totalCost}` },
+                                    ].map((s, i) => (
                                         <div
                                             key={s.label}
-                                            className="bg-white dark:bg-gray-900 rounded-xl p-4 text-center border border-gray-200 dark:border-gray-700"
+                                            className={`glass rounded-[1.5rem] p-5 text-center ${i === 4 ? "col-span-2 md:col-span-1" : ""}`}
                                         >
-                                            <div className={`text-2xl font-bold ${s.color}`}>
+                                            <div className={`font-display text-4xl font-medium leading-none ${i === 4 ? "text-gold-700 dark:text-gold-300" : "text-ink-900 dark:text-ivory-50"}`}>
                                                 {s.value}
                                             </div>
-                                            <div className="text-xs text-gray-400 mt-1">
+                                            <div className="mt-2 text-[11px] font-semibold uppercase tracking-[0.16em] text-ink-400 dark:text-ivory-200/55">
                                                 {s.label}
                                             </div>
                                         </div>
@@ -1846,13 +1845,13 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                             )}
 
                             {/* Action Buttons */}
-                            <div className="flex flex-wrap gap-3 justify-center mb-8">
+                            <div className="mb-10 flex flex-wrap justify-center gap-2.5">
                                 <button
                                     onClick={() => {
                                         downloadPDF(itinerary, config.selectedCities);
                                         showToast("🖨️ Opening print dialog...");
                                     }}
-                                    className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-600 dark:text-gray-400 hover:border-yellow-400 hover:text-yellow-600 transition-all"
+                                    className="btn-glass !px-5 !py-2.5"
                                 >
                                     <Printer size={16} />
                                     Print / PDF
@@ -1865,7 +1864,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                             config.selectedCities
                                         );
                                     }}
-                                    className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-600 dark:text-gray-400 hover:border-blue-400 hover:text-blue-600 transition-all"
+                                    className="btn-glass !px-5 !py-2.5"
                                 >
                                     <Share2 size={16} />
                                     Share
@@ -1876,7 +1875,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                         downloadPDF(itinerary, config.selectedCities);
                                         showToast("📄 PDF opened for saving!");
                                     }}
-                                    className="flex items-center gap-2 px-4 py-2.5 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white rounded-xl text-sm font-medium hover:shadow-lg transition-all hover:scale-105"
+                                    className="btn-gold !px-5 !py-2.5"
                                 >
                                     <Download size={16} />
                                     Download PDF
@@ -1887,7 +1886,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                         downloadText(itinerary);
                                         showToast("✅ Text file downloaded!");
                                     }}
-                                    className="flex items-center gap-2 px-4 py-2.5 bg-white dark:bg-gray-900 border border-gray-200 dark:border-gray-700 rounded-xl text-sm font-medium text-gray-600 dark:text-gray-400 hover:border-green-400 hover:text-green-600 transition-all"
+                                    className="btn-glass !px-5 !py-2.5"
                                 >
                                     <Download size={16} />
                                     Text File
@@ -1895,7 +1894,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
 
                                 <button
                                     onClick={handleReset}
-                                    className="flex items-center gap-2 px-4 py-2.5 bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 rounded-xl text-sm font-medium text-red-600 dark:text-red-400 hover:bg-red-100 transition-all"
+                                    className="btn !px-5 !py-2.5 border border-maroon-500/25 bg-maroon-500/10 text-maroon-600 hover:-translate-y-0.5 hover:bg-maroon-500/15 dark:text-maroon-300"
                                 >
                                     <RotateCcw size={16} />
                                     Start Over
@@ -1909,8 +1908,8 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                         key={day.day}
                                         initial={{ opacity: 0, y: 20 }}
                                         animate={{ opacity: 1, y: 0 }}
-                                        transition={{ delay: Math.min(day.day * 0.08, 0.5) }}
-                                        className="bg-white dark:bg-gray-900 rounded-2xl border border-gray-200 dark:border-gray-700 overflow-hidden"
+                                        transition={{ delay: Math.min(day.day * 0.08, 0.5), duration: 0.6, ease: EASE }}
+                                        className={`overflow-hidden rounded-[1.75rem] transition-shadow duration-500 ease-lux ${expandedDay === day.day ? "glass-strong" : "glass hover:shadow-float"}`}
                                     >
                                         {/* Day Header */}
                                         <button
@@ -1919,43 +1918,44 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                     expandedDay === day.day ? null : day.day
                                                 )
                                             }
-                                            className="w-full flex items-center justify-between p-4 hover:bg-gray-50 dark:hover:bg-gray-800/50 transition-all"
+                                            aria-expanded={expandedDay === day.day}
+                                            className="flex w-full items-center justify-between gap-3 p-4 transition-colors md:p-5"
                                         >
-                                            <div className="flex items-center gap-3">
+                                            <div className="flex min-w-0 items-center gap-4">
                                                 {/* City themed badge */}
                                                 {(() => {
                                                     const eng = getEnglishCityName(day.city);
                                                     const meta = CITY_METADATA[day.city] || CITY_METADATA[eng] || { icon: "📍" };
                                                     return (
-                                                        <div className="w-12 h-12 rounded-xl flex flex-col items-center justify-center bg-gradient-to-br from-amber-100 to-yellow-50 dark:from-yellow-950/50 dark:to-amber-900/30 border border-amber-300/80 dark:border-amber-700/60 shadow-sm flex-shrink-0">
+                                                        <div className="flex h-14 w-14 flex-shrink-0 flex-col items-center justify-center rounded-2xl bg-ink-900 text-ivory-50 shadow-float dark:bg-gold-400 dark:text-ink-900">
                                                             <span className="text-lg leading-none">{meta.icon}</span>
-                                                            <span className="text-[9px] font-black text-amber-900 dark:text-amber-300 uppercase leading-none mt-1">
+                                                            <span className="mt-1 text-[9px] font-bold uppercase leading-none tracking-wider text-gold-300 dark:text-ink-900">
                                                                 Day {day.day}
                                                             </span>
                                                         </div>
                                                     );
                                                 })()}
-                                                <div className="text-left">
-                                                    <div className="font-bold text-gray-800 dark:text-white text-sm md:text-base">
+                                                <div className="min-w-0 text-left">
+                                                    <div className="truncate font-display text-xl font-medium text-ink-900 md:text-2xl dark:text-ivory-50">
                                                         Day {day.day} — {day.city}
                                                     </div>
-                                                    <div className="text-xs text-gray-400">
+                                                    <div className="text-xs text-ink-400 dark:text-ivory-200/55">
                                                         {day.date}
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center gap-3">
-                                                <div className="hidden sm:flex gap-1">
+                                            <div className="flex shrink-0 items-center gap-3">
+                                                <div className="hidden gap-1 sm:flex">
                                                     {[day.morning, day.afternoon, day.evening]
                                                         .filter(Boolean)
                                                         .map((_, i) => (
                                                             <div
                                                                 key={i}
-                                                                className="w-2 h-2 rounded-full bg-yellow-400"
+                                                                className="h-1.5 w-1.5 rounded-full bg-gold-500"
                                                             />
                                                         ))}
                                                 </div>
-                                                <span className="text-xs text-gray-400">
+                                                <span className="text-xs text-ink-400 dark:text-ivory-200/55">
                                                     {
                                                         [
                                                             day.morning,
@@ -1965,17 +1965,17 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                     }{" "}
                                                     places
                                                 </span>
-                                                {expandedDay === day.day ? (
-                                                    <ChevronUp
-                                                        size={18}
-                                                        className="text-gray-400"
-                                                    />
-                                                ) : (
-                                                    <ChevronDown
-                                                        size={18}
-                                                        className="text-gray-400"
-                                                    />
-                                                )}
+                                                <span className="flex h-8 w-8 items-center justify-center rounded-full border border-ink-900/10 text-ink-500 dark:border-white/10 dark:text-ivory-200/70">
+                                                    {expandedDay === day.day ? (
+                                                        <ChevronUp
+                                                            size={16}
+                                                        />
+                                                    ) : (
+                                                        <ChevronDown
+                                                            size={16}
+                                                        />
+                                                    )}
+                                                </span>
                                             </div>
                                         </button>
 
@@ -1986,10 +1986,11 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                     initial={{ height: 0, opacity: 0 }}
                                                     animate={{ height: "auto", opacity: 1 }}
                                                     exit={{ height: 0, opacity: 0 }}
-                                                    transition={{ duration: 0.3 }}
+                                                    transition={{ duration: 0.4, ease: EASE }}
                                                     className="overflow-hidden"
                                                 >
-                                                    <div className="px-5 pb-5 space-y-4 pt-2">
+                                                    <div className="space-y-4 px-4 pb-5 pt-2 md:px-6 md:pb-6">
+                                                        <div className="hairline mb-4" />
                                                         {(
                                                             [
                                                                 "morning",
@@ -2013,9 +2014,9 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                     className="flex gap-4"
                                                                 >
                                                                     {/* Timeline */}
-                                                                    <div className="flex flex-col items-center flex-shrink-0">
+                                                                    <div className="flex flex-shrink-0 flex-col items-center">
                                                                         <div
-                                                                            className={`w-10 h-10 rounded-full flex items-center justify-center ${slotInfo.bg}`}
+                                                                            className={`flex h-10 w-10 items-center justify-center rounded-full ${slotInfo.bg}`}
                                                                         >
                                                                             <SlotIcon
                                                                                 size={18}
@@ -2023,13 +2024,13 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                             />
                                                                         </div>
                                                                         {slotKey !== "evening" && (
-                                                                            <div className="w-0.5 flex-1 bg-gray-200 dark:bg-gray-700 min-h-[20px] mt-1" />
+                                                                            <div className="mt-1 min-h-[20px] w-px flex-1 bg-gradient-to-b from-gold-500/40 to-transparent" />
                                                                         )}
                                                                     </div>
 
                                                                     {/* Slot Content */}
-                                                                    <div className="flex-1 pb-4 min-w-0">
-                                                                        <div className="text-xs text-gray-400 mb-2">
+                                                                    <div className="min-w-0 flex-1 pb-4">
+                                                                        <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink-400 dark:text-ivory-200/55">
                                                                             {slotInfo.label} •{" "}
                                                                             {slotInfo.time}
                                                                         </div>
@@ -2037,38 +2038,40 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                         {placeSlot ? (
                                                                             <Link
                                                                                 href={`/places/${placeSlot.place.slug}`}
-                                                                                className="block bg-gray-50 dark:bg-gray-800 rounded-xl p-4 hover:shadow-md transition-all group"
+                                                                                className="group block rounded-[1.25rem] border border-ink-900/5 bg-white/55 p-3 transition-all duration-500 ease-lux hover:-translate-y-0.5 hover:shadow-float dark:border-white/5 dark:bg-white/[0.04]"
                                                                             >
-                                                                                <div className="flex gap-3">
-                                                                                    <Image
-                                                                                        src={placeSlot.place.images[0]}
-                                                                                        alt={placeSlot.place.name}
-                                                                                        width={80}
-                                                                                        height={80}
-                                                                                        className="w-20 h-20 rounded-xl object-cover flex-shrink-0 group-hover:scale-105 transition-transform"
-                                                                                    />
-                                                                                    <div className="flex-1 min-w-0">
+                                                                                <div className="flex gap-3.5">
+                                                                                    <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden rounded-2xl">
+                                                                                        <Image
+                                                                                            src={placeSlot.place.images[0]}
+                                                                                            alt={placeSlot.place.name}
+                                                                                            width={80}
+                                                                                            height={80}
+                                                                                            className="h-20 w-20 object-cover transition-transform duration-700 ease-lux group-hover:scale-110"
+                                                                                        />
+                                                                                    </div>
+                                                                                    <div className="min-w-0 flex-1">
                                                                                         <div className="flex items-start justify-between gap-2">
-                                                                                            <h3 className="font-bold text-gray-800 dark:text-white group-hover:text-yellow-600 transition-colors text-sm md:text-base">
+                                                                                            <h3 className="font-display text-lg font-medium leading-tight text-ink-900 transition-colors group-hover:text-gold-700 md:text-xl dark:text-ivory-50 dark:group-hover:text-gold-300">
                                                                                                 {placeSlot.place.name}
                                                                                             </h3>
-                                                                                            <div className="flex items-center gap-1 flex-shrink-0">
+                                                                                            <div className="flex flex-shrink-0 items-center gap-1">
                                                                                                 <Star
                                                                                                     size={12}
-                                                                                                    className="text-yellow-400 fill-yellow-400"
+                                                                                                    className="fill-gold-500 text-gold-500"
                                                                                                 />
-                                                                                                <span className="text-xs font-bold text-gray-600 dark:text-gray-400">
+                                                                                                <span className="text-xs font-semibold text-ink-600 dark:text-ivory-200/75">
                                                                                                     {placeSlot.place.rating}
                                                                                                 </span>
                                                                                             </div>
                                                                                         </div>
-                                                                                        <div className="flex items-center gap-1 text-xs text-gray-400 mt-0.5">
+                                                                                        <div className="mt-0.5 flex items-center gap-1 text-xs text-ink-400 dark:text-ivory-200/55">
                                                                                             <MapPin size={10} />
                                                                                             {placeSlot.place.city} •{" "}
                                                                                             {placeSlot.place.category}
                                                                                         </div>
-                                                                                        <div className="flex flex-wrap gap-2 mt-2">
-                                                                                            <span className="flex items-center gap-1 text-xs text-gray-500">
+                                                                                        <div className="mt-2 flex flex-wrap gap-2">
+                                                                                            <span className="flex items-center gap-1 text-xs text-ink-500 dark:text-ivory-200/65">
                                                                                                 <Clock size={10} />
                                                                                                 {
                                                                                                     placeSlot.place.timing
@@ -2081,10 +2084,10 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                                                 }
                                                                                             </span>
                                                                                             <span
-                                                                                                className={`text-xs font-medium px-2 py-0.5 rounded-full ${placeSlot.place.ticket
+                                                                                                className={`rounded-full px-2 py-0.5 text-xs font-medium ${placeSlot.place.ticket
                                                                                                     .isFree
-                                                                                                    ? "bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-400"
-                                                                                                    : "bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400"
+                                                                                                    ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-300"
+                                                                                                    : "bg-gold-500/15 text-gold-800 dark:text-gold-300"
                                                                                                     }`}
                                                                                             >
                                                                                                 {placeSlot.place.ticket
@@ -2092,7 +2095,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                                                     ? "Free Entry"
                                                                                                     : `₹${placeSlot.place.ticket.indian}`}
                                                                                             </span>
-                                                                                            <span className="text-xs text-gray-400">
+                                                                                            <span className="text-xs text-ink-400 dark:text-ivory-200/55">
                                                                                                 ⏱{" "}
                                                                                                 {
                                                                                                     placeSlot.place
@@ -2105,8 +2108,8 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                                                 </div>
                                                                             </Link>
                                                                         ) : (
-                                                                            <div className="bg-gray-50 dark:bg-gray-800 rounded-xl p-4 border-2 border-dashed border-gray-200 dark:border-gray-700 text-center">
-                                                                                <span className="text-gray-400 text-sm">
+                                                                            <div className="rounded-[1.25rem] border border-dashed border-ink-900/15 p-4 text-center dark:border-white/15">
+                                                                                <span className="text-sm text-ink-400 dark:text-ivory-200/55">
                                                                                     {slotKey === "evening"
                                                                                         ? "🌅 Free time — Explore local markets & food"
                                                                                         : "🧘 Leisure time — Rest & relax"}
@@ -2119,10 +2122,10 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                                                         })}
 
                                                         {/* Daily Tip */}
-                                                        <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-3 text-sm text-blue-700 dark:text-blue-400 flex items-start gap-2 ml-14">
+                                                        <div className="ml-14 flex items-start gap-2 rounded-2xl border border-gold-500/20 bg-gold-500/10 p-3.5 text-sm text-ink-700 dark:text-ivory-100/85">
                                                             <AlertCircle
                                                                 size={14}
-                                                                className="mt-0.5 flex-shrink-0"
+                                                                className="mt-0.5 flex-shrink-0 text-gold-700 dark:text-gold-400"
                                                             />
                                                             <span>
                                                                 💡 Start early to avoid crowds & heat. Carry
@@ -2138,13 +2141,13 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                             </div>
 
                             {/* Bottom CTA */}
-                            <div className="mt-8 text-center">
+                            <div className="mt-12 text-center">
                                 <Link
                                     href="/places"
-                                    className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transition-all hover:scale-105"
+                                    className="btn-primary !px-8 !py-4 text-base"
                                 >
                                     Explore All Places
-                                    <ArrowRight size={20} />
+                                    <ArrowRight size={18} />
                                 </Link>
                             </div>
                         </motion.div>
@@ -2152,7 +2155,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                 </AnimatePresence>
 
                 {/* Spacer so content isn't hidden behind sticky bar */}
-                {step < 4 && <div className="h-24" />}
+                {step < 4 && <div className="h-40 md:h-24" />}
             </div>
 
             {/* SEO Interlinks — Explore More (only shown when itinerary is generated) */}
@@ -2160,17 +2163,17 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                 <ExploreMoreSection currentPage="places" language={language} />
             )}
 
-            {/* ── Sticky Bottom Navigation Bar ── */}
+            {/* ── Floating Bottom Navigation Bar (sits above the phone dock) ── */}
             {step < 4 && (
-                <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-lg border-t border-gray-200 dark:border-gray-800 shadow-[0_-4px_24px_rgba(0,0,0,0.08)] safe-area-bottom">
-                    <div className="max-w-5xl mx-auto px-4 py-3 flex items-center gap-3">
+                <div className="fixed inset-x-0 bottom-[5.25rem] z-40 px-3 md:bottom-6">
+                    <div className="glass-strong mx-auto flex max-w-3xl items-center gap-3 rounded-full p-2 shadow-float-lg">
                         {/* Back button */}
                         <button
                             onClick={handleBack}
                             disabled={step === 1}
-                            className={`flex items-center gap-2 px-5 py-3 rounded-full font-medium transition-all text-sm shrink-0 ${step === 1
-                                ? "text-gray-300 dark:text-gray-600 cursor-not-allowed"
-                                : "text-gray-600 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-yellow-400 hover:text-yellow-600"
+                            className={`flex shrink-0 items-center gap-2 rounded-full px-4 py-2.5 text-sm font-medium transition-all duration-300 ease-lux sm:px-5 ${step === 1
+                                ? "cursor-not-allowed text-ink-300 dark:text-ivory-200/25"
+                                : "text-ink-700 hover:bg-ink-900/5 dark:text-ivory-100 dark:hover:bg-white/10"
                                 }`}
                         >
                             <ArrowLeft size={16} />
@@ -2178,21 +2181,21 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                         </button>
 
                         {/* Step hint */}
-                        <div className="flex-1 text-center">
+                        <div className="min-w-0 flex-1 text-center">
                             {step === 1 && (
-                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                <p className="truncate text-xs text-ink-500 dark:text-ivory-200/60">
                                     {config.selectedCities.length === 0
                                         ? "Select at least 1 city to continue"
                                         : `${config.selectedCities.length} city selected — ready to continue!`}
                                 </p>
                             )}
                             {step === 2 && (
-                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                <p className="truncate text-xs text-ink-500 dark:text-ivory-200/60">
                                     Set your travel dates and pace
                                 </p>
                             )}
                             {step === 3 && (
-                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                <p className="truncate text-xs text-ink-500 dark:text-ivory-200/60">
                                     Choose your interests &amp; generate plan
                                 </p>
                             )}
@@ -2203,9 +2206,9 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                             whileTap={{ scale: 0.97 }}
                             onClick={handleNext}
                             disabled={!canProceed()}
-                            className={`flex items-center gap-2 px-6 py-3 rounded-full font-semibold text-sm transition-all shrink-0 ${canProceed()
-                                ? "bg-gradient-to-r from-yellow-500 to-amber-500 text-white shadow-lg shadow-yellow-500/30 hover:shadow-xl hover:scale-105"
-                                : "bg-gray-100 dark:bg-gray-800 text-gray-400 cursor-not-allowed"
+                            className={`flex shrink-0 items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold transition-all duration-500 ease-lux sm:px-6 ${canProceed()
+                                ? "btn-gold"
+                                : "cursor-not-allowed bg-ink-900/5 text-ink-400 dark:bg-white/5 dark:text-ivory-200/40"
                                 }`}
                         >
                             {step === 3 ? (
@@ -2223,6 +2226,21 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                     </div>
                 </div>
             )}
+        </div>
+    );
+}
+
+/** Editorial heading used at the top of each planner step. */
+function StepHeading({ eyebrow, title, subtitle }: { eyebrow: string; title: string; subtitle: string }) {
+    return (
+        <div className="mb-10 text-center">
+            <span className="eyebrow">{eyebrow}</span>
+            <h2 className="display-title mx-auto mt-4 max-w-3xl text-3xl sm:text-4xl md:text-5xl">
+                {title}
+            </h2>
+            <p className="mt-3 text-ink-500 dark:text-ivory-200/70">
+                {subtitle}
+            </p>
         </div>
     );
 }

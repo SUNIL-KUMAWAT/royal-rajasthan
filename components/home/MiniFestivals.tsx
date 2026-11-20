@@ -1,91 +1,139 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "@/components/LocalizedLink";
 import Image from "next/image";
-import { ArrowRight, Calendar, MapPin } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight, Calendar, MapPin } from "lucide-react";
+import Link from "@/components/LocalizedLink";
 import { useLanguage } from "@/components/LanguageProvider";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { RevealGroup, revealItem } from "@/components/ui/Reveal";
 
 /** Light festival record built on the server (see app/page.tsx). */
 export type MiniFestival = {
-  id: number;
-  name: string;
-  slug: string;
-  image: string;
-  location: string;
-  month: string;
-  description: string;
+    id: number;
+    name: string;
+    slug: string;
+    image: string;
+    location: string;
+    month: string;
+    description: string;
 };
 
+/** Dark, cinematic band: one tall lead festival plus two stacked companions. */
 export function MiniFestivals({ festivals, festivalsHi }: { festivals: MiniFestival[]; festivalsHi: MiniFestival[] }) {
-  const { language } = useLanguage();
-  const t = {
-    title: language === "hi" ? "प्रमुख सांस्कृतिक उत्सव" : "Top Cultural Festivals",
-    subtitle: language === "hi" ? "राजस्थान के रंगों को करीब से महसूस करें" : "Experience the vibrant colors of Rajasthan",
-    viewAll: language === "hi" ? "सभी उत्सव देखें" : "View All Festivals",
-    knowMore: language === "hi" ? "और जानें" : "Know More"
-  };
+    const { language } = useLanguage();
+    const isHi = language === "hi";
+    const list = isHi ? festivalsHi : festivals;
+    const [lead, ...rest] = list;
 
-  const topFestivals = language === "hi" ? festivalsHi : festivals;
+    const t = {
+        eyebrow: isHi ? "उत्सव" : "Festivals",
+        knowMore: isHi ? "और जानें" : "Read the story",
+        viewAll: isHi ? "सभी उत्सव देखें" : "All festivals",
+    };
 
-  return (
-    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/Camel_Pushkar.webp')" }}>
-      {/* Dark Overlay */}
-      <div className="absolute inset-0 bg-gray-950/70"></div>
+    if (!lead) return null;
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
-            {t.title}
-          </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
-        </div>
+    return (
+        <section className="relative isolate overflow-hidden bg-ink-950 py-24 text-ivory-50 md:py-32">
+            {/* Atmosphere: blurred festival photo + warm glow */}
+            <div aria-hidden="true" className="absolute inset-0 -z-10">
+                <Image src="/Camel_Pushkar.webp" alt="" fill sizes="100vw" className="object-cover opacity-25 blur-2xl scale-110" />
+                <div className="absolute inset-0 bg-gradient-to-b from-ink-950 via-ink-950/80 to-ink-950" />
+                <div className="absolute left-1/3 top-1/4 h-[30rem] w-[30rem] rounded-full bg-gold-500/15 blur-[120px]" />
+            </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          {topFestivals.map((fest, idx) => (
-            <motion.div
-              key={fest.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: Math.min(idx, 8) * 0.1 }}
-              className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl overflow-hidden group hover:bg-white/20 transition-all flex flex-col h-full"
-            >
-              <div className="relative h-48 w-full overflow-hidden shrink-0">
-                <Image
-                  src={fest.image}
-                  alt={fest.name}
-                  fill
-                  sizes="(max-width: 768px) 100vw, 33vw"
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <SectionHeading
+                    tone="light"
+                    eyebrow={t.eyebrow}
+                    title={
+                        isHi ? (
+                            <>
+                                रंगों में डूबा <em>राजस्थान</em>
+                            </>
+                        ) : (
+                            <>
+                                A year painted in <em>colour</em>
+                            </>
+                        )
+                    }
+                    subtitle={
+                        isHi
+                            ? "राजस्थान के रंगों, संगीत और परंपराओं को करीब से महसूस करें।"
+                            : "Camel fairs at dawn, folk music under desert stars and cities dressed in marigold."
+                    }
+                    action={
+                        <Link href="/culture" className="btn-glass-dark">
+                            {t.viewAll}
+                            <ArrowUpRight size={16} />
+                        </Link>
+                    }
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-playfair font-bold text-xl mb-1">{fest.name}</h3>
-                  <div className="flex flex-wrap items-center text-white/80 text-xs gap-3">
-                    <span className="flex items-center gap-1"><MapPin size={12} /> {fest.location}</span>
-                    <span className="flex items-center gap-1"><Calendar size={12} /> {fest.month}</span>
-                  </div>
-                </div>
-              </div>
-              <div className="p-5 flex flex-col grow">
-                <p className="text-white/80 text-sm line-clamp-3 mb-4 grow">
-                  {fest.description}
-                </p>
-                <Link href={`/festivals/${fest.slug}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
-                  {t.knowMore} <ArrowRight size={14} />
-                </Link>
-              </div>
-            </motion.div>
-          ))}
-        </div>
 
-        <div className="text-center">
-          <Link href="/culture" className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-sm border border-white/30 text-white font-medium hover:bg-white/20 hover:scale-105 transition-all">
-            {t.viewAll} <ArrowRight size={16} />
-          </Link>
-        </div>
-      </div>
-    </section>
-  );
+                <RevealGroup className="grid gap-5 lg:grid-cols-5">
+                    <motion.article variants={revealItem} className="group relative isolate min-h-[30rem] overflow-hidden rounded-[2rem] lg:col-span-3 lg:row-span-2">
+                        <Image
+                            src={lead.image}
+                            alt={lead.name}
+                            fill
+                            sizes="(min-width: 1024px) 60vw, 100vw"
+                            className="-z-10 object-cover transition-transform duration-[1600ms] ease-lux group-hover:scale-[1.06]"
+                        />
+                        <div className="absolute inset-0 -z-10 scrim-b" />
+                        <div className="absolute inset-x-0 bottom-0 p-7 md:p-10">
+                            <div className="flex flex-wrap gap-2 text-xs">
+                                <span className="inline-flex items-center gap-1.5 rounded-full glass-dark px-3 py-1.5">
+                                    <MapPin size={12} /> {lead.location}
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 rounded-full glass-dark px-3 py-1.5">
+                                    <Calendar size={12} /> {lead.month}
+                                </span>
+                            </div>
+                            <h3 className="mt-4 font-display text-4xl font-medium leading-tight md:text-6xl">
+                                <Link href={`/festivals/${lead.slug}`} className="after:absolute after:inset-0 after:content-['']">
+                                    {lead.name}
+                                </Link>
+                            </h3>
+                            <p className="mt-3 line-clamp-2 max-w-lg text-sm text-ivory-100/75 md:text-base">{lead.description}</p>
+                            <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-gold-300">
+                                {t.knowMore}
+                                <ArrowUpRight size={16} className="transition-transform duration-500 group-hover:rotate-45" />
+                            </span>
+                        </div>
+                    </motion.article>
+
+                    {rest.map((fest) => (
+                        <motion.article
+                            key={fest.id}
+                            variants={revealItem}
+                            className="group relative flex min-h-[14rem] overflow-hidden rounded-[2rem] glass-dark lg:col-span-2"
+                        >
+                            <div className="relative w-2/5 shrink-0 overflow-hidden">
+                                <Image
+                                    src={fest.image}
+                                    alt={fest.name}
+                                    fill
+                                    sizes="(min-width: 1024px) 16vw, 40vw"
+                                    className="object-cover transition-transform duration-[1400ms] ease-lux group-hover:scale-110"
+                                />
+                            </div>
+                            <div className="flex flex-1 flex-col p-6">
+                                <span className="text-[11px] font-semibold uppercase tracking-[0.2em] text-gold-300/80">
+                                    {fest.month} · {fest.location}
+                                </span>
+                                <h3 className="mt-2 font-display text-2xl font-medium leading-tight md:text-3xl">
+                                    <Link href={`/festivals/${fest.slug}`} className="after:absolute after:inset-0 after:content-['']">
+                                        {fest.name}
+                                    </Link>
+                                </h3>
+                                <p className="mt-2 line-clamp-2 text-sm text-ivory-100/65">{fest.description}</p>
+                                <ArrowUpRight size={18} className="mt-auto self-end text-ivory-100/60 transition-all duration-500 group-hover:rotate-45 group-hover:text-gold-300" />
+                            </div>
+                        </motion.article>
+                    ))}
+                </RevealGroup>
+            </div>
+        </section>
+    );
 }

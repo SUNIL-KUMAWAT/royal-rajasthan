@@ -1,7 +1,13 @@
 "use client";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageCircle } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle, MessageCircle, ChevronDown } from "lucide-react";
+import { PageHero } from "@/components/ui/PageHero";
+import { RevealGroup, revealItem } from "@/components/ui/Reveal";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const LABEL = "mb-2 block text-[11px] font-semibold uppercase tracking-[0.18em] text-ink-500 dark:text-ivory-200/60";
 
 export default function ContactClient() {
     const [submitted, setSubmitted] = useState(false);
@@ -26,45 +32,43 @@ export default function ContactClient() {
 
     return (
         <>
-            <section
-                className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
-                style={{
-                    backgroundImage:
-                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg)",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-            >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30" />
-                <div className="relative z-10 text-center px-4">
-                    <h1 className="font-playfair text-4xl md:text-6xl font-bold text-white mb-4">
-                        Contact <span className="text-gold-400">Us</span>
-                    </h1>
-                    <p className="text-white/80 text-lg">
-                        Let us craft your perfect Rajasthan adventure
-                    </p>
-                </div>
-            </section>
+            <PageHero
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg"
+                imageAlt="Hawa Mahal, Jaipur"
+                eyebrow="Get In Touch"
+                title={
+                    <>
+                        Contact <em>Us</em>
+                    </>
+                }
+                subtitle="Let us craft your perfect Rajasthan adventure"
+                breadcrumbs={[{ label: "Home", href: "/" }, { label: "Contact" }]}
+            />
 
-            <section className="py-20 bg-palace-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid lg:grid-cols-2 gap-12">
+            <section className="relative isolate py-20 md:py-28">
+                <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10 overflow-hidden">
+                    <div className="absolute -left-40 top-20 h-[30rem] w-[30rem] rounded-full bg-gold-500/15 blur-[140px] dark:bg-gold-500/10" />
+                    <div className="absolute -right-40 bottom-0 h-[30rem] w-[30rem] rounded-full bg-maroon-500/10 blur-[140px] dark:bg-maroon-500/20" />
+                </div>
+
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="grid gap-12 lg:grid-cols-12 lg:gap-16">
                         <motion.div
-                            initial={{ opacity: 0, x: -30 }}
-                            animate={{ opacity: 1, x: 0 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.9, ease: EASE }}
+                            className="lg:col-span-5"
                         >
-                            <span className="text-gold-500 text-sm font-semibold tracking-widest uppercase">
-                                Get In Touch
-                            </span>
-                            <h2 className="font-playfair text-4xl font-bold text-gray-900 mt-3 mb-6">
-                                We&apos;re Here to Help Plan Your Royal Journey
+                            <span className="eyebrow">Get In Touch</span>
+                            <h2 className="display-title mt-5 text-4xl sm:text-5xl md:text-6xl [&_em]:font-normal [&_em]:italic [&_em]:text-gold-sheen">
+                                We&apos;re Here to Help Plan Your <em>Royal Journey</em>
                             </h2>
-                            <p className="text-gray-500 text-lg leading-relaxed mb-8">
+                            <p className="mt-6 text-lg leading-relaxed text-ink-500 dark:text-ivory-200/70">
                                 Our expert travel consultants are available to help you plan
                                 the perfect Rajasthan experience.
                             </p>
 
-                            <div className="space-y-5 mb-8">
+                            <RevealGroup className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                                 {[
                                     {
                                         icon: Phone,
@@ -91,65 +95,77 @@ export default function ContactClient() {
                                         sub: "Sunday: 10AM - 5PM",
                                     },
                                 ].map(({ icon: Icon, title, info, sub }) => (
-                                    <div key={title} className="flex items-start gap-4">
-                                        <div className="w-12 h-12 bg-gold-100 rounded-xl flex items-center justify-center flex-shrink-0">
-                                            <Icon size={20} className="text-gold-600" />
+                                    <motion.div
+                                        key={title}
+                                        variants={revealItem}
+                                        className="glass group flex items-start gap-4 rounded-[1.5rem] p-5 transition-transform duration-500 ease-lux hover:-translate-y-1"
+                                    >
+                                        <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full bg-ink-900 text-gold-300 transition-transform duration-500 ease-lux group-hover:scale-110 dark:bg-gold-400 dark:text-ink-900">
+                                            <Icon size={18} />
                                         </div>
-                                        <div>
-                                            <div className="font-semibold text-gray-800">{title}</div>
-                                            <div className="text-gray-600">{info}</div>
-                                            <div className="text-gray-400 text-sm">{sub}</div>
+                                        <div className="min-w-0">
+                                            <div className="text-[11px] font-semibold uppercase tracking-[0.18em] text-gold-700 dark:text-gold-400">{title}</div>
+                                            <div className="mt-1 break-words font-medium text-ink-900 dark:text-ivory-50">{info}</div>
+                                            <div className="text-sm text-ink-400 dark:text-ivory-200/55">{sub}</div>
                                         </div>
-                                    </div>
+                                    </motion.div>
                                 ))}
-                            </div>
+                            </RevealGroup>
 
                             <a
                                 href="https://wa.me/9999999999"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 bg-green-500 text-white px-8 py-4 rounded-full font-semibold hover:bg-green-600 transition-all hover:scale-105 shadow-lg"
+                                className="btn mt-8 bg-[#1FAF5A] text-white shadow-float hover:-translate-y-0.5 hover:bg-[#1A9A4F] hover:shadow-float-lg"
                             >
-                                <MessageCircle size={20} />
+                                <MessageCircle size={18} />
                                 Chat on WhatsApp
                             </a>
                         </motion.div>
 
                         <motion.div
-                            initial={{ opacity: 0, x: 30 }}
-                            animate={{ opacity: 1, x: 0 }}
-                            transition={{ delay: 0.2 }}
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: 0.2, duration: 1, ease: EASE }}
+                            className="lg:col-span-7"
                         >
-                            <div className="bg-white rounded-3xl p-8 shadow-royal">
-                                <h3 className="font-playfair text-2xl font-bold text-gray-900 mb-6">
+                            <div className="glass-strong relative overflow-hidden rounded-[2rem] p-6 sm:p-10">
+                                <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-64 w-64 rounded-full bg-gold-400/20 blur-3xl" />
+                                <h3 className="relative font-display text-3xl font-medium tracking-tight text-ink-900 dark:text-ivory-50 md:text-4xl">
                                     Send Us a Message
                                 </h3>
+                                <div className="hairline mb-8 mt-6" />
 
                                 {submitted ? (
                                     <motion.div
-                                        initial={{ scale: 0.8, opacity: 0 }}
+                                        initial={{ scale: 0.95, opacity: 0 }}
                                         animate={{ scale: 1, opacity: 1 }}
-                                        className="text-center py-12"
+                                        transition={{ duration: 0.6, ease: EASE }}
+                                        className="py-14 text-center"
+                                        role="status"
                                     >
-                                        <CheckCircle
-                                            size={64}
-                                            className="text-green-500 mx-auto mb-4"
-                                        />
-                                        <h4 className="text-2xl font-bold text-gray-800 mb-2">
+                                        <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-gold-500/15">
+                                            <CheckCircle
+                                                size={40}
+                                                className="text-gold-600 dark:text-gold-300"
+                                            />
+                                        </div>
+                                        <h4 className="font-display text-3xl font-medium text-ink-900 dark:text-ivory-50">
                                             Message Sent!
                                         </h4>
-                                        <p className="text-gray-500">
+                                        <p className="mt-2 text-ink-500 dark:text-ivory-200/70">
                                             Thank you! Our team will contact you within 2 hours.
                                         </p>
                                     </motion.div>
                                 ) : (
-                                    <form onSubmit={handleSubmit} className="space-y-5">
-                                        <div className="grid grid-cols-2 gap-4">
+                                    <form onSubmit={handleSubmit} className="relative space-y-5">
+                                        <div className="grid gap-5 sm:grid-cols-2">
                                             <div>
-                                                <label className="text-sm font-medium text-gray-700 mb-1 block">
+                                                <label htmlFor="contact-name" className={LABEL}>
                                                     Full Name *
                                                 </label>
                                                 <input
+                                                    id="contact-name"
                                                     type="text"
                                                     required
                                                     value={form.name}
@@ -157,14 +173,15 @@ export default function ContactClient() {
                                                         setForm((p) => ({ ...p, name: e.target.value }))
                                                     }
                                                     placeholder="Your Name"
-                                                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all text-sm"
+                                                    className="field"
                                                 />
                                             </div>
                                             <div>
-                                                <label className="text-sm font-medium text-gray-700 mb-1 block">
+                                                <label htmlFor="contact-phone" className={LABEL}>
                                                     Phone Number *
                                                 </label>
                                                 <input
+                                                    id="contact-phone"
                                                     type="tel"
                                                     required
                                                     value={form.phone}
@@ -172,15 +189,16 @@ export default function ContactClient() {
                                                         setForm((p) => ({ ...p, phone: e.target.value }))
                                                     }
                                                     placeholder="+91 XXXXX XXXXX"
-                                                    className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all text-sm"
+                                                    className="field"
                                                 />
                                             </div>
                                         </div>
                                         <div>
-                                            <label className="text-sm font-medium text-gray-700 mb-1 block">
+                                            <label htmlFor="contact-email" className={LABEL}>
                                                 Email Address *
                                             </label>
                                             <input
+                                                id="contact-email"
                                                 type="email"
                                                 required
                                                 value={form.email}
@@ -188,36 +206,44 @@ export default function ContactClient() {
                                                     setForm((p) => ({ ...p, email: e.target.value }))
                                                 }
                                                 placeholder="your@email.com"
-                                                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all text-sm"
+                                                className="field"
                                             />
                                         </div>
                                         <div>
-                                            <label className="text-sm font-medium text-gray-700 mb-1 block">
+                                            <label htmlFor="contact-destination" className={LABEL}>
                                                 Destination Interest
                                             </label>
-                                            <select
-                                                value={form.destination}
-                                                onChange={(e) =>
-                                                    setForm((p) => ({
-                                                        ...p,
-                                                        destination: e.target.value,
-                                                    }))
-                                                }
-                                                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all text-sm bg-white"
-                                            >
-                                                <option value="">Select a destination</option>
-                                                {DESTINATIONS.map((d) => (
-                                                    <option key={d} value={d}>
-                                                        {d}
-                                                    </option>
-                                                ))}
-                                            </select>
+                                            <div className="relative">
+                                                <select
+                                                    id="contact-destination"
+                                                    value={form.destination}
+                                                    onChange={(e) =>
+                                                        setForm((p) => ({
+                                                            ...p,
+                                                            destination: e.target.value,
+                                                        }))
+                                                    }
+                                                    className="field cursor-pointer appearance-none pr-10"
+                                                >
+                                                    <option value="">Select a destination</option>
+                                                    {DESTINATIONS.map((d) => (
+                                                        <option key={d} value={d}>
+                                                            {d}
+                                                        </option>
+                                                    ))}
+                                                </select>
+                                                <ChevronDown
+                                                    size={16}
+                                                    className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-ink-400 dark:text-ivory-200/50"
+                                                />
+                                            </div>
                                         </div>
                                         <div>
-                                            <label className="text-sm font-medium text-gray-700 mb-1 block">
+                                            <label htmlFor="contact-message" className={LABEL}>
                                                 Message *
                                             </label>
                                             <textarea
+                                                id="contact-message"
                                                 required
                                                 rows={5}
                                                 value={form.message}
@@ -225,14 +251,14 @@ export default function ContactClient() {
                                                     setForm((p) => ({ ...p, message: e.target.value }))
                                                 }
                                                 placeholder="Tell us about your travel plans..."
-                                                className="w-full border border-gray-200 rounded-xl px-4 py-3 focus:border-gold-400 outline-none transition-all resize-none text-sm"
+                                                className="field resize-none"
                                             />
                                         </div>
                                         <button
                                             type="submit"
-                                            className="w-full bg-gold-gradient text-white py-4 rounded-xl font-semibold text-lg hover:shadow-gold-lg transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                                            className="btn-gold w-full !py-4 text-base"
                                         >
-                                            <Send size={20} />
+                                            <Send size={18} />
                                             Send Message
                                         </button>
                                     </form>

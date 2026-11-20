@@ -1,7 +1,9 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { Plus } from "lucide-react";
+import { useLanguage } from "@/components/LanguageProvider";
+import { Reveal } from "@/components/ui/Reveal";
 
 const FAQS = [
     {
@@ -57,7 +59,9 @@ const FAQS = [
 ];
 
 export function FAQSection() {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+    const [openIndex, setOpenIndex] = useState<number | null>(0);
+    const { language } = useLanguage();
+    const isHi = language === "hi";
 
     // FAQ Schema for rich results
     const faqSchema = {
@@ -74,90 +78,81 @@ export function FAQSection() {
     };
 
     return (
-        <section className="py-24 bg-white dark:bg-gray-900">
-            {/* FAQ Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-            />
+        <section className="relative py-24 md:py-32">
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+            <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-12 lg:px-8">
+                {/* Sticky editorial intro */}
+                <Reveal className="lg:col-span-4">
+                    <div className="lg:sticky lg:top-32">
+                        <span className="eyebrow">{isHi ? "सामान्य प्रश्न" : "Common questions"}</span>
+                        <h2 className="mt-4 font-display text-4xl font-medium leading-[1.05] tracking-tight text-ink-900 dark:text-ivory-50 md:text-6xl">
+                            {isHi ? (
+                                <>
+                                    यात्रा से <em className="italic font-normal text-gold-sheen">पहले</em> जानें
+                                </>
+                            ) : (
+                                <>
+                                    Before you <em className="italic font-normal text-gold-sheen">go</em>
+                                </>
+                            )}
+                        </h2>
+                        <p className="mt-5 max-w-sm text-ink-500 dark:text-ivory-200/70">
+                            {isHi
+                                ? "राजस्थान यात्रा के बारे में सबसे ज़्यादा पूछे जाने वाले सवाल।"
+                                : "Everything you need to know about visiting Rajasthan — seasons, tickets, routes and etiquette."}
+                        </p>
+                    </div>
+                </Reveal>
 
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <span className="text-yellow-600 text-sm font-semibold tracking-widest uppercase">
-                        Common Questions
-                    </span>
-                    <h2 className="font-playfair text-4xl font-bold text-gray-900 dark:text-white mt-3 mb-4">
-                        Frequently Asked Questions
-                    </h2>
-                    <p className="text-gray-500 dark:text-gray-400 text-lg">
-                        Everything you need to know about visiting Rajasthan
-                    </p>
-                </div>
-
-                {/* FAQ List */}
-                <div className="space-y-4">
-                    {FAQS.map((faq, i) => (
-                        <motion.div
-                            key={i}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: Math.min(i, 8) * 0.05 }}
-                            className="border border-gray-200 dark:border-gray-700 rounded-2xl overflow-hidden"
-                        >
-                            <button
-                                onClick={() => setOpenIndex(openIndex === i ? null : i)}
-                                className="w-full flex items-center justify-between p-6 text-left hover:bg-gray-50 dark:hover:bg-gray-800 transition-all"
+                {/* Accordion */}
+                <div className="space-y-3 lg:col-span-8">
+                    {FAQS.map((faq, i) => {
+                        const isOpen = openIndex === i;
+                        return (
+                            <Reveal
+                                key={i}
+                                delay={Math.min(i, 6) * 0.04}
+                                className={`overflow-hidden rounded-[1.5rem] transition-all duration-500 ease-lux ${isOpen ? "glass-strong" : "glass"}`}
                             >
-                                <h3 className="font-semibold text-gray-800 dark:text-white pr-4 text-lg">
-                                    {faq.question}
-                                </h3>
-                                <div className="flex-shrink-0">
-                                    {openIndex === i ? (
-                                        <ChevronUp
-                                            size={20}
-                                            className="text-yellow-500"
-                                        />
-                                    ) : (
-                                        <ChevronDown
-                                            size={20}
-                                            className="text-gray-400"
-                                        />
-                                    )}
-                                </div>
-                            </button>
-
-                            <AnimatePresence>
-                                {openIndex === i && (
-                                    <motion.div
-                                        initial={{ height: 0, opacity: 0 }}
-                                        animate={{ height: "auto", opacity: 1 }}
-                                        exit={{ height: 0, opacity: 0 }}
-                                        transition={{ duration: 0.3 }}
-                                        className="overflow-hidden"
+                                <h3>
+                                    <button
+                                        type="button"
+                                        id={`home-faq-q-${i}`}
+                                        aria-expanded={isOpen}
+                                        aria-controls={`home-faq-a-${i}`}
+                                        onClick={() => setOpenIndex(isOpen ? null : i)}
+                                        className="flex w-full items-center justify-between gap-6 px-6 py-5 text-left font-sans text-base font-semibold text-ink-900 dark:text-ivory-50 md:text-lg"
                                     >
-                                        <div className="px-6 pb-6 text-gray-600 dark:text-gray-400 leading-relaxed border-t border-gray-100 dark:border-gray-700 pt-4">
-                                            {faq.answer}
-                                        </div>
-                                    </motion.div>
-                                )}
-                            </AnimatePresence>
-                        </motion.div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="text-center mt-12">
-                    <p className="text-gray-500 dark:text-gray-400 mb-4">
-                        Still have questions? We&apos;re here to help!
-                    </p>
-                    <a
-                        href="/contact"
-                        className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-6 py-3 rounded-full font-semibold hover:shadow-lg transition-all"
-                    >
-                        Contact Us
-                    </a>
+                                        <span>{faq.question}</span>
+                                        <span
+                                            className={`grid h-9 w-9 shrink-0 place-items-center rounded-full transition-all duration-500 ease-lux ${
+                                                isOpen
+                                                    ? "rotate-45 bg-ink-900 text-ivory-50 dark:bg-gold-400 dark:text-ink-900"
+                                                    : "bg-ink-900/5 text-ink-700 dark:bg-white/10 dark:text-ivory-100"
+                                            }`}
+                                        >
+                                            <Plus size={16} />
+                                        </span>
+                                    </button>
+                                </h3>
+                                <AnimatePresence initial={false}>
+                                    {isOpen && (
+                                        <motion.div
+                                            id={`home-faq-a-${i}`}
+                                            role="region"
+                                            aria-labelledby={`home-faq-q-${i}`}
+                                            initial={{ height: 0, opacity: 0 }}
+                                            animate={{ height: "auto", opacity: 1 }}
+                                            exit={{ height: 0, opacity: 0 }}
+                                            transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
+                                        >
+                                            <p className="px-6 pb-6 leading-relaxed text-ink-600 dark:text-ivory-200/75">{faq.answer}</p>
+                                        </motion.div>
+                                    )}
+                                </AnimatePresence>
+                            </Reveal>
+                        );
+                    })}
                 </div>
             </div>
         </section>

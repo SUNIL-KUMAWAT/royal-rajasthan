@@ -1,230 +1,133 @@
 "use client";
-import { motion } from "framer-motion";
-import Link from "@/components/LocalizedLink";
 import Image from "next/image";
-import { ArrowRight } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "@/components/LocalizedLink";
 import { useLanguage } from "@/components/LanguageProvider";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { RevealGroup, revealItem } from "@/components/ui/Reveal";
 
-const BENTO_EXPERIENCES = [
+type Experience = {
+    id: number;
+    title: { en: string; hi: string };
+    description: { en: string; hi: string };
+    href: string;
+    image: string;
+    /** Bento placement on large screens */
+    className: string;
+};
+
+const EXPERIENCES: Experience[] = [
     {
         id: 1,
-        title: "Majestic Forts",
-        description: "Explore magnificent Rajput forts across Rajasthan",
+        title: { en: "Majestic Forts", hi: "भव्य किले" },
+        description: { en: "Rajput citadels carved into the Aravalli ridges", hi: "अरावली की चोटियों पर बने राजपूत किले" },
         href: "/places?category=Fort",
-        count: "5 Forts",
-        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
-        className: "col-span-2 md:col-span-2 row-span-2 min-h-[380px] md:min-h-[440px]"
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg",
+        className: "md:col-span-2 md:row-span-2 min-h-[26rem]",
     },
     {
         id: 2,
-        title: "Desert Safari",
-        description: "Experience golden dunes & camel safari",
+        title: { en: "Desert Safari", hi: "रेगिस्तानी सफारी" },
+        description: { en: "Golden dunes and starlit camps", hi: "सुनहरे टीले और तारों भरे कैंप" },
         href: "/places?category=Desert",
-        count: "1 Desert",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/960px-Thar_desert_Rajasthan_India.jpg",
-        className: "col-span-2 md:col-span-1 min-h-[200px]"
+        className: "min-h-[16rem]",
     },
     {
         id: 3,
-        title: "Royal Palaces",
-        description: "Visit stunning heritage palaces",
+        title: { en: "Royal Palaces", hi: "शाही महल" },
+        description: { en: "Marble courtyards and mirrored halls", hi: "संगमरमर के आंगन और शीशमहल" },
         href: "/places?category=Palace",
-        count: "2 Palaces",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/960px-Udaipur_City_Palace.jpg",
-        className: "col-span-2 md:col-span-1 min-h-[200px]"
+        className: "min-h-[16rem]",
     },
     {
         id: 4,
-        title: "Serene Lakes",
-        description: "Sunset boat rides at breathtaking lakes",
+        title: { en: "Serene Lakes", hi: "शांत झीलें" },
+        description: { en: "Sunset boat rides on still water", hi: "शांत पानी पर सूर्यास्त की नाव सवारी" },
         href: "/places?category=Lake",
-        count: "1 Lake",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/960px-Udaipur_Lake_India.JPG",
-        className: "col-span-2 md:col-span-2 min-h-[220px]"
+        className: "md:col-span-2 min-h-[16rem]",
     },
     {
         id: 5,
-        title: "Wildlife Safari",
-        description: "Tiger safaris & nature trails in reserves",
+        title: { en: "Wildlife Safari", hi: "वन्यजीव सफारी" },
+        description: { en: "Tigers in the ruins of Ranthambore", hi: "रणथंभौर के खंडहरों में बाघ" },
         href: "/places?category=Wildlife",
-        count: "1 Park",
         image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/960px-Ranthambore_National_Park.JPG",
-        className: "col-span-2 md:col-span-2 min-h-[220px]"
+        className: "md:col-span-2 min-h-[16rem]",
     },
     {
         id: 6,
-        title: "Cultural Festivals",
-        description: "Vibrant folk dances & holy traditions",
+        title: { en: "Cultural Festivals", hi: "सांस्कृतिक उत्सव" },
+        description: { en: "Folk music, colour and camel fairs", hi: "लोक संगीत, रंग और पशु मेले" },
         href: "/culture",
-        count: "Vibrant Traditions",
-        image: "https://rajasthanplaces.in/Camel_Pushkar.webp",
-        className: "col-span-2 md:col-span-2 min-h-[220px]"
-    }
+        image: "/Camel_Pushkar.webp",
+        className: "md:col-span-2 min-h-[16rem]",
+    },
 ];
 
-const containerVariants = {
-    hidden: { opacity: 0 },
-    show: {
-        opacity: 1,
-        transition: {
-            staggerChildren: 0.1,
-        },
-    },
-};
-
-const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
-    show: { opacity: 1, y: 0, transition: { type: "spring" as const, stiffness: 100, damping: 15 } },
-};
-
+/** Asymmetric bento of travel themes; each tile links into the filtered places list. */
 export function ExperiencesSection() {
     const { language } = useLanguage();
-
-    const getTranslatedTitle = (title: string) => {
-        if (language !== 'hi') return title;
-        const map: Record<string, string> = {
-            "Majestic Forts": "भव्य किले",
-            "Desert Safari": "रेगिस्तानी सफारी",
-            "Royal Palaces": "शाही महल",
-            "Serene Lakes": "शांत झीलें",
-            "Wildlife Safari": "वन्यजीव सफारी",
-            "Cultural Festivals": "सांस्कृतिक उत्सव"
-        };
-        return map[title] || title;
-    };
-
-    const getTranslatedDesc = (desc: string) => {
-        if (language !== 'hi') return desc;
-        const map: Record<string, string> = {
-            "Explore magnificent Rajput forts across Rajasthan": "राजस्थान के शानदार राजपूत किलों की यात्रा करें",
-            "Experience golden dunes & camel safari": "सुनहरे टीलों और ऊंट की सवारी का अनुभव करें",
-            "Visit stunning heritage palaces": "आश्चर्यजनक विरासत महलों की यात्रा करें",
-            "Sunset boat rides at breathtaking lakes": "लुभावनी झीलों पर सूर्यास्त के समय नाव की सवारी",
-            "Tiger safaris & nature trails in reserves": "अभयारण्यों में टाइगर सफारी और प्रकृति ट्रेल्स",
-            "Vibrant folk dances & holy traditions": "जीवंत लोक नृत्य और पवित्र परंपराएं"
-        };
-        return map[desc] || desc;
-    };
-
-    const translateCount = (count: string) => {
-        if (language !== 'hi') return count;
-        const map: Record<string, string> = {
-            "5 Forts": "5 किले",
-            "1 Desert": "1 रेगिस्तान",
-            "2 Palaces": "2 महल",
-            "1 Lake": "1 झील",
-            "1 Park": "1 पार्क",
-            "Vibrant Traditions": "जीवंत परंपराएं"
-        };
-        return map[count] || count;
-    };
+    const isHi = language === "hi";
 
     return (
-        <section className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 relative overflow-hidden">
-            {/* Background Pattern */}
-            <div
-                className="absolute inset-0 opacity-5"
-                style={{
-                    backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23D4AF37' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-                }}
-            />
-
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                {/* Header */}
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <span className="text-yellow-400 text-sm font-semibold tracking-widest uppercase">
-                        {language === 'hi' ? "श्रेणी के अनुसार खोजें" : "Explore By Category"}
-                    </span>
-                    <h2 className="font-playfair text-4xl md:text-6xl font-bold text-white mt-3 mb-6">
-                        {language === 'hi' ? (
-                            <>आप क्या <span className="text-yellow-400">खोजना चाहते हैं?</span></>
+        <section className="relative py-24 md:py-32">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <SectionHeading
+                    eyebrow={isHi ? "अनुभव" : "Experiences"}
+                    title={
+                        isHi ? (
+                            <>
+                                हर यात्री के लिए <em>एक कहानी</em>
+                            </>
                         ) : (
-                            <>What Do You Want to <span className="text-yellow-400">Explore?</span></>
-                        )}
-                    </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        {language === 'hi'
-                            ? "एक श्रेणी चुनें और राजस्थान के सबसे प्रतिष्ठित स्थानों की खोज करें"
-                            : "Choose a category and discover the most iconic places across Rajasthan"}
-                    </p>
-                </motion.div>
+                            <>
+                                A story for <em>every</em> traveller
+                            </>
+                        )
+                    }
+                    subtitle={
+                        isHi
+                            ? "एक विषय चुनें और राजस्थान की सबसे प्रतिष्ठित जगहों को खोजें।"
+                            : "Choose a theme and wander through Rajasthan's most iconic places."
+                    }
+                />
 
-                {/* Bento Grid */}
-                <motion.div
-                    variants={containerVariants}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true, margin: "-100px" }}
-                    className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
-                >
-                    {BENTO_EXPERIENCES.map((exp) => (
-                        <motion.div
-                            key={exp.id}
-                            variants={itemVariants}
-                            whileHover={{ y: -5 }}
-                            className={`group relative overflow-hidden rounded-3xl border border-white/10 dark:border-gray-800 shadow-lg cursor-pointer ${exp.className}`}
-                        >
-                            <Link href={exp.href} className="absolute inset-0 flex flex-col justify-end">
+                <RevealGroup className="grid auto-rows-[minmax(16rem,auto)] grid-cols-1 gap-5 md:grid-cols-4">
+                    {EXPERIENCES.map((exp) => (
+                        <motion.div key={exp.id} variants={revealItem} className={exp.className}>
+                            <Link
+                                href={exp.href}
+                                className="group relative isolate flex h-full overflow-hidden rounded-[2rem] bg-ink-900 shadow-float"
+                            >
                                 <Image
                                     src={exp.image}
-                                    alt={`${getTranslatedTitle(exp.title)} in Rajasthan - ${getTranslatedDesc(exp.description)}`}
+                                    alt={isHi ? exp.title.hi : exp.title.en}
                                     fill
-                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 400px"
-                                    className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    sizes={exp.className.includes("row-span-2") ? "(min-width: 768px) 50vw, 100vw" : "(min-width: 768px) 25vw, 100vw"}
+                                    className="-z-10 object-cover transition-transform duration-[1400ms] ease-lux group-hover:scale-[1.07]"
                                 />
-
-                                {/* Dual Gradient Overlay */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-black/10 transition-opacity duration-300 group-hover:via-black/50" />
-
-                                {/* Hover Shimmer Effect */}
-                                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-1000 pointer-events-none">
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 ease-out" />
-                                </div>
-
-                                {/* Content Details */}
-                                <div className="relative p-6 md:p-8 flex flex-col justify-end z-10 h-full">
-                                    <div className="inline-flex items-center bg-gold-500/80 text-white backdrop-blur-sm px-3.5 py-1 rounded-full text-xs font-bold w-fit mb-3">
-                                        <span>{translateCount(exp.count)}</span>
+                                <div className="absolute inset-0 -z-10 scrim-b" />
+                                <div className="mt-auto flex w-full items-end justify-between gap-4 p-6 md:p-7">
+                                    <div>
+                                        <h3 className="font-display text-3xl font-medium leading-tight text-ivory-50 md:text-4xl">
+                                            {isHi ? exp.title.hi : exp.title.en}
+                                        </h3>
+                                        <p className="mt-1.5 max-w-xs text-sm text-ivory-100/75">
+                                            {isHi ? exp.description.hi : exp.description.en}
+                                        </p>
                                     </div>
-                                    
-                                    <h3 className="text-white font-playfair text-xl md:text-2xl font-bold leading-tight group-hover:text-gold-300 transition-colors duration-300">
-                                        {getTranslatedTitle(exp.title)}
-                                    </h3>
-                                    
-                                    <p className="text-white/70 text-xs md:text-sm mt-1.5 max-w-sm line-clamp-2 opacity-90 group-hover:text-white transition-colors duration-300">
-                                        {getTranslatedDesc(exp.description)}
-                                    </p>
-
-                                    {/* Action Link Arrow */}
-                                    <div className="mt-4 flex items-center gap-1.5 text-gold-400 font-semibold text-xs md:text-sm opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
-                                        <span>{language === 'hi' ? "श्रेणी देखें" : "Explore Category"}</span>
-                                        <ArrowRight size={14} />
-                                    </div>
+                                    <span className="grid h-12 w-12 shrink-0 place-items-center rounded-full glass-dark text-white transition-all duration-500 ease-lux group-hover:rotate-45 group-hover:bg-ivory-50 group-hover:text-ink-900">
+                                        <ArrowUpRight size={18} />
+                                    </span>
                                 </div>
                             </Link>
                         </motion.div>
                     ))}
-                </motion.div>
-
-                {/* View All Button */}
-                <motion.div
-                    initial={{ opacity: 0 }}
-                    whileInView={{ opacity: 1 }}
-                    viewport={{ once: true }}
-                    className="text-center mt-12"
-                >
-                    <Link
-                        href="/places"
-                        className="inline-flex items-center gap-2 bg-gradient-to-r from-yellow-500 to-yellow-600 text-white px-8 py-4 rounded-full font-semibold hover:shadow-lg transition-all hover:scale-105"
-                    >
-                        {language === 'hi' ? "सभी स्थान देखें" : "View All Places"} <ArrowRight size={18} />
-                    </Link>
-                </motion.div>
+                </RevealGroup>
             </div>
         </section>
     );

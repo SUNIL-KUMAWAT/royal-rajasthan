@@ -1,40 +1,35 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, useReducedMotion } from "framer-motion";
 import { STATISTICS, STATISTICS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 
-function CountUp({
-    end,
-    duration = 2000,
-    suffix = "",
-}: {
-    end: number;
-    duration?: number;
-    suffix?: string;
-}) {
+function CountUp({ end, duration = 1800, suffix = "" }: { end: number; duration?: number; suffix?: string }) {
     const [count, setCount] = useState(0);
-    const ref = useRef(null);
+    const ref = useRef<HTMLSpanElement>(null);
     const inView = useInView(ref, { once: true });
+    const reduce = useReducedMotion();
 
     useEffect(() => {
         if (!inView) return;
-        let start = 0;
-        const step = end / (duration / 16);
-        const timer = setInterval(() => {
-            start += step;
-            if (start >= end) {
-                setCount(end);
-                clearInterval(timer);
-            } else {
-                setCount(Math.floor(start));
-            }
-        }, 16);
-        return () => clearInterval(timer);
-    }, [inView, end, duration]);
+        if (reduce) {
+            setCount(end);
+            return;
+        }
+        let frame = 0;
+        const start = performance.now();
+        // Ease-out cubic so numbers settle gently
+        const tick = (now: number) => {
+            const p = Math.min(1, (now - start) / duration);
+            setCount(Math.round(end * (1 - Math.pow(1 - p, 3))));
+            if (p < 1) frame = requestAnimationFrame(tick);
+        };
+        frame = requestAnimationFrame(tick);
+        return () => cancelAnimationFrame(frame);
+    }, [inView, end, duration, reduce]);
 
     return (
-        <span ref={ref}>
+        <span ref={ref} className="tabular-nums">
             {count}
             {suffix}
         </span>
@@ -43,49 +38,50 @@ function CountUp({
 
 export function StatsSection() {
     const { language } = useLanguage();
-    const currentStats = language === 'hi' ? STATISTICS_HINDI : STATISTICS;
+    const isHi = language === "hi";
+    const stats = isHi ? STATISTICS_HINDI : STATISTICS;
 
     return (
-        <section className="py-20 bg-gradient-to-br from-maroon-500 via-maroon-600 to-maroon-700 relative overflow-hidden">
-            <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-0 left-0 w-96 h-96 rounded-full bg-gold-500 -translate-x-1/2 -translate-y-1/2" />
-                <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-gold-500 translate-x-1/2 translate-y-1/2" />
-            </div>
+        <section className="relative py-24 md:py-32">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="relative overflow-hidden rounded-[2.5rem] glass-strong p-8 md:p-14">
+                    <div aria-hidden="true" className="pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gold-400/25 blur-3xl" />
+                    <div aria-hidden="true" className="pointer-events-none absolute -bottom-24 -left-24 h-72 w-72 rounded-full bg-maroon-500/20 blur-3xl" />
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-                <motion.div
-                    initial={{ opacity: 0, y: 30 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    viewport={{ once: true }}
-                    className="text-center mb-16"
-                >
-                    <span className="text-gold-400 text-sm font-semibold tracking-widest uppercase">
-                        {language === 'hi' ? "आंकड़ों में" : "By The Numbers"}
-                    </span>
-                    <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mt-3">
-                        {language === 'hi' ? "राजस्थान की भव्य विरासत" : "Rajasthan's Grand Legacy"}
-                    </h2>
-                </motion.div>
+                    <div className="relative grid gap-12 lg:grid-cols-12 lg:items-end">
+                        <div className="lg:col-span-4">
+                            <span className="eyebrow">{isHi ? "आंकड़ों में" : "By the numbers"}</span>
+                            <h2 className="mt-4 font-display text-4xl font-medium leading-[1.05] tracking-tight text-ink-900 dark:text-ivory-50 md:text-5xl">
+                                {isHi ? (
+                                    <>
+                                        राजस्थान की <em className="italic font-normal text-gold-sheen">भव्य</em> विरासत
+                                    </>
+                                ) : (
+                                    <>
+                                        A <em className="italic font-normal text-gold-sheen">grand</em> legacy
+                                    </>
+                                )}
+                            </h2>
+                        </div>
 
-                <div className="grid grid-cols-2 lg:grid-cols-3 gap-x-6 gap-y-12 md:gap-12 relative z-10">
-                    {currentStats.map((stat, i) => (
-                        <motion.div
-                            key={stat.label}
-                            initial={{ opacity: 0, y: 40 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: Math.min(i, 8) * 0.1 }}
-                            className="text-center group"
-                        >
-                            <div className="text-4xl md:text-5xl font-bold text-gold-400 font-playfair mb-2 group-hover:scale-110 transition-transform">
-                                <CountUp end={stat.value} suffix={stat.suffix} />
-                            </div>
-                            <div className="text-white/70 text-sm font-medium">
-                                {stat.label}
-                            </div>
-                            <div className="w-8 h-0.5 bg-gold-500/50 mx-auto mt-3" />
-                        </motion.div>
-                    ))}
+                        <dl className="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-8">
+                            {stats.map((stat, i) => (
+                                <motion.div
+                                    key={stat.label}
+                                    initial={{ opacity: 0, y: 24 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true }}
+                                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1], delay: i * 0.07 }}
+                                    className="flex flex-col-reverse border-t border-ink-900/10 pt-5 dark:border-white/10"
+                                >
+                                    <dt className="mt-3 text-sm text-ink-500 dark:text-ivory-200/65">{stat.label}</dt>
+                                    <dd className="font-display text-5xl font-medium leading-none text-ink-900 dark:text-ivory-50 md:text-6xl">
+                                        <CountUp end={stat.value} suffix={stat.suffix} />
+                                    </dd>
+                                </motion.div>
+                            ))}
+                        </dl>
+                    </div>
                 </div>
             </div>
         </section>

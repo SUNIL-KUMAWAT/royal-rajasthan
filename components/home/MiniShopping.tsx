@@ -1,10 +1,12 @@
 "use client";
 
-import { motion } from "framer-motion";
-import Link from "@/components/LocalizedLink";
 import Image from "next/image";
-import { ArrowRight, ShoppingBag } from "lucide-react";
+import { motion } from "framer-motion";
+import { ArrowUpRight } from "lucide-react";
+import Link from "@/components/LocalizedLink";
 import { useLanguage } from "@/components/LanguageProvider";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { RevealGroup, revealItem } from "@/components/ui/Reveal";
 
 const SHOPPING_CATEGORIES = [
   {
@@ -29,66 +31,70 @@ const SHOPPING_CATEGORIES = [
 
 export function MiniShopping() {
   const { language } = useLanguage();
-  const t = {
-    title: language === "hi" ? "राजस्थान की मशहूर खरीदारी" : "Famous Shopping Experiences",
-    subtitle: language === "hi" ? "पारंपरिक बाज़ारों से बेहतरीन हस्तशिल्प और आभूषण खरीदें" : "Buy the best handicrafts and jewelry from traditional bazaars",
-    viewAll: language === "hi" ? "सभी बाज़ार देखें" : "Explore All Markets",
-    explore: language === "hi" ? "खोजें" : "Explore"
-  };
+  const isHi = language === "hi";
+  const lang = isHi ? "hi" : "en";
 
   return (
-    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg')" }}>
-      {/* Overlay with slight tint difference from Festivals */}
-      <div className="absolute inset-0 bg-maroon-950/80"></div>
+    <section className="relative py-24 md:py-32">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <SectionHeading
+          eyebrow={isHi ? "बाज़ार" : "Bazaars"}
+          title={
+            isHi ? (
+              <>
+                हाथ से बनी <em>विरासत</em>
+              </>
+            ) : (
+              <>
+                Heirlooms, made <em>by hand</em>
+              </>
+            )
+          }
+          subtitle={
+            isHi
+              ? "पारंपरिक बाज़ारों से बेहतरीन हस्तशिल्प, कपड़े और आभूषण खरीदें।"
+              : "Kundan jewellery, block-printed cotton and blue pottery — straight from the bazaars that made them famous."
+          }
+          action={
+            <Link href="/shopping" className="btn-glass">
+              {isHi ? "सभी बाज़ार देखें" : "Explore all markets"}
+              <ArrowUpRight size={16} />
+            </Link>
+          }
+        />
 
-      <div className="max-w-7xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <h2 className="font-playfair text-4xl md:text-5xl font-bold text-white mb-4">
-            {t.title}
-          </h2>
-          <p className="text-white/80 text-lg max-w-2xl mx-auto">{t.subtitle}</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+        <RevealGroup className="grid gap-5 md:grid-cols-3">
           {SHOPPING_CATEGORIES.map((item, idx) => (
-            <motion.div
-              key={item.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: Math.min(idx, 8) * 0.1 }}
-              className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl p-6 group hover:bg-white/10 transition-all flex flex-col"
-            >
-              <div className="relative h-48 w-full rounded-xl overflow-hidden mb-6 shrink-0 shadow-lg">
+            <motion.div key={item.id} variants={revealItem} className={idx === 1 ? "md:mt-16" : ""}>
+              <Link
+                href="/shopping"
+                className="group relative isolate flex aspect-[3/4] overflow-hidden rounded-[2rem] bg-ink-900 shadow-float"
+              >
                 <Image
                   src={item.image}
-                  alt={item.title[language as 'hi' | 'en']}
+                  alt={item.title[lang]}
                   fill
-                  className="object-cover transition-transform duration-700 group-hover:scale-110"
+                  sizes="(min-width: 768px) 33vw, 100vw"
+                  className="-z-10 object-cover transition-transform duration-[1400ms] ease-lux group-hover:scale-[1.07]"
                 />
-              </div>
-
-              <h3 className="text-white font-playfair font-bold text-2xl mb-3 flex items-center gap-2">
-                <ShoppingBag size={20} className="text-yellow-400" />
-                {item.title[language as 'hi' | 'en']}
-              </h3>
-
-              <p className="text-white/70 text-sm mb-6 grow">
-                {item.desc[language as 'hi' | 'en']}
-              </p>
-
-              <Link href="/shopping" className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
-                {t.explore} <ArrowRight size={14} />
+                <div className="absolute inset-0 -z-10 scrim-b" />
+                <span className="absolute left-5 top-5 font-display text-5xl italic text-ivory-50/80">
+                  {String(idx + 1).padStart(2, "0")}
+                </span>
+                <div className="mt-auto w-full p-4">
+                  <div className="rounded-[1.5rem] glass-dark p-5 transition-transform duration-500 ease-lux group-hover:-translate-y-1">
+                    <h3 className="font-display text-2xl font-medium text-ivory-50">{item.title[lang]}</h3>
+                    <p className="mt-1.5 text-sm text-ivory-100/75">{item.desc[lang]}</p>
+                    <span className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-gold-300">
+                      {isHi ? "खोजें" : "Explore"}
+                      <ArrowUpRight size={15} className="transition-transform duration-500 group-hover:rotate-45" />
+                    </span>
+                  </div>
+                </div>
               </Link>
             </motion.div>
           ))}
-        </div>
-
-        <div className="text-center">
-          <Link href="/shopping" className="inline-flex items-center gap-2 px-8 py-3 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white font-medium hover:bg-white/20 hover:scale-105 transition-all">
-            {t.viewAll} <ArrowRight size={16} />
-          </Link>
-        </div>
+        </RevealGroup>
       </div>
     </section>
   );

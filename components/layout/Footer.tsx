@@ -1,9 +1,10 @@
 "use client";
-import Link from "@/components/LocalizedLink";
 import Image from "next/image";
-import { ArrowRight, Heart } from "lucide-react";
+import { ArrowUpRight, Heart } from "lucide-react";
+import Link from "@/components/LocalizedLink";
 import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
+import { Reveal } from "@/components/ui/Reveal";
 
 const FAMOUS_PLACES = [
     { name: "Amber Fort", nameHi: "आमेर किला", href: "/places/amber-fort" },
@@ -30,170 +31,146 @@ const SHOPPING = [
     { name: "Shopping Guide", nameHi: "शॉपिंग गाइड", href: "/shopping" },
 ];
 
+const MARQUEE = {
+    en: ["Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Pushkar", "Bikaner", "Mount Abu", "Chittorgarh", "Ranthambore", "Bundi"],
+    hi: ["जयपुर", "उदयपुर", "जोधपुर", "जैसलमेर", "पुष्कर", "बीकानेर", "माउंट आबू", "चित्तौड़गढ़", "रणथंभौर", "बूंदी"],
+};
+
+const LEGAL = [
+    { en: "Privacy Policy", hi: "गोपनीयता नीति", href: "/privacy-policy" },
+    { en: "Terms of Service", hi: "सेवा की शर्तें", href: "/terms-of-service" },
+    { en: "Cookie Policy", hi: "कुकी नीति", href: "/cookie-policy" },
+];
+
+function LinkColumn({ title, items }: { title: string; items: { label: string; href: string }[] }) {
+    return (
+        <div>
+            <h4 className="mb-5 font-sans text-[11px] font-semibold uppercase tracking-eyebrow text-gold-300/80">{title}</h4>
+            <ul className="space-y-3">
+                {items.map((item) => (
+                    <li key={item.href}>
+                        <Link
+                            href={item.href}
+                            className="group inline-flex items-center gap-1 text-sm text-ivory-100/65 transition-colors duration-300 hover:text-ivory-50"
+                        >
+                            <span className="bg-[linear-gradient(currentColor,currentColor)] bg-[length:0%_1px] bg-left-bottom bg-no-repeat pb-0.5 transition-[background-size] duration-500 ease-lux group-hover:bg-[length:100%_1px]">
+                                {item.label}
+                            </span>
+                            <ArrowUpRight size={13} className="-translate-x-1 opacity-0 transition-all duration-300 group-hover:translate-x-0 group-hover:opacity-100" />
+                        </Link>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    );
+}
+
 export function Footer() {
     const { language } = useLanguage();
-    const currentNavLinks = language === 'hi' ? NAV_LINKS_HINDI : NAV_LINKS;
+    const isHi = language === "hi";
+    const navLinks = isHi ? NAV_LINKS_HINDI : NAV_LINKS;
+    const towns = isHi ? MARQUEE.hi : MARQUEE.en;
 
     return (
-        <footer className="relative bg-[#070b16] text-white overflow-hidden pt-20">
-            {/* Background Accents */}
-            <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
-            <div className="absolute -top-40 -right-40 w-96 h-96 bg-gold-600/10 rounded-full blur-[120px] pointer-events-none" />
-            <div className="absolute bottom-0 -left-40 w-96 h-96 bg-maroon-700/10 rounded-full blur-[120px] pointer-events-none" />
+        <footer className="relative isolate mt-24 overflow-hidden bg-ink-950 pb-28 text-ivory-50 md:pb-0">
+            {/* Ambient light */}
+            <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+                <div className="absolute -top-1/3 left-1/4 h-[40rem] w-[40rem] rounded-full bg-gold-500/10 blur-[140px]" />
+                <div className="absolute -bottom-1/3 -right-20 h-[36rem] w-[36rem] rounded-full bg-maroon-500/20 blur-[140px]" />
+                <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-gold-500/50 to-transparent" />
+            </div>
 
-            <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 pb-12">
-                {/* 5 Column Grid for perfect distribution */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10">
-
-                    {/* 1. Brand Section */}
-                    <div>
-                        <Link href="/" className="inline-flex items-center group relative z-10 transition-transform hover:scale-105 mb-6">
-                            <Image
-                                src={language === 'hi' ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
-                                alt="Rajasthan Tourism Places"
-                                width={300}
-                                height={120}
-                                className="h-24 md:h-28 w-auto object-contain drop-shadow-[0_0_15px_rgba(255,255,255,0.1)]"
-                            />
+            {/* Editorial call to action */}
+            <div className="mx-auto max-w-7xl px-4 pt-20 sm:px-6 md:pt-28 lg:px-8">
+                <Reveal className="flex flex-col items-start justify-between gap-10 md:flex-row md:items-end">
+                    <h2 className="max-w-3xl font-display text-5xl font-medium leading-[0.95] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
+                        {isHi ? (
+                            <>
+                                आपकी शाही <em className="italic text-gold-sheen">यात्रा</em> यहीं से शुरू होती है
+                            </>
+                        ) : (
+                            <>
+                                Your royal <em className="font-normal italic text-gold-sheen">journey</em> begins here
+                            </>
+                        )}
+                    </h2>
+                    <div className="flex flex-wrap gap-3">
+                        <Link href="/plan-trip" className="btn-gold">
+                            {isHi ? "यात्रा प्लान करें" : "Plan your trip"}
+                            <ArrowUpRight size={16} />
                         </Link>
-                        <p className="text-gray-400 text-sm leading-relaxed mb-6">
-                            {language === 'hi'
-                                ? "राजाओं की शानदार भूमि के लिए आपका प्रवेश द्वार। शाही विरासत, सुनहरे रेगिस्तान और जीवंत संस्कृति का अनुभव करें।"
-                                : "Your gateway to the magnificent Land of Kings. Experience royal heritage, golden deserts, and vibrant culture."}
-                        </p>
+                        <Link href="/places" className="btn-glass-dark">
+                            {isHi ? "स्थान देखें" : "Browse places"}
+                        </Link>
                     </div>
+                </Reveal>
+            </div>
 
-                    {/* 2. Quick Links */}
-                    <div className="lg:justify-self-center">
-                        <h4 className="font-playfair font-semibold text-lg mb-6 text-white flex items-center gap-2">
-                            <span className="w-3 h-[2px] bg-gold-500 rounded-full"></span>
-                            {language === 'hi' ? 'त्वरित लिंक' : 'Quick Links'}
-                        </h4>
-                        <ul className="space-y-3">
-                            {currentNavLinks.map((link) => (
-                                <li key={link.name}>
-                                    <Link
-                                        href={link.href}
-                                        className="text-gray-400 hover:text-gold-400 text-sm transition-all duration-300 flex items-center gap-2 group w-fit"
-                                    >
-                                        <ArrowRight
-                                            size={14}
-                                            className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-gold-500"
-                                        />
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300">
-                                            {link.name}
-                                        </span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* 3. Famous Places */}
-                    <div className="lg:justify-self-center">
-                        <h4 className="font-playfair font-semibold text-lg mb-6 text-white flex items-center gap-2">
-                            <span className="w-3 h-[2px] bg-gold-500 rounded-full"></span>
-                            {language === 'hi' ? 'प्रसिद्ध स्थान' : 'Famous Places'}
-                        </h4>
-                        <ul className="space-y-3">
-                            {FAMOUS_PLACES.map((place) => (
-                                <li key={place.name}>
-                                    <Link
-                                        href={place.href}
-                                        className="text-gray-400 hover:text-gold-400 text-sm transition-all duration-300 flex items-center gap-2 group w-fit"
-                                    >
-                                        <ArrowRight
-                                            size={14}
-                                            className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-gold-500"
-                                        />
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300">
-                                            {language === 'hi' ? place.nameHi : place.name}
-                                        </span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* 4. Festivals */}
-                    <div className="lg:justify-self-center">
-                        <h4 className="font-playfair font-semibold text-lg mb-6 text-white flex items-center gap-2">
-                            <span className="w-3 h-[2px] bg-gold-500 rounded-full"></span>
-                            {language === 'hi' ? 'त्यौहार' : 'Festivals'}
-                        </h4>
-                        <ul className="space-y-3">
-                            {FESTIVALS.map((fest) => (
-                                <li key={fest.name}>
-                                    <Link
-                                        href={fest.href}
-                                        className="text-gray-400 hover:text-gold-400 text-sm transition-all duration-300 flex items-center gap-2 group w-fit"
-                                    >
-                                        <ArrowRight
-                                            size={14}
-                                            className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-gold-500"
-                                        />
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300">
-                                            {language === 'hi' ? fest.nameHi : fest.name}
-                                        </span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
-                    {/* 5. Shopping */}
-                    <div className="lg:justify-self-center">
-                        <h4 className="font-playfair font-semibold text-lg mb-6 text-white flex items-center gap-2">
-                            <span className="w-3 h-[2px] bg-gold-500 rounded-full"></span>
-                            {language === 'hi' ? 'शॉपिंग' : 'Shopping'}
-                        </h4>
-                        <ul className="space-y-3">
-                            {SHOPPING.map((shop) => (
-                                <li key={shop.name}>
-                                    <Link
-                                        href={shop.href}
-                                        className="text-gray-400 hover:text-gold-400 text-sm transition-all duration-300 flex items-center gap-2 group w-fit"
-                                    >
-                                        <ArrowRight
-                                            size={14}
-                                            className="opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300 text-gold-500"
-                                        />
-                                        <span className="group-hover:translate-x-1 transition-transform duration-300">
-                                            {language === 'hi' ? shop.nameHi : shop.name}
-                                        </span>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-
+            {/* Destination marquee */}
+            <div className="mt-16 border-y border-white/10 py-6 mask-fade-x" aria-hidden="true">
+                <div className="flex w-max animate-marquee gap-12 whitespace-nowrap">
+                    {[...towns, ...towns].map((town, i) => (
+                        <span key={i} className="flex items-center gap-12 font-display text-3xl italic text-ivory-100/40 md:text-4xl">
+                            {town}
+                            <span className="h-1.5 w-1.5 rounded-full bg-gold-400/60" />
+                        </span>
+                    ))}
                 </div>
             </div>
 
-            {/* Bottom Bar */}
-            <div className="relative z-10 border-t border-white/10 bg-black/40 backdrop-blur-md">
-                <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-                    <p className="text-gray-400 text-[10px] flex flex-wrap justify-center md:justify-start items-center gap-1.5">
+            {/* Link columns */}
+            <div className="mx-auto grid max-w-7xl grid-cols-2 gap-10 px-4 py-16 sm:px-6 md:grid-cols-6 lg:px-8">
+                <div className="col-span-2">
+                    <Link href="/" className="inline-block">
+                        <Image
+                            src={isHi ? "/hindi-logo-bg.png" : "/english-logo-bg.png"}
+                            alt="Rajasthan Tourism Places"
+                            width={300}
+                            height={120}
+                            className="h-20 w-auto object-contain"
+                        />
+                    </Link>
+                    <p className="mt-5 max-w-xs text-sm leading-relaxed text-ivory-100/60">
+                        {isHi
+                            ? "राजाओं की शानदार भूमि के लिए आपका प्रवेश द्वार। शाही विरासत, सुनहरे रेगिस्तान और जीवंत संस्कृति का अनुभव करें।"
+                            : "Your gateway to the magnificent Land of Kings. Royal heritage, golden deserts and living culture — curated with care."}
+                    </p>
+                </div>
+                <LinkColumn title={isHi ? "त्वरित लिंक" : "Explore"} items={navLinks.map((l) => ({ label: l.name, href: l.href }))} />
+                <LinkColumn
+                    title={isHi ? "प्रसिद्ध स्थान" : "Famous places"}
+                    items={FAMOUS_PLACES.map((p) => ({ label: isHi ? p.nameHi : p.name, href: p.href }))}
+                />
+                <LinkColumn
+                    title={isHi ? "त्यौहार" : "Festivals"}
+                    items={FESTIVALS.map((f) => ({ label: isHi ? f.nameHi : f.name, href: f.href }))}
+                />
+                <LinkColumn
+                    title={isHi ? "शॉपिंग" : "Shopping"}
+                    items={SHOPPING.map((s) => ({ label: isHi ? s.nameHi : s.name, href: s.href }))}
+                />
+            </div>
+
+            {/* Bottom bar */}
+            <div className="border-t border-white/10">
+                <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-xs text-ivory-100/50 sm:px-6 md:flex-row lg:px-8">
+                    <p className="flex flex-wrap items-center justify-center gap-1.5">
                         © {new Date().getFullYear()} Rajasthan Tourism Places.
-                        <span className="flex items-center gap-1.5">
-                            Made with <Heart size={14} className="text-red-500 fill-red-500 animate-pulse" /> in Rajasthan
+                        <span className="inline-flex items-center gap-1.5">
+                            {isHi ? "राजस्थान में" : "Made with"}
+                            <Heart size={12} className="fill-rose-500 text-rose-500" />
+                            {isHi ? "से बना" : "in Rajasthan"}
                         </span>
                     </p>
-                    <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
-                        {[
-                            { name: "Privacy Policy", href: "/privacy-policy" },
-                            { name: "Terms of Service", href: "/terms-of-service" },
-                            { name: "Cookie Policy", href: "/cookie-policy" }
-                        ].map((item) => (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className="text-gray-500 hover:text-gold-400 text-[10px] transition-colors duration-300 whitespace-nowrap"
-                            >
-                                {item.name}
-                            </Link>
+                    <ul className="flex flex-wrap justify-center gap-5">
+                        {LEGAL.map((item) => (
+                            <li key={item.href}>
+                                <Link href={item.href} className="transition-colors hover:text-gold-300">
+                                    {isHi ? item.hi : item.en}
+                                </Link>
+                            </li>
                         ))}
-                    </div>
+                    </ul>
                 </div>
             </div>
         </footer>

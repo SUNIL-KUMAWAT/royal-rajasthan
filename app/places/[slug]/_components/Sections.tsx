@@ -3,8 +3,29 @@
 // both in the "Overview" tab (all sections stacked) and in its own tab.
 import { useState, type ReactNode } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { AlertCircle, Check, ChevronDown, Clock, MapPin, Star, X } from "lucide-react";
+import {
+    Accessibility,
+    ArrowUpRight,
+    Camera,
+    Check,
+    Clock,
+    Hourglass,
+    Info,
+    Landmark,
+    Lightbulb,
+    MapPin,
+    MessagesSquare,
+    Navigation,
+    Plus,
+    ScrollText,
+    Sparkles,
+    Star,
+    SunMedium,
+    Ticket,
+    X,
+} from "lucide-react";
 import Link from "@/components/LocalizedLink";
+import { Reveal } from "@/components/ui/Reveal";
 import type { Place } from "@/types";
 import type { DetailText } from "./text";
 
@@ -12,38 +33,58 @@ export type PlaceLink = { name: string; slug: string };
 
 type SectionProps = { place: Place; t: DetailText };
 
-// Tailwind only generates classes it can see in source, so colours are spelled out
-// in full here (template strings like `bg-${color}-50` would silently not exist).
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+// Tailwind only generates classes it can see in source, so tones are spelled out in full.
 const TONES = {
-    orange: { box: "bg-orange-50 dark:bg-orange-900/20", label: "text-orange-500", value: "text-orange-600 dark:text-orange-400" },
-    blue: { box: "bg-blue-50 dark:bg-blue-900/20", label: "text-blue-500", value: "text-blue-600 dark:text-blue-400" },
-    green: { box: "bg-green-50 dark:bg-green-900/20", label: "text-green-500", value: "text-green-600 dark:text-green-400" },
-    purple: { box: "bg-purple-50 dark:bg-purple-900/20", label: "text-purple-500", value: "text-purple-600 dark:text-purple-400" },
-    yellow: { box: "bg-yellow-50 dark:bg-yellow-900/20", label: "text-yellow-600", value: "text-yellow-700 dark:text-yellow-400" },
-    maroon: { box: "bg-maroon-50 dark:bg-maroon-900/20", label: "text-maroon-400", value: "text-maroon-700 dark:text-maroon-300" },
+    gold: { label: "text-gold-700 dark:text-gold-400", value: "text-ink-900 dark:text-ivory-50", dot: "bg-gold-500" },
+    maroon: { label: "text-maroon-500 dark:text-maroon-300", value: "text-ink-900 dark:text-ivory-50", dot: "bg-maroon-500 dark:bg-maroon-300" },
+    ink: { label: "text-ink-500 dark:text-ivory-200/70", value: "text-ink-900 dark:text-ivory-50", dot: "bg-ink-400" },
+    sage: { label: "text-emerald-700 dark:text-emerald-400", value: "text-ink-900 dark:text-ivory-50", dot: "bg-emerald-500" },
 } as const;
 type Tone = keyof typeof TONES;
 
-const card = "bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 p-6";
+/** Glass panel used for every content card on the page. */
+const card = "relative rounded-[1.75rem] glass p-6 md:p-8";
+/** Small label above values (uppercase, tracked). */
+const label = "text-[11px] font-semibold uppercase tracking-[0.16em]";
+/** Sub-heading inside a panel. */
+const panelTitle = "mb-5 flex items-center gap-2.5 font-display text-2xl font-medium tracking-tight text-ink-900 dark:text-ivory-50";
 
-function StatTile({ label, value, tone, large }: { label: string; value: ReactNode; tone: Tone; large?: boolean }) {
+function IconBadge({ children }: { children: ReactNode }) {
+    return (
+        <span
+            className="grid h-9 w-9 shrink-0 place-items-center rounded-full bg-gold-400/15 text-gold-700 ring-1 ring-gold-500/20 dark:text-gold-300"
+            aria-hidden="true"
+        >
+            {children}
+        </span>
+    );
+}
+
+function StatTile({ label: l, value, tone, large }: { label: string; value: ReactNode; tone: Tone; large?: boolean }) {
     const c = TONES[tone];
     return (
-        <div className={`${c.box} rounded-xl p-4 text-center`}>
-            <div className={`text-xs mb-1 ${c.label}`}>{label}</div>
-            <div className={`font-bold ${large ? "text-xl md:text-2xl" : "text-sm"} ${c.value}`}>{value}</div>
+        <div className="rounded-2xl bg-white/50 p-4 ring-1 ring-ink-900/[0.06] transition-transform duration-500 ease-lux hover:-translate-y-0.5 dark:bg-white/[0.04] dark:ring-white/[0.08] md:p-5">
+            <div className={`flex items-center gap-1.5 ${label} ${c.label}`}>
+                <span className={`h-1.5 w-1.5 rounded-full ${c.dot}`} aria-hidden="true" />
+                {l}
+            </div>
+            <div className={`mt-2 font-display font-medium leading-tight ${large ? "text-3xl md:text-4xl" : "text-lg"} ${c.value}`}>
+                {value}
+            </div>
         </div>
     );
 }
 
-function Note({ children, tone }: { children: ReactNode; tone: "blue" | "yellow" }) {
+function Note({ children, tone }: { children: ReactNode; tone: "info" | "gold" }) {
     const cls =
-        tone === "blue"
-            ? "bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-400"
-            : "bg-yellow-50 dark:bg-yellow-900/20 text-yellow-700 dark:text-yellow-400";
+        tone === "info"
+            ? "bg-ink-900/[0.04] text-ink-600 ring-ink-900/[0.06] dark:bg-white/[0.05] dark:text-ivory-200/80 dark:ring-white/10"
+            : "bg-gold-400/10 text-gold-800 ring-gold-500/20 dark:text-gold-300";
     return (
-        <div className={`mt-4 rounded-xl p-3 text-sm flex items-start gap-2 ${cls}`}>
-            <AlertCircle size={16} className="mt-0.5 flex-shrink-0" />
+        <div className={`mt-5 flex items-start gap-2.5 rounded-2xl p-4 text-sm leading-relaxed ring-1 ${cls}`}>
+            <Info size={16} className="mt-0.5 flex-shrink-0" />
             <span>{children}</span>
         </div>
     );
@@ -51,32 +92,40 @@ function Note({ children, tone }: { children: ReactNode; tone: "blue" | "yellow"
 
 function InfoRows({ rows }: { rows: { label: string; value?: ReactNode; cls?: string }[] }) {
     return (
-        <dl className="space-y-1">
+        <dl>
             {rows
                 .filter((r) => r.value !== undefined && r.value !== "")
                 .map((r) => (
                     <div
                         key={r.label}
-                        className="flex justify-between items-start gap-4 py-2.5 border-b border-gray-100 dark:border-gray-700 last:border-0"
+                        className="flex items-center justify-between gap-4 border-b border-ink-900/[0.06] py-3.5 last:border-0 dark:border-white/[0.07]"
                     >
-                        <dt className="text-gray-500 dark:text-gray-400 text-sm flex-shrink-0">{r.label}</dt>
-                        <dd className={`text-right ${r.cls ?? "font-medium text-gray-800 dark:text-gray-200 text-sm"}`}>{r.value}</dd>
+                        <dt className="flex-shrink-0 text-sm text-ink-500 dark:text-ivory-200/65">{r.label}</dt>
+                        <dd className={`text-right ${r.cls ?? "text-sm font-medium text-ink-900 dark:text-ivory-50"}`}>{r.value}</dd>
                     </div>
                 ))}
         </dl>
     );
 }
 
-/** Section title. In the stacked overview each section gets a dashed divider above it. */
+/** Section title. In the stacked overview each section gets a hairline divider above it. */
 export function SectionBlock({ title, icon, divided, children }: { title: string; icon?: ReactNode; divided?: boolean; children: ReactNode }) {
     return (
-        <section className={divided ? "border-t-2 border-dashed border-gray-200 dark:border-gray-700 pt-8" : undefined}>
-            <h2 className="font-playfair text-xl md:text-2xl font-bold text-gray-800 dark:text-white mb-4 md:mb-6 flex items-center gap-2">
-                {icon}
+        <Reveal as="section" className={divided ? "pt-4" : undefined}>
+            {divided && <div className="hairline mb-12" />}
+            <h2 className="mb-6 flex items-center gap-4 font-display text-3xl font-medium leading-[1.05] tracking-tight text-ink-900 dark:text-ivory-50 md:mb-8 md:text-4xl">
+                {icon && (
+                    <span
+                        className="grid h-12 w-12 shrink-0 place-items-center rounded-full glass text-gold-700 dark:text-gold-300"
+                        aria-hidden="true"
+                    >
+                        {icon}
+                    </span>
+                )}
                 {title}
             </h2>
             {children}
-        </section>
+        </Reveal>
     );
 }
 
@@ -93,91 +142,105 @@ export function OverviewIntro({ place, t }: SectionProps) {
         { label: t.bestTime, value: place.bestTimeToVisit.months },
     ].filter((f) => f.value);
 
-    return (
-        <div className="space-y-10">
-            <p className="text-gray-600 dark:text-gray-400 text-sm md:text-lg leading-relaxed">{place.description}</p>
+    const subTitle = "mb-5 font-display text-2xl font-medium tracking-tight text-ink-900 dark:text-ivory-50 md:text-3xl";
 
-            <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-2xl p-6">
-                <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.quickFacts}</h2>
-                <dl className="grid grid-cols-2 md:grid-cols-3 gap-4">
+    return (
+        <div className="space-y-12">
+            <p className="border-l-2 border-gold-500/60 pl-5 font-display text-xl leading-relaxed text-ink-700 dark:text-ivory-100/85 md:pl-7 md:text-2xl">
+                {place.description}
+            </p>
+
+            <Reveal className={`${card} overflow-hidden`}>
+                <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-gold-400/15 blur-3xl" aria-hidden="true" />
+                <h2 className={`relative ${subTitle}`}>{t.quickFacts}</h2>
+                <dl className="relative grid grid-cols-2 gap-x-6 gap-y-6 md:grid-cols-3">
                     {facts.map((fact) => (
-                        <div key={fact.label}>
-                            <dt className="text-xs text-gray-500 dark:text-gray-400 mb-1">{fact.label}</dt>
-                            <dd className="font-medium text-gray-800 dark:text-gray-200 text-sm">{fact.value}</dd>
+                        <div key={fact.label} className="border-t border-ink-900/[0.08] pt-3 dark:border-white/[0.08]">
+                            <dt className={`${label} text-ink-400 dark:text-ivory-200/55`}>{fact.label}</dt>
+                            <dd className="mt-1.5 font-display text-lg font-medium leading-snug text-ink-900 dark:text-ivory-50">
+                                {fact.value}
+                            </dd>
                         </div>
                     ))}
                 </dl>
-            </div>
+            </Reveal>
 
             {place.highlights?.length > 0 && (
-                <div>
-                    <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.highlights}</h2>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                <Reveal>
+                    <h2 className={subTitle}>{t.highlights}</h2>
+                    <ul className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
                         {place.highlights.map((h) => (
-                            <li key={h} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
-                                <Star size={14} className="text-yellow-500 mt-0.5 flex-shrink-0 fill-yellow-500" />
-                                <span className="text-sm">{h}</span>
+                            <li
+                                key={h}
+                                className="flex items-start gap-3 border-b border-ink-900/[0.06] py-3.5 text-ink-600 dark:border-white/[0.07] dark:text-ivory-200/75"
+                            >
+                                <Star size={14} className="mt-1 flex-shrink-0 fill-gold-500 text-gold-500" />
+                                <span className="text-sm leading-relaxed md:text-[15px]">{h}</span>
                             </li>
                         ))}
                     </ul>
-                </div>
+                </Reveal>
             )}
 
             {place.activities && place.activities.length > 0 && (
-                <div>
-                    <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.activities}</h2>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <Reveal>
+                    <h2 className={subTitle}>{t.activities}</h2>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                         {place.activities.map((act) => (
                             <li
                                 key={act}
-                                className="flex items-start gap-2.5 p-3 bg-yellow-500/5 dark:bg-yellow-500/10 border border-yellow-500/10 dark:border-yellow-500/20 rounded-xl text-gray-700 dark:text-gray-300"
+                                className="flex items-start gap-3 rounded-2xl glass p-4 text-ink-700 transition-transform duration-500 ease-lux hover:-translate-y-0.5 dark:text-ivory-100"
                             >
-                                <span className="mt-0.5" aria-hidden="true">🎯</span>
-                                <span className="text-sm font-medium">{act}</span>
+                                <IconBadge>
+                                    <Sparkles size={15} />
+                                </IconBadge>
+                                <span className="pt-1.5 text-sm font-medium">{act}</span>
                             </li>
                         ))}
                     </ul>
-                </div>
+                </Reveal>
             )}
 
             {place.facilities?.length > 0 && (
-                <div>
-                    <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.facilities}</h2>
+                <Reveal>
+                    <h2 className={subTitle}>{t.facilities}</h2>
                     <ul className="flex flex-wrap gap-2">
                         {place.facilities.map((f) => (
-                            <li
-                                key={f}
-                                className="flex items-center gap-1 px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-sm rounded-full"
-                            >
-                                <Check size={12} className="text-green-500" />
+                            <li key={f} className="chip-idle !text-sm !font-medium">
+                                <Check size={13} className="text-emerald-600 dark:text-emerald-400" />
                                 {f}
                             </li>
                         ))}
                     </ul>
-                </div>
+                </Reveal>
             )}
 
             {place.accessibility && place.accessibility.length > 0 && (
-                <div>
-                    <h2 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-lg">{t.accessibility}</h2>
-                    <ul className="space-y-2.5">
+                <Reveal>
+                    <h2 className={subTitle}>{t.accessibility}</h2>
+                    <ul className="space-y-3">
                         {place.accessibility.map((acc) => (
-                            <li key={acc} className="flex items-start gap-2 text-gray-600 dark:text-gray-400">
-                                <span className="text-blue-500 mt-0.5" aria-hidden="true">♿</span>
-                                <span className="text-sm">{acc}</span>
+                            <li key={acc} className="flex items-start gap-3 text-ink-600 dark:text-ivory-200/75">
+                                <IconBadge>
+                                    <Accessibility size={15} />
+                                </IconBadge>
+                                <span className="pt-1.5 text-sm leading-relaxed">{acc}</span>
                             </li>
                         ))}
                     </ul>
-                </div>
+                </Reveal>
             )}
 
             {place.significance && (
-                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-xl p-4 flex items-start gap-2">
-                    <AlertCircle size={16} className="text-blue-500 mt-0.5 flex-shrink-0" />
-                    <p className="text-blue-700 dark:text-blue-400 text-sm">
-                        <strong>{t.significance}:</strong> {place.significance}
+                <Reveal className="relative overflow-hidden rounded-[1.75rem] bg-ink-900 p-6 text-ivory-50 shadow-float dark:bg-white/[0.06] dark:ring-1 dark:ring-white/10 md:p-8">
+                    <div className="pointer-events-none absolute -bottom-20 -left-10 h-56 w-56 rounded-full bg-gold-400/20 blur-3xl" aria-hidden="true" />
+                    <span className="eyebrow relative !text-gold-300" aria-hidden="true">
+                        {t.significance}
+                    </span>
+                    <p className="relative mt-4 font-display text-xl italic leading-relaxed text-ivory-100 md:text-2xl">
+                        <strong className="sr-only">{t.significance}:</strong> {place.significance}
                     </p>
-                </div>
+                </Reveal>
             )}
         </div>
     );
@@ -187,23 +250,39 @@ export function OverviewIntro({ place, t }: SectionProps) {
 export function TimingTicketsSection({ place, t, isOpen, divided }: SectionProps & { isOpen: boolean; divided?: boolean }) {
     const price = (v: number | undefined) => (v === undefined ? undefined : v === 0 ? t.free : `₹${v}`);
     return (
-        <SectionBlock title={t.timingAndTickets} icon={<Clock size={22} className="text-yellow-500" />} divided={divided}>
-            <div className="space-y-6">
+        <SectionBlock title={t.timingAndTickets} icon={<Clock size={20} />} divided={divided}>
+            <div className="space-y-5">
                 <div className={card}>
-                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 flex items-center gap-2 text-base">
-                        <Clock size={18} className="text-yellow-500" />
+                    <h3 className={panelTitle}>
+                        <IconBadge>
+                            <Clock size={16} />
+                        </IconBadge>
                         {t.openingHours}
                     </h3>
                     <InfoRows
                         rows={[
-                            { label: t.opensAt, value: place.timing.open, cls: "text-green-600 font-bold text-lg md:text-xl" },
-                            { label: t.closesAt, value: place.timing.close, cls: "text-red-500 font-bold text-lg md:text-xl" },
+                            {
+                                label: t.opensAt,
+                                value: place.timing.open,
+                                cls: "font-display text-2xl font-medium text-emerald-700 dark:text-emerald-400 md:text-3xl",
+                            },
+                            {
+                                label: t.closesAt,
+                                value: place.timing.close,
+                                cls: "font-display text-2xl font-medium text-maroon-500 dark:text-maroon-300 md:text-3xl",
+                            },
                             { label: t.closedOn, value: place.timing.closedOn },
                             {
                                 label: t.currentStatus,
                                 value: (
-                                    <span className={`font-bold inline-flex items-center gap-1.5 ${isOpen ? "text-green-600" : "text-red-500"}`}>
-                                        <span className={`w-2 h-2 rounded-full ${isOpen ? "bg-green-500 animate-pulse" : "bg-red-500"}`} />
+                                    <span
+                                        className={`inline-flex items-center gap-2 rounded-full px-3 py-1 text-sm font-semibold ${
+                                            isOpen
+                                                ? "bg-emerald-500/10 text-emerald-700 dark:text-emerald-400"
+                                                : "bg-rose-500/10 text-rose-600 dark:text-rose-400"
+                                        }`}
+                                    >
+                                        <span className={`h-2 w-2 rounded-full ${isOpen ? "bg-emerald-500 animate-pulse" : "bg-rose-500"}`} />
                                         {isOpen ? t.openNow : t.closed}
                                     </span>
                                 ),
@@ -211,41 +290,62 @@ export function TimingTicketsSection({ place, t, isOpen, divided }: SectionProps
                             },
                         ]}
                     />
-                    {place.timing.note && <Note tone="blue">{place.timing.note}</Note>}
+                    {place.timing.note && <Note tone="info">{place.timing.note}</Note>}
                 </div>
 
                 <div className={card}>
-                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">🎫 {t.entryTickets}</h3>
+                    <h3 className={panelTitle}>
+                        <IconBadge>
+                            <Ticket size={16} />
+                        </IconBadge>
+                        {t.entryTickets}
+                    </h3>
                     {place.ticket.isFree ? (
-                        <div className="bg-green-50 dark:bg-green-900/20 rounded-xl p-6 text-center">
-                            <div className="text-2xl md:text-4xl font-bold text-green-600 dark:text-green-400 mb-1">{t.freeEntry}</div>
-                            <div className="text-green-600 dark:text-green-500 text-sm">{t.noTicket}</div>
+                        <div className="rounded-2xl bg-emerald-500/10 p-8 text-center ring-1 ring-emerald-500/20">
+                            <div className="font-display text-4xl font-medium tracking-tight text-emerald-700 dark:text-emerald-400 md:text-5xl">
+                                {t.freeEntry}
+                            </div>
+                            <div className="mt-2 text-sm text-emerald-700/80 dark:text-emerald-400/80">{t.noTicket}</div>
                         </div>
                     ) : (
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                            <StatTile large tone="orange" label={t.indianAdult} value={`₹${place.ticket.indian}`} />
-                            <StatTile large tone="blue" label={t.foreignerAdult} value={`₹${place.ticket.foreigner}`} />
-                            <StatTile large tone="green" label={t.indianChild} value={price(place.ticket.childIndian)} />
-                            <StatTile large tone="purple" label={t.cameraFee} value={price(place.ticket.camera)} />
+                        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                            <StatTile large tone="gold" label={t.indianAdult} value={`₹${place.ticket.indian}`} />
+                            <StatTile large tone="ink" label={t.foreignerAdult} value={`₹${place.ticket.foreigner}`} />
+                            <StatTile large tone="sage" label={t.indianChild} value={price(place.ticket.childIndian)} />
+                            <StatTile large tone="maroon" label={t.cameraFee} value={price(place.ticket.camera)} />
                         </div>
                     )}
-                    {place.ticket.note && <Note tone="yellow">{place.ticket.note}</Note>}
+                    {place.ticket.note && <Note tone="gold">{place.ticket.note}</Note>}
                 </div>
 
                 <div className={card}>
-                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">⏱ {t.recommendedDuration}</h3>
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 text-center">
-                            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t.minimum}</div>
-                            <div className="font-bold text-gray-700 dark:text-gray-300">{place.visitDuration.minimum}</div>
+                    <h3 className={panelTitle}>
+                        <IconBadge>
+                            <Hourglass size={16} />
+                        </IconBadge>
+                        {t.recommendedDuration}
+                    </h3>
+                    <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
+                        <div className="rounded-2xl bg-white/50 p-5 text-center ring-1 ring-ink-900/[0.06] dark:bg-white/[0.04] dark:ring-white/[0.08]">
+                            <div className={`${label} text-ink-400 dark:text-ivory-200/55`}>{t.minimum}</div>
+                            <div className="mt-2 font-display text-xl font-medium text-ink-700 dark:text-ivory-100">
+                                {place.visitDuration.minimum}
+                            </div>
                         </div>
-                        <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-xl p-4 text-center border-2 border-yellow-300 dark:border-yellow-700">
-                            <div className="text-xs text-yellow-600 dark:text-yellow-400 mb-1">⭐ {t.recommended}</div>
-                            <div className="font-bold text-yellow-700 dark:text-yellow-400">{place.visitDuration.recommended}</div>
+                        <div className="relative rounded-2xl bg-ink-900 p-5 text-center shadow-float dark:bg-gold-400">
+                            <div className={`${label} flex items-center justify-center gap-1.5 text-gold-300 dark:text-ink-800`}>
+                                <Star size={11} className="fill-current" />
+                                {t.recommended}
+                            </div>
+                            <div className="mt-2 font-display text-xl font-semibold text-ivory-50 dark:text-ink-900">
+                                {place.visitDuration.recommended}
+                            </div>
                         </div>
-                        <div className="bg-gray-50 dark:bg-gray-700 rounded-xl p-4 text-center">
-                            <div className="text-xs text-gray-500 dark:text-gray-400 mb-1">{t.extended}</div>
-                            <div className="font-bold text-gray-700 dark:text-gray-300">{place.visitDuration.extended}</div>
+                        <div className="rounded-2xl bg-white/50 p-5 text-center ring-1 ring-ink-900/[0.06] dark:bg-white/[0.04] dark:ring-white/[0.08]">
+                            <div className={`${label} text-ink-400 dark:text-ivory-200/55`}>{t.extended}</div>
+                            <div className="mt-2 font-display text-xl font-medium text-ink-700 dark:text-ivory-100">
+                                {place.visitDuration.extended}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -258,39 +358,37 @@ export function TimingTicketsSection({ place, t, isOpen, divided }: SectionProps
 export function LocationSection({ place, t, divided }: SectionProps & { divided?: boolean }) {
     const { location } = place;
     return (
-        <SectionBlock title={t.location} icon={<MapPin size={22} className="text-yellow-500" />} divided={divided}>
-            <div className={`${card} mb-4`}>
-                <InfoRows
-                    rows={[
-                        { label: t.address, value: location.address },
-                        { label: t.city, value: `${location.city}, ${place.state}` },
-                        { label: t.pincode, value: location.pincode },
-                        { label: t.fromCityCenter, value: location.distanceFromCity },
-                        { label: t.nearestAirport, value: location.nearestAirport },
-                        { label: t.nearestRailway, value: location.nearestRailway },
-                    ]}
-                />
-                <a
-                    href={location.googleMapUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-6 w-full flex items-center justify-center gap-2 bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-xl font-semibold hover:shadow-lg transition-all"
-                >
-                    <MapPin size={18} />
-                    {t.openInMaps}
-                </a>
-            </div>
-            <div className="rounded-2xl overflow-hidden h-64 md:h-80 border border-gray-200 dark:border-gray-700">
-                <iframe
-                    src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000!2d${location.longitude}!3d${location.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin`}
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    allowFullScreen
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title={t.mapTitle(place.name)}
-                />
+        <SectionBlock title={t.location} icon={<MapPin size={20} />} divided={divided}>
+            <div className="grid gap-5 xl:grid-cols-5">
+                <div className={`${card} xl:col-span-2`}>
+                    <InfoRows
+                        rows={[
+                            { label: t.address, value: location.address },
+                            { label: t.city, value: `${location.city}, ${place.state}` },
+                            { label: t.pincode, value: location.pincode },
+                            { label: t.fromCityCenter, value: location.distanceFromCity },
+                            { label: t.nearestAirport, value: location.nearestAirport },
+                            { label: t.nearestRailway, value: location.nearestRailway },
+                        ]}
+                    />
+                    <a href={location.googleMapUrl} target="_blank" rel="noopener noreferrer" className="btn-primary mt-6 w-full !py-3.5">
+                        <Navigation size={17} />
+                        {t.openInMaps}
+                    </a>
+                </div>
+                <div className="h-72 overflow-hidden rounded-[1.75rem] glass p-1.5 md:h-96 xl:col-span-3 xl:h-auto xl:min-h-[24rem]">
+                    <iframe
+                        src={`https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5000!2d${location.longitude}!3d${location.latitude}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin`}
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        className="h-full w-full rounded-[1.4rem] grayscale-[35%] transition-[filter] duration-700 hover:grayscale-0"
+                        allowFullScreen
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        title={t.mapTitle(place.name)}
+                    />
+                </div>
             </div>
         </SectionBlock>
     );
@@ -299,18 +397,19 @@ export function LocationSection({ place, t, divided }: SectionProps & { divided?
 // ─────────────────────────── History ───────────────────────────
 export function HistorySection({ place, t, divided }: SectionProps & { divided?: boolean }) {
     return (
-        <SectionBlock title={`📜 ${t.historyOf(place.name)}`} divided={divided}>
+        <SectionBlock title={t.historyOf(place.name)} icon={<ScrollText size={20} />} divided={divided}>
             <div className={card}>
                 <div
-                    className="[&_p]:text-gray-600 dark:[&_p]:text-gray-300 [&_p]:leading-relaxed sm:[&_p]:leading-loose [&_p]:mb-4 sm:[&_p]:mb-6 [&_h3]:text-gold-600 dark:[&_h3]:text-gold-400 [&_h3]:font-playfair [&_h3]:text-lg sm:[&_h3]:text-2xl [&_h3]:mt-8 sm:[&_h3]:mt-10 [&_h3]:mb-3 sm:[&_h3]:mb-4 max-w-none text-sm sm:text-lg"
+                    className="prose-lux max-w-none text-[15px] sm:text-lg [&>p:first-of-type]:font-display [&>p:first-of-type]:text-xl [&>p:first-of-type]:text-ink-700 dark:[&>p:first-of-type]:text-ivory-100/85 sm:[&>p:first-of-type]:text-2xl"
                     dangerouslySetInnerHTML={{ __html: place.history }}
                 />
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mt-6">
-                    <StatTile tone="yellow" label={t.yearBuilt} value={place.yearBuilt} />
+                <div className="hairline my-8" />
+                <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+                    <StatTile tone="gold" label={t.yearBuilt} value={place.yearBuilt} />
                     <StatTile tone="maroon" label={t.builtBy} value={place.builtBy} />
-                    <StatTile tone="blue" label={t.architecture} value={place.architecture} />
+                    <StatTile tone="ink" label={t.architecture} value={place.architecture} />
                     <StatTile
-                        tone="green"
+                        tone="sage"
                         label={t.heritageStatus}
                         value={place.isUNESCO ? t.unescoWorldHeritage : t.stateHeritage}
                     />
@@ -324,37 +423,57 @@ export function HistorySection({ place, t, divided }: SectionProps & { divided?:
 export function TipsSection({ place, t, divided }: SectionProps & { divided?: boolean }) {
     const best = place.bestTimeToVisit;
     return (
-        <SectionBlock title={`💡 ${t.tips}`} divided={divided}>
-            <div className="space-y-6">
-                {place.dos?.length > 0 && (
-                    <div className="bg-green-50 dark:bg-green-900/20 rounded-2xl p-6">
-                        <h3 className="font-bold text-green-800 dark:text-green-400 mb-4 text-base">✅ {t.dos}</h3>
-                        <ul className="space-y-2">
-                            {place.dos.map((d) => (
-                                <li key={d} className="flex items-start gap-2 text-green-700 dark:text-green-400">
-                                    <Check size={16} className="mt-0.5 flex-shrink-0" />
-                                    <span className="text-sm">{d}</span>
-                                </li>
-                            ))}
-                        </ul>
+        <SectionBlock title={t.tips} icon={<Lightbulb size={20} />} divided={divided}>
+            <div className="space-y-5">
+                {(place.dos?.length > 0 || place.donts?.length > 0) && (
+                    <div className="grid gap-5 md:grid-cols-2">
+                        {place.dos?.length > 0 && (
+                            <div className={card}>
+                                <h3 className={panelTitle}>
+                                    <span className="grid h-9 w-9 place-items-center rounded-full bg-emerald-500/15 text-emerald-700 dark:text-emerald-400" aria-hidden="true">
+                                        <Check size={16} />
+                                    </span>
+                                    {t.dos}
+                                </h3>
+                                <ul className="space-y-3">
+                                    {place.dos.map((d) => (
+                                        <li key={d} className="flex items-start gap-3 text-ink-600 dark:text-ivory-200/80">
+                                            <Check size={15} className="mt-0.5 flex-shrink-0 text-emerald-600 dark:text-emerald-400" />
+                                            <span className="text-sm leading-relaxed">{d}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
+                        {place.donts?.length > 0 && (
+                            <div className={card}>
+                                <h3 className={panelTitle}>
+                                    <span className="grid h-9 w-9 place-items-center rounded-full bg-rose-500/15 text-rose-600 dark:text-rose-400" aria-hidden="true">
+                                        <X size={16} />
+                                    </span>
+                                    {t.donts}
+                                </h3>
+                                <ul className="space-y-3">
+                                    {place.donts.map((d) => (
+                                        <li key={d} className="flex items-start gap-3 text-ink-600 dark:text-ivory-200/80">
+                                            <X size={15} className="mt-0.5 flex-shrink-0 text-rose-500 dark:text-rose-400" />
+                                            <span className="text-sm leading-relaxed">{d}</span>
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        )}
                     </div>
                 )}
-                {place.donts?.length > 0 && (
-                    <div className="bg-red-50 dark:bg-red-900/20 rounded-2xl p-6">
-                        <h3 className="font-bold text-red-800 dark:text-red-400 mb-4 text-base">❌ {t.donts}</h3>
-                        <ul className="space-y-2">
-                            {place.donts.map((d) => (
-                                <li key={d} className="flex items-start gap-2 text-red-700 dark:text-red-400">
-                                    <X size={16} className="mt-0.5 flex-shrink-0" />
-                                    <span className="text-sm">{d}</span>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
-                <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-6">
-                    <h3 className="font-bold text-blue-800 dark:text-blue-400 mb-4 text-base">🌤 {t.bestTime}</h3>
-                    <dl className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div className={`${card} overflow-hidden`}>
+                    <div className="pointer-events-none absolute -right-14 -top-14 h-44 w-44 rounded-full bg-gold-400/20 blur-3xl" aria-hidden="true" />
+                    <h3 className={`relative ${panelTitle}`}>
+                        <IconBadge>
+                            <SunMedium size={16} />
+                        </IconBadge>
+                        {t.bestTime}
+                    </h3>
+                    <dl className="relative grid grid-cols-1 gap-x-8 gap-y-5 sm:grid-cols-2">
                         {[
                             { label: t.bestMonths, value: best.months },
                             { label: t.season, value: best.season },
@@ -363,17 +482,22 @@ export function TipsSection({ place, t, divided }: SectionProps & { divided?: bo
                         ]
                             .filter((i) => i.value)
                             .map((item) => (
-                                <div key={item.label}>
-                                    <dt className="text-xs text-blue-500 mb-1">{item.label}</dt>
-                                    <dd className="font-medium text-blue-800 dark:text-blue-300 text-sm">{item.value}</dd>
+                                <div key={item.label} className="border-t border-ink-900/[0.08] pt-3 dark:border-white/[0.08]">
+                                    <dt className={`${label} text-gold-700 dark:text-gold-400`}>{item.label}</dt>
+                                    <dd className="mt-1.5 text-sm font-medium leading-relaxed text-ink-800 dark:text-ivory-100">{item.value}</dd>
                                 </div>
                             ))}
                     </dl>
                 </div>
                 {place.photography && (
-                    <div className="bg-yellow-50 dark:bg-yellow-900/10 border border-yellow-200 dark:border-yellow-900/30 rounded-2xl p-6">
-                        <h3 className="font-bold text-yellow-800 dark:text-yellow-400 mb-3 text-base">📸 {t.photography}</h3>
-                        <p className="text-sm text-yellow-950/80 dark:text-yellow-300/80 leading-relaxed">{place.photography}</p>
+                    <div className={card}>
+                        <h3 className={panelTitle}>
+                            <IconBadge>
+                                <Camera size={16} />
+                            </IconBadge>
+                            {t.photography}
+                        </h3>
+                        <p className="text-sm leading-relaxed text-ink-600 dark:text-ivory-200/75 md:text-[15px]">{place.photography}</p>
                     </div>
                 )}
             </div>
@@ -385,30 +509,35 @@ export function TipsSection({ place, t, divided }: SectionProps & { divided?: bo
 export function NearbySection({ place, t, links, divided }: SectionProps & { links: PlaceLink[]; divided?: boolean }) {
     const byName = new Map(links.map((l) => [l.name.toLowerCase(), l.slug]));
     return (
-        <SectionBlock title={`📍 ${t.nearby}`} divided={divided}>
+        <SectionBlock title={t.nearby} icon={<MapPin size={20} />} divided={divided}>
             {place.nearbyPlaces?.length > 0 && (
                 <div className={card}>
-                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">{t.nearbyPlaces}</h3>
-                    <ul className="space-y-3">
+                    <h3 className={panelTitle}>{t.nearbyPlaces}</h3>
+                    <ul className="grid grid-cols-1 gap-x-8 sm:grid-cols-2">
                         {place.nearbyPlaces.map((np) => (
-                            <li key={np} className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl">
-                                <MapPin size={16} className="text-yellow-500 flex-shrink-0" />
-                                <span className="text-gray-700 dark:text-gray-300 text-sm">{np}</span>
+                            <li
+                                key={np}
+                                className="flex items-center gap-3 border-b border-ink-900/[0.06] py-3.5 dark:border-white/[0.07]"
+                            >
+                                <MapPin size={15} className="flex-shrink-0 text-gold-600 dark:text-gold-400" />
+                                <span className="text-sm text-ink-700 dark:text-ivory-100">{np}</span>
                             </li>
                         ))}
                     </ul>
                 </div>
             )}
             {place.relatedPlaces && place.relatedPlaces.length > 0 && (
-                <div className={`${card} mt-6`}>
-                    <h3 className="font-bold text-gray-800 dark:text-gray-200 mb-4 text-base">🔗 {t.relatedPlaces}</h3>
-                    <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <div className={`${card} mt-5`}>
+                    <h3 className={panelTitle}>{t.relatedPlaces}</h3>
+                    <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
                         {place.relatedPlaces.map((rp) => {
                             const slug = byName.get(rp.toLowerCase());
                             const inner = (
                                 <>
-                                    <span className="text-lg" aria-hidden="true">🏛️</span>
-                                    <span className="text-sm font-semibold">{rp}</span>
+                                    <IconBadge>
+                                        <Landmark size={15} />
+                                    </IconBadge>
+                                    <span className="flex-1 text-sm font-semibold">{rp}</span>
                                 </>
                             );
                             return (
@@ -416,12 +545,17 @@ export function NearbySection({ place, t, links, divided }: SectionProps & { lin
                                     {slug ? (
                                         <Link
                                             href={`/places/${slug}`}
-                                            className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl hover:bg-yellow-50 dark:hover:bg-yellow-900/20 transition-all border border-transparent hover:border-yellow-200 text-gray-800 dark:text-gray-200 hover:text-yellow-600"
+                                            className="group flex items-center gap-3 rounded-2xl bg-white/50 p-3 text-ink-800 ring-1 ring-ink-900/[0.06] transition-all duration-500 ease-lux hover:-translate-y-0.5 hover:bg-white/80 hover:shadow-float dark:bg-white/[0.04] dark:text-ivory-100 dark:ring-white/[0.08] dark:hover:bg-white/[0.08]"
                                         >
                                             {inner}
+                                            <ArrowUpRight
+                                                size={16}
+                                                className="text-ink-400 transition-transform duration-500 ease-lux group-hover:rotate-45 group-hover:text-gold-600 dark:text-ivory-200/50 dark:group-hover:text-gold-400"
+                                                aria-hidden="true"
+                                            />
                                         </Link>
                                     ) : (
-                                        <div className="flex items-center gap-3 p-3 bg-gray-50 dark:bg-gray-700 rounded-xl text-gray-700 dark:text-gray-300">
+                                        <div className="flex items-center gap-3 rounded-2xl bg-white/30 p-3 text-ink-700 ring-1 ring-ink-900/[0.04] dark:bg-white/[0.02] dark:text-ivory-200/80 dark:ring-white/[0.05]">
                                             {inner}
                                         </div>
                                     )}
@@ -436,21 +570,37 @@ export function NearbySection({ place, t, links, divided }: SectionProps & { lin
 }
 
 // ─────────────────────────── FAQs ───────────────────────────
-function FAQItem({ question, answer, id }: { question: string; answer: string; id: string }) {
+function FAQItem({ question, answer, id, n }: { question: string; answer: string; id: string; n: number }) {
     const [isOpen, setIsOpen] = useState(false);
     return (
-        <div className="bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 overflow-hidden">
-            <h3>
+        <div
+            className={`overflow-hidden rounded-[1.5rem] transition-all duration-500 ease-lux ${
+                isOpen ? "glass-strong shadow-float" : "glass"
+            }`}
+        >
+            <h3 className="font-sans">
                 <button
                     type="button"
                     id={`${id}-q`}
                     onClick={() => setIsOpen(!isOpen)}
                     aria-expanded={isOpen}
                     aria-controls={`${id}-a`}
-                    className="w-full flex items-center justify-between gap-4 p-5 text-left font-bold text-gray-800 dark:text-gray-200 hover:bg-gray-50/50 dark:hover:bg-gray-700 transition-colors text-sm sm:text-base"
+                    className="flex w-full items-center gap-4 p-5 text-left text-sm font-semibold text-ink-900 dark:text-ivory-50 sm:text-base md:px-6"
                 >
-                    <span>{question}</span>
-                    <ChevronDown size={18} className={`shrink-0 transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`} />
+                    <span className="w-7 shrink-0 font-display text-lg font-medium italic text-gold-600 dark:text-gold-400" aria-hidden="true">
+                        {String(n).padStart(2, "0")}
+                    </span>
+                    <span className="flex-1">{question}</span>
+                    <span
+                        className={`grid h-9 w-9 shrink-0 place-items-center rounded-full transition-all duration-500 ease-lux ${
+                            isOpen
+                                ? "rotate-45 bg-ink-900 text-ivory-50 dark:bg-gold-400 dark:text-ink-900"
+                                : "bg-ink-900/5 text-ink-600 dark:bg-white/10 dark:text-ivory-100"
+                        }`}
+                        aria-hidden="true"
+                    >
+                        <Plus size={16} />
+                    </span>
                 </button>
             </h3>
             <AnimatePresence initial={false}>
@@ -462,9 +612,9 @@ function FAQItem({ question, answer, id }: { question: string; answer: string; i
                         initial={{ height: 0, opacity: 0 }}
                         animate={{ height: "auto", opacity: 1 }}
                         exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.2 }}
+                        transition={{ duration: 0.4, ease: EASE }}
                     >
-                        <div className="p-5 pt-0 text-gray-600 dark:text-gray-400 border-t border-gray-50 dark:border-gray-700 leading-relaxed text-sm">
+                        <div className="px-5 pb-6 pl-16 text-sm leading-relaxed text-ink-500 dark:text-ivory-200/70 md:pl-[4.25rem] md:pr-6">
                             {answer}
                         </div>
                     </motion.div>
@@ -477,10 +627,10 @@ function FAQItem({ question, answer, id }: { question: string; answer: string; i
 export function FaqSection({ place, t, divided }: SectionProps & { divided?: boolean }) {
     if (!place.faqs?.length) return null;
     return (
-        <SectionBlock title={`🙋 ${t.faqs}`} divided={divided}>
-            <div className="space-y-4">
+        <SectionBlock title={t.faqs} icon={<MessagesSquare size={20} />} divided={divided}>
+            <div className="space-y-3">
                 {place.faqs.map((faq, i) => (
-                    <FAQItem key={i} id={`place-faq-${i}`} question={faq.question} answer={faq.answer} />
+                    <FAQItem key={i} id={`place-faq-${i}`} n={i + 1} question={faq.question} answer={faq.answer} />
                 ))}
             </div>
         </SectionBlock>

@@ -1,8 +1,9 @@
 "use client";
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import Link from "@/components/LocalizedLink";
+import { useCallback, useEffect, useRef, useState } from "react";
 import Image from "next/image";
+import { motion, AnimatePresence, useScroll, useTransform } from "framer-motion";
+import { ArrowUpRight, ChevronLeft, ChevronRight, MapPin } from "lucide-react";
+import Link from "@/components/LocalizedLink";
 import { useLanguage } from "@/components/LanguageProvider";
 
 // Unsplash + Pexels — free to use under their licenses
@@ -98,283 +99,271 @@ const ORBIT_SLIDES_HINDI = [
     },
 ];
 
-const SLIDE_INTERVAL = 6000;
 
+const SLIDE_INTERVAL = 7000;
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+const UI = {
+    en: {
+        explore: "Explore Rajasthan",
+        details: "Discover",
+        prev: "Previous slide",
+        next: "Next slide",
+        goTo: (n: number, name: string) => `Go to slide ${n} – ${name}`,
+        region: "Featured destinations",
+    },
+    hi: {
+        explore: "राजस्थान की खोज करें",
+        details: "जानें",
+        prev: "पिछली स्लाइड",
+        next: "अगली स्लाइड",
+        goTo: (n: number, name: string) => `स्लाइड ${n} – ${name}`,
+        region: "प्रमुख गंतव्य",
+    },
+};
+
+/** Splits "Line one\nline two" so the last line can be set in gold italic. */
+function TitleLines({ title }: { title: string }) {
+    const lines = title.split("\n");
+    return (
+        <>
+            {lines.map((line, i) => (
+                <span key={i} className="block overflow-hidden pb-[0.08em]">
+                    <motion.span
+                        className={`block ${i === lines.length - 1 && lines.length > 1 ? "italic font-normal text-gold-sheen" : ""}`}
+                        initial={{ y: "105%" }}
+                        animate={{ y: 0 }}
+                        exit={{ y: "-105%" }}
+                        transition={{ duration: 1, ease: EASE, delay: 0.1 + i * 0.09 }}
+                    >
+                        {line}
+                    </motion.span>
+                </span>
+            ))}
+        </>
+    );
+}
+
+/**
+ * Cinematic full-screen hero: crossfading photography with a slow Ken Burns
+ * zoom, editorial headline, floating glass postcards and a glass control bar
+ * with a per-slide progress line. Swipe, arrow keys and the bar all navigate.
+ */
 export function HeroSection() {
     const { language } = useLanguage();
-    const currentSlides = language === 'hi' ? ORBIT_SLIDES_HINDI : ORBIT_SLIDES;
+    const isHi = language === "hi";
+    const slides = isHi ? ORBIT_SLIDES_HINDI : ORBIT_SLIDES;
+    const t = isHi ? UI.hi : UI.en;
 
     const [current, setCurrent] = useState(0);
-    const slide = currentSlides[current];
-    const [touchStart, setTouchStart] = useState(0);
-    const [touchEnd, setTouchEnd] = useState(0);
+    const [paused, setPaused] = useState(false);
+    const touchStart = useRef<number | null>(null);
+    const sectionRef = useRef<HTMLElement>(null);
+    const slide = slides[current];
+
+    const go = useCallback((delta: number) => setCurrent((p) => (p + delta + slides.length) % slides.length), [slides.length]);
 
     useEffect(() => {
-        const timer = setInterval(() => {
-            setCurrent((prev) => (prev + 1) % currentSlides.length);
-        }, SLIDE_INTERVAL);
-        return () => clearInterval(timer);
-    }, [currentSlides.length]);
+        if (paused) return;
+        const timer = setTimeout(() => go(1), SLIDE_INTERVAL);
+        return () => clearTimeout(timer);
+    }, [current, paused, go]);
 
-    const handleTouchStart = (e: React.TouchEvent) => {
-        setTouchStart(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchMove = (e: React.TouchEvent) => {
-        setTouchEnd(e.targetTouches[0].clientX);
-    };
-
-    const handleTouchEnd = () => {
-        if (!touchStart || !touchEnd) return;
-        const distance = touchStart - touchEnd;
-        const isLeftSwipe = distance > 50;
-        const isRightSwipe = distance < -50;
-
-        if (isLeftSwipe) setCurrent((prev) => (prev + 1) % currentSlides.length);
-        if (isRightSwipe) setCurrent((prev) => (prev - 1 + currentSlides.length) % currentSlides.length);
-
-        setTouchStart(0);
-        setTouchEnd(0);
-    };
+    // Gentle parallax + fade of the hero content as the page scrolls away
+    const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start start", "end start"] });
+    const bgY = useTransform(scrollYProgress, [0, 1], ["0%", "20%"]);
+    const contentY = useTransform(scrollYProgress, [0, 1], ["0%", "-12%"]);
+    const contentOpacity = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
 
     return (
         <section
-            className="relative h-[550px] md:h-screen min-h-[550px] md:min-h-[640px] w-full overflow-hidden bg-[#0b0a12]"
-            onTouchStart={handleTouchStart}
-            onTouchMove={handleTouchMove}
-            onTouchEnd={handleTouchEnd}
+            ref={sectionRef}
+            aria-roledescription="carousel"
+            aria-label={t.region}
+            className="relative isolate h-[100svh] min-h-[640px] w-full overflow-hidden bg-ink-950 text-ivory-50"
+            onMouseEnter={() => setPaused(true)}
+            onMouseLeave={() => setPaused(false)}
+            onTouchStart={(e) => {
+                touchStart.current = e.touches[0].clientX;
+            }}
+            onTouchEnd={(e) => {
+                if (touchStart.current === null) return;
+                const dx = e.changedTouches[0].clientX - touchStart.current;
+                if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
+                touchStart.current = null;
+            }}
+            onKeyDown={(e) => {
+                if (e.key === "ArrowRight") go(1);
+                if (e.key === "ArrowLeft") go(-1);
+            }}
         >
-
-            {/* Blurred background — crossfades between slides */}
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={`bg-${current}`}
-                    initial={{ opacity: 0, scale: 1.15 }}
-                    animate={{ opacity: 1, scale: 1.1 }}
-                    exit={{ opacity: 0, scale: 1.05 }}
-                    transition={{ duration: 1.5, ease: "easeInOut" }}
-                    className="absolute inset-0"
-                >
-                    <Image
-                        src={slide.background}
-                        alt={`Beautiful heritage view of ${slide.subtitle} tourism background`}
-                        fill
-                        className="object-cover blur-[6px] opacity-90 w-full h-full absolute inset-0 pointer-events-none"
-                    />
-                </motion.div>
-            </AnimatePresence>
-            <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/35 to-black/60 pointer-events-none" />
-
-            <div className="relative z-10 mx-auto flex h-full max-w-7xl flex-col items-center justify-start md:justify-center pt-48 pb-48 md:pt-0 md:pb-0 gap-6 md:gap-10 px-3 md:flex-row md:justify-between md:gap-6 md:px-12">
-                {/* LEFT: single framed image — crossfades between slides */}
-                <div className="relative hidden shrink-0 xl:block pointer-events-none">
-                    <AnimatePresence mode="wait">
-                        <motion.div
-                            key={`left-${current}`}
-                            initial={{ opacity: 0, x: -40, rotate: -6 }}
-                            animate={{ opacity: 1, x: 0, rotate: -4 }}
-                            exit={{ opacity: 0, x: -20 }}
-                            transition={{ duration: 0.9, ease: "easeOut" }}
-                            className="relative h-[420px] w-[280px] overflow-hidden rounded-[2rem] border-4 border-gold-400/70 shadow-[0_20px_60px_rgba(0,0,0,0.5)]"
-                        >
-                            <Image
-                                src={slide.leftImage}
-                                alt={`Traditional travel experience of ${slide.subtitle} in Rajasthan`}
-                                fill
-                                className="object-cover w-full h-full absolute inset-0"
-                            />
-                            <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
-                        </motion.div>
-                    </AnimatePresence>
-                </div>
-
-                {/* CENTER: text + CTAs */}
-                <div className="max-w-md mt-[-50px] lg:max-w-lg text-center md:text-left z-20 flex flex-col justify-center">
-                    <AnimatePresence mode="wait">
-                        <motion.span
-                            key={`tag-${current}`}
-                            initial={{ opacity: 0, y: -20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: 20 }}
-                            className=" w-fit  mb-4 md:mb-6 mx-auto md:mx-0 inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-2 py-1.5 text-xs sm:text-sm md:text-md lg:text-lg uppercase tracking-[0.2em] text-gold-400 backdrop-blur-sm"
-                        >
-                            {slide.subtitle}
-                        </motion.span>
-                    </AnimatePresence>
-
-                    <AnimatePresence mode="wait">
-                        <motion.h1
-                            key={`title-${current}`}
-                            initial={{ opacity: 0, y: 40 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0, y: -40 }}
-                            transition={{ duration: 0.8, delay: 0.15 }}
-                            className="whitespace-pre-line font-playfair text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-white"
-                        >
-                            {slide.title}
-                        </motion.h1>
-                    </AnimatePresence>
-
-                    <AnimatePresence mode="wait">
-                        <motion.p
-                            key={`desc-${current}`}
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            exit={{ opacity: 0 }}
-                            transition={{ duration: 0.8, delay: 0.3 }}
-                            className="mt-3 md:mt-4 text-xs sm:text-sm text-white/70 md:text-base"
-                        >
-                            {slide.description}
-                        </motion.p>
-                    </AnimatePresence>
-
+            {/* Photography */}
+            <motion.div style={{ y: bgY }} className="absolute inset-0 -z-10">
+                <AnimatePresence initial={false}>
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.5 }}
-                        className="mt-6 md:mt-8 flex flex-row gap-2 sm:gap-4 md:justify-start justify-center "
+                        key={`bg-${current}`}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1.6, ease: "easeInOut" }}
+                        className="absolute inset-0"
                     >
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.98 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                        >
-                            <Link
-                                href="/places"
-                                className="group relative flex w-full items-center justify-center gap-1 sm:gap-2 overflow-hidden rounded-full bg-gold-gradient px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 lg:px-8 md:py-3 lg:py-4 text-[11px] sm:text-xs md:text-sm lg:text-base font-semibold text-white shadow-gold transition-shadow duration-300 hover:shadow-gold-lg sm:w-auto"
-                            >
-                                <span className="relative z-10 flex items-center gap-1 sm:gap-2 whitespace-nowrap">
-                                    {language === 'hi' ? "राजस्थान की खोज करें" : "Explore Rajasthan"}
-                                    <motion.span
-                                        className="inline-block"
-                                        animate={{ x: [0, 4, 0] }}
-                                        transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                                    >
-                                        →
-                                    </motion.span>
-                                </span>
-                                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/20 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
-                            </Link>
-                        </motion.div>
-
-                        <motion.div
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.98 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 15 }}
-                        >
-                            <Link
-                                href={`/places/${slide.slug}`}
-                                className="group relative flex w-auto items-center justify-center gap-1 sm:gap-2 overflow-hidden rounded-full border-2 border-white/40 bg-white/10 px-3 py-2.5 sm:px-4 sm:py-3 md:px-6 lg:px-8 md:py-3 lg:py-4 text-[11px] sm:text-xs md:text-sm lg:text-base font-semibold text-white backdrop-blur-sm transition-colors duration-300 hover:bg-white/20 whitespace-nowrap"
-                            >
-                                <span className="relative z-10">{language === 'hi' ? "अधिक जानकारी" : "More Details"}</span>
-                                <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/10 to-transparent transition-transform duration-1000 ease-out group-hover:translate-x-full" />
-                            </Link>
-                        </motion.div>
+                        <div className="absolute inset-0 animate-kenburns">
+                            <Image
+                                src={slide.background}
+                                alt={slide.subtitle}
+                                fill
+                                priority={current === 0}
+                                sizes="100vw"
+                                className="object-cover"
+                            />
+                        </div>
                     </motion.div>
-                </div>
+                </AnimatePresence>
+                <div className="absolute inset-0 scrim-cinematic" />
+                <div className="absolute inset-0 bg-gradient-to-r from-ink-950/70 via-ink-950/20 to-transparent" />
+            </motion.div>
 
-                {/* RIGHT: Floating SHM Images */}
-                <div className=" relative hidden w-full md:w-[45%] max-w-[400px] shrink-0 md:block md:h-[400px] lg:h-[550px] lg:max-w-[550px] xl:h-[650px] xl:max-w-[650px] flex-1 mt-16 md:mt-24 pointer-events-none">
-                    {slide.orbitImages.map((src: string, i: number) => {
-                        const staticPositions = [
-                            { top: "5%", left: "-5%" },
-                            { top: "0%", right: "-20%" },
-                            { bottom: "0%", left: "0%" },
-                            { bottom: "2%", right: "0%" },
-                            { top: "35%", left: "25%" },
-                        ];
-
-                        const pos = staticPositions[i % staticPositions.length];
-
-                        const yOffset = i % 2 === 0 ? [0, -40, 0] : [0, 45, 0];
-                        const xOffset = i % 3 === 0 ? [0, 35, 0] : [0, -35, 0];
-                        const duration = 4 + (i % 3);
-                        const delay = i * 0.4;
-
-                        const sizes = [
-                            "h-32 w-32 md:h-36 md:w-36 lg:h-48 lg:w-48",
-                            "h-40 w-40 md:h-44 md:w-44 lg:h-60 lg:w-60",
-                            "h-36 w-36 md:h-40 md:w-40 lg:h-52 lg:w-52",
-                            "h-28 w-28 md:h-32 md:w-32 lg:h-40 lg:w-40",
-                            "h-48 w-48 md:h-52 md:w-52 lg:h-72 lg:w-72"
-                        ];
-                        const sizeClass = sizes[i % sizes.length];
-
-                        return (
-                            <motion.div
-                                key={i}
-                                className={`absolute ${sizeClass} z-10`}
-                                style={pos}
-                                animate={{
-                                    y: yOffset,
-                                    x: xOffset,
-                                    rotate: i % 2 === 0 ? [0, 5, 0, -5, 0] : [0, -5, 0, 5, 0]
-                                }}
-                                transition={{
-                                    duration: duration,
-                                    repeat: Infinity,
-                                    ease: "easeInOut",
-                                    delay: delay,
-                                }}
-                            >
-                                <AnimatePresence mode="wait">
-                                    <motion.div
-                                        key={`float-${current}-${i}`}
-                                        initial={{ opacity: 0, scale: 0.8 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        exit={{ opacity: 0, scale: 0.8 }}
-                                        transition={{ duration: 0.8, ease: "easeOut" }}
-                                        className="relative w-full h-full"
-                                    >
-                                        <Image
-                                            src={src}
-                                            alt={`Visual travel details from ${slide.subtitle} tourist destination - Image ${i + 1}`}
-                                            fill
-                                            className="rounded-[2rem] border-[3px] border-white/30 object-cover shadow-[0_15px_50px_rgba(0,0,0,0.6)] backdrop-blur-sm w-full h-full absolute inset-0"
-                                        />
-                                    </motion.div>
-                                </AnimatePresence>
+            <motion.div
+                style={{ y: contentY, opacity: contentOpacity }}
+                className="relative mx-auto flex h-full max-w-7xl items-end px-4 pb-44 sm:px-6 md:pb-40 lg:px-8"
+            >
+                <div className="grid w-full items-end gap-10 lg:grid-cols-12">
+                    {/* Headline */}
+                    <div className="lg:col-span-7" aria-live="polite">
+                        <AnimatePresence mode="wait">
+                            <motion.div key={`copy-${current}-${language}`} exit={{ opacity: 0 }} transition={{ duration: 0.4 }}>
+                                <motion.span
+                                    initial={{ opacity: 0, y: 12 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.8, ease: EASE }}
+                                    className="inline-flex items-center gap-2 rounded-full glass-dark px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-gold-200"
+                                >
+                                    <MapPin size={13} />
+                                    {slide.subtitle}
+                                </motion.span>
+                                <h1 className="mt-6 font-display text-[3.1rem] font-medium leading-[0.95] tracking-tight sm:text-7xl md:text-8xl lg:text-[7.25rem]">
+                                    <TitleLines title={slide.title} />
+                                </h1>
+                                <motion.p
+                                    initial={{ opacity: 0, y: 16 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.9, ease: EASE, delay: 0.35 }}
+                                    className="mt-6 max-w-md text-base leading-relaxed text-ivory-100/80 md:text-lg"
+                                >
+                                    {slide.description}
+                                </motion.p>
                             </motion.div>
-                        );
-                    })}
+                        </AnimatePresence>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 16 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.9, ease: EASE, delay: 0.5 }}
+                            className="mt-9 flex flex-wrap gap-3"
+                        >
+                            <Link href="/places" className="btn-gold !px-7 !py-3.5">
+                                {t.explore}
+                                <ArrowUpRight size={17} />
+                            </Link>
+                            <Link href={`/places/${slide.slug}`} className="btn-glass-dark !px-7 !py-3.5">
+                                {t.details} {slide.subtitle.split(",")[0]}
+                            </Link>
+                        </motion.div>
+                    </div>
+
+                    {/* Floating postcards */}
+                    <div className="relative hidden h-[26rem] lg:col-span-5 lg:block" aria-hidden="true">
+                        <AnimatePresence mode="popLayout">
+                            {slide.orbitImages.slice(0, 3).map((src, i) => {
+                                const layout = [
+                                    "right-0 top-0 h-64 w-48 rotate-[5deg]",
+                                    "right-40 top-24 h-72 w-56 -rotate-[4deg]",
+                                    "right-10 bottom-0 h-44 w-60 rotate-[2deg]",
+                                ][i];
+                                return (
+                                    <motion.div
+                                        key={`card-${current}-${i}`}
+                                        initial={{ opacity: 0, y: 40, scale: 0.92 }}
+                                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                                        exit={{ opacity: 0, y: -20, scale: 0.96 }}
+                                        transition={{ duration: 1, ease: EASE, delay: 0.2 + i * 0.12 }}
+                                        className={`absolute ${layout}`}
+                                    >
+                                        <div
+                                            className="relative h-full w-full overflow-hidden rounded-[1.5rem] border border-white/25 shadow-float-lg animate-float"
+                                            style={{ animationDelay: `${i * 1.3}s` }}
+                                        >
+                                            <Image src={src} alt="" fill sizes="240px" className="object-cover" />
+                                            <div className="absolute inset-0 ring-1 ring-inset ring-white/10" />
+                                        </div>
+                                    </motion.div>
+                                );
+                            })}
+                        </AnimatePresence>
+                    </div>
                 </div>
-            </div>
+            </motion.div>
 
-            {/* MOBILE ONLY: Small images row between buttons and dots */}
-            <div className="flex md:hidden absolute bottom-[4.5rem] left-1/2 -translate-x-1/2 w-full justify-center gap-4 px-4 z-20">
-                {currentSlides[current].orbitImages.slice(0, 3).map((src: string, i: number) => (
-                    <motion.div
-                        key={`mobile-img-${current}-${i}`}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.6 + i * 0.1 }}
-                        className="relative h-20 w-[30%] max-w-[120px] rounded-xl overflow-hidden border-2 border-white/30 shadow-[0_8px_16px_rgba(0,0,0,0.4)] backdrop-blur-sm"
-                    >
-                        <Link href={`/places/${slide.slug}`} className="block w-full h-full">
-                            <Image
-                                src={src}
-                                alt={`Rajasthan preview ${i + 1}`}
-                                fill
-                                className="object-cover w-full h-full absolute inset-0"
-                            />
-                        </Link>
-                    </motion.div>
-                ))}
-            </div>
+            {/* Glass control bar */}
+            <div className="absolute inset-x-0 bottom-24 px-4 sm:px-6 md:bottom-8 lg:px-8">
+                <div className="mx-auto flex max-w-7xl items-center gap-4 rounded-full glass-dark px-3 py-2 sm:gap-6 sm:px-4">
+                    <span className="pl-2 font-display text-lg tabular-nums text-ivory-50">
+                        {String(current + 1).padStart(2, "0")}
+                        <span className="mx-1 text-ivory-100/40">/</span>
+                        <span className="text-ivory-100/50">{String(slides.length).padStart(2, "0")}</span>
+                    </span>
 
-            {/* Dot indicators */}
-            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-30">
-                {currentSlides.map((_, i) => (
-                    <button
-                        key={i}
-                        onClick={() => setCurrent(i)}
-                        aria-label={`Go to slide ${i + 1} - ${currentSlides[i].subtitle}`}
-                        className={`rounded-full transition-all duration-300 ${i === current
-                            ? "h-2 w-8 bg-gold-500"
-                            : "h-2 w-2 bg-white/40 hover:bg-white/70"
-                            }`}
-                    />
-                ))}
+                    <div className="flex flex-1 items-center gap-2" role="tablist" aria-label={t.region}>
+                        {slides.map((s, i) => (
+                            <button
+                                key={s.slug + i}
+                                type="button"
+                                role="tab"
+                                aria-selected={i === current}
+                                aria-label={t.goTo(i + 1, s.subtitle)}
+                                onClick={() => setCurrent(i)}
+                                className="group relative flex-1 py-3"
+                            >
+                                <span className="block h-[2px] w-full overflow-hidden rounded-full bg-white/20">
+                                    {i === current ? (
+                                        <motion.span
+                                            key={`p-${current}-${paused}`}
+                                            className="block h-full bg-gold-300"
+                                            initial={{ width: paused ? "100%" : "0%" }}
+                                            animate={{ width: "100%" }}
+                                            transition={{ duration: paused ? 0 : SLIDE_INTERVAL / 1000, ease: "linear" }}
+                                        />
+                                    ) : (
+                                        <span className={`block h-full ${i < current ? "w-full bg-white/60" : "w-0"}`} />
+                                    )}
+                                </span>
+                                <span className="mt-2 hidden truncate text-left text-[11px] font-medium text-ivory-100/60 transition-colors group-hover:text-ivory-50 sm:block">
+                                    {s.subtitle}
+                                </span>
+                            </button>
+                        ))}
+                    </div>
+
+                    <div className="flex gap-1.5">
+                        <button
+                            type="button"
+                            onClick={() => go(-1)}
+                            aria-label={t.prev}
+                            className="grid h-10 w-10 place-items-center rounded-full bg-white/10 transition-all hover:bg-white/25 active:scale-95"
+                        >
+                            <ChevronLeft size={18} />
+                        </button>
+                        <button
+                            type="button"
+                            onClick={() => go(1)}
+                            aria-label={t.next}
+                            className="grid h-10 w-10 place-items-center rounded-full bg-ivory-50 text-ink-900 transition-all hover:scale-105 active:scale-95"
+                        >
+                            <ChevronRight size={18} />
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
     );

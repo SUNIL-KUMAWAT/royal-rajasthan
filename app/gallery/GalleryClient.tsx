@@ -1,11 +1,14 @@
 // app/gallery/GalleryClient.tsx
 "use client";
-import { useState, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { X, ZoomIn, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
+import { X, Maximize2, MapPin, ChevronLeft, ChevronRight } from "lucide-react";
 import Image from "next/image";
 import { CATEGORIES, CATEGORIES_HINDI, GALLERY_IMAGES } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
+import { PageHero } from "@/components/ui/PageHero";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
 
 export default function GalleryClient() {
     const { language } = useLanguage();
@@ -15,51 +18,57 @@ export default function GalleryClient() {
 
     const filtered = useMemo(() => {
         if (activeCategory === "All" || activeCategory === "सभी") return GALLERY_IMAGES;
-        
+
         const catIndex = currentCategories.indexOf(activeCategory);
         const englishCategory = CATEGORIES[catIndex];
 
-        return GALLERY_IMAGES.filter((img) => 
+        return GALLERY_IMAGES.filter((img) =>
             img.category === activeCategory || (englishCategory && img.category === englishCategory)
         );
     }, [activeCategory, currentCategories]);
 
+    // Lightbox keyboard support (Esc closes, ←/→ navigate) + body scroll lock
+    useEffect(() => {
+        if (lightboxIndex === null) return;
+        const count = filtered.length;
+        const prev = document.body.style.overflow;
+        document.body.style.overflow = "hidden";
+        const onKey = (e: KeyboardEvent) => {
+            if (e.key === "Escape") setLightboxIndex(null);
+            if (e.key === "ArrowRight") setLightboxIndex((p) => (p === null ? p : (p + 1) % count));
+            if (e.key === "ArrowLeft") setLightboxIndex((p) => (p === null ? p : (p - 1 + count) % count));
+        };
+        window.addEventListener("keydown", onKey);
+        return () => {
+            document.body.style.overflow = prev;
+            window.removeEventListener("keydown", onKey);
+        };
+    }, [lightboxIndex, filtered.length]);
+
     return (
         <>
-            <section
-                className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
-                style={{
-                    backgroundImage:
-                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/1280px-Udaipur_Lake_India.JPG)",
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                }}
-            >
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-black/30" />
-                <div className="relative z-10 text-center px-4">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 30 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="font-playfair text-4xl md:text-6xl font-bold text-white mb-4"
-                    >
-                        Photo <span className="text-gold-400">Gallery</span>
-                    </motion.h1>
-                    <p className="text-white/80 text-lg">
-                        A visual journey through Rajasthan&apos;s royal grandeur
-                    </p>
-                </div>
-            </section>
+            <PageHero
+                image="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/1280px-Udaipur_Lake_India.JPG"
+                imageAlt="Lake Pichola, Udaipur"
+                eyebrow="Visual Journal"
+                title={
+                    <>
+                        Photo <em>Gallery</em>
+                    </>
+                }
+                subtitle="A visual journey through Rajasthan's royal grandeur"
+                breadcrumbs={[{ label: "Home", href: "/" }, { label: "Gallery" }]}
+            />
 
-            <div className="bg-white py-4 shadow-sm">
-                <div className="max-w-7xl mx-auto px-4 flex flex-wrap gap-2 justify-center">
+            {/* Floating category chips */}
+            <div className="sticky top-20 z-40 px-4 pt-4 md:top-24">
+                <div className="glass-strong mx-auto flex w-fit max-w-full gap-2 overflow-x-auto rounded-full p-1.5 scrollbar-hide">
                     {currentCategories.map((cat) => (
                         <button
                             key={cat}
                             onClick={() => setActiveCategory(cat)}
-                            className={`px-4 py-2 rounded-full text-sm font-medium transition-all ${activeCategory === cat
-                                ? "bg-gold-gradient text-white"
-                                : "border border-gray-200 text-gray-600 hover:border-gold-400"
-                                }`}
+                            aria-pressed={activeCategory === cat}
+                            className={activeCategory === cat ? "chip-active" : "chip chip-idle !border-transparent !bg-transparent !shadow-none"}
                         >
                             {cat}
                         </button>
@@ -67,19 +76,19 @@ export default function GalleryClient() {
                 </div>
             </div>
 
-            <section className="py-12 bg-palace-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="columns-2 sm:columns-3 lg:columns-4 gap-4 space-y-4">
+            <section className="py-14 md:py-20">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                    <div className="columns-2 gap-4 space-y-4 sm:columns-3 md:gap-5 md:space-y-5 lg:columns-4">
                         <AnimatePresence>
                             {filtered.map((img, i) => (
                                 <motion.div
                                     key={img.id}
                                     layout
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    animate={{ opacity: 1, scale: 1 }}
-                                    exit={{ opacity: 0, scale: 0.9 }}
-                                    transition={{ delay: Math.min(i, 8) * 0.03 }}
-                                    className="group relative overflow-hidden rounded-xl cursor-pointer break-inside-avoid"
+                                    initial={{ opacity: 0, y: 24, scale: 0.97 }}
+                                    animate={{ opacity: 1, y: 0, scale: 1 }}
+                                    exit={{ opacity: 0, scale: 0.95 }}
+                                    transition={{ delay: Math.min(i, 8) * 0.04, duration: 0.7, ease: EASE }}
+                                    className="group relative cursor-pointer overflow-hidden rounded-[1.5rem] bg-ink-900/5 shadow-float break-inside-avoid transition-shadow duration-500 ease-lux hover:shadow-float-lg dark:bg-white/5"
                                     onClick={() => setLightboxIndex(i)}
                                 >
                                     <Image
@@ -89,18 +98,18 @@ export default function GalleryClient() {
                                         height={0}
                                         sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
                                         style={{ width: '100%', height: 'auto' }}
-                                        className="group-hover:scale-105 transition-transform duration-500"
+                                        className="transition-transform duration-[1200ms] ease-lux group-hover:scale-[1.06]"
                                     />
-                                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        <div className="absolute bottom-3 left-3 text-white">
-                                            <div className="font-medium text-sm">{img.alt}</div>
-                                            <div className="flex items-center gap-1 text-white/70 text-xs">
+                                    <div className="absolute inset-0 scrim-b opacity-0 transition-opacity duration-500 ease-lux group-hover:opacity-100">
+                                        <div className="absolute inset-x-3 bottom-3 translate-y-2 text-white transition-transform duration-500 ease-lux group-hover:translate-y-0">
+                                            <div className="font-display text-lg font-medium leading-tight">{img.alt}</div>
+                                            <div className="mt-1 flex items-center gap-1 text-xs text-ivory-100/70">
                                                 <MapPin size={10} />
                                                 {img.location}
                                             </div>
                                         </div>
-                                        <div className="absolute top-3 right-3">
-                                            <ZoomIn size={20} className="text-white" />
+                                        <div className="glass-dark absolute right-3 top-3 flex h-9 w-9 items-center justify-center rounded-full">
+                                            <Maximize2 size={15} className="text-white" />
                                         </div>
                                     </div>
                                 </motion.div>
@@ -116,11 +125,16 @@ export default function GalleryClient() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
-                        className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+                        transition={{ duration: 0.4, ease: EASE }}
+                        role="dialog"
+                        aria-modal="true"
+                        aria-label={filtered[lightboxIndex].alt}
+                        className="fixed inset-0 z-[60] flex items-center justify-center bg-ink-950/90 p-4 backdrop-blur-2xl"
                     >
                         <button
                             onClick={() => setLightboxIndex(null)}
-                            className="absolute top-4 right-4 text-white w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all z-10"
+                            aria-label="Close"
+                            className="btn-glass-dark absolute right-4 top-4 z-10 !h-11 !w-11 !p-0"
                         >
                             <X size={20} />
                         </button>
@@ -130,28 +144,30 @@ export default function GalleryClient() {
                                     (p) => (p! - 1 + filtered.length) % filtered.length
                                 )
                             }
-                            className="absolute left-4 text-white w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all z-10"
+                            aria-label="Previous image"
+                            className="btn-glass-dark absolute left-3 z-10 !h-12 !w-12 !p-0 md:left-6"
                         >
-                            <ChevronLeft size={24} />
+                            <ChevronLeft size={22} />
                         </button>
                         <motion.div
                             key={lightboxIndex}
-                            initial={{ scale: 0.9, opacity: 0 }}
-                            animate={{ scale: 1, opacity: 1 }}
-                            className="max-w-4xl w-full"
+                            initial={{ scale: 0.96, opacity: 0, y: 12 }}
+                            animate={{ scale: 1, opacity: 1, y: 0 }}
+                            transition={{ duration: 0.6, ease: EASE }}
+                            className="w-full max-w-5xl"
                         >
                             <Image
                                 src={filtered[lightboxIndex].src.replace("600", "1200")}
                                 alt={filtered[lightboxIndex].alt}
                                 width={1200}
                                 height={800}
-                                className="w-full max-h-[80vh] object-contain rounded-lg"
+                                className="max-h-[74vh] w-full rounded-[1.5rem] object-contain"
                             />
-                            <div className="text-center mt-4 text-white">
-                                <h2 className="font-playfair text-xl font-bold">
+                            <div className="mt-6 text-center text-white">
+                                <h2 className="font-display text-2xl font-medium md:text-3xl">
                                     {filtered[lightboxIndex].alt}
                                 </h2>
-                                <div className="flex items-center gap-1 justify-center text-white/60 text-sm mt-1">
+                                <div className="mt-2 flex items-center justify-center gap-1 text-sm text-ivory-100/60">
                                     <MapPin size={12} />
                                     {filtered[lightboxIndex].location}
                                 </div>
@@ -161,11 +177,12 @@ export default function GalleryClient() {
                             onClick={() =>
                                 setLightboxIndex((p) => (p! + 1) % filtered.length)
                             }
-                            className="absolute right-4 text-white w-12 h-12 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-all z-10"
+                            aria-label="Next image"
+                            className="btn-glass-dark absolute right-3 z-10 !h-12 !w-12 !p-0 md:right-6"
                         >
-                            <ChevronRight size={24} />
+                            <ChevronRight size={22} />
                         </button>
-                        <div className="absolute bottom-4 text-white/60 text-sm">
+                        <div className="glass-dark absolute bottom-6 rounded-full px-4 py-1.5 font-display text-sm tracking-wide text-ivory-100/80">
                             {lightboxIndex + 1} / {filtered.length}
                         </div>
                     </motion.div>

@@ -169,20 +169,25 @@ export default function ShoppingPage() {
             />
 
             {/* Server-rendered district links so every district guide (and through it every market) is crawlable */}
-            <section className="bg-amber-50/60 dark:bg-gray-950 pb-16">
+            <section className="relative py-20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <h2 className="font-playfair text-2xl sm:text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">
-                        Shopping Guides by District
-                    </h2>
+                    <div className="mb-10 text-center">
+                        <span className="eyebrow">Districts</span>
+                        <h2 className="mt-4 font-display text-4xl font-medium leading-[1.05] tracking-tight text-ink-900 dark:text-ivory-50 sm:text-5xl">
+                            Shopping guides by <em className="italic font-normal text-gold-sheen">district</em>
+                        </h2>
+                    </div>
                     <ul className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
                         {RAJASTHAN_SHOPPING.districts.map((d) => (
                             <li key={d.slug}>
                                 <Link
                                     href={`/shopping/${d.slug}`}
-                                    className="block px-4 py-3 rounded-2xl bg-white dark:bg-gray-800/60 border border-gray-200 dark:border-gray-700/50 hover:border-amber-400 text-sm font-semibold text-gray-800 dark:text-gray-100 hover:text-amber-600 dark:hover:text-amber-300 transition-colors"
+                                    className="group block h-full rounded-[1.5rem] glass px-5 py-4 transition-all duration-500 ease-lux hover:-translate-y-1 hover:shadow-float"
                                 >
-                                    Shopping in {d.district}
-                                    <span className="block text-xs font-normal text-gray-500 dark:text-gray-400">
+                                    <span className="block font-display text-xl font-medium text-ink-900 transition-colors group-hover:text-gold-700 dark:text-ivory-50 dark:group-hover:text-gold-300">
+                                        Shopping in {d.district}
+                                    </span>
+                                    <span className="mt-1 block text-xs text-ink-500 dark:text-ivory-200/60">
                                         {d.shoppingPlaces.length} markets
                                     </span>
                                 </Link>

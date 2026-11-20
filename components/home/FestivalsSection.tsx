@@ -22,6 +22,7 @@ import {
   MapPin,
   Star,
   ArrowRight,
+  ArrowUpRight,
   ChevronLeft,
   ChevronRight,
   Search,
@@ -32,144 +33,176 @@ import {
 import type { FestivalCard } from "@/lib/festivals";
 import { FESTIVALS_FAQS_ENGLISH, FESTIVALS_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
+import { Reveal, RevealGroup, revealItem } from "@/components/ui/Reveal";
 import { TiltCard } from "./TiltCard";
 
 // ============ TYPES ============
 type Festival = FestivalCard;
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
+function formatNextDate(nextDate?: string): string {
+  if (!nextDate) return "Coming Soon";
+  const parts = nextDate.split('-');
+  if (parts.length !== 3) return nextDate;
+  const [year, month, day] = parts;
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${day} ${months[parseInt(month) - 1]} ${year}`;
+}
+
+/** Bento rhythm for the festival grid: every 8 cards = one 2x2 feature, one wide card, six singles. */
+function bentoClass(idx: number): string {
+  const slot = idx % 8;
+  if (slot === 0) return "sm:col-span-2 lg:col-span-2 lg:row-span-2";
+  if (slot === 5) return "sm:col-span-2 lg:col-span-2";
+  return "";
+}
 
 // ============ FESTIVAL HERO ============
-function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext: () => void, onPrev: () => void }) {
+function FestivalHero({
+  festival,
+  onNext,
+  onPrev,
+  index,
+  total,
+}: {
+  festival: Festival;
+  onNext: () => void;
+  onPrev: () => void;
+  index: number;
+  total: number;
+}) {
   const { language } = useLanguage();
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={festival.id}
-        initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0 }}
-        transition={{ duration: 0.6 }}
-        className="relative h-[50vh] min-h-[380px] md:h-[80vh] md:min-h-[700px] rounded-[30px] md:rounded-[40px] overflow-hidden"
-      >
-        <Image
-          src={festival.image}
-          alt={festival.name}
-          fill
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-        <div className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/50 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
+    <div className="relative h-[72svh] min-h-[520px] md:h-[86svh] md:min-h-[720px] overflow-hidden rounded-[2rem] md:rounded-[2.5rem] bg-ink-950 shadow-float-lg isolate grain">
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={festival.id}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.8, ease: EASE }}
+          className="absolute inset-0"
+        >
+          {/* Photo with slow Ken Burns */}
+          <div className="absolute inset-0 animate-kenburns">
+            <Image
+              src={festival.image}
+              alt={festival.name}
+              fill
+              priority
+              sizes="(max-width: 1280px) 100vw, 1280px"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 scrim-cinematic" />
+          <div className="absolute inset-0 bg-gradient-to-r from-ink-950/70 via-ink-950/20 to-transparent" />
 
-        {/* Featured Festival Badge - Top Left */}
-        <div className="absolute top-6 left-4 md:top-8 md:left-8 z-20">
-          <motion.span
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-flex px-3 py-1.5 md:px-4 md:py-2 rounded-full
-              bg-yellow-500/20 border border-yellow-400/20
-              text-yellow-300 text-xs md:text-sm backdrop-blur-md font-medium shadow-lg"
-          >
-            Featured Festival
-          </motion.span>
-        </div>
-
-        {/* Content - Vertically centered on the left with padding to avoid header/button/badge overlap */}
-        <div className="absolute inset-y-0 left-6 right-6 md:right-auto md:left-16 flex flex-col justify-center pt-24 pb-20 md:py-0 max-w-3xl z-10">
-          <motion.h1
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-2xl md:text-5xl lg:text-7xl font-bold
-              text-white mb-3 font-playfair drop-shadow-xl leading-tight"
-          >
-            {festival.name}
-          </motion.h1>
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="flex flex-wrap gap-2 md:gap-3 mt-3 mb-4 text-white/90 font-medium"
-          >
-            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
-              <MapPin size={12} className="text-gold-400" />
-              <span className="text-[10px] md:text-sm">{festival.location}</span>
-            </div>
-            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
-              <Calendar size={12} className="text-gold-400" />
-              <span className="text-[10px] md:text-sm">{festival.month}</span>
-            </div>
-            <div className="flex items-center gap-1.5 bg-white/10 backdrop-blur-md px-3 py-1.2 rounded-full border border-white/20 shadow-lg">
-              <Clock size={12} className="text-gold-400" />
-              <span className="text-[10px] md:text-sm">{festival.duration}</span>
-            </div>
-          </motion.div>
-
-          <motion.p
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="text-white/80 text-sm md:text-lg max-w-2xl
-              leading-relaxed hidden md:block"
-          >
-            {festival.description}
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 40 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.4 }}
-            className="mt-4 md:mt-6"
-          >
-            <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`}>
-              <button className="inline-flex items-center gap-2 px-5 md:px-7 py-2.5 md:py-3.5 rounded-full bg-gradient-to-r from-yellow-500 to-amber-600 text-black font-bold text-xs md:text-sm shadow-[0_4px_12px_rgba(251,191,36,0.3)] hover:shadow-[0_6px_20px_rgba(251,191,36,0.5)] hover:-translate-y-0.5 active:translate-y-0 transition-all duration-300 group/hero-btn">
-                <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
-                <ArrowRight size={14} className="md:w-4 md:h-4 group-hover/hero-btn:translate-x-1 transition-transform" />
-              </button>
-            </Link>
-          </motion.div>
-        </div>
-
-        {/* Navigation Buttons - Placed bottom-left under content */}
-        <div className="absolute bottom-6 left-6 md:left-16 flex gap-4 md:gap-6 z-20">
-          <button onClick={onPrev} className="w-11 h-11 md:w-14 md:h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
-            <ChevronLeft size={22} className="md:w-7 md:h-7" />
-          </button>
-          <button onClick={onNext} className="w-11 h-11 md:w-14 md:h-14 rounded-full border border-white/20 bg-black/40 backdrop-blur-xl flex items-center justify-center text-white shadow-[0_4px_12px_rgba(0,0,0,0.4)] hover:bg-white/20 hover:scale-110 hover:shadow-[0_8px_24px_rgba(251,191,36,0.5)] hover:border-gold-400/50 transition-all duration-300">
-            <ChevronRight size={22} className="md:w-7 md:h-7" />
-          </button>
-        </div>
-
-        {/* Top Right Sidebar Stack: Rating + Date Card */}
-        <div className="absolute top-6 right-4 md:top-8 md:right-8 flex flex-col items-end gap-2 md:gap-3.5 z-20">
-          {/* Rating */}
-          <div className="flex items-center gap-1.5
-            backdrop-blur-xl bg-black/40 border border-white/20
-            rounded-full px-3.5 py-1.5 shadow-lg">
-            <Star size={14} className="text-yellow-400 fill-yellow-400 md:w-[16px] md:h-[16px]" />
-            <span className="text-white font-bold text-xs md:text-base">{festival.rating}</span>
+          {/* Featured Festival Badge - Top Left */}
+          <div className="absolute top-5 left-5 md:top-8 md:left-10 z-20">
+            <motion.span
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: EASE }}
+              className="glass-dark inline-flex items-center gap-2 rounded-full px-4 py-2 text-[11px] font-semibold uppercase tracking-eyebrow text-gold-300"
+            >
+              <span className="h-1.5 w-1.5 rounded-full bg-gold-400 animate-pulse-gold" />
+              Featured Festival
+            </motion.span>
           </div>
 
-          {/* Date Card */}
-          <div className="backdrop-blur-2xl bg-black/45 border border-white/15
-            rounded-xl md:rounded-2xl p-2.5 md:p-4 shadow-2xl origin-top-right text-right">
-            <p className="text-white/50 text-[9px] md:text-[10px] mb-1 font-semibold uppercase tracking-wider">
-              Date
-            </p>
-            <p className="text-white font-bold text-xs md:text-sm tracking-wide whitespace-nowrap">
-              {(() => {
-                if (!festival.nextDate) return "Coming Soon";
-                const parts = festival.nextDate.split('-');
-                if (parts.length !== 3) return festival.nextDate;
-                const [year, month, day] = parts;
-                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-                return `${day} ${months[parseInt(month) - 1]} ${year}`;
-              })()}
-            </p>
+          {/* Top Right Sidebar Stack: Rating + Date Card */}
+          <div className="absolute top-5 right-5 md:top-8 md:right-10 flex flex-col items-end gap-2.5 z-20">
+            <div className="glass-dark flex items-center gap-1.5 rounded-full px-3.5 py-1.5">
+              <Star size={14} className="text-gold-400 fill-gold-400" />
+              <span className="text-ivory-50 font-semibold text-xs md:text-sm">{festival.rating}</span>
+            </div>
+            <div className="glass-dark rounded-2xl px-4 py-3 text-right">
+              <p className="text-ivory-100/55 text-[10px] mb-1 font-semibold uppercase tracking-eyebrow">
+                Date
+              </p>
+              <p className="font-display text-ivory-50 text-lg md:text-2xl leading-none whitespace-nowrap">
+                {formatNextDate(festival.nextDate)}
+              </p>
+            </div>
           </div>
-        </div>
-      </motion.div>
-    </AnimatePresence>
+
+          {/* Editorial content + glass info panel */}
+          <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-24 md:px-10 md:pb-28 lg:px-14">
+            <div className="max-w-3xl">
+              <motion.span
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.1, ease: EASE }}
+                className="eyebrow !text-gold-300"
+              >
+                {String(index + 1).padStart(2, "0")} / {String(total).padStart(2, "0")}
+              </motion.span>
+
+              <motion.h1
+                initial={{ opacity: 0, y: 36 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1.1, delay: 0.15, ease: EASE }}
+                className="mt-4 font-display text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-medium leading-[0.98] tracking-tight text-ivory-50"
+              >
+                {festival.name}
+              </motion.h1>
+
+              <motion.div
+                initial={{ opacity: 0, y: 24 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.9, delay: 0.25, ease: EASE }}
+                className="mt-6 glass-dark rounded-[1.75rem] p-4 md:p-6 max-w-2xl"
+              >
+                <div className="flex flex-wrap gap-2 text-ivory-100/90">
+                  {[
+                    { icon: MapPin, text: festival.location },
+                    { icon: Calendar, text: festival.month },
+                    { icon: Clock, text: festival.duration },
+                  ].map(({ icon: Icon, text }) => (
+                    <span key={text} className="inline-flex items-center gap-1.5 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs md:text-sm">
+                      <Icon size={13} className="text-gold-300" />
+                      {text}
+                    </span>
+                  ))}
+                </div>
+
+                <p className="mt-4 text-ivory-100/80 text-sm md:text-base leading-relaxed line-clamp-3 hidden sm:block">
+                  {festival.description}
+                </p>
+
+                <div className="mt-5">
+                  <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`} className="btn-gold group/hero-btn !py-2.5 md:!py-3">
+                    <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
+                    <ArrowRight size={16} className="transition-transform duration-500 ease-lux group-hover/hero-btn:translate-x-1" />
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </motion.div>
+      </AnimatePresence>
+
+      {/* Navigation Buttons */}
+      <div className="absolute bottom-5 right-5 md:bottom-8 md:right-10 flex gap-3 z-20">
+        <button
+          type="button"
+          onClick={onPrev}
+          aria-label={language === 'hi' ? 'पिछला त्योहार' : 'Previous festival'}
+          className="glass-dark w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-ivory-50 transition-all duration-500 ease-lux hover:bg-white/20 hover:-translate-y-0.5 hover:border-gold-300/50"
+        >
+          <ChevronLeft size={22} />
+        </button>
+        <button
+          type="button"
+          onClick={onNext}
+          aria-label={language === 'hi' ? 'अगला त्योहार' : 'Next festival'}
+          className="glass-dark w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center text-ivory-50 transition-all duration-500 ease-lux hover:bg-white/20 hover:-translate-y-0.5 hover:border-gold-300/50"
+        >
+          <ChevronRight size={22} />
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -220,385 +253,370 @@ export function FestivalsSection({ festivals, festivalsHi }: { festivals: Festiv
 
   return (
     <>
-      <section className="relative bg-white dark:bg-[#070b16] overflow-hidden pt-28 md:pt-28 pb-16 md:pb-32">
-      {/* Glow Effects */}
-      <div className="absolute top-0 left-0 w-[500px] h-[500px]
-        bg-yellow-500/10 rounded-full blur-[180px] pointer-events-none" />
-      <div className="absolute bottom-0 right-0 w-[600px] h-[600px]
-        bg-orange-500/10 rounded-full blur-[200px] pointer-events-none" />
-
-      {/* Floating Particles */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        {[...Array(10)].map((_, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, y: -100 }}
-            animate={{ opacity: [0, 0.4, 0], y: [0, 1200] }}
-            transition={{
-              duration: 15 + index,
-              repeat: Infinity,
-              delay: index * 0.4,
-            }}
-            className="absolute w-1.5 h-1.5 rounded-full bg-yellow-400"
-            style={{ left: `${(index * 5) % 100}%` }}
-          />
-        ))}
-      </div>
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 lg:px-8">
-
-        {/* Festival Hero Slider */}
-        <FestivalHero festival={festival} onNext={handleNext} onPrev={handlePrev} />
-
-        {/* Progress Bar */}
-        <div className="mt-8 h-1.5 bg-gray-200 dark:bg-white/10 rounded-full overflow-hidden max-w-2xl mx-auto">
-          <motion.div
-            className="h-full bg-gradient-to-r from-yellow-400
-              via-orange-500 to-red-500"
-            animate={{ width: `${progress}%` }}
-            transition={{ duration: 0.5 }}
-          />
+      <section className="relative isolate overflow-hidden pt-24 md:pt-28 pb-16 md:pb-28">
+        {/* Ambient light */}
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -top-40 -left-40 h-[36rem] w-[36rem] rounded-full bg-gold-500/15 blur-[160px] dark:bg-gold-500/10" />
+          <div className="absolute top-[40%] -right-40 h-[32rem] w-[32rem] rounded-full bg-maroon-500/10 blur-[160px] dark:bg-maroon-500/20" />
+          <div className="absolute bottom-0 left-1/3 h-[28rem] w-[28rem] rounded-full bg-royal-orange/10 blur-[160px] dark:bg-royal-orange/5" />
         </div>
 
-        {/* Festival Details */}
-        <div className="mt-12 md:mt-32 grid lg:grid-cols-2 gap-6 lg:gap-12 items-center">
-          {/* Left */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-          >
-            <span className="text-yellow-400 uppercase tracking-[4px]
-              font-semibold text-xs md:text-sm">
-              Festival Details
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+          {/* Festival Hero Slider */}
+          <FestivalHero
+            festival={festival}
+            onNext={handleNext}
+            onPrev={handlePrev}
+            index={active}
+            total={currentFestivals.length}
+          />
+
+          {/* Progress Bar */}
+          <div className="mt-8 flex items-center justify-center gap-4 max-w-2xl mx-auto">
+            <span className="font-display text-sm italic text-ink-400 dark:text-ivory-200/50 tabular-nums">
+              {String(active + 1).padStart(2, "0")}
             </span>
-
-            <h3 className="mt-4 text-2xl md:text-5xl font-bold
-              text-gray-900 dark:text-white font-playfair">
-              {festival.name}
-            </h3>
-
-            <div className="flex flex-wrap gap-4 md:gap-6 mt-4 md:mt-6 mb-6 md:mb-8">
-              {[
-                { icon: MapPin, text: festival.location },
-                { icon: Calendar, text: festival.month },
-                { icon: Clock, text: festival.duration },
-              ].map(({ icon: Icon, text }) => (
-                <div key={text} className="flex items-center gap-2 text-yellow-500 dark:text-yellow-400 bg-gray-100 dark:bg-white/5 px-3 md:px-4 py-1.5 md:py-2 rounded-lg border border-gray-200/50 dark:border-white/5">
-                  <Icon size={14} className="md:w-[18px] md:h-[18px]" />
-                  <span className="text-gray-800 dark:text-white/90 text-xs md:text-base font-medium">
-                    {text}
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-gray-600 dark:text-white/70 leading-relaxed md:leading-8 text-xs md:text-lg">
-              {festival.description}
-            </p>
-
-            {/* Highlights */}
-            <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
-              {festival.highlights.map((item) => (
-                <motion.div
-                  key={item}
-                  whileHover={{ scale: 1.05, y: -2 }}
-                  className="px-3 md:px-4 py-1.5 md:py-2 rounded-full bg-gray-100 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-md text-gray-800 dark:text-white text-xs md:text-sm font-medium cursor-default shadow-[inset_0_1px_1px_rgba(255,255,255,0.1)] hover:bg-gray-200 dark:hover:bg-white/10 hover:border-gray-300 dark:hover:border-white/20 hover:shadow-[0_4px_12px_rgba(251,191,36,0.15)] transition-all"
-                >
-                  {item}
-                </motion.div>
-              ))}
-            </div>
-
-            <div className="flex flex-wrap gap-4 mt-8 md:mt-10">
-              <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`}>
-                <button className="px-5 md:px-8 py-2.5 md:py-4 rounded-full bg-gradient-to-r from-maroon-500 to-maroon-700 text-white font-bold flex items-center gap-2 text-xs md:text-base shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_8px_16px_rgba(153,27,27,0.3)] hover:shadow-[inset_0_1px_1px_rgba(255,255,255,0.4),0_12px_24px_rgba(153,27,27,0.4)] hover:-translate-y-1 active:translate-y-0 active:shadow-[inset_0_2px_4px_rgba(0,0,0,0.2)] transition-all duration-300 group/btn">
-                  <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
-                  <ArrowRight size={16} className="md:w-[18px] md:h-[18px] group-hover/btn:translate-x-1 transition-transform" />
-                </button>
-              </Link>
-            </div>
-          </motion.div>
-
-          {/* Right - Stats */}
-          <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-2 gap-4 md:gap-5"
-          >
-            {[
-              {
-                label: "Festival Rating",
-                value: festival.rating,
-                isRating: true,
-              },
-              {
-                label: "Duration",
-                value: festival.duration,
-                isRating: false,
-              },
-              {
-                label: "Best Month",
-                value: festival.month,
-                isRating: false,
-              },
-              {
-                label: "Location",
-                value: festival.location,
-                isRating: false,
-              },
-            ].map((item) => (
-              <div
-                key={item.label}
-                className="group relative rounded-2xl md:rounded-3xl p-4 md:p-6 bg-gray-50 dark:bg-white/5 border border-gray-200 dark:border-white/10 backdrop-blur-md shadow-sm dark:shadow-[inset_0_1px_1px_rgba(255,255,255,0.05)] hover:bg-gray-100 dark:hover:bg-white/10 hover:shadow-[0_8px_24px_rgba(0,0,0,0.15)] dark:hover:shadow-[0_8px_24px_rgba(0,0,0,0.3)] hover:border-gray-300 dark:hover:border-white/20 transition-all duration-500 hover:-translate-y-1"
-              >
-                <div className="absolute inset-0 bg-gradient-to-br from-gray-100/50 to-transparent dark:from-white/5 dark:to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl md:rounded-3xl pointer-events-none" />
-                <h4 className="text-gray-500 dark:text-white/60 text-xs md:text-sm mb-3 md:mb-4 font-medium uppercase tracking-wider">{item.label}</h4>
-                {item.isRating ? (
-                  <div className="flex items-center gap-2">
-                    <Star className="text-gold-400 fill-gold-400 w-4 h-4 md:w-6 md:h-6 drop-shadow-[0_0_8px_rgba(251,191,36,0.5)] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-xl md:text-4xl font-bold text-gray-900 dark:text-white drop-shadow-md">
-                      {item.value}
-                    </span>
-                  </div>
-                ) : (
-                  <div className="text-base md:text-3xl font-bold text-gray-900 dark:text-white drop-shadow-md">
-                    {item.value}
-                  </div>
-                )}
-              </div>
-            ))}
-          </motion.div>
-        </div>
-
-        {/* Experience The Magic */}
-        <div className="mt-12 md:mt-32 border-t border-gray-200 dark:border-white/10 pt-12 md:pt-24">
-
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-8 md:mb-16"
-          >
-            <span className="uppercase tracking-[6px] text-yellow-500 dark:text-yellow-400
-              font-semibold text-xs md:text-sm">
-              Rajasthan Festivals
-            </span>
-
-            <h2 className="mt-2 md:mt-4 text-xl sm:text-4xl md:text-5xl lg:text-6xl
-              font-bold text-gray-900 dark:text-white leading-tight font-playfair">
-              Experience The{" "}
-              <span className="bg-gradient-to-r from-yellow-400 via-orange-400
-                to-red-400 bg-clip-text text-transparent">
-                Magic
-              </span>
-            </h2>
-            <p className="text-gray-600 dark:text-white/60 mt-3 md:mt-6 max-w-3xl mx-auto text-xs
-              sm:text-base md:text-lg leading-relaxed">
-              Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,
-              royal processions and unforgettable cultural festivals.
-            </p>
-          </motion.div>
-
-          {/* Filters & Search */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 md:gap-6 mb-8 md:mb-12 bg-gray-50 dark:bg-white/5 p-4 rounded-3xl border border-gray-200 dark:border-white/10 backdrop-blur-md">
-            <div className="relative w-full md:w-1/2">
-              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" size={20} />
-              <input
-                type="text"
-                placeholder="Search festival by name (e.g. desert|camel)"
-                value={searchTerm}
-                onChange={(e) => {
-                  setSearchTerm(e.target.value);
-                  setVisibleCount(8);
-                }}
-                className="w-full bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-4 text-gray-900 dark:text-white focus:outline-none focus:border-yellow-500 dark:focus:border-yellow-400/50 transition-colors shadow-inner text-xs md:text-sm"
+            <div className="relative h-px flex-1 bg-ink-900/10 dark:bg-white/10 overflow-hidden rounded-full">
+              <motion.div
+                className="absolute inset-y-0 left-0 bg-gold-sheen"
+                animate={{ width: `${progress}%` }}
+                transition={{ duration: 0.7, ease: EASE }}
               />
             </div>
-
-            <div className="relative w-full md:w-auto min-w-[200px]">
-              <Filter className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 dark:text-white/40" size={20} />
-              <select
-                value={selectedLocation}
-                onChange={(e) => {
-                  setSelectedLocation(e.target.value);
-                  setVisibleCount(8);
-                }}
-                className="w-full bg-white dark:bg-black/40 border border-gray-200 dark:border-white/10 rounded-2xl py-2.5 md:py-3 pl-12 pr-10 text-gray-900 dark:text-white focus:outline-none focus:border-yellow-500 dark:focus:border-yellow-400/50 transition-colors shadow-inner appearance-none cursor-pointer text-xs md:text-sm"
-              >
-                {uniqueLocations.map(loc => (
-                  <option key={loc} value={loc} className="bg-white dark:bg-gray-900 text-gray-900 dark:text-white">{loc}</option>
-                ))}
-              </select>
-              {/* Custom arrow */}
-              <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-gray-400 dark:text-white/40">
-                <ChevronRight size={16} className="rotate-90" />
-              </div>
-            </div>
+            <span className="font-display text-sm italic text-ink-400 dark:text-ivory-200/50 tabular-nums">
+              {String(currentFestivals.length).padStart(2, "0")}
+            </span>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <AnimatePresence mode="popLayout">
-              {visibleFestivals.map((f, idx) => (
-                <motion.div
-                  key={f.id}
-                  id={`festival-card-${idx}`}
-                  layout
-                  initial={{ opacity: 0, y: 40 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 40 }}
-                  transition={{ duration: 0.5 }}
-                  className="scroll-mt-32"
-                >
-                  <TiltCard maxTilt={10} className="h-full">
-                    <Link href={`/festivals/${toSlug(f.engName || f.name)}`} className="block h-full">
-                      <div
-                        className="group relative overflow-hidden rounded-3xl h-[280px] cursor-pointer shadow-lg hover:shadow-[0_20px_40px_rgba(251,191,36,0.15)] transition-all duration-500 border border-white/10 hover:border-gold-400/50 transform-gpu z-10"
-                        style={{ transform: "translateZ(30px)" }}
-                      >
-                        <Image
-                          src={f.image}
-                          alt={f.name}
-                          fill
-                          className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
-                          loading="lazy"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent transition-opacity duration-500 group-hover:opacity-80" />
+          {/* Festival Details */}
+          <div className="mt-16 md:mt-28 grid lg:grid-cols-12 gap-8 lg:gap-14 items-center">
+            {/* Left */}
+            <Reveal className="lg:col-span-7">
+              <span className="eyebrow">Festival Details</span>
 
-                        <div className="absolute bottom-4 left-4 right-4 transform transition-transform duration-500 group-hover:-translate-y-2" style={{ transform: "translateZ(20px)" }}>
-                          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-3">
-                            <MapPin size={12} className="text-gold-400" />
-                            <span className="text-white/90 text-xs font-medium">{f.location}</span>
-                          </div>
-                          <h4 className="text-white font-bold text-lg md:text-xl drop-shadow-md leading-tight">{f.name}</h4>
-                        </div>
-                      </div>
-                    </Link>
-                  </TiltCard>
+              <h3 className="mt-5 display-title text-4xl md:text-6xl">
+                {festival.name}
+              </h3>
+
+              <div className="flex flex-wrap gap-2 mt-6 mb-7">
+                {[
+                  { icon: MapPin, text: festival.location },
+                  { icon: Calendar, text: festival.month },
+                  { icon: Clock, text: festival.duration },
+                ].map(({ icon: Icon, text }) => (
+                  <div key={text} className="chip-idle !cursor-default">
+                    <Icon size={14} className="text-gold-600 dark:text-gold-400" />
+                    <span>{text}</span>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-ink-500 dark:text-ivory-200/70 leading-relaxed md:leading-8 text-sm md:text-lg max-w-2xl">
+                {festival.description}
+              </p>
+
+              {/* Highlights */}
+              <div className="flex flex-wrap gap-2 mt-7">
+                {festival.highlights.map((item) => (
+                  <motion.div
+                    key={item}
+                    whileHover={{ y: -2 }}
+                    transition={{ duration: 0.4, ease: EASE }}
+                    className="rounded-full border border-gold-500/25 bg-gold-500/5 px-4 py-2 text-xs md:text-sm font-medium text-ink-700 dark:text-ivory-100/90 cursor-default transition-colors hover:border-gold-500/50 hover:bg-gold-500/10"
+                  >
+                    {item}
+                  </motion.div>
+                ))}
+              </div>
+
+              <div className="flex flex-wrap gap-4 mt-9">
+                <Link href={`/festivals/${toSlug(festival.engName || festival.name)}`} className="btn-primary group/btn">
+                  <span>{language === 'hi' ? 'अधिक विवरण' : 'More Details'}</span>
+                  <ArrowRight size={16} className="transition-transform duration-500 ease-lux group-hover/btn:translate-x-1" />
+                </Link>
+              </div>
+            </Reveal>
+
+            {/* Right - Stats */}
+            <RevealGroup className="lg:col-span-5 grid grid-cols-2 gap-3 md:gap-4">
+              {[
+                {
+                  label: "Festival Rating",
+                  value: festival.rating,
+                  isRating: true,
+                },
+                {
+                  label: "Duration",
+                  value: festival.duration,
+                  isRating: false,
+                },
+                {
+                  label: "Best Month",
+                  value: festival.month,
+                  isRating: false,
+                },
+                {
+                  label: "Location",
+                  value: festival.location,
+                  isRating: false,
+                },
+              ].map((item, i) => (
+                <motion.div
+                  key={item.label}
+                  variants={revealItem}
+                  className={`group glass relative rounded-[1.75rem] p-5 md:p-7 transition-all duration-500 ease-lux hover:-translate-y-1 hover:shadow-float-lg ${
+                    i === 0 ? "bg-gradient-to-br from-gold-500/10 to-transparent" : ""
+                  }`}
+                >
+                  <h4 className="font-sans text-[10px] md:text-[11px] font-semibold uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50 mb-4 md:mb-6">
+                    {item.label}
+                  </h4>
+                  {item.isRating ? (
+                    <div className="flex items-center gap-2">
+                      <Star className="text-gold-500 fill-gold-500 w-5 h-5 md:w-6 md:h-6 transition-transform duration-500 ease-lux group-hover:scale-110" />
+                      <span className="font-display text-3xl md:text-5xl font-medium text-ink-900 dark:text-ivory-50 leading-none">
+                        {item.value}
+                      </span>
+                    </div>
+                  ) : (
+                    <div className="font-display text-xl md:text-3xl font-medium text-ink-900 dark:text-ivory-50 leading-tight">
+                      {item.value}
+                    </div>
+                  )}
                 </motion.div>
               ))}
-            </AnimatePresence>
+            </RevealGroup>
           </div>
 
-          {filteredFestivals.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-gray-500 dark:text-white/60 text-lg">No festivals found matching your criteria.</p>
-            </div>
-          )}
+          {/* Experience The Magic */}
+          <div className="mt-20 md:mt-32 pt-14 md:pt-24 relative">
+            <div className="hairline absolute top-0 inset-x-0" />
 
-          {/* ── Load More button ── */}
-          {visibleCount < filteredFestivals.length && (
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="mt-8 md:mt-16 flex flex-col items-center gap-3"
-            >
-              <p className="text-sm text-gray-500 dark:text-white/50 font-medium">
-                Showing {visibleFestivals.length} of {filteredFestivals.length} festivals
+            <Reveal className="text-center mb-10 md:mb-14">
+              <span className="eyebrow">Rajasthan Festivals</span>
+
+              <h2 className="mt-4 display-title text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+                Experience The{" "}
+                <em className="italic font-normal text-gold-sheen">Magic</em>
+              </h2>
+              <p className="text-ink-500 dark:text-ivory-200/70 mt-5 md:mt-6 max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed">
+                Discover The Cultural Soul of Rajasthan. Experience centuries-old traditions, vibrant celebrations,
+                royal processions and unforgettable cultural festivals.
               </p>
-              <motion.button
-                type="button"
-                whileHover={{ scale: 1.04 }}
-                whileTap={{ scale: 0.96 }}
-                onClick={(e) => {
-                  e.preventDefault();
-                  handleLoadMore();
-                }}
-                className="inline-flex items-center gap-2.5 px-8 py-3.5 rounded-full font-semibold text-sm transition-all duration-300
-                  bg-transparent border-2 border-yellow-600 dark:border-yellow-500
-                  text-yellow-600 dark:text-yellow-400
-                  hover:bg-yellow-600 dark:hover:bg-yellow-500 hover:text-white dark:hover:text-black
-                  shadow-md hover:shadow-yellow-600/30 dark:hover:shadow-yellow-500/30 group"
-              >
-                <Calendar size={16} className="group-hover:text-white dark:group-hover:text-black" />
-                Load More Festivals
-                <span className="bg-yellow-500/10 dark:bg-yellow-500/20 group-hover:bg-yellow-700/20 dark:group-hover:bg-black/20 text-yellow-600 dark:text-yellow-400 group-hover:text-yellow-700 dark:group-hover:text-black px-2 py-0.5 rounded-full text-xs font-bold border border-transparent transition-colors">
-                  +{Math.min(8, filteredFestivals.length - visibleCount)} more
-                </span>
-              </motion.button>
-            </motion.div>
-          )}
-        </div>
+            </Reveal>
 
-                    {/* Visual FAQ Section */}
-                    <FAQSection 
-                        faqs={language === "hi" ? FESTIVALS_FAQS_HINDI : FESTIVALS_FAQS_ENGLISH} 
-                        title={language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"} 
-                    />
+            {/* Filters & Search */}
+            <Reveal className="glass-strong flex flex-col md:flex-row items-center justify-between gap-3 mb-10 md:mb-14 p-3 rounded-[1.75rem] md:rounded-full">
+              <div className="relative w-full md:flex-1">
+                <Search className="absolute left-5 top-1/2 -translate-y-1/2 text-ink-400 dark:text-ivory-200/40 pointer-events-none" size={18} />
+                <input
+                  type="text"
+                  placeholder="Search festival by name (e.g. desert|camel)"
+                  value={searchTerm}
+                  onChange={(e) => {
+                    setSearchTerm(e.target.value);
+                    setVisibleCount(8);
+                  }}
+                  className="field !rounded-full !py-3 pl-12"
+                />
+              </div>
+
+              <div className="relative w-full md:w-auto md:min-w-[240px]">
+                <Filter className="absolute left-5 top-1/2 -translate-y-1/2 text-ink-400 dark:text-ivory-200/40 pointer-events-none" size={16} />
+                <select
+                  value={selectedLocation}
+                  onChange={(e) => {
+                    setSelectedLocation(e.target.value);
+                    setVisibleCount(8);
+                  }}
+                  className="field !rounded-full !py-3 pl-12 pr-10 appearance-none cursor-pointer"
+                >
+                  {uniqueLocations.map(loc => (
+                    <option key={loc} value={loc} className="bg-ivory-50 text-ink-900 dark:bg-ink-800 dark:text-ivory-100">{loc}</option>
+                  ))}
+                </select>
+                {/* Custom arrow */}
+                <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-ink-400 dark:text-ivory-200/40">
+                  <ChevronDown size={16} />
                 </div>
-            </section>
+              </div>
+            </Reveal>
 
-            {/* Dynamic JSON-LD FAQ Schema */}
-            <script
-                type="application/ld+json"
-                dangerouslySetInnerHTML={{
-                    __html: JSON.stringify({
-                        "@context": "https://schema.org",
-                        "@type": "FAQPage",
-                        "mainEntity": (language === "hi" ? FESTIVALS_FAQS_HINDI : FESTIVALS_FAQS_ENGLISH).map(faq => ({
-                            "@type": "Question",
-                            "name": faq.question,
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": faq.answer
-                            }
-                        }))
-                    })
-                }}
-            />
-        </>
-    );
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[300px] sm:auto-rows-[280px] grid-flow-dense gap-4 md:gap-5">
+              <AnimatePresence mode="popLayout">
+                {visibleFestivals.map((f, idx) => {
+                  const isFeature = idx % 8 === 0;
+                  return (
+                    <motion.div
+                      key={f.id}
+                      id={`festival-card-${idx}`}
+                      layout
+                      initial={{ opacity: 0, y: 40 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: 40 }}
+                      transition={{ duration: 0.6, ease: EASE }}
+                      className={`scroll-mt-32 ${bentoClass(idx)}`}
+                    >
+                      <TiltCard maxTilt={isFeature ? 4 : 7} className="h-full rounded-[1.75rem]">
+                        <Link href={`/festivals/${toSlug(f.engName || f.name)}`} className="block h-full rounded-[1.75rem]">
+                          <div className="group relative h-full overflow-hidden rounded-[1.75rem] bg-ink-900 shadow-float transition-shadow duration-500 ease-lux hover:shadow-float-lg transform-gpu">
+                            <Image
+                              src={f.image}
+                              alt={f.name}
+                              fill
+                              sizes={isFeature ? "(max-width: 1024px) 100vw, 50vw" : "(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"}
+                              className="object-cover transition-transform duration-[1400ms] ease-lux group-hover:scale-110"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 scrim-b transition-opacity duration-500 group-hover:opacity-90" />
+
+                            <span className="absolute top-4 right-4 flex h-10 w-10 items-center justify-center rounded-full glass-dark text-ivory-50 opacity-0 -translate-y-1 transition-all duration-500 ease-lux group-hover:opacity-100 group-hover:translate-y-0">
+                              <ArrowUpRight size={16} />
+                            </span>
+
+                            <div className="absolute bottom-0 inset-x-0 p-5 md:p-6 transition-transform duration-500 ease-lux group-hover:-translate-y-1">
+                              <div className="glass-dark inline-flex items-center gap-1.5 px-3 py-1 rounded-full mb-3">
+                                <MapPin size={12} className="text-gold-300" />
+                                <span className="text-ivory-100/90 text-xs font-medium">{f.location}</span>
+                              </div>
+                              <h4 className={`font-display font-medium text-ivory-50 leading-[1.05] tracking-tight ${isFeature ? "text-3xl md:text-5xl" : "text-2xl"}`}>
+                                {f.name}
+                              </h4>
+                              {isFeature && (
+                                <p className="mt-3 hidden md:block max-w-md text-sm text-ivory-100/70 leading-relaxed line-clamp-2">
+                                  {f.description}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </Link>
+                      </TiltCard>
+                    </motion.div>
+                  );
+                })}
+              </AnimatePresence>
+            </div>
+
+            {filteredFestivals.length === 0 && (
+              <div className="glass rounded-[2rem] text-center py-20 px-6">
+                <p className="font-display text-2xl text-ink-500 dark:text-ivory-200/60">No festivals found matching your criteria.</p>
+              </div>
+            )}
+
+            {/* ── Load More button ── */}
+            {visibleCount < filteredFestivals.length && (
+              <motion.div
+                initial={{ opacity: 0, y: 16 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, ease: EASE }}
+                className="mt-12 md:mt-16 flex flex-col items-center gap-4"
+              >
+                <p className="text-xs uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50 font-semibold">
+                  Showing {visibleFestivals.length} of {filteredFestivals.length} festivals
+                </p>
+                <motion.button
+                  type="button"
+                  whileTap={{ scale: 0.97 }}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleLoadMore();
+                  }}
+                  className="btn-glass group"
+                >
+                  <Calendar size={16} className="text-gold-600 dark:text-gold-400" />
+                  Load More Festivals
+                  <span className="rounded-full bg-gold-500/15 px-2 py-0.5 text-xs font-bold text-gold-700 dark:text-gold-300">
+                    +{Math.min(8, filteredFestivals.length - visibleCount)} more
+                  </span>
+                </motion.button>
+              </motion.div>
+            )}
+          </div>
+
+          {/* Visual FAQ Section */}
+          <FAQSection
+            faqs={language === "hi" ? FESTIVALS_FAQS_HINDI : FESTIVALS_FAQS_ENGLISH}
+            title={language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Frequently Asked Questions"}
+          />
+        </div>
+      </section>
+
+      {/* Dynamic JSON-LD FAQ Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": (language === "hi" ? FESTIVALS_FAQS_HINDI : FESTIVALS_FAQS_ENGLISH).map(faq => ({
+              "@type": "Question",
+              "name": faq.question,
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+              }
+            }))
+          })
+        }}
+      />
+    </>
+  );
 }
 
 // ============ REUSABLE FAQ SECTION COMPONENT ============
 function FAQSection({ faqs, title }: { faqs: { question: string, answer: string }[], title: string }) {
-    const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
-    return (
-        <section className="py-16 border-t border-gray-200 dark:border-white/10 mt-16">
-            <div className="max-w-4xl mx-auto px-4">
-                <h2 className="font-playfair text-3xl md:text-4xl font-bold text-gray-900 dark:text-white text-center mb-10">
-                    {title}
-                </h2>
-                <div className="space-y-4">
-                    {faqs.map((faq, idx) => {
-                        const isOpen = openIndex === idx;
-                        return (
-                            <div 
-                                key={idx}
-                                className="bg-white dark:bg-white/5 border border-gray-200 dark:border-white/10 rounded-2xl overflow-hidden shadow-sm transition-all"
-                            >
-                                <button
-                                    onClick={() => setOpenIndex(isOpen ? null : idx)}
-                                    className="w-full px-6 py-4 flex items-center justify-between gap-4 text-left text-gray-900 dark:text-white font-semibold text-sm md:text-base hover:bg-gray-50 dark:hover:bg-white/5 transition-colors"
-                                >
-                                    <span>{faq.question}</span>
-                                    <ChevronDown 
-                                        size={18} 
-                                        className={`text-gray-500 dark:text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180' : ''}`}
-                                    />
-                                </button>
-                                <AnimatePresence initial={false}>
-                                    {isOpen && (
-                                        <motion.div
-                                            initial={{ height: 0, opacity: 0 }}
-                                            animate={{ height: "auto", opacity: 1 }}
-                                            exit={{ height: 0, opacity: 0 }}
-                                            transition={{ duration: 0.2 }}
-                                        >
-                                            <div className="px-6 pb-5 pt-1 text-gray-600 dark:text-white/70 text-xs md:text-sm border-t border-gray-100 dark:border-white/5 leading-relaxed">
-                                                {faq.answer}
-                                            </div>
-                                        </motion.div>
-                                    )}
-                                </AnimatePresence>
-                            </div>
-                        );
-                    })}
-                </div>
-            </div>
-        </section>
-    );
+  return (
+    <section className="relative mt-20 md:mt-28 pt-16 md:pt-24">
+      <div className="hairline absolute top-0 inset-x-0" />
+      <div className="max-w-4xl mx-auto">
+        <Reveal className="text-center mb-10 md:mb-12">
+          <span className="eyebrow">FAQ</span>
+          <h2 className="mt-4 display-title text-4xl md:text-5xl">
+            {title}
+          </h2>
+        </Reveal>
+        <RevealGroup className="space-y-3">
+          {faqs.map((faq, idx) => {
+            const isOpen = openIndex === idx;
+            return (
+              <motion.div
+                key={idx}
+                variants={revealItem}
+                className={`glass rounded-[1.5rem] overflow-hidden transition-shadow duration-500 ease-lux ${isOpen ? "shadow-float-lg" : ""}`}
+              >
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(isOpen ? null : idx)}
+                  aria-expanded={isOpen}
+                  className="w-full px-6 py-5 flex items-center justify-between gap-4 text-left text-ink-900 dark:text-ivory-50 font-display text-lg md:text-xl font-medium transition-colors hover:text-gold-700 dark:hover:text-gold-300"
+                >
+                  <span>{faq.question}</span>
+                  <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border transition-all duration-500 ease-lux ${isOpen ? "rotate-180 border-gold-500/50 bg-gold-500/10 text-gold-700 dark:text-gold-300" : "border-ink-900/10 text-ink-400 dark:border-white/10 dark:text-ivory-200/60"}`}>
+                    <ChevronDown size={16} />
+                  </span>
+                </button>
+                <AnimatePresence initial={false}>
+                  {isOpen && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      transition={{ duration: 0.4, ease: EASE }}
+                    >
+                      <div className="px-6 pb-6 pt-1 text-ink-500 dark:text-ivory-200/70 text-sm md:text-base leading-relaxed">
+                        {faq.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </motion.div>
+            );
+          })}
+        </RevealGroup>
+      </div>
+    </section>
+  );
 }
-

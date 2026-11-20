@@ -2,6 +2,7 @@
 "use client";
 import { useCallback, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { ChevronRight } from "lucide-react";
 import Link from "@/components/LocalizedLink";
 import type { Place } from "@/types";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -64,7 +65,7 @@ export function PlaceDetailClient({ place: englishPlace, hindiPlace, placeLinks 
             case "overview":
                 // Overview stacks every section so the whole page is readable on scroll
                 return (
-                    <div className="space-y-10">
+                    <div className="space-y-16">
                         <OverviewIntro place={place} t={t} />
                         <TimingTicketsSection place={place} t={t} isOpen={isOpen} divided />
                         <LocationSection place={place} t={t} divided />
@@ -91,23 +92,33 @@ export function PlaceDetailClient({ place: englishPlace, hindiPlace, placeLinks 
 
     return (
         <>
-            <div className="mt-16 bg-palace-white dark:bg-gray-950 min-h-screen">
+            <div className="relative overflow-x-clip pt-24 md:pt-28">
+                {/* Ambient light behind the page */}
+                <div className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[60rem]" aria-hidden="true">
+                    <div className="absolute -left-40 top-20 h-[30rem] w-[30rem] rounded-full bg-gold-400/15 blur-3xl dark:bg-gold-400/[0.07]" />
+                    <div className="absolute -right-40 top-[28rem] h-[26rem] w-[26rem] rounded-full bg-maroon-500/10 blur-3xl dark:bg-maroon-500/15" />
+                </div>
+
                 {/* Breadcrumb */}
-                <nav aria-label="Breadcrumb" className="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 py-3">
-                    <ol className="max-w-7xl mx-auto px-4 text-sm text-gray-500 dark:text-gray-400 flex items-center gap-2 flex-wrap">
+                <nav aria-label="Breadcrumb" className="mx-auto mb-5 max-w-7xl px-4 sm:px-6 md:mb-6 lg:px-8">
+                    <ol className="inline-flex max-w-full flex-wrap items-center gap-1.5 rounded-full glass px-4 py-2 text-xs text-ink-500 dark:text-ivory-200/70">
                         <li>
-                            <Link href="/" className="hover:text-yellow-600 transition-colors">
+                            <Link href="/" className="transition-colors hover:text-gold-700 dark:hover:text-gold-300">
                                 {t.home}
                             </Link>
                         </li>
-                        <li aria-hidden="true">/</li>
+                        <li aria-hidden="true">
+                            <ChevronRight size={12} className="opacity-50" />
+                        </li>
                         <li>
-                            <Link href="/places" className="hover:text-yellow-600 transition-colors">
+                            <Link href="/places" className="transition-colors hover:text-gold-700 dark:hover:text-gold-300">
                                 {t.places}
                             </Link>
                         </li>
-                        <li aria-hidden="true">/</li>
-                        <li aria-current="page" className="text-gray-700 dark:text-gray-200 font-medium">
+                        <li aria-hidden="true">
+                            <ChevronRight size={12} className="opacity-50" />
+                        </li>
+                        <li aria-current="page" className="truncate font-medium text-ink-900 dark:text-ivory-50">
                             {place.name}
                         </li>
                     </ol>
@@ -122,32 +133,48 @@ export function PlaceDetailClient({ place: englishPlace, hindiPlace, placeLinks 
                     t={t}
                 />
 
-                <section className="max-w-7xl mx-auto px-4 py-8">
-                    <div className="grid lg:grid-cols-3 gap-8">
-                        <div className="lg:col-span-2 min-w-0">
-                            <PlaceHeader place={place} t={t} locale={locale} />
+                <section className="mx-auto max-w-7xl px-4 pb-16 pt-10 sm:px-6 md:pt-14 lg:px-8">
+                    <PlaceHeader place={place} t={t} locale={locale} />
 
-                            {/* Tabs */}
-                            <div className="border-b border-gray-200 dark:border-gray-700 mb-6">
-                                <div role="tablist" aria-label={place.name} className="flex flex-wrap w-full gap-y-1">
-                                    {tabs.map((tab) => (
-                                        <button
-                                            key={tab}
-                                            type="button"
-                                            role="tab"
-                                            id={`tab-${tab}`}
-                                            aria-selected={activeTab === tab}
-                                            aria-controls="place-tabpanel"
-                                            onClick={() => setActiveTab(tab)}
-                                            className={`px-3 sm:px-6 py-2.5 sm:py-3 text-[13px] sm:text-base font-semibold whitespace-nowrap border-b-2 transition-all flex-shrink-0 ${
-                                                activeTab === tab
-                                                    ? "border-yellow-500 text-yellow-600 dark:text-yellow-400"
-                                                    : "border-transparent text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800/50"
-                                            }`}
-                                        >
-                                            {t.tabs[tab]}
-                                        </button>
-                                    ))}
+                    <div className="hairline my-10 md:my-12" />
+
+                    <div className="grid gap-10 lg:grid-cols-12 lg:gap-12">
+                        <div className="min-w-0 lg:col-span-8">
+                            {/* Tabs — glass segmented control */}
+                            <div className="-mx-4 mb-10 overflow-x-auto px-4 scrollbar-hide sm:mx-0 sm:px-0">
+                                <div
+                                    role="tablist"
+                                    aria-label={place.name}
+                                    className="inline-flex min-w-max gap-1 rounded-full glass p-1.5"
+                                >
+                                    {tabs.map((tab) => {
+                                        const selected = activeTab === tab;
+                                        return (
+                                            <button
+                                                key={tab}
+                                                type="button"
+                                                role="tab"
+                                                id={`tab-${tab}`}
+                                                aria-selected={selected}
+                                                aria-controls="place-tabpanel"
+                                                onClick={() => setActiveTab(tab)}
+                                                className={`relative whitespace-nowrap rounded-full px-4 py-2.5 text-[13px] font-semibold transition-colors duration-300 sm:px-5 sm:text-sm ${
+                                                    selected
+                                                        ? "text-ivory-50 dark:text-ink-900"
+                                                        : "text-ink-500 hover:text-ink-900 dark:text-ivory-200/70 dark:hover:text-ivory-50"
+                                                }`}
+                                            >
+                                                {selected && (
+                                                    <motion.span
+                                                        layoutId="place-tab-pill"
+                                                        className="absolute inset-0 rounded-full bg-ink-900 shadow-float dark:bg-gold-400"
+                                                        transition={{ type: "spring", stiffness: 380, damping: 32 }}
+                                                    />
+                                                )}
+                                                <span className="relative">{t.tabs[tab]}</span>
+                                            </button>
+                                        );
+                                    })}
                                 </div>
                             </div>
 
@@ -157,9 +184,10 @@ export function PlaceDetailClient({ place: englishPlace, hindiPlace, placeLinks 
                                     id="place-tabpanel"
                                     role="tabpanel"
                                     aria-labelledby={`tab-${activeTab}`}
-                                    initial={{ opacity: 0, y: 10 }}
+                                    initial={{ opacity: 0, y: 14 }}
                                     animate={{ opacity: 1, y: 0 }}
-                                    exit={{ opacity: 0 }}
+                                    exit={{ opacity: 0, y: -6 }}
+                                    transition={{ duration: 0.45, ease: [0.22, 1, 0.36, 1] }}
                                 >
                                     {renderTab(activeTab)}
                                 </motion.div>

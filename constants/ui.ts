@@ -337,7 +337,7 @@ export const STATISTICS_HINDI = [
 
 export const NAV_LINKS_HINDI = [
     {
-        "name": "Home",
+        "name": "होम",
         "href": "/"
     },
     {

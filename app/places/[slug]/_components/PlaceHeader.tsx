@@ -1,14 +1,16 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Check, Heart, MapPin, Share2, Star } from "lucide-react";
+import { Check, Copy, Heart, MapPin, MessageCircle, Send, Share2, Star } from "lucide-react";
 import type { Place } from "@/types";
 import { useFavorites } from "@/lib/useClientHooks";
 import type { DetailText } from "./text";
 
+const EASE = [0.22, 1, 0.36, 1] as const;
+
 type Props = { place: Place; t: DetailText; locale: string };
 
-/** Title, category chips, rating, favorite (saved) and share menu. */
+/** Editorial title block: eyebrow, huge serif name, rating, favorite (saved) and share menu. */
 export function PlaceHeader({ place, t, locale }: Props) {
     const { isFavorite, toggleFavorite } = useFavorites();
     const fav = isFavorite(place.id);
@@ -64,57 +66,63 @@ export function PlaceHeader({ place, t, locale }: Props) {
     };
 
     const menuItemCls =
-        "w-full flex items-center gap-3 px-4 py-3 text-sm text-gray-700 dark:text-gray-300 hover:bg-gray-50 dark:hover:bg-gray-700 transition-all text-left";
+        "flex w-full items-center gap-3 rounded-xl px-3.5 py-3 text-left text-sm font-medium text-ink-700 transition-colors hover:bg-ink-900/5 dark:text-ivory-100 dark:hover:bg-white/10";
+    const roundBtn =
+        "grid h-12 w-12 place-items-center rounded-full glass transition-all duration-500 ease-lux hover:-translate-y-0.5 hover:shadow-float active:scale-95";
 
     return (
-        <div className="flex items-start justify-between mb-6 gap-4">
-            <div>
-                <div className="flex items-center gap-2 mb-2 flex-wrap">
-                    <span className="bg-yellow-100 dark:bg-yellow-900/30 text-yellow-700 dark:text-yellow-400 text-xs font-medium px-2 py-1 rounded-full">
-                        {place.category}
+        <motion.header
+            initial={{ opacity: 0, y: 24 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1, ease: EASE }}
+            className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between"
+        >
+            <div className="min-w-0">
+                <span className="eyebrow">
+                    {place.category}
+                    {place.subcategory && <span className="opacity-60">· {place.subcategory}</span>}
+                    <span className="opacity-60">· {place.city}</span>
+                </span>
+
+                <h1 className="mt-4 max-w-4xl font-display text-5xl font-medium leading-[1.02] tracking-tight text-ink-900 dark:text-ivory-50 sm:text-6xl lg:text-7xl xl:text-8xl">
+                    {place.name}
+                </h1>
+
+                <div className="mt-5 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-ink-500 dark:text-ivory-200/70">
+                    <span className="flex items-center gap-1.5">
+                        <MapPin size={15} className="text-gold-600 dark:text-gold-400" />
+                        {place.city}, {place.state}
                     </span>
-                    {place.subcategory && (
-                        <span className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-400 text-xs font-medium px-2 py-1 rounded-full">
-                            {place.subcategory}
-                        </span>
-                    )}
+                    <span className="h-4 w-px bg-ink-900/15 dark:bg-white/15" aria-hidden="true" />
+                    <span className="flex items-center gap-1.5">
+                        <Star size={15} className="fill-gold-500 text-gold-500" />
+                        <span className="font-display text-lg font-semibold text-ink-900 dark:text-ivory-50">{place.rating}</span>
+                        <span>{t.reviews(place.reviews.toLocaleString(locale))}</span>
+                    </span>
                     {place.isUNESCO && (
-                        <span className="bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 text-xs font-medium px-2 py-1 rounded-full">
+                        <span className="rounded-full bg-gold-400/15 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-gold-700 ring-1 ring-gold-500/30 dark:text-gold-300">
                             UNESCO ✓
                         </span>
                     )}
                 </div>
-                <h1 className="font-playfair text-2xl md:text-4xl font-bold text-gray-900 dark:text-white mb-2">
-                    {place.name}
-                </h1>
-                <div className="flex items-center gap-3 text-gray-500 dark:text-gray-400 flex-wrap">
-                    <div className="flex items-center gap-1">
-                        <MapPin size={16} className="text-yellow-500" />
-                        <span>
-                            {place.city}, {place.state}
-                        </span>
-                    </div>
-                    <div className="flex items-center gap-1">
-                        <Star size={16} className="text-yellow-400 fill-yellow-400" />
-                        <span className="font-bold text-gray-800 dark:text-gray-200">{place.rating}</span>
-                        <span className="text-sm">{t.reviews(place.reviews.toLocaleString(locale))}</span>
-                    </div>
-                </div>
             </div>
 
-            <div className="flex gap-2 flex-shrink-0">
+            <div className="flex flex-shrink-0 gap-2.5">
                 <button
                     type="button"
                     onClick={() => toggleFavorite(place.id)}
                     aria-label={fav ? t.removeFav : t.addFav}
                     aria-pressed={fav}
-                    className={`w-11 h-11 rounded-full border flex items-center justify-center transition-all ${
-                        fav
-                            ? "bg-red-50 dark:bg-red-900/20 border-red-200 dark:border-red-800 text-red-500"
-                            : "border-gray-200 dark:border-gray-700 text-gray-400 hover:border-red-200 hover:text-red-400"
-                    }`}
+                    className={`${roundBtn} ${fav ? "text-rose-500" : "text-ink-600 hover:text-rose-500 dark:text-ivory-100"}`}
                 >
-                    <Heart size={18} className={fav ? "fill-red-500" : ""} />
+                    <motion.span
+                        key={String(fav)}
+                        initial={{ scale: 0.5 }}
+                        animate={{ scale: 1 }}
+                        transition={{ type: "spring", stiffness: 500, damping: 14 }}
+                    >
+                        <Heart size={18} className={fav ? "fill-rose-500" : ""} />
+                    </motion.span>
                 </button>
 
                 <div className="relative" ref={menuRef}>
@@ -124,22 +132,24 @@ export function PlaceHeader({ place, t, locale }: Props) {
                         aria-label={copied ? t.linkCopied : t.share}
                         aria-haspopup="menu"
                         aria-expanded={menuOpen}
-                        className="w-11 h-11 rounded-full border border-gray-200 dark:border-gray-700 text-gray-400 flex items-center justify-center hover:border-blue-200 hover:text-blue-400 transition-all"
+                        className={`${roundBtn} text-ink-600 hover:text-gold-700 dark:text-ivory-100 dark:hover:text-gold-300`}
                     >
-                        {copied ? <Check size={18} className="text-green-500" /> : <Share2 size={18} />}
+                        {copied ? <Check size={18} className="text-emerald-500" /> : <Share2 size={18} />}
                     </button>
 
                     <AnimatePresence>
                         {menuOpen && (
                             <motion.div
                                 role="menu"
-                                initial={{ opacity: 0, scale: 0.9, y: 5 }}
+                                initial={{ opacity: 0, scale: 0.94, y: 6 }}
                                 animate={{ opacity: 1, scale: 1, y: 0 }}
-                                exit={{ opacity: 0, scale: 0.9, y: 5 }}
-                                className="absolute right-0 top-12 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl shadow-xl z-50 min-w-[180px] overflow-hidden"
+                                exit={{ opacity: 0, scale: 0.94, y: 6 }}
+                                transition={{ duration: 0.35, ease: EASE }}
+                                className="absolute right-0 top-14 z-50 min-w-[210px] origin-top-right rounded-2xl glass-strong p-1.5 shadow-float-lg"
                             >
                                 <button type="button" role="menuitem" onClick={copyLink} className={menuItemCls}>
-                                    📋 {t.copyLink}
+                                    <Copy size={16} className="text-gold-600 dark:text-gold-400" />
+                                    {t.copyLink}
                                 </button>
                                 <button
                                     type="button"
@@ -149,7 +159,8 @@ export function PlaceHeader({ place, t, locale }: Props) {
                                     }
                                     className={menuItemCls}
                                 >
-                                    💬 WhatsApp
+                                    <MessageCircle size={16} className="text-gold-600 dark:text-gold-400" />
+                                    WhatsApp
                                 </button>
                                 <button
                                     type="button"
@@ -161,13 +172,14 @@ export function PlaceHeader({ place, t, locale }: Props) {
                                     }
                                     className={menuItemCls}
                                 >
-                                    🐦 X / Twitter
+                                    <Send size={16} className="text-gold-600 dark:text-gold-400" />
+                                    X / Twitter
                                 </button>
                             </motion.div>
                         )}
                     </AnimatePresence>
                 </div>
             </div>
-        </div>
+        </motion.header>
     );
 }

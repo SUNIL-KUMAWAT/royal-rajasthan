@@ -99,6 +99,7 @@ const en = {
     nearbyPlaces: "Nearby Places",
 
     quickInfo: "Quick Info",
+    glance: "At a glance",
     timing: "Timing",
     entryFee: "Entry Fee",
     indian: "Indian",
@@ -208,6 +209,7 @@ const hi: typeof en = {
     nearbyPlaces: "आसपास के स्थल",
 
     quickInfo: "त्वरित जानकारी",
+    glance: "एक नज़र में",
     timing: "समय",
     entryFee: "प्रवेश शुल्क",
     indian: "भारतीय",

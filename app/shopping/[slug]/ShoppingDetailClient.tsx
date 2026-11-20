@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type ReactNode } from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import {
     Clock,
     MapPin,
@@ -9,6 +10,7 @@ import {
     ArrowLeft,
     Tag,
     ArrowRight,
+    ArrowUpRight,
     Sparkles,
     ShoppingBag,
     Camera,
@@ -16,11 +18,14 @@ import {
     HelpCircle,
     BookOpen,
     Compass,
+    ChevronDown,
 } from "lucide-react";
 import Link from "@/components/LocalizedLink";
 import { mapsSearchUrl } from "@/lib/shopping-utils";
 import type { ShoppingDetail } from "@/lib/shopping";
 import { useLanguage } from "@/components/LanguageProvider";
+
+const EASE = [0.22, 1, 0.36, 1] as const;
 
 interface LinkItem {
   name: string;
@@ -33,6 +38,29 @@ interface Props {
   hindiPlace: ShoppingDetail | null;
   relatedLinks: LinkItem[];
   districtSiblings: LinkItem[];
+}
+
+/** Frosted card used for every content block on this page. */
+function Panel({ children, className = "" }: { children: ReactNode; className?: string }) {
+  return <div className={`glass rounded-[1.75rem] md:rounded-[2rem] p-6 sm:p-8 ${className}`}>{children}</div>;
+}
+
+/** Small serif heading with an icon/gold tick, used inside panels. */
+function PanelTitle({ children, icon }: { children: ReactNode; icon?: ReactNode }) {
+  return (
+    <h2 className="mb-5 flex items-center gap-3 font-display text-2xl sm:text-[1.75rem] font-medium leading-tight tracking-tight text-ink-900 dark:text-ivory-50">
+      {icon ?? <span className="h-px w-6 bg-gold-500" />}
+      {children}
+    </h2>
+  );
+}
+
+function IconBadge({ children }: { children: ReactNode }) {
+  return (
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gold-500/10 text-gold-700 dark:text-gold-300">
+      {children}
+    </span>
+  );
 }
 
 export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, relatedLinks, districtSiblings }: Props) {
@@ -69,28 +97,41 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
     { id: "faqs", label: t.faqs, icon: HelpCircle },
   ];
 
+  const proTip = localizedPlace.tips && (
+    <div className="glass relative overflow-hidden rounded-[1.75rem] md:rounded-[2rem] p-6 sm:p-8 flex gap-4 items-start">
+      <div aria-hidden="true" className="pointer-events-none absolute -top-16 -right-16 h-40 w-40 rounded-full bg-gold-500/20 blur-3xl" />
+      <IconBadge><Compass size={20} /></IconBadge>
+      <div className="relative">
+        <h2 className="text-[11px] font-semibold uppercase tracking-eyebrow text-gold-700 dark:text-gold-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h2>
+        <p className="mt-2 font-display text-lg sm:text-xl leading-snug text-ink-800 dark:text-ivory-100">{localizedPlace.tips}</p>
+      </div>
+    </div>
+  );
+
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[#fcfbf9] to-[#f4f1ea] dark:from-gray-950 dark:to-gray-900 text-gray-800 dark:text-gray-100 selection:bg-amber-500/30 overflow-hidden transition-colors duration-300 pt-0 pb-16">
-      
+    <div className="relative isolate min-h-screen overflow-hidden text-ink-900 dark:text-ivory-100 pb-16">
+
       {/* Hero Banner Section */}
-      <section className="relative h-[38vh] sm:h-[45vh] w-full flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <motion.img 
-            initial={{ scale: 1.15 }}
-            animate={{ scale: 1 }}
-            transition={{ duration: 1.8, ease: "easeOut" }}
-            src={localizedPlace.image} 
-            alt={`${initialPlace.name}, ${initialPlace.district}`}
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#fcfbf9] via-black/30 to-black/60 dark:from-gray-950 dark:via-black/40 dark:to-black/70" />
+      <section className="relative isolate flex min-h-[62svh] sm:min-h-[70svh] w-full items-end overflow-hidden bg-ink-950 grain">
+        <div className="absolute inset-0 -z-10">
+          <div className="absolute inset-0 animate-kenburns">
+            <Image
+              src={localizedPlace.image}
+              alt={`${initialPlace.name}, ${initialPlace.district}`}
+              fill
+              priority
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="absolute inset-0 scrim-cinematic" />
         </div>
 
         {/* Photo attribution (required by Creative Commons licences) + representative-photo notice */}
         {(initialPlace.imageCredit || initialPlace.imageRepresentative) && (
-          <div className="absolute top-20 right-3 z-10 max-w-[75%] flex flex-col items-end gap-1">
+          <div className="absolute top-24 md:top-28 right-4 z-10 max-w-[75%] flex flex-col items-end gap-1.5">
             {initialPlace.imageRepresentative && (
-              <span className="px-2 py-0.5 rounded bg-amber-500/90 text-[10px] font-bold text-white">
+              <span className="glass-dark px-2.5 py-0.5 rounded-full text-[10px] font-semibold text-gold-300">
                 {language === "hi" ? "प्रतीकात्मक चित्र" : "Representative photo"}
               </span>
             )}
@@ -99,7 +140,7 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
                 href={initialPlace.imageSource}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="max-w-full truncate px-2 py-0.5 rounded bg-black/40 text-[10px] text-white/80 hover:text-white backdrop-blur-sm"
+                className="glass-dark max-w-full truncate px-2.5 py-0.5 rounded-full text-[10px] text-ivory-100/80 hover:text-ivory-50"
               >
                 {initialPlace.imageCredit}
               </a>
@@ -108,42 +149,43 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
         )}
 
         {/* Back Button and Quick Details */}
-        <div className="absolute inset-x-0 bottom-0 z-10">
-          <div className="max-w-6xl mx-auto px-4 pb-6 sm:pb-8">
-            <Link href="/shopping">
-              <motion.button 
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="mb-3 sm:mb-4 inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 dark:bg-black/20 hover:bg-white/20 backdrop-blur-md border border-white/20 text-white hover:scale-105 transition-all text-xs sm:text-sm font-medium"
-              >
-                <ArrowLeft size={16} />
+        <div className="relative z-10 w-full">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 pt-32 pb-16 sm:pb-20">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8, ease: EASE }}
+              className="mb-6"
+            >
+              <Link href="/shopping" className="btn-glass-dark !px-4 !py-2 !text-xs sm:!text-sm group/back">
+                <ArrowLeft size={16} className="transition-transform duration-500 ease-lux group-hover/back:-translate-x-1" />
                 <span>{t.backBtn}</span>
-              </motion.button>
-            </Link>
+              </Link>
+            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="space-y-1.5 sm:space-y-2"
+              transition={{ delay: 0.2, duration: 1, ease: EASE }}
+              className="space-y-5"
             >
-              <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-500 text-white text-[10px] sm:text-xs font-bold uppercase tracking-wider shadow-lg shadow-amber-500/20">
+              <div className="flex flex-wrap items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-gold-400 text-ink-900 text-[10px] sm:text-xs font-semibold uppercase tracking-[0.16em] shadow-gold">
                   <MapPin size={12} />
                   {localizedPlace.district}
                 </span>
                 {localizedPlace.rating && (
-                  <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-black/40 text-white border border-white/10 text-xs font-semibold backdrop-blur-md">
-                    <Star size={13} className="text-yellow-400 fill-yellow-400" />
+                  <span className="glass-dark inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-ivory-50 text-xs font-semibold">
+                    <Star size={13} className="text-gold-400 fill-gold-400" />
                     {localizedPlace.rating} / 5
                   </span>
                 )}
-                <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full bg-amber-600/20 text-amber-300 border border-amber-500/20 text-[10px] sm:text-xs font-semibold backdrop-blur-sm">
+                <span className="glass-dark inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-gold-300 text-[10px] sm:text-xs font-semibold">
                   {localizedPlace.type}
                 </span>
               </div>
-              
-              <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold font-playfair text-white drop-shadow-md leading-tight">
+
+              <h1 className="max-w-4xl font-display text-5xl sm:text-6xl md:text-7xl font-medium leading-[0.98] tracking-tight text-ivory-50">
                 {localizedPlace.name}
               </h1>
             </motion.div>
@@ -152,23 +194,33 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
       </section>
 
       {/* Main Tabs Navigation */}
-      <section className="relative z-20 -mt-6 sm:-mt-8 max-w-6xl mx-auto px-4">
-        <div className="bg-white/80 dark:bg-gray-900/80 backdrop-blur-xl border border-gray-200/60 dark:border-gray-800 rounded-2xl p-1.5 sm:p-2 shadow-lg flex overflow-x-auto gap-1 scrollbar-none">
+      <section className="relative z-20 -mt-8 sm:-mt-9 max-w-6xl mx-auto px-4 sm:px-6">
+        <div role="tablist" className="glass-strong rounded-full p-1.5 flex overflow-x-auto gap-1 scrollbar-hide w-full sm:w-fit">
           {tabs.map((tab) => {
             const Icon = tab.icon;
             const isActive = activeTab === tab.id;
             return (
               <button
                 key={tab.id}
+                type="button"
+                role="tab"
+                aria-selected={isActive}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex items-center gap-2 px-4 py-2.5 sm:py-3 rounded-xl text-xs sm:text-sm font-bold transition-all whitespace-nowrap ${
-                  isActive 
-                    ? "bg-gradient-to-r from-amber-500 to-amber-600 text-white shadow-md shadow-amber-500/10" 
-                    : "text-gray-500 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800/40 hover:text-gray-800 dark:hover:text-white"
+                className={`relative flex items-center gap-2 px-4 sm:px-5 py-2.5 sm:py-3 rounded-full text-xs sm:text-sm font-semibold whitespace-nowrap transition-colors duration-300 ${
+                  isActive
+                    ? "text-ivory-50 dark:text-ink-900"
+                    : "text-ink-500 dark:text-ivory-200/70 hover:text-ink-900 dark:hover:text-ivory-50"
                 }`}
               >
-                <Icon size={16} />
-                {tab.label}
+                {isActive && (
+                  <motion.span
+                    layoutId="shopping-detail-tab"
+                    className="absolute inset-0 rounded-full bg-ink-900 shadow-float dark:bg-gold-400"
+                    transition={{ duration: 0.5, ease: EASE }}
+                  />
+                )}
+                <Icon size={16} className="relative" />
+                <span className="relative">{tab.label}</span>
               </button>
             );
           })}
@@ -176,60 +228,66 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
       </section>
 
       {/* Tab Contents */}
-      <section className="max-w-6xl mx-auto px-4 mt-8 sm:mt-10">
+      <section className="relative max-w-6xl mx-auto px-4 sm:px-6 mt-10 sm:mt-12">
+        <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -top-20 -left-40 h-[28rem] w-[28rem] rounded-full bg-gold-500/10 blur-[150px]" />
+          <div className="absolute bottom-0 -right-40 h-[28rem] w-[28rem] rounded-full bg-maroon-500/10 blur-[150px]" />
+        </div>
+
         {/* All tab panels are server-rendered so search engines see the full content; inactive ones are hidden with CSS */}
-        <div className="space-y-6 sm:space-y-8">
-            
+        <motion.div
+          key={activeTab}
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, ease: EASE }}
+          className="space-y-5 sm:space-y-6"
+        >
+
             {/* OVERVIEW TAB */}
             <div role="tabpanel" className={activeTab === "overview" ? "block" : "hidden"}>
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
-                
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6">
+
                 {/* About Market */}
-                <div className="lg:col-span-2 bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none space-y-6">
-                  <div className="flex items-center gap-2">
-                    <Sparkles className="text-amber-500" size={20} />
-                    <h2 className="text-xl sm:text-2xl font-playfair font-extrabold text-gray-900 dark:text-white">
-                      {t.aboutTitle}
-                    </h2>
-                  </div>
-                  <p className="text-sm sm:text-base text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
+                <Panel className="lg:col-span-2 space-y-6">
+                  <PanelTitle icon={<Sparkles className="text-gold-600 dark:text-gold-400" size={20} />}>
+                    {t.aboutTitle}
+                  </PanelTitle>
+                  <p className="text-base sm:text-lg text-ink-500 dark:text-ivory-200/75 leading-relaxed">
                     {localizedPlace.description}
                   </p>
 
-                  <div className="pt-4 border-t border-gray-100 dark:border-gray-800 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div className="relative pt-6 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div className="hairline absolute top-0 inset-x-0" />
                     <div className="flex items-start gap-3.5">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500 flex-shrink-0">
-                        <Clock size={20} />
-                      </div>
+                      <IconBadge><Clock size={18} /></IconBadge>
                       <div>
-                        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.timings}</h3>
-                        <p className="text-sm font-bold text-gray-800 dark:text-white mt-0.5">{localizedPlace.timings}</p>
-                        <p className="text-xs text-gray-400 mt-0.5">{t.closedOn}: {localizedPlace.closedOn || (language === "hi" ? "कभी नहीं" : "None")}</p>
+                        <h3 className="font-sans text-[10px] font-semibold uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50">{t.timings}</h3>
+                        <p className="font-display text-lg text-ink-900 dark:text-ivory-50 mt-0.5">{localizedPlace.timings}</p>
+                        <p className="text-xs text-ink-400 dark:text-ivory-200/50 mt-0.5">{t.closedOn}: {localizedPlace.closedOn || (language === "hi" ? "कभी नहीं" : "None")}</p>
                       </div>
                     </div>
 
                     <div className="flex items-start gap-3.5">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-500 flex-shrink-0">
-                        <Tag size={20} />
-                      </div>
+                      <IconBadge><Tag size={18} /></IconBadge>
                       <div>
-                        <h3 className="text-xs font-bold text-gray-400 uppercase tracking-wider">{t.budget}</h3>
-                        <p className="text-sm font-bold text-gray-800 dark:text-white mt-0.5">{localizedPlace.priceRange}</p>
+                        <h3 className="font-sans text-[10px] font-semibold uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50">{t.budget}</h3>
+                        <p className="font-display text-lg text-ink-900 dark:text-ivory-50 mt-0.5">{localizedPlace.priceRange}</p>
                       </div>
                     </div>
                   </div>
-                </div>
+                </Panel>
 
                 {/* Location & Map Directions Card */}
-                <div className="bg-gradient-to-br from-white to-[#fdfdfd] dark:from-gray-900 dark:to-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none flex flex-col justify-between space-y-6">
-                  <div className="space-y-4">
-                    <div className="w-12 h-12 rounded-2xl bg-amber-500/10 flex items-center justify-center text-amber-500">
-                      <MapPin size={24} />
-                    </div>
-                    <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
+                <div className="relative overflow-hidden rounded-[1.75rem] md:rounded-[2rem] bg-ink-900 p-6 sm:p-8 text-ivory-50 shadow-float-lg flex flex-col justify-between gap-6 dark:bg-ink-800/80 dark:ring-1 dark:ring-white/10">
+                  <div aria-hidden="true" className="pointer-events-none absolute -top-24 -right-24 h-56 w-56 rounded-full bg-gold-500/25 blur-3xl" />
+                  <div className="relative space-y-4">
+                    <span className="flex h-12 w-12 items-center justify-center rounded-full bg-gold-400/15 text-gold-300">
+                      <MapPin size={22} />
+                    </span>
+                    <h2 className="font-display text-2xl font-medium text-ivory-50">
                       {t.mapLocation}
                     </h2>
-                    <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed font-medium">
+                    <p className="text-sm text-ivory-100/70 leading-relaxed">
                       {localizedPlace.location}
                     </p>
                   </div>
@@ -237,224 +295,186 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
                   <a
                     href={mapsSearchUrl(initialPlace.name, initialPlace.district)}
                     target="_blank" rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-white font-bold py-3.5 px-6 rounded-2xl transition-all shadow-lg shadow-amber-500/20 text-sm hover:scale-[1.02]"
+                    className="btn-gold relative w-full group/dir"
                   >
                     <span>{t.directions}</span>
-                    <ArrowRight size={16} />
+                    <ArrowUpRight size={16} className="transition-transform duration-500 ease-lux group-hover/dir:-translate-y-0.5 group-hover/dir:translate-x-0.5" />
                   </a>
                 </div>
 
               </div>
 
               {/* Add previews of other tabs inside Overview page */}
-              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8 mt-6 sm:mt-8">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 sm:gap-6 mt-5 sm:mt-6">
                   {/* Left Column: Specialties & Activities Preview */}
-                  <div className="lg:col-span-2 space-y-6 sm:space-y-8">
+                  <div className="lg:col-span-2 space-y-5 sm:space-y-6">
                       {/* Specialties Preview */}
-                      <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none">
-                          <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                              <span className="w-1.5 h-5 rounded bg-amber-500" />
-                              {t.famousFor}
-                          </h2>
+                      <Panel>
+                          <PanelTitle>{t.famousFor}</PanelTitle>
                           <div className="flex flex-wrap gap-2">
                               {localizedPlace.famousFor.map((item: string, idx: number) => (
-                                  <span key={idx} className="px-3.5 py-1.5 rounded-xl text-xs font-bold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/10">
+                                  <span key={idx} className="px-4 py-2 rounded-full text-sm font-medium border border-gold-500/25 bg-gold-500/5 text-ink-700 dark:text-ivory-100/85">
                                       {item}
                                   </span>
                               ))}
                           </div>
-                      </div>
+                      </Panel>
 
                       {/* Activities Preview */}
                       {localizedPlace.activities && localizedPlace.activities.length > 0 && (
-                          <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none">
-                              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                                  <span className="w-1.5 h-5 rounded bg-amber-500" />
-                                  {t.activities}
-                              </h2>
-                              <ul className="space-y-2">
+                          <Panel>
+                              <PanelTitle>{t.activities}</PanelTitle>
+                              <ul className="space-y-2.5">
                                   {localizedPlace.activities.map((act: string, idx: number) => (
-                                      <li key={idx} className="flex gap-2 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">
-                                          <span className="text-amber-500">•</span>
+                                      <li key={idx} className="flex gap-3 text-sm sm:text-base text-ink-500 dark:text-ivory-200/75">
+                                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
                                           <span>{act}</span>
                                       </li>
                                   ))}
                               </ul>
-                          </div>
+                          </Panel>
                       )}
                   </div>
 
                   {/* Right Column: Tips & FAQs Preview */}
-                  <div className="space-y-6 sm:space-y-8">
+                  <div className="space-y-5 sm:space-y-6">
                       {/* Tips Preview */}
-                      {localizedPlace.tips && (
-                          <div className="bg-gradient-to-br from-amber-50 to-[#fffdfa] dark:from-gray-900/50 dark:to-gray-900 border border-amber-200/60 dark:border-amber-500/15 rounded-3xl p-6 sm:p-8 shadow-xl flex gap-3 items-start">
-                              <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400 flex-shrink-0">
-                                  <Compass size={20} />
-                              </div>
-                              <div>
-                                  <h2 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h2>
-                                  <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300 font-medium">{localizedPlace.tips}</p>
-                              </div>
-                          </div>
-                      )}
+                      {proTip}
 
                       {/* First FAQ Preview */}
                       {localizedPlace.faqs && localizedPlace.faqs.length > 0 && (
-                          <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none space-y-3">
-                              <h2 className="text-xs font-bold text-gray-400 uppercase tracking-wider flex items-center gap-1.5">
-                                  <HelpCircle size={14} className="text-amber-500" />
+                          <Panel className="space-y-3">
+                              <h2 className="flex items-center gap-1.5 text-[11px] font-semibold uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50">
+                                  <HelpCircle size={14} className="text-gold-600 dark:text-gold-400" />
                                   {language === "hi" ? "अक्सर पूछे जाने वाले प्रश्न" : "Featured FAQ"}
                               </h2>
-                              <p className="text-sm font-bold text-gray-800 dark:text-white">{localizedPlace.faqs[0].question}</p>
-                              <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 leading-relaxed font-medium">{localizedPlace.faqs[0].answer}</p>
-                          </div>
+                              <p className="font-display text-xl leading-snug text-ink-900 dark:text-ivory-50">{localizedPlace.faqs[0].question}</p>
+                              <p className="text-sm text-ink-500 dark:text-ivory-200/70 leading-relaxed">{localizedPlace.faqs[0].answer}</p>
+                          </Panel>
                       )}
                   </div>
               </div>
             </div>
 
             {/* EXPLORE & SPECIALTIES TAB */}
-            <div role="tabpanel" className={activeTab === "explore" ? "space-y-6 sm:space-y-8" : "hidden"}>
-                
+            <div role="tabpanel" className={activeTab === "explore" ? "space-y-5 sm:space-y-6" : "hidden"}>
+
                 {/* Famous Specialties */}
-                <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl">
-                  <h2 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                    <span className="w-1.5 h-6 rounded bg-amber-500" />
-                    {t.famousFor}
-                  </h2>
-                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+                <Panel>
+                  <PanelTitle>{t.famousFor}</PanelTitle>
+                  <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3 sm:gap-4">
                     {localizedPlace.famousFor.map((item: string, idx: number) => (
-                      <div 
-                        key={idx} 
-                        className="p-4 rounded-2xl bg-amber-500/5 hover:bg-amber-500/10 border border-amber-500/10 dark:border-amber-500/5 hover:border-amber-500/30 transition-all flex flex-col items-center justify-center text-center space-y-2 group cursor-default"
+                      <div
+                        key={idx}
+                        className="group flex flex-col items-center justify-center gap-3 rounded-[1.5rem] border border-gold-500/15 bg-gold-500/5 p-5 text-center cursor-default transition-all duration-500 ease-lux hover:-translate-y-1 hover:border-gold-500/40 hover:bg-gold-500/10"
                       >
-                        <span className="w-8 h-8 rounded-full bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400 group-hover:scale-110 transition-transform">🛍️</span>
-                        <span className="text-xs sm:text-sm font-bold text-gray-800 dark:text-gray-200">{item}</span>
+                        <span className="flex h-10 w-10 items-center justify-center rounded-full bg-gold-500/10 text-gold-700 dark:text-gold-300 transition-transform duration-500 ease-lux group-hover:scale-110">
+                          <ShoppingBag size={18} aria-hidden="true" />
+                        </span>
+                        <span className="text-sm font-medium text-ink-800 dark:text-ivory-100">{item}</span>
                       </div>
                     ))}
                   </div>
-                </div>
+                </Panel>
 
                 {/* Activities Grid */}
                 {localizedPlace.activities && localizedPlace.activities.length > 0 && (
-                  <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl">
-                    <h2 className="text-lg sm:text-xl font-bold font-playfair text-gray-900 dark:text-white mb-6 flex items-center gap-2">
-                      <span className="w-1.5 h-6 rounded bg-amber-500" />
-                      {t.activities}
-                    </h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                  <Panel>
+                    <PanelTitle>{t.activities}</PanelTitle>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 sm:gap-4">
                       {localizedPlace.activities.map((act: string, idx: number) => (
-                        <div key={idx} className="flex gap-4 p-5 rounded-2xl bg-gray-50 dark:bg-gray-800/40 border border-gray-100 dark:border-gray-800/40 hover:-translate-y-1 transition-all">
-                          <span className="text-2xl mt-0.5">⭐</span>
+                        <div key={idx} className="flex gap-4 rounded-[1.5rem] border border-ink-900/5 bg-white/40 p-5 transition-all duration-500 ease-lux hover:-translate-y-1 hover:shadow-float dark:border-white/5 dark:bg-white/[0.03]">
+                          <span className="font-display text-3xl italic leading-none text-gold-600 dark:text-gold-400 tabular-nums">{String(idx + 1).padStart(2, "0")}</span>
                           <div>
-                            <h3 className="text-sm font-bold text-gray-800 dark:text-white">{language === "hi" ? `गतिविधि ${idx + 1}` : `Activity ${idx + 1}`}</h3>
-                            <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-1 leading-relaxed font-medium">{act}</p>
+                            <h3 className="text-[11px] font-semibold uppercase tracking-eyebrow text-ink-400 dark:text-ivory-200/50">{language === "hi" ? `गतिविधि ${idx + 1}` : `Activity ${idx + 1}`}</h3>
+                            <p className="text-sm text-ink-600 dark:text-ivory-200/75 mt-1.5 leading-relaxed">{act}</p>
                           </div>
                         </div>
                       ))}
                     </div>
-                  </div>
+                  </Panel>
                 )}
 
             </div>
 
             {/* TIPS, ACCESS & PHOTOGRAPHY TAB */}
-            <div role="tabpanel" className={activeTab === "rules" ? "grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8" : "hidden"}>
-                
+            <div role="tabpanel" className={activeTab === "rules" ? "grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-6" : "hidden"}>
+
                 {/* Accessibility */}
                 {localizedPlace.accessibility && localizedPlace.accessibility.length > 0 && (
-                  <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl space-y-4">
-                    <div className="flex items-center gap-2.5">
-                      <div className="w-9 h-9 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-500">
-                        <Accessibility size={18} />
-                      </div>
-                      <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
-                        {t.accessibility}
-                      </h2>
-                    </div>
+                  <Panel className="space-y-4">
+                    <PanelTitle icon={<IconBadge><Accessibility size={18} /></IconBadge>}>
+                      {t.accessibility}
+                    </PanelTitle>
                     <ul className="space-y-3">
                       {localizedPlace.accessibility.map((acc: string, idx: number) => (
-                        <li key={idx} className="flex items-start gap-3 text-xs sm:text-sm text-gray-600 dark:text-gray-300 font-medium">
-                          <span className="text-blue-500 mt-0.5">•</span>
+                        <li key={idx} className="flex items-start gap-3 text-sm sm:text-base text-ink-500 dark:text-ivory-200/75">
+                          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-gold-500" />
                           <span>{acc}</span>
                         </li>
                       ))}
                     </ul>
-                  </div>
+                  </Panel>
                 )}
 
                 {/* Photography & Tips */}
-                <div className="space-y-6 sm:space-y-8">
+                <div className="space-y-5 sm:space-y-6">
                   {localizedPlace.photography && (
-                    <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl space-y-4">
-                      <div className="flex items-center gap-2.5">
-                        <div className="w-9 h-9 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400">
-                          <Camera size={18} />
-                        </div>
-                        <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white">
-                          {t.photoRules}
-                        </h2>
-                      </div>
-                      <p className="text-xs sm:text-sm text-gray-600 dark:text-gray-300 leading-relaxed font-medium">
+                    <Panel className="space-y-4">
+                      <PanelTitle icon={<IconBadge><Camera size={18} /></IconBadge>}>
+                        {t.photoRules}
+                      </PanelTitle>
+                      <p className="text-sm sm:text-base text-ink-500 dark:text-ivory-200/75 leading-relaxed">
                         {localizedPlace.photography}
                       </p>
-                    </div>
+                    </Panel>
                   )}
 
-                  {localizedPlace.tips && (
-                    <div className="bg-gradient-to-br from-amber-50 to-[#fffdfa] dark:from-gray-900/50 dark:to-gray-900 border border-amber-200/60 dark:border-amber-500/15 rounded-3xl p-6 sm:p-8 shadow-xl flex gap-4 items-start">
-                      <div className="w-10 h-10 rounded-xl bg-amber-500/10 flex items-center justify-center text-amber-600 dark:text-amber-400 flex-shrink-0">
-                        <Compass size={20} />
-                      </div>
-                      <div>
-                        <h2 className="text-sm font-bold text-amber-800 dark:text-amber-400">{language === "hi" ? "प्रो ट्रैवल टिप" : "Pro Travel Tip"}</h2>
-                        <p className="text-xs sm:text-sm leading-relaxed mt-1 text-gray-600 dark:text-gray-300 font-medium">{localizedPlace.tips}</p>
-                      </div>
-                    </div>
-                  )}
+                  {proTip}
                 </div>
 
             </div>
 
             {/* FAQS TAB */}
             {localizedPlace.faqs && localizedPlace.faqs.length > 0 && (
-              <div role="tabpanel" className={`${activeTab === "faqs" ? "" : "hidden "}bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl space-y-6`}>
-                <div className="flex items-center gap-2">
-                  <HelpCircle className="text-amber-500" size={20} />
-                  <h2 className="text-xl sm:text-2xl font-playfair font-extrabold text-gray-900 dark:text-white">
+              <div role="tabpanel" className={activeTab === "faqs" ? "" : "hidden"}>
+                <Panel className="space-y-6">
+                  <PanelTitle icon={<HelpCircle className="text-gold-600 dark:text-gold-400" size={20} />}>
                     {t.faqs}
-                  </h2>
-                </div>
-                <div className="space-y-4">
-                  {localizedPlace.faqs.map((faq, idx) => (
-                    <details 
-                      key={idx} 
-                      className="group border-b border-gray-100 dark:border-gray-800/80 pb-4 transition-all"
-                    >
-                      <summary className="flex justify-between items-center font-bold text-sm sm:text-base text-gray-800 dark:text-white cursor-pointer list-none select-none hover:text-amber-600 dark:hover:text-amber-400">
-                        <span>{faq.question}</span>
-                        <span className="text-xs transform group-open:rotate-180 transition-transform text-gray-400">▼</span>
-                      </summary>
-                      <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-400 mt-3 leading-relaxed pl-1 font-medium">
-                        {faq.answer}
-                      </p>
-                    </details>
-                  ))}
-                </div>
+                  </PanelTitle>
+                  <div className="space-y-3">
+                    {localizedPlace.faqs.map((faq, idx) => (
+                      <details
+                        key={idx}
+                        className="group rounded-[1.5rem] border border-ink-900/5 bg-white/40 px-5 py-4 transition-shadow duration-500 ease-lux open:shadow-float dark:border-white/5 dark:bg-white/[0.03]"
+                      >
+                        <summary className="flex justify-between items-center gap-4 font-display text-lg sm:text-xl font-medium text-ink-900 dark:text-ivory-50 cursor-pointer list-none select-none transition-colors hover:text-gold-700 dark:hover:text-gold-300 [&::-webkit-details-marker]:hidden">
+                          <span>{faq.question}</span>
+                          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-ink-900/10 dark:border-white/10 text-ink-400 dark:text-ivory-200/60 transition-transform duration-500 ease-lux group-open:rotate-180 group-open:border-gold-500/50 group-open:text-gold-700 dark:group-open:text-gold-300">
+                            <ChevronDown size={16} />
+                          </span>
+                        </summary>
+                        <p className="text-sm sm:text-base text-ink-500 dark:text-ivory-200/70 mt-3 leading-relaxed">
+                          {faq.answer}
+                        </p>
+                      </details>
+                    ))}
+                  </div>
+                </Panel>
               </div>
             )}
 
-        </div>
+        </motion.div>
       </section>
 
       {/* Internal links: related & nearby markets */}
-      <section className="max-w-6xl mx-auto px-4 mt-10 sm:mt-12">
-        <div className="bg-white dark:bg-gray-900 border border-gray-200/50 dark:border-gray-800/60 rounded-3xl p-6 sm:p-8 shadow-xl shadow-gray-200/5 dark:shadow-none space-y-6">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 mt-14 sm:mt-20">
+        <div className="relative pt-12 space-y-10">
+          <div className="hairline absolute top-0 inset-x-0" />
           {relatedLinks.length > 0 && (
             <div>
-              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="w-1.5 h-5 rounded bg-amber-500" />
+              <span className="eyebrow">{language === "hi" ? "और खोजें" : "Keep exploring"}</span>
+              <h2 className="mt-3 mb-5 display-title text-3xl sm:text-4xl">
                 {language === "hi" ? "संबंधित बाजार" : "Related Markets"}
               </h2>
               <div className="flex flex-wrap gap-2">
@@ -462,7 +482,7 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
                   <Link
                     key={r.slug}
                     href={`/shopping/${r.slug}`}
-                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-amber-500/10 text-amber-700 dark:text-amber-300 border border-amber-500/10 hover:bg-amber-500 hover:text-white transition-colors"
+                    className="chip-idle !text-sm hover:-translate-y-0.5"
                   >
                     {r.name}
                   </Link>
@@ -472,8 +492,7 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
           )}
           {districtSiblings.length > 0 && (
             <div>
-              <h2 className="text-lg font-bold font-playfair text-gray-900 dark:text-white mb-4 flex items-center gap-2">
-                <span className="w-1.5 h-5 rounded bg-amber-500" />
+              <h2 className="mb-5 font-display text-2xl sm:text-3xl font-medium text-ink-900 dark:text-ivory-50">
                 {language === "hi" ? `${initialPlace.district} के अन्य बाजार` : `More Markets in ${initialPlace.district}`}
               </h2>
               <div className="flex flex-wrap gap-2">
@@ -481,7 +500,7 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
                   <Link
                     key={r.slug}
                     href={`/shopping/${r.slug}`}
-                    className="px-3.5 py-1.5 rounded-xl text-xs sm:text-sm font-semibold bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-200 hover:bg-amber-500 hover:text-white transition-colors"
+                    className="chip-idle !text-sm hover:-translate-y-0.5"
                   >
                     {r.name}
                   </Link>
@@ -491,10 +510,10 @@ export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, 
           )}
           <Link
             href={`/shopping/${initialPlace.districtSlug}`}
-            className="inline-flex items-center gap-2 text-sm font-bold text-amber-600 dark:text-amber-400 hover:underline"
+            className="btn-primary group/guide"
           >
             {language === "hi" ? `${initialPlace.district} शॉपिंग गाइड देखें` : `Complete ${initialPlace.district} Shopping Guide`}
-            <ArrowRight size={16} />
+            <ArrowRight size={16} className="transition-transform duration-500 ease-lux group-hover/guide:translate-x-1" />
           </Link>
         </div>
       </section>
