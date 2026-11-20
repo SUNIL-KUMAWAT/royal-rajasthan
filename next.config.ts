@@ -18,6 +18,11 @@ const nextConfig: NextConfig = {
         hostname: "upload.wikimedia.org",
       },
       {
+        // Wikipedia now serves its thumbnails from here
+        protocol: "https",
+        hostname: "thumb.wikimedia.org",
+      },
+      {
         protocol: "https",
         hostname: "**.cloudinary.com",
       },
@@ -53,6 +58,7 @@ const nextConfig: NextConfig = {
 
   // ============ HEADERS FOR SEO & SECURITY ============
   async headers() {
+    const isProd = process.env.NODE_ENV === "production";
     return [
       {
         // Security headers for ALL routes
@@ -76,16 +82,28 @@ const nextConfig: NextConfig = {
           },
         ],
       },
-      {
-        // Static assets ONLY — immutable long-term cache
-        source: "/_next/static/(.*)",
-        headers: [
-          {
-            key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
-          },
-        ],
-      },
+      // Static assets ONLY — immutable long-term cache. Production only: in `next dev` chunk names
+      // are not content-hashed, so "immutable" makes browsers keep running stale code after edits.
+      ...(isProd
+        ? [
+            {
+              source: "/_next/static/(.*)",
+              headers: [
+                {
+                  key: "Cache-Control",
+                  value: "public, max-age=31536000, immutable",
+                },
+              ],
+            },
+          ]
+        : [
+            {
+              // Dev only: browsers that cached dev chunks under the old "immutable" header would keep
+              // running stale code forever. This tells them to drop this site's HTTP cache on page load.
+              source: "/((?!_next/).*)",
+              headers: [{ key: "Clear-Site-Data", value: '"cache"' }],
+            },
+          ]),
       {
         // HTML pages & API routes — short cache so Google gets fresh content
         source: "/((?!_next/static).*)",

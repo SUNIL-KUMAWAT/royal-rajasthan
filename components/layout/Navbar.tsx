@@ -30,6 +30,9 @@ export function Navbar() {
     const isHome = mounted && pathname === "/";
     const isSolid = scrolled || !isHome;
 
+    // The homepage is the 3D map, which has its own floating game-style HUD header
+    if (pathname === "/") return null;
+
     return (
         <>
             {/* Main Navbar */}

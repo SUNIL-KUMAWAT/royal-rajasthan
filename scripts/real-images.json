@@ -1,0 +1,389 @@
+[
+  {
+    "key": "place:keoladeo-national-park",
+    "name": "Keoladeo National Park",
+    "placeholder": "https://picsum.photos/seed/raj-830/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg/960px-Bar-headed_Geese-_Bharatpur_I_IMG_8335.jpg",
+    "source": "Keoladeo National Park (article photo: File:Bar-headed Geese- Bharatpur I IMG 8335.jpg)"
+  },
+  {
+    "key": "place:garbhaji-waterfall",
+    "name": "Garbhaji Waterfall",
+    "placeholder": "https://picsum.photos/seed/raj-876/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:pandu-pol-temple",
+    "name": "Pandu Pol Temple",
+    "placeholder": "https://picsum.photos/seed/raj-888/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Pandupole.jpg/960px-Pandupole.jpg",
+    "source": "Pandupole"
+  },
+  {
+    "key": "place:vintage-car-museum",
+    "name": "Vintage Car Museum",
+    "placeholder": "https://picsum.photos/seed/raj-900/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:khuri-sand-dunes",
+    "name": "Khuri Sand Dunes",
+    "placeholder": "https://picsum.photos/seed/raj-916/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:vyas-chhatri",
+    "name": "Vyas Chhatri",
+    "placeholder": "https://picsum.photos/seed/raj-918/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:balsamand-lake",
+    "name": "Balsamand Lake",
+    "placeholder": "https://picsum.photos/seed/raj-930/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:adhai-din-ka-jhopra",
+    "name": "Adhai Din Ka Jhopra",
+    "placeholder": "https://picsum.photos/seed/raj-940/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Adhai_Din-ka-Jhonpra_Screen_wall_%286133975257%29.jpg/960px-Adhai_Din-ka-Jhonpra_Screen_wall_%286133975257%29.jpg",
+    "source": "Adhai Din Ka Jhonpra"
+  },
+  {
+    "key": "place:beneshwar-dham",
+    "name": "Beneshwar Dham",
+    "placeholder": "https://picsum.photos/seed/raj-948/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Baneshwar_05.JPG/960px-Baneshwar_05.JPG",
+    "source": "Baneshwar"
+  },
+  {
+    "key": "place:bhimlat-waterfall",
+    "name": "Bhimlat Waterfall",
+    "placeholder": "https://picsum.photos/seed/raj-954/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:chuliya-waterfall",
+    "name": "Chuliya Waterfall",
+    "placeholder": "https://picsum.photos/seed/raj-958/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:longewala-war-memorial",
+    "name": "Longewala War Memorial",
+    "placeholder": "https://picsum.photos/seed/raj-998/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f0/Longewala_Post.jpg/960px-Longewala_Post.jpg",
+    "source": "Longewala"
+  },
+  {
+    "key": "place:khaba-fort-jaisalmer",
+    "name": "Khaba Fort Jaisalmer",
+    "placeholder": "https://picsum.photos/seed/raj-1000/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:amar-sagar-lake",
+    "name": "Amar Sagar Lake",
+    "placeholder": "https://picsum.photos/seed/raj-1026/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:kolayat-lake",
+    "name": "Kolayat Lake",
+    "placeholder": "https://picsum.photos/seed/raj-1030/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:devyani-kund",
+    "name": "Devyani Kund",
+    "placeholder": "https://picsum.photos/seed/raj-1036/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:chandlai-lake",
+    "name": "Chandlai Lake",
+    "placeholder": "https://picsum.photos/seed/raj-1038/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:gatore-ki-chhatriyan",
+    "name": "Gatore Ki Chhatriyan",
+    "placeholder": "https://picsum.photos/seed/raj-1042/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:charbhuja-temple-rajsamand",
+    "name": "Charbhuja Temple Rajsamand",
+    "placeholder": "https://picsum.photos/seed/raj-1054/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "place:badnor-fort",
+    "name": "Badnor Fort",
+    "placeholder": "https://picsum.photos/seed/raj-1066/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:18",
+    "name": "Baneshwar Fair",
+    "placeholder": "https://picsum.photos/seed/raj-349/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Baneshwar_05.JPG/960px-Baneshwar_05.JPG",
+    "source": "Baneshwar"
+  },
+  {
+    "key": "festival:20",
+    "name": "Summer Festival",
+    "placeholder": "https://picsum.photos/seed/raj-351/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Nakki_Lake_during_daytime.JPG/960px-Nakki_Lake_during_daytime.JPG",
+    "source": "Nakki Lake"
+  },
+  {
+    "key": "festival:21",
+    "name": "Winter Festival",
+    "placeholder": "https://picsum.photos/seed/raj-352/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6b/Mount_Abu.jpg/960px-Mount_Abu.jpg",
+    "source": "Abu Raj"
+  },
+  {
+    "key": "festival:25",
+    "name": "Jaipur Music Stage",
+    "placeholder": "https://picsum.photos/seed/raj-356/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:27",
+    "name": "Jodhpur Flamenco & Gypsy Festival",
+    "placeholder": "https://picsum.photos/seed/raj-358/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
+    "source": "Mehrangarh"
+  },
+  {
+    "key": "festival:32",
+    "name": "Gavri Festival",
+    "placeholder": "https://picsum.photos/seed/raj-363/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Gavari_Bhanjara_scene_with_gypsy_trader_being_blocked_by_Meena_bandits.jpg/960px-Gavari_Bhanjara_scene_with_gypsy_trader_being_blocked_by_Meena_bandits.jpg",
+    "source": "Gavari"
+  },
+  {
+    "key": "festival:37",
+    "name": "Beneshwar Dham Festival",
+    "placeholder": "https://picsum.photos/seed/raj-368/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Baneshwar_05.JPG/960px-Baneshwar_05.JPG",
+    "source": "Baneshwar"
+  },
+  {
+    "key": "festival:39",
+    "name": "Keshorai Patan Fair",
+    "placeholder": "https://picsum.photos/seed/raj-370/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Ground_view_%2C_kaishawray_patan.jpg/960px-Ground_view_%2C_kaishawray_patan.jpg",
+    "source": "Keshoraipatan"
+  },
+  {
+    "key": "festival:52",
+    "name": "Holi Festival",
+    "placeholder": "https://picsum.photos/seed/raj-383/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/A_play_of_colors_then_a_dance_at_Holi_India.jpg/960px-A_play_of_colors_then_a_dance_at_Holi_India.jpg",
+    "source": "Holi (article photo: File:A play of colors then a dance at Holi India.jpg)"
+  },
+  {
+    "key": "festival:59",
+    "name": "Republic Day Festival",
+    "placeholder": "https://picsum.photos/seed/raj-390/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:63",
+    "name": "Abhaneri Festival",
+    "placeholder": "https://picsum.photos/seed/raj-394/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Chand_Baori_perspective_panorama_%28July_2022%29.jpg/960px-Chand_Baori_perspective_panorama_%28July_2022%29.jpg",
+    "source": "Chand Baori"
+  },
+  {
+    "key": "festival:64",
+    "name": "Dhulandi Festival",
+    "placeholder": "https://picsum.photos/seed/raj-395/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/A_play_of_colors_then_a_dance_at_Holi_India.jpg/960px-A_play_of_colors_then_a_dance_at_Holi_India.jpg",
+    "source": "Holi (article photo: File:A play of colors then a dance at Holi India.jpg)"
+  },
+  {
+    "key": "festival:68",
+    "name": "Ghotia Amba Fair",
+    "placeholder": "https://picsum.photos/seed/raj-399/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:73",
+    "name": "Jeen Mata Fair",
+    "placeholder": "https://picsum.photos/seed/raj-404/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Supernatural_idol_of_jeen_mata.jpg/960px-Supernatural_idol_of_jeen_mata.jpg",
+    "source": "Jeenmata"
+  },
+  {
+    "key": "festival:77",
+    "name": "Jambheswar Fair",
+    "placeholder": "https://picsum.photos/seed/raj-408/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Bassa_al-Khidr_01.jpg/960px-Bassa_al-Khidr_01.jpg",
+    "source": "Maqam (shrine)",
+    "skip": true,
+    "skipReason": "wrong match (Mukam redirected to an unrelated shrine)"
+  },
+  {
+    "key": "festival:78",
+    "name": "Gautameshwar Fair",
+    "placeholder": "https://picsum.photos/seed/raj-409/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:79",
+    "name": "Haldighati Mahotsav",
+    "placeholder": "https://picsum.photos/seed/raj-410/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Haldighati_Pass.jpg/960px-Haldighati_Pass.jpg",
+    "source": "Haldighati"
+  },
+  {
+    "key": "festival:83",
+    "name": "Machkund Fair",
+    "placeholder": "https://picsum.photos/seed/raj-414/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:84",
+    "name": "Matrikundiya Fair",
+    "placeholder": "https://picsum.photos/seed/raj-415/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:86",
+    "name": "Ram Ravan Fair",
+    "placeholder": "https://picsum.photos/seed/raj-417/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:87",
+    "name": "Jasnathji Fair",
+    "placeholder": "https://picsum.photos/seed/raj-418/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:89",
+    "name": "Khetlaji Fair",
+    "placeholder": "https://picsum.photos/seed/raj-420/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:95",
+    "name": "Bhadriya Mata Fair",
+    "placeholder": "https://picsum.photos/seed/raj-426/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:96",
+    "name": "Siyawa's Gaur Fair",
+    "placeholder": "https://picsum.photos/seed/raj-427/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:97",
+    "name": "Kodamar Holi",
+    "placeholder": "https://picsum.photos/seed/raj-428/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/A_play_of_colors_then_a_dance_at_Holi_India.jpg/960px-A_play_of_colors_then_a_dance_at_Holi_India.jpg",
+    "source": "Holi (article photo: File:A play of colors then a dance at Holi India.jpg)"
+  },
+  {
+    "key": "festival:98",
+    "name": "Patharmar Holi",
+    "placeholder": "https://picsum.photos/seed/raj-429/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:100",
+    "name": "Mahansar Shekhawati Festival",
+    "placeholder": "https://picsum.photos/seed/raj-431/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:104",
+    "name": "Sachiya Mata Fair",
+    "placeholder": "https://picsum.photos/seed/raj-435/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Osiyan_Mata_Temple%2C_Osiyan%2C_Jodhpur_02.jpg/960px-Osiyan_Mata_Temple%2C_Osiyan%2C_Jodhpur_02.jpg",
+    "source": "Sachiya Mata Temple"
+  },
+  {
+    "key": "festival:108",
+    "name": "Manibhadra Veer Fair",
+    "placeholder": "https://picsum.photos/seed/raj-439/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:110",
+    "name": "Rishabhdeo Fair",
+    "placeholder": "https://picsum.photos/seed/raj-441/800/600",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/76/Jain_God_Idol.JPG/960px-Jain_God_Idol.JPG",
+    "source": "Rishabhdeo (article photo: File:Jain God Idol.JPG)"
+  },
+  {
+    "key": "festival:112",
+    "name": "Sanwaliyaji Fair",
+    "placeholder": "https://picsum.photos/seed/raj-443/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:115",
+    "name": "Suia Fair",
+    "placeholder": "https://picsum.photos/seed/raj-446/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:117",
+    "name": "Pandupole Hanuman Fair",
+    "placeholder": "https://picsum.photos/seed/raj-448/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:118",
+    "name": "Narhad Pir Urs",
+    "placeholder": "https://picsum.photos/seed/raj-449/800/600",
+    "url": null,
+    "source": null
+  },
+  {
+    "key": "festival:120",
+    "name": "Sevadiya Cattle Fair",
+    "placeholder": "https://picsum.photos/seed/raj-451/800/600",
+    "url": null,
+    "source": null
+  }
+]

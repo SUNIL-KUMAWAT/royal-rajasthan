@@ -9,18 +9,22 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-three/drei": "^10.7.9",
+    "@react-three/fiber": "^9.8.2",
     "critters": "^0.0.25",
     "framer-motion": "^12.40.0",
     "lucide-react": "^1.17.0",
     "next": "^15.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "swiper": "^12.2.0"
+    "swiper": "^12.2.0",
+    "three": "^0.187.0"
   },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
+    "@types/three": "^0.187.0",
     "autoprefixer": "^10.4.0",
     "eslint": "^8.0.0",
     "eslint-config-next": "^15.0.0",
