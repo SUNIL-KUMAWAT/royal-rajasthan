@@ -1,25 +1,25 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
-import { 
-  Clock, 
-  MapPin, 
-  Star, 
-  ArrowLeft,
-  Tag,
-  Map,
-  ArrowRight,
-  Sparkles,
-  ShoppingBag,
-  Camera,
-  Accessibility,
-  HelpCircle,
-  BookOpen,
-  Compass
+import {
+    Clock,
+    MapPin,
+    Star,
+    ArrowLeft,
+    Tag,
+    ArrowRight,
+    Sparkles,
+    ShoppingBag,
+    Camera,
+    Accessibility,
+    HelpCircle,
+    BookOpen,
+    Compass,
 } from "lucide-react";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import { mapsSearchUrl } from "@/lib/shopping-utils";
+import type { ShoppingDetail } from "@/lib/shopping";
 import { useLanguage } from "@/components/LanguageProvider";
 
 interface LinkItem {
@@ -28,28 +28,15 @@ interface LinkItem {
 }
 
 interface Props {
-  place: any;
+  place: ShoppingDetail;
+  /** Hindi version of the same market, resolved on the server (null if not translated). */
+  hindiPlace: ShoppingDetail | null;
   relatedLinks: LinkItem[];
   districtSiblings: LinkItem[];
 }
 
-export default function ShoppingDetailClient({ place: initialPlace, relatedLinks, districtSiblings }: Props) {
+export default function ShoppingDetailClient({ place: initialPlace, hindiPlace, relatedLinks, districtSiblings }: Props) {
   const { language } = useLanguage();
-  const [hindiPlace, setHindiPlace] = useState<any>(null);
-
-  useEffect(() => {
-    if (language === "hi" && !hindiPlace) {
-      import("@/constants/shopping-hindi").then((mod) => {
-        for (const d of mod.RAJASTHAN_SHOPPING_HINDI.districts) {
-          const p = d.shoppingPlaces.find((x: any) => x.id === initialPlace.id);
-          if (p) {
-            setHindiPlace({ ...p, district: d.district, districtSlug: initialPlace.districtSlug });
-            break;
-          }
-        }
-      });
-    }
-  }, [language, initialPlace, hindiPlace]);
 
   const localizedPlace = (language === "hi" && hindiPlace) ? hindiPlace : initialPlace;
 
@@ -83,7 +70,7 @@ export default function ShoppingDetailClient({ place: initialPlace, relatedLinks
   ];
 
   return (
-    <main className="min-h-screen bg-gradient-to-b from-[#fcfbf9] to-[#f4f1ea] dark:from-gray-950 dark:to-gray-900 text-gray-800 dark:text-gray-100 selection:bg-amber-500/30 overflow-hidden transition-colors duration-300 pt-0 pb-16">
+    <div className="min-h-screen bg-gradient-to-b from-[#fcfbf9] to-[#f4f1ea] dark:from-gray-950 dark:to-gray-900 text-gray-800 dark:text-gray-100 selection:bg-amber-500/30 overflow-hidden transition-colors duration-300 pt-0 pb-16">
       
       {/* Hero Banner Section */}
       <section className="relative h-[38vh] sm:h-[45vh] w-full flex items-center justify-center overflow-hidden">
@@ -440,7 +427,7 @@ export default function ShoppingDetailClient({ place: initialPlace, relatedLinks
                   </h2>
                 </div>
                 <div className="space-y-4">
-                  {localizedPlace.faqs.map((faq: any, idx: number) => (
+                  {localizedPlace.faqs.map((faq, idx) => (
                     <details 
                       key={idx} 
                       className="group border-b border-gray-100 dark:border-gray-800/80 pb-4 transition-all"
@@ -512,6 +499,6 @@ export default function ShoppingDetailClient({ place: initialPlace, relatedLinks
         </div>
       </section>
 
-    </main>
+    </div>
   );
 }

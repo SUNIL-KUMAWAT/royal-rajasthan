@@ -1,26 +1,21 @@
 "use client";
 
 import { useState, useMemo } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { 
-  ShoppingBag, 
-  MapPin, 
-  Clock, 
-  Tag, 
-  Search, 
-  Compass, 
-  Sparkles, 
-  ArrowRight, 
-  ArrowLeft,
-  Calendar,
-  HelpCircle,
-  CheckCircle2,
-  ChevronDown,
-  Info
+import { motion } from "framer-motion";
+import {
+    ShoppingBag,
+    MapPin,
+    Clock,
+    Search,
+    ArrowRight,
+    ArrowLeft,
+    ChevronDown,
 } from "lucide-react";
-import Link from "next/link";
+import Image from "next/image";
+import Link from "@/components/LocalizedLink";
 import { useLanguage } from "@/components/LanguageProvider";
 import { getDistrictFaqs, slugify } from "@/lib/shopping-utils";
+import type { ShoppingPlaceData } from "@/lib/shopping";
 
 interface Props {
   district: {
@@ -28,7 +23,7 @@ interface Props {
     district: string;
     slug: string;
     description: string;
-    shoppingPlaces: any[];
+    shoppingPlaces: ShoppingPlaceData[];
   };
   /** place id -> URL slug (computed on the server so duplicate names get unique URLs) */
   placeSlugs: Record<string, string>;
@@ -42,7 +37,6 @@ export default function DistrictShoppingClient({ district, placeSlugs, otherDist
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
 
   // Extract all categories available in this district
   const categories = useMemo(() => {
@@ -73,7 +67,7 @@ export default function DistrictShoppingClient({ district, placeSlugs, otherDist
   const districtFaqs = getDistrictFaqs(district, isHi);
 
   return (
-    <main className="min-h-screen bg-[#070b16] text-white">
+    <div className="min-h-screen bg-[#070b16] text-white">
       {/* Hero Header */}
       <section className="relative pt-28 pb-16 overflow-hidden">
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[300px] bg-gradient-to-b from-amber-500/20 to-transparent blur-[140px] pointer-events-none" />
@@ -177,10 +171,12 @@ export default function DistrictShoppingClient({ district, placeSlugs, otherDist
                     <div>
                       {/* Image Header */}
                       <div className="relative h-48 w-full overflow-hidden bg-gray-900">
-                        <img loading="lazy" decoding="async"
-                          src={place.image || "https://picsum.photos/seed/shop-raj/600/400"}
+                        <Image
+                          src={place.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg"}
                           alt={place.name}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          fill
+                          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#070b16] via-transparent to-transparent" />
                         
@@ -329,6 +325,6 @@ export default function DistrictShoppingClient({ district, placeSlugs, otherDist
           <span>{isHi ? `सभी ${otherDistricts.length + 1} जिलों की शॉपिंग देखें` : `Explore Shopping in All ${otherDistricts.length + 1} Districts`}</span>
         </Link>
       </section>
-    </main>
+    </div>
   );
 }

@@ -1,9 +1,10 @@
 // app/contact/page.tsx — Server Component with SEO metadata
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import ContactClient from "./ContactClient";
 
 export const metadata: Metadata = {
-    title: "Contact Us - Plan Your Rajasthan Trip | Rajasthan Tourism Places",
+    title: "Contact Us - Plan Your Rajasthan Trip",
     description:
         "Get in touch with Rajasthan Tourism Places. Call, email or WhatsApp us to plan your perfect Rajasthan trip. Expert travel consultants available Mon-Sat 9AM-7PM IST.",
     keywords: [
@@ -21,9 +22,9 @@ export const metadata: Metadata = {
             "Get in touch with our expert travel consultants to plan your perfect Rajasthan adventure.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1096/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
+                width: 960,
+                height: 640,
                 alt: "Contact Rajasthan Tourism Places",
             },
         ],
@@ -37,13 +38,11 @@ export const metadata: Metadata = {
         title: "Contact Us - Plan Your Rajasthan Trip",
         description:
             "Get in touch with our expert travel consultants for your Rajasthan trip.",
-        images: ["https://picsum.photos/seed/raj-1097/800/600"],
+        images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg"],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/contact",
-    },
+    alternates: alternatesFor("/contact"),
     robots: {
         index: true,
         follow: true,

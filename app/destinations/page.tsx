@@ -1,6 +1,23 @@
 // app/destinations/page.tsx — Server Component with SEO metadata
 import type { Metadata } from "next";
-import DestinationsClient from "./DestinationsClient";
+import { alternatesFor } from "@/lib/i18n";
+import DestinationsClient, { type DestinationCard } from "./DestinationsClient";
+import { DESTINATIONS } from "@/constants/destinations";
+
+const DESTINATION_CARDS: DestinationCard[] = DESTINATIONS.map((d) => ({
+    id: d.id,
+    name: d.name,
+    slug: d.slug,
+    nickname: d.nickname,
+    description: d.description,
+    image: d.image,
+    rating: d.rating,
+    category: d.category,
+    distance: d.distance,
+    duration: d.duration,
+    price: d.price,
+    isFeatured: !!d.isFeatured,
+}));
 
 export const metadata: Metadata = {
     title: "Rajasthan Destinations - Best Cities & Places to Visit",
@@ -24,9 +41,9 @@ export const metadata: Metadata = {
             "Explore Jaipur, Udaipur, Jodhpur, Jaisalmer & more. Complete guide to the best destinations in Rajasthan.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1105/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/960px-Jaisalmer_forteresse.jpg",
+                width: 960,
+                height: 640,
                 alt: "Rajasthan Destinations - Rajasthan Tourism Places",
             },
         ],
@@ -40,13 +57,11 @@ export const metadata: Metadata = {
         title: "Rajasthan Destinations - Best Cities to Visit",
         description:
             "Explore Jaipur, Udaipur, Jodhpur, Jaisalmer & more. Best Rajasthan cities guide.",
-        images: ["https://picsum.photos/seed/raj-1106/800/600"],
+        images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/960px-Jaisalmer_forteresse.jpg"],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/destinations",
-    },
+    alternates: alternatesFor("/destinations"),
     robots: {
         index: true,
         follow: true,
@@ -75,7 +90,7 @@ export default function DestinationsPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            <DestinationsClient />
+            <DestinationsClient destinations={DESTINATION_CARDS} />
         </>
     );
 }

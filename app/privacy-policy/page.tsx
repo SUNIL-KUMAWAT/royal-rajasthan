@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-    title: "Privacy Policy | Rajasthan Tourism Places",
+    title: "Privacy Policy",
     description: "Read our privacy policy to understand how we collect, use, and protect your personal information when using our website.",
-    alternates: {
-        canonical: "https://rajasthanplaces.in/privacy-policy",
-    },
+    alternates: alternatesFor("/privacy-policy"),
     robots: {
         index: true,
         follow: true,
@@ -23,7 +22,7 @@ export default function PrivacyPolicyPage() {
     };
 
     return (
-        <main className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
+        <div className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -45,7 +44,7 @@ export default function PrivacyPolicyPage() {
                     <section>
                         <h2 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white mb-3">1. Introduction</h2>
                         <p>
-                            Welcome to Rajasthan Tourism Places ("we," "our," or "us"). We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <span className="font-semibold text-yellow-600 dark:text-yellow-400">rajasthanplaces.in</span>.
+                            Welcome to Rajasthan Tourism Places (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). We value your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website <span className="font-semibold text-yellow-600 dark:text-yellow-400">rajasthanplaces.in</span>.
                         </p>
                     </section>
 
@@ -95,6 +94,6 @@ export default function PrivacyPolicyPage() {
                     </section>
                 </div>
             </div>
-        </main>
+        </div>
     );
 }

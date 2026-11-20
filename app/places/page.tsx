@@ -1,14 +1,18 @@
 // app/places/page.tsx
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import { PlacesClient } from "./PlacesClient";
 import { PLACES } from "@/constants/places";
 import { PLACES_HINDI } from "@/constants/places-hindi";
 import { toPlaceCards } from "@/lib/places";
 
+// Round down to a tidy "N+" figure so copy stays true as places are added
+const PLACE_COUNT_LABEL = `${Math.floor(PLACES.length / 10) * 10}+`;
+
 export const metadata: Metadata = {
     title: "Famous Places to Visit in Rajasthan - Complete Guide",
     description:
-        "Explore 12+ famous tourist places in Rajasthan with complete details - timing, ticket prices, history, best time to visit & Google Maps location.",
+        `Explore ${PLACE_COUNT_LABEL} famous tourist places in Rajasthan with complete details - timing, ticket prices, history, best time to visit & Google Maps location.`,
     keywords: [
         "places to visit in Rajasthan",
         "Rajasthan tourist places",
@@ -17,17 +21,17 @@ export const metadata: Metadata = {
         "forts in Rajasthan",
         "palaces in Rajasthan",
         "lakes in Rajasthan",
-        "Rajasthan travel guide 2025",
+        "Rajasthan travel guide",
     ],
     openGraph: {
         title: "Famous Places to Visit in Rajasthan",
         description:
-            "Complete guide to 12+ famous tourist places in Rajasthan with timing, tickets & maps.",
+            `Complete guide to ${PLACE_COUNT_LABEL} famous tourist places in Rajasthan with timing, tickets & maps.`,
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1127/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/960px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
+                width: 960,
+                height: 640,
                 alt: "Famous Places in Rajasthan",
             },
         ],
@@ -41,13 +45,11 @@ export const metadata: Metadata = {
         title: "Famous Places to Visit in Rajasthan",
         description:
             "Complete guide to tourist places in Rajasthan with timing, tickets & maps.",
-        images: ["https://picsum.photos/seed/raj-1128/800/600"],
+        images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/960px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg"],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/places",
-    },
+    alternates: alternatesFor("/places"),
     robots: {
         index: true,
         follow: true,
@@ -76,7 +78,7 @@ export default function PlacesPage() {
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
             />
-            <PlacesClient places={toPlaceCards(PLACES)} placesHi={toPlaceCards(PLACES_HINDI as any)} />
+            <PlacesClient places={toPlaceCards(PLACES)} placesHi={toPlaceCards(PLACES_HINDI)} />
         </>
     );
 }

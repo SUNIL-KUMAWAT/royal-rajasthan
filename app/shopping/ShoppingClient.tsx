@@ -1,17 +1,25 @@
 "use client";
 import { useState, useMemo, useRef, useCallback, useEffect } from "react";
-import { motion, AnimatePresence, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, AnimatePresence, useMotionValue, useSpring, useTransform, type Variants } from "framer-motion";
 import {
-    Search, MapPin, Star, Clock, ArrowRight, Heart, Sparkles,
-    ShoppingBag, Tag, X, Compass, Map, ChevronDown,
+    Search,
+    MapPin,
+    Clock,
+    ArrowRight,
+    Heart,
+    Sparkles,
+    ShoppingBag,
+    Tag,
+    X,
+    ChevronDown,
 } from "lucide-react";
 import { SHOPPING_FAQS_ENGLISH, SHOPPING_FAQS_HINDI } from "@/constants/faqs";
 import { useLanguage } from "@/components/LanguageProvider";
-import Link from "next/link";
+import { localizePath } from "@/lib/i18n";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import type { ShoppingCard } from "@/lib/shopping";
-
 
 // ─── 3D Tilt Card ─────────────────────────────────────────────────────────────
 function TiltCard({ children, className = "" }: { children: React.ReactNode; className?: string }) {
@@ -48,7 +56,7 @@ const containerVariants = {
     hidden: {},
     show: { transition: { staggerChildren: 0.055, delayChildren: 0.05 } },
 };
-const cardVariants: any = {
+const cardVariants: Variants = {
     hidden: { opacity: 0, y: 28, scale: 0.97 },
     show: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.42, ease: [0.22, 1, 0.36, 1] } },
     exit: { opacity: 0, scale: 0.95, transition: { duration: 0.22 } },
@@ -79,8 +87,8 @@ export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
     // Legacy deep links (/shopping?market=slug) now go to the market's own page
     useEffect(() => {
         const marketSlug = new URLSearchParams(window.location.search).get("market");
-        if (marketSlug) router.replace(`/shopping/${marketSlug}`);
-    }, [router]);
+        if (marketSlug) router.replace(localizePath(`/shopping/${marketSlug}`, language));
+    }, [router, language]);
 
     const popularDistricts = ["All", "Jaipur", "Udaipur", "Jodhpur", "Jaisalmer", "Bikaner", "Ajmer", "Pushkar"];
 
@@ -91,7 +99,7 @@ export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
             places = places.filter((p) =>
                 p.name.toLowerCase().includes(q) ||
                 (p.description && p.description.toLowerCase().includes(q)) ||
-                p.famousFor.some((item: any) => item.toLowerCase().includes(q)) ||
+                p.famousFor.some((item) => item.toLowerCase().includes(q)) ||
                 p.district.toLowerCase().includes(q)
             );
         }
@@ -124,7 +132,7 @@ export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
             <section className="relative min-h-[580px] flex items-center justify-center overflow-hidden text-white pt-24 pb-12">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="https://picsum.photos/seed/raj-1143/800/600"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg"
                         alt="Rajasthan Bazaars"
                         fill
                         className="w-full h-full object-cover opacity-45 scale-105"
@@ -299,8 +307,8 @@ export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
                         className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
                     >
                         <AnimatePresence initial={false}>
-                            {visiblePlaces.map((place: any) => (
-                                <motion.div key={place.id} variants={cardVariants} exit={cardVariants.exit}>
+                            {visiblePlaces.map((place) => (
+                                <motion.div key={place.id} variants={cardVariants} exit="exit">
                                     <TiltCard className="group h-full">
                                         {/*
                                          * LIGHT: white card, gray-100 border, light shadow
@@ -363,7 +371,7 @@ export default function ShoppingClient({ places: placesEn, placesHi }: Props) {
 
                                                     {/* Tags */}
                                                     <div className="flex flex-wrap gap-1.5 mb-4">
-                                                        {place.famousFor.slice(0, 3).map((item: any, idx: any) => (
+                                                        {place.famousFor.slice(0, 3).map((item, idx) => (
                                                             <span key={idx}
                                                                 className="px-2 py-0.5 rounded-full text-[10px] font-medium
                                                                     bg-amber-50 text-amber-700 border border-amber-200

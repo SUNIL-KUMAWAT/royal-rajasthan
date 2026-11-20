@@ -1,8 +1,20 @@
 import { notFound } from "next/navigation";
+import { alternatesFor } from "@/lib/i18n";
 import ShoppingDetailClient from "./ShoppingDetailClient";
 import DistrictShoppingClient from "./DistrictShoppingClient";
 import { Metadata } from "next";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
+import { RAJASTHAN_SHOPPING_HINDI } from "@/constants/shopping-hindi";
+
+/** Finds the Hindi translation of a market by id (same lookup the client used to do). */
+function findHindiMarket(id: string, districtSlug: string): ShoppingDetail | null {
+    for (const d of RAJASTHAN_SHOPPING_HINDI.districts) {
+        const p = d.shoppingPlaces.find((x) => x.id === id);
+        // The Hindi dataset mirrors the English record shape (translated text, same keys)
+        if (p) return { ...p, district: d.district, districtSlug } as unknown as ShoppingDetail;
+    }
+    return null;
+}
 import {
     SITE_URL,
     getAllShoppingEntries,
@@ -12,6 +24,7 @@ import {
     getRelatedLinks,
     getShoppingDistrict,
     getShoppingEntry,
+    type ShoppingDetail,
 } from "@/lib/shopping";
 
 // Common aliases map for old or shortened URLs
@@ -99,15 +112,13 @@ export async function generateMetadata({
                 description,
                 images: [`${SITE_URL}/og-image.jpg`],
             },
-            alternates: {
-                canonical: `${SITE_URL}/shopping/${district.slug}`,
-            },
+            alternates: alternatesFor(`/shopping/${district.slug}`),
         };
     }
 
     // Place type
     const entry = match.data;
-    const place: any = entry.place;
+    const place = entry.place;
     const fullName = displayName(place.name, entry.district);
     // Generic SEO titles ("Gandhi Chowk Shopping Guide...") don't say which city; build one that does
     const seoTitle: string | undefined = place.seo?.title;
@@ -141,9 +152,7 @@ export async function generateMetadata({
             description,
             images: [place.image],
         },
-        alternates: {
-            canonical: `${SITE_URL}/shopping/${entry.slug}`,
-        },
+        alternates: alternatesFor(`/shopping/${entry.slug}`),
     };
 }
 
@@ -241,7 +250,7 @@ export default async function ShoppingDetailPage({
 
     // Place type
     const entry = match.data;
-    const place: any = entry.place;
+    const place = entry.place;
     const pageUrl = `${SITE_URL}/shopping/${entry.slug}`;
 
     const localBusinessSchema = {
@@ -297,6 +306,7 @@ export default async function ShoppingDetailPage({
             {faqSchema && <JsonLd data={faqSchema} />}
             <ShoppingDetailClient
                 place={{ ...place, district: entry.district, districtSlug: entry.districtSlug }}
+                hindiPlace={findHindiMarket(place.id, entry.districtSlug)}
                 relatedLinks={getRelatedLinks(entry)}
                 districtSiblings={getDistrictSiblings(entry)}
             />

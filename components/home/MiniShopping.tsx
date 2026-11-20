@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import { ArrowRight, ShoppingBag } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -37,7 +37,7 @@ export function MiniShopping() {
   };
 
   return (
-    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://picsum.photos/seed/raj-shop-bg/1920/1080')" }}>
+    <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg')" }}>
       {/* Overlay with slight tint difference from Festivals */}
       <div className="absolute inset-0 bg-maroon-950/80"></div>
 

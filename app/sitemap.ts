@@ -1,9 +1,27 @@
 // app/sitemap.ts
 import { MetadataRoute } from "next";
-import { PLACES } from "@/constants/data";
+import { PLACES } from "@/constants/places";
 import { FESTIVALS } from "@/constants/festivals";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 import { getAllShoppingEntries } from "@/lib/shopping";
+import { hasHindiVersion, localizePath } from "@/lib/i18n";
+
+/**
+ * Adds the Hindi (/hi) URL for every page that has one, and links each pair with
+ * hreflang alternates so Google serves the right language.
+ */
+function withHindiVersions(entries: MetadataRoute.Sitemap, baseUrl: string): MetadataRoute.Sitemap {
+    return entries.flatMap((entry) => {
+        const path = entry.url.slice(baseUrl.length) || "/";
+        if (!hasHindiVersion(path)) return [entry];
+        const hiUrl = `${baseUrl}${localizePath(path, "hi")}`;
+        const alternates = { languages: { "en-IN": entry.url, "hi-IN": hiUrl } };
+        return [
+            { ...entry, alternates },
+            { ...entry, url: hiUrl, alternates },
+        ];
+    });
+}
 
 // Helper: Convert name to URL slug
 function toSlug(name: string): string {
@@ -129,11 +147,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.65,
     }));
 
-    return [
-        ...staticPages,
-        ...placesPages,
-        ...festivalPages,
-        ...shoppingDistrictPages,
-        ...shoppingMarketPages,
-    ];
+    return withHindiVersions(
+        [
+            ...staticPages,
+            ...placesPages,
+            ...festivalPages,
+            ...shoppingDistrictPages,
+            ...shoppingMarketPages,
+        ],
+        baseUrl
+    );
 }

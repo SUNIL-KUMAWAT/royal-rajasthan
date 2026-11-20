@@ -1,13 +1,7 @@
 "use client";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
-import {
-    MapPin,
-    Phone,
-    Mail,
-    ArrowRight,
-    Heart,
-} from "lucide-react";
+import { ArrowRight, Heart } from "lucide-react";
 import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 

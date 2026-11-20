@@ -2,7 +2,7 @@
 "use client";
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import {
     MapPin,
@@ -1333,7 +1333,7 @@ export default function PlanTripClient({ places: PLACES }: { places: Place[] }) 
                 className="h-48 md:h-64 relative flex items-end justify-center pb-8"
                 style={{
                     backgroundImage:
-                        "url(https://picsum.photos/seed/raj-1140/800/600",
+                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

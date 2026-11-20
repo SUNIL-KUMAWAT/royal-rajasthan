@@ -6,6 +6,17 @@ export { SITE_URL, slugify, mapsSearchUrl, getDistrictFaqs } from "@/lib/shoppin
 type District = (typeof RAJASTHAN_SHOPPING.districts)[number];
 type Place = District["shoppingPlaces"][number];
 
+/** One market/bazaar record, as stored in the shopping datasets. */
+export type ShoppingPlaceData = Place;
+/** A market plus the district it belongs to — what the market detail page renders. */
+export type ShoppingDetail = ShoppingPlaceData & {
+    district: string;
+    districtSlug: string;
+    // Optional extras the detail page shows when a record has them (none do yet)
+    rating?: number;
+    tips?: string;
+};
+
 export interface ShoppingEntry {
     slug: string;
     place: Place;
@@ -85,7 +96,7 @@ export const getShoppingDistrict = (slug: string) =>
 
 /** Link targets for names listed in a place's relatedPlaces (same district preferred). */
 export function getRelatedLinks(entry: ShoppingEntry) {
-    const names: string[] = (entry.place as any).relatedPlaces || [];
+    const names: string[] = ("relatedPlaces" in entry.place && Array.isArray(entry.place.relatedPlaces) ? entry.place.relatedPlaces : []) as string[];
     const all = getAllShoppingEntries();
     return names
         .map((name) => {
@@ -122,7 +133,19 @@ export interface ShoppingCard {
     imageRepresentative: boolean;
 }
 
-type AnyShoppingData = { districts: { district: string; slug: string; shoppingPlaces: any[] }[] };
+/** Shape shared by the English and Hindi shopping datasets. */
+type ShoppingSourcePlace = {
+    id: string;
+    name: string;
+    type?: string;
+    description?: string;
+    famousFor?: string[];
+    timings?: string;
+    priceRange?: string;
+    image?: string;
+    imageRepresentative?: boolean;
+};
+type AnyShoppingData = { districts: { district: string; slug: string; shoppingPlaces: ShoppingSourcePlace[] }[] };
 
 export function toShoppingCards(data: AnyShoppingData): ShoppingCard[] {
     return data.districts.flatMap((d) =>
@@ -132,12 +155,12 @@ export function toShoppingCards(data: AnyShoppingData): ShoppingCard[] {
             name: p.name,
             district: d.district,
             districtSlug: d.slug,
-            type: p.type,
-            description: p.description,
+            type: p.type ?? "",
+            description: p.description ?? "",
             famousFor: p.famousFor || [],
             timings: p.timings || "",
             priceRange: p.priceRange || "",
-            image: p.image,
+            image: p.image ?? "",
             imageRepresentative: !!p.imageRepresentative,
         }))
     );

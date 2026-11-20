@@ -1,5 +1,6 @@
 // app/culture/page.tsx
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import { FestivalsSection } from "@/components/home/FestivalsSection";
 import { FESTIVALS } from "@/constants/festivals";
 import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
@@ -18,7 +19,7 @@ export const metadata: Metadata = {
         "Teej Festival Jaipur",
         "Gangaur Festival Udaipur",
         "Rajasthan culture",
-        "festivals in Rajasthan 2025",
+        "festivals in Rajasthan",
         "Rajasthan cultural events",
         "best festivals in Rajasthan",
         "Rajasthan folk dance",
@@ -32,9 +33,9 @@ export const metadata: Metadata = {
             "Experience centuries-old traditions, vibrant celebrations, royal processions and unforgettable cultural festivals of Rajasthan.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1098/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Patwon_ki_haveli_18.jpg/960px-Patwon_ki_haveli_18.jpg",
+                width: 960,
+                height: 640,
                 alt: "Rajasthan Festivals - Rajasthan Tourism Places",
             },
         ],
@@ -49,14 +50,12 @@ export const metadata: Metadata = {
         description:
             "Discover vibrant Rajasthan festivals - Pushkar Camel Fair, Desert Festival, Teej & Gangaur.",
         images: [
-            "https://picsum.photos/seed/raj-1099/800/600",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Patwon_ki_haveli_18.jpg/960px-Patwon_ki_haveli_18.jpg",
         ],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/culture",
-    },
+    alternates: alternatesFor("/culture"),
     robots: {
         index: true,
         follow: true,
@@ -119,7 +118,7 @@ export default function CulturePage() {
                         url: "https://rajasthanplaces.in/festivals/pushkar-camel-fair",
                     },
                     image:
-                        "https://picsum.photos/seed/raj-1100/800/600",
+                        "https://rajasthanplaces.in/Camel_Pushkar.webp",
                 },
             },
             {
@@ -162,7 +161,7 @@ export default function CulturePage() {
                         url: "https://rajasthanplaces.in/festivals/desert-festival",
                     },
                     image:
-                        "https://picsum.photos/seed/raj-1101/800/600",
+                        "https://plus.unsplash.com/premium_photo-1769868012862-bc90889c9583?q=80&w=1174&auto=format&fit=crop",
                 },
             },
             {
@@ -205,7 +204,7 @@ export default function CulturePage() {
                         url: "https://rajasthanplaces.in/festivals/teej-festival",
                     },
                     image:
-                        "https://picsum.photos/seed/raj-1102/800/600",
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Teej.jpg/960px-Teej.jpg",
                 },
             },
             {
@@ -248,7 +247,7 @@ export default function CulturePage() {
                         url: "https://rajasthanplaces.in/festivals/gangaur-festival",
                     },
                     image:
-                        "https://picsum.photos/seed/raj-1103/800/600",
+                        "https://www.tripplannersindia.com/assets/images/postimages/Rajasthan_Gangaur_Festivel_.webp",
                 },
             },
         ],
@@ -332,7 +331,7 @@ export default function CulturePage() {
                     __html: JSON.stringify(faqSchema),
                 }}
             />
-            <FestivalsSection festivals={toFestivalCards(FESTIVALS)} festivalsHi={toFestivalCards(FESTIVALS_HINDI as any, FESTIVALS)} />
+            <FestivalsSection festivals={toFestivalCards(FESTIVALS)} festivalsHi={toFestivalCards(FESTIVALS_HINDI, FESTIVALS)} />
 
             {/* SEO Interlinks — Explore More */}
             <ExploreMoreSection currentPage="culture" />

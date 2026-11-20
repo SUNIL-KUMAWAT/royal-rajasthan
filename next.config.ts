@@ -4,14 +4,10 @@ const nextConfig: NextConfig = {
 
   // ============ SEO METADATA ============
   htmlLimitedBots: /.*/,
-  // Disable ESLint during builds due to version incompatibility
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
 
   // ============ IMAGE OPTIMIZATION ============
   images: {
-    unoptimized: true,
+    // Optimized: Next resizes + converts remote photos to AVIF/WebP per device (needs `sharp`, bundled with Next).
     remotePatterns: [
       {
         protocol: "https",
@@ -36,6 +32,14 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         hostname: "picsum.photos",
+      },
+      {
+        protocol: "https",
+        hostname: "plus.unsplash.com",
+      },
+      {
+        protocol: "https",
+        hostname: "www.tripplannersindia.com",
       },
     ],
     formats: ["image/avif", "image/webp"],
@@ -100,11 +104,6 @@ const nextConfig: NextConfig = {
     return [
       // 301 Permanent Redirects for SEO clean-up
       {
-        source: "/hi",
-        destination: "/",
-        permanent: true,
-      },
-      {
         source: "/$",
         destination: "/",
         permanent: true,
@@ -136,6 +135,11 @@ const nextConfig: NextConfig = {
         destination: "/shopping/hathi-pol-bazaar",
         permanent: true,
       },
+      // Same clean-up redirects for the Hindi (/hi) versions
+      { source: "/hi/festivals/mewar", destination: "/hi/festivals/mewar-festival", permanent: true },
+      { source: "/hi/festivals/teej", destination: "/hi/festivals/teej-festival", permanent: true },
+      { source: "/hi/shopping/sardar-market", destination: "/hi/shopping/sardar-market-clock-tower", permanent: true },
+      { source: "/hi/shopping/hathi-pol", destination: "/hi/shopping/hathi-pol-bazaar", permanent: true },
       // Legacy redirects
       {
         source: "/hotels",

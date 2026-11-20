@@ -1,11 +1,12 @@
 // app/shopping/page.tsx
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import ShoppingClient from "./ShoppingClient";
 import { RAJASTHAN_SHOPPING } from "@/constants/shopping";
 import { RAJASTHAN_SHOPPING_HINDI } from "@/constants/shopping-hindi";
 import { toShoppingCards } from "@/lib/shopping";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 
 export const metadata: Metadata = {
     title: "Shopping in Rajasthan - Best Markets, Bazaars & Souvenirs",
@@ -33,9 +34,9 @@ export const metadata: Metadata = {
             "Explore the ultimate shopping guide to Rajasthan's famous bazaars. Find out where to buy authentic textiles, jewelry, and handicrafts.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1141/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
+                width: 960,
+                height: 640,
                 alt: "Shopping in Rajasthan - Rajasthan Tourism Places",
             },
         ],
@@ -50,14 +51,12 @@ export const metadata: Metadata = {
         description:
             "Explore the ultimate shopping guide to Rajasthan's famous bazaars.",
         images: [
-            "https://picsum.photos/seed/raj-1142/800/600",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
         ],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/shopping",
-    },
+    alternates: alternatesFor("/shopping"),
     robots: {
         index: true,
         follow: true,

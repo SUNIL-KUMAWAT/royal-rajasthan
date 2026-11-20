@@ -1,9 +1,10 @@
 // app/about/page.tsx — Server Component with SEO metadata
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import AboutClient from "./AboutClient";
 
 export const metadata: Metadata = {
-    title: "About Us - Rajasthan Tourism Places | Official Travel & Heritage Guide",
+    title: "About Us - Official Travel & Heritage Guide",
     description:
         "Learn about Rajasthan Tourism Places (rajasthanplaces.in). Discover our mission to provide authentic travel guides, fort histories, festival dates, and market shopping insights across 33 districts of Rajasthan.",
     keywords: [
@@ -41,9 +42,7 @@ export const metadata: Metadata = {
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/about",
-    },
+    alternates: alternatesFor("/about"),
     robots: {
         index: true,
         follow: true,

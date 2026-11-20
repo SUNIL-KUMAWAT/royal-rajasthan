@@ -30,7 +30,7 @@ export default function GalleryClient() {
                 className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://picsum.photos/seed/raj-1113/800/600",
+                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/1280px-Udaipur_Lake_India.JPG)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

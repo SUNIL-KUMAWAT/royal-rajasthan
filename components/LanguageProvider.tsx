@@ -1,8 +1,12 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useState } from "react";
+import React, { createContext, useCallback, useContext, useEffect, useMemo } from "react";
+import { usePathname, useRouter } from "next/navigation";
+import { hasHindiVersion, languageFromPath, localizePath, type Language } from "@/lib/i18n";
 
-type Language = "en" | "hi" | any;
+export type { Language };
+
+const STORAGE_KEY = "language";
 
 interface LanguageContextType {
   language: Language;
@@ -12,41 +16,66 @@ interface LanguageContextType {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
-export function LanguageProvider({ children }: { children: React.ReactNode }) {
-  const [language, setLanguageState] = useState<Language>("en");
-  const [mounted, setMounted] = useState(false);
+function persist(lang: Language) {
+  try {
+    localStorage.setItem(STORAGE_KEY, lang);
+  } catch {
+    /* storage unavailable (private mode etc.) */
+  }
+}
 
+/**
+ * The language comes from the URL ("/hi/..." = Hindi), so Hindi pages are
+ * server-rendered in Hindi and indexable. Switching language navigates to the
+ * counterpart URL.
+ */
+export function LanguageProvider({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname() || "/";
+  const router = useRouter();
+  const language = languageFromPath(pathname);
+
+  // Returning visitors who picked Hindi earlier land on the Hindi version
   useEffect(() => {
-    setMounted(true);
-    const storedLang = localStorage.getItem("language") as Language | null;
-    if (storedLang === "en" || storedLang === "hi") {
-      setLanguageState(storedLang);
+    try {
+      if (
+        localStorage.getItem(STORAGE_KEY) === "hi" &&
+        languageFromPath(window.location.pathname) === "en" &&
+        hasHindiVersion(window.location.pathname)
+      ) {
+        router.replace(localizePath(window.location.pathname + window.location.search + window.location.hash, "hi"));
+      }
+    } catch {
+      /* ignore */
     }
+    // only on first load
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const setLanguage = (lang: Language) => {
-    setLanguageState(lang);
-    localStorage.setItem("language", lang);
-  };
+  // Keep <html lang> in sync for screen readers, translation tools and fonts
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
-  const toggleLanguage = () => {
-    setLanguage((prev: any) => (prev === "en" ? "hi" : "en"));
-  };
-
-  // Provide default English language during SSR to prevent hydration mismatch
-  if (!mounted) {
-    return (
-      <LanguageContext.Provider value={{ language: "en", setLanguage, toggleLanguage }}>
-        {children}
-      </LanguageContext.Provider>
-    );
-  }
-
-  return (
-    <LanguageContext.Provider value={{ language, setLanguage, toggleLanguage }}>
-      {children}
-    </LanguageContext.Provider>
+  const setLanguage = useCallback(
+    (lang: Language) => {
+      persist(lang);
+      const current = window.location.pathname + window.location.search + window.location.hash;
+      const target = localizePath(current, lang);
+      if (target !== current) router.push(target);
+    },
+    [router]
   );
+
+  const toggleLanguage = useCallback(() => {
+    setLanguage(language === "en" ? "hi" : "en");
+  }, [language, setLanguage]);
+
+  const value = useMemo(
+    () => ({ language, setLanguage, toggleLanguage }),
+    [language, setLanguage, toggleLanguage]
+  );
+
+  return <LanguageContext.Provider value={value}>{children}</LanguageContext.Provider>;
 }
 
 export function useLanguage() {

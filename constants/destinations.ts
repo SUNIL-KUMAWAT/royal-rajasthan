@@ -7,8 +7,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Pink City",
         description: "The capital of Rajasthan, known for its stunning pink-colored architecture, magnificent forts, and vibrant bazaars.",
         longDescription: "Jaipur, the Pink City, is a mesmerizing blend of history, culture, and modernity. Founded in 1727 by Maharaja Sawai Jai Singh II, it was the first planned city of India.",
-        image: "https://picsum.photos/seed/raj-29/800/600",
-        coverImage: "https://picsum.photos/seed/raj-30/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-31/800/600",
             "https://picsum.photos/seed/raj-32/800/600",
@@ -36,8 +36,8 @@ const DESTINATIONS_RAW = [
         nickname: "The City of Lakes",
         description: "Romantic city of lakes and palaces, often called the Venice of the East. Home to the magnificent Lake Palace.",
         longDescription: "Udaipur, the City of Lakes, is one of the most romantic destinations in India. Founded by Maharana Udai Singh II in 1559.",
-        image: "https://picsum.photos/seed/raj-34/800/600",
-        coverImage: "https://picsum.photos/seed/raj-35/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/960px-Udaipur_City_Palace.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/1280px-Udaipur_City_Palace.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-36/800/600",
             "https://picsum.photos/seed/raj-37/800/600"
@@ -64,8 +64,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Blue City",
         description: "Dominated by the majestic Mehrangarh Fort, Jodhpur's blue-painted old city creates a stunning visual spectacle.",
         longDescription: "Jodhpur, known as the Blue City and Sun City, is the second-largest city in Rajasthan.",
-        image: "https://picsum.photos/seed/raj-38/800/600",
-        coverImage: "https://picsum.photos/seed/raj-39/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-40/800/600"
         ],
@@ -91,8 +91,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Golden City",
         description: "Rising from the heart of the Thar Desert, the Golden City is home to a magnificent living fort and camel safaris.",
         longDescription: "Jaisalmer, the Golden City, is one of the most exotic destinations in India.",
-        image: "https://picsum.photos/seed/raj-41/800/600",
-        coverImage: "https://picsum.photos/seed/raj-42/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/960px-Jaisalmer_forteresse.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-43/800/600"
         ],
@@ -118,8 +118,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Sacred City",
         description: "One of the world's oldest cities, famous for its holy lake, Brahma Temple, and the legendary Pushkar Camel Fair.",
         longDescription: "Pushkar is one of the five sacred dhams for Hindus and is built around Pushkar Lake.",
-        image: "https://picsum.photos/seed/raj-44/800/600",
-        coverImage: "https://picsum.photos/seed/raj-45/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/960px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/1280px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-46/800/600"
         ],
@@ -145,8 +145,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Queen of Hills",
         description: "Rajasthan's only hill station offering a cool escape with the stunning Dilwara Temples and Nakki Lake.",
         longDescription: "Mount Abu is the only hill station in Rajasthan situated at 1,220 meters in the Aravalli Range.",
-        image: "https://picsum.photos/seed/raj-47/800/600",
-        coverImage: "https://picsum.photos/seed/raj-48/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nakki_Lake_during_daytime.JPG/960px-Nakki_Lake_during_daytime.JPG",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Nakki_Lake_during_daytime.JPG/1280px-Nakki_Lake_during_daytime.JPG",
         gallery: [
             "https://picsum.photos/seed/raj-49/800/600"
         ],
@@ -172,8 +172,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Camel City",
         description: "A city of forts, temples, and havelis in the heart of the Thar Desert. Famous for Junagarh Fort and Bikaneri sweets.",
         longDescription: "Bikaner is a city in the northern part of the Thar Desert in Rajasthan, founded in 1488.",
-        image: "https://picsum.photos/seed/raj-50/800/600",
-        coverImage: "https://picsum.photos/seed/raj-51/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/India_Bikaner_Junagarh_Fort.jpg/960px-India_Bikaner_Junagarh_Fort.jpg",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/India_Bikaner_Junagarh_Fort.jpg/1280px-India_Bikaner_Junagarh_Fort.jpg",
         gallery: [
             "https://picsum.photos/seed/raj-52/800/600"
         ],
@@ -199,8 +199,8 @@ const DESTINATIONS_RAW = [
         nickname: "The Tiger Land",
         description: "One of India's premier wildlife destinations, famous for its tiger population and the 10th-century Ranthambore Fort.",
         longDescription: "Ranthambore National Park is one of the largest national parks in northern India.",
-        image: "https://picsum.photos/seed/raj-53/800/600",
-        coverImage: "https://picsum.photos/seed/raj-54/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/960px-Ranthambore_National_Park.JPG",
+        coverImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/1280px-Ranthambore_National_Park.JPG",
         gallery: [
             "https://picsum.photos/seed/raj-55/800/600"
         ],
@@ -2300,5 +2300,5 @@ const DESTINATIONS_RAW = [
 
 // Note: an `attractionsList` of full Place objects used to be derived here. Nothing read it, and it pulled
 // the whole PLACES dataset (MBs) into every client bundle that imported DESTINATIONS.
-export const DESTINATIONS: any = DESTINATIONS_RAW;
+export const DESTINATIONS = DESTINATIONS_RAW;
 

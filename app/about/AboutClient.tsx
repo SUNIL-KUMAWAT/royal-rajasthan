@@ -1,21 +1,19 @@
 "use client";
 
 import { motion } from "framer-motion";
+
 import Image from "next/image";
-import Link from "next/link";
-import { 
-  Compass, 
-  Sparkles, 
-  MapPin, 
-  Heart, 
-  ShieldCheck, 
-  Award, 
-  Users, 
-  Globe, 
-  ArrowRight,
-  Landmark,
-  Calendar,
-  ShoppingBag
+import Link from "@/components/LocalizedLink";
+import {
+    Compass,
+    Sparkles,
+    Heart,
+    ShieldCheck,
+    Award,
+    ArrowRight,
+    Landmark,
+    Calendar,
+    ShoppingBag,
 } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
 
@@ -63,7 +61,7 @@ export default function AboutClient() {
   ];
 
   return (
-    <main className="min-h-screen bg-[#070b16] text-white">
+    <div className="min-h-screen bg-[#070b16] text-white">
       {/* Hero Header */}
       <section className="relative pt-32 pb-20 overflow-hidden">
         {/* Background glow accents */}
@@ -166,11 +164,13 @@ export default function AboutClient() {
               transition={{ duration: 0.6 }}
               className="relative"
             >
-              <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
-                <img loading="lazy" decoding="async"
+              <div className="relative rounded-3xl overflow-hidden border border-white/10 shadow-2xl h-80 sm:h-96">
+                <Image
                   src="/Camel_Pushkar.webp"
-                  alt="Rajasthan Culture and Tourism"
-                  className="w-full h-80 sm:h-96 object-cover"
+                  alt={isHi ? "राजस्थान की संस्कृति और पर्यटन" : "Rajasthan Culture and Tourism"}
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
                 <div className="absolute bottom-6 left-6 right-6">
@@ -246,6 +246,6 @@ export default function AboutClient() {
           </div>
         </div>
       </section>
-    </main>
+    </div>
   );
 }

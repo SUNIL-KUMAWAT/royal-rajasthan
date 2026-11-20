@@ -50,8 +50,8 @@ export async function shareItinerary(
         try {
             await navigator.share(shareData);
             return { success: true, method: "share-api" };
-        } catch (err: any) {
-            if (err.name === "AbortError") {
+        } catch (err) {
+            if (err instanceof DOMException && err.name === "AbortError") {
                 return { success: false, method: "cancelled" };
             }
         }

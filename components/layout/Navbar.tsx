@@ -1,16 +1,18 @@
 "use client";
 import { useState, useEffect } from "react";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, Sun, Moon, Phone } from "lucide-react";
+import { Menu, X, Sun, Moon } from "lucide-react";
 import { NAV_LINKS, NAV_LINKS_HINDI } from "@/constants/ui";
 import { useLanguage } from "@/components/LanguageProvider";
 import { useTheme } from "@/components/ThemeProvider";
 import { usePathname } from "next/navigation";
+import { stripLanguage } from "@/lib/i18n";
 import Image from "next/image";
 
 export function Navbar() {
-    const pathname = usePathname();
+    // Compare against the language-neutral path so "/hi/places" highlights "Places"
+    const pathname = stripLanguage(usePathname() || "/");
     const { language, toggleLanguage } = useLanguage();
     const currentNavLinks = language === 'hi' ? NAV_LINKS_HINDI : NAV_LINKS;
     const [isOpen, setIsOpen] = useState(false);

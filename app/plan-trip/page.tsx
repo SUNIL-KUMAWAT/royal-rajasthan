@@ -1,12 +1,13 @@
 // app/plan-trip/page.tsx
 // NO "use client" here
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import PlanTripClient from "./PlanTripClient";
 import { PLACES } from "@/constants/places";
 import { toTripPlaces } from "@/lib/places";
 
 export const metadata: Metadata = {
-    title: "Plan Your Rajasthan Trip - Free Itinerary Planner | Rajasthan Tourism Places",
+    title: "Plan Your Rajasthan Trip - Free Itinerary Planner",
     description:
         "Plan your perfect Rajasthan trip with our free itinerary planner. Select cities, set duration, choose interests and get a personalized day-by-day travel plan for Jaipur, Udaipur, Jodhpur, Jaisalmer & more.",
     keywords: [
@@ -31,9 +32,9 @@ export const metadata: Metadata = {
             "Create a personalized Rajasthan itinerary in minutes. Select cities, duration & interests to get your perfect day-by-day travel plan.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1130/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
+                width: 960,
+                height: 640,
                 alt: "Plan Your Rajasthan Trip - Rajasthan Tourism Places",
             },
         ],
@@ -48,14 +49,12 @@ export const metadata: Metadata = {
         description:
             "Create a personalized Rajasthan itinerary in minutes. Select cities, duration & interests.",
         images: [
-            "https://picsum.photos/seed/raj-1131/800/600",
+            "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
         ],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/plan-trip",
-    },
+    alternates: alternatesFor("/plan-trip"),
     robots: {
         index: true,
         follow: true,

@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
@@ -12,7 +12,7 @@ const BENTO_EXPERIENCES = [
         description: "Explore magnificent Rajput forts across Rajasthan",
         href: "/places?category=Fort",
         count: "5 Forts",
-        image: "https://picsum.photos/seed/raj-1144/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg",
         className: "col-span-2 md:col-span-2 row-span-2 min-h-[380px] md:min-h-[440px]"
     },
     {
@@ -21,7 +21,7 @@ const BENTO_EXPERIENCES = [
         description: "Experience golden dunes & camel safari",
         href: "/places?category=Desert",
         count: "1 Desert",
-        image: "https://picsum.photos/seed/raj-1145/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/960px-Thar_desert_Rajasthan_India.jpg",
         className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
@@ -30,7 +30,7 @@ const BENTO_EXPERIENCES = [
         description: "Visit stunning heritage palaces",
         href: "/places?category=Palace",
         count: "2 Palaces",
-        image: "https://picsum.photos/seed/raj-1146/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/960px-Udaipur_City_Palace.jpg",
         className: "col-span-2 md:col-span-1 min-h-[200px]"
     },
     {
@@ -39,7 +39,7 @@ const BENTO_EXPERIENCES = [
         description: "Sunset boat rides at breathtaking lakes",
         href: "/places?category=Lake",
         count: "1 Lake",
-        image: "https://picsum.photos/seed/raj-1147/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/960px-Udaipur_Lake_India.JPG",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
@@ -48,7 +48,7 @@ const BENTO_EXPERIENCES = [
         description: "Tiger safaris & nature trails in reserves",
         href: "/places?category=Wildlife",
         count: "1 Park",
-        image: "https://picsum.photos/seed/raj-1148/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/960px-Ranthambore_National_Park.JPG",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     },
     {
@@ -57,7 +57,7 @@ const BENTO_EXPERIENCES = [
         description: "Vibrant folk dances & holy traditions",
         href: "/culture",
         count: "Vibrant Traditions",
-        image: "https://picsum.photos/seed/raj-1149/800/600",
+        image: "https://rajasthanplaces.in/Camel_Pushkar.webp",
         className: "col-span-2 md:col-span-2 min-h-[220px]"
     }
 ];

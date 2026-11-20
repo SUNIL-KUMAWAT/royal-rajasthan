@@ -4,12 +4,16 @@ import type { Place } from "@/types";
 export type PlaceCard = Pick<
     Place,
     | "id" | "name" | "slug" | "city" | "category" | "description" | "rating"
-    | "timing" | "ticket" | "tags" | "isUNESCO" | "isOpen" | "visitDuration" | "bestTimeToVisit"
+    | "tags" | "isUNESCO" | "isOpen" | "visitDuration" | "bestTimeToVisit"
     | "reviews" | "isFeatured" | "yearBuilt" | "images"
->;
+> & {
+    // Long "note" texts are only shown on the detail page
+    timing: Omit<Place["timing"], "note">;
+    ticket: Omit<Place["ticket"], "note">;
+};
 
 export function toPlaceCards(places: Place[]): PlaceCard[] {
-    return places.map((p: any) => ({
+    return places.map((p) => ({
         id: p.id,
         name: p.name,
         slug: p.slug,
@@ -19,8 +23,15 @@ export function toPlaceCards(places: Place[]): PlaceCard[] {
         rating: p.rating,
         reviews: p.reviews,
         isFeatured: p.isFeatured,
-        timing: p.timing,
-        ticket: p.ticket,
+        timing: { open: p.timing.open, close: p.timing.close, closedOn: p.timing.closedOn },
+        ticket: {
+            isFree: p.ticket.isFree,
+            indian: p.ticket.indian,
+            foreigner: p.ticket.foreigner,
+            childIndian: p.ticket.childIndian,
+            childForeigner: p.ticket.childForeigner,
+            camera: p.ticket.camera,
+        },
         tags: p.tags || [],
         isUNESCO: p.isUNESCO,
         isOpen: p.isOpen,

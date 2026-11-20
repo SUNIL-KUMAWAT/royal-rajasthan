@@ -1,5 +1,6 @@
 // app/gallery/page.tsx — Server Component with SEO metadata
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 import GalleryClient from "./GalleryClient";
 
 export const metadata: Metadata = {
@@ -25,9 +26,9 @@ export const metadata: Metadata = {
             "Stunning photos of Rajasthan's royal forts, magnificent palaces, golden deserts and exotic wildlife.",
         images: [
             {
-                url: "https://picsum.photos/seed/raj-1114/800/600",
-                width: 1200,
-                height: 630,
+                url: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/960px-Udaipur_Lake_India.JPG",
+                width: 960,
+                height: 640,
                 alt: "Rajasthan Photo Gallery - Rajasthan Tourism Places",
             },
         ],
@@ -41,13 +42,11 @@ export const metadata: Metadata = {
         title: "Rajasthan Photo Gallery - Forts, Palaces & Deserts",
         description:
             "Stunning photos of Rajasthan's royal forts, palaces, golden deserts and wildlife.",
-        images: ["https://picsum.photos/seed/raj-1115/800/600"],
+        images: ["https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/960px-Udaipur_Lake_India.JPG"],
         site: "@rajasthanplaces",
         creator: "@rajasthanplaces",
     },
-    alternates: {
-        canonical: "https://rajasthanplaces.in/gallery",
-    },
+    alternates: alternatesFor("/gallery"),
     robots: {
         index: true,
         follow: true,

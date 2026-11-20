@@ -1,5 +1,5 @@
 // components/shared/ExploreMoreSection.tsx
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 
 const ALL_SECTIONS = [
     {
@@ -15,7 +15,7 @@ const ALL_SECTIONS = [
         border: "border-amber-200 dark:border-amber-800",
         badge: "50+ Places",
         badgeHi: "50+ स्थान",
-        img: "https://picsum.photos/seed/raj-1129/400/250",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/960px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
     },
     {
         id: "festivals",
@@ -30,7 +30,7 @@ const ALL_SECTIONS = [
         border: "border-pink-200 dark:border-pink-800",
         badge: "12+ Festivals",
         badgeHi: "12+ त्यौहार",
-        img: "https://picsum.photos/seed/raj-1107/400/250",
+        img: "https://rajasthanplaces.in/Camel_Pushkar.webp",
     },
     {
         id: "culture",
@@ -45,7 +45,7 @@ const ALL_SECTIONS = [
         border: "border-violet-200 dark:border-violet-800",
         badge: "Rich Heritage",
         badgeHi: "समृद्ध विरासत",
-        img: "https://picsum.photos/seed/raj-1098/400/250",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e6/Patwon_ki_haveli_18.jpg/960px-Patwon_ki_haveli_18.jpg",
     },
     {
         id: "shopping",
@@ -60,7 +60,7 @@ const ALL_SECTIONS = [
         border: "border-emerald-200 dark:border-emerald-800",
         badge: "20+ Markets",
         badgeHi: "20+ बाज़ार",
-        img: "https://picsum.photos/seed/raj-1141/400/250",
+        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
     },
 ];
 

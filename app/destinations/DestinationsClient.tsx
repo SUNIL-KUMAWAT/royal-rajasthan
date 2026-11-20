@@ -3,13 +3,29 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Search, Star, MapPin, Clock, ArrowRight, Heart } from "lucide-react";
-import { DESTINATIONS } from "@/constants/destinations";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import { useLanguage } from "@/components/LanguageProvider";
 import { ExploreMoreSection } from "@/components/shared/ExploreMoreSection";
 
-export default function DestinationsClient() {
+/** Card-sized destination record built on the server (see ./page.tsx). */
+export type DestinationCard = {
+    id: number;
+    name: string;
+    slug: string;
+    nickname: string;
+    description: string;
+    image: string;
+    rating: number;
+    category: string;
+    distance: string;
+    duration: string;
+    price: number;
+    isFeatured: boolean;
+};
+
+export default function DestinationsClient({ destinations }: { destinations: DestinationCard[] }) {
+    const DESTINATIONS = destinations;
     const { language } = useLanguage();
     const [search, setSearch] = useState("");
     const [category, setCategory] = useState("All");
@@ -26,14 +42,14 @@ export default function DestinationsClient() {
         "Hill Station",
     ];
 
-    const filtered = DESTINATIONS.filter((d: any) => {
+    const filtered = DESTINATIONS.filter((d) => {
         const matchSearch =
             d.name.toLowerCase().includes(search.toLowerCase()) ||
             d.nickname.toLowerCase().includes(search.toLowerCase());
         const matchCategory =
             category === "All" || d.category === category;
         return matchSearch && matchCategory;
-    }).sort((a: any, b: any) => {
+    }).sort((a, b) => {
         if (sortBy === "rating") return b.rating - a.rating;
         if (sortBy === "price-low") return a.price - b.price;
         if (sortBy === "price-high") return b.price - a.price;
@@ -46,7 +62,7 @@ export default function DestinationsClient() {
                 className="h-64 md:h-96 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://picsum.photos/seed/raj-1104/800/600",
+                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
@@ -116,7 +132,7 @@ export default function DestinationsClient() {
                         Showing <strong>{filtered.length}</strong> destinations
                     </p>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                        {filtered.map((dest: any, i: any) => (
+                        {filtered.map((dest, i) => (
                             <motion.div
                                 key={dest.id}
                                 initial={{ opacity: 0, y: 30 }}

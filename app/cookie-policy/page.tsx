@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-    title: "Cookie Policy | Rajasthan Tourism Places",
+    title: "Cookie Policy",
     description: "Read our Cookie Policy to learn how we use cookies and similar tracking technologies to improve your experience.",
-    alternates: {
-        canonical: "https://rajasthanplaces.in/cookie-policy",
-    },
+    alternates: alternatesFor("/cookie-policy"),
     robots: {
         index: true,
         follow: true,
@@ -23,7 +22,7 @@ export default function CookiePolicyPage() {
     };
 
     return (
-        <main className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
+        <div className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -80,6 +79,6 @@ export default function CookiePolicyPage() {
                     </section>
                 </div>
             </div>
-        </main>
+        </div>
     );
 }

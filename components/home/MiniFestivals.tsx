@@ -1,23 +1,23 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import Image from "next/image";
 import { ArrowRight, Calendar, MapPin } from "lucide-react";
 import { useLanguage } from "@/components/LanguageProvider";
-import { FESTIVALS } from "@/constants/festivals";
-import { FESTIVALS_HINDI } from "@/constants/festivals-hindi";
 
-// Helper: Convert festival name to URL slug
-function toSlug(name: string): string {
-  return name
-    .toLowerCase()
-    .replace(/[^a-z0-9\s-]/g, "")
-    .trim()
-    .replace(/\s+/g, "-");
-}
+/** Light festival record built on the server (see app/page.tsx). */
+export type MiniFestival = {
+  id: number;
+  name: string;
+  slug: string;
+  image: string;
+  location: string;
+  month: string;
+  description: string;
+};
 
-export function MiniFestivals() {
+export function MiniFestivals({ festivals, festivalsHi }: { festivals: MiniFestival[]; festivalsHi: MiniFestival[] }) {
   const { language } = useLanguage();
   const t = {
     title: language === "hi" ? "प्रमुख सांस्कृतिक उत्सव" : "Top Cultural Festivals",
@@ -26,8 +26,7 @@ export function MiniFestivals() {
     knowMore: language === "hi" ? "और जानें" : "Know More"
   };
 
-  const festivalsList = language === "hi" ? FESTIVALS_HINDI : FESTIVALS;
-  const topFestivals = festivalsList.slice(0, 3);
+  const topFestivals = language === "hi" ? festivalsHi : festivals;
 
   return (
     <section className="py-20 relative bg-fixed bg-center bg-cover" style={{ backgroundImage: "url('/Camel_Pushkar.webp')" }}>
@@ -73,7 +72,7 @@ export function MiniFestivals() {
                 <p className="text-white/80 text-sm line-clamp-3 mb-4 grow">
                   {fest.description}
                 </p>
-                <Link href={`/festivals/${toSlug(FESTIVALS.find(f => f.id === fest.id)?.name || fest.name)}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
+                <Link href={`/festivals/${fest.slug}`} className="text-yellow-400 text-sm font-semibold flex items-center gap-1 hover:gap-2 transition-all w-max mt-auto">
                   {t.knowMore} <ArrowRight size={14} />
                 </Link>
               </div>

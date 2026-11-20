@@ -1,8 +1,10 @@
 "use client";
 import { HeroSection } from "@/components/home/HeroSection";
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import dynamic from "next/dynamic";
 import { useLanguage } from "@/components/LanguageProvider";
+import type { PlaceCard } from "@/lib/places";
+import type { MiniFestival } from "@/components/home/MiniFestivals";
 
 const FeaturedPlaces = dynamic(() => import("@/components/home/FeaturedPlaces").then((m) => m.FeaturedPlaces), {
   loading: () => <div className="h-96 w-full animate-pulse bg-gray-100 dark:bg-gray-800 rounded-3xl" />,
@@ -28,14 +30,21 @@ const MiniShopping = dynamic(() => import("@/components/home/MiniShopping").then
   loading: () => <div className="h-96 w-full animate-pulse bg-maroon-950" />,
 });
 
-export default function HomeClient() {
+type HomeClientProps = {
+  places: PlaceCard[];
+  placesHi: PlaceCard[];
+  festivals: MiniFestival[];
+  festivalsHi: MiniFestival[];
+};
+
+export default function HomeClient({ places, placesHi, festivals, festivalsHi }: HomeClientProps) {
   const { language } = useLanguage();
 
   return (
     <>
       <HeroSection />
-      <FeaturedPlaces />
-      <MiniFestivals />
+      <FeaturedPlaces places={places} placesHi={placesHi} />
+      <MiniFestivals festivals={festivals} festivalsHi={festivalsHi} />
       <MiniShopping />
       <ExperiencesSection />
       <StatsSection />

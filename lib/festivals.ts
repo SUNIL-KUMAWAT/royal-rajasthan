@@ -15,9 +15,10 @@ export interface FestivalCard {
     isFeatured?: boolean;
 }
 
-type AnyFestival = { id: number; name: string } & Record<string, any>;
+/** The fields read from either the English or Hindi festival dataset. */
+type FestivalSource = Omit<FestivalCard, "engName" | "highlights"> & { highlights?: string[] };
 
-export function toFestivalCards(list: AnyFestival[], english: AnyFestival[] = list): FestivalCard[] {
+export function toFestivalCards(list: FestivalSource[], english: FestivalSource[] = list): FestivalCard[] {
     return list.map((f) => ({
         id: f.id,
         name: f.name,

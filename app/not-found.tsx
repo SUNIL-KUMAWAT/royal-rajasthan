@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/LocalizedLink";
 import { Search } from "lucide-react";
 
 export default function NotFound() {
@@ -12,7 +12,7 @@ export default function NotFound() {
       </h2>
       <p className="text-gray-600 dark:text-gray-300 max-w-md mb-8 text-lg">
         Oops! The page you are looking for seems to have wandered off into the desert. 
-        Let's get you back on the right path.
+        Let&apos;s get you back on the right path.
       </p>
       
       <div className="flex flex-col sm:flex-row gap-4">

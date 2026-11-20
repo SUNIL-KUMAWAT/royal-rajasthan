@@ -30,7 +30,7 @@ export default function ContactClient() {
                 className="h-64 md:h-80 relative flex items-end justify-center pb-12 mt-16"
                 style={{
                     backgroundImage:
-                        "url(https://picsum.photos/seed/raj-1095/800/600",
+                        "url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg)",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

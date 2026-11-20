@@ -1,4 +1,5 @@
 import { FESTIVALS } from "@/constants/data";
+import { alternatesFor } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import FestivalDetailClient from "./FestivalDetailClient";
@@ -42,7 +43,7 @@ export async function generateMetadata({
   if (!festival) return { title: "Festival Not Found" };
 
   const canonicalSlug = toSlug(festival.name);
-  const title = festival.seo?.title || `${festival.name} | Rajasthan Tourism Places`;
+  const title = festival.seo?.title || `${festival.name} - Dates, Highlights & Guide`;
   const description = festival.seo?.description || festival.description;
   const customKeywords = festival.seo?.keywords || festival.keywords || [];
 
@@ -82,9 +83,7 @@ export async function generateMetadata({
       description,
       images: [festival.image],
     },
-    alternates: {
-      canonical: `https://rajasthanplaces.in/festivals/${canonicalSlug}`,
-    },
+    alternates: alternatesFor(`/festivals/${canonicalSlug}`),
   };
 }
 
@@ -216,8 +215,8 @@ export default async function FestivalDetailPage({
       <FestivalDetailClient
         festival={festival}
         related={related}
-        festivalHi={FESTIVALS_HINDI.find((f) => f.id === festival.id) as any}
-        relatedHi={related.map((r) => (FESTIVALS_HINDI.find((f) => f.id === r.id) || r) as any)}
+        festivalHi={FESTIVALS_HINDI.find((f) => f.id === festival.id)}
+        relatedHi={related.map((r) => FESTIVALS_HINDI.find((f) => f.id === r.id) ?? r)}
       />
     </>
   );

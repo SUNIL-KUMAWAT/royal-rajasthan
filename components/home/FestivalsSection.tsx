@@ -1,9 +1,9 @@
 // components/home/FestivalsSection.tsx
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useState, useMemo } from "react";
+import Link from "@/components/LocalizedLink";
+
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -35,77 +35,8 @@ import { useLanguage } from "@/components/LanguageProvider";
 import { TiltCard } from "./TiltCard";
 
 // ============ TYPES ============
-interface Festival {
-  id: number;
-  name: string;
-  engName?: string;
-  image: string;
-  location: string;
-  month: string;
-  duration: string;
-  description: string;
-  highlights: string[];
-  rating: number;
-  nextDate?: string;
-  isFeatured?: boolean;
-}
+type Festival = FestivalCard;
 
-// ============ COUNTDOWN ============
-function Countdown({ targetDate }: { targetDate?: string }) {
-  const [timeLeft, setTimeLeft] = useState({
-    days: 0,
-    hours: 0,
-    minutes: 0,
-  });
-
-  useEffect(() => {
-    if (!targetDate) return;
-
-    const calculate = () => {
-      const target = new Date(targetDate).getTime();
-      if (isNaN(target)) return;
-
-      const diff = target - Date.now();
-      if (diff <= 0) {
-        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
-        return;
-      }
-
-      setTimeLeft({
-        days: Math.floor(diff / (1000 * 60 * 60 * 24)),
-        hours: Math.floor(
-          (diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-        ),
-        minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
-      });
-    };
-
-    calculate();
-    const interval = setInterval(calculate, 60000);
-    return () => clearInterval(interval);
-  }, [targetDate]);
-
-  if (!targetDate) {
-    return <div className="text-white/70 text-sm">Coming Soon</div>;
-  }
-
-  return (
-    <div className="flex gap-1.5 md:gap-3">
-      {[
-        { value: timeLeft.days, label: "Days" },
-        { value: timeLeft.hours, label: "Hours" },
-        { value: timeLeft.minutes, label: "Min" },
-      ].map((item) => (
-        <div key={item.label} className="text-center group">
-          <div className="w-9 h-9 md:w-16 md:h-16 rounded-lg md:rounded-2xl bg-white/10 dark:bg-gray-900/40 backdrop-blur-2xl border border-white/20 dark:border-white/10 flex items-center justify-center text-white font-bold text-xs md:text-2xl shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_8px_16px_rgba(0,0,0,0.4)] group-hover:shadow-[inset_0_1px_4px_rgba(255,255,255,0.3),0_12px_24px_rgba(251,191,36,0.3)] transition-all duration-300">
-            <span className="bg-gradient-to-b from-white to-white/70 bg-clip-text text-transparent">{String(item.value).padStart(2, "0")}</span>
-          </div>
-          <p className="text-[8px] md:text-xs text-white/80 mt-1 font-medium uppercase tracking-wider">{item.label}</p>
-        </div>
-      ))}
-    </div>
-  );
-}
 
 // ============ FESTIVAL HERO ============
 function FestivalHero({ festival, onNext, onPrev }: { festival: Festival, onNext: () => void, onPrev: () => void }) {
@@ -252,28 +183,22 @@ export function FestivalsSection({ festivals, festivalsHi }: { festivals: Festiv
   const [selectedLocation, setSelectedLocation] = useState("All");
   const [visibleCount, setVisibleCount] = useState(8);
 
-  const festival = currentFestivals[active] as Festival;
+  const festival: Festival = currentFestivals[active];
   const progress = ((active + 1) / currentFestivals.length) * 100;
 
   const handleNext = () => setActive((prev) => (prev + 1) % currentFestivals.length);
   const handlePrev = () => setActive((prev) => (prev - 1 + currentFestivals.length) % currentFestivals.length);
 
   const uniqueLocations = useMemo(() => {
-    const locs = Array.from(new Set(currentFestivals.map((f: any) => f.location)));
+    const locs = Array.from(new Set(currentFestivals.map((f) => f.location)));
     return ["All", ...locs];
   }, [currentFestivals]);
 
   const filteredFestivals = useMemo(() => {
-    return currentFestivals.filter((f: any) => {
-      let matchSearch = true;
-      if (searchTerm) {
-        try {
-          const regex = new RegExp(searchTerm, "i");
-          matchSearch = regex.test(f.name);
-        } catch (e) {
-          matchSearch = f.name.toLowerCase().includes(searchTerm.toLowerCase());
-        }
-      }
+    const query = searchTerm.trim().toLowerCase();
+    return currentFestivals.filter((f) => {
+      // Plain substring match (user input must not be treated as a regex)
+      const matchSearch = !query || f.name.toLowerCase().includes(query);
       const matchLocation = selectedLocation === "All" || f.location === selectedLocation;
       return matchSearch && matchLocation;
     });
@@ -374,7 +299,7 @@ export function FestivalsSection({ festivals, festivalsHi }: { festivals: Festiv
 
             {/* Highlights */}
             <div className="flex flex-wrap gap-2 md:gap-3 mt-6 md:mt-8">
-              {festival.highlights.map((item: any) => (
+              {festival.highlights.map((item) => (
                 <motion.div
                   key={item}
                   whileHover={{ scale: 1.05, y: -2 }}
@@ -515,7 +440,7 @@ export function FestivalsSection({ festivals, festivalsHi }: { festivals: Festiv
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <AnimatePresence mode="popLayout">
-              {visibleFestivals.map((f: any, idx: number) => (
+              {visibleFestivals.map((f, idx) => (
                 <motion.div
                   key={f.id}
                   id={`festival-card-${idx}`}
@@ -576,7 +501,7 @@ export function FestivalsSection({ festivals, festivalsHi }: { festivals: Festiv
                 type="button"
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.96 }}
-                onClick={(e: any) => {
+                onClick={(e) => {
                   e.preventDefault();
                   handleLoadMore();
                 }}
@@ -676,6 +601,4 @@ function FAQSection({ faqs, title }: { faqs: { question: string, answer: string 
         </section>
     );
 }
-
-
 

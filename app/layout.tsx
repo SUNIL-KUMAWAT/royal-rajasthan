@@ -69,8 +69,6 @@ export const metadata: Metadata = {
   // ============ TWITTER CARD ============
   twitter: {
     card: "summary_large_image",
-    site: "@Rajasthan-places",
-    creator: "@Rajasthan-places",
     title: "Rajasthan Tourism Places - Explore the Land of Kings",
     description:
       "Discover 500+ historic forts, golden deserts, and royal palaces. Plan your perfect Rajasthan trip!",
@@ -92,10 +90,8 @@ export const metadata: Metadata = {
     },
   },
 
-  // ============ CANONICAL URL ============
-  alternates: {
-    canonical: "https://rajasthanplaces.in",
-  },
+  // Canonical/hreflang are set per page (see lib/i18n alternatesFor). Setting one here
+  // would make every page without its own canonical point at the homepage.
 
   // ============ APP INFO ============
   applicationName: "Rajasthan Tourism Places",
@@ -153,36 +149,16 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               "@context": "https://schema.org",
-              "@type": "TravelAgency",
+              "@type": "Organization",
               name: "Rajasthan Tourism Places",
               url: "https://rajasthanplaces.in",
-              logo: "https://rajasthanplaces.in/logo.png",
+              logo: "https://rajasthanplaces.in/english-logo.png",
               description:
-                "Complete travel guide for Rajasthan, India. Explore 500+ historic forts, golden deserts, royal palaces, and wildlife sanctuaries.",
-              address: {
-                "@type": "PostalAddress",
-                streetAddress: "MI Road",
-                addressLocality: "Jaipur",
-                addressRegion: "Rajasthan",
-                postalCode: "302001",
-                addressCountry: "IN",
-              },
-              telephone: "+91-99999-99999",
-              email: "sunilkumawat.india@gmail.com",
-              sameAs: [
-                "https://facebook.com/rajasthan-places",
-                "https://twitter.com/rajasthan-places",
-                "https://instagram.com/rajasthan-places",
-                "https://youtube.com/rajasthan-places",
-              ],
+                "Complete travel guide for Rajasthan, India: forts, palaces, lakes, deserts, festivals and markets with timings, tickets and maps.",
               areaServed: {
                 "@type": "State",
                 name: "Rajasthan",
-                addressCountry: "IN",
               },
-              hasMap: "https://maps.google.com/?q=Jaipur+Rajasthan",
-              openingHours: "Mo-Sa 09:00-18:00",
-              priceRange: "₹₹",
             }),
           }}
         />
@@ -209,30 +185,6 @@ export default function RootLayout({
           }}
         />
 
-        {/* BreadcrumbList Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "BreadcrumbList",
-              itemListElement: [
-                {
-                  "@type": "ListItem",
-                  position: 1,
-                  name: "Home",
-                  item: "https://rajasthanplaces.in",
-                },
-                {
-                  "@type": "ListItem",
-                  position: 2,
-                  name: "Places",
-                  item: "https://rajasthanplaces.in/places",
-                },
-              ],
-            }),
-          }}
-        />
       </head>
       <body className={`${inter.variable} ${playfair.variable} bg-palace-white dark:bg-gray-950 transition-colors duration-300`}>
         <noscript>
@@ -268,7 +220,7 @@ export default function RootLayout({
             </Script>
           </>
         )}
-        <Script id="microsoft-clarity" strategy="afterInteractive">
+        <Script id="microsoft-clarity" strategy="lazyOnload">
           {`
             (function(c,l,a,r,i,t,y){
               c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

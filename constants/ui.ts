@@ -136,7 +136,7 @@ export const NAV_LINKS = [
 export const HERO_SLIDES = [
     {
         id: 1,
-        image: "https://picsum.photos/seed/raj-1/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/1280px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
         title: "Discover the Land of Kings",
         subtitle: "Amber Fort, Jaipur",
         description:
@@ -144,7 +144,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 2,
-        image: "https://picsum.photos/seed/raj-2/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg",
         title: "The Blue City Awaits",
         subtitle: "Mehrangarh Fort, Jodhpur",
         description:
@@ -152,7 +152,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 3,
-        image: "https://picsum.photos/seed/raj-3/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/1280px-Udaipur_Lake_India.JPG",
         title: "City of Lakes & Dreams",
         subtitle: "Lake Pichola, Udaipur",
         description:
@@ -160,7 +160,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 4,
-        image: "https://picsum.photos/seed/raj-4/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg",
         title: "Golden City of the Desert",
         subtitle: "Jaisalmer Fort, Jaisalmer",
         description:
@@ -168,7 +168,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 5,
-        image: "https://picsum.photos/seed/raj-5/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
         title: "Palace of the Winds",
         subtitle: "Hawa Mahal, Jaipur",
         description:
@@ -176,7 +176,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 6,
-        image: "https://picsum.photos/seed/raj-6/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chittorgarh_fort.JPG/1280px-Chittorgarh_fort.JPG",
         title: "Fortress of Valor & Sacrifice",
         subtitle: "Chittorgarh Fort, Chittorgarh",
         description:
@@ -184,7 +184,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 7,
-        image: "https://picsum.photos/seed/raj-7/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/1280px-Ranthambore_National_Park.JPG",
         title: "Wilderness of the Royal Bengal",
         subtitle: "Ranthambore National Park, Sawai Madhopur",
         description:
@@ -192,7 +192,7 @@ export const HERO_SLIDES = [
     },
     {
         id: 8,
-        image: "https://picsum.photos/seed/raj-8/800/600",
+        image: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/1280px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg",
         title: "Sacred Heart of Rajasthan",
         subtitle: "Pushkar Lake, Pushkar",
         description:
@@ -201,18 +201,18 @@ export const HERO_SLIDES = [
 ];
 
 export const GALLERY_IMAGES = [
-    { id: 1, src: "https://picsum.photos/seed/raj-9/800/600", alt: "Amber Fort", category: "Forts", location: "Jaipur" },
-    { id: 2, src: "https://picsum.photos/seed/raj-10/800/600", alt: "Hawa Mahal", category: "Palaces", location: "Jaipur" },
-    { id: 3, src: "https://picsum.photos/seed/raj-11/800/600", alt: "Mehrangarh Fort", category: "Forts", location: "Jodhpur" },
-    { id: 4, src: "https://picsum.photos/seed/raj-12/800/600", alt: "Lake Pichola", category: "Lakes", location: "Udaipur" },
-    { id: 5, src: "https://picsum.photos/seed/raj-13/800/600", alt: "Jaisalmer Fort", category: "Forts", location: "Jaisalmer" },
-    { id: 6, src: "https://picsum.photos/seed/raj-14/800/600", alt: "Ranthambore Tiger", category: "Wildlife", location: "Sawai Madhopur" },
-    { id: 7, src: "https://picsum.photos/seed/raj-15/800/600", alt: "Pushkar Lake", category: "Temples", location: "Pushkar" },
-    { id: 8, src: "https://picsum.photos/seed/raj-16/800/600", alt: "Udaipur Palace", category: "Palaces", location: "Udaipur" },
-    { id: 9, src: "https://picsum.photos/seed/raj-17/800/600", alt: "Desert Dunes", category: "Desert", location: "Jaisalmer" },
-    { id: 10, src: "https://picsum.photos/seed/raj-18/800/600", alt: "Jaipur City", category: "Cities", location: "Jaipur" },
-    { id: 11, src: "https://picsum.photos/seed/raj-19/800/600", alt: "Festival", category: "Festivals", location: "Rajasthan" },
-    { id: 12, src: "https://picsum.photos/seed/raj-20/800/600", alt: "Bikaner Fort", category: "Forts", location: "Bikaner" }
+    { id: 1, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/960px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg", alt: "Amber Fort", category: "Forts", location: "Jaipur" },
+    { id: 2, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/960px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg", alt: "Hawa Mahal", category: "Palaces", location: "Jaipur" },
+    { id: 3, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/960px-Mehrangarh_Fort_sanhita.jpg", alt: "Mehrangarh Fort", category: "Forts", location: "Jodhpur" },
+    { id: 4, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/960px-Udaipur_Lake_India.JPG", alt: "Lake Pichola", category: "Lakes", location: "Udaipur" },
+    { id: 5, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/960px-Jaisalmer_forteresse.jpg", alt: "Jaisalmer Fort", category: "Forts", location: "Jaisalmer" },
+    { id: 6, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/960px-Ranthambore_National_Park.JPG", alt: "Ranthambore Tiger", category: "Wildlife", location: "Sawai Madhopur" },
+    { id: 7, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/960px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg", alt: "Pushkar Lake", category: "Temples", location: "Pushkar" },
+    { id: 8, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Udaipur_City_Palace.jpg/960px-Udaipur_City_Palace.jpg", alt: "Udaipur Palace", category: "Palaces", location: "Udaipur" },
+    { id: 9, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Thar_desert_Rajasthan_India.jpg/960px-Thar_desert_Rajasthan_India.jpg", alt: "Desert Dunes", category: "Desert", location: "Jaisalmer" },
+    { id: 10, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Albert_Hall_%28_Jaipur_%29.jpg/960px-Albert_Hall_%28_Jaipur_%29.jpg", alt: "Jaipur City", category: "Cities", location: "Jaipur" },
+    { id: 11, src: "/Camel_Pushkar.webp", alt: "Festival", category: "Festivals", location: "Rajasthan" },
+    { id: 12, src: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/India_Bikaner_Junagarh_Fort.jpg/960px-India_Bikaner_Junagarh_Fort.jpg", alt: "Bikaner Fort", category: "Forts", location: "Bikaner" }
 ];
 
 export const CATEGORIES_HINDI = [
@@ -361,56 +361,56 @@ export const NAV_LINKS_HINDI = [
 export const HERO_SLIDES_HINDI = [
     {
         "id": 1,
-        "image": "https://picsum.photos/seed/raj-21/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg/1280px-20191219_Fort_Amber%2C_Amer%2C_Jaipur_0955_9481.jpg",
         "title": "राजाओं की भूमि की खोज करें",
         "subtitle": "आमेर किला, जयपुर",
         "description": "ऐतिहासिक महलों, सुनहरे रेगिस्तानों, रंगीन त्योहारों और अविस्मरणीय यात्राओं का अनुभव करें"
     },
     {
         "id": 2,
-        "image": "https://picsum.photos/seed/raj-22/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Mehrangarh_Fort_sanhita.jpg/1280px-Mehrangarh_Fort_sanhita.jpg",
         "title": "नीला शहर आपका इंतजार कर रहा है",
         "subtitle": "मेहरानगढ़ किला, जोधपुर",
         "description": "नीली रंगी हुई सड़कों के ऊपर से राजपूताना की भव्यता को निहारें"
     },
     {
         "id": 3,
-        "image": "https://picsum.photos/seed/raj-23/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Udaipur_Lake_India.JPG/1280px-Udaipur_Lake_India.JPG",
         "title": "झीलों और सपनों का शहर",
         "subtitle": "पिछोला झील, उदयपुर",
         "description": "आसमान छूते महलों से घिरे शांत पानी पर तैरने का अनुभव लें"
     },
     {
         "id": 4,
-        "image": "https://picsum.photos/seed/raj-24/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Jaisalmer_forteresse.jpg/1280px-Jaisalmer_forteresse.jpg",
         "title": "रेगिस्तान का सुनहरा शहर",
         "subtitle": "जैसलमेर किला, जैसलमेर",
         "description": "जहां विशाल थार रेगिस्तान के ऊपर सूर्यास्त के समय सुनहरा बलुआ पत्थर का किला चमकता है"
     },
     {
         "id": 5,
-        "image": "https://picsum.photos/seed/raj-25/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg/1280px-East_facade_Hawa_Mahal_Jaipur_from_ground_level_%28July_2022%29_-_img_01.jpg",
         "title": "हवा महल",
         "subtitle": "हवा महल, जयपुर",
         "description": "शानदार हवा महल की 953 खिड़कियों वाले मधुकोश जैसे ढांचे को देखें"
     },
     {
         "id": 6,
-        "image": "https://picsum.photos/seed/raj-26/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Chittorgarh_fort.JPG/1280px-Chittorgarh_fort.JPG",
         "title": "वीरता और बलिदान का किला",
         "subtitle": "चित्तौड़गढ़ किला, चित्तौड़गढ़",
         "description": "उस पौराणिक किले में चलें जो राजपूत बहादुरी और बलिदान की कहानियों को गूँजता है"
     },
     {
         "id": 7,
-        "image": "https://picsum.photos/seed/raj-27/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Ranthambore_National_Park.JPG/1280px-Ranthambore_National_Park.JPG",
         "title": "रॉयल बंगाल टाइगर का निवास",
         "subtitle": "रणथंभौर राष्ट्रीय उद्यान, सवाई माधोपुर",
         "description": "शानदार रॉयल बंगाल टाइगर को उसके प्राकृतिक जंगल में स्वतंत्र रूप से घूमते हुए देखें"
     },
     {
         "id": 8,
-        "image": "https://picsum.photos/seed/raj-28/800/600",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg/1280px-Evening_lights_by_the_Pushkar_Lake%2C_Pushkar.jpg",
         "title": "राजस्थान का पवित्र हृदय",
         "subtitle": "पुष्कर झील, पुष्कर",
         "description": "भारत के सबसे पवित्र तीर्थ स्थलों में से एक के पवित्र घाटों और जल की खोज करें"

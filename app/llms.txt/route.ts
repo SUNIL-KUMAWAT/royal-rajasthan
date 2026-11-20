@@ -10,13 +10,6 @@ function toSlug(name: string): string {
         .replace(/\s+/g, "-");
 }
 
-function getShoppingSlug(name: string): string {
-    return name
-        .toLowerCase()
-        .replace(/[^a-z0-9]+/g, "-")
-        .replace(/(^-|-$)/g, "");
-}
-
 export async function GET() {
     const baseUrl = "https://rajasthanplaces.in";
 

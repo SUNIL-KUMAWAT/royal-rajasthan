@@ -1,6 +1,9 @@
 // app/places/[slug]/page.tsx
 // NO "use client" here
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
+import { notFound } from "next/navigation";
+import { toSchemaTime } from "@/lib/openStatus";
 import { PLACES } from "@/constants/places";
 import { PlaceDetailClient } from "./PlaceDetailClient";
 import { PLACES_HINDI } from "@/constants/places-hindi";
@@ -48,7 +51,7 @@ export async function generateMetadata({
         ...customKeywords,
     ];
 
-    const title = place.seo?.title || `${place.name} - Timing, Tickets & Travel Guide | Rajasthan Tourism Places`;
+    const title = place.seo?.title || `${place.name} - Timing, Tickets & Travel Guide`;
     const description = place.seo?.description || `Visit ${place.name} in ${place.city}, Rajasthan. Timing: ${place.timing.open}-${place.timing.close}. Entry: ${place.ticket.isFree ? "Free" : `₹${place.ticket.indian}`
         }. Complete travel guide with history, tips & Google Maps.`;
 
@@ -92,9 +95,7 @@ export async function generateMetadata({
             description: description.substring(0, 155),
             images: [place.images[0]],
         },
-        alternates: {
-            canonical: `https://rajasthanplaces.in/places/${place.slug}`,
-        },
+        alternates: alternatesFor(`/places/${place.slug}`),
     };
 }
 
@@ -107,27 +108,11 @@ export default async function PlaceDetailPage({
     const { slug } = await params;
     const place = PLACES.find((p) => p?.slug === slug);
 
-    if (!place) {
-        return (
-            <div className="min-h-screen flex items-center justify-center mt-16">
-                <div className="text-center">
-                    <div className="text-6xl mb-4">🔍</div>
-                    <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
-                        Place Not Found
-                    </h1>
-                    <p className="text-gray-500 mb-6">
-                        The place you are looking for does not exist.
-                    </p>
-                    <a
-                        href="/places"
-                        className="bg-yellow-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-yellow-600 transition-all"
-                    >
-                        ← Back to Places
-                    </a>
-                </div>
-            </div>
-        );
-    }
+    // Real 404 status (not a "soft 404" page with 200) so search engines drop bad URLs
+    if (!place) notFound();
+
+    const opens = toSchemaTime(place.timing.open);
+    const closes = toSchemaTime(place.timing.close);
 
     // JSON-LD Schemas for AI Search Engines & Google Rich Snippets
     const touristAttractionSchema = {
@@ -147,14 +132,27 @@ export default async function PlaceDetailPage({
             "latitude": place.location.latitude,
             "longitude": place.location.longitude
         },
-        "openingHoursSpecification": [
-            {
-                "@type": "OpeningHoursSpecification",
-                "opens": place.timing.open,
-                "closes": place.timing.close,
-                "dayOfWeek": "https://schema.org/Everyday"
-            }
-        ]
+        // schema.org needs 24h "HH:MM"; skip the block when timing isn't a plain time range
+        ...(opens && closes
+            ? {
+                  openingHoursSpecification: [
+                      {
+                          "@type": "OpeningHoursSpecification",
+                          opens,
+                          closes,
+                          dayOfWeek: [
+                              "https://schema.org/Monday",
+                              "https://schema.org/Tuesday",
+                              "https://schema.org/Wednesday",
+                              "https://schema.org/Thursday",
+                              "https://schema.org/Friday",
+                              "https://schema.org/Saturday",
+                              "https://schema.org/Sunday",
+                          ],
+                      },
+                  ],
+              }
+            : {}),
     };
 
     const breadcrumbSchema = {
@@ -211,7 +209,11 @@ export default async function PlaceDetailPage({
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
                 />
             )}
-            <PlaceDetailClient place={place} placeLinks={PLACE_LINKS} />
+            <PlaceDetailClient
+                place={place}
+                hindiPlace={PLACES_HINDI.find((p) => p.slug === place.slug) ?? null}
+                placeLinks={PLACE_LINKS}
+            />
         </>
     );
 }

@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
+import { alternatesFor } from "@/lib/i18n";
 
 export const metadata: Metadata = {
-    title: "Terms of Service | Rajasthan Tourism Places",
+    title: "Terms of Service",
     description: "Read our Terms of Service to understand the rules, guidelines, and agreements for using our website and services.",
-    alternates: {
-        canonical: "https://rajasthanplaces.in/terms-of-service",
-    },
+    alternates: alternatesFor("/terms-of-service"),
     robots: {
         index: true,
         follow: true,
@@ -23,7 +22,7 @@ export default function TermsOfServicePage() {
     };
 
     return (
-        <main className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
+        <div className="min-h-screen bg-palace-white dark:bg-[#070b16] pt-32 pb-20 transition-colors duration-300">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -72,7 +71,7 @@ export default function TermsOfServicePage() {
                     <section>
                         <h2 className="text-lg md:text-2xl font-bold text-gray-900 dark:text-white mb-3">4. Disclaimer of Warranties</h2>
                         <p>
-                            The materials on our website are provided on an 'as is' basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties, including without limitation, implied warranties of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
+                            The materials on our website are provided on an &apos;as is&apos; basis. We make no warranties, expressed or implied, and hereby disclaim and negate all other warranties, including without limitation, implied warranties of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
                         </p>
                     </section>
 
@@ -91,6 +90,6 @@ export default function TermsOfServicePage() {
                     </section>
                 </div>
             </div>
-        </main>
+        </div>
     );
 }
